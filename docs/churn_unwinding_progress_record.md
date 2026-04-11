@@ -240,17 +240,53 @@ Key points:
   - timing stress tests
   - subgroup stability round 2
 
+## 2026-04-11: Round-4 Step 1 Timing Stress Tests Completed
+
+Main outcome:
+
+- the first step from the operational plan was executed and explicitly closed
+
+Recorded in:
+
+- [churn_unwinding_operational_plan_2026-04-11.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_operational_plan_2026-04-11.md)
+- [avoidable_churn_timing_stress_round4.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_timing_stress_round4.md)
+- [avoidable_churn_timing_stress_matrix.csv](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_timing_stress_matrix.csv)
+- [avoidable_churn_timing_placebo_summary.csv](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_timing_placebo_summary.csv)
+
+Key points:
+
+- the run followed only `Step 1` from the operational plan
+- no broad topic search or alternative dataset exploration was opened
+- no `DID`, `DML`, causal ML, event-study, or targeting work was started
+- the primary candidate remained:
+  - `backlog_automation_rank_index / same`
+- in the two primary windows, the primary candidate's aggregate signed scores were:
+  - `core_aug_oct_2023`: `0.1722`
+  - `mature_jun_oct_2023`: `0.1509`
+- the future-month `lead1` placebo did not dominate the best non-lead alignment:
+  - core `lead1 - best nonlead`: `-0.0462`
+  - mature `lead1 - best nonlead`: `-0.0410`
+- the candidate ranked first among tested non-lead alternatives in both primary windows
+- phase splitting is feasible from May onward, but late-window evidence is narrower because h2/h3 horizons truncate support
+- the explicit Step 1 verdict is:
+  - `STEP1_TIMING_STRESS_PASSED_WITH_CAVEAT`
+- the main caveat is:
+  - timing looks better on aggregate, but this remains a diagnostic state-month screen
+- Step 2 is now unlocked under the operational plan:
+  - `Subgroup Stability Round 2 On The New Outcome Layer`
+
 ## Current Control Documents
 
 If a new agent starts now, the preferred reading order is:
 
 1. [churn_unwinding_execution_handoff.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_execution_handoff.md)
-2. [churn_unwinding_round2_execution_handoff.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round2_execution_handoff.md)
-3. [churn_unwinding_round2_diagnostics_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round2_diagnostics_memo.md)
-4. [churn_unwinding_administrative_burden_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_administrative_burden_memo.md)
-5. [churn_unwinding_avoidable_churn_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_avoidable_churn_memo.md)
-6. [churn_unwinding_outcome_reassessment_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_outcome_reassessment_memo.md)
-7. [churn_unwinding_avoidable_churn_results_briefing.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_avoidable_churn_results_briefing.md)
-8. [churn_unwinding_next_tests_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_next_tests_memo.md)
-9. [churn_unwinding_round3_robustness_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round3_robustness_memo.md)
-10. [churn_unwinding_paper_strategy_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_paper_strategy_memo.md)
+2. [churn_unwinding_operational_plan_2026-04-11.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_operational_plan_2026-04-11.md)
+3. [churn_unwinding_round2_execution_handoff.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round2_execution_handoff.md)
+4. [churn_unwinding_round2_diagnostics_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round2_diagnostics_memo.md)
+5. [churn_unwinding_administrative_burden_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_administrative_burden_memo.md)
+6. [churn_unwinding_avoidable_churn_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_avoidable_churn_memo.md)
+7. [churn_unwinding_outcome_reassessment_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_outcome_reassessment_memo.md)
+8. [churn_unwinding_avoidable_churn_results_briefing.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_avoidable_churn_results_briefing.md)
+9. [churn_unwinding_next_tests_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_next_tests_memo.md)
+10. [churn_unwinding_round3_robustness_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round3_robustness_memo.md)
+11. [churn_unwinding_paper_strategy_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_paper_strategy_memo.md)

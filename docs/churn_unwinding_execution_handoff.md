@@ -86,6 +86,14 @@ Secondary background, if needed:
 - A plain-language results briefing now exists for the avoidable-churn branch.
 - A prioritized next-test memo now exists, including the decision that the next useful dynamic work is timing-robustness rather than classical time-series modeling.
 - A round-3 robustness memo now exists, documenting that the harmful-outcome side held up and that the strongest current candidate has improved to `backlog_automation_rank_index / same`.
+- A formal operational plan now exists in [churn_unwinding_operational_plan_2026-04-11.md](churn_unwinding_operational_plan_2026-04-11.md).
+- Operational-plan `Step 1` timing stress tests are now complete in [../outputs/design_diagnostics/avoidable_churn_timing_stress_round4.md](../outputs/design_diagnostics/avoidable_churn_timing_stress_round4.md).
+- The Step 1 verdict is `STEP1_TIMING_STRESS_PASSED_WITH_CAVEAT`.
+- In the two primary Step 1 windows, the current candidate `backlog_automation_rank_index / same` remained the strongest tested non-lead alternative:
+  - `core_aug_oct_2023`: aggregate signed score `0.1722`
+  - `mature_jun_oct_2023`: aggregate signed score `0.1509`
+- The future-month `lead1` placebo did not dominate the best non-lead alignment in either primary window.
+- Step 2 from the operational plan, `Subgroup Stability Round 2 On The New Outcome Layer`, is now unlocked.
 - `TEHC_ST` is the best current state-month linkage variable.
 - `EMDMTH` and `RPUBTYPE2` must not be treated as interchangeable.
 - `WPFINWGT` is usable, and the official December-weight rule matters for reference-year estimation.
@@ -491,10 +499,34 @@ Those are prerequisites for any later heterogeneity or targeting design.
   - The next active work should refine falsification, timing, and subgroup logic before any stronger `DiD / DML / causal ML` escalation.
   - Future targeting discussion should stay explicitly provisional until richer subgroup structure is available.
 
+### `2026-04-11` - Operational-plan Step 1 timing stress tests completed
+
+- Actor: `Codex`
+- Files produced:
+  - [../outputs/design_diagnostics/avoidable_churn_timing_stress_round4.md](../outputs/design_diagnostics/avoidable_churn_timing_stress_round4.md)
+  - [../outputs/design_diagnostics/avoidable_churn_timing_stress_matrix.csv](../outputs/design_diagnostics/avoidable_churn_timing_stress_matrix.csv)
+  - [../outputs/design_diagnostics/avoidable_churn_timing_placebo_summary.csv](../outputs/design_diagnostics/avoidable_churn_timing_placebo_summary.csv)
+  - [../scripts/design_diagnostics/build_avoidable_churn_timing_stress_round4.py](../scripts/design_diagnostics/build_avoidable_churn_timing_stress_round4.py)
+- What was run:
+  - only `Step 1` from [churn_unwinding_operational_plan_2026-04-11.md](churn_unwinding_operational_plan_2026-04-11.md)
+  - distributed timing comparison across `same`, `lag1`, `lag2`, and `lead1`
+  - future-month `lead1` placebo summary
+  - support-bounded phase split and expanded-window stress test
+- What was learned:
+  - `backlog_automation_rank_index / same` remained the strongest tested non-lead candidate in both primary windows.
+  - Aggregate signed scores for the primary candidate were `0.1722` in `core_aug_oct_2023` and `0.1509` in `mature_jun_oct_2023`.
+  - The future-month `lead1` placebo did not dominate the best non-lead alignment in either primary window.
+  - Phase splitting is feasible from May onward, but late-window evidence is narrower because h2/h3 outcome horizons truncate support.
+  - The explicit verdict is `STEP1_TIMING_STRESS_PASSED_WITH_CAVEAT`.
+- What changed in the allowed next actions:
+  - Step 2 from the operational plan is now unlocked.
+  - The next allowed empirical step is `Subgroup Stability Round 2 On The New Outcome Layer`.
+  - No `DID`, `event study`, `DML`, causal ML, or targeting escalation is unlocked by this step.
+
 ## Open Questions / Active Risks
 
 1. The biggest current risk is now conceptual rather than mechanical: the CMS reporting month is a `renewal due / updated disposition` month and may not line up tightly enough with observed person-month coverage loss to support stronger causal interpretation.
-2. The next design risk is timing interpretation: the first diagnostics batch showed modest and unstable same / lag / lead relationships across exposure families.
+2. Timing interpretation remains a design risk, but the operational-plan Step 1 stress test improved the current reading: `backlog_automation_rank_index / same` beat the future-month `lead1` placebo on aggregate in both primary windows. This is still diagnostic, not causal validation.
 3. A linked source-coverage risk remains for early `2023`: the selected CMS metric family has partial state coverage in `March-July 2023`, even though the core `August-November 2023` transition window is complete.
 4. A mechanism-ranking risk remains unresolved: `pending_pressure` currently looks more informative than `renewal_intensity`, while the intended flagship `procedural_friction` mechanism has not yet clearly dominated `exit_to_uninsured`.
 5. A subgroup-stability risk is now explicit: crude state baseline-risk ordering from pooled `2021-2022` does not carry cleanly into the `2023` unwinding year, so later targeting logic still needs richer subgroup structure.
