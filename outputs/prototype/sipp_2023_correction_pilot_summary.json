@@ -1,0 +1,94 @@
+{
+  "input_zip": "data/raw/feasibility_audit/sipp/2023/pu2023_csv.zip",
+  "release_year": 2023,
+  "reference_year": 2022,
+  "raw_rows": 476744,
+  "raw_unique_persons": 40263,
+  "filtered_rows_valid_state_scope": 475772,
+  "filtered_unique_persons_valid_state_scope": 40245,
+  "excluded_non_state_rows": 972,
+  "excluded_non_state_persons": 138,
+  "duplicate_person_month_keys_after_filter": 0,
+  "distinct_monthcodes_after_filter": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "distinct_spanels_after_filter": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "correction_trigger_counts": {
+    "medicare_spell_overrun_rows": 505,
+    "medicaid_spell_overrun_rows": 1731,
+    "other_spell_overrun_rows": 204
+  },
+  "change_counts": {
+    "EMD_BMONTH": 0,
+    "EMD_EMONTH": 0,
+    "AMD_BMONTH": 3829,
+    "AMD_EMONTH": 3829,
+    "EMDMTH": 1731,
+    "EOT_BMONTH": 0,
+    "EOT_EMONTH": 0,
+    "AOT_BMONTH": 585,
+    "AOT_EMONTH": 585,
+    "EOTHCOVTYPE": 0,
+    "EOTMTH": 204,
+    "RPUBTYPE2": 1831,
+    "RPRIMTH": 0,
+    "RPUBMTH": 1631,
+    "RHLTHMTH": 566
+  },
+  "formula_diagnostics_against_raw_recodes": {
+    "raw_private_formula_diff_count": 66007,
+    "raw_public_formula_diff_count": 1631,
+    "raw_insured_formula_diff_count": 33663
+  },
+  "raw_category_counts": {
+    "insured_t": 437615,
+    "uninsured_t": 38157,
+    "public_t": 217047,
+    "private_t": 310681,
+    "pure_medicaid_t": 97652,
+    "broad_public_assistance_non_medicaid_t": 5140,
+    "other_coverage_t": 14542
+  },
+  "corrected_category_counts": {
+    "insured_t": 437049,
+    "uninsured_t": 38723,
+    "public_t": 215418,
+    "private_t": 310681,
+    "pure_medicaid_t": 95921,
+    "broad_public_assistance_non_medicaid_t": 5050,
+    "other_coverage_t": 14338
+  },
+  "raw_transition_counts": {
+    "has_consecutive_next_month": 435519,
+    "eligible_medicaid_transition": 89207,
+    "medicaid_exit_next": 71,
+    "medicaid_exit_to_uninsured_next": 31
+  },
+  "corrected_transition_counts": {
+    "has_consecutive_next_month": 435519,
+    "eligible_medicaid_transition": 87733,
+    "medicaid_exit_next": 335,
+    "medicaid_exit_to_uninsured_next": 109
+  },
+  "december_positive_weight_cohort": {
+    "persons": 39484,
+    "rows": 471467
+  },
+  "output_parquet": "outputs/prototype/sipp_2023_corrected_person_month_flags.parquet"
+}

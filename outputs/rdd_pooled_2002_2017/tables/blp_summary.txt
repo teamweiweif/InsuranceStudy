@@ -1,0 +1,21 @@
+
+Best linear projection of the conditional average treatment effect.
+Confidence intervals are cluster- and heteroskedasticity-robust (HC3):
+
+                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   -2537.9132 52505.1889 -0.0483  0.96145  
+SEX             -23.2822    71.2566 -0.3267  0.74387  
+HISPANX          -2.7613    71.2261 -0.0388  0.96908  
+MARRY            21.8723    31.2085  0.7008  0.48340  
+REGION          -23.3550    51.2726 -0.4555  0.64875  
+POVCAT           -7.6722    39.6192 -0.1936  0.84645  
+EMPST42         -31.5714    29.7647 -1.0607  0.28883  
+RTHLTH42         11.2631    49.1743  0.2290  0.81884  
+MNHLTH42         25.7268    51.1811  0.5027  0.61520  
+EDUCYR           12.7433     6.0165  2.1181  0.03418 *
+chronic_count   -68.5539    34.7930 -1.9703  0.04881 *
+post_aca         44.5254   187.5716  0.2374  0.81236  
+YEAR              1.2472    26.0652  0.0478  0.96184  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+

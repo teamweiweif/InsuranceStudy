@@ -1,0 +1,16 @@
+{
+  "candidate": {
+    "exposure_family": "composite_burden_index",
+    "exposure_variant": "backlog_automation_index",
+    "alignment": "same",
+    "core_score": 0.1242,
+    "mature_score": 0.1105,
+    "score_floor": 0.1105,
+    "candidate_found": true
+  },
+  "verdict": "PROMISING_H2_UPGRADE",
+  "ranking_csv": "outputs\\design_diagnostics\\avoidable_churn_burden_ranking.csv",
+  "timing_csv": "outputs\\design_diagnostics\\avoidable_churn_burden_timing_matrix.csv",
+  "highlow_csv": "outputs\\design_diagnostics\\avoidable_churn_burden_highlow_matrix.csv",
+  "falsification_csv": "outputs\\design_diagnostics\\avoidable_churn_burden_falsification_summary.csv"
+}

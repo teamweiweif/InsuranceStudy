@@ -1,0 +1,23 @@
+{
+  "input_feature_stack": "outputs\\design_diagnostics\\sipp_unwinding_feature_stack_2021_2023.parquet",
+  "output_outcome_layer": "outputs\\design_diagnostics\\sipp_avoidable_churn_outcome_layer_2021_2023.parquet",
+  "rows_total": 1398627,
+  "persons_total": 118186,
+  "reference_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "retained_outcomes": [
+    "broad_exit_persistent_uninsured_h2",
+    "broad_exit_resolved_insured_h2",
+    "broad_exit_to_private_h2",
+    "persistent_uninsured_h2"
+  ],
+  "omitted_outcomes": [
+    "broad_exit_back_to_medicaid_h2",
+    "broad_exit_to_public_h2",
+    "eligible_medicaid_transition_h2",
+    "uninsured_gap_resolved_h2"
+  ]
+}

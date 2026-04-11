@@ -1,0 +1,50 @@
+{
+  "input_zip": "data/raw/feasibility_audit/sipp/2024/pu2024_csv.zip",
+  "raw_rows": 437168,
+  "raw_unique_persons": 36915,
+  "filtered_rows_valid_state_scope": 436237,
+  "filtered_unique_persons_valid_state_scope": 36901,
+  "excluded_non_state_rows": 931,
+  "excluded_non_state_persons": 157,
+  "duplicate_person_month_keys_after_filter": 0,
+  "distinct_monthcodes_after_filter": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "distinct_spanels_after_filter": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "category_counts": {
+    "insured_t": 399179,
+    "uninsured_t": 37058,
+    "public_t": 195128,
+    "private_t": 282193,
+    "pure_medicaid_t": 88636,
+    "broad_public_assistance_non_medicaid_t": 5094,
+    "other_coverage_t": 12902
+  },
+  "transition_counts": {
+    "has_consecutive_next_month": 399317,
+    "eligible_medicaid_transition": 81207,
+    "medicaid_exit_next": 549,
+    "medicaid_exit_to_uninsured_next": 250
+  },
+  "december_positive_weight_cohort": {
+    "persons": 36186,
+    "rows": 432056
+  },
+  "output_parquet": "outputs/prototype/sipp_2024_person_month_flags.parquet"
+}

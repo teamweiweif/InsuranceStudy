@@ -1,0 +1,120 @@
+{
+  "input_zip": "data/raw/feasibility_audit/sipp/2022/pu2022_csv.zip",
+  "release_year": 2022,
+  "reference_year": 2021,
+  "raw_rows": 487736,
+  "raw_unique_persons": 41070,
+  "filtered_rows_valid_state_scope": 486618,
+  "filtered_unique_persons_valid_state_scope": 41040,
+  "excluded_non_state_rows": 1118,
+  "excluded_non_state_persons": 144,
+  "duplicate_person_month_keys_after_filter": 0,
+  "distinct_monthcodes_after_filter": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "distinct_spanels_after_filter": [
+    2020,
+    2021,
+    2022
+  ],
+  "correction_trigger_counts": {
+    "medicare_spell_overrun_rows": 295,
+    "medicaid_begin_gt_end_rows": 16,
+    "medicaid_spell_overrun_rows": 1342,
+    "other_spell_overrun_rows": 148
+  },
+  "change_counts": {
+    "EMD_BMONTH": 0,
+    "EMD_EMONTH": 16,
+    "AMD_BMONTH": 3457,
+    "AMD_EMONTH": 3457,
+    "EMDMTH": 1342,
+    "EOT_BMONTH": 0,
+    "EOT_EMONTH": 0,
+    "AOT_BMONTH": 504,
+    "AOT_EMONTH": 504,
+    "EOTHCOVTYPE": 0,
+    "EOTMTH": 148,
+    "RPUBTYPE2": 1405,
+    "RPRIMTH": 0,
+    "RPUBMTH": 1217,
+    "RHLTHMTH": 509
+  },
+  "formula_diagnostics_against_raw_recodes": {
+    "raw_private_formula_diff_count": 64834,
+    "raw_public_formula_diff_count": 1217,
+    "raw_insured_formula_diff_count": 34434
+  },
+  "raw_category_counts": {
+    "insured_t": 441712,
+    "uninsured_t": 44906,
+    "public_t": 212252,
+    "private_t": 314669,
+    "pure_medicaid_t": 98644,
+    "broad_public_assistance_non_medicaid_t": 5843,
+    "other_coverage_t": 17268
+  },
+  "corrected_category_counts": {
+    "insured_t": 441203,
+    "uninsured_t": 45415,
+    "public_t": 211035,
+    "private_t": 314669,
+    "pure_medicaid_t": 97302,
+    "broad_public_assistance_non_medicaid_t": 5789,
+    "other_coverage_t": 17120
+  },
+  "raw_transition_counts": {
+    "has_consecutive_next_month": 445563,
+    "eligible_medicaid_transition": 90150,
+    "medicaid_exit_next": 42,
+    "medicaid_exit_to_uninsured_next": 27
+  },
+  "corrected_transition_counts": {
+    "has_consecutive_next_month": 445563,
+    "eligible_medicaid_transition": 89010,
+    "medicaid_exit_next": 252,
+    "medicaid_exit_to_uninsured_next": 101
+  },
+  "annual_recode_diagnostics_december_positive_cohort": {
+    "RHICOVANN": {
+      "persons_compared": 40473,
+      "annual_yes_monthly_no": 0,
+      "annual_no_monthly_yes": 0,
+      "exact_match_count": 40473
+    },
+    "RPUBANN": {
+      "persons_compared": 40473,
+      "annual_yes_monthly_no": 0,
+      "annual_no_monthly_yes": 0,
+      "exact_match_count": 40473
+    },
+    "RPRIVANN": {
+      "persons_compared": 40473,
+      "annual_yes_monthly_no": 0,
+      "annual_no_monthly_yes": 1578,
+      "exact_match_count": 38895
+    },
+    "RMCAIDANN": {
+      "persons_compared": 40473,
+      "annual_yes_monthly_no": 500,
+      "annual_no_monthly_yes": 0,
+      "exact_match_count": 39973
+    }
+  },
+  "december_positive_weight_cohort": {
+    "persons": 40473,
+    "rows": 483315
+  },
+  "output_parquet": "outputs/prototype/sipp_2022_corrected_person_month_flags.parquet"
+}

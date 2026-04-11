@@ -1,0 +1,13 @@
+exposure_family,tertile,cells,eligible_weight_sum,weighted_exit_rate,weighted_exit_to_uninsured_rate
+procedural_friction,high,68,55550326.73,0.008,0.0029
+procedural_friction,low,68,78057735.07,0.0049,0.003
+procedural_friction,mid,68,143321482.57,0.0089,0.0038
+procedural_friction,high_minus_low,136,133608061.8,0.0031,-0.0001
+renewal_intensity,high,68,195216432.57,0.0074,0.0033
+renewal_intensity,low,68,18490760.53,0.0078,0.003
+renewal_intensity,mid,68,63222351.28,0.0082,0.0038
+renewal_intensity,high_minus_low,136,213707193.1,-0.0004,0.0003
+pending_pressure,high,68,104075968.39,0.0082,0.0045
+pending_pressure,low,68,74940922.98,0.0065,0.0032
+pending_pressure,mid,68,97912653.01,0.0078,0.0024
+pending_pressure,high_minus_low,136,179016891.37,0.0017,0.0013

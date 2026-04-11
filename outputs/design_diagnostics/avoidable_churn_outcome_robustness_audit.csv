@@ -1,0 +1,31 @@
+dataset,reference_year,window,outcome,label,outcome_kind,support_rows,support_weight,event_weight,event_rate_weighted
+SIPP,2021,core_aug_oct_2023,medicaid_exit_to_uninsured_next,"pure Medicaid at t, uninsured at t+1",harm,24332,204423648.75,241230.07,0.00118
+SIPP,2021,mature_jun_oct_2023,medicaid_exit_to_uninsured_next,"pure Medicaid at t, uninsured at t+1",harm,40496,339977970.11,512668.07,0.001508
+SIPP,2022,core_aug_oct_2023,medicaid_exit_to_uninsured_next,"pure Medicaid at t, uninsured at t+1",harm,23847,211764312.01,215271.78,0.001017
+SIPP,2022,mature_jun_oct_2023,medicaid_exit_to_uninsured_next,"pure Medicaid at t, uninsured at t+1",harm,39743,352408419.79,438698.73,0.001245
+SIPP,2023,core_aug_oct_2023,medicaid_exit_to_uninsured_next,"pure Medicaid at t, uninsured at t+1",harm,21847,208140509.34,661391.55,0.003178
+SIPP,2023,mature_jun_oct_2023,medicaid_exit_to_uninsured_next,"pure Medicaid at t, uninsured at t+1",harm,36511,347929963.5,1237137.61,0.003556
+SIPP,2021,core_aug_oct_2023,persistent_uninsured_h2,"pure Medicaid at t, uninsured at t+1 and t+2",harm,24298,203988478.46,237952.4,0.001166
+SIPP,2021,mature_jun_oct_2023,persistent_uninsured_h2,"pure Medicaid at t, uninsured at t+1 and t+2",harm,40432,339228094.01,503897.49,0.001485
+SIPP,2022,core_aug_oct_2023,persistent_uninsured_h2,"pure Medicaid at t, uninsured at t+1 and t+2",harm,23805,211278526.99,215271.78,0.001019
+SIPP,2022,mature_jun_oct_2023,persistent_uninsured_h2,"pure Medicaid at t, uninsured at t+1 and t+2",harm,39648,351362042.49,429135.87,0.001221
+SIPP,2023,core_aug_oct_2023,persistent_uninsured_h2,"pure Medicaid at t, uninsured at t+1 and t+2",harm,21794,207450502.08,608482.22,0.002933
+SIPP,2023,mature_jun_oct_2023,persistent_uninsured_h2,"pure Medicaid at t, uninsured at t+1 and t+2",harm,36420,346768954.88,1161549.67,0.00335
+SIPP,2021,core_aug_oct_2023,broad_exit_persistent_uninsured_h2,"broad Medicaid exit at t+1, uninsured at t+2",harm,24298,203988478.46,237952.4,0.001166
+SIPP,2021,mature_jun_oct_2023,broad_exit_persistent_uninsured_h2,"broad Medicaid exit at t+1, uninsured at t+2",harm,40432,339228094.01,503897.49,0.001485
+SIPP,2022,core_aug_oct_2023,broad_exit_persistent_uninsured_h2,"broad Medicaid exit at t+1, uninsured at t+2",harm,23805,211278526.99,215271.78,0.001019
+SIPP,2022,mature_jun_oct_2023,broad_exit_persistent_uninsured_h2,"broad Medicaid exit at t+1, uninsured at t+2",harm,39648,351362042.49,429135.87,0.001221
+SIPP,2023,core_aug_oct_2023,broad_exit_persistent_uninsured_h2,"broad Medicaid exit at t+1, uninsured at t+2",harm,21794,207450502.08,619046.64,0.002984
+SIPP,2023,mature_jun_oct_2023,broad_exit_persistent_uninsured_h2,"broad Medicaid exit at t+1, uninsured at t+2",harm,36420,346768954.88,1172114.09,0.00338
+SIPP,2021,core_aug_oct_2023,persistent_uninsured_h3,"pure Medicaid at t, uninsured through t+3",harm,16162,135609981.19,109540.79,0.000808
+SIPP,2021,mature_jun_oct_2023,persistent_uninsured_h3,"pure Medicaid at t, uninsured through t+3",harm,32274,270532516.37,375485.87,0.001388
+SIPP,2022,core_aug_oct_2023,persistent_uninsured_h3,"pure Medicaid at t, uninsured through t+3",harm,15849,140662275.45,149684.98,0.001064
+SIPP,2022,mature_jun_oct_2023,persistent_uninsured_h3,"pure Medicaid at t, uninsured through t+3",harm,31675,280556108.82,363549.07,0.001296
+SIPP,2023,core_aug_oct_2023,persistent_uninsured_h3,"pure Medicaid at t, uninsured through t+3",harm,14519,138213910.95,368727.62,0.002668
+SIPP,2023,mature_jun_oct_2023,persistent_uninsured_h3,"pure Medicaid at t, uninsured through t+3",harm,29115,277193605.53,921795.07,0.003325
+SIPP,2021,core_aug_oct_2023,broad_exit_resolved_insured_h2,"broad Medicaid exit at t+1, insured by t+2",contrast,24298,203988478.46,296964.12,0.001456
+SIPP,2021,mature_jun_oct_2023,broad_exit_resolved_insured_h2,"broad Medicaid exit at t+1, insured by t+2",contrast,40432,339228094.01,470690.08,0.001388
+SIPP,2022,core_aug_oct_2023,broad_exit_resolved_insured_h2,"broad Medicaid exit at t+1, insured by t+2",contrast,23805,211278526.99,459491.98,0.002175
+SIPP,2022,mature_jun_oct_2023,broad_exit_resolved_insured_h2,"broad Medicaid exit at t+1, insured by t+2",contrast,39648,351362042.49,787555.61,0.002241
+SIPP,2023,core_aug_oct_2023,broad_exit_resolved_insured_h2,"broad Medicaid exit at t+1, insured by t+2",contrast,21794,207450502.08,1042199.98,0.005024
+SIPP,2023,mature_jun_oct_2023,broad_exit_resolved_insured_h2,"broad Medicaid exit at t+1, insured by t+2",contrast,36420,346768954.88,1534665.41,0.004426

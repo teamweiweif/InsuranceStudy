@@ -1,0 +1,38 @@
+# Large or locally staged data
+data/
+archive/
+reference/external/
+
+# Generated binary/intermediate artifacts
+*.parquet
+*.rds
+*.RData
+*.rda
+*.zip
+*.dta
+*.ssp
+*.sas7bdat
+
+# Python cache/runtime files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# R session/runtime files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Bulky diagnostic cell-level outputs kept locally, not in git
+outputs/**/*state_month_cells.csv
+outputs/**/*state_week_cells.csv
+outputs/**/unwinding_state_month_transition_cells.csv
+outputs/**/second_round_unwinding_state_month_cells.csv
+outputs/**/avoidable_churn_state_month_cells.csv
+outputs/**/avoidable_churn_round3_state_month_cells.csv
+outputs/rdd_pooled_2002_2017/tables/cate_predictions.csv
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini

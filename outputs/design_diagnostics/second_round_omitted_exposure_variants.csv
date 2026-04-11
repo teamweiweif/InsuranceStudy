@@ -1,0 +1,2 @@
+exposure_variant,family,reason
+renewal_due_rate,renewal_workload_burden,"Not added because the staged CMS updated-renewal files do not expose a clean, shared denominator for a stable renewal-due rate beyond the raw count itself."

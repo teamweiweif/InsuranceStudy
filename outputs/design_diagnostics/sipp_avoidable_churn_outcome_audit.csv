@@ -1,0 +1,46 @@
+dataset,reference_year,window,outcome,role,description,rows_total_window,eligible_rows_h2,eligible_weight_h2,event_rows,event_weight,event_rate_weighted,keep_for_burden_round
+SIPP,2021,core_aug_oct_h2,persistent_uninsured_h2,main_harm,"Pure Medicaid at t, uninsured at t+1, still uninsured at t+2.",121460,24298,203988478.46,20,237952.4,0.001166,True
+SIPP,2021,core_aug_oct_h2,uninsured_gap_resolved_h2,resolved_gap,"Pure Medicaid at t, uninsured at t+1, insured by t+2.",121460,24298,203988478.46,1,3277.67,1.6e-05,False
+SIPP,2021,core_aug_oct_h2,broad_exit_resolved_insured_h2,resolution_contrast,"Broad Medicaid exit at t+1, insured by t+2.",121460,24298,203988478.46,34,296964.12,0.001456,True
+SIPP,2021,core_aug_oct_h2,broad_exit_persistent_uninsured_h2,harmful_broad_exit,"Broad Medicaid exit at t+1, uninsured at t+2.",121460,24298,203988478.46,20,237952.4,0.001166,True
+SIPP,2021,core_aug_oct_h2,broad_exit_to_private_h2,private_resolution,"Broad Medicaid exit at t+1, private coverage by t+2.",121460,24298,203988478.46,30,256191.55,0.001256,True
+SIPP,2021,core_aug_oct_h2,broad_exit_to_public_h2,public_resolution,"Broad Medicaid exit at t+1, public coverage by t+2.",121460,24298,203988478.46,6,55921.97,0.000274,False
+SIPP,2021,core_aug_oct_h2,broad_exit_back_to_medicaid_h2,literal_return,"Broad Medicaid exit at t+1, pure Medicaid again by t+2.",121460,24298,203988478.46,1,3277.67,1.6e-05,False
+SIPP,2021,mature_jun_oct_h2,persistent_uninsured_h2,main_harm,"Pure Medicaid at t, uninsured at t+1, still uninsured at t+2.",202507,40432,339228094.01,39,503897.49,0.001485,True
+SIPP,2021,mature_jun_oct_h2,uninsured_gap_resolved_h2,resolved_gap,"Pure Medicaid at t, uninsured at t+1, insured by t+2.",202507,40432,339228094.01,3,8770.57,2.6e-05,False
+SIPP,2021,mature_jun_oct_h2,broad_exit_resolved_insured_h2,resolution_contrast,"Broad Medicaid exit at t+1, insured by t+2.",202507,40432,339228094.01,59,470690.08,0.001388,True
+SIPP,2021,mature_jun_oct_h2,broad_exit_persistent_uninsured_h2,harmful_broad_exit,"Broad Medicaid exit at t+1, uninsured at t+2.",202507,40432,339228094.01,39,503897.49,0.001485,True
+SIPP,2021,mature_jun_oct_h2,broad_exit_to_private_h2,private_resolution,"Broad Medicaid exit at t+1, private coverage by t+2.",202507,40432,339228094.01,49,404236.87,0.001192,True
+SIPP,2021,mature_jun_oct_h2,broad_exit_to_public_h2,public_resolution,"Broad Medicaid exit at t+1, public coverage by t+2.",202507,40432,339228094.01,12,81602.62,0.000241,False
+SIPP,2021,mature_jun_oct_h2,broad_exit_back_to_medicaid_h2,literal_return,"Broad Medicaid exit at t+1, pure Medicaid again by t+2.",202507,40432,339228094.01,3,8770.57,2.6e-05,False
+SIPP,2021,annual_support,eligible_medicaid_transition_h2,support,Rows eligible for h2-based churn outcomes.,486618,80743,675983701.22,80743,675983701.22,0.171772,False
+SIPP,2022,core_aug_oct_h2,persistent_uninsured_h2,main_harm,"Pure Medicaid at t, uninsured at t+1, still uninsured at t+2.",118561,23805,211278526.99,19,215271.78,0.001019,True
+SIPP,2022,core_aug_oct_h2,uninsured_gap_resolved_h2,resolved_gap,"Pure Medicaid at t, uninsured at t+1, insured by t+2.",118561,23805,211278526.99,0,0.0,0.0,False
+SIPP,2022,core_aug_oct_h2,broad_exit_resolved_insured_h2,resolution_contrast,"Broad Medicaid exit at t+1, insured by t+2.",118561,23805,211278526.99,49,459491.98,0.002175,True
+SIPP,2022,core_aug_oct_h2,broad_exit_persistent_uninsured_h2,harmful_broad_exit,"Broad Medicaid exit at t+1, uninsured at t+2.",118561,23805,211278526.99,19,215271.78,0.001019,True
+SIPP,2022,core_aug_oct_h2,broad_exit_to_private_h2,private_resolution,"Broad Medicaid exit at t+1, private coverage by t+2.",118561,23805,211278526.99,42,411443.61,0.001947,True
+SIPP,2022,core_aug_oct_h2,broad_exit_to_public_h2,public_resolution,"Broad Medicaid exit at t+1, public coverage by t+2.",118561,23805,211278526.99,9,65673.56,0.000311,False
+SIPP,2022,core_aug_oct_h2,broad_exit_back_to_medicaid_h2,literal_return,"Broad Medicaid exit at t+1, pure Medicaid again by t+2.",118561,23805,211278526.99,0,0.0,0.0,False
+SIPP,2022,mature_jun_oct_h2,persistent_uninsured_h2,main_harm,"Pure Medicaid at t, uninsured at t+1, still uninsured at t+2.",197772,39648,351362042.49,39,429135.87,0.001221,True
+SIPP,2022,mature_jun_oct_h2,uninsured_gap_resolved_h2,resolved_gap,"Pure Medicaid at t, uninsured at t+1, insured by t+2.",197772,39648,351362042.49,0,0.0,0.0,False
+SIPP,2022,mature_jun_oct_h2,broad_exit_resolved_insured_h2,resolution_contrast,"Broad Medicaid exit at t+1, insured by t+2.",197772,39648,351362042.49,82,787555.61,0.002241,True
+SIPP,2022,mature_jun_oct_h2,broad_exit_persistent_uninsured_h2,harmful_broad_exit,"Broad Medicaid exit at t+1, uninsured at t+2.",197772,39648,351362042.49,39,429135.87,0.001221,True
+SIPP,2022,mature_jun_oct_h2,broad_exit_to_private_h2,private_resolution,"Broad Medicaid exit at t+1, private coverage by t+2.",197772,39648,351362042.49,66,659543.31,0.001877,True
+SIPP,2022,mature_jun_oct_h2,broad_exit_to_public_h2,public_resolution,"Broad Medicaid exit at t+1, public coverage by t+2.",197772,39648,351362042.49,20,183171.29,0.000521,False
+SIPP,2022,mature_jun_oct_h2,broad_exit_back_to_medicaid_h2,literal_return,"Broad Medicaid exit at t+1, pure Medicaid again by t+2.",197772,39648,351362042.49,0,0.0,0.0,False
+SIPP,2022,annual_support,eligible_medicaid_transition_h2,support,Rows eligible for h2-based churn outcomes.,475772,79552,702348131.78,79552,702348131.78,0.173162,False
+SIPP,2023,core_aug_oct_h2,persistent_uninsured_h2,main_harm,"Pure Medicaid at t, uninsured at t+1, still uninsured at t+2.",108777,21794,207450502.08,64,608482.22,0.002933,True
+SIPP,2023,core_aug_oct_h2,uninsured_gap_resolved_h2,resolved_gap,"Pure Medicaid at t, uninsured at t+1, insured by t+2.",108777,21794,207450502.08,3,52909.33,0.000255,False
+SIPP,2023,core_aug_oct_h2,broad_exit_resolved_insured_h2,resolution_contrast,"Broad Medicaid exit at t+1, insured by t+2.",108777,21794,207450502.08,75,1042199.98,0.005024,True
+SIPP,2023,core_aug_oct_h2,broad_exit_persistent_uninsured_h2,harmful_broad_exit,"Broad Medicaid exit at t+1, uninsured at t+2.",108777,21794,207450502.08,65,619046.64,0.002984,True
+SIPP,2023,core_aug_oct_h2,broad_exit_to_private_h2,private_resolution,"Broad Medicaid exit at t+1, private coverage by t+2.",108777,21794,207450502.08,61,909940.78,0.004386,True
+SIPP,2023,core_aug_oct_h2,broad_exit_to_public_h2,public_resolution,"Broad Medicaid exit at t+1, public coverage by t+2.",108777,21794,207450502.08,20,202569.66,0.000976,False
+SIPP,2023,core_aug_oct_h2,broad_exit_back_to_medicaid_h2,literal_return,"Broad Medicaid exit at t+1, pure Medicaid again by t+2.",108777,21794,207450502.08,1,14477.55,7e-05,False
+SIPP,2023,mature_jun_oct_h2,persistent_uninsured_h2,main_harm,"Pure Medicaid at t, uninsured at t+1, still uninsured at t+2.",181422,36420,346768954.88,112,1161549.67,0.00335,True
+SIPP,2023,mature_jun_oct_h2,uninsured_gap_resolved_h2,resolved_gap,"Pure Medicaid at t, uninsured at t+1, insured by t+2.",181422,36420,346768954.88,4,75587.94,0.000218,False
+SIPP,2023,mature_jun_oct_h2,broad_exit_resolved_insured_h2,resolution_contrast,"Broad Medicaid exit at t+1, insured by t+2.",181422,36420,346768954.88,121,1534665.41,0.004426,True
+SIPP,2023,mature_jun_oct_h2,broad_exit_persistent_uninsured_h2,harmful_broad_exit,"Broad Medicaid exit at t+1, uninsured at t+2.",181422,36420,346768954.88,113,1172114.09,0.00338,True
+SIPP,2023,mature_jun_oct_h2,broad_exit_to_private_h2,private_resolution,"Broad Medicaid exit at t+1, private coverage by t+2.",181422,36420,346768954.88,99,1313990.8,0.003789,True
+SIPP,2023,mature_jun_oct_h2,broad_exit_to_public_h2,public_resolution,"Broad Medicaid exit at t+1, public coverage by t+2.",181422,36420,346768954.88,33,333648.48,0.000962,False
+SIPP,2023,mature_jun_oct_h2,broad_exit_back_to_medicaid_h2,literal_return,"Broad Medicaid exit at t+1, pure Medicaid again by t+2.",181422,36420,346768954.88,1,14477.55,4.2e-05,False
+SIPP,2023,annual_support,eligible_medicaid_transition_h2,support,Rows eligible for h2-based churn outcomes.,436237,73774,701525473.14,73774,701525473.14,0.175079,False

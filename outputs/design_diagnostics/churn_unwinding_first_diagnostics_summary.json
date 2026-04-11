@@ -1,0 +1,32 @@
+{
+  "yearly_support_csv": "outputs/design_diagnostics/yearly_churn_support_summary.csv",
+  "state_month_cells_csv": "outputs/design_diagnostics/unwinding_state_month_transition_cells.csv",
+  "support_window_csv": "outputs/design_diagnostics/unwinding_window_support_summary.csv",
+  "timing_csv": "outputs/design_diagnostics/unwinding_timing_sensitivity_summary.csv",
+  "mechanism_csv": "outputs/design_diagnostics/unwinding_mechanism_screen_summary.csv",
+  "support_md": "outputs/design_diagnostics/churn_unwinding_support_audit.md",
+  "timing_md": "outputs/design_diagnostics/churn_unwinding_timing_sensitivity.md",
+  "mechanism_md": "outputs/design_diagnostics/churn_unwinding_mechanism_screen.md",
+  "core_window_months": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "extended_window_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "exposure_map": {
+    "procedural_friction": "cms_updated_procedural_share_of_terminated",
+    "renewal_intensity": "cms_updated_renewal_due_n",
+    "pending_pressure": "cms_updated_pending_rate"
+  }
+}

@@ -1,0 +1,7 @@
+dataset,reference_year,window,exposure_variant,alignment,outcome,support_rows,support_weight,estimate_or_contrast,direction_flag,notes
+HPS,2023,weeks_60_63_end_month_mapping,backlog_automation_rank_index,same,current_medicaid_rate,204,791184006.97,-0.1963,expected,weighted_state_week_correlation
+HPS,2023,weeks_60_63_end_month_mapping,backlog_automation_rank_index,same,current_medicaid_rate,204,791184006.97,-0.018,expected,high_minus_low_exposure_tertile
+HPS,2023,weeks_60_63_end_month_mapping,backlog_automation_rank_index,same,uninsured_rate,204,791184006.97,0.2391,expected,weighted_state_week_correlation
+HPS,2023,weeks_60_63_end_month_mapping,backlog_automation_rank_index,same,uninsured_rate,204,791184006.97,0.0136,expected,high_minus_low_exposure_tertile
+HPS,2023,weeks_60_63_end_month_mapping,backlog_automation_rank_index,same,public_coverage_rate,204,791184006.97,-0.2448,expected,weighted_state_week_correlation
+HPS,2023,weeks_60_63_end_month_mapping,backlog_automation_rank_index,same,public_coverage_rate,204,791184006.97,-0.0206,expected,high_minus_low_exposure_tertile

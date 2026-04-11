@@ -1,0 +1,26 @@
+{
+  "metrics_csv": "outputs\\design_diagnostics\\risk_prediction_pilot_metrics.csv",
+  "deciles_csv": "outputs\\design_diagnostics\\risk_prediction_pilot_calibration_by_decile.csv",
+  "group_calibration_csv": "outputs\\design_diagnostics\\risk_prediction_pilot_group_calibration.csv",
+  "pilot_md": "outputs\\design_diagnostics\\risk_prediction_pilot.md",
+  "retained_feature_families": [
+    "age_band",
+    "female_group",
+    "foreign_born_group",
+    "household_child_group",
+    "noncitizen_group",
+    "pov_band",
+    "snap_group"
+  ],
+  "train_reference_years": [
+    2021,
+    2022
+  ],
+  "test_reference_year": 2023,
+  "core_months": [
+    8,
+    9,
+    10,
+    11
+  ]
+}

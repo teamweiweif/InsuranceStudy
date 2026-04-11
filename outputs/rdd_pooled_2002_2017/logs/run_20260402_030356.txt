@@ -1,0 +1,315 @@
+================================================================================ 
+Medicare@65 Pooled RDD + Causal ML (2002-2017)
+Started: 2026-04-02 03:03:56.780304
+================================================================================ 
+
+STEP 1: Loading 2002-2017 data...
+  Loading cached dataset...
+  Loaded: 92,804 obs
+
+Pooled: 92,804 obs, Below 65: 56829, At/above 65: 35975
+
+STEP 2: Defining variables...
+  Outcomes available: 14
+    TOTSLF: 92804 valid (100%)
+    log_totslf: 92804 valid (100%)
+    TOTEXP: 92804 valid (100%)
+    cat_oop10: 66737 valid (72%)
+    cat_oop05: 66737 valid (72%)
+    y_dlayca42: 91193 valid (98%)
+    y_afrdca42: 91207 valid (98%)
+    y_dlaypm42: 91158 valid (98%)
+    y_afrdpm42: 91174 valid (98%)
+    OBTOTV: 92804 valid (100%)
+    ERTOT: 92804 valid (100%)
+    IPDIS: 92804 valid (100%)
+    RXTOT: 92804 valid (100%)
+    y_haveus: 89616 valid (97%)
+  ✓ SEX: 100% valid
+  ✓ HISPANX: 100% valid
+  ✓ MARRY: 100% valid
+  ✓ REGION: 100% valid
+  ✓ POVCAT: 100% valid
+  ✓ EMPST42: 100% valid
+  ✓ RTHLTH42: 100% valid
+  ✓ MNHLTH42: 100% valid
+  ✓ EDUCYR: 76% valid
+  ✓ chronic_count: 100% valid
+  ✗ RACETHX: 42% valid (dropped)
+  ✓ post_aca: 100% valid
+  ✓ YEAR: 100% valid
+
+  Final HTE covariates: 12 variables
+
+STEP 3: Descriptive statistics...
+        era z_age65     N pct_female mean_age pct_poor mean_totslf mean_totexp
+     <char>   <int> <int>      <num>    <num>    <num>       <num>       <num>
+1:  pre_aca       0 41204   53.69382 58.98374 18.16571    946.1279    6021.365
+2:  pre_aca       1 25553   55.50425 68.14155 21.71174   1045.2936    7896.672
+3: post_aca       0 15625   54.36160 59.10630 19.81440    821.1952    7759.983
+4: post_aca       1 10422   54.36576 68.29956 19.91940    941.3556    9895.176
+   pct_delay mean_office   pct_er pct_medicare
+       <num>       <num>    <num>        <num>
+1:  5.193495    6.936851 13.48170     11.02806
+2:  3.227488    9.098892 16.71428     97.62846
+3:  5.294614    7.461312 15.68640     14.00320
+4:  4.387425   10.513721 18.01957     97.54366
+
+STEP 4: First stage...
+  all: FS=0.5318 (SE=0.0065, p=0.0000), N=24904+20425
+  pre_aca: FS=0.5377 (SE=0.0076, p=0.0000), N=17968+14310
+  post_aca: FS=0.5179 (SE=0.0123, p=0.0000), N=6936+6115
+[1] "Mass points detected in the running variable."
+null device 
+          1 
+
+STEP 5: Main RD estimates...
+  TOTSLF (n=92804)... RF=-153.7647 (p=0.000), FRD=-289.1367 (p=0.000)
+[1] "Mass points detected in the running variable."
+  log_totslf (n=92804)... RF=-0.1086 (p=0.026), FRD=-0.2042 (p=0.027)
+[1] "Mass points detected in the running variable."
+  TOTEXP (n=92804)... RF=-372.6296 (p=0.266), FRD=-700.6867 (p=0.266)
+[1] "Mass points detected in the running variable."
+  cat_oop10 (n=66737)... RF=-0.0053 (p=0.392), FRD=-0.0101 (p=0.393)
+[1] "Mass points detected in the running variable."
+  cat_oop05 (n=66737)... RF=-0.0320 (p=0.000), FRD=-0.0607 (p=0.000)
+[1] "Mass points detected in the running variable."
+  y_dlayca42 (n=91193)... RF=0.0012 (p=0.775), FRD=0.0023 (p=0.775)
+[1] "Mass points detected in the running variable."
+  y_afrdca42 (n=91207)... RF=-0.0070 (p=0.043), FRD=-0.0131 (p=0.043)
+[1] "Mass points detected in the running variable."
+  y_dlaypm42 (n=91158)... RF=0.0008 (p=0.850), FRD=0.0015 (p=0.850)
+[1] "Mass points detected in the running variable."
+  y_afrdpm42 (n=91174)... RF=-0.0049 (p=0.163), FRD=-0.0091 (p=0.163)
+[1] "Mass points detected in the running variable."
+  OBTOTV (n=92804)... RF=0.3488 (p=0.201), FRD=0.6560 (p=0.201)
+[1] "Mass points detected in the running variable."
+  ERTOT (n=92804)... RF=0.0054 (p=0.679), FRD=0.0101 (p=0.679)
+[1] "Mass points detected in the running variable."
+  IPDIS (n=92804)... RF=0.0039 (p=0.722), FRD=0.0074 (p=0.722)
+[1] "Mass points detected in the running variable."
+  RXTOT (n=92804)... RF=-0.4581 (p=0.455), FRD=-0.8614 (p=0.456)
+[1] "Mass points detected in the running variable."
+  y_haveus (n=89616)... RF=0.0111 (p=0.097), FRD=0.0206 (p=0.096)
+[1] "Mass points detected in the running variable."
+
+  --- pre_aca ---
+  TOTSLF: FRD=-256.9896 (p=0.002)
+  log_totslf: FRD=-0.1057 (p=0.319)
+  TOTEXP: FRD=-456.1612 (p=0.479)
+  cat_oop10: FRD=0.0020 (p=0.897)
+  cat_oop05: FRD=-0.0514 (p=0.015)
+  y_dlayca42: FRD=-0.0094 (p=0.295)
+  y_afrdca42: FRD=-0.0114 (p=0.142)
+  y_dlaypm42: FRD=-0.0026 (p=0.783)
+  y_afrdpm42: FRD=-0.0152 (p=0.048)
+  OBTOTV: FRD=1.1568 (p=0.049)
+  ERTOT: FRD=0.0550 (p=0.046)
+  IPDIS: FRD=-0.0041 (p=0.871)
+  RXTOT: FRD=0.7579 (p=0.564)
+  y_haveus: FRD=0.0192 (p=0.181)
+
+  --- post_aca ---
+  TOTSLF: FRD=-375.2509 (p=0.008)
+  log_totslf: FRD=-0.4758 (p=0.009)
+  TOTEXP: FRD=-1258.3376 (p=0.406)
+  cat_oop10: FRD=-0.0300 (p=0.104)
+  cat_oop05: FRD=-0.0763 (p=0.002)
+  y_dlayca42: FRD=0.0323 (p=0.050)
+  y_afrdca42: FRD=-0.0175 (p=0.144)
+  y_dlaypm42: FRD=0.0122 (p=0.442)
+  y_afrdpm42: FRD=0.0064 (p=0.607)
+  OBTOTV: FRD=-0.5731 (p=0.581)
+  ERTOT: FRD=-0.1042 (p=0.041)
+  IPDIS: FRD=0.0356 (p=0.335)
+  RXTOT: FRD=-5.1068 (p=0.031)
+  y_haveus: FRD=0.0235 (p=0.329)
+
+  -> 42 estimates saved
+
+STEP 6: Validity checks...
+  Density test p-value: 0.5957
+  Balance SEX: coef=0.0252 (p=0.014)
+  Balance HISPANX: coef=0.0070 (p=0.343)
+  Balance MARRY: coef=-0.0215 (p=0.388)
+  Balance POVCAT: coef=0.0752 (p=0.008)
+  Balance EMPST42: coef=0.0698 (p=0.040)
+  Balance REGION: coef=-0.0023 (p=0.917)
+
+STEP 7: Robustness...
+  Robustness saved
+
+================================================================================ 
+STEP 8: CAUSAL ML — GRF Instrumental Forest
+================================================================================ 
+
+HTE sample (complete cases): 70,827 obs
+  Train (70%): 49578 obs
+  Test  (30%): 21249 obs
+
+  Training instrumental forest (2000 trees)...
+  Training time: 1.7 minutes
+  Predicting CATE on test set...
+  CATE mean: -83.21 (sd: 101.84)
+  CATE range: [-547.61, 187.56]
+
+  Variable importance:
+         variable  importance
+           <char>       <num>
+ 1:        EDUCYR 0.164989125
+ 2: chronic_count 0.150780053
+ 3:          YEAR 0.131517656
+ 4:      RTHLTH42 0.122435563
+ 5:        REGION 0.083086898
+ 6:      MNHLTH42 0.080867068
+ 7:         MARRY 0.074587875
+ 8:        POVCAT 0.073728970
+ 9:       EMPST42 0.072823791
+10:           SEX 0.027487030
+11:      post_aca 0.015330060
+12:       HISPANX 0.002365913
+  BLP summary saved
+
+  CATE by subgroups:
+  By POVCAT:
+   POVCAT  mean_cate       se     n
+    <num>      <num>    <num> <int>
+1:      1  -97.02460 1.856894  3008
+2:      2  -90.31528 2.999925  1130
+3:      3  -89.05545 1.618672  3071
+4:      4 -102.55047 1.368574  5886
+5:      5  -60.96934 1.104705  8154
+  By era:
+        era  mean_cate        se     n
+     <char>      <num>     <num> <int>
+1:  pre_aca  -70.86099 0.8043887 13461
+2: post_aca -104.55724 1.2680555  7788
+  By health status:
+   poor_health  mean_cate        se     n
+        <lgcl>      <num>     <num> <int>
+1:       FALSE  -71.78793 0.7371868 16574
+2:        TRUE -123.70876 1.6742061  4675
+
+  -> GRF complete, model saved
+
+================================================================================ 
+STEP 9: POLICY TARGETING — Policy Tree
+================================================================================ 
+
+  Policy training sample: 49578 obs
+  Policy covariates: SEX, POVCAT, RTHLTH42, REGION, EMPST42, chronic_count, EDUCYR, post_aca
+
+  Fitting depth-2 policy tree...
+  Policy tree (depth 2):
+policy_tree object 
+Tree depth:  2 
+Actions:  1: Gamma 2:  
+Variable splits: 
+(1) split_variable: EDUCYR  split_value: 16 
+  (2) * action: 1 
+  (3) split_variable: EMPST42  split_value: 1 
+    (4) * action: 2 
+    (5) * action: 1 
+
+  Depth-2 results:
+    Targeted value: -90.41
+    Uniform value:  -83.21
+    Improvement:    -7.19
+    Treated share:  94.3%
+
+  Fitting depth-3 policy tree...
+  Policy tree (depth 3, hybrid):
+policy_tree object 
+Tree depth:  3 
+Actions:  1: Gamma 2:  
+Variable splits: 
+(1) split_variable: EDUCYR  split_value: 16 
+  (2) split_variable: chronic_count  split_value: 0 
+    (4) split_variable: EDUCYR  split_value: 13 
+      (8) * action: 1 
+      (9) * action: 2 
+    (5) * action: 1 
+  (3) split_variable: RTHLTH42  split_value: 2 
+    (6) split_variable: EMPST42  split_value: 1 
+      (10) * action: 2 
+      (11) * action: 1 
+    (7) split_variable: chronic_count  split_value: 0 
+      (12) * action: 2 
+      (13) * action: 1 
+
+  Depth-3 results:
+    Targeted value: -99.17
+    Improvement:    -15.96
+    Treated share:  86.6%
+
+  Computing policy value curve...
+  -> Policy targeting complete
+
+================================================================================ 
+STEP 10: HTE for all outcomes
+================================================================================ 
+
+  HTE for TOTSLF...
+    Mean CATE: -88.7139 (sd: 320.2397)
+  HTE for log_totslf...
+    Skipping (all NA)
+  HTE for cat_oop10...
+    Skipping (all NA)
+  HTE for y_dlayca42...
+    Skipping (all NA)
+  HTE for y_afrdca42...
+    Skipping (all NA)
+  HTE for OBTOTV...
+    Skipping (all NA)
+  HTE for ERTOT...
+    Skipping (all NA)
+  HTE for y_haveus...
+    Skipping (all NA)
+
+  HTE summary across outcomes:
+   outcome mean_cate  sd_cate min_cate max_cate pct_negative
+    <char>     <num>    <num>    <num>    <num>        <num>
+1:  TOTSLF -88.71388 320.2397 -5387.44 2554.363      62.2947
+
+================================================================================ 
+ANALYSIS COMPLETE
+================================================================================ 
+
+Completed: 2026-04-02 03:07:11.870632
+Output directory: outputs/rdd_pooled_2002_2017
+
+Output files:
+  figures/cate_distribution.png
+  figures/first_stage.png
+  figures/policy_value_curve.png
+  figures/rd_cat_oop05.png
+  figures/rd_cat_oop10.png
+  figures/rd_ERTOT.png
+  figures/rd_IPDIS.png
+  figures/rd_log_totslf.png
+  figures/rd_OBTOTV.png
+  figures/rd_RXTOT.png
+  figures/rd_TOTEXP.png
+  figures/rd_TOTSLF.png
+  figures/rd_y_afrdca42.png
+  figures/rd_y_afrdpm42.png
+  figures/rd_y_dlayca42.png
+  figures/rd_y_dlaypm42.png
+  figures/rd_y_haveus.png
+  logs/run_20260402_025217.txt
+  logs/run_20260402_030356.txt
+  models/iv_forest.rds
+  models/policy_tree_d2.rds
+  models/policy_tree_d3.rds
+  tables/blp_summary.txt
+  tables/cate_by_health.csv
+  tables/cate_by_povcat.csv
+  tables/cate_predictions.csv
+  tables/covariate_balance.csv
+  tables/density_test.txt
+  tables/descriptive_stats.csv
+  tables/hte_all_outcomes.csv
+  tables/policy_value_curve.csv
+  tables/rd_results.csv
+  tables/robustness.csv
+  tables/var_importance.csv

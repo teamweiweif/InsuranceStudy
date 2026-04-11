@@ -1,0 +1,28 @@
+dataset,reference_year,feature_family,source_column,rows_total,eligible_rows,missing_rate_all,missing_rate_all_weighted,missing_rate_eligible,missing_rate_eligible_weighted,nonmissing_groups_eligible,top_groups_eligible,max_missing_rate_eligible,years_present,min_nonmissing_groups_eligible,retain_for_round2
+SIPP,2021,age_band,age_band,486618,89010,0.0,0.0,0.0,0.0,5,age_0_17; age_26_44; age_45_64; age_65_plus,0.0,3,5,True
+SIPP,2022,age_band,age_band,475772,87733,0.0,0.0,0.0,0.0,5,age_0_17; age_26_44; age_45_64; age_65_plus,0.0,3,5,True
+SIPP,2023,age_band,age_band,436237,81207,0.0,0.0,0.0,0.0,5,age_0_17; age_45_64; age_26_44; age_65_plus,0.0,3,5,True
+SIPP,2021,disability_group,disability_group,486618,89010,0.1585,0.1779,0.3322,0.3556,2,no_disability_limit; disability_limit,0.3322,3,2,False
+SIPP,2022,disability_group,disability_group,475772,87733,0.1494,0.1762,0.3121,0.3407,2,no_disability_limit; disability_limit,0.3322,3,2,False
+SIPP,2023,disability_group,disability_group,436237,81207,0.1487,0.1728,0.297,0.3226,2,no_disability_limit; disability_limit,0.3322,3,2,False
+SIPP,2021,employed_group,employed_group,486618,89010,0.1554,0.1748,0.3273,0.3512,2,not_employed; employed,0.3273,3,2,False
+SIPP,2022,employed_group,employed_group,475772,87733,0.1457,0.172,0.3049,0.3331,2,not_employed; employed,0.3273,3,2,False
+SIPP,2023,employed_group,employed_group,436237,81207,0.1454,0.1691,0.29,0.3157,2,not_employed; employed,0.3273,3,2,False
+SIPP,2021,female_group,female_group,486618,89010,0.0,0.0,0.0,0.0,2,female; male,0.0,3,2,True
+SIPP,2022,female_group,female_group,475772,87733,0.0,0.0,0.0,0.0,2,female; male,0.0,3,2,True
+SIPP,2023,female_group,female_group,436237,81207,0.0,0.0,0.0,0.0,2,female; male,0.0,3,2,True
+SIPP,2021,foreign_born_group,foreign_born_group,486618,89010,0.0,0.0,0.0,0.0,2,us_born; foreign_born,0.0,3,2,True
+SIPP,2022,foreign_born_group,foreign_born_group,475772,87733,0.0,0.0,0.0,0.0,2,us_born; foreign_born,0.0,3,2,True
+SIPP,2023,foreign_born_group,foreign_born_group,436237,81207,0.0,0.0,0.0,0.0,2,us_born; foreign_born,0.0,3,2,True
+SIPP,2021,household_child_group,household_child_group,486618,89010,0.0,0.0,0.0,0.0,2,household_has_child; household_no_child,0.0,3,2,True
+SIPP,2022,household_child_group,household_child_group,475772,87733,0.0,0.0,0.0,0.0,2,household_has_child; household_no_child,0.0,3,2,True
+SIPP,2023,household_child_group,household_child_group,436237,81207,0.0,0.0,0.0,0.0,2,household_has_child; household_no_child,0.0,3,2,True
+SIPP,2021,noncitizen_group,noncitizen_group,486618,89010,0.0,0.0,0.0,0.0,2,citizen; noncitizen,0.0,3,2,True
+SIPP,2022,noncitizen_group,noncitizen_group,475772,87733,0.0,0.0,0.0,0.0,2,citizen; noncitizen,0.0,3,2,True
+SIPP,2023,noncitizen_group,noncitizen_group,436237,81207,0.0,0.0,0.0,0.0,2,citizen; noncitizen,0.0,3,2,True
+SIPP,2021,pov_band,pov_band,486618,89010,0.0016,0.0019,0.0057,0.0065,4,pov_lt_1; pov_1_2; pov_2_4; pov_4_plus,0.0057,3,4,True
+SIPP,2022,pov_band,pov_band,475772,87733,0.0012,0.0017,0.0035,0.0053,4,pov_lt_1; pov_1_2; pov_2_4; pov_4_plus,0.0057,3,4,True
+SIPP,2023,pov_band,pov_band,436237,81207,0.0011,0.0014,0.004,0.0037,4,pov_lt_1; pov_1_2; pov_2_4; pov_4_plus,0.0057,3,4,True
+SIPP,2021,snap_group,snap_group,486618,89010,0.0008,0.0,0.0016,0.0,2,snap_no; snap_yes,0.0016,3,2,True
+SIPP,2022,snap_group,snap_group,475772,87733,0.0005,0.0,0.0009,0.0,2,snap_no; snap_yes,0.0016,3,2,True
+SIPP,2023,snap_group,snap_group,436237,81207,0.0007,0.0,0.001,0.0,2,snap_no; snap_yes,0.0016,3,2,True

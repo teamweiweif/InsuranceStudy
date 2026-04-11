@@ -1,0 +1,50 @@
+MEPS FYC Multi-Year Variable Harmonization Report
+================================================================================ 
+Generated: 2026-04-02 02:12:35.77445
+Years covered: 1996-2023 (28 years)
+
+SUMMARY OF FINDINGS
+-------------------------------------------------------------------------------- 
+
+1. VARIABLE AVAILABILITY
+   See: variable_availability.csv
+   See: availability_summary.csv
+
+2. CODING CONSISTENCY
+   ✓ SEX: Consistent
+   ✓ INSCOV: Consistent
+   ✓ UNINS: Consistent
+   ✓ PRVEV: Consistent
+   ✓ MCREV: Consistent
+   ✓ MCDEV: Consistent
+   ✓ DLAYCA42: Consistent
+   ✓ AFRDCA42: Consistent
+   ✓ HAVEUS42: Consistent
+   ✓ POVCAT: Consistent
+   ✓ REGION: Consistent
+   ✓ EMPST42: Consistent
+
+3. DISTRIBUTION STABILITY
+   TOTSLF: mean range [322, 1021]
+   TOTEXP: mean range [1896, 8422]
+   RXSLF: mean range [99, 250]
+   OBTOTV: mean range [4, 7]
+   ERTOT: mean range [0, 0]
+
+RECOMMENDATIONS FOR POOLED ANALYSIS
+-------------------------------------------------------------------------------- 
+
+1. Variables safe to pool (consistent coding + stable distribution):
+   - Check individual variable reports
+
+2. Variables needing recoding:
+   - Check coding_*.csv files for inconsistencies
+
+3. Variables needing inflation adjustment:
+   - All spending variables (TOTSLF, TOTEXP, RXSLF, etc.)
+   - Use CPI-U medical care component
+
+4. Variables with limited availability:
+   - Check availability_summary.csv for <80% coverage
+   - Consider dropping or using only subset of years
+

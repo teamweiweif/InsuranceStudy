@@ -1,0 +1,17 @@
+feature_family,outcome,groups_compared,pre_top_group,unwinding_top_group,spearman_rank_corr,top_group_match,stable_flag
+age_band,medicaid_exit_next,5,age_18_25,age_18_25,0.7,True,True
+age_band,medicaid_exit_to_uninsured_next,5,age_26_44,age_18_25,0.6,False,False
+female_group,medicaid_exit_next,2,male,male,1.0,True,True
+female_group,medicaid_exit_to_uninsured_next,2,female,male,-1.0,False,False
+foreign_born_group,medicaid_exit_next,2,foreign_born,us_born,-1.0,False,False
+foreign_born_group,medicaid_exit_to_uninsured_next,2,foreign_born,us_born,-1.0,False,False
+household_child_group,medicaid_exit_next,2,household_no_child,household_has_child,-1.0,False,False
+household_child_group,medicaid_exit_to_uninsured_next,2,household_has_child,household_has_child,1.0,True,True
+noncitizen_group,medicaid_exit_next,2,citizen,citizen,1.0,True,True
+noncitizen_group,medicaid_exit_to_uninsured_next,2,citizen,noncitizen,-1.0,False,False
+pov_band,medicaid_exit_next,4,pov_2_4,pov_2_4,1.0,True,True
+pov_band,medicaid_exit_to_uninsured_next,4,pov_2_4,pov_2_4,0.2,True,False
+snap_group,medicaid_exit_next,2,snap_no,snap_no,1.0,True,True
+snap_group,medicaid_exit_to_uninsured_next,2,snap_no,snap_no,1.0,True,True
+state_baseline_tertile,medicaid_exit_next,3,high,mid,-0.5,False,False
+state_baseline_tertile,medicaid_exit_to_uninsured_next,3,high,mid,-0.5,False,False

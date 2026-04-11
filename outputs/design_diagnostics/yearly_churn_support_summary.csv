@@ -1,0 +1,4 @@
+reference_year,source,rows,persons,eligible_medicaid_transition_rows,weighted_eligible_transition_sum,weighted_medicaid_exit_rate,weighted_exit_to_uninsured_rate
+2021,2022 release corrected pilot,486618,41040,89010,745757305.63,0.0033,0.0014
+2022,2023 release corrected pilot,475772,40245,87733,775530922.51,0.0044,0.0016
+2023,2024 release merged prototype,436237,36901,81207,772917077.33,0.0078,0.0035

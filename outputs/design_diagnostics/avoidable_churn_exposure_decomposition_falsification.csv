@@ -1,0 +1,6 @@
+exposure_variant,alignment,outcome,pre_2021_contrast,pre_2022_contrast,unwinding_2023_contrast,max_pre_abs_contrast,falsification_pass_outcome
+pending_rate,same,persistent_uninsured_h2,-0.0007,-0.0005,0.0027,0.0007,True
+ex_parte_renewal_rate,same,persistent_uninsured_h2,-0.0015,-0.0009,-0.0018,0.0015,True
+backlog_automation_index,same,persistent_uninsured_h2,0.0009,0.0007,0.0016,0.0009,True
+backlog_automation_rank_index,same,persistent_uninsured_h2,0.0006,0.0006,0.0017,0.0006,True
+backlog_form_index,same,persistent_uninsured_h2,0.0008,0.0005,0.0022,0.0008,True

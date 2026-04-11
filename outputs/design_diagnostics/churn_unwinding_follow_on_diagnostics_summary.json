@@ -1,0 +1,18 @@
+{
+  "falsification_md": "outputs/design_diagnostics/churn_unwinding_preperiod_falsification.md",
+  "heterogeneity_md": "outputs/design_diagnostics/churn_unwinding_heterogeneity_stability.md",
+  "falsification_csv": "outputs/design_diagnostics/preperiod_falsification_summary.csv",
+  "heterogeneity_csv": "outputs/design_diagnostics/heterogeneity_stability_summary.csv",
+  "state_exposure_tertiles_csv": "outputs/design_diagnostics/later_exposure_state_tertiles.csv",
+  "baseline_state_risk_tertiles_csv": "outputs/design_diagnostics/baseline_state_risk_tertiles.csv",
+  "core_window_months": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "notes": [
+    "falsification screen uses later 2023 exposure tertiles mapped onto corrected 2021-2022 baseline churn rates",
+    "heterogeneity stability screen currently uses only state baseline-risk tertiles because the current prototype files do not yet carry a richer feature layer"
+  ]
+}

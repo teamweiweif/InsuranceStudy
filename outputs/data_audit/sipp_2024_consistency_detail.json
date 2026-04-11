@@ -1,0 +1,173 @@
+{
+  "panel_wave": [
+    {
+      "SPANEL": "2021",
+      "SWAVE": "4",
+      "count": 67567
+    },
+    {
+      "SPANEL": "2022",
+      "SWAVE": "3",
+      "count": 139584
+    },
+    {
+      "SPANEL": "2023",
+      "SWAVE": "2",
+      "count": 90973
+    },
+    {
+      "SPANEL": "2024",
+      "SWAVE": "1",
+      "count": 139044
+    }
+  ],
+  "thhldstatus_counts": {
+    "1": 278439,
+    "2": 153576,
+    "3": 1650,
+    "4": 2931,
+    "5": 112,
+    "6": 460
+  },
+  "tst_intv_missing_by_thhldstatus": {
+    "3": 1650,
+    "4": 2931,
+    "5": 112,
+    "6": 460
+  },
+  "tmover_missing_by_thhldstatus": {
+    "1": 3090,
+    "2": 13622,
+    "3": 52,
+    "4": 78,
+    "5": 8,
+    "6": 41
+  },
+  "tehc_state_code_top20": [
+    {
+      "TEHC_ST": "06",
+      "count": 61129
+    },
+    {
+      "TEHC_ST": "48",
+      "count": 39523
+    },
+    {
+      "TEHC_ST": "12",
+      "count": 24462
+    },
+    {
+      "TEHC_ST": "36",
+      "count": 22046
+    },
+    {
+      "TEHC_ST": "17",
+      "count": 14812
+    },
+    {
+      "TEHC_ST": "42",
+      "count": 14093
+    },
+    {
+      "TEHC_ST": "13",
+      "count": 13778
+    },
+    {
+      "TEHC_ST": "26",
+      "count": 12294
+    },
+    {
+      "TEHC_ST": "53",
+      "count": 12180
+    },
+    {
+      "TEHC_ST": "39",
+      "count": 11890
+    },
+    {
+      "TEHC_ST": "37",
+      "count": 11381
+    },
+    {
+      "TEHC_ST": "51",
+      "count": 10114
+    },
+    {
+      "TEHC_ST": "18",
+      "count": 10072
+    },
+    {
+      "TEHC_ST": "47",
+      "count": 9976
+    },
+    {
+      "TEHC_ST": "55",
+      "count": 9602
+    },
+    {
+      "TEHC_ST": "34",
+      "count": 9576
+    },
+    {
+      "TEHC_ST": "08",
+      "count": 9541
+    },
+    {
+      "TEHC_ST": "25",
+      "count": 9206
+    },
+    {
+      "TEHC_ST": "24",
+      "count": 8946
+    },
+    {
+      "TEHC_ST": "27",
+      "count": 8614
+    }
+  ],
+  "tehc_state_codes_non_01_56": [
+    {
+      "TEHC_ST": "60",
+      "count": 22
+    },
+    {
+      "TEHC_ST": "61",
+      "count": 909
+    }
+  ],
+  "cross_rpubtype2_emdmth": [
+    {
+      "RPUBTYPE2": "1",
+      "EMDMTH": "1",
+      "count": 88716
+    },
+    {
+      "RPUBTYPE2": "1",
+      "EMDMTH": "2",
+      "count": 5107
+    },
+    {
+      "RPUBTYPE2": "2",
+      "EMDMTH": "2",
+      "count": 343345
+    }
+  ],
+  "cross_rpubmth_rhlthmth": [
+    {
+      "RPUBMTH": "1",
+      "RHLTHMTH": "1",
+      "count": 195241
+    },
+    {
+      "RPUBMTH": "2",
+      "RHLTHMTH": "1",
+      "count": 204216
+    },
+    {
+      "RPUBMTH": "2",
+      "RHLTHMTH": "2",
+      "count": 37711
+    }
+  ],
+  "spell_checks": {}
+}

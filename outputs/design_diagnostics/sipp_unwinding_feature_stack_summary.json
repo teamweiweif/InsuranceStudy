@@ -1,0 +1,22 @@
+{
+  "stack_parquet": "outputs\\design_diagnostics\\sipp_unwinding_feature_stack_2021_2023.parquet",
+  "audit_csv": "outputs\\design_diagnostics\\sipp_subgroup_candidate_audit.csv",
+  "audit_md": "outputs\\design_diagnostics\\sipp_subgroup_candidate_audit.md",
+  "reference_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "rows_total": 1398627,
+  "persons_total": 69933,
+  "eligible_transition_rows_total": 257950,
+  "retained_feature_families": [
+    "age_band",
+    "female_group",
+    "foreign_born_group",
+    "household_child_group",
+    "noncitizen_group",
+    "pov_band",
+    "snap_group"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "timing_gate": true,
+  "timing_pass_variants": [
+    "renewal_form_rate"
+  ],
+  "timing_choice": {
+    "exposure_family": "manual_renewal_burden",
+    "exposure_variant": "renewal_form_rate",
+    "alignment": "lag1"
+  },
+  "falsification_gate": true,
+  "falsification_details": [
+    {
+      "exposure_family": "manual_renewal_burden",
+      "exposure_variant": "renewal_form_rate",
+      "alignment": "lag1",
+      "outcome": "medicaid_exit_next",
+      "pre_2021_contrast": -0.0008,
+      "pre_2022_contrast": -0.0007,
+      "unwinding_2023_contrast": 0.0016,
+      "max_pre_abs_contrast": 0.0008,
+      "same_direction_big_pre": false,
+      "falsification_pass_outcome": true
+    },
+    {
+      "exposure_family": "manual_renewal_burden",
+      "exposure_variant": "renewal_form_rate",
+      "alignment": "lag1",
+      "outcome": "medicaid_exit_to_uninsured_next",
+      "pre_2021_contrast": 0.0004,
+      "pre_2022_contrast": 0.0002,
+      "unwinding_2023_contrast": 0.0018,
+      "max_pre_abs_contrast": 0.0004,
+      "same_direction_big_pre": false,
+      "falsification_pass_outcome": true
+    }
+  ],
+  "stability_gate": true,
+  "stability_supporting_families": [
+    "pov_band",
+    "snap_group"
+  ],
+  "state_baseline_mean_spearman": -0.5,
+  "verdict": "GO_RISK_ONLY",
+  "inputs": {
+    "feature_stack": "outputs\\design_diagnostics\\sipp_unwinding_feature_stack_2021_2023.parquet",
+    "feature_audit_csv": "outputs\\design_diagnostics\\sipp_subgroup_candidate_audit.csv"
+  },
+  "outputs": {
+    "timing_long_csv": "outputs\\design_diagnostics\\second_round_timing_matrix_long.csv",
+    "highlow_long_csv": "outputs\\design_diagnostics\\second_round_highlow_matrix_long.csv",
+    "falsification_long_csv": "outputs\\design_diagnostics\\second_round_falsification_matrix_long.csv",
+    "falsification_summary_csv": "outputs\\design_diagnostics\\second_round_falsification_summary.csv",
+    "subgroup_rates_csv": "outputs\\design_diagnostics\\second_round_subgroup_rates.csv",
+    "subgroup_stability_csv": "outputs\\design_diagnostics\\second_round_subgroup_stability_summary.csv",
+    "alignment_ranking_csv": "outputs\\design_diagnostics\\second_round_alignment_ranking.csv",
+    "diagnostics_md": "outputs\\design_diagnostics\\churn_unwinding_second_round_diagnostics.md"
+  },
+  "retained_feature_families": [
+    "age_band",
+    "female_group",
+    "foreign_born_group",
+    "household_child_group",
+    "noncitizen_group",
+    "pov_band",
+    "snap_group"
+  ]
+}

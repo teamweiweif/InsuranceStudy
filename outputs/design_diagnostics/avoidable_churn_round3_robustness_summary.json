@@ -1,0 +1,105 @@
+{
+  "verdict": "ROUND3_SUPPORTS_CONTINUATION",
+  "robust_outcomes": [
+    {
+      "outcome": "medicaid_exit_to_uninsured_next",
+      "alignment": "same",
+      "core_corr": 0.1636,
+      "mature_corr": 0.142
+    },
+    {
+      "outcome": "persistent_uninsured_h2",
+      "alignment": "same",
+      "core_corr": 0.1407,
+      "mature_corr": 0.1269
+    },
+    {
+      "outcome": "broad_exit_persistent_uninsured_h2",
+      "alignment": "same",
+      "core_corr": 0.1438,
+      "mature_corr": 0.1288
+    },
+    {
+      "outcome": "persistent_uninsured_h3",
+      "alignment": "same",
+      "core_corr": 0.1933,
+      "mature_corr": 0.15
+    }
+  ],
+  "outcome_exposure_used": "backlog_automation_index",
+  "top_core_nonlead_exposures": [
+    {
+      "exposure_family": "backlog_automation_composite",
+      "exposure_variant": "backlog_automation_rank_index",
+      "exposure_kind": "composite_rank",
+      "window": "core_aug_oct_2023",
+      "alignment": "same",
+      "mean_signed_corr_all": 0.1482,
+      "all_expected_direction": true,
+      "outcomes_used": 3
+    },
+    {
+      "exposure_family": "backlog_automation_composite",
+      "exposure_variant": "backlog_automation_index",
+      "exposure_kind": "composite_z",
+      "window": "core_aug_oct_2023",
+      "alignment": "same",
+      "mean_signed_corr_all": 0.1242,
+      "all_expected_direction": true,
+      "outcomes_used": 3
+    },
+    {
+      "exposure_family": "pending_backlog_component",
+      "exposure_variant": "pending_rate",
+      "exposure_kind": "component",
+      "window": "core_aug_oct_2023",
+      "alignment": "same",
+      "mean_signed_corr_all": 0.1128,
+      "all_expected_direction": true,
+      "outcomes_used": 3
+    }
+  ],
+  "top_mature_nonlead_exposures": [
+    {
+      "exposure_family": "backlog_automation_composite",
+      "exposure_variant": "backlog_automation_rank_index",
+      "exposure_kind": "composite_rank",
+      "window": "mature_jun_oct_2023",
+      "alignment": "same",
+      "mean_signed_corr_all": 0.1362,
+      "all_expected_direction": true,
+      "outcomes_used": 3
+    },
+    {
+      "exposure_family": "backlog_automation_composite",
+      "exposure_variant": "backlog_automation_index",
+      "exposure_kind": "composite_z",
+      "window": "mature_jun_oct_2023",
+      "alignment": "same",
+      "mean_signed_corr_all": 0.1105,
+      "all_expected_direction": true,
+      "outcomes_used": 3
+    },
+    {
+      "exposure_family": "backlog_automation_composite",
+      "exposure_variant": "backlog_automation_rank_index",
+      "exposure_kind": "composite_rank",
+      "window": "mature_jun_oct_2023",
+      "alignment": "lag1",
+      "mean_signed_corr_all": 0.1002,
+      "all_expected_direction": true,
+      "outcomes_used": 3
+    }
+  ],
+  "composite_falsification_pass": true,
+  "pending_falsification_pass": true,
+  "exparte_falsification_pass": true,
+  "artifacts": {
+    "outcome_audit_csv": "outputs\\design_diagnostics\\avoidable_churn_outcome_robustness_audit.csv",
+    "outcome_timing_csv": "outputs\\design_diagnostics\\avoidable_churn_outcome_robustness_timing.csv",
+    "outcome_falsification_csv": "outputs\\design_diagnostics\\avoidable_churn_outcome_robustness_falsification.csv",
+    "exposure_timing_csv": "outputs\\design_diagnostics\\avoidable_churn_exposure_decomposition_timing.csv",
+    "exposure_ranking_csv": "outputs\\design_diagnostics\\avoidable_churn_exposure_decomposition_ranking.csv",
+    "exposure_falsification_csv": "outputs\\design_diagnostics\\avoidable_churn_exposure_decomposition_falsification.csv"
+  }
+}

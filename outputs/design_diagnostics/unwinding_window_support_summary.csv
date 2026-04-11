@@ -1,0 +1,7 @@
+window,exposure_family,state_month_cells_total,state_month_cells_nonmissing,unique_states_nonmissing,eligible_rows_sum,eligible_weight_sum,exposure_min,exposure_median,exposure_p90
+core_aug_nov_2023,procedural_friction,204,204,51,29060,276929544.37,0.0,0.7224,0.8653
+core_aug_nov_2023,renewal_intensity,204,204,51,29060,276929544.37,5318.0,101784.0,296845.2
+core_aug_nov_2023,pending_pressure,204,204,51,29060,276929544.37,0.0,0.0252,0.1991
+extended_mar_nov_2023,procedural_friction,459,362,51,66083,629334390.31,0.0,0.7245,0.8778
+extended_mar_nov_2023,renewal_intensity,459,362,51,66083,629334390.31,4060.0,91655.0,289168.3
+extended_mar_nov_2023,pending_pressure,459,362,51,66083,629334390.31,0.0,0.0233,0.1748

@@ -1,0 +1,6 @@
+exposure_variant,alignment,outcome,pre_2021_contrast,pre_2022_contrast,unwinding_2023_contrast,max_pre_abs_contrast,same_direction_big_pre,falsification_pass_outcome
+backlog_automation_index,same,medicaid_exit_to_uninsured_next,0.0009,0.0007,0.0023,0.0009,False,True
+backlog_automation_index,same,persistent_uninsured_h2,0.0009,0.0007,0.0016,0.0009,False,True
+backlog_automation_index,same,broad_exit_persistent_uninsured_h2,0.0009,0.0007,0.0018,0.0009,False,True
+backlog_automation_index,same,persistent_uninsured_h3,0.0002,0.0019,0.0027,0.0019,False,True
+backlog_automation_index,same,broad_exit_resolved_insured_h2,-0.0004,-0.0014,-0.0026,0.0014,False,True

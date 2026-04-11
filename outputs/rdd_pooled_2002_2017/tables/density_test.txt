@@ -1,0 +1,33 @@
+
+Manipulation testing using local polynomial density estimation.
+
+Number of obs =       92804
+Model =               unrestricted
+Kernel =              triangular
+BW method =           estimated
+VCE method =          jackknife
+
+c = 0                 Left of c           Right of c          
+Number of obs         56829               35975               
+Eff. Number of obs    16304               11711               
+Order est. (p)        2                   2                   
+Order bias (q)        3                   3                   
+BW est. (h)           40.757              31.673              
+
+Method                T                   P > |T|             
+Robust                -0.5306             0.5957              
+
+
+P-values of binomial tests (H0: p=0.5).
+
+Window Length / 2          <c     >=c    P>|T|
+1.000                     402     816    0.0000
+2.000                     774    1199    0.0000
+3.000                    1162    1579    0.0000
+4.000                    1567    1920    0.0000
+5.000                    1923    2270    0.0000
+6.000                    2287    2622    0.0000
+7.000                    2671    3026    0.0000
+8.000                    3044    3386    0.0000
+9.000                    3412    3759    0.0000
+10.000                   3828    4145    0.0004

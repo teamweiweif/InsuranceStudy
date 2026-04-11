@@ -1,0 +1,51 @@
+# Churn / Unwinding Timing Sensitivity
+
+Last updated: `2026-04-10`
+
+## Purpose
+
+This note records the first timing-sensitivity check for the unwinding-era diagnostics phase.
+
+It tests whether the relationship between the candidate CMS exposure families and the corrected churn outcomes looks more coherent under:
+
+- same-month exposure
+- one-month lag
+- one-month lead
+
+These are weighted state-month cell correlations.
+
+They are diagnostics only.
+
+## Timing Sensitivity Summary
+
+| window | exposure_family | alignment | state_month_cells_used | weighted_corr_exit_rate | weighted_corr_exit_to_uninsured_rate |
+| --- | --- | --- | --- | --- | --- |
+| core_aug_nov_2023 | procedural_friction | same | 204 | 0.0484 | -0.0688 |
+| core_aug_nov_2023 | procedural_friction | lag1 | 203 | 0.0154 | -0.0425 |
+| core_aug_nov_2023 | procedural_friction | lead1 | 153 | -0.0848 | -0.2043 |
+| core_aug_nov_2023 | renewal_intensity | same | 204 | 0.0113 | 0.11 |
+| core_aug_nov_2023 | renewal_intensity | lag1 | 203 | -0.0631 | -0.0208 |
+| core_aug_nov_2023 | renewal_intensity | lead1 | 153 | 0.0056 | 0.1039 |
+| core_aug_nov_2023 | pending_pressure | same | 204 | -0.0159 | 0.0697 |
+| core_aug_nov_2023 | pending_pressure | lag1 | 203 | -0.0689 | -0.0294 |
+| core_aug_nov_2023 | pending_pressure | lead1 | 153 | 0.118 | 0.1619 |
+| extended_mar_nov_2023 | procedural_friction | same | 362 | 0.0522 | -0.0452 |
+| extended_mar_nov_2023 | procedural_friction | lag1 | 311 | 0.0124 | -0.0072 |
+| extended_mar_nov_2023 | procedural_friction | lead1 | 358 | 0.0 | -0.0648 |
+| extended_mar_nov_2023 | renewal_intensity | same | 362 | -0.0413 | 0.0289 |
+| extended_mar_nov_2023 | renewal_intensity | lag1 | 311 | -0.0855 | -0.0338 |
+| extended_mar_nov_2023 | renewal_intensity | lead1 | 358 | -0.0675 | -0.0104 |
+| extended_mar_nov_2023 | pending_pressure | same | 362 | -0.0232 | 0.0712 |
+| extended_mar_nov_2023 | pending_pressure | lag1 | 311 | -0.0549 | -0.0089 |
+| extended_mar_nov_2023 | pending_pressure | lead1 | 358 | -0.0022 | 0.0514 |
+
+## Reading Guide
+
+- A stronger same-month signal would support a tighter contemporaneous state-month interpretation.
+- A stronger lag or lead signal would mean the CMS reporting month may be shifted relative to observed person-month churn.
+- These diagnostics do **not** identify causality. They only help decide which alignment is most credible for later design work.
+
+## Bottom Line
+
+- This table should be used to choose the first design window and alignment rule, not to make a treatment-effect claim.
+- If the strongest signals are unstable across alignments, the project should remain in diagnostics mode rather than opening full `DiD / DML / causal ML`.
