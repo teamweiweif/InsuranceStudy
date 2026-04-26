@@ -21,6 +21,32 @@ function Run-Git {
     }
 }
 
+function Run-GitWithRetry {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string[]] $Args,
+
+        [int] $MaxAttempts = 4,
+        [int] $DelaySeconds = 5
+    )
+
+    for ($attempt = 1; $attempt -le $MaxAttempts; $attempt++) {
+        try {
+            Run-Git -Args $Args
+            return
+        } catch {
+            if ($attempt -ge $MaxAttempts) {
+                throw
+            }
+
+            Write-Host ""
+            Write-Host "git $($Args -join ' ') failed on attempt $attempt/$MaxAttempts." -ForegroundColor Yellow
+            Write-Host "Retrying in $DelaySeconds seconds..." -ForegroundColor Yellow
+            Start-Sleep -Seconds $DelaySeconds
+        }
+    }
+}
+
 if (-not (Test-Path ".git")) {
     throw "This folder is not a git repository: $repoRoot"
 }
@@ -68,9 +94,9 @@ if ($dirtyBeforeAdd) {
     Write-Host "No local changes to commit." -ForegroundColor Yellow
 }
 
-Run-Git @("fetch", "origin")
-Run-Git @("pull", "--rebase", "--autostash", "origin", "main")
-Run-Git @("push", "origin", "main")
+Run-GitWithRetry @("fetch", "origin")
+Run-GitWithRetry @("pull", "--rebase", "--autostash", "origin", "main")
+Run-GitWithRetry @("push", "origin", "main")
 
 Write-Host ""
 Run-Git @("status", "--short", "--branch")

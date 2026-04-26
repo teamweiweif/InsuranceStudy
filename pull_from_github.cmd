@@ -1,7 +1,7 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\git\pull_from_github.ps1"
+powershell -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "%~dp0scripts\git\pull_from_github.ps1"
 set EXITCODE=%ERRORLEVEL%
 echo.
 if "%EXITCODE%"=="0" (
