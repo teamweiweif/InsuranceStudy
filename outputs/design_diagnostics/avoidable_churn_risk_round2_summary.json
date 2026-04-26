@@ -1,0 +1,50 @@
+{
+  "verdict": "RISK_RANKING_ROUND2_MIXED_WITH_CAVEAT",
+  "step4_unlocked": true,
+  "primary_best_model": "weighted_logistic",
+  "primary_best_auc": 0.557036,
+  "primary_best_pr_auc": 0.004931,
+  "primary_best_top_decile_capture": 0.105725,
+  "primary_best_delta_auc_vs_naive": 0.139121,
+  "primary_best_delta_top_decile_vs_naive": 0.066091,
+  "primary_capture_model": "compact_boosting",
+  "primary_capture_auc": 0.538876,
+  "primary_capture_pr_auc": 0.004594,
+  "primary_capture_top_decile_capture": 0.196646,
+  "primary_capture_delta_auc_vs_naive": 0.120961,
+  "primary_capture_delta_top_decile_vs_naive": 0.157013,
+  "benchmark_logistic_auc": 0.563267,
+  "benchmark_logistic_top_decile_capture": 0.12216,
+  "benchmark_logistic_delta_auc_vs_old_pilot": -0.085021,
+  "benchmark_logistic_delta_top_decile_vs_old_pilot": 0.01446,
+  "primary_beats_state": true,
+  "benchmark_beats_state": true,
+  "benchmark_not_worse_old": false,
+  "benchmark_auc_not_worse_old": false,
+  "benchmark_top_capture_not_worse_old": true,
+  "benchmark_mixed_vs_old": true,
+  "primary_top_capture_useful": true,
+  "train_reference_years": [
+    2021,
+    2022
+  ],
+  "test_reference_year": 2023,
+  "core_months": [
+    8,
+    9,
+    10
+  ],
+  "feature_columns": [
+    "age_band",
+    "female_group",
+    "foreign_born_group",
+    "household_child_group",
+    "noncitizen_group",
+    "pov_band",
+    "snap_group"
+  ],
+  "metrics_csv": "outputs\\design_diagnostics\\avoidable_churn_risk_round2_metrics.csv",
+  "calibration_csv": "outputs\\design_diagnostics\\avoidable_churn_risk_round2_calibration.csv",
+  "group_calibration_csv": "outputs\\design_diagnostics\\avoidable_churn_risk_round2_group_calibration.csv",
+  "report_md": "outputs\\design_diagnostics\\avoidable_churn_risk_round2.md"
+}

@@ -1,0 +1,9 @@
+outcome,outcome_role,model,auc,pr_auc,top_decile_capture,brier,event_rate,event_count_unweighted,event_weighted,rows_test,weight_sum_test,delta_auc_vs_naive_state,delta_pr_auc_vs_naive_state,delta_top_decile_vs_naive_state,old_pilot_logistic_auc,old_pilot_logistic_pr_auc,old_pilot_logistic_top_decile_capture,delta_auc_vs_old_pilot_logistic,delta_pr_auc_vs_old_pilot_logistic,delta_top_decile_vs_old_pilot_logistic
+persistent_uninsured_h2,primary_harm,naive_state_baseline,0.417915,0.002873,0.039633,0.002933,0.002933,63,608482.220748,21774,207450502.081757,,,,,,,,,
+persistent_uninsured_h2,primary_harm,weighted_logistic,0.557036,0.004931,0.105725,0.002928,0.002933,63,608482.220748,21774,207450502.081757,0.139121,0.002058,0.066091,,,,,,
+persistent_uninsured_h2,primary_harm,shallow_tree,0.529255,0.003111,0.130421,0.002928,0.002933,63,608482.220748,21774,207450502.081757,0.11134,0.000238,0.090787,,,,,,
+persistent_uninsured_h2,primary_harm,compact_boosting,0.538876,0.004594,0.196646,0.002928,0.002933,63,608482.220748,21774,207450502.081757,0.120961,0.001721,0.157013,,,,,,
+medicaid_exit_to_uninsured_next,benchmark_harm,naive_state_baseline,0.440819,0.00316,0.036463,0.003177,0.003178,66,661391.549459,21827,208140509.343183,,,,0.648287,0.005806,0.1077,,,
+medicaid_exit_to_uninsured_next,benchmark_harm,weighted_logistic,0.563267,0.005191,0.12216,0.003172,0.003178,66,661391.549459,21827,208140509.343183,0.122448,0.002031,0.085697,0.648287,0.005806,0.1077,-0.085021,-0.000615,0.01446
+medicaid_exit_to_uninsured_next,benchmark_harm,shallow_tree,0.529985,0.00338,0.119988,0.003172,0.003178,66,661391.549459,21827,208140509.343183,0.089167,0.00022,0.083525,0.648287,0.005806,0.1077,-0.118302,-0.002426,0.012288
+medicaid_exit_to_uninsured_next,benchmark_harm,compact_boosting,0.527146,0.003426,0.100813,0.003172,0.003178,66,661391.549459,21827,208140509.343183,0.086327,0.000266,0.06435,0.648287,0.005806,0.1077,-0.121142,-0.00238,-0.006887

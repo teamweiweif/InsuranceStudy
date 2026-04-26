@@ -1,6 +1,6 @@
 # Churn / Unwinding Execution Handoff
 
-Last updated: `2026-04-11`
+Last updated: `2026-04-26`
 
 ## Purpose
 
@@ -93,7 +93,27 @@ Secondary background, if needed:
   - `core_aug_oct_2023`: aggregate signed score `0.1722`
   - `mature_jun_oct_2023`: aggregate signed score `0.1509`
 - The future-month `lead1` placebo did not dominate the best non-lead alignment in either primary window.
-- Step 2 from the operational plan, `Subgroup Stability Round 2 On The New Outcome Layer`, is now unlocked.
+- Operational-plan `Step 2` subgroup stability on the upgraded avoidable-churn outcome layer is now complete in [../outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2.md](../outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2.md).
+- The Step 2 verdict is `SUBGROUP_STABILITY_ROUND2_SUPPORTS_RISK_RANKING`.
+- In the primary `core_aug_oct_2023` window, the families stable on both harmful outcomes are:
+  - `foreign_born_group`
+  - `household_child_group`
+  - `snap_group`
+- The upgraded outcome layer improved relative to the earlier narrow `medicaid_exit_to_uninsured_next` subgroup screen:
+  - old stable family count: `2`
+  - new stable family count: `3`
+  - old mean Spearman: `-0.0286`
+  - new mean Spearman: `0.2571`
+- Operational-plan `Step 3` risk-ranking round 2 is now complete in [../outputs/design_diagnostics/avoidable_churn_risk_round2.md](../outputs/design_diagnostics/avoidable_churn_risk_round2.md).
+- The Step 3 verdict is `RISK_RANKING_ROUND2_MIXED_WITH_CAVEAT`.
+- On the primary `persistent_uninsured_h2` outcome:
+  - the AUC-leading model is `weighted_logistic`: AUC `0.5570`, PR AUC `0.0049`, top-decile capture `0.1057`
+  - the top-decile-capture-leading model is `compact_boosting`: AUC `0.5389`, PR AUC `0.0046`, top-decile capture `0.1966`
+  - both beat the naive state baseline on ranking usefulness, but probability calibration is not strong enough for targeting language
+- On the benchmark `medicaid_exit_to_uninsured_next` outcome, weighted logistic is mixed relative to the old risk pilot:
+  - AUC delta versus old pilot logistic: `-0.0850`
+  - top-decile capture delta versus old pilot logistic: `0.0145`
+- The next allowed step is only `Step 4 — Paper-Path Decision Memo`; no causal ML, DML, event-study, DID, causal forest, or causal targeting work is unlocked.
 - `TEHC_ST` is the best current state-month linkage variable.
 - `EMDMTH` and `RPUBTYPE2` must not be treated as interchangeable.
 - `WPFINWGT` is usable, and the official December-weight rule matters for reference-year estimation.
@@ -523,14 +543,66 @@ Those are prerequisites for any later heterogeneity or targeting design.
   - The next allowed empirical step is `Subgroup Stability Round 2 On The New Outcome Layer`.
   - No `DID`, `event study`, `DML`, causal ML, or targeting escalation is unlocked by this step.
 
+### `2026-04-26` - Operational-plan Step 2 subgroup stability round 2 completed
+
+- Actor: `Codex`
+- Files produced:
+  - [../outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2.md](../outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2.md)
+  - [../outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2_summary.csv](../outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2_summary.csv)
+  - [../outputs/design_diagnostics/avoidable_churn_subgroup_ordering_tables.csv](../outputs/design_diagnostics/avoidable_churn_subgroup_ordering_tables.csv)
+  - [../scripts/design_diagnostics/build_avoidable_churn_subgroup_stability_round2.py](../scripts/design_diagnostics/build_avoidable_churn_subgroup_stability_round2.py)
+- What was run:
+  - only `Step 2` from [churn_unwinding_operational_plan_2026-04-11.md](churn_unwinding_operational_plan_2026-04-11.md)
+  - subgroup ordering comparison from pooled `2021-2022` to `2023`
+  - retained subgroup families only: `age_band`, `female_group`, `foreign_born_group`, `household_child_group`, `noncitizen_group`, `pov_band`, `snap_group`
+  - upgraded harmful outcomes: `persistent_uninsured_h2` and `broad_exit_persistent_uninsured_h2`
+  - contrast outcome: `broad_exit_resolved_insured_h2`
+- What was learned:
+  - In the primary `core_aug_oct_2023` window, `foreign_born_group`, `household_child_group`, and `snap_group` were stable on both harmful outcomes.
+  - The upgraded outcome layer improved relative to the older narrow `medicaid_exit_to_uninsured_next` subgroup screen.
+  - Old stable family count was `2`; new stable family count on `persistent_uninsured_h2` was `3`.
+  - Old mean Spearman was `-0.0286`; new mean Spearman was `0.2571`.
+  - The explicit verdict is `SUBGROUP_STABILITY_ROUND2_SUPPORTS_RISK_RANKING`.
+- What changed in the allowed next actions:
+  - Step 3 from the operational plan is now unlocked.
+  - The next allowed empirical step is `Risk-Ranking Round 2`.
+  - No `DID`, `event study`, `DML`, causal ML, causal forest, or causal targeting escalation is unlocked by this step.
+
+### `2026-04-26` - Operational-plan Step 3 risk-ranking round 2 completed
+
+- Actor: `Codex`
+- Files produced:
+  - [../outputs/design_diagnostics/avoidable_churn_risk_round2.md](../outputs/design_diagnostics/avoidable_churn_risk_round2.md)
+  - [../outputs/design_diagnostics/avoidable_churn_risk_round2_metrics.csv](../outputs/design_diagnostics/avoidable_churn_risk_round2_metrics.csv)
+  - [../outputs/design_diagnostics/avoidable_churn_risk_round2_calibration.csv](../outputs/design_diagnostics/avoidable_churn_risk_round2_calibration.csv)
+  - [../outputs/design_diagnostics/avoidable_churn_risk_round2_group_calibration.csv](../outputs/design_diagnostics/avoidable_churn_risk_round2_group_calibration.csv)
+  - [../scripts/design_diagnostics/run_avoidable_churn_risk_round2.py](../scripts/design_diagnostics/run_avoidable_churn_risk_round2.py)
+- What was run:
+  - only `Step 3` from [churn_unwinding_operational_plan_2026-04-11.md](churn_unwinding_operational_plan_2026-04-11.md)
+  - train on `2021-2022`
+  - test on `2023`
+  - core months `8-10`
+  - retained subgroup-family predictors only
+  - models: naive state baseline, weighted logistic, shallow tree, compact boosting
+- What was learned:
+  - On `persistent_uninsured_h2`, weighted logistic led on AUC: `0.5570`.
+  - On `persistent_uninsured_h2`, compact boosting led on top-decile capture: `0.1966`.
+  - On the benchmark `medicaid_exit_to_uninsured_next`, weighted logistic beat the naive state baseline but was mixed against the old risk pilot: AUC lower by `0.0850`, top-decile capture higher by `0.0145`.
+  - Calibration supports rank-only prototype language, not probability-calibrated targeting.
+  - The explicit verdict is `RISK_RANKING_ROUND2_MIXED_WITH_CAVEAT`.
+- What changed in the allowed next actions:
+  - The next allowed step is only `Step 4 — Paper-Path Decision Memo`.
+  - Step 4 should decide whether this remains a paper-first risk / burden / vulnerability line or a supporting branch.
+  - No `DID`, `event study`, `DML`, causal ML, causal forest, or causal targeting escalation is unlocked by this step.
+
 ## Open Questions / Active Risks
 
 1. The biggest current risk is now conceptual rather than mechanical: the CMS reporting month is a `renewal due / updated disposition` month and may not line up tightly enough with observed person-month coverage loss to support stronger causal interpretation.
 2. Timing interpretation remains a design risk, but the operational-plan Step 1 stress test improved the current reading: `backlog_automation_rank_index / same` beat the future-month `lead1` placebo on aggregate in both primary windows. This is still diagnostic, not causal validation.
 3. A linked source-coverage risk remains for early `2023`: the selected CMS metric family has partial state coverage in `March-July 2023`, even though the core `August-November 2023` transition window is complete.
 4. A mechanism-ranking risk remains unresolved: `pending_pressure` currently looks more informative than `renewal_intensity`, while the intended flagship `procedural_friction` mechanism has not yet clearly dominated `exit_to_uninsured`.
-5. A subgroup-stability risk is now explicit: crude state baseline-risk ordering from pooled `2021-2022` does not carry cleanly into the `2023` unwinding year, so later targeting logic still needs richer subgroup structure.
-6. Even with a phased corrected stack, a remaining design risk is whether the unwinding-era design becomes strong enough for the project's intended `causal ML / targeting` contribution rather than only descriptive or predictive work.
+5. State-level subgroup-stability risk remains explicit: crude state baseline-risk ordering from pooled `2021-2022` does not carry cleanly into the `2023` unwinding year. However, the upgraded person/household subgroup screen now supports bounded risk ranking for selected subgroup families.
+6. The Step 3 risk round is mixed: it beats naive state baselines and improves top-decile capture, but it does not cleanly beat the old risk pilot on AUC and it is not probability-calibrated. This supports rank-only prototype language, not targeting language.
 7. A secondary implementation risk is that `FINYR2`, `FINYR3`, and replicate-weight files are not currently staged locally, so any design that truly requires them will need an explicit acquisition step later.
 8. The `2023` pilot showed that the public / Medicaid correction path is workable, but it also surfaced a caution that remains unresolved: direct formula-based rebuilding of `RPRIMTH` from the currently used local source fields diverges materially from the raw recode and should remain conservative until separately resolved.
 

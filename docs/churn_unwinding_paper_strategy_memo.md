@@ -1,6 +1,6 @@
 # Churn / Unwinding 论文战略 Memo
 
-Last updated: `2026-04-11`
+Last updated: `2026-04-26`
 
 ## 这份 memo 是干什么的
 
@@ -372,3 +372,62 @@ raw signal 最强的候选，往往是 `pending/backlog`，但它的问题是：
 
 - 仍然没有直接升级到 `DML / causal ML`
 - 但已经从纯 `risk-first holding pattern`，往“有更明确 paper core 的 data-driven policy line”推进了一步
+
+## Addendum: Round-4 Step 2 Subgroup-Stability Update
+
+Round-4 Step 2 strengthens, but does not fundamentally change, the paper positioning.
+
+New evidence:
+
+- the upgraded harmful outcome layer was tested against subgroup ordering from pooled `2021-2022` into `2023`
+- in the primary `core_aug_oct_2023` window, `foreign_born_group`, `household_child_group`, and `snap_group` were stable on both:
+  - `persistent_uninsured_h2`
+  - `broad_exit_persistent_uninsured_h2`
+- relative to the older `medicaid_exit_to_uninsured_next` subgroup screen:
+  - old stable family count: `2`
+  - new stable family count: `3`
+  - old mean Spearman: `-0.0286`
+  - new mean Spearman: `0.2571`
+- the explicit verdict is `SUBGROUP_STABILITY_ROUND2_SUPPORTS_RISK_RANKING`
+
+Strategic implication:
+
+- this makes the `risk / burden / vulnerability / prioritization` positioning more defensible
+- it supports moving to a bounded `Risk-Ranking Round 2`
+- it still does not support writing the paper as causal ML, DML, causal forest, DID, event-study, or causal targeting
+
+## Addendum: Round-4 Step 3 Risk-Ranking Update
+
+Round-4 Step 3 gives a mixed but useful risk-ranking result.
+
+New evidence:
+
+- the risk round trained on `2021-2022` and tested on `2023`
+- the primary outcome was `persistent_uninsured_h2`
+- the benchmark outcome was `medicaid_exit_to_uninsured_next`
+- retained subgroup-family predictors were used without opening causal ML or targeting work
+
+Primary outcome:
+
+- AUC-leading model: `weighted_logistic`
+  - AUC `0.5570`
+  - PR AUC `0.0049`
+  - top-decile capture `0.1057`
+- top-decile-capture-leading model: `compact_boosting`
+  - AUC `0.5389`
+  - PR AUC `0.0046`
+  - top-decile capture `0.1966`
+
+Old-pilot comparison:
+
+- on the benchmark outcome, weighted logistic beat the naive state baseline
+- compared with the old risk pilot, the result is mixed:
+  - AUC delta `-0.0850`
+  - top-decile capture delta `0.0145`
+
+Strategic implication:
+
+- this supports a bounded `risk ranking / prioritization prototype` only with caveats
+- it does not support probability-calibrated targeting language
+- it does not support causal ML, DML, DID, event-study, causal forest, or causal targeting language
+- the next useful document should be a paper-path decision memo, not another automatic escalation

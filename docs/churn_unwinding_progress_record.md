@@ -1,6 +1,6 @@
 # Churn / Unwinding Progress Record
 
-Last updated: `2026-04-11`
+Last updated: `2026-04-26`
 
 ## Purpose
 
@@ -274,6 +274,92 @@ Key points:
   - timing looks better on aggregate, but this remains a diagnostic state-month screen
 - Step 2 is now unlocked under the operational plan:
   - `Subgroup Stability Round 2 On The New Outcome Layer`
+
+## 2026-04-26: Round-4 Step 2 Subgroup Stability Round 2 Completed
+
+Main outcome:
+
+- the operational-plan Step 2 subgroup-stability diagnostic was executed on the upgraded avoidable-churn outcome layer
+
+Recorded in:
+
+- [avoidable_churn_subgroup_stability_round2.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2.md)
+- [avoidable_churn_subgroup_stability_round2_summary.csv](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_subgroup_stability_round2_summary.csv)
+- [avoidable_churn_subgroup_ordering_tables.csv](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_subgroup_ordering_tables.csv)
+- [build_avoidable_churn_subgroup_stability_round2.py](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/scripts/design_diagnostics/build_avoidable_churn_subgroup_stability_round2.py)
+
+Key points:
+
+- the run compared pooled `2021-2022` subgroup ordering against `2023` ordering
+- primary harmful outcomes:
+  - `persistent_uninsured_h2`
+  - `broad_exit_persistent_uninsured_h2`
+- contrast outcome:
+  - `broad_exit_resolved_insured_h2`
+- in the primary `core_aug_oct_2023` window, three subgroup families were stable on both harmful outcomes:
+  - `foreign_born_group`
+  - `household_child_group`
+  - `snap_group`
+- the upgraded `persistent_uninsured_h2` layer improved relative to the earlier narrow `medicaid_exit_to_uninsured_next` subgroup round:
+  - old stable family count: `2`
+  - new stable family count: `3`
+  - old mean Spearman: `-0.0286`
+  - new mean Spearman: `0.2571`
+- the explicit Step 2 verdict is:
+  - `SUBGROUP_STABILITY_ROUND2_SUPPORTS_RISK_RANKING`
+- Step 3 is now unlocked under the operational plan:
+  - `Risk-Ranking Round 2`
+- this does not unlock causal ML, DML, event-study, DID, causal forest, or causal targeting work
+
+## 2026-04-26: Round-4 Step 3 Risk-Ranking Round 2 Completed
+
+Main outcome:
+
+- the operational-plan Step 3 risk-ranking diagnostic was executed on the upgraded avoidable-churn outcome layer
+
+Recorded in:
+
+- [avoidable_churn_risk_round2.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_risk_round2.md)
+- [avoidable_churn_risk_round2_metrics.csv](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_risk_round2_metrics.csv)
+- [avoidable_churn_risk_round2_calibration.csv](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_risk_round2_calibration.csv)
+- [avoidable_churn_risk_round2_group_calibration.csv](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/avoidable_churn_risk_round2_group_calibration.csv)
+- [run_avoidable_churn_risk_round2.py](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/scripts/design_diagnostics/run_avoidable_churn_risk_round2.py)
+
+Key points:
+
+- training setup:
+  - train on `2021-2022`
+  - test on `2023`
+  - core months `8-10`
+  - retained subgroup-family predictors only
+- primary outcome:
+  - `persistent_uninsured_h2`
+- benchmark outcome:
+  - `medicaid_exit_to_uninsured_next`
+- primary outcome, AUC-leading model:
+  - `weighted_logistic`
+  - AUC `0.5570`
+  - PR AUC `0.0049`
+  - top-decile capture `0.1057`
+  - AUC gain over naive state baseline `0.1391`
+- primary outcome, top-decile-capture-leading model:
+  - `compact_boosting`
+  - AUC `0.5389`
+  - PR AUC `0.0046`
+  - top-decile capture `0.1966`
+  - top-decile capture gain over naive state baseline `0.1570`
+- benchmark outcome, weighted logistic:
+  - AUC `0.5633`
+  - PR AUC `0.0052`
+  - top-decile capture `0.1222`
+- comparison against the old risk pilot is mixed:
+  - benchmark AUC delta versus old pilot logistic: `-0.0850`
+  - benchmark top-decile capture delta versus old pilot logistic: `0.0145`
+- the explicit Step 3 verdict is:
+  - `RISK_RANKING_ROUND2_MIXED_WITH_CAVEAT`
+- Step 4 is unlocked only as a paper-path decision memo:
+  - `docs/churn_unwinding_post_round4_path_decision.md`
+- no causal ML, DML, event-study, DID, causal forest, or causal targeting work is unlocked
 
 ## Current Control Documents
 

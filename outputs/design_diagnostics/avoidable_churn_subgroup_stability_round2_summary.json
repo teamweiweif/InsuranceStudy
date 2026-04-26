@@ -1,0 +1,41 @@
+{
+  "verdict": "SUBGROUP_STABILITY_ROUND2_SUPPORTS_RISK_RANKING",
+  "step3_unlocked": true,
+  "core_persistent_stable_families": [
+    "foreign_born_group",
+    "household_child_group",
+    "snap_group"
+  ],
+  "core_broad_harm_stable_families": [
+    "foreign_born_group",
+    "household_child_group",
+    "snap_group"
+  ],
+  "core_robust_harm_stable_families": [
+    "foreign_born_group",
+    "household_child_group",
+    "snap_group"
+  ],
+  "core_any_harm_stable_families": [
+    "foreign_born_group",
+    "household_child_group",
+    "snap_group"
+  ],
+  "mature_persistent_stable_families": [
+    "age_band",
+    "foreign_born_group",
+    "noncitizen_group"
+  ],
+  "old_medicaid_exit_to_uninsured_stable_families": [
+    "household_child_group",
+    "snap_group"
+  ],
+  "old_stable_family_count": 2,
+  "new_persistent_stable_family_count": 3,
+  "new_robust_harm_stable_family_count": 3,
+  "old_mean_spearman": -0.0286,
+  "new_persistent_mean_spearman_core": 0.2571,
+  "improves_stable_count": true,
+  "improves_mean_spearman": true,
+  "improves_relative_old": true
+}
