@@ -431,3 +431,40 @@ Strategic implication:
 - it does not support probability-calibrated targeting language
 - it does not support causal ML, DML, DID, event-study, causal forest, or causal targeting language
 - the next useful document should be a paper-path decision memo, not another automatic escalation
+
+## Addendum: Round-4 Step 4 Path Decision
+
+Round-4 Step 4 closes the current diagnostic phase.
+
+Final verdict:
+
+- `PATH_A_NARROW_RISK_BURDEN_VULNERABILITY_PAPER_WITH_CAVEATS`
+
+Selected path:
+
+- `Path A: paper-first risk / burden / vulnerability line`
+
+The selected path is narrowed to:
+
+- public-data health policy
+- administrative renewal burden
+- avoidable harmful churn
+- persistent uninsurance after Medicaid exit
+- subgroup vulnerability
+- bounded risk-ranking / prioritization prototype
+
+The selected path is not:
+
+- causal effect paper
+- causal ML paper
+- DML paper
+- causal forest paper
+- DID or event-study paper
+- welfare targeting paper
+- deployable outreach targeting model
+
+Strategic implication:
+
+- the current branch is strong enough to become the main paper candidate in a constrained form
+- it should now move to a paper outline and results-to-table map
+- it should not escalate to causal estimation or switch topics

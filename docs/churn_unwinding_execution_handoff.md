@@ -44,9 +44,10 @@ Read in this order:
 10. [empirical_result_reporting_convention.md](empirical_result_reporting_convention.md)
 11. [churn_unwinding_paper_strategy_memo.md](churn_unwinding_paper_strategy_memo.md)
 12. [churn_unwinding_progress_record.md](churn_unwinding_progress_record.md)
-13. [../outputs/data_audit/sipp_preflight_2026-04-10.md](../outputs/data_audit/sipp_preflight_2026-04-10.md)
-14. [../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md](../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md)
-15. [churn_targeting_reset_2026-04-10.md](churn_targeting_reset_2026-04-10.md)
+13. [churn_unwinding_post_round4_path_decision.md](churn_unwinding_post_round4_path_decision.md)
+14. [../outputs/data_audit/sipp_preflight_2026-04-10.md](../outputs/data_audit/sipp_preflight_2026-04-10.md)
+15. [../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md](../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md)
+16. [churn_targeting_reset_2026-04-10.md](churn_targeting_reset_2026-04-10.md)
 
 Secondary background, if needed:
 
@@ -113,7 +114,10 @@ Secondary background, if needed:
 - On the benchmark `medicaid_exit_to_uninsured_next` outcome, weighted logistic is mixed relative to the old risk pilot:
   - AUC delta versus old pilot logistic: `-0.0850`
   - top-decile capture delta versus old pilot logistic: `0.0145`
-- The next allowed step is only `Step 4 — Paper-Path Decision Memo`; no causal ML, DML, event-study, DID, causal forest, or causal targeting work is unlocked.
+- Operational-plan `Step 4` paper-path decision is now complete in [churn_unwinding_post_round4_path_decision.md](churn_unwinding_post_round4_path_decision.md).
+- The Step 4 verdict is `PATH_A_NARROW_RISK_BURDEN_VULNERABILITY_PAPER_WITH_CAVEATS`.
+- The selected path is `Path A: paper-first risk / burden / vulnerability line`, narrowed to public-data administrative renewal burden, avoidable harmful churn, persistent uninsurance, subgroup vulnerability, and bounded risk ranking.
+- The next practical step is only a constrained paper outline and results-to-table map for the narrowed Path A paper; no causal ML, DML, event-study, DID, causal forest, causal targeting, new dataset search, or topic switch is unlocked.
 - `TEHC_ST` is the best current state-month linkage variable.
 - `EMDMTH` and `RPUBTYPE2` must not be treated as interchangeable.
 - `WPFINWGT` is usable, and the official December-weight rule matters for reference-year estimation.
@@ -595,6 +599,24 @@ Those are prerequisites for any later heterogeneity or targeting design.
   - Step 4 should decide whether this remains a paper-first risk / burden / vulnerability line or a supporting branch.
   - No `DID`, `event study`, `DML`, causal ML, causal forest, or causal targeting escalation is unlocked by this step.
 
+### `2026-04-26` - Operational-plan Step 4 paper-path decision completed
+
+- Actor: `Codex`
+- Files produced:
+  - [churn_unwinding_post_round4_path_decision.md](churn_unwinding_post_round4_path_decision.md)
+  - [../outputs/design_diagnostics/round4_path_decision_user_summary.md](../outputs/design_diagnostics/round4_path_decision_user_summary.md)
+- What was decided:
+  - The selected path is `Path A: paper-first risk / burden / vulnerability line`.
+  - The path is narrowed rather than escalated.
+  - The explicit verdict is `PATH_A_NARROW_RISK_BURDEN_VULNERABILITY_PAPER_WITH_CAVEATS`.
+- What was learned:
+  - Step 1 keeps the leading burden candidate usable as a timing diagnostic.
+  - Step 2 strengthens the subgroup vulnerability part through stable harmful-risk ordering for `foreign_born_group`, `household_child_group`, and `snap_group`.
+  - Step 3 is mixed but not fatal: it beats naive state baseline and supports bounded rank-prototype language, but it does not support calibrated targeting or causal claims.
+- What changed in the allowed next actions:
+  - The next practical step is a constrained paper outline and results-to-table map for the narrowed Path A paper.
+  - No `DID`, `event study`, `DML`, causal ML, causal forest, causal targeting, new dataset search, or topic switch is unlocked.
+
 ## Open Questions / Active Risks
 
 1. The biggest current risk is now conceptual rather than mechanical: the CMS reporting month is a `renewal due / updated disposition` month and may not line up tightly enough with observed person-month coverage loss to support stronger causal interpretation.
@@ -603,8 +625,9 @@ Those are prerequisites for any later heterogeneity or targeting design.
 4. A mechanism-ranking risk remains unresolved: `pending_pressure` currently looks more informative than `renewal_intensity`, while the intended flagship `procedural_friction` mechanism has not yet clearly dominated `exit_to_uninsured`.
 5. State-level subgroup-stability risk remains explicit: crude state baseline-risk ordering from pooled `2021-2022` does not carry cleanly into the `2023` unwinding year. However, the upgraded person/household subgroup screen now supports bounded risk ranking for selected subgroup families.
 6. The Step 3 risk round is mixed: it beats naive state baselines and improves top-decile capture, but it does not cleanly beat the old risk pilot on AUC and it is not probability-calibrated. This supports rank-only prototype language, not targeting language.
-7. A secondary implementation risk is that `FINYR2`, `FINYR3`, and replicate-weight files are not currently staged locally, so any design that truly requires them will need an explicit acquisition step later.
-8. The `2023` pilot showed that the public / Medicaid correction path is workable, but it also surfaced a caution that remains unresolved: direct formula-based rebuilding of `RPRIMTH` from the currently used local source fields diverges materially from the raw recode and should remain conservative until separately resolved.
+7. The Step 4 path decision narrows the paper to risk / burden / vulnerability claims. Any future language implying causal effects, calibrated deployment, welfare targeting, or causal ML would violate the current evidence boundary.
+8. A secondary implementation risk is that `FINYR2`, `FINYR3`, and replicate-weight files are not currently staged locally, so any design that truly requires them will need an explicit acquisition step later.
+9. The `2023` pilot showed that the public / Medicaid correction path is workable, but it also surfaced a caution that remains unresolved: direct formula-based rebuilding of `RPRIMTH` from the currently used local source fields diverges materially from the raw recode and should remain conservative until separately resolved.
 
 ## Update Protocol
 

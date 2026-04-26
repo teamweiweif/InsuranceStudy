@@ -361,6 +361,41 @@ Key points:
   - `docs/churn_unwinding_post_round4_path_decision.md`
 - no causal ML, DML, event-study, DID, causal forest, or causal targeting work is unlocked
 
+## 2026-04-26: Round-4 Step 4 Paper-Path Decision Completed
+
+Main outcome:
+
+- the operational-plan Step 4 path decision was completed and the current line was locked to a narrowed Path A paper
+
+Recorded in:
+
+- [churn_unwinding_post_round4_path_decision.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_post_round4_path_decision.md)
+- [round4_path_decision_user_summary.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/round4_path_decision_user_summary.md)
+
+Key points:
+
+- the explicit Step 4 verdict is:
+  - `PATH_A_NARROW_RISK_BURDEN_VULNERABILITY_PAPER_WITH_CAVEATS`
+- the selected path is:
+  - `Path A: paper-first risk / burden / vulnerability line`
+- the selected path is narrowed to:
+  - public-data health policy
+  - administrative renewal burden
+  - avoidable harmful churn
+  - persistent uninsurance after Medicaid exit
+  - subgroup vulnerability
+  - bounded risk-ranking / prioritization prototype
+- the line is not currently viable as:
+  - causal effect paper
+  - causal ML paper
+  - DML paper
+  - causal forest paper
+  - welfare targeting paper
+  - deployable outreach targeting model
+- the next practical step is:
+  - create a constrained paper outline and results-to-table map for the narrowed Path A paper
+- no new causal estimation, new dataset search, or topic switch is unlocked
+
 ## Current Control Documents
 
 If a new agent starts now, the preferred reading order is:
@@ -376,3 +411,4 @@ If a new agent starts now, the preferred reading order is:
 9. [churn_unwinding_next_tests_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_next_tests_memo.md)
 10. [churn_unwinding_round3_robustness_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round3_robustness_memo.md)
 11. [churn_unwinding_paper_strategy_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_paper_strategy_memo.md)
+12. [churn_unwinding_post_round4_path_decision.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_post_round4_path_decision.md)
