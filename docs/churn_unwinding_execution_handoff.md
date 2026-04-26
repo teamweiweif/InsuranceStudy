@@ -1,6 +1,6 @@
 # Churn / Unwinding Execution Handoff
 
-Last updated: `2026-04-26`
+Last updated: `2026-04-27`
 
 ## Purpose
 
@@ -45,9 +45,10 @@ Read in this order:
 11. [churn_unwinding_paper_strategy_memo.md](churn_unwinding_paper_strategy_memo.md)
 12. [churn_unwinding_progress_record.md](churn_unwinding_progress_record.md)
 13. [churn_unwinding_post_round4_path_decision.md](churn_unwinding_post_round4_path_decision.md)
-14. [../outputs/data_audit/sipp_preflight_2026-04-10.md](../outputs/data_audit/sipp_preflight_2026-04-10.md)
-15. [../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md](../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md)
-16. [churn_targeting_reset_2026-04-10.md](churn_targeting_reset_2026-04-10.md)
+14. [churn_unwinding_paper_outline_and_results_map.md](churn_unwinding_paper_outline_and_results_map.md)
+15. [../outputs/data_audit/sipp_preflight_2026-04-10.md](../outputs/data_audit/sipp_preflight_2026-04-10.md)
+16. [../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md](../outputs/data_audit/sipp_2024_deep_audit_2026-04-10.md)
+17. [churn_targeting_reset_2026-04-10.md](churn_targeting_reset_2026-04-10.md)
 
 Secondary background, if needed:
 
@@ -117,13 +118,16 @@ Secondary background, if needed:
 - Operational-plan `Step 4` paper-path decision is now complete in [churn_unwinding_post_round4_path_decision.md](churn_unwinding_post_round4_path_decision.md).
 - The Step 4 verdict is `PATH_A_NARROW_RISK_BURDEN_VULNERABILITY_PAPER_WITH_CAVEATS`.
 - The selected path is `Path A: paper-first risk / burden / vulnerability line`, narrowed to public-data administrative renewal burden, avoidable harmful churn, persistent uninsurance, subgroup vulnerability, and bounded risk ranking.
-- The next practical step is only a constrained paper outline and results-to-table map for the narrowed Path A paper; no causal ML, DML, event-study, DID, causal forest, causal targeting, new dataset search, or topic switch is unlocked.
+- The constrained Path A paper outline and results-to-table map is now complete in [churn_unwinding_paper_outline_and_results_map.md](churn_unwinding_paper_outline_and_results_map.md).
+- The preferred paper title is `Administrative Renewal Burden and Persistent Uninsurance Risk During Medicaid Unwinding: A Public-Data Risk and Vulnerability Study`.
+- The next practical step is only to build table-ready and figure-ready artifacts from existing outputs for the narrowed Path A paper.
+- No causal ML, DML, event-study, DID, causal forest, causal targeting, welfare targeting, new dataset search, or topic switch is unlocked.
 - `TEHC_ST` is the best current state-month linkage variable.
 - `EMDMTH` and `RPUBTYPE2` must not be treated as interchangeable.
 - `WPFINWGT` is usable, and the official December-weight rule matters for reference-year estimation.
-- The medium-term contribution target still includes possible `causal ML + policy targeting`, if the data structure ultimately supports it.
-- The first executable `ML` role remains `risk prediction`; `causal targeting` is an intended later contribution, not the current validated phase.
-- The research moat should come from turning unwinding into a `targeting / decision problem`, not from claiming to be the first unwinding paper.
+- The earlier possible `causal ML + policy targeting` ambition is not part of the current Path A paper and is not unlocked by the current evidence.
+- The first executable model role is rank-only risk screening; it is not a calibrated prediction, outreach targeting, or welfare targeting role.
+- The current research value should come from a public-data administrative-burden / harmful-churn / vulnerability framework, not from claiming causal effects or deployment-ready targeting.
 
 ## Locked Decisions
 
@@ -617,6 +621,22 @@ Those are prerequisites for any later heterogeneity or targeting design.
   - The next practical step is a constrained paper outline and results-to-table map for the narrowed Path A paper.
   - No `DID`, `event study`, `DML`, causal ML, causal forest, causal targeting, new dataset search, or topic switch is unlocked.
 
+### `2026-04-27` - Path A paper outline and results map completed
+
+- Actor: `Codex`
+- Files produced:
+  - [churn_unwinding_paper_outline_and_results_map.md](churn_unwinding_paper_outline_and_results_map.md)
+  - [../outputs/design_diagnostics/paper_outline_user_summary.md](../outputs/design_diagnostics/paper_outline_user_summary.md)
+- What was decided:
+  - The preferred title is `Administrative Renewal Burden and Persistent Uninsurance Risk During Medicaid Unwinding: A Public-Data Risk and Vulnerability Study`.
+  - The paper framing is public-data health policy / administrative renewal burden / avoidable harmful churn / persistent uninsurance / subgroup vulnerability / bounded risk ranking.
+  - The paper should use six planned tables: sample/support, timing stress, outcome family, subgroup stability, risk-ranking performance, and allowed-vs-forbidden claims / caveats.
+  - The paper should use five planned figures: SIPP-CMS design diagram, `persistent_uninsured_h2` timeline, timing-stress comparison, subgroup stability visualization, and risk-ranking capture / calibration diagnostics.
+  - Main-text evidence and appendix / caveat evidence are now separated.
+- What changed in the allowed next actions:
+  - The next practical step is to create table-ready and figure-ready artifacts from existing outputs, preferably through `scripts/design_diagnostics/build_path_a_paper_tables.py`.
+  - No causal estimation, causal ML, DML, DID, event-study, causal forest, causal targeting, welfare targeting, new dataset search, or topic switch is unlocked.
+
 ## Open Questions / Active Risks
 
 1. The biggest current risk is now conceptual rather than mechanical: the CMS reporting month is a `renewal due / updated disposition` month and may not line up tightly enough with observed person-month coverage loss to support stronger causal interpretation.
@@ -626,8 +646,9 @@ Those are prerequisites for any later heterogeneity or targeting design.
 5. State-level subgroup-stability risk remains explicit: crude state baseline-risk ordering from pooled `2021-2022` does not carry cleanly into the `2023` unwinding year. However, the upgraded person/household subgroup screen now supports bounded risk ranking for selected subgroup families.
 6. The Step 3 risk round is mixed: it beats naive state baselines and improves top-decile capture, but it does not cleanly beat the old risk pilot on AUC and it is not probability-calibrated. This supports rank-only prototype language, not targeting language.
 7. The Step 4 path decision narrows the paper to risk / burden / vulnerability claims. Any future language implying causal effects, calibrated deployment, welfare targeting, or causal ML would violate the current evidence boundary.
-8. A secondary implementation risk is that `FINYR2`, `FINYR3`, and replicate-weight files are not currently staged locally, so any design that truly requires them will need an explicit acquisition step later.
-9. The `2023` pilot showed that the public / Medicaid correction path is workable, but it also surfaced a caution that remains unresolved: direct formula-based rebuilding of `RPRIMTH` from the currently used local source fields diverges materially from the raw recode and should remain conservative until separately resolved.
+8. The next paper-development step is mechanical table and figure preparation only. It should not reinterpret the risk-ranking prototype as a deployable model or reopen causal estimation.
+9. A secondary implementation risk is that `FINYR2`, `FINYR3`, and replicate-weight files are not currently staged locally, so any design that truly requires them will need an explicit acquisition step later.
+10. The `2023` pilot showed that the public / Medicaid correction path is workable, but it also surfaced a caution that remains unresolved: direct formula-based rebuilding of `RPRIMTH` from the currently used local source fields diverges materially from the raw recode and should remain conservative until separately resolved.
 
 ## Update Protocol
 

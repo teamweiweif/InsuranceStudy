@@ -1,6 +1,6 @@
 # Churn / Unwinding Progress Record
 
-Last updated: `2026-04-26`
+Last updated: `2026-04-27`
 
 ## Purpose
 
@@ -396,6 +396,34 @@ Key points:
   - create a constrained paper outline and results-to-table map for the narrowed Path A paper
 - no new causal estimation, new dataset search, or topic switch is unlocked
 
+## 2026-04-27: Path A Paper Outline And Results Map Completed
+
+Main outcome:
+
+- the narrowed Path A paper now has a constrained paper outline, results-to-table map, and user-facing summary
+
+Recorded in:
+
+- [churn_unwinding_paper_outline_and_results_map.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_paper_outline_and_results_map.md)
+- [paper_outline_user_summary.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/outputs/design_diagnostics/paper_outline_user_summary.md)
+
+Key points:
+
+- the preferred title is:
+  - `Administrative Renewal Burden and Persistent Uninsurance Risk During Medicaid Unwinding: A Public-Data Risk and Vulnerability Study`
+- the exact narrowed question is:
+  - can public-use SIPP person-month coverage transitions linked to CMS state-month Medicaid unwinding renewal-burden measures identify policy-relevant patterns of persistent uninsurance risk and subgroup vulnerability after Medicaid exit?
+- the allowed contribution remains bounded to:
+  - public-data SIPP-CMS linkage
+  - policy-relevant persistent-uninsurance outcome construction
+  - administrative renewal-burden diagnostics
+  - subgroup vulnerability ordering
+  - rank-only risk-screening / prioritization prototype
+- the outline proposes six tables and five figures, separating main-text evidence from appendix / caveat evidence
+- the next practical step is:
+  - build table-ready and figure-ready artifacts from existing outputs for the Path A paper
+- no causal estimation, new data search, topic switch, or deployable targeting step is unlocked
+
 ## Current Control Documents
 
 If a new agent starts now, the preferred reading order is:
@@ -412,3 +440,4 @@ If a new agent starts now, the preferred reading order is:
 10. [churn_unwinding_round3_robustness_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_round3_robustness_memo.md)
 11. [churn_unwinding_paper_strategy_memo.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_paper_strategy_memo.md)
 12. [churn_unwinding_post_round4_path_decision.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_post_round4_path_decision.md)
+13. [churn_unwinding_paper_outline_and_results_map.md](D:/GlobalHealthPolicy Dropbox/Fan Bowei/US Insurance Project/docs/churn_unwinding_paper_outline_and_results_map.md)
