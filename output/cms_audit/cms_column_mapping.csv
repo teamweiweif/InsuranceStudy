@@ -1,0 +1,14 @@
+concept,source_column_type,selected_source_column,selected_metric_name,all_candidates,candidate_count,notes
+renewals_due,metric_name_row,Metric name,Total number of beneficiaries due for renewal in the reporting month (Metric 5),Total number of beneficiaries due for renewal in the reporting month (Metric 5),1,
+renewed_total,metric_name_row,Metric name,Total number of beneficiaries due for renewal in the reporting month whose coverage was renewed  (Metric 5a),Total number of beneficiaries due for renewal in the reporting month whose coverage was renewed  (Metric 5a),1,
+ex_parte_renewed,metric_name_row,Metric name,Total beneficiaries renewed on an ex parte basis (i.e. based on available information)  (Metric 5a1),Total beneficiaries renewed on an ex parte basis (i.e. based on available information)  (Metric 5a1),1,
+form_renewed,metric_name_row,Metric name,Total beneficiaries renewed based on the return of a renewal form (Metric 5a2),Total beneficiaries renewed based on the return of a renewal form (Metric 5a2),1,
+ineligible_terminations,metric_name_row,Metric name,Total beneficiaries determined ineligible for Medicaid and CHIP based on the return of a renewal form  (Metric 5b),Total beneficiaries determined ineligible for Medicaid and CHIP based on the return of a renewal form  (Metric 5b),1,
+procedural_terminations,metric_name_row,Metric name,Total beneficiaries whose coverage was terminated for a procedural or administrative reason  (Metric 5c),Total beneficiaries whose coverage was terminated for a procedural or administrative reason  (Metric 5c),1,
+pending_renewals,metric_name_row,Metric name,Total number of beneficiaries due for renewal in the reporting month whose renewal was pending at the end of the month (Metric 5d),Total number of beneficiaries due for renewal in the reporting month whose renewal was pending at the end of the month (Metric 5d),1,
+state_name,derived_from_state_abbr_map,State,,,1,Raw file contains state abbreviation; state_name is mapped.
+state_abbr,raw_column,State,,,1,
+state_fips,derived_from_state_abbr_map,State,,,1,
+reporting_period,raw_column,Reporting period,,,1,
+reporting_month,derived_from_reporting_period,Reporting period,,,1,
+notes_or_data_limitations,not_found,,,,0,No notes/data limitations column found in this CSV.

@@ -1,0 +1,897 @@
+
+
+--- PAGE 1 ---
+ 
+Available State Strategies to Minimize Terminations for Procedural Reasons During the COVID-19 Unwinding Period: 
+Operational Considerations for Implementation 
+December 2023 
+ 
+On June 12, 2023, CMS released “Available State Strategies to Minimize Terminations for Procedural Reasons During the COVID-19 Unwinding Period,” which includes several 
+strategies for states to consider adopting in order to: increase ex parte renewal rates; support enrollees with renewal form submission or completion to reduce procedural 
+terminations; and facilitate reinstatement of individuals who were disenrolled for procedural reasons but who still meet substantive eligibility criteria. The following table 
+outlines operational considerations for each strategy including a description on why it is helpful. 1 The numbers in the first column correspond with the number of the strategy 
+that is listed in the underlying document. The Appendix provides example scenarios to illustrate how the strategy could be operationalized. States should consider coupling 
+multiple strategies together to improve effectiveness and adopting as many of the available strategies as possible. A yellow star highlights a strategy that will likely have the 
+biggest impact on increasing ex parte rates, reducing procedural terminations, and mitigating coverage loss. States can contact their state lead or 
+CMSUnwindingSupport@cms.hhs.gov for additional information and technical assistance.  
+ 
+ 
+ 
+1 For a full list of the available strategies see “Available Strategies to Minimize Terminations for Procedural Reasons During the COVID-19 Unwinding Period,” available at https://www.medicaid.gov/resources-for-
+states/downloads/state-strategies-to-prevent-procedural-terminations.pdf.  
+
+
+
+--- PAGE 2 ---
+ 
+ 
+2 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+A. INCREASING EX PARTE RENEWAL RATES 
+4 
+ 
+Renew Medicaid 
+eligibility for 
+individuals with 
+income at or below 
+100% Federal Poverty 
+Level (FPL) and no 
+data returned on an 
+ex parte basis (“100% 
+FPL income strategy”)  
+1902(e)(14)(A)2 This strategy reduces the 
+administrative burden on 
+individuals and the state, 
+particularly in verifying complex 
+self-employment income. 
+This strategy may be especially 
+beneficial in states that: 
+• Have a large number of 
+individuals with income 
+below 100% FPL; 
+• Have a large number of 
+individuals with self-
+employment income; 
+• Do not use tax data as part 
+of an ex parte 
+determination; and/or, 
+• Have already adopted 
+Strategy #3, the $0 income 
+strategy.3 
+Operational Approach:  
+• This strategy, which is available for MAGI and/or non-MAGI Medicaid populations, allows the 
+agency to complete a Medicaid income determination at renewal without requesting 
+additional information or documentation if: 
+(1) the most recent verified income determination was no earlier than 12 months prior to the 
+beginning of the FFCRA continuous enrollment condition (i.e., March 2019) and was based on 
+verified income at or below 100% FPL; and  
+(2) the state has checked financial data sources in accordance with its Verification Plan and no 
+information was received. 
+• States that are interested in pursuing this strategy for their non-MAGI populations may wish to 
+couple the strategy with Strategy #8 “Renew Medicaid eligibility without regard to the asset 
+test for non-MAGI beneficiaries who are subject to an asset test” to further increase ex parte 
+rates for the non-MAGI population.4Strategy 8 can be applied to waive asset requirements for 
+all or a reasonable subset of non-MAGI beneficiaries subject to an asset test. 
+• States that have adopted the $0 income strategy already have the operational and systems 
+processes in place to adopt this strategy. 
+• This strategy is viable in states with both manual and automated ex parte renewal processes. 
+• This strategy is available to non-expansion states even if upper income eligibility levels are 
+below 100% FPL. 
+ 
+2 All 1902(e)(14) strategies noted throughout the table will allow for an eligibility determination system that is more protective of beneficiaries in light of systems limitations and challenges, as required by Section 1902(e)(14)(A) of 
+the Social Security Act.  
+3 See Strategy #3 as listed in “Available Strategies to Minimize Terminations for Procedural Reasons During the COVID-19 Unwinding Period.” available at https://www.medicaid.gov/resources-for-states/downloads/state-strategies-
+to-prevent-procedural-terminations.pdf. 
+4 See Strategy #8 as listed in “Available Strategies to Minimize Terminations for Procedural Reasons During the COVID-19 Unwinding Period.” available at https://www.medicaid.gov/resources-for-states/downloads/state-strategies-
+to-prevent-procedural-terminations.pdf. 
+
+
+
+--- PAGE 3 ---
+ 
+ 
+3 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+9 
+Suspend the requirement 
+to apply for other benefits 
+under 42 CFR 435.608  
+1902(e)(14)(A) 
+This strategy may be especially 
+beneficial to minimize churn and 
+reduce eligibility staff workload 
+for individuals who meet all other 
+eligibility requirements. 
+Operational Approach: 
+• Under this strategy, available for MAGI and/or non-MAGI populations, states may extend 
+eligibility for those who are eligible without requiring individuals to take all necessary steps to 
+obtain any annuities, pensions, retirement, and disability benefits to which they are entitled 
+(e.g., Social Security, veteran’s compensation and pensions, OASDI benefits, railroad retirement 
+benefits, and unemployment compensation) per 42 C.F.R. 435.608. 
+• This strategy requires implementing a process that would extend coverage for all people who 
+continue to be eligible, regardless of whether they applied for benefits. 
+10 
+Suspend the requirement 
+to cooperate with the 
+agency in establishing the 
+identity of a child's parent 
+and in obtaining medical 
+support  
+1902(e)(14)(A) 
+This strategy may be especially 
+beneficial to minimize churn and 
+reduce eligibility staff workload 
+for individuals who meet all other 
+eligibility requirements. 
+Operational Approach: 
+• Under this strategy, available for both MAGI and/or non-MAGI populations, states may extend 
+eligibility for those who are eligible without requiring individuals to establish the identity of a 
+child’s parent and in obtaining medical support. 
+• Under this strategy, while the state Medicaid agency may continue to work with the individual 
+to get the other parent’s cooperation, coverage is not dependent on obtaining such support or 
+establishing good cause for not doing so per Section 1902(a)(45), Section 1912, 42 C.F.R. §§ 
+435.610, 433.147, 433.145, and 433.148. 
+
+
+
+--- PAGE 4 ---
+ 
+ 
+4 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+11 
+ 
+Renew eligibility if able 
+to do so based on 
+available information 
+and establish a new 
+eligibility period 
+whenever contact is 
+made with hard-to-reach 
+populations  
+None. 
+Permissible 
+under 42 CFR 
+435.916(d)(1)(ii) 
+This strategy may be especially 
+beneficial to minimize churn for 
+individuals experiencing 
+homelessness or other 
+populations that are transient 
+such as migrant workers.  
+This strategy may also be 
+beneficial in states that have:  
+• Partnerships with community-
+based organizations, 
+providers, or managed care 
+plans who will assist in calling 
+the Medicaid agency to report 
+a change in circumstance; 
+• Portals for their assistors to 
+directly enter changes in 
+circumstances; and/or, 
+• Eligibility systems that can 
+establish new eligibility 
+periods when consumers 
+report changes in 
+circumstances that permit a 
+full redetermination. 
+Operational Approach: 
+• Under this strategy available for both MAGI and/or non-MAGI populations, per 42 CFR 
+435.916(d)(1), states may redetermine eligibility based on available information and establish 
+a new 12-month eligibility period for eligible individuals, prior to a scheduled renewal date, to 
+ensure that coverage is not later lost due to a procedural reason. 
+• While this strategy is especially helpful to hard-to-reach populations, it can be applied more 
+broadly. 
+• This strategy relies on the authority for states to begin a new renewal period if the state 
+receives information about a change in a beneficiary’s circumstances and it has enough 
+information available to it to renew eligibility with respect to all eligibility criteria or the 
+beneficiary voluntarily provides needed information (e.g., an attestation of income).  
+• This strategy does not require that an individual actually have any changes to report. So long 
+as the state is able to complete a redetermination at the time of contact, the individual’s 
+coverage would be extended. 
+• This strategy would not apply if there is not enough information available at the time the 
+information is provided and the state would otherwise need to request additional information.  
+• States may only use this strategy to renew someone affirmatively; the strategy may not be 
+used to terminate coverage. 
+• This strategy may not be used to shorten renewal periods by terminating coverage for 
+beneficiaries prior to their scheduled renewal date unless the individual has completed a 
+renewal or the state has obtained from external data sources, information indicating a change 
+in circumstances that results in a determination of ineligibility and provided the individual with 
+an opportunity to dispute the external data sources in accordance with 42 C.F.R. § 435.916(d). 
+ 
+Notices: Similar to an ex parte renewal, states must provide individuals determined eligible based 
+on a change of circumstances notice of the agency’s decision. 
+
+
+
+--- PAGE 5 ---
+ 
+ 
+5 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+B. SUPPORTING ENROLLEES WITH RENEWAL FORM SUBMISSION OR COMPLETION TO REDUCE PROCEDURAL TERMINATIONS 
+12 
+Permit managed care 
+plans to provide 
+assistance to enrollees to 
+complete and submit 
+Medicaid renewal forms  
+1902(e)(14)(A) 
+This strategy provides individuals 
+and families with assistance in 
+completing the required renewal 
+forms by leveraging Medicaid 
+managed care plans that are well 
+positioned to provide such 
+assistance. 
+ 
+This strategy may be especially 
+beneficial in states that: 
+• Have high numbers of 
+individuals enrolled in 
+managed care plans or have 
+high penetration in one or 
+more large regional areas 
+with large numbers of 
+Medicaid enrollees or with 
+specific vulnerable 
+populations; 
+• Are working with their 
+managed care plans on other 
+unwinding strategies; and/or, 
+• Require additional in-person 
+assistance.  
+Operational Approach: 
+• Under this strategy, state Medicaid and CHIP agencies can work with Medicaid and CHIP 
+managed care plans to assist their enrollees in completing the renewal process, including 
+completing certain parts of renewal forms. 
+• Managed care plans may offer their assistance in completing renewal forms, but only provide 
+such assistance if the enrollee chooses to accept the plan’s assistance. 
+• When assisting enrollees with completing renewal forms, managed care plans will limit their 
+assistance to completing fields with information provided by the enrollee relating to eligibility 
+criteria which the enrollee must meet to retain coverage. 
+• Plans may not assist enrollees with completing any fields associated with managed care plan 
+selection and plans may not sign the renewal form on the enrollee’s behalf. 
+• State payments to managed care plans for work of this type conducted on behalf of the state 
+must be separate from the actuarially sound capitation payments to plans. 
+• Managed care plans can use web-based assistance to assist individuals with submitting a 
+renewal via the state’s online portal. 
+• States may make this an optional or mandatory activity for Medicaid managed care plans; 
+under either approach, a state should issue policy guidance to plans outlining expectations and 
+guardrails related to prohibitions on plan choice counseling. (e.g., a state could require an 
+individual to sign a form indicating that they understood they had a choice of health plans and 
+were voluntarily renewing into their plan.) If a state makes this mandatory, it may need to also 
+update its Medicaid managed care contracts and obtain CMS contract approvals, as needed. 
+• In addition to deploying this strategy, states can partner with its managed care plans to: (1) 
+update enrollee contact information; (2) conduct outreach to remind individuals to respond to 
+renewal packets and requests for information; (3) conduct outreach to individuals who lost 
+coverage for procedural reasons; and (4) assist individuals who lost Medicaid or CHIP coverage 
+to transition to and enroll in Marketplace coverage. For more information see Strategic 
+Approaches to Engaging Managed Care Plans to Maximize Continuity of Coverage as States 
+Resume Normal Eligibility and Enrollment Operations, January 2023 update, available at 
+https://www.medicaid.gov/resources-for-states/downloads/health-plan-strategy.pdf. 
+
+
+
+--- PAGE 6 ---
+ 
+ 
+6 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+12 
+(continu
+ed) 
+Permit managed care plans to provide 
+assistance to enrollees to complete and 
+submit Medicaid renewal forms 
+(continued) 
+1902(e)(14)(A) 
+(continued) 
+This strategy provides individuals and families 
+with assistance in completing the required 
+renewal forms by leveraging Medicaid managed 
+care plans that are well positioned to provide such 
+assistance. 
+ 
+This strategy may be especially beneficial in states 
+that: 
+• 
+Have high numbers of individuals enrolled in 
+managed care plans or have high 
+penetration in one or more large regional 
+areas with large numbers of Medicaid 
+enrollees or with specific vulnerable 
+populations; 
+• 
+Are working with their managed care plans 
+on other unwinding strategies; and/or, 
+Require additional in-person assistance. 
+(continued) 
+Guardrails and Prohibitions:  
+• Consistent with the Medicaid managed care marketing regulations at 42 CFR 438.104, managed 
+care plans are prohibited from engaging in all forms of marketing and potential conflicts of 
+interest and must protect managed care enrollees’ confidentiality related to providing 
+assistance with renewals. 
+• Any assistance provided to enrollees in completing their eligibility renewal forms is purely an 
+administrative activity offered by the managed care plan; managed care plans are prohibited 
+from acting as an enrollee’s authorized representative as defined at 42 CFR 435.923. 
+• Managed care plans may not take actions that could influence the enrollee to select the 
+managed care plan that is providing the assistance or not enroll in another managed care plan. 
+Managed care plans will not perform activities that must be provided by an enrollment broker (as 
+defined in 42 CFR 438.810(a)), including choice counseling (as defined in 42 CFR 438.2). As 
+specified in 42 CFR 438.810(b)(1)-(2), enrollment brokers must be independent and free from 
+conflict of interest from all managed care plans in the state. 
+
+
+
+--- PAGE 7 ---
+ 
+ 
+7 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+14 
+ 
+Delay procedural 
+terminations for 
+beneficiaries while the 
+state conducts targeted 
+renewal outreach  
+CMS 
+Concurrence 
+with 
+applicability 
+of 42 CFR 
+435.912(e); 
+send request 
+via CMS 
+unwinding 
+support 
+mailbox. 
+This strategy can be helpful in 
+providing the state additional 
+time to conduct targeted 
+outreach to individuals who have 
+not responded to the renewal 
+form. 
+This strategy can be targeted to 
+specific vulnerable populations at 
+risk of losing coverage (e.g., 
+children, older adults, individuals 
+in nursing homes, individuals 
+with disabilities). 
+Operational Approach: 
+• This strategy is available for states to implement on a monthly or ad hoc basis for cohorts of 
+MAGI and/or non-MAGI renewals based on certain defined criteria (e.g., if the percent of 
+anticipated procedural terminations exceeds a specified threshold). States seeking to delay 
+procedural terminations for longer than 30 days should consult with CMS. 
+• States must use the additional time to conduct targeted outreach to all populations or to a 
+subset of the population who are anticipated to have their coverage procedurally terminated 
+in order to encourage beneficiaries to return the renewal form. 
+• States may consider coupling this strategy with a partnership with community-based 
+organizations, providers, and managed care plans to conduct outreach via multiple modalities 
+(e.g., telephone, text, email).  
+• This strategy applies when an individual has not responded to a renewal form and coverage 
+may be procedurally terminated or the individual has responded to a renewal form or request 
+for additional information and the state is working to obtain the additional information.  
+• States should note use of this strategy and approval for this mitigation on file, in the state’s 
+unwinding plan, in order to present at the time of audit. (See Reporting below.)  
+• States should follow noticing requirements and provide sufficient advance notice based on the 
+new termination date. If the advance notice is sent out earlier than normal, states should take 
+special care to ensure that the fair hearings timeframe complies with federal regulations. 
+• States that have already sent advance notice must send a new notice to those individuals, in 
+the first month a state adopts the strategy, with an updated date of action. States 
+implementing this strategy after already sending notices are encouraged to contact CMS for 
+technical assistance.  
+Reporting:  
+• In the unwinding data monthly reports, procedural terminations being held should be 
+reported as pending or incomplete (metric 5d), because no final determination has been 
+made. States are also encouraged to leave a note when reporting this data to provide CMS 
+with additional context.  
+
+
+
+--- PAGE 8 ---
+ 
+ 
+8 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+C. FACILITATING REINSTATEMENT OF ELIGIBLE INDIVIDUALS DISENROLLED FOR PROCEDURAL REASONS 
+18 
+Designate the state 
+agency as a qualified 
+entity to make 
+determinations of 
+Presumptive Eligibility 
+(PE) on a MAGI basis for 
+individuals disenrolled 
+from Medicaid or CHIP 
+for a procedural reason 
+in the prior 90 days (or 
+longer period elected by 
+the state)  
+1902(e)(14)(A) 
+This strategy allows states to 
+quickly reinstate otherwise 
+eligible individuals while they 
+process the full renewal form or 
+application. It enables an 
+individual to have immediate 
+access to services during the 90-
+day reconsideration period. 
+This strategy may be especially 
+beneficial in states that: 
+• Have large volumes of 
+pending renewals or 
+applications waiting to be 
+processed by eligibility staff;  
+• Have higher rates of 
+procedural disenrollments; 
+and/or  
+• Are able to either automate 
+or manually determine an 
+individual presumptively 
+eligible if their coverage has 
+been procedurally 
+terminated. 
+Operational Approach: Under this strategy for MAGI populations, 
+• State Medicaid agency designates itself as a qualified entity able to make PE determinations 
+for when an individual is disenrolled from Medicaid or CHIP for procedural reasons. 
+• Under this strategy, for individuals disenrolled for procedural reasons, the state agency 
+completes the PE determination based on the submission of a renewal form or application, 
+but more information is needed.  
+• A state that employs this strategy may limit it only to individuals terminated for procedural 
+reasons and is not required to complete a PE determination for other applicants. This strategy 
+does not impact states’ ability under the state plan to authorize qualified entities to make PE 
+determinations for other individuals as well. 
+• The PE period extends from the date of the PE determination by the state agency to the date a 
+final determination of eligibility is made. 
+• A state may wish to employ this strategy to ensure the individual is able to start receiving 
+benefits immediately: 
+o In a 90-day reconsideration period, the state treats the renewal form like a new 
+application. This means the individual does not receive services until the state has 
+processed the determination and found them eligible. This may involve getting additional 
+documentation or going through verification processes.  
+o The PE strategy works like regular PE, where the qualified entity makes the presumptive 
+determination, and the individual is eligible to start receiving benefits immediately. If the 
+person is not eligible for Medicaid upon the full review, then their presumptive eligibility 
+period ends.  
+• An individual who receives a PE determination must complete the full determination process 
+and provide requested information, as appropriate. 
+ 
+Notices: An individual must be provided a notice informing them of their PE determination and 
+information on what else the individual must provide in order for their coverage to be fully 
+determined. 
+
+
+
+--- PAGE 9 ---
+ 
+ 
+9 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+19 
+Designate pharmacies, 
+community-based 
+organizations, and/or 
+other providers as 
+qualified entities to 
+make determinations of 
+PE on a MAGI basis for 
+individuals disenrolled 
+from Medicaid or CHIP 
+for a procedural reason 
+in the prior 90 days (or 
+longer period elected by 
+the state)  
+1902(e)(14)(A) 
+This strategy allows an individual 
+whose coverage was procedurally 
+terminated to access services 
+immediately and helps to close 
+the gap in coverage for those 
+who may still meet substantive 
+eligibility criteria. 
+ 
+This strategy may be especially 
+beneficial in states that:  
+• Have a commitment from 
+pharmacies, providers and 
+community-based 
+organizations to assist in 
+unwinding;  
+• Work with populations that 
+may require additional in-
+person assistance;  
+• Have strong existing 
+presumptive eligibility 
+processes in place (and/or, 
+• Have community-based 
+and/or managed care plan 
+partnerships to assist on-site 
+with completing the renewal 
+form or full application, as 
+needed. 
+Operational Approach: Under this strategy for MAGI populations, 
+• This strategy is intended to provide PE for individuals recently disenrolled. It does not impact 
+states’ ability under the state plan to authorize qualified entities to make PE determinations for 
+other individuals as well. 
+• Consistent with PE regulations at 435.1103(b), this strategy is only available for MAGI 
+determinations—this is most children, pregnant individuals, and adults eligible under the 
+expansion group.  
+• Once an individual is determined presumptively eligible, the PE period begins on the day that 
+the qualified entity approves PE. The end date, if a renewal or Medicaid application is filed by 
+the last day of the month after the month that PE is determined, is the date full Medicaid 
+eligibility is approved or denied. If a renewal or Medicaid application is not filed by the last day 
+of the month after the month that PE is determined, the PE period ends on that day. 
+• States should encourage qualified entities to assist individuals with completing the renewal form 
+or the full Medicaid application which can help connect more people to longer-term coverage.  
+Training, Agreements and Community Partnerships: 
+• States should encourage providers deemed as qualified entities to establish on-site partnerships 
+with qualified application assisters to submit the full renewal form (if the state has leveraged 
+Strategy #12, Permit managed care plans to provide assistance to enrollees to complete 
+Medicaid renewal forms). 
+• States should enter into agreements with the qualified entities consistent with state-specific 
+requirements. This agreement must explain the state’s policies and procedures, and roles and 
+responsibilities of both the qualified entity and state Medicaid agency.  
+• States should provide the qualified entities with adequate procedures, forms, eligibility 
+determination notices and a simplified training that explains the PE program requirements and 
+expectations. 
+• States will need to develop processes for qualified entities to submit PE forms, which could be 
+manual in the short-term. 
+• States would not be required to apply PE performance standards as these determinations will 
+not be factored into the state’s overall monitoring of qualified entity performance measures. 
+
+
+
+--- PAGE 10 ---
+ 
+ 
+10 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+19 (continued) 
+Designate pharmacies, community-based organizations, 
+and/or other providers as qualified entities to make 
+determinations of PE on a MAGI basis for individuals 
+disenrolled from Medicaid or CHIP for a procedural reason in 
+the prior 90 days (or longer period elected by the state)  
+(continued) 
+1902(e)(14)(A) (continued) 
+This strategy allows an individual whose coverage was procedurally terminated 
+to access services immediately and helps to close the gap in coverage for those 
+who may still meet substantive eligibility criteria. 
+ 
+This strategy may be especially beneficial in states that:  
+• 
+Have a commitment from pharmacies, providers and community-based 
+organizations to assist in unwinding;  
+• 
+Work with populations that may require additional in-person 
+assistance;  
+• 
+Have strong existing presumptive eligibility processes in place (and/or, 
+Have community-based and/or managed care plan partnerships to assist on-site 
+with completing the renewal form or full application, as needed. (continued) 
+• States may elect to not count PE determinations made at pharmacies or other qualified entities 
+conducting PE determinations under this strategy toward the reasonable limits on the number 
+of allowable PE periods in the timeframe set by the state (e.g., one PE period per 12 months; 
+one PE period per pregnancy). 
+• For more information on operationalizing PE, see the CMS Medicaid and CHIP Coverage Learning 
+Collaborative Hospital Presumptive Eligibility Section. 
+PE Eligibility Screening Processes: 
+• States should provide participating qualified entities with forms or other tools with questions 
+needed to screen for eligibility based on attested information. 
+• These questions will be reflected on the PE application, which can be paper and/or online. 
+Typically, the information needed to determine eligibility includes: 
+o Did you lose your Medicaid within 90 days (or longer, at state option); 
+o Household size, income, and age; and, 
+o Other information and income levels needed to appropriately determine which MAGI 
+eligibility group the individual is eligible for (i.e., children, pregnant women, parents and 
+caretaker relatives, the adult group, former foster care children, and other populations 
+eligible at state option, such as, family planning, and breast and cervical cancer). 
+o The PE applications may optionally ask for Citizenship/Satisfactory Immigration status, and 
+state residency. States may decide not to include these questions on the PE application 
+because those factors of eligibility were previously verified by the state agency. 
+
+
+
+--- PAGE 11 ---
+ 
+ 
+11 
+# 
+Strategy  
+Federal 
+Authority 
+Required 
+Why This Strategy Helps 
+How the Strategy Works 
+19 (continued) 
+Designate pharmacies, community-based organizations, 
+and/or other providers as qualified entities to make 
+determinations of PE on a MAGI basis for individuals 
+disenrolled from Medicaid or CHIP for a procedural reason in 
+the prior 90 days (or longer period elected by the state) 
+(continued) 
+1902(e)(14)(A) (continued) 
+This strategy allows an individual whose coverage was procedurally terminated 
+to access services immediately and helps to close the gap in coverage for those 
+who may still meet substantive eligibility criteria. 
+ 
+This strategy may be especially beneficial in states that:  
+• 
+Have a commitment from pharmacies, providers and community-based 
+organizations to assist in unwinding;  
+• 
+Work with populations that may require additional in-person 
+assistance;  
+• 
+Have strong existing presumptive eligibility processes in place (and/or, 
+Have community-based and/or managed care plan partnerships to assist on-site 
+with completing the renewal form or full application, as needed. (continued) 
+Guardrails:  
+• As a qualified entity, the entity must:  
+o Allow any employee who is properly trained and certified to make PE determinations; 
+o Ensure that participating providers do not delegate PE determinations to non-trained 
+staff, although contractors may assist with the PE process but may not make a final 
+PE determination; 
+o Make PE determinations based on attested information and provide the customer 
+with a written PE approval or denial notice (form notices provided by the state); 
+o Send the PE determination to the state agency within 5 working days; and 
+o Assist with completing the renewal online or by phone, or Medicaid application, 
+and/or provide customers with a full Medicaid application and a fact sheet on how to 
+complete the renewal/ full Medicaid application process. 
+Notices: An individual must be provided a notice from the state informing them of their PE 
+determination and information on what else the individual must provide in order for their 
+coverage to be fully determined. 
+20 
+Reinstate eligibility 
+effective on the 
+individual’s prior 
+termination date for 
+individuals who were 
+disenrolled based on a 
+procedural reason and 
+are subsequently 
+redetermined eligible for 
+Medicaid during a 90-day 
+Reconsideration Period  
+1902(e)(14)(A) 
+This strategy reduces the burden 
+on state eligibility workers by 
+eliminating the need to verify 
+eligibility during the retroactive 
+eligibility period prior to the date 
+or month in which the renewal 
+form was returned.  
+ 
+This strategy reduces churn for 
+those individuals who are found 
+eligible during the reconsideration 
+period but eligibility is unable to 
+be verified retroactively. 
+Operational Approach: 
+• This strategy allows the Medicaid agency to reinstate eligibility for MAGI and/or non-MAGI 
+populations effective on the individual’s prior termination date for those individuals 
+redetermined eligible during the 90-day reconsideration period. 
+• Normally, returning a form within the 90-day reconsideration period is treated like a new 
+application, so the effective date of coverage is either the day the individual submitted the 
+form or the first of that month and an individual may be required to demonstrate eligibility in 
+prior months to receive coverage for services received.  
+• This strategy allows states to make the eligibility date the same as the day someone lost 
+coverage and maintain the original renewal cycle and reduce churn. 
+ 
+ 
+ 
+
+
+
+--- PAGE 12 ---
+ 
+ 
+12 
+ 
+Appendix: Example Scenarios for Operationalizing Available Strategies 
+# 
+Strategy  
+Example Scenario 
+A. INCREASING EX PARTE RENEWAL RATES 
+4 
+ 
+Renew Medicaid eligibility for 
+individuals with income at or below 
+100% FPL and no data returned on 
+an ex parte basis (“100% FPL 
+income strategy”)  
+Julia has been continuously enrolled in Medicaid since July 2021. Julia, who is self-employed, has income recorded in the state’s eligibility 
+system that is $911/month or 75% of the FPL. The state Medicaid agency attempts to conducts an ex parte renewal for Julia in May 2023 
+reviewing all available earned and unearned income sources as reflected in the state’s Verification Plan. No data are returned. Julia’s 
+eligibility may be extended from July 2023 through June 2024. Julia was able to have her coverage extended because the income on file from 
+no earlier than 12 months prior to the beginning of the continuous enrollment condition is below 100% of the FPL, no verification data was 
+returned from the data sources, and she meets all other eligibility criteria. 
+9 
+Suspend the requirement to apply 
+for other benefits under 42 CFR 
+435.608  
+Anna has been continuously enrolled in Medicaid since July 2021. Anna receives $500/month in earned income. Based on information 
+available to the agency, Anna was told by the Medicaid agency that she needed to apply for veteran’s compensation, but she has not 
+provided any information to the Medicaid agency that she has done so. The State conducts an ex parte review and confirms income and all 
+other eligibility criteria. The State Medicaid agency may extend Anna’s eligibility from July 2023 through June 2024. Anna is able to have her 
+coverage extended because the state suspended the requirement that Anna apply for other benefits. 
+10 
+Suspend the requirement to 
+cooperate with the agency in 
+establishing the identity of a child's 
+parents and in obtaining medical 
+support  
+Athena and her 8-year-old son, Marcus, have been continuously enrolled in Medicaid since July 2021. Athena receives $500/month in earned 
+income. The Title IV agency reached out to Athena to inform her that she needed to pursue medical support from Marcus’ father, who does 
+not live with the child and does not send support for the child, but she has not provided any information to the Medicaid agency that she has 
+done so. The State conducts an ex parte review and confirms income and all other eligibility criteria for Athena and Marcus. The State 
+Medicaid agency may extend Athena’s and Marcus’ eligibility from July 2023 through June 2024. Athena is able to have her coverage 
+extended because the state suspended the requirement that Athena demonstrate that she pursue medical support. 
+As a reminder, a parent’s willingness to cooperate with obtaining medical support must never impact a child’s eligibility determination. 
+11 
+ 
+Renew eligibility if able to do so 
+based on available information, and 
+establish a new eligibility period 
+whenever contact is made with 
+hard-to-reach populations  
+Juan has been continuously enrolled in Medicaid since September 2021. Juan has $0 income reported in the state Medicaid agency’s eligibility 
+system. Juan’s renewal is scheduled for September 2023. In June 2023, Juan is unhoused and while staying in a temporary shelter, with 
+support from a caseworker, Juan calls the state agency’s call center and provides information to the eligibility worker and attests that his 
+income is $0. The State conducts an ex parte review and confirms income eligibility for Juan. The State Medicaid agency may extend Juan’s 
+coverage from June 2023-May 2024. Juan was able to have his coverage extended because the state renewed his eligibility based on the 
+information that Juan provided.  
+As a reminder, a state can only make an affirmative action based on this strategy and may not terminate coverage based on this strategy. 
+
+
+
+--- PAGE 13 ---
+ 
+ 
+13 
+# 
+Strategy  
+Example Scenario 
+B. SUPPORTING ENROLLEES WITH RENEWAL FORM SUBMISSION OR COMPLETION TO REDUCE PROCEDURAL TERMINATIONS 
+12 
+ 
+Permit managed care plans to 
+provide assistance to enrollees to 
+complete and submit Medicaid 
+renewal forms  
+A Medicaid managed care plan conducts telephonic outreach to Vikram and reminds him to update his contact information and submit his 
+renewal form. Vikram says he needs assistance in completing the renewal form. The Medicaid managed care plan makes an appointment for 
+Vikram to come into the office and assists him in filling out the fields of the renewal form. The managed care plan may not assist Vikram in 
+completing the managed care plan selection or enrollee signature fields of the application. Vikram submits the renewal form via the online 
+portal with the managed care plan’s assistance. Under this strategy, the managed care plan may complete the renewal form with Vikram in 
+order to have his coverage renewed. 
+14 
+ 
+Delay procedural terminations for 
+beneficiaries for one month while 
+the state conducts targeted 
+renewal outreach  
+Luz has been continuously enrolled in Medicaid since July 2021. A state commenced the renewal process in May 2023 for a July 2023 renewal 
+and sent Luz a renewal form. Luz did not return the renewal form within the requested 30-day time period and was slated for termination. 
+Rather than procedurally terminate Luz’s coverage, the State is delaying procedural terminations by 30 days to conduct additional outreach. 
+In August, the State conducts telephone outreach and is able to renew Luz’s coverage. The state has flexibility in determining Luz’s new 
+coverage period, which could be July 2023 through June 2024 or August 2023 through July 2024. Luz’s coverage was able to be extended 
+because the state delayed procedural terminations by 30 days. 
+C. FACILITATING REINSTATEMENT OF ELIGIBLE INDIVIDUALS DISENROLLED FOR PROCEDURAL REASONS 
+18 
+Designate the state agency as a 
+qualified entity to make 
+determinations of Presumptive 
+Eligibility (PE) on a MAGI basis for 
+individuals disenrolled from 
+Medicaid or CHIP for a procedural 
+reason in the prior 90 days (or 
+longer period elected by the state)  
+Camillo has been continuously enrolled in Medicaid since July 2021. A state commenced the renewal process in May 2023 for a July 2023 
+renewal and sent Camillo a renewal form. Camillo did not return the renewal form within the requested 30-day period, and his coverage was 
+terminated in July 2023. In September 2023, during the 90-day reconsideration period, Camillo contacts the state’s call center and provides 
+information to complete his redetermination. Under this strategy, the state uses Camillo’s attested income to determine him presumptively 
+eligible while the state completes a full review and eligibility determination. Camillo may have his coverage effective immediately.  
+
+
+
+--- PAGE 14 ---
+ 
+ 
+14 
+# 
+Strategy  
+Example Scenario 
+19 
+Designate pharmacies, community-
+based organizations, and/or other 
+providers as qualified entities to 
+make determinations of PE on a 
+MAGI basis for individuals 
+disenrolled from Medicaid or CHIP 
+for a procedural reason in the prior 
+90 days (or longer period elected by 
+the state)  
+Joaquin has been continuously enrolled in Medicaid since July 2021. A state commenced the renewal process in May for a July 2023 renewal 
+and sent Joaquin a renewal form. Joaquin did not return the renewal form within the requested 30-day period, and his coverage was 
+terminated in July. In September, during the 90-day reconsideration period, Joaquin goes to a pharmacy to get his prescription filled. The 
+pharmacy is unable to bill Medicaid for the prescription because Joaquin’s coverage was terminated. The pharmacy, a deemed qualified 
+entity, conducts a PE screening and based on income determines Joaquin to be presumptively eligible. The pharmacy also helps Joaquin 
+complete a new application.  
+The pharmacy sends the completed application to the Medicaid agency, informs the agency of the PE decision, and provides Joaquin his 
+medication. Upon receipt of the application, the Medicaid agency completes a full determination of eligibility. If the agency needs additional 
+information to complete the determination of eligibility, the state will request that information from Joaquin. If he is determined eligible for 
+Medicaid based on the application, PE coverage will end, Joaquin will receive full benefits and a new 12-month eligibility period, and the state 
+will provide notice of the decision, along with applicable fair hearing rights. 
+20 
+Reinstate eligibility effective on the 
+individual’s prior termination date 
+for individuals who were 
+disenrolled based on a procedural 
+reason and are subsequently 
+redetermined eligible for Medicaid 
+during a 90-day reconsideration 
+period  
+Anthony failed to submit his renewal form and his Medicaid coverage is terminated on May 31, 2023. On July 10, 2023, Anthony submits his 
+renewal form and is determined eligible. Under this strategy, the Medicaid agency can redetermine Anthony eligible for coverage effective 
+June 1, 2023, instead of either July 1, 2023 or July 10, 2023, eliminating Anthony’s gap in coverage. In many cases, any unpaid bills incurred 
+between May 31, 2023 and July 1, 2023 will be covered because of delayed billing. However, in some cases, the state may need to instruct 
+the Medicaid providers to bill again in order to be paid for services provided. 
+ 

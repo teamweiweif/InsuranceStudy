@@ -1,0 +1,912 @@
+
+
+--- PAGE 1 ---
+ 
+1
+COVID-19 Public Health Emergency Unwinding Frequently Asked Questions for State Medicaid 
+and CHIP Agencies 
+October 17, 2022 
+ 
+The Centers for Medicare & Medicaid Services (CMS) has released numerous guidance 
+documents and tools designed to help states1 prepare for the eventual end of the COVID-19 
+public health emergency (PHE), including a State Health Official Letter, Promoting Continuity 
+of Coverage and Distributing Eligibility and Enrollment Workload in Medicaid, the Children’s 
+Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon Conclusion of the 
+COVID-19 Public Health Emergency (SHO #22-001, dated March 3, 2022). CMS is releasing 
+these answers to frequently asked questions (FAQs) regarding SHO #22-001 and related 
+guidance. For more information, including resources, tools to support state unwinding efforts, 
+and information shared during All State Calls, please visit www.Medicaid.gov/unwinding. 
+ 
+Unwinding Period 
+ 
+Q1:  
+When can states begin the 12-month unwinding period described in SHO Letter 
+#22-001? 
+ 
+A:  
+States may choose to begin their unwinding period in one of three months: (1) one month 
+prior to the month in which the PHE ends, (2) the month in which the PHE ends, or (3) the 
+month after the month in which the PHE ends. For example, if the PHE ends in January 2023, 
+states may begin their unwinding period anytime in December 2022, January 2023, or February 
+2023. A state’s unwinding period begins during the month it first initiates renewals for 
+beneficiaries who may be terminated because they no longer meet eligibility requirements or do 
+not provide information needed for the state to renew eligibility. 
+ 
+Q2: 
+When is a renewal considered initiated for the purposes of beginning the state’s 
+unwinding period? 
+ 
+A:  
+A renewal is considered “initiated” when the state begins the ex parte renewal process for 
+a cohort of beneficiaries by accessing electronic data sources and other information available to 
+the state in order to determine if a beneficiary’s eligibility can be successfully renewed without 
+contacting the beneficiary. 
+ 
+Q3: 
+If a state has been conducting renewals throughout the PHE, when does the state’s 
+12-month unwinding period begin?  
+ 
+A:  
+States that have been conducting renewals during the PHE are subject to the options 
+outlined in the answer to Q1 regarding the month in which the state may begin its unwinding 
+period. The unwinding period will begin for these states during the month when the state initiates 
+renewals for a cohort of beneficiaries who may be terminated because they no longer meet 
+eligibility requirements or do not provide information needed for the state to renew 
+eligibility. Conversely, prior to the initiation of the unwinding period, states claiming the 6.2 
+                                                            
+1 Throughout this document, “states” refers to states, the District of Columbia, and the U.S. Territories. 
+
+
+
+--- PAGE 2 ---
+ 
+2
+percentage point federal medical assistance percentage (FMAP) increase made available under 
+the Families First Coronavirus Response Act (FFCRA) have not been permitted to terminate 
+coverage for most Medicaid beneficiaries, even where they have been completing renewals. 
+ 
+Q4: 
+If a state begins its unwinding period before the PHE ends, consistent with the 
+guidance in SHO Letter #22-001, in what month can a termination first occur?  
+ 
+A:  
+ Regardless of the month when the state begins its unwinding period, states that continue 
+to claim the temporary FMAP increase authorized under section 6008 of the FFCRA may not 
+terminate enrollment (with limited exceptions permitted under the FFCRA and described in 
+regulations at 42 CFR § 433.400) until the first day of the month after the month when the PHE 
+ends. 
+ 
+Renewals and Changes in Circumstances 
+ 
+Q5: 
+If the state has been redetermining eligibility based on changes in circumstances 
+during the PHE and an individual is determined ineligible during the PHE before the state 
+has commenced its unwinding period, may the state send advance notice and terminate 
+coverage once the state’s unwinding period begins without conducting a redetermination 
+based on a change in circumstances or renewal during the unwinding period?  
+ 
+A:  
+No. As explained on pages 4 and 5 in SHO Letter #21-002, “Updated Guidance Related 
+to Planning for the Resumption of Normal State Medicaid, Children’s Health Insurance Program 
+(CHIP), and Basic Health Program (BHP) Operations Upon Conclusion of the COVID-19 Public 
+Health Emergency,” published on August 13, 2021, states must complete a full renewal or, in 
+certain circumstances explained in response to Q6 below, a redetermination of eligibility based 
+on a change in circumstances during the state’s unwinding period before taking action to 
+terminate coverage for any individual who, during the PHE but before the state’s unwinding 
+period has commenced, was determined by the state to be ineligible for Medicaid but whose 
+enrollment was not terminated. This includes individuals who failed to respond to a request for 
+information sent during the PHE. For individuals who were determined ineligible during the 
+PHE based on a change in circumstances and who are still within the 12-month eligibility period 
+since their last full eligibility determination (i.e., at initial application or last full renewal, or a 
+shorter period elected by the state for individuals enrolled on a basis other than modified 
+adjusted gross income (MAGI)), a state may either complete another redetermination of 
+eligibility based on the identified change in circumstances or conduct a full renewal during the 
+unwinding period. During the states’ unwinding period, states must complete a full renewal for 
+individuals who were determined ineligible at renewal during the PHE or who are no longer 
+within their eligibility period when the state processes the redetermination. 
+ 
+Q6:  
+If a beneficiary enrolled in Medicaid or CHIP reports a change in circumstances 
+during the PHE or unwinding period, may the state redetermine eligibility based on the 
+change in circumstances or must the state complete a full renewal? 
+ 
+A:  
+The state may be able to redetermine eligibility based on a change in circumstances, but 
+only in limited circumstances. During the unwinding period, states can only redetermine 
+
+
+
+--- PAGE 3 ---
+ 
+3
+eligibility based on a change in circumstances if, in the previous 12 months (or shorter period 
+elected by the state for individuals enrolled on a basis other than MAGI), the state has already 
+either: (1) completed an initial eligibility determination or (2) renewed the individual’s 
+eligibility. In these cases, the beneficiary is still within their 12-month eligibility period (or 
+shorter eligibility period elected by the state for individuals enrolled on a basis other than MAGI) 
+when the state revisits the case during the unwinding period, and the state may act on the change 
+in circumstances.2 
+  
+If the beneficiary is not within an eligibility period, the state must complete a full renewal and 
+may not redetermine eligibility based only on a change in circumstances during the unwinding 
+period. A beneficiary is not considered to be within an eligibility period if the state was unable to 
+complete a full renewal for the individual during the PHE because the individual was determined 
+ineligible during their last renewal.  
+ 
+Q7:  
+If a beneficiary enrolled in Medicaid or CHIP and within a 12-month eligibility 
+period reports a change in circumstances during the unwinding period, may the state delay 
+acting on the change in circumstances until it completes a full renewal? 
+ 
+A: 
+Yes. States may wait to process the information from a reported or identified change in 
+circumstances until the full renewal that is initiated for the beneficiary during the unwinding 
+period. This alignment strategy, which is discussed in more detail on page 19 of SHO Letter # 
+21-002, creates efficiencies for states by allowing them to use information obtained at renewal to 
+resolve other pending eligibility and enrollment actions simultaneously and avoid needing to 
+send individuals multiple requests for information to complete pending actions. 
+ 
+Non-MAGI Ex Parte Renewals 
+ 
+Q8: 
+In conducting a periodic renewal of eligibility for non-MAGI Medicaid beneficiaries 
+subject to an asset test, do states have to attempt to renew eligibility on an ex parte basis 
+using reliable information available to the state without contacting the beneficiary?  
+ 
+A: 
+Yes. As explained on pages 3-4 and 15 in the December 4, 2020, Center for Medicaid & 
+CHIP Services (CMCS) Informational Bulletin (CIB), entitled “Medicaid and Children’s Health 
+Insurance Program (CHIP) Renewal Requirements,” per federal requirements at 42 CFR §§ 
+435.916(a)(2) and (b) and 457.343, states are required to attempt an ex parte renewal for all 
+Medicaid and CHIP beneficiaries using all reliable information contained in the individual’s 
+account or other more current information available to the agency, including those Medicaid 
+beneficiaries who are subject to an asset test. We also explained in the December 2020 CIB that 
+use of the state’s Asset Verification System (AVS) is a required part of the ex parte renewal 
+process. However, not all asset information available from financial institutions participating in 
+the AVS is returned in real time. In conducting an ex parte renewal, states must allow for a 
+reasonable period of time for electronic information from the AVS to be returned. As described 
+on page 25 in SHO Letter #22-001, to support states’ efforts to streamline renewal processes and 
+                                                            
+2 States that act on a change in circumstances must redetermine eligibility consistent with federal requirements at 42 
+CFR § 435.916(d). 
+
+
+
+--- PAGE 4 ---
+ 
+4
+increase ex parte renewal rates during the unwinding period following the end of the PHE, states 
+can request authority under section 1902(e)(14)(A) of the Act to complete renewals of 
+beneficiaries for whom no information is returned by the AVS within a reasonable timeframe 
+using an assumption that there has been no change in resources when no information is returned 
+through the AVS, or when the AVS call is not returned within a reasonable timeframe, and to 
+complete an ex parte renewal process without any further verification of assets. 
+ 
+Q9: 
+In conducting a periodic renewal of beneficiaries subject to an asset test, are states 
+required to obtain a new attestation from the beneficiary of the value of assets which 
+cannot be verified through the state’s AVS before completing the renewal? 
+ 
+A: 
+Not necessarily. States have some discretion regarding whether to require a new 
+attestation regarding the value of assets that cannot be verified through their AVS prior to 
+completion of an ex parte renewal for a beneficiary subject to an asset test, as described below. 
+In attempting to complete an ex parte renewal of eligibility, states are required to check data 
+sources and other information available to the state. States are also required to use reliable 
+information in the beneficiary’s account.3 Some assets are likely to fluctuate in value. If the 
+value of an asset held by a beneficiary at their last determination (i.e., at initial application or 
+periodic renewal) could appreciate over time, the state cannot rely on the value recorded. 
+However, some assets are unlikely to appreciate in value over time – indeed, some assets are 
+likely to depreciate in value. For example, a second vehicle, most personal property, burial 
+funds,4 and some life insurance policies are unlikely to appreciate in value, and may actually 
+depreciate in value over time. States have the discretion under the renewal regulations at 42 CFR 
+§ 435.916, to determine that certain types of assets are unlikely to appreciate in value. If a state 
+opts to use this discretion, the state could find that the value of the asset previously verified by 
+the state and recorded in a beneficiary’s case record is reliable for purposes of conducting at ex 
+parte renewal, and use the previously recorded value in an ex parte renewal to determine 
+eligibility.  
+ 
+The above examples of assets that CMS believes are unlikely to increase in value are shared for 
+illustrative purposes only. As noted, states have discretion to determine what types of assets are 
+unlikely to increase appreciably in value for purposes of conducting an ex parte renewal.  
+A determination that certain types of assets are unlikely to change must be applied consistently 
+across all beneficiaries subject to an asset test. In addition, while states are not required to obtain 
+prior approval from CMS for the list of assets that the state has determined are unlikely to 
+appreciate, these asset types must be documented clearly in state verification policies and 
+procedures for audit and other purposes. In addition, consistent with federal verification 
+regulations at 42 CFR § 435.945(j), states may be asked to provide to CMS the list of assets they 
+have determined are unlikely to appreciate in value. CMS maintains oversight responsibility in 
+                                                            
+3 See 42 CFR § 435.916(a)(2), incorporated by cross reference in 42 CFR § 435.916(b) (relating to periodic 
+renewals of beneficiaries excepted from application of financial methodologies based on modified adjusted gross 
+income) and 42 CFR § 457.343 (relating to renewal of eligibility for CHIP beneficiaries). 
+4 Burial funds up to $1,500 generally are excluded from countable assets. 
+
+
+
+--- PAGE 5 ---
+ 
+5
+the event that the state’s determination that any given asset is unlikely to appreciate in value is 
+not reasonable.  
+Q10: What are the notice requirements states must follow if they are able to renew 
+eligibility on an ex parte basis, including for non-MAGI beneficiaries? 
+ 
+A:  
+Whenever the state is able to renew any beneficiary’s eligibility on an ex parte basis 
+using information available to the state, the state must notify the beneficiary of: (1) the 
+determination, (2) the information upon which the agency relied in making the determination, (3) 
+the basis of the beneficiary’s continued eligibility, and (4) the beneficiary’s obligation to inform 
+the agency if any of the information contained in the notice upon which the state relied is 
+inaccurate or subsequently changes. Beneficiaries are not required to sign and return such notice 
+or otherwise notify the agency if all information in the notice is accurate. 
+ 
+Section 1902(e)(14)(A) Waivers  
+ 
+Q11: How does a state apply for a waiver under the authority of section 1902(e)(14)(A) of 
+the Act?  
+ 
+A: 
+States interested in a 1902(e)(14)(A) waiver must submit a letter to CMS requesting 
+approval for such authority. In April, CMS shared 1902(e)(14)(A) waiver submission 
+instructions and sample language with states through both the Eligibility Technical Assistance 
+Group (ETAG) and an email to state Medicaid directors. That sample language is intended to 
+help guide states in crafting a letter to request the waiver and indicate the authority they seek. 
+Any state that did not receive this information or has additional questions should reach out to 
+their state lead.  
+ 
+States should email their letter requesting 1902(e)(14)(A) waiver authority to Sarah deLone, 
+Director, Children and Adults Health Programs Group (Sarah.Delone2@CMS.hhs.gov); copy 
+their Medicaid state lead; and include Joe Weissfeld (josef.weissfeld@cms.hhs.gov), Jessika 
+Douglas (jessika.douglas@cms.hhs.gov), and CMSUnwindingSupport@cms.hhs.gov. Upon 
+receipt of the request, CMS will reach out with any questions for the state as part of the CMS 
+review process. For any additional questions or technical assistance (TA) requests, states may 
+contact their Medicaid state lead and copy the CMS Unwinding TA mailbox at 
+CMSUnwindingSupport@cms.hhs.gov. 
+ 
+Q12: Will CMS consider approving section 1902(e)(14)(A) waivers to allow flexibilities 
+beyond those identified in the SHO Letter #22-001?  
+ 
+A: 
+Yes. As outlined on pages 23-26 in SHO Letter #22-001, CMS will consider other 
+strategies states may want to propose. Since releasing SHO Letter #22-001, CMS has approved a 
+number of new strategies not identified in the SHO Letter. Interested states can learn more about 
+waivers CMS has approved by reviewing COVID-19 PHE Section 1902(e)(14)(a) Waiver 
+Approvals at https://www.medicaid.gov/covid-19-phe-unwinding-section-1902e14a-waiver-
+approvals/index.html. Consistent with the limitations outlined in the SHO Letter interpreting the 
+statutory language and established in the Medicaid statute, CMS will only approve 
+
+
+
+--- PAGE 6 ---
+ 
+6
+1902(e)(14)(A) waiver requests that protect beneficiaries. States should reach out to their state 
+lead if they would like technical assistance prior to submitting a request not identified in the 
+SHO. 
+ 
+Q13: Can CMS approve section 1902(e)(14)(A) waiver authority to allow states to use 
+Supplemental Nutrition Assistance Program (SNAP) gross income to support non-MAGI 
+redeterminations? 
+ 
+A: 
+Yes. CMS will consider approving section 1902(e)(14)(A) waiver authority to allow 
+states to use SNAP gross income to support non-MAGI redeterminations if certain conditions are 
+met. As described on page 24 in SHO Letter #22-001, based on the strong correlation between 
+SNAP income eligibility and MAGI-based financial eligibility for Medicaid, CMS believes it is 
+appropriate for states to use section 1902(e)(14)(A) authority to enroll certain individuals in 
+MAGI-based Medicaid given a beneficiary’s gross income, as determined for purposes of SNAP 
+eligibility. CMS may offer a state section 1902(e)(14)(A) authority to apply a similar strategy for 
+non-MAGI populations, provided that the correlation between SNAP methodologies for 
+determining gross income and the income methodologies for determining Medicaid eligibility for 
+individuals excepted from MAGI-based methodologies (i.e., income counting and household 
+composition rules) in the state remains strong. CMS will need to work with states interested in 
+applying this strategy in renewing some or all of its non-MAGI populations during unwinding in 
+order to determine the strength of this correlation. States should reach out to their state lead for 
+TA and copy the CMS Unwinding TA mailbox at CMSUnwindingSupport@cms.hhs.gov. 
+ 
+Q14: What effective dates for 1902(e)(14)(A) waiver approvals will CMS allow? Can 
+CMS make retroactive approvals? 
+ 
+A: 
+As part of the 1902(e)(14)(A) submission, states are advised to propose an effective date 
+on their request for CMS’ review. A state may request a 1902(e)(14)(A) waiver that would take 
+effect prior to or during the unwinding period. States may also request a retroactive effective 
+date, which would allow the state to implement before the date of the 1902(e)(14)(A) waiver 
+request. The state will need to provide CMS with a justification for the request and explain 
+whether the state has already implemented the flexibility. 
+ 
+Q15: Do the section 1902(e)(14)(A) waiver opportunities also apply to CHIP? 
+ 
+A: 
+In general, section 1902(e)(14)(A) waiver authority is applicable to both Medicaid and 
+CHIP. However, many of the strategies specifically identified in SHO Letter #22-001 will not 
+apply to CHIP, either because the eligibility requirements related to the strategy do not apply to 
+CHIP (e.g., the Asset Verification System or Fair Hearing strategy) or relevant conditions do not 
+apply to CHIP enrollees (e.g., CHIP enrollees will not have $0 income, so $0 income is not 
+applicable; SNAP’s gross income test is below the minimum income standard permitted for 
+separate CHIPs, so the SNAP flexibility strategy is not applicable). There are two strategies 
+identified in SHO Letter #22-001 that could apply to CHIP: (1) permitting the state to accept 
+updated in-state enrollee contact information from managed care plans without additional 
+confirmation from the individual and (2) permitting automatic re-enrollment of beneficiaries into 
+
+
+
+--- PAGE 7 ---
+ 
+7
+their managed care plan for individuals who lost Medicaid coverage for up to 120 days and are 
+later reenrolled. 
+ 
+Verification of $0 Income: Under General Rules at Application and Renewal and Under 
+1902(e)(14) Strategy 
+ 
+Q16:  What verification processes must states follow to verify $0 income at application ? 
+ 
+A:  
+Upon receiving a $0 income attestation from an individual, a state must check all earned 
+and unearned income electronic data sources identified as useful in the state’s verification plan. 
+If the aggregate income amount returned by the data sources is at or below Medicaid/CHIP 
+eligibility thresholds, then the individual’s attestation is considered reasonably compatible with 
+the data sources and the attested income is verified. If the aggregate income amount returned by 
+the data sources is above the Medicaid/CHIP eligibility threshold levels, then additional 
+information and/or documentation must be requested.  
+ 
+If no electronic data sources are returned, then the state may accept the individual’s attestation 
+without requiring further documentation or the state may request additional documentation 
+and/or a reasonable explanation (e.g., of how the individual meets their basic needs) to verify the 
+individual’s $0 attestation.  
+ 
+Q17:  What verification processes must states follow to verify $0 income at renewal? 
+ 
+A:  
+Per 42 CFR § 435.916, states must first attempt to conduct an ex parte renewal for all 
+individuals. An ex parte renewal is a redetermination of eligibility that can be made based on 
+reliable information available to the agency without requiring additional information from the 
+individual. Income information from the initial determination at application or the individual’s 
+last renewal is not considered recent or reliable.  
+ 
+When conducting an ex parte renewal, states will not have a new attestation of income from the 
+beneficiary. Thus, if no electronic data sources are returned, there is no attestation upon which to 
+rely, and a state may not conclude that the household has $0 income. If the income data sources 
+accessed by the state return information indicating that the individual’s income is at or below the 
+applicable income standard, the beneficiary’s income would be verified as eligible. If no 
+information is returned from data sources, or if information available to the state does not verify 
+the individual’s income eligibility, then the state must provide the individual with a renewal form 
+and inform the individual of any additional information or documentation needed to determine 
+eligibility. If the individual attests to $0 income on the renewal form, the state would follow the 
+same process that it follows for individuals attesting to $0 income at application.  
+ 
+Q18:  What is the section 1902(e)(14)(A) waiver authority strategy for verifying income 
+during an ex parte renewal for individuals who previously attested to $0 income? 
+ 
+A:  
+Under this strategy, a state with an approved 1902(e)(14)(A) waiver can temporarily 
+complete the income determination for ex parte renewals without requesting additional income 
+information or documentation if (1) the most recent income determination (either at initial 
+
+
+
+--- PAGE 8 ---
+ 
+8
+application or most recent renewal) was no earlier than 12 months prior to the beginning of the 
+PHE (i.e., March 2019), (2) the state verified an attestation of $0 income at such determination, 
+and (3) the state checks financial data sources in accordance with its verification plan and no 
+information is received. 
+ 
+Countable Resources 
+ 
+Q19:  Is pandemic-related financial assistance retained by an individual considered a 
+countable resource in determining an individual’s financial eligibility?  
+ 
+A: 
+For most beneficiaries, the answer is “No.” Retained income (i.e., the portion of income 
+from a particular source not spent in the month when it is received) generally becomes countable 
+as a resource in the month following its receipt for Medicaid applicants and beneficiaries whose 
+eligibility includes a resource test. However, for individuals whose Medicaid eligibility is 
+determined using supplemental security income (SSI) methodologies, most pandemic-related 
+disaster assistance is permanently disregarded from income and resources. A state plan 
+amendment (SPA) is not necessary to effectuate this policy. This permanent disregard includes 
+the Economic Impact Payments (otherwise known as the “Recovery Rebates”) authorized in 
+section 2201 of the CARES Act, Pandemic Related Unemployment Assistance authorized in 
+section 2101 of the CARES Act, and other types of disaster assistance. A complete list of the 
+types of assistance that are permanently disregarded from income and resources under SSI’s 
+disaster assistance policy can be found in Social Security Administration’s (SSA’s) emergency 
+memo SSA EM-20014 REV 5.  
+ 
+Please note that previous CMS guidance indicated that the Recovery Rebates were only excluded 
+from resources for the 12 months following receipt.5 As noted above, for SSI-based eligibility 
+determinations, SSA has stated in more recent guidance that the Recovery Rebates are 
+permanently disregarded as resources. Going forward, states must disregard these resources, per 
+SSA guidance, in SSI-based eligibility determinations. 
+ 
+For non-MAGI individuals whose eligibility is not based on SSI methodologies (e.g., medically 
+needy parents/caretaker relatives whose eligibility would be determined using aid to families 
+with dependent children (AFDC) or MAGI-like methodologies), retained pandemic-related 
+income may be countable if a resource test is applied. However, such assistance could be 
+disregarded under the authority of section 1902(r)(2) of the Act (for which a SPA would be 
+necessary). 
+ 
+Reasonable Opportunity Period (ROP) 
+ 
+Q20:  As a condition of receiving the 6.2 percentage point FMAP increase under section 
+6008 of the FFCRA, states have been required to continue enrollment for applicants with 
+                                                            
+5 COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance Program 
+(CHIP) Agencies, Question C. 11, p. 24, C. 18, p. 27, and L. 4, p. 65, available at https://www.medicaid.gov/state-
+resource-center/downloads/covid-19-faqs.pdf  
+
+
+
+--- PAGE 9 ---
+ 
+9
+verified citizenship or satisfactory immigration status pending during a ROP. In the case of 
+such applicants whose citizenship or satisfactory immigration status has not been verified 
+as of the end of the PHE, can states take steps to continue to verify their immigration or 
+citizenship status during the unwinding period? If so, what steps should states take to 
+continue to verify the individual’s immigration status or citizenship? 
+ 
+A:  
+ Under sections 1902(ee)(1)(B)(ii) and 1137(d)(4) of the Act and implementing 
+regulations at 42 CFR § 435.956(b), if a state cannot promptly verify an individual’s declared 
+U.S. citizenship or immigration status, the state must provide benefits during a 90-day ROP.6 
+During the ROP, the state must continue efforts to complete verification of the individual’s 
+citizenship or immigration status, including assisting the individual with obtaining any necessary 
+documentation. If, by the end of the ROP, the individual’s citizenship or satisfactory immigration 
+status has not been verified, the agency must take action within 30 days to terminate eligibility, 
+in accordance with advance notice and fair hearing rights under part 431 subpart E. 
+ 
+In pages 19-20 of SHO Letter #22-001, we encouraged states to attempt to continue efforts to 
+verify citizenship or immigration status before the end of the PHE for individuals whose status 
+has not been verified but who have remained enrolled in coverage during an ROP in order to 
+comply with the continuous enrollment condition under section 6008 of the FFCRA during the 
+PHE. We also explained that individuals who have been provided an ROP and whose status 
+remains unverified at the end of their ROP are not entitled to a full renewal of eligibility during 
+the unwinding period. This is because individuals whose status has not been verified have not 
+had an eligibility determination completed. Thus, unless the state exercises the options described 
+below, it must take appropriate actions to terminate benefits for individuals whose status has not 
+been verified during their 90-day ROP. 
+ 
+The options for states with respect to continued verifications for these individuals during the 
+unwinding period depend on whether the individual attested to satisfactory immigration status or 
+U.S. citizenship.  
+ 
+• Individuals attesting to satisfactory immigration status: When the unwinding period 
+begins, states may continue to attempt to verify the status of individuals who attested to 
+satisfactory immigration status under existing regulations at 42 CFR § 
+435.956(b)(2)(ii)(B). This provision allows states to provide a reasonable extension of the 
+ROP for individuals attesting to satisfactory immigration status in two situations: (1) the 
+individual is making a good-faith effort to obtain any necessary documentation and (2) 
+the state needs more time to verify the individual’s status or assist the individual in 
+obtaining documents needed to verify their status. States adopt the option to extend the 
+ROP for individuals attesting to satisfactory immigration status in these situations by 
+submitting a SPA. CMS is available to provide technical assistance to interested states.  
+ 
+                                                            
+6 42 CFR § 435.956(b)(2)(ii)(A)(B) permits states to extend the ROP beyond 90 days for individuals declaring to be 
+in a satisfactory immigration status if the agency determines the individual is making a good faith effort to obtain 
+any necessary documentation, or if the agency needs more time to verify the individual’s status or to assist the 
+individual in obtaining documents needed to verify their status.  
+
+
+
+--- PAGE 10 ---
+ 
+10
+• Individuals attesting to U.S. citizenship: For individuals who have attested to U.S. 
+citizenship, states may request a COVID-19 1115 demonstration in order to extend the 
+ROP to provide additional time during the unwinding period for verifying an individual’s 
+citizenship. The primary goal of this demonstration opportunity is to enable states to 
+adopt the same ROP policies and processes for individuals who have either attested to 
+U.S. citizenship or to satisfactory immigration status. States may request this 1115 
+demonstration authority for the entire unwinding period to align with and manage their 
+renewal workload and other outstanding eligibility actions.  
+ 
+CMS believes that, due to the extraordinary circumstances presented by the PHE and the 
+challenges states face in returning to normal operations during the unwinding period, it is 
+reasonable under both the state plan and section 1115 demonstration options discussed above for 
+states to extend the ROP for any given individual up to 90 days after the state initiates work on 
+the individual’s case during the unwinding period. This means that, by adopting the state plan 
+option for individuals who have attested to satisfactory immigration status and section 1115 
+demonstration authority for individuals who have attested to U.S. citizenship, states can align the 
+work required to process individuals receiving benefits during an ROP at the end of the PHE 
+with the work of conducting renewals and completing other eligibility actions, including 
+conducting outstanding verifications, during the state’s unwinding period. 
+ 
+Q21:  Is there a time limitation for states seeking a COVID-19 1115 demonstration to 
+extend an ROP period for individuals who have attested to U.S. citizenship? 
+ 
+A:  
+Yes. For this COVID-19 section 1115 demonstration, states must submit a demonstration 
+request before the end of the PHE. Interested states should contact their 1115 project officer for 
+more information.  
+ 
+Q22:  If a state were to request COVID-19 1115 demonstration authority to extend its 
+ROP to continue to verify an individual’s attested U.S. citizenship, how long could the 1115 
+demonstration authority last? 
+ 
+A:  
+CMS will consider requests for section 1115 demonstration authority to extend the ROP, 
+as described above, with a maximum duration of 15 months beginning with the first month of a 
+state’s unwinding period. These 15 months include a state’s 12-month unwinding period, plus 90 
+additional days for the state to extend the ROP to complete the verification of U.S. citizenship 
+for a given individual whose case comes up for processing in month 12 of the state’s unwinding 
+period. For any given beneficiary, the authority to extend the ROP will terminate 90 days after 
+the state initiates work on the beneficiary’s case. 
+ 
+Q23:  Why do states need to request section 1115 demonstration authority to extend the 
+ROP for U.S. citizens? Can the state use the existing regulatory authority under 42 CFR 
+435.956(b)(2)(ii)(B) for citizens like it can for non-citizens?  
+ 
+A:  
+The statutory provision governing the ROP for individuals declaring U.S. citizenship and 
+the statutory provision for individuals declaring satisfactory immigration status are different. 
+Section 1137 of the Act governs verification requirements for noncitizens and does not specify a 
+
+
+
+--- PAGE 11 ---
+ 
+11
+timeframe for the ROP. As such, CMS established the option under 42 CFR 435.956(b)(2)(ii)(B) 
+for states to extend the ROP beyond 90 days for individuals whom the state has determined to be 
+making a good faith effort to obtain any necessary documentation, or to allow the state additional 
+time to verify the individual’s status. 
+ 
+Section 1902(ee)(1)(B)(ii) of the Act governs the provision of an ROP for individuals declaring 
+to be citizens or nationals of the United States. This statutory provision requires that the ROP 
+must be 90 days. Absent the 1115 demonstration authority described in this section, CMS does 
+not have authority to permit states to extend the ROP for individuals declaring U.S. citizenship. 
+ 
+Premiums 
+ 
+Q24:  Are states that suspended Medicaid and/or CHIP premiums through a disaster SPA 
+during the PHE required to resume charging premiums after the end of the PHE? 
+ 
+A:  
+Yes. Once the PHE ends, the suspension of premiums under a disaster SPA expires and 
+states are required to resume Medicaid and CHIP premiums in accordance with their state plan 
+unless the state takes permissible action to adopt a different policy, as described in Q26,Q27, and 
+Q28 below. For Medicaid, states must provide each beneficiary with a minimum of 10 days 
+advance notice, including the right to a fair hearing prior to resuming charges, in accordance 
+with federal regulations at 42 C.F.R. 431 Subpart E. The advance notice must provide the 
+premium amount, a clear statement of the specific reasons supporting the assessment of a 
+premium, and the basis for the premium calculation, in accordance with 42 C.F.R. §§ 431.210-11 
+and 431.201.  
+ 
+For CHIP, states must provide timely and adequate written notice and rights to the CHIP review 
+process prior to resuming CHIP premiums, in accordance with 42 C.F.R. § 457.1180.  
+ 
+We note that for Medicaid, under section 6008(b)(2) of the FFCRA, states claiming the 
+temporary FMAP increase are required to maintain Medicaid premiums at the same or lower 
+level as those assessed on January 1, 2020, with respect to an individual until the end of the 
+calendar quarter when the PHE ends.7  
+ 
+Q25:  Are states that suspended Medicaid and/or CHIP premiums through a disaster SPA 
+during the PHE required to make a new determination of income prior to imposing 
+premiums after the PHE ends? 
+ 
+A:  
+ It depends. If the state has completed a renewal in the last 12 months, the amount of the 
+premium imposed after the PHE ends may be based on the state’s most recent determination of 
+the beneficiary’s household income. If the beneficiary has not had a redetermination of 
+household income in the last 12 months, the state must complete a redetermination before 
+reimposing premiums.  
+                                                            
+7 See COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance Program 
+(CHIP) Agencies, Question B.12, p. 17, available at https://www.medicaid.gov/state-resource-
+center/downloads/covid-19-faqs.pdf  
+
+
+
+--- PAGE 12 ---
+ 
+12
+ 
+Q26:  Where states suspended Medicaid and/or CHIP premiums through a disaster SPA 
+during the PHE, can states extend their suspension of premiums beyond the end of the 
+PHE?  
+ 
+A:  
+Yes. States can delay resuming Medicaid and CHIP premiums for all applicable 
+beneficiaries beyond the end of the PHE by either extending their disaster SPA (including 
+evergreen disaster SPAs for CHIP) or submitting a regular SPA. Delaying the resumption of 
+CHIP premiums will smooth the transition from Medicaid to CHIP, mitigating coverage losses 
+for children during unwinding. States that wish to extend a suspension of premiums should reach 
+out to their Medicaid state lead or CHIP project officer to discuss these options. 
+ 
+Q27:  Where states suspended Medicaid and/or CHIP premiums through a disaster SPA 
+during the PHE, may states delay resumption of Medicaid premiums only for beneficiaries 
+enrolled in coverage at the end of the PHE until a full renewal has been completed? 
+ 
+A:  
+Yes, states can delay resumption of Medicaid premiums by requesting CMS approval of a 
+section 1902(e)(14(A) waiver for Medicaid. States generally may not charge premiums only to 
+some Medicaid beneficiaries who are otherwise subject to premiums under the state plan. 
+However, if the state is facing a systems or operational barrier to resuming premiums for all 
+individuals at the same time, states may request authority under section 1902(e)(14)(A) of the 
+Act to delay resumption of Medicaid premiums otherwise required under the state plan until the 
+state has conducted a full renewal of eligibility for a beneficiary during the unwinding period. 
+For more information on this authority and how to submit such a request, see Q11 above.  
+ 
+Q28:  Where states suspended Medicaid and/or CHIP premiums through a disaster SPA 
+during the PHE, may states delay resumption of CHIP premiums only for beneficiaries 
+enrolled in coverage at the end of the PHE until a full renewal has been completed? 
+ 
+A:  
+Yes. States have authority under the CHIP state plan to delay resumption of CHIP 
+premiums for current beneficiaries until a full renewal of eligibility has been completed by 
+activating an existing evergreen disaster SPA, or, if the state does not have an approved 
+evergreen disaster SPA, by submitting a new disaster SPA that is specific to the unwinding 
+period. These two types of CHIP disaster SPAs do not contain any section 1135 waivers and can 
+be in effect until the end of the unwinding period. States interested in this option should reach 
+out to their CHIP Project Officer for technical assistance. 
+ 
+Q29:  Where states suspended Medicaid and/or CHIP premiums through a disaster SPA 
+during the PHE, is public notice required prior to resumption of Medicaid and CHIP 
+premiums after the end of the PHE? 
+ 
+A:  
+No. States that suspended Medicaid premiums through a disaster SPA are not required to 
+complete public notice under 42 C.F.R. § 447.57(c) prior to resuming charging Medicaid 
+premiums. States that suspended CHIP premiums through a disaster SPA are not required to 
+complete public notice under 42 C.F.R. § 457.65(b)(1) if state law does not require such notice. 
+ 
+
+
+
+--- PAGE 13 ---
+ 
+13
+However, if a state’s schedule of premium amounts has changed (due, for example, to a regular 
+cost of living adjustment in the premium price schedule), the state must update the Medicaid and 
+CHIP premium public schedules to provide public notice consistent with federal requirements 
+described at 42 C.F.R. § 447.57(a) for Medicaid and 42 C.F.R. § 457.525 for CHIP. 
+  
+Q30: Can states terminate beneficiaries based on non-payment of premiums during 
+unwinding period? 
+ 
+A:  
+Under the Medicaid regulations at 42 C.F.R. § 447.55(b)(2), states may terminate 
+coverage for some beneficiaries based on non-payment of premiums for at least 60 days, 
+provided that conditions specified in the regulation are met. Due to the continuous enrollment 
+condition required for states claiming the temporary FMAP increase available under section 
+6008 of the FFCRA, states have had to suspend implementation of that policy in order to claim 
+the temporary FMAP increase.  
+ 
+Effective the beginning of the month following the month when the PHE ends, a state may 
+resume implementation of a policy to terminate beneficiaries based on non-payment of 
+premiums. CMS explained in previous guidance that states cannot terminate beneficiaries’ 
+eligibility or coverage following the end of the PHE for unpaid premiums accumulated during 
+the PHE. 8 States may terminate beneficiaries for unpaid premiums incurred prior to the PHE. To 
+implement this termination, states may not count any days that fell during the PHE as part of the 
+60 days of nonpayment. 
+ 
+Prior to terminating a beneficiary for non-payment of premiums after the PHE ends, states must 
+consider all bases of eligibility for which an individual may qualify, consistent with 42 CFR § 
+435.916(f)(1), including eligibility for a group that does not have premium requirements. If the 
+state completed an initial determination of eligibility at application or a successful renewal in the 
+past 12 months, the state may rely on the information in the individual’s case record to determine 
+other bases of eligibility for which a beneficiary might qualify. If the state has not completed a 
+successful renewal in the past 12 months, the state must conduct a full renewal and consider all 
+bases of eligibility before termination. 
+ 
+Before an individual is terminated for nonpayment of premiums, the state must provide each 
+beneficiary with a minimum of 10 days’ advance written notice of the termination per 42 CFR §§ 
+435.917 and 431.206–214, and provide fair hearing rights, per 42 CFR § 431.220(a). Consistent 
+with 42 CFR § 431.210, this advance notice must contain a statement that the agency intends to 
+terminate the beneficiary, the effective date of such action, the specific reasons supporting the 
+termination, the specific regulations that support the action, and information about the 
+beneficiary’s fair hearing rights. 
+ 
+For CHIP, states were not required to maintain coverage for individuals enrolled during the PHE. 
+Therefore, some states may currently be terminating enrollment due to non-payment of 
+premiums, which is permitted under section 2103(e)(3) of the Act after 30 days of non-payment. 
+                                                            
+8 See COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance Program 
+(CHIP) Agencies, Question B.11, p. 17, available at https://www.medicaid.gov/state-resource-
+center/downloads/covid-19-faqs.pdf 
+
+
+
+--- PAGE 14 ---
+ 
+14
+For states that suspended premiums or ceased terminating individuals for non-payment of 
+premiums during the PHE through a disaster relief SPA, they must provide beneficiaries with 
+timely and adequate written notice and information about the beneficiaries’ rights to the CHIP 
+review process prior to resuming CHIP premiums and the premium grace period policy. 
+ 
+Fraud & Abuse/Recoupment 
+ 
+Q31:  Can a state recover or recoup the cost of services from a beneficiary who committed 
+Medicaid fraud or abuse? 
+ 
+A:  
+No. States cannot recover or recoup the cost of services from a beneficiary, even if they 
+have been found after an administrative or criminal proceeding to have committed Medicaid 
+beneficiary fraud or abuse. States must continue furnishing Medicaid to all beneficiaries until 
+they are determined ineligible per 42 CFR § 435.930(b), and such recovery or recoupment would 
+effectively represent a retroactive termination of Medicaid eligibility, which would violate a 
+beneficiary’s due process rights under section 1902(a)(3) of the Act, 42 CFR part 431 subpart E, 
+and relevant Supreme Court due process jurisprudence (see Goldberg v. Kelly, 397 U.S. 254 
+(1970) and its progeny). 
+  
+The only circumstances under which a state may recover funds from a beneficiary are those 
+explicitly provided for in federal statute and regulation. These include: (1) liens placed on a 
+beneficiary’s property when a court judgment finds that Medicaid benefits were improperly paid 
+under section 1917(a) of the Act and 42 CFR § 433.36(g)(1); (2) estate recovery proceedings 
+required under section 1917(b)(1) of the Act; and (3) benefits provided pending the outcome of a 
+fair hearing under 42 CFR § 431.230 (except that benefits provided pending the outcome of a 
+fair hearing during the PHE may not be recouped, and states that do so risk losing enhanced 
+match claimed pursuant to section 6008 of the FFCRA; see footnote 9 in the March 2022 SHO 
+Letter # 22-001). 
+ 
+Single State Agency Requirements & Use of Private Contractors 
+ 
+Q32:  Can states use private contractors to assist the Medicaid agency or delegated agency 
+with eligibility actions during the unwinding period, when workloads will be significantly 
+increased? 
+ 
+A:  
+Yes, subject to certain restrictions. For eligibility determination functions that require 
+discretion, states must use employees of a government agency that maintains personnel standards 
+on a merit basis. However, states can use contractors to support the administrative functions of 
+the eligibility determination process that do not require discretion. 
+ 
+If an eligibility system is automated and requires no discretion to evaluate/determine an 
+individual’s eligibility, then a contractor can perform data entry functions and provide IT support 
+
+
+
+--- PAGE 15 ---
+ 
+15
+to operate the system, as long as the state agency has overseen development of the requirements, 
+rules, and policies operationalized by the system. 
+  
+Examples of administrative functions that do not require discretion include intake of 
+applications, renewal forms, and income or resource verifications; follow up on requests sent by 
+the state agency (e.g., calling to collect missing information); call center support to help provide 
+status updates on application or renewal submissions; and other administrative tasks. 
+Examples of functions that must be performed by government agency staff (which could include 
+county staff) who have merit personnel protections include evaluating evidence submitted to 
+resolve inconsistencies between attested information and third-party data sources, determining 
+whether an individual meets the standard of disability for a Medicaid eligibility determination 
+based on disability, or determining if an individual’s specific financial resource should be 
+excluded under the terms of the state plan. 
+ 
+Eligibility and Enrollment Data Reporting During Unwinding 
+ 
+Q33: Are there special data reporting requirements for states during unwinding? 
+ 
+A:  
+As described in SHO Letter #22-001, states will have a large volume of eligibility and 
+enrollment actions to complete when the COVID-19 PHE ends. As outlined in the SHO Letter, 
+states will be required to submit eligibility and enrollment data to CMS. In later guidance,9 CMS 
+explained that states will submit a baseline data report intended to serve as a starting point to 
+track pending eligibility and enrollment actions that the state will need to address when its 
+unwinding period begins. States will submit monthly reports to illustrate progress in addressing 
+pending eligibility and enrollment actions during the unwinding period. Note that this unwinding 
+reporting requirement is separate from states’ monthly performance indicator data reporting.  
+ 
+Q34: When are the baseline and monthly data reports due to CMS?  
+ 
+A: 
+The baseline data report is due by the 8th calendar day of the month in which a state 
+begins its unwinding period. Should the 8th calendar day fall on a weekend or holiday, states may 
+submit by the next business day. For illustrative purposes only, if a state begins its unwinding 
+period in January 2023, then the baseline data report would be due to CMS by January 8, 2023. 
+However,  since the 8th of January is a Sunday, states may submit by January 9, the next business 
+day. Please note that this FAQ reflects a revised due date for the baseline data report to align and 
+simplify reporting procedures for states.  
+ 
+The monthly data reports are due to CMS by the 8th calendar day of the month following the 
+report month. For example, if a state were compiling data for the month of February 2023, this 
+report would be due by March 8, 2023. Should the 8th calendar day fall on a weekend or holiday, 
+states may submit by the next business day.  
+ 
+                                                            
+9 Medicaid and Children’s Health Insurance Program Eligibility and Enrollment Data Specifications for Reporting 
+During Unwinding (Medicaid 2022). Available at: https://www.medicaid.gov/resources-for-
+states/downloads/unwinding-data-specifications.pdf.  
+
+
+
+--- PAGE 16 ---
+ 
+16
+Please submit any questions about these due date to UnwindingMetricsTA@mathematica-
+mpr.com.  
+ 
+Q35: CMS is requiring states to submit baseline and monthly data reports that separate 
+pending MAGI and non-disability applications from pending disability-related 
+applications. What is considered a disability-related application for the purposes of these 
+reports? 
+ 
+A: 
+A disability-related application is an application for which the state must make a 
+determination of disability to determine the applicant’s eligibility. Disability-related applications 
+are subject to the 90-day timeliness standard at 42 CFR § 435.912(c)(3)(i).  
+ 
+Q36: For reporting on the application processing metrics, should states report at the 
+household/case or individual level? 
+ 
+A: 
+States have the option to report the application processing metrics, including pending 
+applications, at the household/case or individual level. States that report applications at the 
+individual level are asked to note this approach in the comments field when submitting the data 
+through the portal, and report consistently across the baseline and monthly reports. 
+ 
+Electronic Outreach Under the Telephonic Consumer Protection Act (TCPA) 
+ 
+Q37:  What guidance is available for states regarding application of the TCPA to outreach 
+conducted by state Medicaid and CHIP agencies, counties, and state contractors? 
+ 
+A:  
+Implementation of the TCPA falls under the purview of the Federal Communications 
+Commission (FCC). On April 29, 2022, HHS Secretary Xavier Becerra and CMS Administrator 
+Chiquita Brooks-LaSure submitted a letter to the FCC, requesting clarification on the 
+permissibility of certain automated text messages and prerecorded voice calls relating to 
+enrollment in health coverage. As of October 17, 2022, the FCC had not yet issued guidance in 
+response to this request. However, the CMS/HHS letter, along with all comments submitted in 
+response to the letter, are available through the FCC’s Electronic Comment Filing System 
+(ECFS), which can be accessed at FCC.gov/ecfs. This request is filed under proceeding number 
+02-278. This is the FCC docket number for rules and regulations implementing the TCPA. 
+ 
+Unwinding Administrative Match for Outreach/Advertising 
+  
+Q38:  Can states claim Medicaid and CHIP administrative costs and receive federal 
+financial participation for advertising efforts related to communicating with beneficiaries 
+about applying for Medicaid or renewing coverage during the unwinding of the COVID-19 
+PHE? 
+ 
+A:  
+Yes. In Medicaid, states can receive 50 percent administrative federal financial 
+participation (FFP) for advertising/outreach efforts related to unwinding. In CHIP, states receive 
+
+
+
+--- PAGE 17 ---
+ 
+17
+regular enhanced FMAP (eFMAP) for outreach expenses, subject to the 10 percent cap on 
+administrative costs.  
+ 
+In an effort to reach the most Medicaid and CHIP beneficiaries as efficiently as possible, some 
+states are conducting paid digital marketing campaigns across social media to deliver 
+information to target Medicaid and CHIP audiences as part of the PHE unwinding. In addition to 
+online advertising, states are also using a mix of television, radio, and print advertising about 
+these programs to motivate beneficiaries to take important steps related to renewals. States can 
+claim administrative match in Medicaid and CHIP for the costs of these advertising activities, 
+subject to the limitations outlined below. 
+ 
+In Medicaid, informing beneficiaries about upcoming changes to enrollment requirements and 
+the need to respond to renewal notices in connection with the unwinding of the PHE is necessary 
+for the proper and efficient administration of the Medicaid state plan (1903(a)(7) of the Act), and 
+states may claim related expenditures (See, e.g., https://downloads.cms.gov/cmsgov/archived-
+downloads/SMDL/downloads/SMD122094.pdf). CMS has allowed administrative cost claiming 
+for media placements or media buys related to outreach efforts pursuant to 45 CFR 75.421(b)(4), 
+which permits advertising expenditures for program outreach and other specific purposes 
+necessary to meet the requirements of the federal award (See Q8 in 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho10007.pdf).  
+ 
+In CHIP, states are required to include a description of their outreach plan in the state plan 
+(section 2102(c) of the Act). Federal funding for outreach is drawn from a state’s CHIP title XXI 
+fiscal year allotment, and outreach expenditures are subject to a 10 percent cap that applies to 
+CHIP administrative expenses. Under section 2105(c)(2)(A) of the Act, claims for administrative 
+expenses cannot exceed 10 percent of the total amount of title XXI funds claimed by the state 
+each quarter.  
+ 
+States that combine advertising activities for Medicaid and CHIP into joint messages must 
+develop a statistically valid methodology to allocate the costs between the two programs (See 45 
+CFR 75.405, 75.416). This is accomplished by developing a method to assign costs based on the 
+relative benefit to, in this case, the Medicaid program and the CHIP program. This methodology 
+must be incorporated into the state’s existing Cost Allocation Plan (CAP) required under 45 CFR 
+Part 95 Subpart E. When developing its cost allocation methodology, a state should consider the 
+impact of the 10 percent administrative limit applicable to all costs for non-health activities 
+conducted under a separate CHIP. States should also ensure that the CHIP eFMAP rate is 
+claimed appropriately for the costs of CHIP activities. CMS is available to work with states in 
+developing a cost allocation methodology and on a cost allocation plan. 

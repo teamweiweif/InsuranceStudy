@@ -1,0 +1,10 @@
+Source URL: https://catalog.data.gov/dataset/medicaid-and-chip-updated-renewal-outcomes
+Title: Medicaid and CHIP Updated Renewal Outcomes
+Publisher: Centers for Medicare & Medicaid Services, U.S. Department of Health & Human Services
+Identifier: e6205a51-e6d7-4849-9882-4483b8a28c41
+Dataset issued: 2024-04-30
+Dataset last modified: 2024-11-01
+Metadata last checked on Data.gov page: April 17, 2026
+CSV distribution URL: https://download.medicaid.gov/data/updated-renewal-outcomes-october-2024-releasefinal.csv
+Description summary: State-reported Medicaid and CHIP updated renewal outcomes, including Metric 5 and submetrics 5a, 5a(1), 5a(2), 5b, 5c, and 5d.
+Saved timestamp UTC: 2026-05-16T05:26:07.132514+00:00

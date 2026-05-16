@@ -1,0 +1,513 @@
+
+
+--- PAGE 1 ---
+Use of Unwinding-Related Strategies to Support Long-Term 
+Improvements to State Medicaid Eligibility and Enrollment Processes 
+November 2024
+This communication was printed, published, or produced and disseminated at U.S. taxpayer expense. The information provided in this document is intended only to be a 
+general informal summary of technical legal standards. It is not intended to take the place of the statutes, regulations, or formal policy guidance that it is based upon. This 
+document summarizes current policy and operations as of the date it was presented. We encourage readers to refer to the applicable statutes, regulations, and other 
+interpretive materials for complete and current information.
+1
+
+
+
+--- PAGE 2 ---
+Objectives
+This deck summarizes the CMCS Informational Bulletin (CIB), Use of 
+Unwinding-Related Strategies to Support Long-Term Improvements to State 
+Medicaid Eligibility and Enrollment Processes, and is part of a series of 
+resources for states as they work to comply with federal requirements.
+This slide deck is intended to provide states with guidance regarding the 
+continued use of certain streamlined eligibility and enrollment strategies 
+that were available to address challenges during the COVID-19 Public 
+Health Emergency (PHE) and the return to regular operations following 
+the end of the Medicaid continuous enrollment condition described in 
+section 6008(b)(3) of the Families First Coronavirus Response Act, the 
+process commonly referred to as “unwinding.” 
+Source: CMS CIB, Use of Unwinding-Related Strategies to Support Long-Term Improvements to State Medicaid Eligibility and Enrollment 
+Processes.
+2
+
+
+
+--- PAGE 3 ---
+Content Overview
+Context Setting
+― Use of Strategies Authorized by Section 1902(e)(14)(A) of the Act During Unwinding
+― Approved Section 1902(e)(14)(A) Waivers
+Continued Availability of Unwinding-Related Waiver Strategies Beyond June 30, 2025
+― Future Use of Unwinding-Related 1902(e)(14)(A) Waiver Strategies 
+― Strategies Codified in Final Eligibility and Enrollment Rule
+― Strategies Available Under State Plan Authority 
+― Strategies Related to Verifying Income and Resources
+Discontinued Blanket Authority for Unwinding-Related 1902(e)(14)(A) Waiver Strategies 
+Regulatory Exception to Timely Determinations to Delay Procedural Disenrollments
+State Resources
+3
+
+
+
+--- PAGE 4 ---
+Context Setting
+4
+
+
+
+--- PAGE 5 ---
+Use of Strategies Authorized by Section 1902(e)(14)(A) of 
+the Act During Unwinding
+To support states facing operational and systems issues and to protect eligible 
+beneficiaries from inappropriate coverage losses during the unwinding period, the 
+Centers for Medicare & Medicaid Services (CMS) provided states with the option to 
+request authority under section 1902(e)(14)(A) of the Social Security Act (the Act).
+As outlined in the March 3, 2022, State Health Official (SHO) letter, CMS granted approval 
+for states to use time-limited authority to streamline eligibility and enrollment processes, 
+protect eligible individuals from becoming disenrolled, facilitate the renewal process, 
+reduce the number of procedural terminations, and ease the state administrative burden 
+during the unwinding. 
+On May 9, 2024, CMS extended the use of these waivers through June 30, 2025, provided 
+that the terms and conditions of the original waiver continue to be met.
+Sources: CMS CIB, Use of Unwinding-Related Strategies to Support Long-Term Improvements to State Medicaid Eligibility and Enrollment 
+Processes; CMS SHO, Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload in Medicaid, the Children’s 
+Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon Conclusion of the COVID-19 Public Health Emergency; CMS CIB, 
+Extension of Temporary Unwinding-Related Flexibilities.
+5
+
+
+
+--- PAGE 6 ---
+Approved Section 1902(e)(14)(A) Waivers
+Since April 2022, CMS has granted over 400 unwinding-related waivers to 52 states and 
+territories that enabled them to streamline different parts of their renewal processes in 
+support of their unwinding efforts.
+A combined fifty states and territories received waiver approval to adopt strategies to 
+increase ex parte rates, thereby minimizing administrative burdens for states and 
+beneficiaries while supporting eligible individuals’ ability to renew their coverage. 
+Thirty states received approval for waivers designed to better support enrollees with 
+renewal completion and submission. 
+Forty-five states received approval for strategies that facilitated their ability to update 
+beneficiary contact information with information from trusted sources, minimizing 
+coverage losses due to states’ inability to reach people.
+Twenty states used waivers to ensure the reinstatement of eligible individuals who had 
+been disenrolled for procedural reasons.
+Note: For additional information on the section 1902(e)(14)(A) waivers CMS has approved for states and territories to support the unwinding 
+period, see https://www.medicaid.gov/resources-for-states/coronavirus-disease-2019-covid-19/unwinding-and-returning-regular-operations-
+after-covid-19/covid-19-phe-unwinding-section-1902e14a-waiver-approvals/index.html. 
+6
+
+
+
+--- PAGE 7 ---
+Continued Availability of Unwinding-Related 
+Waiver Strategies Beyond June 30, 2025
+7
+
+
+
+--- PAGE 8 ---
+Future Use of Unwinding-Related 1902(e)(14)(A) Waiver 
+Strategies  
+To continue supporting states’ ability to strengthen and streamline renewal, CMS reviewed all 
+section 1902(e)(14)(A) waiver strategies to determine which can be implemented on a long-
+term basis.
+o CMS received input from states, beneficiaries, and other stakeholders that these 
+strategies meaningfully improved efforts to renew eligible people’s coverage. 
+o CMS reviewed strategies made available during unwinding to determine whether states 
+could continue using these strategies under existing federal statutory or regulatory 
+authorities to strengthen and streamline renewal systems on a long-term basis.
+CMS determined that states have the option or will be required by recent rulemaking to 
+implement over half of the strategies under their state plan in accordance with statutory 
+and regulatory authorities.
+The remaining unwinding-related strategies cannot continue absent extenuating 
+circumstances necessitating their use. As such unwinding-related circumstances are 
+abating, existing statutory and regulatory requirements do not allow states to continue 
+these strategies without justification and approval under section 1902(e)(14)(A) of the 
+Act.
+8
+
+
+
+--- PAGE 9 ---
+Strategies Codified in Final Eligibility and Enrollment Rule
+Several strategies were codified in regulations by the final eligibility and enrollment rule 
+published on April 2, 2024.1 
+Applying for Other Benefits Strategy – The requirement to apply for other benefits as a condition of 
+Medicaid eligibility has been eliminated for all applicants and beneficiaries. All states must eliminate any 
+requirement to apply for other benefits as a condition of Medicaid eligibility by no later than June 3, 
+2025, and may do so sooner.
+Strategies to Obtain Updated Beneficiary Contact Information – States must establish a process to 
+obtain updated address information from reliable sources.
+— States must use the National Change of Address (NCOA) database, mail returned by the U.S. Postal 
+Service (USPS) with a forwarding address, and managed care organizations (MCOs) to update 
+beneficiary contact information. If the state receives an updated in-state address from a reliable 
+source, it must accept the information, update the beneficiary's case record with the updated 
+address, and notify the beneficiary of the change. All states must comply with this requirement by 
+December 3, 2025, and may do so sooner.
+— Additionally, the final rule provides states with flexibility to deem other sources identified by the 
+agency and approved by the Secretary as reliable for purposes of obtaining updated contact 
+information. States may opt to deem enrollment brokers and/or Program of All-Inclusive Care for the 
+Elderly (PACE) organizations to be reliable sources.
+Notes:
+1. These strategies were codified in the final rule, Streamlining the Medicaid, Children’s Health Insurance Program, and Basic Health 
+Program Application, Eligibility Determination, Enrollment, and Renewal Processes, which took effect June 3, 2024. Compliance with 
+new requirements is phased in through June 3, 2027, with compliance timeframes varying by provision.
+9
+
+
+
+--- PAGE 10 ---
+Strategies Available Under State Plan Authority
+Certain waiver strategies are permissible in a materially similar way at states’ option under 
+state plan authority.
+Streamlining Asset Determinations Strategy – Under section 
+1902(r)(2) of the Act, states may disregard (i.e., not count) 
+otherwise countable income and/or resources in making 
+non-MAGI1 eligibility determinations. States can disregard 
+increases in beneficiary’s assets after their date of application.
+Stable Income and Asset Strategy – States have flexibility to make a reasonable determination of what types of 
+income and assets are highly likely to remain stable (or even decrease in value) in conducting an ex parte 
+renewal.2 
+MCO Renewal Support Strategy – Under existing managed care regulations, states may permit MCOs to conduct 
+outreach and assist beneficiaries with completing and submitting renewal forms, provided that the plan does 
+not provide choice counseling and does not sign the renewal form on behalf of the beneficiary. 
+State Agency and/or Other Qualified Entities Using Presumptive Eligibility (PE) Strategy – Under existing 
+regulations, states may permit qualified entities, including the state agency itself, to make PE determinations on 
+a MAGI-basis for individuals not enrolled in Medicaid or CHIP. State agencies must treat a renewal form 
+returned during the reconsideration period as an application. Thus, in adopting this strategy, states would 
+extend the individual's PE status until the state has completed a determination of eligibility based on the 
+renewal form. 
+Further details on the most-
+commonly-used strategies related to 
+verifying income and resources can 
+be found on slides 11–17.
+Notes: 
+1. MAGI is Modified Adjusted Gross Income. Non-MAGI refers to individuals excepted from MAGI-based financial methodologies under 
+42 C.F.R. § 435.603(j).
+2. Additional information on ex parte renewals will be included in forthcoming guidance.
+10
+
+
+
+--- PAGE 11 ---
+Strategies Related to Verifying Income and Resources
+Unwinding-related waiver strategies to streamline income and resource verification during the 
+ex parte process were particularly effective in supporting states’ efforts to minimize the 
+administrative burden associated with conducting renewals and prevent the improper 
+disenrollment of eligible beneficiaries. 
+Existing verification policies can be used to achieve long-term use of these strategies.1
+
+ 
+Using Gross Income 
+Determinations 
+from SNAP2 and 
+Other Human 
+Services Programs
+Completing an ex 
+parte renewal when 
+no data sources3 
+return income 
+information
+Streamlining the use 
+of the state’s asset 
+verification system 
+(AVS)
+Notes: 
+1. Additional information regarding the data and analyses supporting the rationale for long-term use of these strategies is included in 
+the CIB.
+2. SNAP is the Supplemental Nutrition Assistance Program. 
+3. Throughout the following sections, references to “data sources” means those data sources a state uses to verify eligibility factors for 
+Medicaid. These data sources must be identified in the state’s verification plan, as required by 42 C.F.R. 435.945(j).
+11
+
+
+
+--- PAGE 12 ---
+Using Gross Income Determinations from SNAP and Other 
+Human Services Programs
+States may use SNAP gross income as a data source for verifying MAGI-based income 
+eligibility.
+Section 1902(e)(14)(A) Waiver Authority: 
+
+To simplify the use of SNAP and TANF information when making eligibility determinations during 
+unwinding, CMS waived the requirement to make a Medicaid income determination for 
+individuals whose gross income, as determined by the state’s SNAP and/or TANF agency, was at or 
+below the applicable Medicaid income standard. 
+State Plan Option: 
+
+States have flexibility, within certain parameters, to determine which data sources are useful in 
+verifying income.1 States have flexibility to determine that the gross income determination made 
+by SNAP is a useful source of data to verify income for MAGI-based eligibility. 
+
+States may find SNAP gross income or other program data useful in verifying income for non-
+MAGI beneficiaries. States may also find data from other human services programs, such as TANF, 
+useful for verifying MAGI-based eligibility. If interested, a state must conduct and share with CMS 
+an analysis to demonstrate the data’s usefulness and identify it in the state’s verification plan.
+Notes: 
+1. States can continue to use the underlying data for specific types of income in an applicant or beneficiary’s SNAP record. 
+12
+
+
+
+--- PAGE 13 ---
+Implementing the Use of SNAP Gross Income as a Data 
+Source
+
+When considering implementation of this strategy, states should assess the 
+usefulness of SNAP data in the same manner as they are expected to do for other 
+data sources, considering such factors as the accuracy, timeliness, 
+comprehensiveness, and complexity of accessing the data. 
+
+States can use a gross income determination from SNAP as a data source for 
+verifying income eligibility for MAGI Medicaid.1 
+
+If determined useful, states can use SNAP gross income determinations as a data 
+source at application, at renewal, or both.
+
+States may also target this strategy to specific populations, for example, using the 
+strategy only for individuals whose SNAP gross income is at or below a specified 
+level, e.g., 100 percent of the federal poverty level (FPL).
+Notes:
+1. CMS does not believe that states could reasonably conclude that net income for purposes of SNAP eligibility is useful in verifying MAGI-
+based income, as the determination of net SNAP income involves deduction of several significant income disregards from the gross 
+income amount. 
+13
+
+
+
+--- PAGE 14 ---
+Options to Complete Ex Parte Renewal When No Data 
+Sources Return Income Information
+States may consider individuals with a previously-verified attestation of zero-dollar income or 
+income at or below 100% of the FPL as having income that is highly unlikely to change.
+Section 1902(e)(14)(A) Waiver Authority: 
+
+During unwinding, CMS authorized two related waiver strategies for individuals with prior determinations of 
+zero-dollar income and individuals with a prior determination of income at or below 100% of the FPL that 
+enabled states to renew coverage on an ex parte basis when the state checked all available income data 
+sources, but no income data was returned. 
+State Plan Option:
+
+Under current verification policies,1 states have flexibility to consider information in a beneficiary’s account 
+reliable if the state has determined the information is highly unlikely to change or, in the case of income or 
+assets, highly unlikely to increase.
+
+CMS has determined it would be reasonable for a state to determine that the previously-verified income in 
+a beneficiary’s account is reliable in conducting an ex parte renewal if: 
+1.
+The individual had a previously-verified attestation of income at or below an income level (including 
+zero-dollar income) elected by the state, not to exceed 100% FPL; 
+2.
+The state has checked all available income data sources according to its verification plan and no 
+information is received; and 
+3.
+The state follows its verification plan to confirm the beneficiary’s continued state residency.2
+Notes:
+1.
+Additional guidance on state verification requirements and flexibilities is forthcoming.
+2.
+Effective December 3, 2025, consistent with 42 C.F.R. § 435.919(f) and 457.344, states are required to regularly obtain updated address information from reliable 
+data sources and update the beneficiary’s record with that information if a data source provides an updated in-state address. If a reliable data source provides an 
+out-of-state address, the state must terminate the beneficiary's coverage if the beneficiary does not confirm they continue to meet the residency requirements.
+14
+
+
+
+--- PAGE 15 ---
+Implementing the Strategy to Complete Ex Parte Renewal 
+When No Data Sources Return Income Information
+States may elect to apply this strategy only to individuals whose previously-verified 
+income was zero dollars or to individuals whose previously-verified income was at or 
+below a standard elected by the state, up to 100% FPL, and may elect a different income 
+standard for different eligibility groups.
+States adopting this strategy must also establish and document a maximum amount of 
+time that is permitted to elapse since the state last verified a beneficiary’s income (either 
+at application or renewal).1 
+States must have the information necessary to match with the income data sources used 
+by the state (e.g., Social Security Number).
+States must take steps to review other non-financial eligibility criteria. 
+States must notify individuals of the requirement to inform the agency if the information 
+relied on in the renewal is inaccurate.
+Notes:
+1. CMS considers a verified attestation of income that was made no earlier than three years prior to be reasonable. However, states may 
+establish a different reasonable amount of time.
+15
+
+
+
+--- PAGE 16 ---
+Strategy to Streamline Use of Asset Verification System 
+(AVS)
+States can assume no change in resources when no information is returned through the AVS 
+or when information is not returned within a reasonable timeframe.
+Section 1902(e)(14)(A) Waiver Authority: 
+
+For individuals subject to an asset test whose eligibility is being determined on the basis of being age 65 or older or 
+having blindness or a disability, section 1940 of the Act requires states to use an Asset Verification System (AVS) to 
+verify assets held in a financial institution.
+
+During unwinding, CMS approved a waiver strategy that allowed states to assume no change in assets verified 
+through the AVS when no information is returned or when information is not returned within a reasonable 
+timeframe and complete the ex parte renewal process without any further verification of assets. 
+State Plan Option:
+
+Current verification policies require that a state establish a reasonable timeframe to wait for information to be 
+returned from its AVS before requesting documentation or other information to verify assets. 
+
+Provided a state builds into its ex parte renewal process a reasonable period of time for financial institutions to 
+respond to an AVS query, CMS has determined that the state may assume no change in the value of a previously-
+verified asset if the state submits a request through its AVS and no information is returned or there is no response 
+from the AVS within the reasonable timeframe the state has established.1 This would enable the state to complete 
+an ex parte renewal without requesting additional documentation of asset types that can be verified with AVS. 
+
+If the individual only has assets held in financial institutions, or their only other assets are not likely to appreciate in 
+value, the state would be able to complete the ex parte renewal. 
+
+Any information returned by AVS that might impact eligibility after an individual's eligibility has been renewed must 
+be treated as a change in circumstances in accordance with 42 CFR 435.919.
+Notes: 
+1. Regulations at 42 C.F.R. § 435.916 afford states the flexibility to determine that certain assets are unlikely to appreciate in value and allow 
+states to rely on the value of the asset in a beneficiary’s account at renewal. 
+16
+
+
+
+--- PAGE 17 ---
+Implementing the Streamlined Use of AVS
+In establishing a reasonable timeframe to wait for data to be returned from its AVS, 
+states should consider the response times experienced in their AVS.
+The reasonable timeframe does not need to be the same at application as at renewal.
+States may consider initiating the AVS check ahead of other data sources that are 
+checked during the ex parte process to account for a potentially lengthier AVS response 
+time. 
+The state must notify individuals of the requirement to inform the agency if the asset 
+information used in the renewal is inaccurate (required for all ex parte renewals).
+If the state receives asset information from the AVS after a beneficiary has been renewed 
+on an ex parte basis, the information from the AVS must be processed as a change in 
+circumstance.
+17
+
+
+
+--- PAGE 18 ---
+Discontinued Blanket Authority for Unwinding-
+Related 1902(e)(14)(A) Waiver Strategies 
+18
+
+
+
+--- PAGE 19 ---
+Discontinued Blanket Waiver Authority
+Existing statutory and regulatory requirements do not allow states to continue the following 
+strategies under section 1902(e)(14)(A) of the Act after June 30, 2025. 
+― Suspend the requirement to cooperate in obtaining medical support
+― Waive the requirement to record telephonic signatures 
+― Permit designation of an authorized representative over the telephone without a signed 
+designation
+― Renew Medicaid eligibility for children and/or non-MAGI beneficiaries for 12 months based on 
+the individual’s most recent Medicaid determination 
+― Delay resumption of Medicaid premiums until after redetermining eligibility
+― Extend eligibility in the Former Foster Care Children group to youth formerly in foster care from 
+any state, without regard to when the individual turned age 18
+― Extend the timeframe to take final action on fair hearing requests and provide benefits pending a 
+final decision to all individuals who request a hearing
+― Reinstate eligibility back to termination date for those procedurally terminated who are 
+determined eligible during the reconsideration period without determining retroactive eligibility
+― Extend automatic reenrollment into a managed care plan up to 120 days after loss of Medicaid
+Notes: Additional details regarding the strategies whose blanket authority will be discontinued after June 30, 2025, and potential 
+alternative approaches states may adopt are included in the appendix table that accompanies the CIB.
+19
+
+
+
+--- PAGE 20 ---
+Use of 1902(e)(14)(A) Waiver Authority Beyond June 30, 
+2025
+
+CMS recognizes that states are in various stages of resuming routine eligibility and enrollment 
+operations. States may continue to use unwinding-related flexibilities through June 30, 2025.
+
+As states work toward full compliance with renewal requirements, CMS expects states to 
+continue or initiate mitigation strategies to minimize the impact of any non-compliance with 
+requirements on Medicaid and CHIP beneficiaries. 
+
+States are instructed to outline proposed mitigations or seek approval for waivers, as 
+appropriate, under section 1902(e)(14)(A) as part of the renewal compliance template. 
+― To use any of the strategies for which the blanket approval is sunsetting and that are not 
+permissible under current regulations, a state must request, and receive CMS approval of, 
+new waiver authority. 
+
+States may also seek CMS approval for section 1902(e)(14)(A) waivers for strategies beyond 
+those noted in the CIB, whether needed in the context of renewal compliance or for another 
+purpose.
+
+Any requests to use 1902(e)(14)(A) waiver authority will be considered individually and 
+approved on a time-limited basis.
+Notes: For additional information, see September 20, 2024, CIB, State Compliance with Medicaid and CHIP Renewal Requirements by 
+December 31, 2026. December 31, 2026 
+20
+
+
+
+--- PAGE 21 ---
+Regulatory Exception to Timely Determinations 
+to Delay Procedural Terminations
+21
+
+
+
+--- PAGE 22 ---
+Regulatory Exception to Timely Determinations to Delay 
+Procedural Terminations
+During the unwinding, CMS concurred with states’ use of the regulatory timeliness exception1 
+to delay procedural disenrollments for up to three months. This enabled states to conduct 
+targeted outreach to encourage beneficiaries to return their renewal form.
+As states return to regular operations, CMS’s broad concurrence with the application of 
+this option will sunset after June 30, 2025, as states are expected to have made 
+significant progress in resuming operations. 
+However, to achieve a similar result, states can build additional time into their renewal 
+process by adjusting the timing of renewal notifications to:
+― provide beneficiaries more time to return their renewal form; and
+― conduct targeted outreach before the end of the eligibility period to beneficiaries at risk of 
+losing coverage for procedural reasons.
+If a state experiences an administrative or other emergency (e.g., natural disaster) and 
+the state would like to use the timeliness exception to delay procedural terminations to 
+conduct targeted outreach, CMS strongly recommends that the state seek CMS 
+concurrence to do so. 
+Notes: 
+1. The exception to timely determinations of eligibility at 42 C.F.R. § 435.912(e) permits a state to exceed the timeliness standard when 
+there is an administrative or other emergency beyond the agency’s control.
+22
+
+
+
+--- PAGE 23 ---
+State Resources
+23
+
+
+
+--- PAGE 24 ---
+CMS Resources to Support States
+•
+CMCS Informational Bulletin, Use of Unwinding-Related Strategies to Support Long-Term Improvements to 
+State Medicaid Eligibility and Enrollment Processes, November 2024, available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/cibe1411142024.pdf
+•
+CMCS Informational Bulletin, Extension of Temporary Unwinding-Related Flexibilities, May 2024, available 
+at: https://www.medicaid.gov/federal-policy-guidance/downloads/cib050924-e14.pdf
+•
+Medicaid Program; “Streamlining the Medicaid, Children’s Health Insurance Program, and Basic Health 
+Program Application, Eligibility Determination, and Renewal Processes” final rule (89 FR 22836) available at: 
+https://www.federalregister.gov/d/2024-06566
+•
+SHO# 22-001, Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload in 
+Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency, March 2022, available at:  
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf 
+•
+COVID-19 PHE Unwinding Section 1902(e)(14)(A) Waiver Approvals, available at: 
+https://www.medicaid.gov/resources-for-states/coronavirus-disease-2019-covid-19/unwinding-and-
+returning-regular-operations-after-covid-19/covid-19-phe-unwinding-section-1902e14a-waiver-
+approvals/index.html 
+24

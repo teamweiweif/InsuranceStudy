@@ -1,0 +1,52 @@
+state_name,state_abbr,number_of_official_state_pages_found,number_of_federal_state_specific_references_found,renewal_timeline_found,e14_waiver_info_found,delay_pause_info_found,state_implementation_date_found,state_specific_source_missing,notes
+Alabama,AL,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Alaska,AK,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Arizona,AZ,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Arkansas,AR,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+California,CA,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Colorado,CO,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Connecticut,CT,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Delaware,DE,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+District of Columbia,DC,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Florida,FL,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Georgia,GA,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Hawaii,HI,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Idaho,ID,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Illinois,IL,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Indiana,IN,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Iowa,IA,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Kansas,KS,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Kentucky,KY,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Louisiana,LA,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Maine,ME,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Maryland,MD,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Massachusetts,MA,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Michigan,MI,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Minnesota,MN,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Mississippi,MS,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Missouri,MO,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Montana,MT,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Nebraska,NE,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Nevada,NV,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+New Hampshire,NH,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+New Jersey,NJ,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+New Mexico,NM,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+New York,NY,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+North Carolina,NC,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+North Dakota,ND,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Ohio,OH,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Oklahoma,OK,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Oregon,OR,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Pennsylvania,PA,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Rhode Island,RI,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+South Carolina,SC,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+South Dakota,SD,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Tennessee,TN,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Texas,TX,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Utah,UT,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Vermont,VT,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Virginia,VA,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Washington,WA,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+West Virginia,WV,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Wisconsin,WI,0,1,False,True,False,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.
+Wyoming,WY,0,2,False,True,True,False,True,Automated first-pass state crawl; timeline/implementation dates not coded unless explicit.

@@ -1,0 +1,382 @@
+
+
+--- PAGE 1 ---
+DEPARTMENT OF HEALTH & HUMAN SERVICES 
+Centers for Medicare & Medicaid Services 
+7500 Security Boulevard, Mail Stop S2-26-12 
+Baltimore, Maryland   21244-1850 
+ 
+CMCS Informational Bulletin 
+ 
+DATE:  
+May 9, 2024 
+ 
+FROM:  
+Daniel Tsai, Deputy Administrator and Director 
+Center for Medicaid & CHIP Services 
+ 
+SUBJECT:  Extension of Temporary Unwinding-Related Flexibilities  
+ 
+The purpose of this Center for Medicaid & CHIP Services (CMCS) Informational Bulletin (CIB) 
+is to announce a further extension of unwinding-related section 1902(e)(14)(A) waivers. In the 
+December 18, 2023 CIB on maintaining children’s coverage, the Centers for Medicare & 
+Medicaid Services (CMS) announced that these waivers would be extended to December 31, 
+2024.0F1 To continue supporting states’ efforts to establish and update income and eligibility 
+determination systems that maximize states’ ability to ensure that eligible individuals retain 
+coverage, CMS is further extending these unwinding-related section 1902(e)(14)(A) waivers 
+through June 30, 2025. This CIB also provides information about how certain other temporary, 
+COVID-19-related flexibilities can be extended through June 30, 2025.   
+Throughout the COVID-19 Public Health Emergency (PHE) states adopted many flexibilities to 
+respond effectively to issues caused by the pandemic and to comply with conditions for receipt 
+of a temporary 6.2 percentage point Federal Medical Assistance Percentage (FMAP) increase set 
+forth at section 6008 of the Families First Coronavirus Response Act (FFCRA).1F2 One of these 
+conditions, the continuous enrollment condition, required states to maintain the enrollment of 
+nearly all Medicaid beneficiaries through March 31, 2023. With the expiration of the continuous 
+enrollment condition, states were required to resume completing renewals, consistent with 
+federal requirements, for all individuals enrolled in their Medicaid programs. This process is 
+often referred to as “unwinding,” and the period over which each state is conducting these 
+renewals is often referred to as the state’s “unwinding period.” 
+To support states’ efforts to protect continuity of coverage during their unwinding periods, CMS 
+approved the use of certain temporary authorities, including waivers under section 
+1902(e)(14)(A) of the Social Security Act (the Act), temporary verification plan updates, and 
+ 
+1 CMS. (December 18, 2023). Ensuring Eligible Children Maintain Medicaid and Children’s Health Insurance 
+Program Coverage [CMCS Informational Bulletin]. Available at: https://www.medicaid.gov/sites/default/files/2023-
+12/cib12182023.pdf.  
+2 This provision was originally enacted in Pub. L. 116-127 and amended by the Coronavirus Aid, Relief, and 
+Economic Security Act (Pub. L. 116-136) and the Consolidated Appropriations Act, 2023 (Pub. L. 117-328). The 
+availability of the temporary FMAP increase expired on December 31, 2023.  
+
+
+
+--- PAGE 2 ---
+Page 2 – CMCS Informational Bulletin 
+ 
+temporary Medicaid and CHIP state plan amendments (SPAs).2F3,
+3F4 Nearly all states were initially 
+expected to complete “unwinding-related” renewals (i.e., the first renewal conducted for each 
+individual enrolled in Medicaid or CHIP at the end of the continuous enrollment condition) by 
+June 2024. However, due to state adoption of strategies to prevent inappropriate disenrollments 
+and other CMS-approved unwinding-related strategies, many states will continue conducting 
+unwinding-related renewals beyond June 2024 for some populations.  
+Many of the strategies adopted by states during their unwinding periods will continue to be 
+needed to protect beneficiaries while the states implement policy, systems, and operational fixes 
+to address areas of noncompliance with federal renewal requirements that were identified during 
+unwinding. Further, extending flexibilities authorized under section 1902(e)(14)(A) of the Act or 
+otherwise approved by CMS to streamline renewals will enable states to shift limited resources 
+to reduce processing time at application when needed; this will help ensure that eligible 
+applicants have timely access to coverage in accordance with federal regulations at 42 CFR 
+§ 435.912. For these reasons, as states continue work to resume regular eligibility and enrollment 
+operations following the end of the continuous enrollment condition, they may need to extend 
+some of these flexibilities or submit requests for new flexibilities.  
+Information on each type of flexibility is discussed below. 
+A. Extension of Section 1902(e)(14)(A) Waivers 
+To maximize states’ ability to ensure that eligible individuals retain coverage, states may 
+continue to use unwinding-related waiver authority granted under section 1902(e)(14)(A) of the 
+Act through June 30, 2025, provided that the terms and conditions of the original waiver 
+continue to be met. A new request is not needed. 
+Section 1902(e)(14)(A) of the Act permits CMS to approve time-limited waivers “as are 
+necessary to ensure that states establish income and eligibility determination systems that protect 
+beneficiaries.” Since April 2022, CMS has granted nearly 400 section 1902(e)(14)(A) waivers to 
+52 states and territories to support unwinding efforts.4F5 All waivers authorized under section 
+1902(e)(14)(A) of the Act from April 2022 through the date of this CIB are considered 
+“unwinding-related” for the purpose of this CIB. They include, but are not limited to, waivers: 
+ 
+3 Some states implemented temporary state plan changes utilizing a Medicaid or CHIP disaster relief state plan 
+template or a CHIP disaster relief activation letter. For example, CMS approved some temporary SPAs to suspend 
+premiums and cost sharing to support state unwinding efforts. 
+4 For information on flexibilities discussed in this CIB, see State Health Official Letter (SHO) #22-001 “RE: 
+Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload in Medicaid, the Children’s 
+Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon Conclusion of the COVID-19 Public 
+Health Emergency” available at: https://www.medicaid.gov/sites/default/files/2022-03/sho22001.pdf.  
+5 CMS, “COVID-19 PHE Unwinding Section 1902(e)(14)(A) Waiver Approvals,” March 2024, available at: 
+https://www.medicaid.gov/resources-for-states/coronavirus-disease-2019-covid-19/unwinding-and-returning-
+regular-operations-after-covid-19/covid-19-phe-unwinding-section-1902e14a-waiver-approvals/index.html.  
+
+
+
+--- PAGE 3 ---
+Page 3 – CMCS Informational Bulletin 
+ 
+• To increase ex parte renewal rates, like those to renew income eligibility based on 
+financial findings from SNAP or TANF and those suspending the requirement to apply 
+for other benefits; 
+• To support enrollees with renewal form submission or completion, for example by 
+permitting managed care plans to provide assistance with completing and submitting 
+renewal forms; 
+• To update beneficiary contact information such as strategies that rely on information from 
+managed care plans, the U.S. Postal Service, or enrollment brokers;  
+• To facilitate reinstatement of eligible individuals disenrolled for procedural reasons, for 
+example by reinstating eligibility effective on the individual’s prior termination date for 
+individuals who were disenrolled based on a procedural reason and are subsequently 
+redetermined eligible for Medicaid during a 90-day reconsideration period; and 
+• To address other issues like delaying the resumption of premiums until a beneficiary’s 
+eligibility (and corresponding premium liability) has been redetermined, temporarily 
+simplifying the eligibility determination process for the former foster care children group 
+and extending the timeframe to take final administrative action on certain fair hearing 
+requests.   
+CMCS currently is reviewing all section 1902(e)(14)(A) waiver strategies to determine which 
+can be implemented on a longstanding basis under other authorities. The “Streamlining the 
+Medicaid, Children’s Health Insurance Program, and Basic Health Program Application, 
+Eligibility Determination, and Renewal Processes” final rule makes changes to §§ 435.608, 
+435.919, 436.608 and 457.344 so that three such strategies become available when the rule 
+becomes effective on June 3, 2024, and a section 1902(e)(14)(A) waiver will no longer be 
+needed. These three are the strategy to waive the requirement to apply for other benefits to 
+qualify for Medicaid (which is repealed by the final rule) and the strategies to update beneficiary 
+contact information with information from managed care plans and the U.S. Postal Service 
+National Change of Address database and mail forwarding service. These strategies become 
+requirements under the final rule, but states are permitted 12 to 18 months to fully comply with 
+these new requirements.5F6   
+B. Using an Unwinding-Related Section 1902(e)(14)(A) Waiver Strategy More than Once 
+for a Given Individual 
+As states begin to utilize unwinding-related section 1902(e)(14)(A) waiver strategies for more 
+than 12 months, the question arises as to whether a given strategy may be applied to the same 
+individual more than once. With the exception of the “Zero Dollar” and “100% FPL” strategies 
+noted below, the permissibility of doing so depends on whether the conditions and assurances of 
+the waiver continue to be met.   
+ 
+6 CMS. “Streamlining the Medicaid, Children’s Health Insurance Program, and Basic Health Program Application, 
+Eligibility Determination, and Renewal Processes” final rule (89 FR 22836) available at: 
+https://www.federalregister.gov/d/2024-06566  
+
+
+
+--- PAGE 4 ---
+Page 4 – CMCS Informational Bulletin 
+ 
+When the terms of a section 1902(e)(14)(A) waiver approval continue to apply, that waiver 
+authority may be used more than once for the same individual. For example, some states 
+received authority to renew income eligibility for individuals receiving SNAP benefits (the 
+“SNAP strategy”). When using the SNAP strategy to renew an individual’s eligibility, certain 
+conditions and assurances must be met, such as that the individual’s gross income as determined 
+for purposes of SNAP eligibility be no greater than the applicable Medicaid income standard. If a 
+beneficiary was successfully renewed using the SNAP strategy on September 1, 2023, their 
+eligibility may be renewed again using this strategy on September 1, 2024, provided that they 
+continue to receive SNAP benefits, their gross income as determined in their most recent SNAP 
+determination does not exceed the applicable Medicaid income standard, and any other 
+conditions and assurances set forth in the state’s waiver approval are met.  
+We will permit states to use two section 1902(e)(14)(A) waivers more than once for the same 
+individual even when certain conditions of the initial waiver approval are not met. Specifically, 
+we will permit continued use of the section 1902(e)(14)(A) waivers through which states 
+completed an ex parte income determination without having requested additional income 
+information or documentation for individuals (1) whose most recent income determination prior 
+to the beginning of the state’s unwinding period was no earlier than March 2019 and was based 
+on verified income at or below zero dollars or 100 percent of the federal poverty level (FPL) (the 
+“Zero Dollar” and “100% FPL” strategies); and (2) for whom the state checked appropriate 
+electronic data sources, and no information was returned.  
+The Zero Dollar and 100% FPL waiver strategies were originally designed to permit a single ex 
+parte renewal based on verified information from the individual’s most recent income 
+determination combined with use of all available electronic income data sources. However, CMS 
+believes the ability to complete a second ex parte renewal for such individuals when electronic 
+data sources are utilized and no information is returned continues to be critical as states work to 
+address the continuing challenges in timely processing eligibility and enrollment actions. 
+Therefore, states may continue to use these strategies for individuals who are due for a renewal 
+through June 30, 2025, without regard to whether the strategies have been previously used, as 
+long as the state meets the following conditions:  
+• Prior to using the Zero Dollar and/or the 100% FPL strategies for a 
+second or subsequent renewal for any specific individual, the state 
+must take steps to confirm continued state residency, for example by 
+conducting a utilization review. CMS is available to provide technical 
+assistance on strategies to verify continued state residency. 
+• The state must check financial data sources in accordance with its 
+verification plan. If no information is returned, the state may consider 
+income verified. 
+• The state must take appropriate steps to review the non-financial 
+components of eligibility consistent with the state’s existing policies 
+and procedures outlined in the state’s verification plan implementing 
+§§ 435.916 and 435.956.  
+
+
+
+--- PAGE 5 ---
+Page 5 – CMCS Informational Bulletin 
+ 
+• The state must notify individuals whose eligibility is renewed using this 
+strategy that they must inform the agency if any of the information relied 
+upon by the state in completing the renewal is inaccurate, consistent 
+with § 435.916(a)(2)(ii).    
+CMS will send each state with an approved section 1902(e)(14)(A) waiver authorizing use of the 
+Zero Dollar and/or 100% FPL strategies an addendum to its existing waiver. This addendum will 
+contain all of the conditions for using either or both of these strategies a second time for a given 
+individual. States will need to notify CMS that they accept the conditions described in the 
+addendum in order to use either of these strategies a second time for a given individual. States 
+will not need to submit a new waiver request.  
+C. Extension of Other Flexibilities  
+Verification Plan Addendums 
+States may continue to utilize temporary verification policies and procedures, which are 
+currently scheduled to sunset at or before the end of the state’s unwinding period, through June 
+30, 2025.  
+All states are required to maintain a verification plan describing the verification policies and 
+procedures adopted by their state.6F7 Many states submitted a Medicaid and CHIP MAGI-Based 
+Disaster Relief Verification Plan Addendum (hereafter “Verification Plan Addendum”) to capture 
+temporary verification policy and procedure changes effective during the COVID-19 PHE.7F8 
+Some states extended these changes through the unwinding period by either changing the end 
+date of an existing Verification Plan Addendum or submitting an unwinding-specific Verification 
+Plan Addendum.  
+CMS has determined that Verification Plan Addendums may be extended through June 30, 2025 
+in order to aid in states’ efforts to protect beneficiaries while work related to and resulting from 
+unwinding continues. Consistent with CMS’ authority to request that states send us their 
+verification plan, states that wish to modify or sunset such Addendums prior to that date should 
+notify CMS of their plan to do so.  Therefore, unless the state wants to end such temporary 
+policies at an earlier date, it does not need to take any action to continue utilizing these 
+temporary verification policies and procedures through June 30, 2025. However, states should 
+update their own records to clearly document the extension and maintain a copy of this guidance 
+to ensure accurate recordkeeping of these flexibilities for auditing and other purposes. To modify 
+or sunset an existing Verification Plan Addendum prior to June 30, 2025, please reach out to your 
+Medicaid state lead.  
+States may elect to make temporary verification policy and procedure changes permanent for 
+MAGI-based eligibility determinations by updating and submitting their Medicaid and CHIP 
+ 
+7 42 CFR § 435.945(j) 
+8 CMS, “Medicaid/CHIP Eligibility Verification Plans,” available at 
+https://www.medicaid.gov/medicaid/eligibility/medicaidchip-eligibility-verification-plans/index.html. 
+
+
+
+--- PAGE 6 ---
+Page 6 – CMCS Informational Bulletin 
+ 
+MAGI-based verification plan to CMS. To make permanent changes to verification policies and 
+procedures for non-MAGI determinations, states should update their internal manuals and 
+records reflecting their verification policies for non-MAGI populations. 
+Regulatory Exception to Timely Determinations 
+A state may continue to use the timeliness exception to delay procedural disenrollments for 
+renewals initiated through June 30, 2025 if it continues to meet the conditions set forth in the 
+regulations at § 435.912(e), even if the concurrence provided by CMS for the state to use that 
+exception is set to expire at the end of the state’s unwinding period.  
+The exception to timely determinations of eligibility at § 435.912(e) permits a state to exceed the 
+timeliness standard when there is an administrative or other emergency beyond the agency’s 
+control. As states began to work through the large volume of renewals during unwinding, many 
+states reported that each month they were disenrolling a large percentage of individuals because 
+they did not return a renewal form or other information needed by the state to process their 
+renewal, even though many of these beneficiaries likely otherwise continue to meet all eligibility 
+requirements. CMS determined that the unprecedented volume of renewals following resumption 
+of routine operations warranted states’ use of the timeliness exception at 42 CFR 435.912(e) to 
+delay procedural disenrollments while they conducted targeted outreach to encourage 
+beneficiaries to return the renewal form. 
+At least 15 states utilized the timeliness exception to delay procedural disenrollments for one or 
+more months during unwinding while they conducted targeted renewal outreach to impacted 
+beneficiaries.8F9 Delaying procedural disenrollments meant that these states will continue to 
+conduct “unwinding-related” renewals beyond the end of their official unwinding period. In 
+addition, an increasing number of states are beginning to experience significant application 
+backlogs, as eligibility workers have been stretched by the need to work through large volumes 
+of renewals and as many individuals who were disenrolled reapply. CMS believes that due to the 
+persistence of the unprecedented volume of renewals faced by these states, they continue to 
+experience an administrative emergency beyond their control within the meaning of 42 CFR 
+435.912(e)(2), and that they are likely to continue to do so into the first half of 2025. Therefore, 
+CMS is extending through June 30, 2025 the concurrences we previously provided to states that 
+delayed procedural disenrollments. These states do not need to submit a new concurrence request 
+but should document in their own records the circumstances that necessitate continued delay of 
+procedural disenrollments and maintain a copy of this guidance to ensure accurate recordkeeping 
+of these flexibilities for auditing and other purposes.  
+If a state seeks to newly begin using the exception to the timeliness standards in 42 CFR 
+435.912, CMS strongly recommends that the state seek CMS concurrence to use the exception.  
+ 
+9 CMS, "State Option to Delay Procedural Disenrollments," December 2023, available at 
+https://www.medicaid.gov/resources-for-states/coronavirus-disease-2019-covid-19/unwinding-and-returning-
+regular-operations-after-covid-19/state-option-to-delay-procedural-disenrollments/index.html 
+
+
+
+--- PAGE 7 ---
+Page 7 – CMCS Informational Bulletin 
+ 
+Other Authorities 
+Some states are still utilizing flexibilities authorized through Medicaid and CHIP disaster relief 
+SPAs and section 1115 demonstrations. For example, some states submitted a disaster relief 
+activation letter (DRAL) to temporarily suspend the imposition of premiums for separate CHIP 
+enrollees. These temporary flexibilities will sunset according to the end date indicated in the 
+approval package or DRAL, unless the state takes action to modify or extend the flexibility. 
+Temporary Medicaid disaster relief SPA flexibilities can be implemented as regular, continuing 
+state plan changes by submitting a new non-disaster-relief SPA to amend the relevant state plan 
+section. Some CHIP flexibilities, such as those delaying renewals, can only be temporary. Other 
+CHIP flexibilities, like the temporary suspension of premiums, can also be implemented on a 
+continuing basis by submitting a regular CHIP SPA. For more information, please contact your 
+Medicaid state lead or CHIP project officer and copy the CMS Unwinding TA mailbox at 
+CMSUnwindingSupport@cms.hhs.gov. 
+For more information about the section 1115 demonstration application process, or extension of 
+an unwinding-related flexibility allowed for in an 1115 demonstration, please contact your CMS 
+section 1115 project officer or refer to the “1115 Application Process” webpage on 
+Medicaid.gov.9F10 
+D. State Actions 
+Do I need to contact CMS to adopt the extension(s) available for section 1902(e)(14)(A) 
+waivers and Verification Plan Addendums through June 30, 2025? 
+No. As discussed above, CMS is extending the expiration dates through June 30, 2025 for all 
+unwinding-related section 1902(e)(14)(A) waivers (as described in this CIB), so long as the state 
+meets the conditions and assurances of the approved authority.10F11 States do not need to submit a 
+request for an extension to CMS. States may also continue using temporary verification policies 
+and procedures reflected in the state’s unwinding-related Verification Plan Addendum, which are 
+currently scheduled to sunset at or before the end of the state’s unwinding period, through June 
+30, 2025, without notifying CMS. However, we recommend that states document these effective 
+date changes in their records and maintain a copy of this guidance to ensure accurate 
+recordkeeping of these flexibilities for auditing and other purposes. Any questions or concerns 
+about continued use of a specific waiver or verification policy can be directed to the CMS 
+unwinding mailbox (CMSUnwindingSupport@cms.hhs.gov).  
+ 
+10 CMS, “1115 Application Process,” available at: https://www.medicaid.gov/medicaid/section-1115-
+demonstrations/1115-application-process/index.html. 
+11 As described in Section B of this CIB, CMS will permit states to use the Zero Dollar and 100% FPL section 
+1902(e)(14)(A) waiver strategies more than once for the same individual even when certain conditions of the initial 
+waiver approval are not met. 
+
+
+
+--- PAGE 8 ---
+Page 8 – CMCS Informational Bulletin 
+ 
+Do I need to contact CMS to continue to utilize the timeliness exception to delay procedural 
+disenrollments through June 30, 2025? 
+No. States do not need to submit a new concurrence request to continue using the timeliness 
+exception to delay procedural disenrollments for renewals initiated through June 30, 2025, if 
+they continue to meet the conditions set forth in the regulations at § 435.912(e) for using that 
+exception. However, if states are considering use of this exception for the first time, CMS 
+strongly recommends that they seek CMS concurrence before implementation. States can send 
+an email requesting new concurrence to the CMS unwinding mailbox 
+(CMSUnwindingSupport@cms.hhs.gov).  
+Can I end one of the authorities described in this CIB prior to the scheduled end date? 
+Yes. States may sunset any authority described in this CIB prior to the scheduled end date 
+announced through this guidance. To sunset a flexibility early, please contact your Medicaid state 
+lead, CHIP project officer, or section 1115 project officer to ensure that the end date is properly 
+documented in both state and CMS records. Please copy the CMS Unwinding TA mailbox at 
+CMSUnwindingSupport@cms.hhs.gov with any change requests. 
+Can I request approval from CMS to implement a new flexibility during the extension period?   
+Yes. States may continue to request section 1902(e)(14)(A) waiver authority to implement a new 
+waiver, seek new concurrence for exercise of the timeliness exception per § 435.912(e), or make 
+new changes to the state’s Verification Plan Addendum through June 30, 2025. See 
+Medicaid.gov/unwinding for information on available waiver strategies11F12 and SHO letter #22-
+001 for details on many of the available flexibilities.12F13 Some flexibilities, like new section 
+1902(e)(14)(A) waivers, remain available beyond June 30, 2025 as well. If your state is 
+interested in requesting approval for a new flexibility, please contact your Medicaid state lead or 
+CHIP project officer and copy the CMS Unwinding TA mailbox at 
+CMSUnwindingSupport@cms.hhs.gov. 
+E. Closing 
+CMS is committed to supporting state efforts help eligible individuals renew and maintain 
+coverage, as states continue to make necessary changes to ensure compliance with federal 
+ 
+12 CMS, “COVID-19 PHE Unwinding Section 1902(e)(14)(A) Waiver Approvals,” March 2023, available at 
+https://www.medicaid.gov/resources-for-states/coronavirus-disease-2019-covid-19/unwinding-and-returning-
+regular-operations-after-covid-19/covid-19-phe-unwinding-section-1902e14a-waiver-approvals/index.html. 
+Additionally, the December 18, 2023 CIB on maintaining children’s coverage includes strategies that states can 
+adopt in order to promote continuity of coverage. 
+13 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon Conclusion 
+of the COVID-19 Public Health Emergency [State Health Official Letter #22-001]. Available at 
+https://www.medicaid.gov/sites/default/files/2022-03/sho22001.pdf. 
+
+
+
+--- PAGE 9 ---
+Page 9 – CMCS Informational Bulletin 
+ 
+renewal requirements and return to timely processing of eligibility and enrollment actions. As 
+such, we are extending the following flexibilities through June 30, 2025:  
+• Unwinding-related waivers approved under section 1902(e)(14)(A) of the Act;  
+• Temporary changes to verification policies and procedures submitted through a 
+Verification Plan Addendum; and  
+• Use of the exception to delay procedural disenrollments if the state continues to meet the 
+conditions described in § 435.912(e).   
+CMS will continue to monitor states’ activities to ensure that eligible individuals have access to 
+the coverage to which they are entitled. For additional information and resources, states are 
+encouraged to review guidance and other information available at Medicaid.gov/Unwinding. 
+States may also submit questions and request technical assistance by contacting their Medicaid 
+state lead or CHIP project officer or by emailing CMSUnwindingSupport@cms.hhs.gov. 

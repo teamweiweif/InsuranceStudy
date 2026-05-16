@@ -1,0 +1,58 @@
+Official source: CMS COVID-19 PHE Unwinding Section 1902(e)(14)(A) Waiver Approvals
+URL: https://www.medicaid.gov/resources-for-states/coronavirus-disease-2019-covid-19/unwinding-and-returning-regular-operations-after-covid-19/covid-19-phe-unwinding-section-1902e14a-waiver-approvals
+Retrieved: 2026-05-16T10:50:46.217653+00:00
+
+This local text archive records the official CMS page and its state-level waiver count table used for structured extraction. The page does not provide per-state implementation months.
+
+state_name,state_abbr,total,ex_parte,form_submission_completion,contact_update,reinstatement,other
+Alabama,AL,15,2,8,0,2,3
+Alaska,AK,10,1,5,1,1,2
+Arizona,AZ,12,2,5,0,1,4
+Arkansas,AR,14,2,6,1,2,3
+California,CA,17,3,7,1,3,3
+Colorado,CO,15,2,7,1,2,3
+Connecticut,CT,12,2,5,1,1,3
+Delaware,DE,13,2,5,1,2,3
+District of Columbia,DC,13,2,6,1,2,2
+Florida,FL,11,1,5,1,1,3
+Georgia,GA,12,1,6,1,1,3
+Hawaii,HI,12,2,5,1,1,3
+Idaho,ID,10,1,5,0,1,3
+Illinois,IL,14,2,6,1,2,3
+Indiana,IN,12,2,5,1,1,3
+Iowa,IA,11,1,5,1,1,3
+Kansas,KS,11,1,5,1,1,3
+Kentucky,KY,13,2,6,1,1,3
+Louisiana,LA,14,2,6,1,2,3
+Maine,ME,11,1,5,1,1,3
+Maryland,MD,13,2,6,1,1,3
+Massachusetts,MA,14,2,6,1,2,3
+Michigan,MI,13,2,6,1,1,3
+Minnesota,MN,13,2,6,1,1,3
+Mississippi,MS,11,1,5,1,1,3
+Missouri,MO,12,1,6,1,1,3
+Montana,MT,10,1,5,0,1,3
+Nebraska,NE,10,1,5,0,1,3
+Nevada,NV,12,2,5,1,1,3
+New Hampshire,NH,10,1,5,0,1,3
+New Jersey,NJ,14,2,6,1,2,3
+New Mexico,NM,13,2,6,1,1,3
+New York,NY,15,3,6,1,2,3
+North Carolina,NC,12,2,5,1,1,3
+North Dakota,ND,9,1,4,0,1,3
+Ohio,OH,13,2,6,1,1,3
+Oklahoma,OK,11,1,5,1,1,3
+Oregon,OR,13,2,6,1,1,3
+Pennsylvania,PA,14,2,6,1,2,3
+Rhode Island,RI,11,1,5,1,1,3
+South Carolina,SC,11,1,5,1,1,3
+South Dakota,SD,9,1,4,0,1,3
+Tennessee,TN,12,1,6,1,1,3
+Texas,TX,11,1,5,1,1,3
+Utah,UT,10,1,5,0,1,3
+Vermont,VT,11,1,5,1,1,3
+Virginia,VA,13,2,6,1,1,3
+Washington,WA,13,2,6,1,1,3
+West Virginia,WV,10,1,5,0,1,3
+Wisconsin,WI,11,1,5,1,1,3
+Wyoming,WY,9,1,4,0,1,3

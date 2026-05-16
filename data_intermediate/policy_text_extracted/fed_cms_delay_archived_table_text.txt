@@ -1,0 +1,22 @@
+Official source: CMS State Option to Delay Procedural Disenrollments
+URL: https://www.medicaid.gov/resources-for-states/coronavirus-disease-2019-covid-19/unwinding-and-returning-regular-operations-after-covid-19/state-option-to-delay-procedural-disenrollments
+Retrieved: 2026-05-16T10:50:46.217653+00:00
+
+The official CMS page says 15 states were approved to use the temporary state option to delay procedural disenrollments. Rows below are coded by renewal due month.
+
+state_name,state_abbr,duration,renewal_due_month_start,renewal_due_month_end,affected_population,evidence
+"Colorado","CO","Through the end of unwinding","2023-09","end_of_unwinding_unspecified","All beneficiaries","starting with renewals due in September 2023 through the end of unwinding"
+"District of Columbia","DC","9 months","2023-06","2024-02","All beneficiaries","starting with renewals due in June 2023 and ending with renewals due in February 2024"
+"Kansas","KS","1 month","2023-06","2023-06","MAGI beneficiaries","starting with renewals due in June 2023"
+"Massachusetts","MA","Through the end of unwinding","2023-04","end_of_unwinding_unspecified","Non-MAGI beneficiaries","starting with renewals due in April 2023 through the end of unwinding"
+"Minnesota","MN","2 months","2023-06","2023-07","All beneficiaries","starting with renewals due in June 2023 and ending with renewals due in July 2023"
+"Montana","MT","Through the end of unwinding","2023-06","end_of_unwinding_unspecified","Non-MAGI beneficiaries","starting with renewals due in June 2023 through the end of unwinding"
+"Nevada","NV","Through the end of unwinding","2023-09","end_of_unwinding_unspecified","Non-MAGI beneficiaries","starting with renewals due in September 2023 through the end of unwinding"
+"New Jersey","NJ","3 months","2023-06","2023-08","All beneficiaries","starting with renewals due in June 2023 and ending with renewals due in August 2023"
+"New Mexico","NM","Through the end of unwinding","2023-10","end_of_unwinding_unspecified","All beneficiaries","starting with renewals due in October 2023 through the end of unwinding"
+"New York","NY","Through the end of unwinding","2023-09","end_of_unwinding_unspecified","MAGI beneficiaries","starting with renewals due in September 2023 through the end of unwinding"
+"North Carolina","NC","Through the end of unwinding","2023-09","end_of_unwinding_unspecified","All beneficiaries","starting with renewals due in September 2023 through the end of unwinding"
+"Pennsylvania","PA","1 month","2023-04","2023-04","Non-MAGI beneficiaries","starting with renewals due in April 2023"
+"Texas","TX","1 month","2023-10","2023-10","All beneficiaries","starting with renewals due in October 2023"
+"Virginia","VA","Through the end of unwinding","2023-09","end_of_unwinding_unspecified","Non-MAGI beneficiaries","starting with renewals due in September 2023 through the end of unwinding"
+"Wyoming","WY","Through the end of unwinding","2023-09","end_of_unwinding_unspecified","All beneficiaries","starting with renewals due in September 2023 through the end of unwinding"

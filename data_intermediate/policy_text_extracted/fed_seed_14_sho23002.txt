@@ -1,0 +1,3841 @@
+
+
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTMENT OF HEALTH & HUMAN SERVICES 
+Centers for Medicare & Medicaid Services 
+7500 Security Boulevard, Mail Stop S2-26-12 
+Baltimore, Maryland 21244-1850 
+SHO# 23-002 
+RE: Medicaid Continuous 
+Enrollment Condition Changes, 
+Conditions for Receiving the 
+FFCRA Temporary FMAP 
+Increase, Reporting Requirements, 
+and Enforcement Provisions in the 
+Consolidated Appropriations Act, 
+2023 
+January 27, 2023 
+Dear State Health Official: 
+On December 29, 2022, the Consolidated Appropriations Act, 2023 (P.L. 117-328) (CAA, 2023) 
+was enacted.1 This state health official (SHO) letter discusses section 5131 of subtitle D of title 
+V of division FF of the CAA, 2023 (hereinafter referred to as “section 5131”).  This section 
+makes significant changes to the continuous enrollment condition and availability of the 
+temporary increase in the Federal Medical Assistance Percentage (FMAP) under section 6008 of 
+the Families First Coronavirus Response Act (FFCRA) (hereinafter referred to as “temporary 
+FMAP increase”) and establishes new state reporting requirements and enforcement authorities 
+for the Centers for Medicare & Medicaid Services (CMS).  Specifically, as discussed in further 
+detail in this letter, section 5131: 
+(1) Separates the end of the FFCRA continuous enrollment condition from the end of the
+COVID-19 public health emergency (COVID-19 PHE), and ends that condition on
+March 31, 2023, thus enabling states to terminate Medicaid enrollment of individuals
+who no longer meet Medicaid eligibility requirements on or after April 1, 2023;
+(2) Amends the conditions states must meet to claim, and extends the availability of, the
+temporary FMAP increase beginning April 1, 2023, gradually phasing down the
+increase until December 31, 2023;
+(3) Adds new reporting requirements for all states under section 1902(tt) of the Social
+Security Act (the Act); and
+(4) Creates new enforcement authorities for CMS related to the new reporting
+requirements and to state renewal activities during the period that begins on April 1,
+2023 and ends on June 30, 2024 (a time frame that will overlap with states’
+unwinding periods).2
+The newly enacted CAA, 2023 does not address the end date of the COVID-19 PHE.  On 
+1 https://www.congress.gov/117/bills/hr2617/BILLS-117hr2617enr.pdf. 
+2 As described in prior CMS guidance, states will have up to 12 months to initiate, and 14 months to complete, a 
+renewal for all individuals enrolled in Medicaid, CHIP, and the Basic Health Program (BHP) following the end of 
+the continuous enrollment condition—this process has commonly been referred to as “unwinding.” 
+The contents of this document do not have the force and effect of law and are not meant to bind the public in any 
+way, unless specifically incorporated into a contract. This document is intended only to provide clarity to the public 
+regarding existing requirements under the law. 
+
+
+
+--- PAGE 2 ---
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+                                                     
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 2 – State Health Official Letter 
+January 11, 2023, the Secretary renewed the COVID-19 PHE, which is still in effect as of the 
+date of this letter.3 
+On January 5, 2023, CMS released a Center for Medicaid and CHIP Services Informational 
+Bulletin (CIB), Key Dates Related to the Medicaid Continuous Enrollment Condition Provisions 
+in the Consolidated Appropriations Act, 2023,4 which is the first in a series of guidance on the 
+changes made by section 5131 to the continuous enrollment condition and the impact of these 
+changes on prior CMS guidance.5  The January 5, 2023, CIB relays key dates and deliverables 
+for states as they resume renewals and other eligibility and enrollment actions following the end 
+of the continuous enrollment condition (referred to in prior guidance as the “unwinding period”). 
+This SHO letter is the next in this series of guidance and builds on the guidance provided in the 
+January 5, 2023, CIB.  CMS also expects to provide additional guidance on the CAA, 2023 in 
+the future. 
+CMS will be reviewing data, state activity, and other information to ensure all states comply with 
+federal eligibility renewal requirements and the new section 1902(tt) reporting requirements in 
+preparation for and during the state’s unwinding period.  States may need to make programmatic 
+and operational changes to eligibility and enrollment policies, procedures, systems, and 
+operations and consider adopting alternative strategies and mitigation plans to ensure 
+compliance.  CMS is available to consult with states as they prepare for and resume renewals and 
+other eligibility determinations.  States may contact their CMS state lead for assistance. 
+Changes to the FFCRA Continuous Enrollment Condition and Temporary FMAP Increase 
+Section 5131(a)(2)(C) separates the end of the continuous enrollment condition from the end of 
+the COVID-19 PHE by amending section 6008(b)(3) of the FFCRA to end continuous Medicaid 
+enrollment as a condition for claiming the temporary FMAP increase on March 31, 2023.  This 
+means that, on or after April 1, 2023, states claiming the temporary FMAP increase will no 
+longer be required to maintain the enrollment of a Medicaid beneficiary for whom the state 
+completes a renewal and who no longer meets Medicaid eligibility requirements.  With the 
+changes made in section 5131, states must end the enrollment of ineligible beneficiaries on or 
+after April 1, 2023, after a full renewal is conducted during the state’s unwinding period, no 
+matter when the COVID-19 PHE ends. 
+Consistent with the March 3, 2022, SHO #22-001, RE: Promoting Continuity of Coverage and 
+Distributing Eligibility and Enrollment Workload in Medicaid, the Children’s Health Insurance 
+Program (CHIP), and Basic Health Program (BHP) Upon Conclusion of the COVID-19 Public 
+Health Emergency (hereinafter SHO #22-001), and as explained in the January 5, 2023, CIB: 
+3 The Secretary renewed the COVID-19 PHE, effective January 11, 2023.  See: 
+https://aspr.hhs.gov/legal/PHE/Pages/covid19-11Jan23.aspx. 
+4 CMS. (January 5, 2023). Key Dates Related to the Medicaid Continuous Enrollment Condition Provisions in the 
+Consolidated Appropriations Act, 2023 [CMCS Informational Bulletin]. Available at 
+https://www.medicaid.gov/sites/default/files/2023-01/cib010523_1.pdf. 
+5 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001]. Available at 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf. 
+
+
+
+--- PAGE 3 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 3 – State Health Official Letter 
+•
+States can begin their unwinding period as early as February 1, 2023, by initiating
+renewals that may result in eligibility terminations on or after April 1, 2023.  States must
+begin their unwinding period by initiating renewals no later than April 2023.
+•
+For states that initiate renewals prior to April 1, 2023, terminations of Medicaid
+eligibility may not be effective earlier than April 1, 2023.
+•
+States must initiate renewals for all individuals enrolled in Medicaid, CHIP, and BHP
+within 12 months of the beginning of the state’s unwinding period and must complete
+renewals for all individuals within 14 months of the beginning of the state’s unwinding
+period.6
+A renewal is considered initiated when the state begins the renewal process by attempting to 
+renew eligibility on an ex parte basis – i.e., based on available reliable information without 
+contacting the individual.  CMS encourages states to distribute renewals in a reasonable manner 
+and recommends that states initiate no more than 1/9 of their total caseload of Medicaid and 
+CHIP renewals in a given month during the unwinding period for several reasons discussed in 
+SHO #22-001, including to ensure states have a renewal schedule that is sustainable in future 
+years. States may refer to SHO #22-001 (pages 14-21) for information on strategies states may 
+use to prioritize and distribute workload during the unwinding period.7
+Section 5131 also separates the end of the temporary FMAP increase from the end of the 
+COVID-19 PHE.  Specifically, section 5131(a) amends section 6008(a) of the FFCRA to 
+continue the temporary FMAP increase through December 31, 2023 (instead of through the end 
+of the quarter in which the COVID-19 PHE ends), and phases down the amount of the FMAP 
+increase beginning April 1, 2023.  Table 1 displays the amount of the FMAP increase that will be 
+available in each quarter of calendar year (CY) 2023, provided that the state claiming the FMAP 
+increase meets the applicable conditions in subsections (b) and (f) of section 6008 of the FFCRA, 
+as amended by section 5131 (discussed below).  If the state meets the applicable conditions, the 
+FMAP increase applies to the same match rates to which it applied prior to the enactment of the 
+CAA, 2023.8
+6 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001] (pages 7-9). 
+Available at https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf. 
+7 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001] (pages 14-21). 
+Available at https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf. 
+8 In general, the FFCRA FMAP increase is available for allowable Medicaid medical assistance expenditures for 
+which federal matching is paid ordinarily at the state-specific FMAP defined in the first sentence of section 1905(b) 
+of the Act. For additional guidance on the match rates that can be temporarily increased under section 6008 of the 
+FFCRA (as amended), see Section IV.F in: CMS. (2021). COVID-19 Frequently Asked Questions (FAQs) for State 
+Medicaid and Children’s Health Insurance Program (CHIP) Agencies. Available at: 
+https://www.medicaid.gov/state-resource-center/downloads/covid-19-faqs.pdf. 
+
+
+
+--- PAGE 4 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 4 – State Health Official Letter 
+Table 1. CAA, 2023 FMAP Increase Phase Out 
+2023 Calendar Overview 
+Temporary FMAP Increase Available 
+Q1: January 1-March 31, 2023 
+6.2 percentage points 
+Q2: April 1-June 30, 2023 
+5.0 percentage points 
+Q3: July 1-September 30, 2023 
+2.5 percentage points 
+Q4: October 1-December 31, 2023 
+1.5 percentage points 
+Conditions for Receipt of Temporary FMAP Increase 
+The conditions for claiming the temporary 6.2 percentage point FMAP increase remain 
+unchanged for the first quarter of CY 2023.  States claiming the temporary FMAP increase for 
+quarter 2, 3, or 4 of CY 2023 (that is, for any quarter in the period beginning April 1, 2023, and 
+ending December 31, 2023) must continue to meet three of the conditions originally set forth in 
+section 6008(b) of the FFCRA during each quarter in which the state claims the FMAP increase: 
+(1) section 6008(b)(1) (related to maintenance of effort); (2) section 6008(b)(2) (related to
+premiums), with one modification made by section 5131 (discussed below); and (3) section
+6008(b)(4) (related to coverage of COVID vaccination, testing, and treatment services, without
+cost-sharing).  The applicability of these conditions during quarters 2, 3, and 4 of CY 2023 is
+discussed in this section of the SHO.
+Section 5131 also amended section 6008 of the FFCRA to establish new conditions for states to 
+claim the temporary FMAP increase during quarters 2, 3, and 4 of CY 2023 under a new section 
+6008(f) of the FFCRA.  States that claim the temporary FMAP increase during quarter 2, 3, or 4 
+of CY 2023 must comply with the new FFCRA section 6008(f) conditions for Medicaid renewals 
+that are conducted during each quarter for which the state claims the FMAP increase.  Guidance 
+on the new conditions established in section 6008(f) of the FFCRA is provided later in this SHO 
+letter.  As noted above, states will continue to have 12 months to initiate their work on renewals, 
+redeterminations based on changes in circumstances, and post-enrollment verifications, and 14 
+months to complete this work once the state’s unwinding period begins, consistent with the 
+guidance in the January 5, 2023, CIB and SHO #22-001.  
+In preparation for and during the unwinding period, CMS will review data, state activities, and 
+other information to ensure states are complying with federal eligibility renewal requirements 
+and, for states claiming the FFCRA temporary FMAP increase, the applicable conditions for 
+claiming that increase.  States may need to make programmatic and operational changes to 
+eligibility and enrollment policies, procedures, systems, and operations and consider adopting 
+alternative strategies to ensure compliance. States that are not compliant with federal 
+redetermination requirements, regardless of whether they continue to claim the FFCRA section 
+6008 FMAP increase, may be subject to corrective action and penalties under section 1904 or 
+section 1902(tt)(2)(B) of the Act (see discussion below).  States not in compliance with all 
+9  
+9 For additional information on the condition under section 6008(b)(3) of the FFCRA to maintain enrollment of 
+individuals effective through March 31, 2023, see: 42 CFR § 433.400, and CMS. (2021). COVID-19 Frequently 
+Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance Program (CHIP) Agencies. Available 
+at: https://www.medicaid.gov/state-resource-center/downloads/covid-19-faqs.pdf. 
+
+
+
+--- PAGE 5 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 5 – State Health Official Letter 
+redetermination requirements may work with CMS to develop and implement an approved 
+mitigation plan. 
+Maintenance of Effort Condition through December 31, 2023 
+Under section 6008(b)(1) of the FFCRA, states may not claim the temporary FMAP increase for 
+a quarter if, during that quarter, they impose eligibility standards, methodologies, or procedures 
+that are more restrictive than those in effect on January 1, 2020.  Section 5131 did not change 
+this condition, and states must continue to meet it for any quarter in which they claim the 
+temporary FMAP increase, through December 31, 2023.  See previous guidance in Section IV.F. 
+in the COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health 
+Insurance Program (CHIP) Agencies10 for additional guidance on this condition. 
+Maintenance of Medicaid Premium Levels through December 31, 2023 (Modified by Section 
+5131) 
+Prior to the enactment of the CAA, 2023, section 6008(b)(2) of the FFCRA provided that states 
+could not claim the temporary FMAP increase if they imposed any premium “with respect to an 
+individual” enrolled under the state plan (or a waiver of the plan) that exceeded the amount of 
+such premium as of January 1, 2020.  CMS interpreted this condition to mean that a state 
+claiming the temporary FMAP increase could not increase the amount of any premium charged 
+to an individual enrollee (even if that person’s income increased).11
+Beginning April 1, 2023 (that is, beginning in quarter 2 of CY 2023), section 5131(a)(2)(B) 
+amends section 6008(b)(2) of the FFCRA to remove the language “with respect to an individual 
+enrolled under such plan (or waiver).” Under the amended section 6008(b)(2) condition, states 
+claiming the temporary FMAP increase for quarters beginning on or after April 1, 2023, must 
+continue to ensure that the amounts in their Medicaid premium schedule do not exceed the 
+amounts that were in place under the state plan or any waiver of the plan (including a section 
+1115 demonstration) as of January 1, 2020.  However, beginning April 1, 2023, states may, 
+under the amended section 6008(b)(2) of the FFCRA, increase the premium amount that is 
+imposed on a given individual (e.g., put an individual in a higher premium band if their income 
+has increased, or newly charge an individual a premium if they are moved into an eligibility 
+group that is subject to premiums) without jeopardizing the state’s ability to claim the temporary 
+FMAP increase, subject to the following three conditions: 
+1) The increase must be consistent with the state’s Medicaid premium schedule.
+2) The premium schedule amounts must not have increased over the amounts in effect as of
+January 1, 2020.
+10 See: CMS. (2021). COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health 
+Insurance Program (CHIP) Agencies. Available at: https://www.medicaid.gov/state-resource-
+center/downloads/covid-19-faqs.pdf. 
+11 For guidance on the condition described in section 6008(b)(2) in effect through March 31, 2023, see FAQ #II.B.9-
+10, 12-13 of: CMS. (2021). COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s 
+Health Insurance Program (CHIP).  Available at: https://www.medicaid.gov/state-resource-
+center/downloads/covid-19-faqs.pdf. 
+
+
+
+--- PAGE 6 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+Page 6 – State Health Official Letter 
+3) The state must comply with redetermination requirements prior to resumption of
+Medicaid premiums, as discussed in response to Q24-25 of the COVID-19 Public Health
+Emergency Unwinding Frequently Asked Questions for State Medicaid and CHIP
+Agencies.12
+The state also must comply with all premium requirements and limitations specified at sections 
+1916 and 1916A of the Act and 42 CFR §§ 447.50 through 447.57; all applicable advance notice 
+and fair hearing requirements at 42 CFR § 435.917 and 42 CFR Part 431, Subpart E; public 
+notice requirements at 42 CFR § 447.57; state plan amendment (SPA) effective date 
+requirements at 42 CFR § 430.20; and tribal consultation requirements at section 1902(a)(73) of 
+the Act.  CMS plans to provide additional guidance on the CAA, 2023 amendment to section 
+6008(b)(2) of the FFCRA, including information about the implications of this change for state 
+decisions about rescinding disaster relief SPAs. 
+States may request authority under section 1902(e)(14)(A) of the Act to delay the resumption of 
+Medicaid premiums during the unwinding period until a full redetermination is completed for 
+beneficiaries who are subject to premiums under the State plan or a waiver, including through a 
+section 1115 demonstration project.  States can refer to SHO #22-00113 for details on how to 
+request approval of section 1902(e)(14)(A) waivers.  States may also contact their CMS state 
+lead for more information. 
+Coverage without Cost Sharing for COVID-19 Testing, Vaccines, and Treatment through 
+December 31, 2023 
+States claiming the temporary FMAP increase for any quarter in the period beginning April 1, 
+2023, and ending December 31, 2023, must continue to meet the condition in section 6008(b)(4) 
+of the FFCRA, under which the state must provide coverage, without cost sharing, for any testing 
+services and treatments for COVID-19, including vaccines, specialized equipment, and 
+therapies.14 This condition was not changed by section 5131.  However, it is important to note 
+12 See previous guidance regarding redetermination requirements prior to resumption of Medicaid premiums, 
+including individualized notice requirements and when a state must obtain updated income information before 
+reinstatement, at Q24-25 of: CMS. (2022). COVID-19 Public Health Emergency Unwinding Frequently Asked 
+Questions for State Medicaid and CHIP Agencies. Available at: https://www.medicaid.gov/federal-policy­
+guidance/downloads/covid-19-unwinding-faqs-oct-2022.pdf. 
+13 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001]. Available at 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf. 
+14 For information regarding implementation of this condition, see previous guidance at FAQ #II.B.2, 4,14-15 of: 
+CMS. (2021). COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance 
+Program (CHIP) Agencies. Available at: https://www.medicaid.gov/state-resource-center/downloads/covid-19-
+faqs.pdf. See also the discussions of section 6008(b)(4) of the FFCRA in the interim final rule with request for 
+comments entitled “Additional Policy and Regulatory Revisions in Response to the COVID-19 Public Health 
+Emergency,” 85 FR 71142, 71148-50 (Nov. 6, 2020) (available at: 
+https://www.federalregister.gov/documents/2020/11/06/2020-24332/additional-policy-and-regulatory-revisions-in-
+response-to-the-covid-19-public-health-emergency), and in CMS. (2022). Coverage and Reimbursement of COVID-
+19 Vaccines, Vaccine Administration, and Cost-Sharing under Medicaid, the Children’s Health Insurance Program, 
+and Basic Health Program. Available at https://www.medicaid.gov/state-resource-center/downloads/covid-19-
+vaccine-toolkit.pdf. 
+
+
+
+--- PAGE 7 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Page 7 – State Health Official Letter 
+that section 9811 of the American Rescue Plan Act of 2021 (ARP) (P.L. 117-2) amended various 
+provisions of the Act to require states to provide coverage, without cost sharing, of: COVID-19 
+vaccinations; COVID-19 testing; treatments for COVID-19, including specialized equipment and 
+therapies (including preventive therapies); and, when certain conditions are met, treatment of 
+conditions that may seriously complicate the treatment of COVID-19.  These requirements under 
+section 9811 of the ARP remain in place until the last day of the first calendar quarter that begins 
+one year after the last day of the COVID-19 PHE.  The requirements under section 9811 of the 
+ARP generally overlap with, are in many circumstances broader than, and will extend longer 
+than the coverage and cost-sharing condition under section 6008(b)(4) of the FFCRA, and they 
+apply even if the state is not claiming the FFCRA temporary FMAP increase.   CMS therefore 
+expects the CAA, 2023’s amended sunset date for section 6008(b)(4) of the FFCRA will not 
+have much practical impact on states’ coverage of these services without cost sharing.  For 
+additional information, see the June 3, 2021, CIB,15 SHO #21-003,16 SHO #21-006,17 SHO #22-
+002,18 and the CMCS COVID-19 Vaccine Toolkit.19
+Overview of New Conditions for Receipt of the Temporary FMAP Increase in Effect April 1, 
+2023, through December 31, 2023 
+Section 5131 added a new subsection (f) to section 6008 of the FFCRA.  States claiming the 
+temporary FMAP increase for quarter 2, 3, and/or 4 of CY 2023 must satisfy the conditions 
+under sections 6008(b)(1), 6008(b)(2), and 6008(b)(4), as described above, in addition to the 
+following new conditions under section 6008(f) of the FFCRA: 
+•
+Conduct Medicaid eligibility redeterminations in accordance with all applicable federal
+requirements, including renewal strategies authorized under section 1902(e)(14)(A) of the
+Act or other alternative processes and procedures approved by CMS (section
+6008(f)(2)(A));
+•
+Attempt to ensure that they have up-to-date contact information for a beneficiary before
+redetermining eligibility for such beneficiary (section 6008(f)(2)(B)); and
+•
+Undertake a good-faith effort to contact an individual using more than one modality prior
+to terminating their enrollment on the basis of returned mail (section 6008(f)(2)(C)).
+These new conditions apply to Medicaid renewals that are conducted during any quarter during 
+the period beginning April 1, 2023, and ending December 31, 2023, in states claiming the 
+temporary FMAP increase for that quarter.  In addition to being a condition of receiving the 
+15 CMS. (June 3, 2021). Medicaid, Children’s Health Insurance Program (CHIP), and Basic Health Program 
+(BHP) Related Provisions in the American Rescue Plan Act of 2021 [CMCS Informational Bulletin]. Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/cib060321.pdf 
+16 CMS. (August 30, 2021). Medicaid and CHIP Coverage and Reimbursement of COVID-19 Testing under the 
+American Rescue Plan Act of 2021 and Medicaid Coverage of Habilitation Services [State Health Official Letter 
+#21-003]. Available at: https://www.medicaid.gov/federal-policy-guidance/downloads/sho-21-003.pdf 
+17 CMS. (October 22, 2021). Mandatory Medicaid and CHIP Coverage of COVID-19-Related Treatment under the 
+American Rescue Plan Act of 2021 [State Health Official Letter #21-006]. Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho102221.pdf. 
+18 CMS. (May 12, 2022). Medicaid and CHIP Coverage of Stand-alone Vaccine Counseling [State Health Official 
+Letter #22-002]. Available at: https://www.medicaid.gov/federal-policy-guidance/downloads/sho22002.pdf. 
+19 CMS. (2022). Coverage and Reimbursement of COVID-19 Vaccines, Vaccine Administration, and Cost-Sharing 
+under Medicaid, the Children’s Health Insurance Program, and Basic Health Program. Available at 
+https://www.medicaid.gov/state-resource-center/downloads/covid-19-vaccine-toolkit.pdf. 
+
+
+
+--- PAGE 8 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 8 – State Health Official Letter 
+temporary FMAP increase beginning April 1, 2023, implementation of these conditions will help 
+states minimize procedural denials and reduce the administrative burden associated with churn.  
+These new conditions and how states may comply with them are described in detail below. 
+We understand that states may be concerned about whether their plan to comply with one or 
+more conditions for receiving the temporary FMAP increase beginning April 1, 2023, is 
+sufficient.  CMS is available to work with states to evaluate the sufficiency of their plans and 
+identify additional measures that states can consider to ensure satisfaction of all conditions. 
+Compliance with Federal Renewal Requirements 
+As indicated above, in order to claim the temporary FMAP increase after March 31, 2023, under 
+section 6008(f)(2)(A) of the FFCRA, states must conduct Medicaid redeterminations consistent 
+with federal requirements, including any renewal strategy approved under section 
+1902(e)(14)(A) of the Act or other CMS-authorized processes and procedures. 
+Federal requirements related to redeterminations of eligibility are described at 42 CFR § 
+435.916. Under federal regulations at § 435.916, states must comply with the following 
+requirements: 
+• Ex Parte Renewals: Begin the renewal process for all beneficiaries, including both those 
+whose financial eligibility is based on modified adjusted gross income (MAGI) (“MAGI­
+based beneficiaries”) and those whose financial eligibility is not based on MAGI (“non-
+MAGI beneficiaries”), by redetermining eligibility without requiring information from 
+the individual, if the state is able to do so based on reliable information contained in the 
+individual’s account or more current reliable information available to the state.  This 
+information may include, but is not limited to, information accessed through data sources, 
+consistent with the state’s verification plan; 
+• Renewal Form: Provide a renewal form that requests only information needed to 
+determine eligibility20 when eligibility cannot be renewed on an ex parte basis.  This 
+form must be pre-populated for MAGI-based beneficiaries; 
+• Reasonable Timeframe and Modalities to Return Form: Provide MAGI-based 
+beneficiaries with a minimum of 30 days to return their pre-populated renewal form and 
+any requested information.  Provide non-MAGI beneficiaries with a reasonable period of 
+time to do so.  Beneficiaries must be able to return their renewal form through any of the 
+modes of submission described at § 435.907(a) (online, by phone, by mail, or in-person); 
+• Determine Eligibility on All Bases: Consider all bases of Medicaid eligibility prior to 
+determining an individual is ineligible for Medicaid and terminating coverage;21 
+• Advance Notice and Fair Hearing Rights: Provide a minimum of 10 days’ advance 
+notice22 and fair-hearing rights prior to terminating or reducing Medicaid eligibility, in 
+20 For example, a form that requests that a beneficiary provides their Social Security Number, citizenship or 
+immigration status would not satisfy the requirement. Such information is only needed once and, thus, would not be 
+needed to renew eligibility. 
+21 42 CFR §§ 435.916(f)(1) and 435.930(b). 
+22 42 CFR § 431.211 requires the state to send a notice at least 10 days before the date of action, which is defined at 
+§ 431.201 as “the intended date on which a termination, suspension, reduction, transfer or discharge becomes 
+effective.” 
+
+
+
+--- PAGE 9 ---
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 9 – State Health Official Letter 
+accordance with § 435.917 and 42 CFR Part 431, Subpart E; 
+• Assess Eligibility for Other Insurance Affordability Programs (IAPs) and Transfer 
+Accounts as Appropriate: For individuals determined ineligible for Medicaid, assess 
+eligibility for other IAPs (including CHIP, BHP, and qualified health plans (QHPs) 
+offered through a Health Insurance Marketplace®23 with advance payments of premium 
+tax credits or cost-sharing reductions), and transfer the individual’s account to the 
+appropriate program.  States with Marketplaces that use the federal eligibility and 
+enrollment platform are reminded that they should only transfer accounts to the 
+Marketplace for individuals about whom the state has sufficient information to determine 
+Medicaid and CHIP ineligibility.  States with Marketplaces that use the federal eligibility 
+and enrollment platform should not transfer accounts to the Marketplace for individuals 
+whose Medicaid or CHIP coverage is terminated for procedural reasons, such as failure to 
+return a renewal form or other requested information needed to determine eligibility.24 
+States that operate State-based Marketplaces using their own platform may, at state 
+option, transfer accounts to the Marketplace for a determination of advance payments of 
+premium tax credits or cost-sharing reductions for individuals whose coverage has been 
+terminated from Medicaid or CHIP for procedural reasons; and 
+• Reconsideration Period: Reconsider eligibility without requiring a new application for 
+MAGI-based beneficiaries whose coverage is terminated for failure to return their 
+renewal forms or necessary information if the individual’s renewal form or information is 
+returned within 90 days (or longer if elected by the state) after coverage is terminated. 
+States may, at their option, apply this policy to non-MAGI beneficiaries. 
+In evaluating compliance with § 435.916, states are directed to the CIB, Medicaid and 
+Children’s Health Insurance Program Renewal Requirements,25 released on December 4, 2020, 
+for more information on federal redetermination requirements. 
+States that are unable to comply with one or more of the requirements in § 435.916 may satisfy 
+the condition in section 6008(f)(2)(A) of the FFCRA, as added by section 5131(a), by 
+implementing renewal strategies authorized under section 1902(e)(14)(A) of the Act or other 
+alternative policies and procedures that CMS authorizes and approves as sufficient for purposes 
+of satisfying section 6008(f)(2)(A) and claiming the temporary FMAP increase.  Depending on 
+the state’s systems and processes, states that are unable to comply with all requirements set forth 
+in § 435.916 may need to adopt multiple alternative strategies in order to claim the temporary 
+FMAP increase after March 31, 2023.  States can refer to SHO #22-00126 or the section 
+23 Health Insurance Marketplace® is a registered service mark of the U.S. Department of Health & Human Services. 
+24 CMS. (July 25, 2016). Coordination of Eligibility and Enrollment Between Medicaid, CHIP and the Federally 
+Facilitated Marketplace (FFM or “Marketplace”) [CMCS Informational Bulletin]. Available at 
+https://www.medicaid.gov/federal-policy-guidance/downloads/cib072516.pdf. 
+25 CMS. (December 4, 2020). Medicaid and Children’s Health Insurance Program (CHIP) Renewal Requirements 
+[CMCS Informational Bulletin].  Available at: https://www.medicaid.gov/federal-policy-
+guidance/downloads/cib120420.pdf. 
+26 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001].  Available at 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf. 
+
+
+
+--- PAGE 10 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Page 10 – State Health Official Letter 
+1902(e)(14)(A) waivers portion of the CMS unwinding website27 for details on section 
+1902(e)(14)(A) alternative renewal strategies that CMS can authorize and how to submit a 
+request for such authorization to CMS.  States may also reach out to their CMS state lead for 
+more information and to obtain technical assistance.  CMS is available to work with states that 
+are unsure of whether they meet a given regulatory renewal requirement and to provide technical 
+assistance on section 1902(e)(14)(A) waivers or other CMS authorized alternative processes that 
+may be implemented to satisfy section 6008(f)(2)(A) of the FFCRA for purposes of claiming the 
+temporary FMAP increase after March 31, 2023. 
+We remind states that, regardless of whether a state is claiming the temporary FMAP increase, 
+all states must comply with federal renewal requirements.  States that do not meet federal 
+renewal requirements may be subject to corrective action under section 1904 and, if the 
+noncompliance occurs during the period that begins on April 1, 2023, and ends on June 30, 2024, 
+may be subject to corrective action under section 1902(tt)(2)(B) of the Act (added by section 
+5131).  See discussion in the Monitoring State Progress and Corrective Action section of this 
+letter for additional information on corrective action under section 1902(tt)(2)(B) of the Act. 
+Up-to-Date Contact Information 
+As a condition of claiming the temporary FMAP increase after March 31, 2023, under section 
+6008(f)(2)(B) of the FFCRA, as added by section 5131(a), a state must attempt to ensure that it 
+has up-to-date contact information for each individual for whom it conducts a renewal.28 This 
+condition requires that states use the United States Postal Service (USPS) National Change of 
+Address (NCOA) database, information maintained by state health and human services agencies, 
+or other reliable sources of contact information.  For purposes of compliance with this condition, 
+the types of contact information a state must attempt to update include a beneficiary’s mailing 
+address, phone number, and email address.  States may need to use multiple data sources and/or 
+adopt multiple strategies in order to update all types of beneficiary contact information.  
+The NCOA database information is limited to mailing address information and does not provide 
+email addresses or phone numbers.  Additionally, for some beneficiaries, the NCOA database 
+will not provide up-to-date mailing address information, and other state agency databases may 
+not have such contact information either.  Therefore, to satisfy this condition, states will need to 
+take other reasonable actions in an effort to obtain up-to-date information.  Managed care 
+organizations (MCOs) are a particularly effective source of reliable contact information for 
+beneficiaries, and CMS strongly encourages states that contract with MCOs to work with them to 
+obtain up-to-date contact information.  States could also look to beneficiaries themselves as a 
+reliable source of contact information and use beneficiary outreach initiatives encouraging 
+beneficiaries to update their contact information.  
+Implementing a robust plan to obtain up-to-date contact information for multiple modes of 
+communication will also assist states in meeting the returned-mail condition under section 
+27 CMS. (2022). COVID-19 PHE Unwinding Section 1902(e)(14)(A) Waiver Approvals. Available at 
+https://www.medicaid.gov/covid-19-phe-unwinding-section-1902e14a-waiver-approvals/index.html. 
+28 As noted above, the conditions in section 6008(f) of the FFCRA apply to Medicaid renewals that are conducted 
+during any quarter during the period beginning April 1, 2023, and ending December 31, 2023, in states claiming the 
+temporary FMAP increase for that quarter. 
+
+
+
+--- PAGE 11 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 11 – State Health Official Letter 
+6008(f)(2)(C) of the FFCRA, described below, under which states must make a good-faith effort 
+to contact an individual through more than one modality prior to terminating coverage on the 
+basis of returned mail. 
+In order to comply with the up-to-date contact information condition, states should consider the 
+following: 
+•
+Sources of Up-to-Date Contact Information: States must use the NCOA database,
+information maintained by a state health and human services agency, or other reliable
+sources of contact information.  States have broad discretion to determine which other
+sources of contact information are reliable for the purposes of this provision but must
+document the sources and other processes used in their unwinding operational plan.  For
+example, many states have implemented beneficiary outreach strategies using direct
+phone calls, mass mailings, social media, or other mass communication strategies to
+prompt beneficiaries to provide up-to-date information themselves.  Contact information
+received directly from beneficiaries in response to an outreach campaign could
+reasonably be considered reliable. States have also worked with other entities to obtain
+up-to-date beneficiary contact information, in addition to accessing the NCOA.  Updated
+contact information received from an MCO under contract with the state, for example, is
+generally considered to be a reliable source of information.  Further, states can request
+section 1902(e)(14)(A) waiver authority to update an individual’s case record with up-to­
+date contact information from one of its MCOs without first having to confirm the change
+with the individual.
+•
+Attempt to Ensure Up-To-Date Contact Information:  States must attempt to ensure they
+have up-to-date contact information for each individual for whom they will conduct an
+eligibility redetermination.  We interpret this condition to mean that a state must
+implement a comprehensive plan for confirming that they have up-to-date information on
+beneficiaries before their eligibility is redetermined, including a plan that uses reliable
+data sources and adopts other reasonable strategies that apply broadly to the state’s
+Medicaid population (e.g., routinely obtaining updated contact information from
+managed care organizations or broad outreach campaigns).
+•
+Timing of Attempt to Ensure Up-to-Date Contact Information: States must have recent
+and reliable information, or have recently attempted to obtain up-to-date contact
+information as described immediately above, prior to initiating a renewal for an
+individual to minimize the possibility that the information in the case record has become
+outdated.  For example, CMS would consider quarterly data matches with NCOA or
+adoption of the section 1902(e)(14)(A) strategy involving MCOs providing updated
+contact information about a beneficiary whenever they obtain it, to be a recent attempt.
+•
+Document Strategies to Update Contact Information in Unwinding Operational Plan:
+States must document in their unwinding operational plan the strategies and processes for
+obtaining up-to-date contact information for beneficiaries in order to demonstrate
+compliance with the condition for claiming the temporary FMAP increase described in
+section 6008(f)(2)(B) of the FFCRA.
+
+
+
+--- PAGE 12 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 12 – State Health Official Letter 
+In implementing policies and procedures to satisfy this condition, states may want to review 
+pages 36-40 of SHO #22-001,29 in which CMS discusses several strategies for states to 
+reestablish communication with beneficiaries, such as working with MCOs, social services 
+organizations, and other entities.  States are strongly encouraged to implement several strategies 
+to ensure an attempt is made to obtain up-to-date contact information for all beneficiaries, 
+including strategies that target hard-to-reach, homeless, rural, or Tribal populations for whom 
+many strategies may be less effective.  For instance, due to limited postal delivery and broadband 
+services in Tribal communities, we encourage states to engage with the Indian Health Service 
+(IHS), Tribes and Tribal organizations, and urban Indian organizations (collectively, ITU) to 
+help with updated contact information for Tribal Medicaid beneficiaries, including sharing 
+enrollment and renewal data with ITUs.  We remind states that such data sharing must be 
+consistent with Medicaid confidentiality standards under section 1902(a)(7)(A) of the Act and 42 
+CFR part 431, subpart F, and applicable privacy laws.30
+Further, we remind states that if they have received approval under a section 1902(e)(14)(A) 
+waiver related to updating beneficiary contact information,31 there may be several sources of up-
+to-date contact information they can rely on without first confirming a change with beneficiaries.  
+The waiver(s) could make it easier for the state to ensure that it has up-to-date beneficiary 
+contact information and complies with this condition.  We encourage states that do not currently 
+have such an approved waiver to consider submitting a request to CMS for approval.32
+Contact Beneficiaries Using More Than One Modality Prior to Terminating Enrollment on the 
+Basis of Returned Mail 
+In order to claim the FFCRA temporary FMAP increase after March 31, 2023, states must 
+comply with section 6008(f)(2)(C) of the FFCRA, as added by section 5131(a), which provides 
+that when states receive returned mail in response to a redetermination of eligibility, they must 
+undertake a good-faith effort to contact an individual using more than one modality prior to 
+disenrollment on the basis of returned mail (“returned-mail condition”). 
+Nothing in the CAA, 2023 changes federal Medicaid rules regarding the steps that states are 
+required to take upon receipt of returned mail.  These rules apply regardless of whether a state is 
+conducting redeterminations during its unwinding period.  We remind states that there are 
+29 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001]. Available at 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf. 
+30 See “Presentation: Strengthening Tribal and State Partnerships to Prepare for Unwinding” (Posted 8/30/2022) 
+Available at https://www.medicaid.gov/sites/default/files/2022-08/strengthening-tribal-partner-to-prepare­
+unwinding-081822.pdf. 
+31 See the COVID-19 PHE Unwinding Section 1902(e)(14)(A) Waiver Approvals page for more information on 
+these strategies at https://www.medicaid.gov/covid-19-phe-unwinding-section-1902e14a-waiver­
+approvals/index.html. 
+32 To request authority to implement one or more of these strategies, states can request such waiver authority under 
+section 1902(e)(14)(A) of the Act on a time-limited basis during the unwinding period. CMS is available to provide 
+technical assistance and can provide sample language the state can use to craft a letter requesting the waiver 
+authority. States interested in one or more of the temporary waiver authorities described above should contact their 
+CMS State Lead. 
+
+
+
+--- PAGE 13 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+Page 13 – State Health Official Letter 
+generally three types of beneficiary mail that could be returned to the Medicaid agency: (1) mail 
+with an in-state forwarding address; (2) mail with an out-of-state forwarding address; and (3) 
+mail that does not include a forwarding address. States must continue to follow existing 
+requirements for processing each of these types of returned mail including confirming whether 
+the address information on the piece of returned mail is complete and consistent with the address 
+information the state has on file.33
+The new returned-mail condition under section 6008(f)(2)(C) of the FFCRA applies specifically 
+to situations in which the state sends a notice to a beneficiary, instructing them to return a 
+renewal form. For the purposes of meeting this returned mail condition, we define a good faith 
+effort to contact an individual using more than one modality to mean: (1) the state has a process 
+in place to obtain up-to-date mailing addresses and additional contact information (i.e., telephone 
+numbers, email addresses) for all beneficiaries; and (2) the state attempts to reach an individual 
+whose mail is returned through at least two modalities using the most up-to-date contact 
+information the state has for the individual, which could include a forwarding address if one is 
+provided on the returned mail.  
+States also should consider the following: 
+•
+Up-to-Date Contact Information:  The requirement to obtain up-to-date contact
+information for purposes of complying with the returned mail condition will be satisfied
+if the state has met the condition described in section 6008(f)(2)(B) of the FFCRA to
+attempt to obtain an up-to-date mailing address, phone number, and email address for all
+beneficiaries due for a renewal. In addition to the data sources described in section
+6008(f)(2)(B) of the FFCRA, MCOs are a particularly effective source of reliable contact
+information for beneficiaries, and CMS strongly encourages states that contract with
+MCOs to work with them to obtain up-to-date contact information.
+•
+Permissible Modalities: States have discretion in the types of modalities they rely upon
+to satisfy the returned mail condition.  Such modalities may include mail, telephone,
+email, text messaging, communication through an online portal, or other commonly
+available electronic means.34 
+The returned-mail condition under section 6008(f)(2)(C) of the FFCRA applies whenever 
+beneficiary mail is returned to the state agency in response to a redetermination of eligibility, 
+thus prompting states to process the returned mail and requiring states to make a good faith effort 
+to attempt to contact the beneficiary using more than one modality.  States should follow these 
+steps to meet the returned mail condition of attempting to make a good faith effort to contact the 
+beneficiary through two modalities. 
+•
+Returned Mail has Complete Information: Generally, when beneficiary mail is returned,
+states must ensure that the mail was sent to the intended address by comparing the
+33 For a detailed discussion on the requirements for processing returned mail, see Appendix C of: CMS. (March 
+2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload in Medicaid, the 
+Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon Conclusion of the COVID-
+19 Public Health Emergency [State Health Official Letter #22-001].  Available at 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf. 
+34 Phone calls and text messages, initiated either directly by the state agency or through a state contractor or partner, 
+must be compliant with Federal communications laws such as the Telephone Consumer Protection Act. For more 
+information, see: https://www.fcc.gov/document/fcc-provides-guidance-enable-critical-health-care-coverage-calls. 
+
+
+
+--- PAGE 14 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 14 – State Health Official Letter 
+completeness and accuracy of the address on the returned mail against the information in 
+the beneficiary’s record. If the address listed on the original mailing contains an error or 
+is missing information, such as an apartment number, the state must resend the returned 
+notice to a completed address.  If the subsequent mailing to the beneficiary’s correct 
+address is not returned, the state is no longer required to take additional steps to meet the 
+returned mail condition by attempting to contact the beneficiary using an additional 
+modality.  If the subsequent mailing to a corrected address is returned, the state would 
+proceed as indicated below based on whether the returned mail has a forwarding address 
+or not. 
+• Returned Mail with No Forwarding Address: When a state receives returned mail with 
+no forwarding address, it must attempt to contact the beneficiary through two modalities, 
+including by phone, email, text, or other available modalities. If the state only has one 
+other mode of contact available, such as only an email address, the state must attempt to 
+contact the beneficiary using that one modality; in this instance, the state will be 
+compliant with the returned mail condition provided that it has complied with the up-to­
+date contact information condition.  Similarly, if the state has no other modalities 
+available to contact the beneficiary, the state similarly will be compliant with the returned 
+mail condition if it has satisfied the up-to-date contact information condition.   
+• Returned Mail with a Forwarding Address: 
+• 
+States are not required to send the returned mail to the forwarding address, but 
+doing so would represent one attempt to contact the beneficiary for purposes of 
+the returned mail condition.  
+• 
+If the beneficiary’s returned mail contains a forwarding address, and the state 
+sends the original mailing to the forwarding address,35 except as noted below, the 
+state would need to attempt to contact the beneficiary through at least one other 
+modality, if available, to comply with the returned mail condition.  If the state has 
+no other modalities available to contact the beneficiary, the state will be 
+compliant with the returned mail condition if it has satisfied the condition to 
+obtain up-to-date contact information from all beneficiaries. Importantly, if the 
+notice is mailed to the forwarding address and is not returned to the state, the 
+returned mail condition no longer applies because the original mailing has been 
+completed and is no longer considered to be returned.  Under these circumstances, 
+no additional outreach is required. 
+• 
+If a state is unable to or does not send the correspondence to the forwarding 
+address, the state must attempt to contact the beneficiary through two modalities, 
+if available, prior to termination. If the state only has one other mode of contact 
+available, such as only an email address, the state must make a good faith effort to 
+contact the beneficiary using that one modality.  If the state does not send the 
+notice to the forwarding address and does not have two other modes of contact, 
+the state will need to document in their unwinding operational plan why it is 
+unable to send notices to a forwarding address. 
+• Lack of Alternative Contact Information: A state that has satisfied the condition 
+described in section 6008(f)(2)(B) of the FFCRA to attempt to obtain up-to-date contact 
+information for other modalities but was not able to obtain such alternative contact 
+35 States may request section 1902(e)(14)(A) waiver authority to update a beneficiary’s address information from the 
+USPS without first reaching out to confirm the change with the individual. 
+
+
+
+--- PAGE 15 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+                                                     
+ 
+ 
+ 
+  
+ 
+ 
+Page 15 – State Health Official Letter 
+information for a given beneficiary will not violate the returned mail condition due to not 
+reaching out to the beneficiary through another modality as long as the state has taken the 
+steps outlined above to reach the individual by mail (i.e., resending the notice to a 
+corrected address, if applicable, and sending the notice to a forwarding address, if 
+provided and the state is able to do so). For example, if after complying with the 
+condition described in section 6008(f)(2)(B), the only contact information available to the 
+state is the address in the individual’s case record, and the state does not have a phone 
+number, email address or other means to contact the individual, the state would be in 
+compliance with section 6008(f)(2)(C).  If a state has documented in its unwinding 
+operational plan why it is unable to mail a notice to a forwarding address and has no 
+other modalities available, the state has complied with the returned mail condition. 
+• Document Returned Mail Policies in Unwinding Operational Plan: States must document 
+in their unwinding operational plans their process for undertaking a good-faith effort to 
+contact individuals using more than one modality prior to disenrollment on the basis of 
+returned mail.  States must also document their inability to send mail to a forwarding 
+address, if applicable. 
+Attempting to reach beneficiaries through other modalities after beneficiary mail is returned in 
+response to a redetermination of eligibility is necessary to satisfy the returned mail condition, 
+and it may also help reduce procedural denials and churn.  In addition, MCOs are an important 
+tool for conducting outreach to individuals when a state is not able to reach a beneficiary.  CMS 
+strongly encourages states that contract with MCOs to work with them on other avenues to reach 
+and support eligible beneficiaries in maintaining coverage through Medicaid or the 
+Marketplace.36 To ensure beneficiaries are able to complete the renewal process, states should 
+ensure that, if they successfully contact an individual after receiving beneficiary returned mail, 
+the beneficiary receives any necessary renewal forms at their correct address and has sufficient 
+time to return the renewal form and complete the renewal process. 
+Additional Considerations and Process for Claiming the Temporary FMAP Increase 
+State Attestation of Compliance 
+As discussed above, states may claim federal financial participation (FFP) associated with the 
+temporary FMAP increase under section 6008 of the FFCRA, as amended by section 5131(a), 
+after March 31, 2023, only if they meet the conditions described in subsections 6008(b)(1), (2), 
+(4), and 6008(f).  While states are ineligible for the temporary FMAP increase unless they meet 
+these conditions, CMS will not require that states submit a demonstration of compliance prior to 
+drawing FFP associated with the temporary FMAP increase.  Each state should be aware that 
+when it draws FFP associated with the temporary FMAP increase in the Payment Management 
+System (PMS), it is attesting that: 
+(1) It is eligible for the temporary FMAP increase; 
+(2) The expenditures for which it is drawing FFP are those for which the temporary FMAP 
+increase is applicable; and 
+36 For a detailed discussion on engaging managed care plans, see: CMS. (January 2023). Strategic Approaches to 
+Engaging Managed Care Plans to Maximize Continuity of Coverage as States Resume Normal Eligibility and 
+Enrollment Operations. Available at: https://www.medicaid.gov/resources-for-states/downloads/health-plan­
+strategy.pdf. 
+
+
+
+--- PAGE 16 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 16 – State Health Official Letter 
+(3) It meets the applicable conditions in section 6008(b) and (f) of the FFCRA for claiming 
+the temporary FMAP increase. 
+To minimize the need for separate review, avoid state burden, and expedite providing federal 
+matching funds to states, CMS will indicate in each grant award letter it sends to states that, by 
+drawing down the funds, the state is attesting that it is in compliance with all federal 
+requirements, including that the state meets all applicable conditions for receiving the temporary 
+FMAP increase, subject to expenditure review. This is the same process states have been using 
+to draw FFP associated with the temporary FMAP increase under FFCRA section 6008 since the 
+temporary FMAP increase became available. 
+Further, CMS intends to engage states to provide technical assistance regarding compliance and, 
+as necessary, will request additional information to assess compliance.  States may propose 
+additional strategies and mitigation plans to achieve compliance with section 6008(f)(2) of the 
+FFCRA for purposes of claiming the temporary FMAP increase.  For example, we understand 
+that many states face challenges in conducting ex parte renewals for some or all of their 
+populations.  These states can adopt alternative strategies, such as section 1902(e)(14)(A) waiver 
+strategies, including using the Supplemental Nutrition Assistance Program (SNAP)-based 
+income enrollment strategy, in order to satisfy the conditions described in section 6008(f)(2) of 
+the FFCRA.  As noted above, states can refer to SHO #22-001 or the section 1902(e)(14)(A) 
+waivers portion of the CMS unwinding website for details on section 1902(e)(14)(A) alternative 
+renewal strategies that CMS can authorize and how to submit a request for such authorization to 
+CMS. 
+CMS is also considering additional strategies to support states seeking to adopt alternative CMS-
+approved strategies to satisfy the conditions in section 6008(f)(2) of the FFCRA needed to claim 
+the temporary FMAP increase between April 1, 2023, and December 31, 2023.  States interested 
+in using any alternative strategies should contact their CMS state lead. 
+If CMS determines that a state that drew down FFP associated with the temporary FMAP 
+increase did not satisfy the conditions under section 6008(b) and (f) of the FFCRA, as modified 
+by section 5131, during a quarter in which those conditions applied, the state will be required to 
+return the FFP associated with the temporary FMAP increase for any quarter when it did not 
+qualify. 
+Process for Claiming FFP Associated with the Temporary FMAP Increase 
+Qualifying states can claim the FFP associated with the temporary FMAP increase for qualifying 
+expenditures on a quarterly basis using the Form CMS-64 submission in the automated Medicaid 
+Budget and Expenditure System (MBES).37  States should ensure that their quarterly and, if 
+applicable, supplemental budget request on the Form CMS-37 for the relevant period clearly 
+indicates whether the state is requesting FFP associated with the temporary FMAP increase and 
+the amount of FFP.  CMS will ensure that the MBES and Medicaid and CHIP Financial System 
+37 In addition to the attestation outlined above within the grant award, states certify on the Form CMS-64 that they 
+are claiming expenditures under the Medicaid program (and as applicable, under CHIP) only if the expenditures are 
+allowable in accordance with applicable implementing federal, state, and local statutes, regulations, policies, and the 
+state plan. 
+
+
+
+--- PAGE 17 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 17 – State Health Official Letter 
+(MACFin) are updated to enable state reporting, as applicable. 
+Beginning April 1, 2023, the temporary FMAP increase is available for each quarter’s qualifying 
+medical assistance expenditures until (and including) December 31, 2023, for states that have 
+met conditions in section 6008(b) and the new section 6008(f) of the FFCRA (discussed above).  
+States should follow existing federal policy regarding the particular match rates that are available 
+for a given quarter.  Per 45 CFR § 95.13(b), the applicable FMAP is based on date of payment, 
+not date of service, for current quarter original expenditures.  The FMAP applicable to 
+expenditures for all prior period adjustments should be the FMAP at which the original 
+expenditure was claimed, consistent with 45 CFR § 95.13(b).  States must report overpayments 
+and collections at the same match rate at which the expenditures were originally claimed, 
+including when the original rate incorporated the FFCRA FMAP increase. Therefore, if a 
+Medicaid expenditure was claimed using the FFCRA FMAP increase, the returned federal share 
+of any recoveries associated with that expenditure would reflect that same FMAP increase.  
+Consistent with existing requirements at 42 CFR § 433.32(a), states must document expenditures 
+to ensure a clear audit trail, including by isolating expenditures that are matched at increased 
+FMAPs.  CMS will conduct oversight to ensure that state expenditures are allowable and 
+accurate, including with respect to the matching rate claimed. 
+Please note that under the timely claims filing requirement at section 1132 of the Act and 45 
+CFR part 95 subpart A, states must claim federal Medicaid matching funds for qualifying 
+expenditures within the two-year time limit unless they meet one of the four exceptions (see 45 
+CFR § 95.19). 
+Reporting Requirements 
+States regularly provide a variety of data about Medicaid and CHIP applications, enrollment, and 
+call-center activity through the submission of the Medicaid and CHIP Eligibility and Enrollment 
+Performance Indicator data and the Transformed Medicaid Statistical Information System (T-
+MSIS) data, as well as other reporting mechanisms.  SHO #22-001 announced that states would 
+be required to submit additional data through a new reporting tool as they restore routine 
+eligibility and enrollment operations, including resuming renewals, after the Medicaid 
+continuous enrollment condition ends.  In March 2022, CMS released a new Unwinding 
+Eligibility and Enrollment Data Reporting Template (“Unwinding Data Report”)38 that states 
+will use to submit a baseline data report and ongoing monthly reports during a state’s unwinding 
+period.39 States that operate a State-based Marketplace (SBM) with its own eligibility and 
+enrollment platform also submit QHP and BHP enrollment metrics (“State-based Marketplace 
+(SBM) Priority Metrics”) to CMS, as required under 45 CFR 155.1200(a)(3).  CMS anticipates 
+38 The Unwinding Data Report and Unwinding Data Report Specifications are available at 
+www.Medicaid.gov/unwinding. States will submit their baseline and monthly Unwinding Data Reports through the 
+same portal used to submit Performance Indicator data, which is available at https://sdis.medicaid.gov/user/login. 
+39 For an explanation that states must submit baseline unwinding data by February 8, 2023, March 8, 2023, or April 
+8, 2023, depending on when a state initiates renewals, see: CMS. (2023). Key Dates Related to Medicaid Continuous 
+Enrollment Condition Provisions in the Consolidated Appropriations Act, 2023 [CMCS Informational Bulletin]. 
+Available at: https://www.medicaid.gov/federal-policy-guidance/downloads/cib010523.pdf. 
+
+
+
+--- PAGE 18 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 18 – State Health Official Letter 
+that SBMs with their own eligibility and enrollment platforms will use these existing reports to 
+submit monthly data during a state’s unwinding period.  
+New section 1902(tt)(1) of the Act, as added by section 5131(b), requires that, during the period 
+that begins on April 1, 2023, and ends on June 30, 2024, states submit to CMS, and CMS makes 
+public, certain monthly data about activities related to eligibility determinations and 
+redeterminations conducted during that same period.  CMS currently believes that all the data 
+states must report under these new reporting requirements are included in existing data sources, 
+including the unwinding data report and SBM priority metrics.  As such, CMS does not 
+anticipate that states will need to submit a separate report (or additional reporting) to CMS to 
+comply with section 1902(tt)(1) of the Act.  Rather, CMS anticipates that states will be able to 
+submit the data metrics required under section 1902(tt)(1) through the appropriate existing CMS 
+data reporting tool.  CMS reserves the right to add reporting metrics, if needed, in the future.  As 
+needed, CMS will provide states additional guidance and information on the data specifications 
+for metrics reported to satisfy the reporting requirements under section 1902(tt)(1) of the Act. 
+While CMS currently believes that states can meet the reporting requirements in section 
+1902(tt)(1) of the Act through existing reports and reporting tools, the timing of certain state 
+reporting may need to change to satisfy the timeline under section 1902(tt)(1) of the Act.  
+Specifically, states will need to submit monthly unwinding data reports through June 30, 2024.  
+This timeline reflects a change from previous guidance regarding unwinding data, as some states 
+may submit monthly unwinding data for a period that exceeds 14 months, depending on when 
+the state initiates its first batch of renewals.40
+As noted, with regard to the reporting of data under section 1902(tt)(1)(D), CMS anticipates that 
+states with Marketplaces that operate their own eligibility and enrollment platform will use 
+existing reports to satisfy this requirement. Additionally, for states with Marketplaces that use 
+the Federal eligibility and enrollment platform, CMS expects to report the required data on 
+behalf of states, to the extent possible.  CMS therefore does not anticipate that states with 
+Marketplaces that use the Federal eligibility and enrollment platform will need to report any 
+additional data to satisfy this requirement. 
+CMS will publish all data that is reported to comply with section 1902(tt)(1) of the Act. 
+However, for a number of reasons, Medicaid and CHIP data sent to Marketplaces that use the 
+Federal eligibility and enrollment platform41 do not, on their own, specify when an individual’s 
+account has been transferred to the Marketplace because that person is not eligible for, or is 
+losing, Medicaid or CHIP coverage.  CMS intends to explore using additional data sources to 
+determine and report which account transfers to Marketplaces that use the Federal eligibility and 
+enrollment platform result from Medicaid or CHIP redeterminations.  To publish data that 
+identifies which of these account transfers result from Medicaid or CHIP redeterminations, CMS 
+might have to make estimates based on several administrative data sets, which limits both the 
+40 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001]. Available at 
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf.  
+41 All Marketplaces that use the Federal eligibility and enrollment platform have eligibility systems that are not 
+integrated with Medicaid or CHIP. 
+
+
+
+--- PAGE 19 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+                                                     
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+Page 19 – State Health Official Letter 
+accuracy and timeliness of public reporting.  Working within these constraints, CMS expects to 
+make these account transfer data public as expeditiously as possible. 
+In Table 2, CMS identifies each reporting element under section 1902(tt)(1) of the Act and the 
+data source that CMS anticipates that states (or the Marketplaces that use the Federal platform) 
+will use to satisfy each element. 
+Table 2. Reporting Elements Under Section 1902(tt)(1) for the Period from April 1, 2023, 
+through June 30, 2024, and Corresponding Data Sources 
+Reporting Element 
+Data Source 
+Apply to All States 
+1 
+Total number of Medicaid and CHIP 
+beneficiaries for whom a renewal was 
+initiated 
+Unwinding Data Report, Monthly Metric 
+442 
+2 
+Total number of Medicaid and CHIP 
+beneficiaries whose Medicaid or CHIP 
+coverage is renewed 
+Unwinding Data Report, Monthly Metric 
+5a 
+3 
+Of the Medicaid and CHIP beneficiaries 
+whose Medicaid or CHIP coverage is 
+renewed, those whose coverage is renewed 
+on an ex-parte basis 
+Unwinding Data Report, Monthly Metric 
+5a(1) 
+4 
+Total number of individuals whose coverage 
+for Medicaid or CHIP was terminated 
+Unwinding Data Report, Monthly Metric 
+5b and Unwinding Data Report, Monthly 
+Metric 5c 
+5 
+Total number of individuals whose coverage 
+for Medicaid or CHIP was terminated for 
+procedural reasons 
+Unwinding Data Report, Monthly Metric 
+5c 
+6 
+Total number of beneficiaries who were 
+enrolled in a separate CHIP 
+T-MSIS, CHIP-CODE43 
+7 
+For each state call center, total call center 
+volume 
+Medicaid and CHIP Eligibility and 
+Enrollment Performance, Indicator 144 
+8 
+For each state call center, average wait times 
+Medicaid and CHIP Eligibility and 
+Enrollment Performance, Indicator 2 
+9 
+For each state call center, average 
+abandonment rate 
+Medicaid and CHIP Eligibility and 
+Enrollment Performance, Indicator 3 
+42 Unwinding Data Report Specifications are available at: https://www.medicaid.gov/sites/default/files/2022­
+12/unwinding-data-specifications-dec-2022.pdf. 
+43 The T-MSIS Data Dictionary is available at: https://www.medicaid.gov/medicaid/data­
+systems/macbis/transformed-medicaid-statistical-information-system-t-msis/t-msis-data-dictionary/index.html. 
+44 The Performance Indicator Data Dictionary is available on the Performance Indicator Technical Assistance page 
+at: https://www.medicaid.gov/medicaid/national-medicaid-chip-program-information/medicaid-chip-enrollment­
+data/performance-indicator-technical-assistance/index.html. 
+
+
+
+--- PAGE 20 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 20 – State Health Official Letter 
+Reporting Element 
+Data Source 
+Apply to Marketplaces that use the Federal eligibility and enrollment platform (Non-
+Integrated Eligibility System) 
+10 Total number of individuals whose accounts 
+are received at the Marketplace from the 
+state Medicaid/CHIP agency due to a 
+Medicaid/CHIP redetermination 
+Marketplaces that use the Federal 
+eligibility and enrollment platform 
+(Federally-facilitated Marketplaces and 
+State-based Marketplaces on the Federal 
+platform); states do not need to report 
+11 In the accounts received at the Marketplace 
+due to a Medicaid/CHIP redetermination, the 
+number of individuals who apply for and are 
+determined eligible for a QHP 
+Marketplaces that use the Federal 
+eligibility and enrollment platform 
+(Federally-facilitated Marketplaces and 
+State-based Marketplaces on the Federal 
+platform); states do not need to report 
+12 In the accounts received at the Marketplace 
+due to a Medicaid/CHIP redetermination and 
+who apply for and are determined eligible 
+for a QHP, the number of individuals who 
+select a plan 
+Marketplaces that use the Federal 
+eligibility and enrollment platform 
+(Federally-facilitated Marketplaces and 
+State-based Marketplaces on the Federal 
+platform); states do not need to report 
+Apply to SBMs with their own platforms that use a Non-Integrated Eligibility System 
+13 Number of individuals whose accounts are 
+received by the SBM or BHP 
+SBM Priority Metrics, 
+Monthly Metrics 7a and 7b 
+14 Number of individuals whose accounts are 
+received by the SBM or BHP and are 
+determined eligible for a QHP or BHP 
+SBM Priority Metrics, 
+Monthly Metric 9a and 172a 
+15 Number of individuals whose accounts are 
+received by the SBM or BHP and are 
+determined eligible for a QHP or a BHP who 
+make a QHP plan selection or are enrolled in 
+a BHP 
+SBM Priority Metrics, 
+Monthly Metric 1a and 169a 
+Apply to SBMs with Integrated Eligibility System 
+16 Number of individuals who are determined 
+eligible for a QHP or a BHP 
+SBM Priority Metrics, 
+Monthly Metric 9a and 172a 
+17 SBMs with Integrated Eligibility System: 
+Number of individuals who are determined 
+eligible for a QHP or BHP and make a QHP 
+plan selection or are enrolled in a BHP 
+SBM Priority Metrics, 
+Monthly Metric 1a and 169a 
+As noted in SHO #22-001, states may be expected to report additional data and/or report 
+information more frequently in cases where additional CMS oversight or enforcement is needed, 
+such as when reported data indicate states are not meeting the timelines to initiate and complete 
+
+
+
+--- PAGE 21 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 21 – State Health Official Letter 
+renewals for total caseload during the unwinding period.  CMS is available to provide technical 
+assistance to ensure states understand metric data specifications and are able to fulfill statutory 
+reporting requirements. 
+Monitoring State Progress and Corrective Action 
+In SHO #22-001, CMS announced that it will monitor states’ compliance with reporting required 
+data and meeting timelines relating to initiating and completing required eligibility and 
+enrollment actions during the state’s unwinding period.  Where reported data or other 
+information indicates that states are not meeting unwinding timelines in SHO #22-001 and 
+subsequent guidance, or in circumstances where data or other information demonstrate other 
+potential compliance issues – including potential erroneous disenrollment of eligible 
+beneficiaries – states may be expected to report additional data, including the state’s unwinding 
+operational plan, and/or report information more frequently.45  As explained in SHO #22-001, 
+states that do not resolve their pending eligibility and enrollment actions within the timelines 
+specified may be required to submit a corrective action plan (CAP) to CMS outlining strategies 
+and a timeline to come into compliance with federal requirements.  
+In addition to enforcement and oversight authorities CMS already has under existing laws and 
+regulations, section 1902(tt)(2) of the Act (added by section 5131(b)) includes new enforcement 
+mechanisms for CMS to apply if CMS determines that a state is not in compliance with the 
+reporting requirements in section 1902(tt)(1) of the Act, or if CMS determines that a state is non-
+compliant with federal eligibility redetermination requirements during the period that begins on 
+April 1, 2023 and ends on June 30, 2024.  Specifically: 
+• FMAP Reduction for Failure to Comply with Section 1902(tt)(1) Reporting 
+Requirements: If a state does not satisfy the reporting requirements in section 1902(tt)(1) 
+of the Act during any fiscal quarter that occurs during the period that begins on July 1, 
+2023, and ends on June 30, 2024, the FMAP determined for the state for the quarter 
+under section 1905(b) shall be reduced by the number of percentage points (not to 
+exceed 1 percentage point) equal to the product of 0.25 percentage points and the 
+number of fiscal quarters during such period for which the state has failed to satisfy such 
+requirements.  CMS will apply FMAP reductions using MBES and intends to provide 
+more information in future guidance regarding the FMAP reduction process. 
+• Corrective Action for Failure to Comply with Section 1902(tt)(1) Reporting 
+Requirements or Federal Eligibility Redetermination Requirements: If a state has been 
+determined by CMS to be out of compliance with the reporting requirements in section 
+1902(tt)(1) and/or federal eligibility redetermination requirements during the period that 
+begins on April 1, 2023, and ends on June 30, 2024, CMS may require the state to submit 
+and implement a CAP.  Under section 1902(tt)(2)(B) of the Act, not later than 14 days 
+45 For explanation that unwinding operational plans must be made available to CMS upon request, see both: CMS. 
+(December 22, 2020). Planning for the Resumption of Normal State Medicaid, Children’s Health Insurance 
+Program (CHIP), and Basic Health Program (BHP) Operations Upon Conclusion of the COVID-19 Public Health 
+Emergency [State Health Official Letter #20-004], and CMS. (March 3, 2022). Promoting Continuity of Coverage 
+and Distributing Eligibility and Enrollment Workload in Medicaid, the Children’s Health Insurance Program 
+(CHIP), and Basic Health Program (BHP) Upon Conclusion of the COVID-19 Public Health Emergency [State 
+Health Official Letter #22-001]. These guidance documents are available at https://www.medicaid.gov/federal­
+policy-guidance/downloads/sho20004.pdf and https://www.medicaid.gov/federal-policy­
+guidance/downloads/sho22001.pdf. 
+
+
+
+--- PAGE 22 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 22 – State Health Official Letter 
+after receiving a written notice that the state is out of compliance, the state must submit a 
+CAP to CMS.  The state must receive CMS approval for its proposed CAP not later than 
+21 days after submitting it to CMS.  The state must initiate implementation of the plan 
+not later than 14 days after CMS approves it. 
+• Suspension of Terminations for Procedural Reasons and Civil Monetary Penalties: If a 
+state fails to submit or implement an approved CAP in accordance with the timelines and 
+requirements described above, CMS may require a state under section 1902(tt)(2) to 
+suspend some or all terminations of Medicaid eligibility that are for procedural reasons 
+until the state takes appropriate corrective action (as determined by CMS), and/or may 
+impose on that state a civil money penalty of not more than $100,000 for each day that 
+the state is not in compliance. 
+Implications for Optional COVID-19 Group, Waivers Approved Under Section 
+1902(e)(14)(A) of the Act, and Other Authorities 
+Even though section 5131 does not address when the COVID-19 PHE will end, the changes in 
+the CAA, 2023 could have implications for certain COVID-19 PHE-related flexibilities and 
+authorities.  We outline below certain implications that the changes made by section 5131 may 
+have for state redeterminations for the optional COVID-19 group and for waivers already 
+approved under section 1902(e)(14)(A) of the Act that states intended to have in place when the 
+continuous enrollment condition ends.  Certain other COVID-19 PHE related flexibilities can 
+remain in effect for the duration of the COVID-19 PHE, including, but not limited to, Medicaid 
+and CHIP section 1135 waivers and disaster SPAs.  As a reminder, the requirements under 
+sections 9811 and 9821 of the ARP apply until the last day of the first calendar quarter that 
+begins one year after the COVID-19 PHE ends.  These ARP requirements include providing 
+coverage, without cost sharing, of: COVID-19 vaccinations; COVID-19 testing; treatments for 
+COVID-19, including specialized equipment and therapies (including preventive therapies); and, 
+when certain conditions are met, treatment of conditions that may seriously complicate the 
+treatment of COVID-19. The CAA, 2023 generally does not impact authorities tied to the end of 
+the COVID-19 PHE (e.g., 1135 waivers, disaster relief SPAs). 
+Optional COVID-19 Group 
+Section 6004(a)(3) of the FFCRA created a new optional COVID-19 Medicaid eligibility group 
+at section 1902(a)(10)(A)(ii)(XXIII) of the Act.  Section 9811(a)(2) of the ARP amended the 
+language following section 1902(a)(10)(G) of the Act describing the coverage that must be 
+provided to the optional COVID-19 eligibility group.  Federal authority for this eligibility group 
+expires on the last day of the COVID-19 PHE.  States that adopted the optional COVID-19 
+group may continue to provide coverage to this eligibility group while the COVID-19 PHE is in 
+effect.  While federal authority for the optional COVID-19 group was not amended in the CAA, 
+2023, the changes made by the CAA, 2023 make it possible for the continuous enrollment 
+condition to expire before the end of the COVID-19 PHE, which will have implications for 
+redeterminations of eligibility for beneficiaries enrolled in the optional COVID-19 group. 
+If the COVID-19 PHE ends after the continuous enrollment condition ends, states that opt to 
+continue covering the optional COVID-19 eligibility group after the continuous enrollment 
+condition ends on March 31, 2023, will need to establish a process to initiate renewals for 
+
+
+
+--- PAGE 23 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Page 23 – State Health Official Letter 
+individuals enrolled in the group following the end of the continuous enrollment condition.  
+CMS recognizes that states that adopted a streamlined enrollment process outside of their 
+eligibility system to implement the optional COVID-19 group (e.g., using a separate application 
+to facilitate enrollment) may face operational challenges initiating renewals during unwinding 
+and may not have sufficient information to complete a full renewal of eligibility, including 
+assessing all other bases of eligibility.  These states may choose to deprioritize redeterminations 
+for this group during the unwinding period while they work to establish such a process.  CMS is 
+available to provide technical assistance if needed. 
+When the COVID-19 PHE ends (or earlier if the state initiates a regular renewal for beneficiaries 
+in the optional COVID-19 group after the state begins its unwinding period and before the end of 
+the COVID-19 PHE), states must redetermine eligibility on all bases for beneficiaries who are 
+enrolled in the optional COVID-19 group and sunset the eligibility group.  Guidance to assist 
+states with meeting the requirements to redetermine eligibility on all bases when authority for the 
+group expires can be found in the “Ending Coverage in the Optional COVID-19 Group Preparing 
+States for the End of the Public Health Emergency” slide deck.46 States are reminded that they 
+must stop claiming FFP for services provided to individuals enrolled in this group once the 
+COVID-19 PHE ends.  
+CMS will provide states that adopted the optional COVID-19 group with additional guidance on 
+redetermining eligibility for these beneficiaries during the unwinding period if the COVID-19 
+PHE remains in effect.  States that opt to end coverage for this optional eligibility group before 
+the COVID-19 PHE ends may submit a SPA to CMS.  See the May 11, 2021, all-state call slides 
+for additional information.47 
+Section 1902(e)(14)(A) Waiver Effective Dates 
+To support states facing significant operational issues with income and eligibility determination 
+systems and to protect eligible beneficiaries from inappropriate coverage losses during the 
+unwinding period, CMS has granted more than 40 states section 1902(e)(14)(A) waivers to 
+support unwinding efforts.  The effective and/or expiration date of many of these approved 
+waivers is linked to the end of the COVID-19 PHE.  Given that the CAA, 2023 has de-linked the 
+end of the continuous enrollment condition and the start of the unwinding period from the end of 
+the COVID-19 PHE, the effective dates of section 1902(e)(14)(A) waivers granted for the 
+purpose of assisting states in their unwinding efforts may no longer align with states’ unwinding 
+timelines.  To minimize administrative burden on states as they begin their unwinding process, 
+CMS is providing the following guidance to allow states to implement modified effective dates, 
+without needing to submit a revised request to CMS.  States should, however, document any 
+change in the effective date of a section 1902(e)(14)(A) waiver in their records and maintain a 
+copy of this guidance. 
+• Approved section 1902(e)(14)(A) waivers with a start date tied to the COVID-19 PHE: 
+Some states elected to make a section 1902(e)(14)(A) waiver effective in the month the 
+46 CMS. (October 2022). Ending Coverage in the Optional COVID-19 Group Preparing States for the End of the 
+Public Health Emergency. Available at https://www.medicaid.gov/resources-for-states/downloads/ending-covrg­
+optnl-covid-grp-guidance.pdf. 
+47 CMS. (May 11, 2021). All State Medicaid and CHIP Call.  Available at 
+https://www.medicaid.gov/sites/default/files/2021-05/allstatecall-20210511.pdf. 
+
+
+
+--- PAGE 24 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 24 – State Health Official Letter 
+COVID-19 PHE ends or the month following the end of the COVID-19 PHE.  These 
+states can now use the date of the end of the continuous enrollment condition (March 31, 
+2023) in lieu of the end date of the COVID-19 PHE.  For example, if a state received 
+CMS approval to begin a section 1902(e)(14)(A) waiver in the month after the end of the 
+COVID-19 PHE, the state’s new start date would be the month after the end of the 
+continuous enrollment provision (i.e., April 1, 2023).  
+• Approved section 1902(e)(14)(A) waivers with an expiration date tied to the COVID-19 
+PHE: Some states have section 1902(e)(14)(A) waivers that expire a certain number of 
+months after the COVID-19 PHE ends.  These states can now replace the date that the 
+COVID-19 PHE ends with the date that the continuous enrollment conditions ends 
+(March 31, 2023) for purposes of these waivers.  For example, if a state’s approved 
+section 1902(e)(14)(A) waiver ends 14 months after the month that the COVID-19 PHE 
+ends, the state can elect to change the end date to 14 months after the end of the 
+continuous enrollment condition (i.e., May 31, 2024).  
+• Approved section 1902(e)(14)(A) waivers with an effective and/or expiration date tied to 
+the state’s unwinding period: Some states have waivers that are effective when their 
+state-specific unwinding period begins.  Additionally, some states have waivers that end 
+12 months or longer after the state-specific unwinding period, as defined in SHO #22-
+001. These dates do not need to be adjusted as a result of the CAA, 2023. 
+ARP Section 9817 Maintenance of Effort Requirements 
+Section 9817 of the ARP provides qualifying states with a temporary 10 percentage point FMAP 
+increase for certain Medicaid home and community-based services (HCBS) expenditures 
+provided between April 1, 2021 and March 31, 2022.  Under ARP section 9817, states must use 
+the federal funds attributable to the increased FMAP to supplement, not supplant, state funds 
+expended for Medicaid HCBS in effect as of April 1, 2021.  As discussed in SMD #21-00348 and 
+SMD #22-002,49 states are expected to demonstrate compliance with this requirement by 
+maintaining HCBS eligibility, covered services, and payment rates until the state funds 
+equivalent to the amount of federal funds attributable to the increased FMAP are fully expended. 
+The CAA, 2023 did not change ARP section 9817, including the conditions related to receiving 
+that FMAP increase.  However, as discussed in SMD #21-003, the conditions for the FMAP 
+increase under ARP section 9817 do not supersede other statutory or regulatory requirements 
+that apply to section 1915(c) waivers, or other requirements under other provisions authorizing 
+HCBS.  As a result, if states have implemented temporary changes to HCBS eligibility, covered 
+services, and/or payment rates, states are expected to retain those changes for as long as 
+allowable under those authorities (e.g., according to the end date approved under an Appendix K 
+but no later than 6 months after the COVID-19 PHE ends), but CMS will not apply penalties or 
+non-compliance restrictions on the receipt of the increased FMAP once the authority for those 
+48 CMS. (May 13, 2021). Implementation of American Rescue Plan Act of 2021 Section 9817: Additional Support 
+for Medicaid Home and Community-Based Services during the COVID-19 Emergency [State Medicaid Director 
+Letter #21-003].  Available at: https://www.medicaid.gov/federal-policy-guidance/downloads/smd21003.pdf. 
+49 CMS. (June 3, 2022). Updated Reporting Requirements and Extension of Deadline to Fully Expend State Funds 
+Under American Rescue Plan Act of 2021 Section 9817 [State Medicaid Director Letter #22-002].  Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/smd22002.pdf. 
+
+
+
+--- PAGE 25 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Closing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+  
+ 
+  
+ 
+  
+  
+  
+  
+ 
+ 
+  
+Page 25 – State Health Official Letter 
+temporary changes has expired or if the state needs to implement changes to comply with other 
+federal statutory or regulatory requirements. 
+As states restore routine eligibility and enrollment operations, CMS shares states’ goals of 
+ensuring that eligible individuals remain enrolled in Medicaid, CHIP, and/or BHP coverage, and 
+that individuals who are no longer eligible are able to transition seamlessly to other coverage 
+options (if they are eligible for those other coverage options), including Marketplace coverage. 
+We are committed to providing states with updated guidance and resources, as appropriate, as 
+well as ongoing technical assistance, to better enable states to proceed with eligibility and 
+enrollment work in a manner that is consistent with the changes made under the CAA, 2023, as 
+described in this letter. For additional information and resources, states are encouraged to review 
+guidance and other information posted to the Medicaid.gov/Unwinding page. States may also 
+submit technical assistance questions directly to CMSUnwindingSupport@cms.hhs.gov. 
+Sincerely, 
+Daniel Tsai 
+Deputy Administrator and Director 
+Cc: 
+National Association of Medicaid Directors 
+National Academy for State Health Policy 
+National Governors Association  
+American Public Human Services Association 
+Association of State and Territorial Health Officials 
+Council of State Governments 
+National Conference of State Legislatures 
+Academy Health 
+National Association of State Alcohol and Drug Abuse Directors 

@@ -1,0 +1,13 @@
+source_id,parsed_success,parser_used,pages_or_sheets,text_length,table_count,parse_warnings
+fed_seed_07_state_strategies_pdf,True,pymupdf,6,16198,0,
+fed_seed_08_operational_considerations_pdf,True,pymupdf,14,40551,0,
+fed_seed_09_mitigation_summary_pdf,True,pymupdf,10,26605,0,
+fed_seed_10_cib050924,True,pymupdf,9,26866,0,
+fed_seed_11_cibe1411142024,True,pymupdf,46,110338,0,
+fed_seed_12_e14_policy_deck,True,pymupdf,24,26740,0,
+fed_seed_13_sho22001,True,pymupdf,46,154027,0,
+fed_seed_14_sho23002,True,pymupdf,25,94999,0,
+fed_seed_15_unwinding_faqs_oct2022,True,pymupdf,17,55353,0,
+fed_seed_16_caa_2023_faqs,True,pymupdf,15,52331,0,
+fed_cms_e14_archived_table_text,True,plain_text,text,1918,0,
+fed_cms_delay_archived_table_text,True,plain_text,text,3057,0,

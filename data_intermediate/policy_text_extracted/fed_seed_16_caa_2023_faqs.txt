@@ -1,0 +1,781 @@
+
+
+--- PAGE 1 ---
+ 
+End of the Medicaid Continuous Enrollment Condition Frequently Asked Questions 
+for State Medicaid and CHIP Agencies 
+May 12, 2023 
+ 
+The Centers for Medicare & Medicaid Services (CMS) has released numerous guidance 
+documents and tools to help states prepare for the end of the Medicaid continuous enrollment 
+condition under the Families First Coronavirus Response Act (FFCRA) on March 31, 2023, 
+including these two State Health Official (SHO) Letters: (1) Promoting Continuity of Coverage 
+and Distributing Eligibility and Enrollment Workload in Medicaid, the Children’s Health 
+Insurance Program (CHIP), and Basic Health Program (BHP) Upon Conclusion of the COVID-
+19 Public Health Emergency (SHO #22-001, dated March 3, 2022); and (2) Medicaid 
+Continuous Enrollment Condition Changes, Conditions for Receiving the FFCRA Temporary 
+FMAP Increase, Reporting Requirements, and Enforcement Provisions in the Consolidated 
+Appropriations Act, 2023 (SHO #23-002, dated January 27, 2023). 
+ 
+CMS is releasing these answers to frequently asked questions (FAQs) regarding the changes 
+made to the FFCRA by section 5131 of subtitle D of title V of division FF of the Consolidated 
+Appropriations Act, 2023 (P.L. 117-328) (CAA, 2023), SHO #23-002, and related CMS 
+guidance. These answers also address questions regarding changes made by section 1002(a)(1) 
+of the Substance Use-Disorder Prevention that Promotes Opioid Recovery and Treatment for 
+Patients and Communities (“SUPPORT”) Act, Pub. L. 115-271, enacted on October 24, 2018, 
+regarding eligibility changes for the Former Foster Care Children (FFCC) group under section 
+1902(a)(10)(A)(i)(IX) of the Social Security Act.  For additional information regarding the 
+SUPPORT Act changes for youth formerly in foster care, see State Health Official letter #22-003 
+and accompanying slide deck (issued December 16, 2023), available on Medicaid.gov.  
+CMS plans to update this document as needed to support state unwinding efforts and provide 
+additional guidance to states. For more information, including resources and tools to support 
+state unwinding efforts, as well as information shared during all-state calls, please visit 
+www.Medicaid.gov/unwinding. 
+Returned Mail Condition Under Section 6008(f)(2)(C) of the Families First Coronavirus 
+Response Act (FFCRA) 
+ 
+Section 6008(f)(2)(C) of the FFCRA, which was added by the CAA, 2023, establishes a new 
+condition of receiving the FFCRA temporary FMAP increase, applicable for quarters in the 
+period beginning April 1, 2023 and ending December 31, 2023. Under this condition, known as 
+the “returned mail condition,” states claiming the temporary FMAP increase during this period 
+must undertake a good-faith effort to contact an individual using more than one modality prior to 
+terminating their enrollment on the basis of returned mail. The following questions and answers 
+relate to this condition. 
+ 
+Q1: For the purpose of the returned mail condition, how does CMS define a good faith 
+effort to contact an individual using more than one modality?  
+ 
+
+
+
+--- PAGE 2 ---
+ 
+2 
+A1: When states receive returned mail in response to a redetermination of eligibility, they must 
+undertake a good faith effort to contact an individual using more than one modality prior to 
+disenrollment on the basis of returned mail. For the purposes of meeting this returned mail 
+condition, a good-faith effort to contact an individual using more than one modality means: (1) 
+consistent with section 6008(f)(2)(B) of the FFCRA, the state has a process in place to obtain up-
+to-date mailing addresses and additional contact information (including phone numbers and 
+email addresses) for all beneficiaries for whom the state conducts a renewal of eligibility; and (2) 
+the state attempts to reach an individual whose mail is returned through at least two modalities 
+using the most up-to-date contact information the state has for the individual, which could 
+include a forwarding address if one is provided on the returned mail. 
+ 
+Q2: Can a state satisfy the returned mail condition by conducting outreach to a beneficiary 
+through one or more modalities before the state receives the applicable returned mail?  
+ 
+A2: Generally, yes. Beneficiary outreach conducted either at the same time as or after the state 
+sends notice to a beneficiary instructing them to return a renewal form or a request for additional 
+information needed to make an eligibility determination at renewal, but before the state receives 
+returned mail, counts as a good faith effort to contact the individual through one or more 
+modalities only if the following conditions are met: 
+ 
+1. The outreach provides information specific to the beneficiary’s renewal;  
+2. An attempt to contact the beneficiary after receiving the returned mail would be 
+duplicative of the state’s attempts to contact the beneficiary before receiving the returned 
+mail; and 
+3. The outreach includes language that:  
+a) explains that a renewal notice has been sent by mail,  
+b) directs a beneficiary on how to complete the renewal, and  
+c) provides instructions on how to reach the state agency for assistance through all other 
+available modes with information on available language access and auxiliary aids and 
+services (e.g., instructs the beneficiary to complete the renewal in the online portal or to 
+call the state at a number provided, including the TTY number, in the outreach to 
+complete the renewal by phone or obtain a paper renewal form).  
+ 
+Q3: Must a state take further action to comply with the returned mail condition if the state 
+has attempted to use two modalities at the same time as or after the mail with a renewal 
+notice or request for additional information is sent to the beneficiary, but before returned 
+mail is received? 
+ 
+A3: No. No further action is required to meet the returned mail condition under section 
+6008(f)(2)(C) of the FFCRA if the state follows the requirements specified in the answer to 
+question 2 above by attempting two modalities at the same time as or after sending the 
+beneficiary notice with instructions about completing the renewal form or requesting additional 
+information necessary to make a renewal determination, provided this beneficiary outreach is 
+conducted before the returned mail is received. 
+  
+
+
+
+--- PAGE 3 ---
+ 
+3 
+If the state is only able to conduct outreach using one modality prior to receiving the returned 
+mail because it only has one mode of contact available (e.g., only an email address), the state 
+must send any mail that is returned with a forwarding address to the forwarding address provided  
+the state is able to do so. 
+ 
+Q4: Does a state need to conduct outreach through more than one modality under the 
+returned mail condition if mail with a beneficiary’s renewal notice or request for additional 
+information is returned after an individual’s coverage has been terminated? 
+ 
+A4: Yes. For beneficiaries whose renewal is initiated during the state’s unwinding period, if a 
+beneficiary’s renewal notice or request for additional information is returned to the state within 
+30 days after a beneficiary’s coverage is terminated for failure to respond, a state seeking to 
+satisfy the returned mail condition must attempt to contact the individual using more than one  
+modality, including phone, email, text, or a forwarding address provided on the returned mail. 
+States have the option to act on mail returned to the agency within 90 days, or a longer period 
+elected by the state, after a beneficiary’s coverage is terminated. 
+ 
+Q5:  In order to comply with the returned mail condition, must states reinstate coverage 
+for a beneficiary if mail with a renewal notice or request for additional information is 
+returned after a beneficiary’s coverage has been terminated for failure to respond to a 
+renewal form or request for additional information? 
+  
+A5: Generally, yes. If a beneficiary responds to the state’s outreach as described in the answer to 
+question 5 above, the state must promptly reinstate the beneficiary’s coverage with an effective 
+date of either: (1) the date that the state reestablishes contact with the beneficiary; or (2) the first 
+day of the month when the contact is made. 
+  
+After the state obtains up-to-date contact information from the beneficiary as required by section 
+6008(f)(2)(B) of the FFCRA, the state must provide the beneficiary with an opportunity to 
+furnish any information needed to complete the eligibility determination. If the state needs to 
+send a new renewal form, the state must provide modified adjusted gross income (MAGI)-based 
+beneficiaries with 30 days and non-MAGI beneficiaries a reasonable period of time to respond. 
+If the returned mail was a request for additional information needed to complete the beneficiary’s 
+renewal, the state must provide the reasonable amount of time it generally provides beneficiaries 
+to respond to requests for information, such as 10 days or more. 
+ 
+If the beneficiary timely returns the information and is determined eligible, the state must 
+provide coverage for any Medicaid-covered services furnished back to the date of termination. If 
+the beneficiary fails to respond within the time allowed, the state must send a 10-day advance 
+notice of termination and fair hearing rights. 
+ 
+Q6: Would the returned mail condition be satisfied if a managed care plan acted on behalf 
+of a state agency to conduct the beneficiary outreach that is required through more than 
+one modality? 
+ 
+
+
+
+--- PAGE 4 ---
+ 
+4 
+A6: Yes, managed care plans may act on behalf of a state agency to conduct beneficiary outreach  
+if the state has approved such activity. Medicaid managed care plans cannot engage in marketing 
+or marketing activities prohibited under the managed care marketing regulations at 42 CFR § 
+438.104, which provides that a managed care plan must not distribute marketing materials 
+without the state’s approval.  The same requirements (except subsection § 438.104(c), related to 
+state agency review) also apply to separate CHIPs through a cross reference at 42 CFR § 
+457.1224.  The regulation at 42 CFR § 438.104 provides that managed care plans, as permitted 
+by their contracts with the state, may send materials to their enrollees about the importance of 
+completing the state’s Medicaid eligibility renewal process in a timely fashion and about 
+Qualified Health Plan (QHP) enrollment options. We remind states and managed care plans that 
+Medicaid managed care contracts must include provisions for prompt notification to the state by 
+the plan of information about changes in an enrollee’s circumstances that may affect the 
+enrollee's eligibility, including changes in residence (42 CFR 438.608(a)(3)).  The same 
+requirements also apply to separate CHIPs through a cross reference at 42 CFR § 457.1285, 
+incorporating most of Part 438, subpart H of our regulations. 
+  
+In addition, states may engage managed care plans to conduct outreach on the state’s behalf to 
+beneficiaries about the eligibility renewal process.  State agencies seeking to work with managed 
+care plans to conduct such additional outreach to support the eligibility renewals of their 
+enrollees should ensure they have the appropriate contracts in place for the managed care plan to 
+conduct outreach activities on behalf of the state.  Such arrangements would be separate and 
+independent from the managed care plan’s contract governed by section 1903(m)(2)(A) and 42 
+CFR Part 438, and payment to managed care plans for performing such administrative activities 
+for the state may not be included in the actuarially sound capitation rates paid for covering 
+Medicaid benefits. 
+  
+For additional information on how managed care plans can conduct outreach with their enrollees, 
+please refer to the Overview of Strategic Approach to Engaging managed Care Plans to 
+Maximize Continuity of Coverage as States Resume Normal Eligibility and Enrollment 
+Operations available at https://www.medicaid.gov/resources-for-states/downloads/health-plan-
+strategy-12062021.pdf.  
+ 
+Q7: When will states need to implement the returned mail condition?  Does it need to be 
+implemented for an entire quarter for a state to claim the temporary FFCRA FMAP 
+increase? 
+ 
+A7: The returned mail condition for the FFCRA FMAP increase applies, as described in section 
+6008(a) and (f)(1) of the FFCRA, for each calendar quarter occurring during the period that 
+begins on April 1, 2023, and ends on December 31, 2023. States cannot claim the temporary 
+FFCRA FMAP increase in a quarter during this period unless they comply with the returned mail 
+condition under section 6008(f)(2)(C) of the FFCRA during that entire quarter. 
+ 
+Medicaid Resumption of Premiums 
+ 
+Prior to the enactment of the CAA, 2023, under section 6008(b)(2) of the FFCRA states could 
+not claim the FFCRA temporary FMAP increase if they imposed any premium “with respect to 
+an individual” that exceeded the amount of such premium as of January 1, 2020. CMS 
+
+
+
+--- PAGE 5 ---
+ 
+5 
+interpreted this condition to mean that a state claiming the FFCRA temporary FMAP increase 
+could not increase the amount of any premium charged to an individual enrollee (even if that 
+person’s income increased). The CAA, 2023 modified this condition, as described in SHO #23-
+002 and in the questions and answers that follow.1  
+ 
+Q8: Did the CAA, 2023, give states claiming the FFCRA temporary FMAP increase greater 
+flexibility regarding the amount of Medicaid premiums imposed on a specific individual? 
+A8: Generally, yes. The CAA, 2023 amended section 6008(b)(2) of the FFCRA effective April 
+1, 2023 to remove the language “with respect to an individual.” As discussed in SHO #23-002, 
+this change gives states claiming the FFCRA temporary FMAP increase greater flexibility to 
+increase the amount of Medicaid premiums imposed on a given individual, as long as the 
+amounts in the state’s Medicaid premium schedule don’t exceed the amounts that were in place 
+as of January 1, 2020.2 Between April 1, 2023, and December 31, 2023, states claiming the 
+FFCRA temporary FMAP increase must meet the condition in section 6008(b)(2) of the FFCRA, 
+as amended. 
+ 
+Under the amended FFCRA section 6008(b)(2) condition, subject to the conditions and 
+requirements discussed in this FAQ and the beneficiary protections described in Q12, states 
+claiming the FFCRA temporary FMAP increase may charge individual beneficiaries higher 
+premium amounts than they were charged as of January 1, 2020, as long as the amounts in the 
+state’s Medicaid premium schedule don’t exceed the amounts that were in place as of January 1, 
+2020. For example, a change in a beneficiary’s household income or household composition may 
+place the beneficiary in a higher premium tier or band, or a beneficiary may have been moved to 
+a different eligibility group that is subject to a higher premium amount.3 
+ 
+In addition to meeting the FFCRA section 6008(b)(2) condition (and other applicable FFCRA 
+conditions) if the state is claiming the FFCRA temporary FMAP increase, any state charging 
+Medicaid premiums must always comply with certain general requirements, including: 
+ 
+• Ensuring that premiums charged are consistent with the state’s approved Medicaid 
+premium schedule; 
+• Complying with all applicable premium requirements and limitations specified at sections 
+1916 and 1916A of the Social Security Act (the Act) and 42 CFR §§ 447.50 through 
+447.57; and  
+                                                          
+1 CMS. (2023). Medicaid Continuous Enrollment Condition Changes, Conditions for Receiving the FFCRA 
+Temporary FMAP Increase, Reporting Requirements, and Enforcement Provisions in the Consolidated 
+Appropriations Act, 2023. Available at: https://www.medicaid.gov/federal-policy-
+guidance/downloads/sho23002.pdf. 
+2 CMS. (2023). Medicaid Continuous Enrollment Condition Changes, Conditions for Receiving the FFCRA 
+Temporary FMAP Increase, Reporting Requirements, and Enforcement Provisions in the Consolidated 
+Appropriations Act, 2023. Available at: https://www.medicaid.gov/federal-policy-
+guidance/downloads/sho23002.pdf  
+3 Previous guidance indicated that states must maintain premiums for an individual at the same or lower level that 
+was assessed as of January 1, 2020. See discussion in FAQ#II.B.9-10, and 12 of: CMS. (2021). COVID-19 
+Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance Program (CHIP) Agencies, 
+Available at: https://www.medicaid.gov/state-resource-center/downloads/covid-19-faqs.pdf. This document updates 
+that guidance due to the CAA, 2023 amendments to FFCRA section 6008. 
+
+
+
+--- PAGE 6 ---
+ 
+6 
+• Complying with all applicable advance notice and fair hearing requirements at 42 CFR § 
+435.917 and 42 CFR Part 431, Subpart E. 
+•  
+Q9: Does the end of the Secretary-declared COVID-19 public health emergency (COVID-
+19 PHE) on May 11, 2023, have implications for states that had suspended Medicaid 
+premiums via a disaster relief state plan amendment (SPA)? 
+ 
+A9: Yes. The end of the Secretary-declared COVID-19 PHE  on May 11, 2023 means that all 
+state disaster relief SPAs that sunset at the end of that COVID-19 PHE sunsetted on May 11, 
+2023. 
+ 
+After these disaster relief SPAs sunset, states must resume imposing Medicaid premiums 
+consistent with their state plan unless they take action to delay or cancel the resumption of 
+premiums. This is because states are generally required to implement the policies documented in 
+their Medicaid state plan, unless the state takes permissible action to adopt a different policy.4 
+States’ options for delaying or canceling resumption of premiums after a disaster relief SPA 
+sunsets are discussed in Q11 below. 
+  
+Q10: After April 1, 2023, but before the Secretary-declared COVID-19 PHE ended, could 
+states claiming the FFCRA temporary FMAP increase resume charging Medicaid 
+premiums that had been suspended via a disaster relief SPA that sunsets at the end of this 
+PHE? 
+ 
+A10: Yes, subject to certain requirements and conditions, states claiming the FFCRA temporary 
+FMAP increase that suspended premiums via a disaster relief SPA that sunset at the end of the 
+Secretary-declared COVID-19 PHE could resume charging premiums on or after April 1, 2023, 
+but before the Secretary-declared COVID-19 PHE ended.  States that resumed charging 
+Medicaid premiums before the sunset date of a disaster relief SPA must have complied with the 
+general requirements described in Q8, and the beneficiary protections described in Q12. To 
+resume Medicaid premiums that were suspended, the state should have rescinded the premium 
+suspension provision of the relevant disaster relief SPA by submitting a section 7.4.A rescission 
+SPA. Please see additional information from the February 14, 2023 All State Call here: 
+https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02142023.pdf.  
+If the state is claiming the FFCRA temporary FMAP increase on or after April 1, 2023, it must 
+also comply with the amended condition at section 6008(b)(2) of the FFCRA (as described in Q8 
+and in the last paragraph of this FAQ response). 
+ 
+When submitting a rescission SPA, a state must comply with the following general SPA 
+submission requirements:5 
+                                                          
+4 See previous guidance on the resumption of Medicaid premiums after the sunset of disaster relief SPAs in the first 
+paragraph of the response to Q24 of: CMS. (2022). COVID-19 Public Health Emergency Unwinding Frequently 
+Asked Questions for State Medicaid and CHIP Agencies. Available at: https://www.medicaid.gov/federal-policy-
+guidance/downloads/covid-19-unwinding-faqs-oct-2022.pdf. 
+5 As CMS has previously informed states, the Medicaid disaster relief SPA template and related section 1135 
+waivers and modifications of the above-listed SPA submission requirements are not available for state plan changes 
+ 
+
+
+
+--- PAGE 7 ---
+ 
+7 
+• Public notice requirements at 42 CFR § 447.57(c);  
+• SPA effective date requirements at 42 CFR § 430.20; and 
+• Tribal consultation requirements at section 1902(a)(73) of the Act. 
+ 
+A state wishing to rescind the relevant section of a disaster relief SPA prior to the disaster relief 
+SPA’s sunset date may contact its CMS state lead for assistance. 
+As indicated in Q8, States claiming the FFCRA temporary FMAP increase on or after April 1, 
+2023 must comply with the amended condition in section 6008(b)(2) of the FFCRA; thus, if such 
+states resume premiums, they must ensure that the resumed premium schedule amounts do not 
+exceed the amounts in effect as of January 1, 2020. 
+ 
+Q11: How may states claiming the FFCRA temporary FMAP increase further delay 
+resumption of Medicaid premium charges when a disaster relief SPA sunsets, or eliminate 
+premium charges entirely? 
+ 
+A11: States that wish to delay the resumption of Medicaid premiums after the sunset of disaster 
+relief SPAs at the end of the Secretary-declared COVID-19 PHE on May 11, 2023, have several 
+options. If a state wants to delay resumption of premiums temporarily (such as for a year or less 
+after the end of the Secretary-declared COVID-19 PHE), it can either: 
+(1) submit a Section 7.4.B or 7.4.C SPA to temporarily extend a disaster relief SPA provision for 
+a limited period of time following the end of the Secretary-declared COVID-19 PHE;6 or  
+(2) request authority under section 1902(e)(14)(A) of the Act to delay the resumption of 
+Medicaid premiums during the unwinding period until a full redetermination is completed for 
+beneficiaries who are subject to premiums. States that want to remove premium requirements for 
+more than a year after the end of the Secretary-declared COVID-19 PHE should consult their 
+state lead. 
+ 
+States submitting premium-related SPAs must comply with the general requirements described 
+in Q8 and general submission requirements described in Q10.  
+ 
+                                                          
+that would restrict or limit payment, services, or eligibility, or otherwise burden beneficiaries and providers. See 
+https://www.medicaid.gov/state-resource-center/downloads/medicaid-disaster-relief-spa-instructions.pdf and 
+https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02142023.pdf. Therefore, states should 
+follow the regular SPA submission process and requirements when rescinding a suspension of premiums. 
+Additionally, section 1135 waivers and modifications of the above-listed SPA submission requirements are not 
+available with regard to disaster relief SPAs for COVID-19 submitted on or after April 10, 2023.  House Joint 
+Resolution 7 (H.J. Res. 7), signed into law on April 10, 2023, ended the COVID-19 Presidential National 
+Emergency declaration effective immediately.  Enactment of H.J. Res. 7 also ended CMS’s authority to issue new, 
+prospective section 1135 waivers related to the COVID-19 pandemic.  Because section 1135 waivers and 
+modifications of the above-listed SPA submission requirements apply to the date that the state submits the SPA, 
+they are not available for disaster relief SPAs related to COVID-19 submitted on or after April 10, 2023.  See 
+https://www.medicaid.gov/state-resource-center/downloads/cib050823.pdf.  
+6 See discussion on extending disaster relief SPAs at Q26 of: CMS. (2022). COVID-19 Public Health Emergency 
+Unwinding Frequently Asked Questions for State Medicaid and CHIP Agencies. Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/covid-19-unwinding-faqs-oct-2022.pdf.  
+ 
+
+
+
+--- PAGE 8 ---
+ 
+8 
+States may refer to SHO #22-0017 for details on how to request approval of section 
+1902(e)(14)(A) waivers. States may also contact their CMS state lead for more information.8 
+States requesting a section 1902(e)(14)(A) waiver aren’t required to complete public notice 
+requirements, but CMS encourages states to maintain public transparency.  CMS is providing 
+public information on approved section 1902(e)(14)(A) waivers in a chart available to the public 
+here: https://www.medicaid.gov/covid-19-phe-unwinding-section-1902e14a-waiver-
+approvals/index.html. 
+ 
+Q12: Which beneficiary protections are states required to provide, such as conducting a 
+redetermination of eligibility, prior to resuming Medicaid premium charges that had been 
+suspended during the Secretary-declared COVID-19 PHE or increasing a Medicaid 
+beneficiary’s premiums after April 1, 2023? 
+ 
+A12: All states must provide certain beneficiary protections prior to resuming premiums that 
+were suspended during the Secretary-declared COVID-19 PHE or increasing an individual 
+Medicaid beneficiary’s premium after April 1, 2023. States must: 
+ 
+• Ensure that a determination of the beneficiary’s income has been made within the 
+previous 12 months.9 This means that: 
+• If the state has completed a renewal for the beneficiary in the last 12 months, the state 
+may resume or increase Medicaid premiums for that beneficiary without completing a 
+redetermination.  
+• If the state hasn’t completed a renewal for the beneficiary in the last 12 months, the 
+state must complete a redetermination before resuming or increasing Medicaid 
+premiums for that beneficiary. 
+ 
+• Comply with the general requirements described in Q8. 
+ 
+If submitting a SPA, the state must comply with the SPA submission requirements described in 
+Q10. States claiming the FFCRA temporary FMAP increase must also ensure that their premium 
+schedule amounts do not exceed the amounts in effect as of January 1, 2020, as discussed in Q8. 
+ 
+                                                          
+7 CMS. (March 3, 2022). Promoting Continuity of Coverage and Distributing Eligibility and Enrollment Workload 
+in Medicaid, the Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) Upon 
+Conclusion of the COVID-19 Public Health Emergency [State Health Official Letter #22-001]. Available at  
+https://www.medicaid.gov/federal-policy-guidance/downloads/sho22001.pdf.  
+8 See discussion on requesting a 1902(e)(14)(A) waiver at Q27: CMS. (2022). COVID-19 Public Health Emergency 
+Unwinding Frequently Asked Questions for State Medicaid and CHIP Agencies. Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/covid-19-unwinding-faqs-oct-2022.pdf.  
+9 See previous guidance regarding redetermination requirements prior to resumption of Medicaid premiums, 
+including individualized notice requirements and when a state must obtain updated income information before 
+reinstatement, at the first paragraph of Q24 and at Q25 of: CMS. (2022). COVID-19 Public Health Emergency 
+Unwinding Frequently Asked Questions for State Medicaid and CHIP Agencies. Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/covid-19-unwinding-faqs-oct-2022.pdf.  
+ 
+
+
+
+--- PAGE 9 ---
+ 
+9 
+Q13: Can a state claiming the FFCRA temporary FMAP increase for a quarter beginning 
+on or after April 1, 2023, make changes to its Medicaid premium schedule before January 
+1, 2024? 
+ 
+A13: It depends. States claiming the FFCRA temporary FMAP increase may submit a SPA to 
+change the Medicaid premium schedule to reduce premium amounts or exempt additional 
+populations from premium requirements. States submitting such a SPA must generally comply 
+with SPA submission requirements, as described in Q10. Additionally, consistent with previous 
+guidance, states claiming the temporary FFCRA FMAP increase may adopt new premiums 
+before January 1, 2024, for new optional eligibility groups.10 
+ 
+However, until January 1, 2024, states claiming the temporary FFCRA FMAP increase may not 
+increase the amounts in their Medicaid premium schedules over the amounts in place for each 
+eligibility group subject to premiums as of January 1, 2020. For example, if all beneficiaries in a 
+certain eligibility group with household income at or over 200 percent of the federal poverty 
+level (FPL) were charged premiums of $10 per month as of January 1, 2020, a state claiming the 
+temporary FFCRA FMAP increase cannot increase the premium amount charged to beneficiaries 
+in that eligibility group with household income at 200 percent of the FPL to any amount greater 
+than $10 prior to January 1, 2024. If a state wishes to increase premium amounts above the 
+amounts in place for any eligibility group as of January 1, 2020, it must forgo claiming the 
+temporary FFCRA FMAP increase.11 
+ 
+States making changes to premiums must also comply with general requirements described in 
+Q8.  
+Q14: Beginning April 1, 2023, can a state claiming the FFCRA temporary FMAP increase 
+disenroll Medicaid beneficiaries for failure to pay premiums? 
+ 
+A14: Yes, with some limitations. Now that the FFCRA section 6008(b)(3) continuous enrollment 
+condition has ended, states claiming the FFCRA temporary FMAP increase may resume 
+implementation of a policy to disenroll some beneficiaries who haven’t paid Medicaid premiums 
+for at least 60 days, provided that conditions specified at 42 CFR § 447.55(b)(2) are met and the 
+state’s disenrollment policy was in place as of January 1, 2020.12  
+ 
+                                                          
+10 See discussion of the permissibility of charging Medicaid premiums for new optional eligibility groups at 
+FAQ#II.B.13 of: CMS. (2021). COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s 
+Health Insurance Program (CHIP) Agencies. Available at: https://www.medicaid.gov/state-resource-
+center/downloads/covid-19-faqs.pdf. Please note that the last two sentences of FAQ#II.B.13 are no longer applicable 
+on and after April 1, 2023, the effective date of the CAA, 2023 amendments to section 6008(b)(2) and 6008(b)(3) of 
+the FFCRA. 
+11 Please note that the FPL level and premium amount included in this example are hypothetical only.  
+12 Previous guidance indicated that states may terminate enrollment for failure to pay after the last day of the month 
+in which the COVID-19 PHE ends. This document updates that guidance to reflect the amendments to FFCRA 
+section 6008 delinking the end of the continuous enrollment condition from the end of the COVID-19 PHE. See 
+discussion at FAQ#II.B.7 of: CMS. (2021). COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and 
+Children’s Health Insurance Program (CHIP) Agencies. Available at: https://www.medicaid.gov/state-resource-
+center/downloads/covid-19-faqs.pdf. 
+
+
+
+--- PAGE 10 ---
+ 
+10 
+However, adoption of a new policy (i.e., after January 1, 2020) to disenroll a beneficiary for 
+failure to pay Medicaid premiums would constitute a more restrictive eligibility standard, 
+methodology, or procedure under section 6008(b)(1) of the FFCRA for any eligibility group that 
+the state covered as of January 1, 2020. Thus, new adoption of such a policy prior to January 1, 
+2024 for such eligibility groups would be a violation of the FFCRA section 6008(b)(1) condition. 
+Therefore, states claiming the FFCRA temporary FMAP increase cannot implement a policy to 
+disenroll a beneficiary for failure to pay Medicaid premiums if that beneficiary is enrolled in an 
+eligibility group that the state covered as of January 1, 2020, unless that disenrollment policy for 
+that eligibility group was documented in the state plan pursuant to 42 CFR § 447.55(c)(4) as of 
+January 1, 2020. States that are claiming the temporary FFCRA FMAP increase can adopt a new 
+policy to disenroll such beneficiaries for failure to pay Medicaid premiums after December 31, 
+2023, when the condition under section 6008(b)(1) of the FFCRA will end. 
+ 
+Prior to disenrolling a beneficiary for failure to pay Medicaid premiums, states must: 
+ 
+• Consider whether the beneficiary is eligible on all bases prior to making a determination of 
+ineligibility and disenrolling the beneficiary; 
+• Ensure all beneficiary protections described in Q12; and 
+• Comply with all general requirements listed in Q8.  
+ 
+Although the continuous enrollment condition has ended, states cannot disenroll beneficiaries for 
+unpaid premium charges accumulated during the period when the continuous enrollment 
+condition was in effect. Similarly, states may not count any days that occurred during the period 
+the continuous enrollment condition was in effect toward the minimum 60-day period of non-
+payment required under 42 CFR § 447.55(b)(2) before taking action to disenroll a beneficiary 
+based on non-payment of premiums.13 States may disenroll beneficiaries for unpaid premiums 
+incurred prior to the beginning of the continuous enrollment condition on March 18, 2020, as 
+long as no dates between March 18, 2020, and March 31, 2023 are counted toward the minimum 
+60 days. Additionally, states may not count any days that occurred during any period that 
+Medicaid premiums were suspended via a disaster relief SPA. CMS encourages states not to 
+count days of nonpayment accumulated prior to March 18, 2020, given the lengthy time period 
+that has passed since that date and the difficulty individuals may have documenting payments 
+made that long ago. 
+                                                          
+13 Previous guidance indicated that states may terminate enrollment for failure to pay after the last day of the month 
+in which the COVID-19 PHE ends. Although the underlying policy described in that guidance was primarily based 
+on the continuous enrollment condition at FFCRA section 6008(b)(3), the FAQs referred broadly to the COVID-19 
+PHE when discussing the period during which that condition applied. This document updates that guidance to reflect 
+the amendments to FFCRA section 6008 delinking the end of the continuous enrollment condition from the end of 
+the COVID-19 PHE. Additionally, although not referenced in that previous guidance, the condition at section 
+6008(b)(1) is also applicable if states claiming the FFCRA temporary FMAP increase newly adopt a policy to 
+terminate beneficiary enrollment for failure to pay Medicaid premiums, for beneficiaries in an eligibility group that 
+the state covered as of January 1, 2020, as discussed above.  See discussion at FAQ#II.B.7-8 and 11 of: CMS 
+COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance Program 
+(CHIP) Agencies. (2021). Available at: https://www.medicaid.gov/state-resource-center/downloads/covid-19-
+faqs.pdf. See also further discussion at Q30 of: CMS. (2022). COVID-19 Public Health Emergency Unwinding 
+Frequently Asked Questions for State Medicaid and CHIP Agencies. Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/covid-19-unwinding-faqs-oct-2022.pdf. 
+ 
+
+
+
+--- PAGE 11 ---
+ 
+11 
+CHIP Resumption of Premiums 
+ 
+Q15: If a state suspended the collection of premiums for separate CHIP enrollees during 
+the Secretary-declared COVID-19 PHE through a CHIP disaster SPA, may it resume 
+collection of premiums during the unwinding period?  
+ 
+A15: It depends. States that suspended CHIP premiums during the Secretary-declared COVID-
+19 PHE may resume the collection of premiums only for beneficiaries who have had a full 
+renewal within the last 12 months.14 The amount of the premium imposed should be based on the 
+state’s most recent determination of the beneficiary’s household income. Additionally, the state 
+may resume collecting premiums only after providing timely and adequate written notice and 
+information about the beneficiary’s rights to the CHIP review process. 
+ 
+If a beneficiary hasn’t had a redetermination of household income in the last 12 months, the state 
+must complete a redetermination before reimposing premiums. 
+ 
+If a state wishes to resume premiums, but has not completed a renewal for all beneficiaries in the 
+past 12 months, it will need to have flexibilities authorized through a CHIP disaster relief SPA or 
+disaster relief SPA activation letter in place because the state will be following its state plan 
+policies (i.e., charging premiums) for only a subset of beneficiaries (those that have had a 
+redetermination in the last 12 months). See Q17 for a discussion of the disaster relief flexibilities 
+needed in this situation. 
+ 
+Disaster flexibilities authorized through a CHIP disaster relief SPA or disaster relief SPA 
+activation letter are not needed to resume the collection of premiums in states that have 
+completed renewals for all individuals in the last 12 months. 
+ 
+Q16: If a state continued to collect premiums for separate CHIP enrollees during the 
+Secretary-declared COVID-19 PHE but did not terminate coverage for anyone for failure 
+to pay premiums during this time, may the state begin terminating coverage for failure to 
+pay premiums during the unwinding period? 
+ 
+A16: It depends. A state may only terminate an individual’s coverage for failure to pay 
+premiums during the unwinding period if the individual has had a full renewal within the last 12 
+months.   The state must also provide beneficiaries with timely and adequate written notice and 
+information about their rights to the CHIP review process prior to resuming the premium grace 
+period policy and terminating the individual for failure to pay premiums.  As a reminder, states 
+are required by section 2103(e)(3) of the Act to provide enrollees with a minimum 30-day grace 
+period to pay any required premiums or enrollment fees before termination of coverage.  
+ 
+If a beneficiary hasn’t had a redetermination of household income in the last 12 months, the state 
+must complete a redetermination before terminating for failure to pay premiums.  
+ 
+                                                          
+14 See discussion of resuming the collection of premiums at Q25 of: COVID-19 Public Health Emergency 
+Unwinding Frequently Asked Questions for State Medicaid and CHIP Agencies. CMS. (2022).  Available at: 
+https://www.medicaid.gov/federal-policy-guidance/downloads/covid-19-unwinding-faqs-oct-2022.pdf.  
+
+
+
+--- PAGE 12 ---
+ 
+12 
+If a state wishes to resume terminations of coverage for failure to pay premiums, but has not 
+completed a renewal for all beneficiaries in the past 12 months, it will need to have flexibilities 
+authorized through a CHIP disaster relief SPA or disaster relief SPA activation letter in place 
+because the state will be following its state plan policies (i.e., terminating for failure to pay 
+premiums) for only a subset of beneficiaries (those that have had a redetermination in the last 12 
+months). See Q17 for a discussion of the disaster relief flexibilities needed in this situation. 
+ 
+Disaster flexibilities authorized through a CHIP disaster relief SPA or disaster relief SPA 
+activation letter are not needed to resume terminations of coverage for failure to pay premiums in 
+states that have completed renewals for all individuals in the last 12 months. 
+ 
+Q17: What authority do states need to resume their CHIP premium policies (e.g., charging 
+premiums or terminating for failure to pay premiums) if only a subset of CHIP 
+beneficiaries has had a renewal in the past 12 months?  
+ 
+A17: For states with an Evergreen Disaster Relief SPA, the state must submit to CMS a disaster 
+SPA activation letter specifying the date when the state will resume their CHIP state plan 
+premium policy (e.g., charging premiums or terminating for failure to pay premiums) for those 
+beneficiaries who have completed a renewal within the last 12 months. The letter should also 
+specify that the state will resume the CHIP state plan premium policy on a rolling basis as 
+renewals are conducted through the state’s COVID-19 PHE unwinding period and specify the 
+state’s COVID-19 PHE unwinding period end date. 
+ 
+For states with a disaster relief SPA that was specific to the Secretary-declared COVID-19 PHE, 
+the state must submit to CMS either: 
+1. A SPA specific to the unwinding period, stating the state will resume its CHIP state plan 
+premium policies for those beneficiaries who have completed a renewal within the last 12 
+months; or 
+2. An Evergreen Disaster Relief SPA. In the SPA cover letter, the state should describe how 
+it will resume its CHIP state plan premium policies during the unwinding period. 
+ 
+Renewals for Individuals Receiving Supplemental Security Income (SSI) in Section 1634 
+States 
+ 
+Q18: Are states with an agreement with the Social Security Administration (SSA) under 
+section 1634 of the Act (also known as a “1634 state”) required to conduct regular renewals 
+for individuals eligible for Medicaid based on receipt of SSI? 
+ 
+A18: It depends. While there is no exception for conducting regular renewals for any populations 
+under regulations at 42 CFR § 435.916, states that have an agreement with the SSA under section 
+1634 of the Act (“1634 agreement”) do not need to take affirmative steps to renew Medicaid for 
+individuals who continue to receive SSI. Such individuals remain eligible for Medicaid based on 
+their continued receipt of SSI as described at 42 CFR § 435.120. States with section 1634 
+agreements can rely on information provided through the State Data Exchange (or “SDX”) to 
+renew on an ex-parte basis individuals who continue to receive SSI. Once SSA has notified a 
+state through the SDX that a given individual is receiving SSI and eligible for Medicaid on that 
+
+
+
+--- PAGE 13 ---
+ 
+13 
+basis, SSA does not transmit additional information about that individual unless their 
+circumstances have changed.  Thus, states with 1634 agreements may rely on the original 
+information provided through the SDX that the individual is receiving SSI and eligible for 
+Medicaid on that basis until they receive new information through the SDX reflecting a change 
+in circumstances. 
+ 
+If new information for an SSI recipient indicating a change in circumstances is received through 
+the SDX, states are required to process the change in accordance with 42 CFR § 435.916(d). 
+States must redetermine eligibility for these individuals on all bases, in accordance with 42 CFR 
+§§ 435.916(f) and 435.930, before terminating coverage. When acting on the change, if the state 
+doesn’t have sufficient information to determine eligibility on another basis, the state must 
+collect the information needed to consider eligibility on other bases.  
+ 
+Data Sharing 
+Q19: Under what circumstances may states share beneficiary information, including 
+renewal dates, with enrolled Medicaid and CHIP providers (such as nursing facilities and 
+Indian health care providers) without violating Medicaid and CHIP confidentiality 
+standards under section 1902(a)(7)(A) of the Act, 42 CFR part 431, subpart F, and 42 CFR 
+§ 457.1110(b)? 
+ 
+A19: Under section 1902(a)(7) of the Act and implementing regulations at 42 CFR part 431, 
+subpart F, states must restrict the use or disclosure of information concerning Medicaid 
+applicants and beneficiaries to purposes directly connected with the administration of the state 
+plan.  The same requirements also apply to separate CHIPs through a cross reference at 42 CFR 
+§ 457.1110(b). The state Medicaid or CHIP agency’s disclosure of beneficiary data (e.g., 
+beneficiary renewal dates) to an enrolled Medicaid or CHIP provider to enable the provider to 
+give information about renewals to beneficiary patients and/or to encourage a patient to complete 
+a renewal is a purpose directly related to the administration of the Medicaid or CHIP state plan.  
+Such activities support establishing eligibility—one of the purposes directly related to state plan 
+administration listed at 42 CFR § 431.302(a). Thus, the state Medicaid or CHIP agency may 
+disclose beneficiary data to an enrolled provider so that the provider can assist the beneficiary in 
+completing their renewal, without violating Medicaid and CHIP confidentiality standards under 
+section 1902(a)(7)(A) of the Act, 42 CFR part 431, subpart F, and 42 CFR § 457.1110(b). Thus, 
+any type of enrolled provider might be able to encourage and assist its patients to complete 
+renewals, including nursing facilities, Federally Qualified Health Centers, hospitals, Indian 
+health care providers, and others.  Any enrolled provider receiving information concerning 
+beneficiaries must be subject to standards of confidentiality that are comparable to those of the 
+state agency, per 42 CFR § 431.306(b). For states seeking to make such disclosures, each data 
+element disclosed must be consistent with a purpose that is directly connected to the 
+administration of the Medicaid or CHIP state plan. 
+ 
+States are typically required to seek consent from beneficiaries or a beneficiary’s personal 
+representative before making a disclosure of beneficiary data to an outside source under 42 CFR 
+§ 431.306(d).  However, the state Medicaid or CHIP agency would not be required to seek 
+consent prior to sharing a beneficiary’s information with an enrolled Medicaid or CHIP provider 
+to enable the provider to encourage a patient to complete a renewal or assist a beneficiary in 
+
+
+
+--- PAGE 14 ---
+ 
+14 
+completing their renewal if these activities are authorized under a written agreement between the 
+provider and the state.  In such circumstances, the enrolled provider is assisting the agency in a 
+purpose directly related to the administration of the Medicaid or CHIP state plan, as expressly 
+authorized by the Medicaid or CHIP agency, and thus would not be considered to be an “outside 
+source.”  We note that while advance consent is not required under Medicaid or CHIP 
+regulations at § 431.306(d) or § 457.1110 in these circumstances, state or other laws may require 
+such consent. 
+ 
+States should review current agreements with enrolled providers to evaluate if they authorize the 
+provider to use beneficiary data from the state to support beneficiaries in maintaining Medicaid 
+or CHIP coverage.  States should also review current agreements with enrolled providers to 
+evaluate if they include applicable Medicaid and CHIP confidentiality requirements and 
+restrictions on the use of information regarding beneficiaries. States should make modifications 
+to current agreements with enrolled providers, if needed.  
+In summary, it would be consistent with section 1902(a)(7) of the Act and implementing 
+regulations at 42 CFR part 431, subpart F and 42 CFR § 457.1110(b) for a state Medicaid or 
+CHIP agency to share Medicaid or CHIP beneficiaries’ information with an enrolled Medicaid or 
+CHIP provider so that the provider can help patients maintain coverage, subject to a written 
+agreement (e.g., the provider agreement) with the state agency authorizing such data sharing and 
+activities. States should confer with their counsel to ensure compliance with otherwise applicable 
+law when sharing this information. 
+ 
+States can also partner with managed care plans to conduct outreach to their enrollees. For 
+information on requirements and limitations relating to states’ partnership with managed care 
+plans during unwinding, see: “Strategic Approaches to Engaging Managed Care Plans to 
+Maximize Continuity of Coverage as States Resume Normal Eligibility and Enrollment 
+Operations,” available at https://www.medicaid.gov/resources-for-states/downloads/health-plan-
+strategy.pdf. 
+Former Foster Care Child Group 1115 Authority 
+ 
+Q20: Is section 1115 authority needed to enroll individuals in the Medicaid state plan 
+group for former foster care children (“FFCC group”) who meet all eligibility criteria for 
+the group, but who turned 18 prior to January 1, 2023, and may be eligible for another 
+mandatory eligibility group? 
+ 
+A20: Prior to enactment of the Substance Use-Disorder Prevention that Promotes Opioid 
+Recovery and Treatment for Patients and Communities (“SUPPORT”) Act, Pub. L. 115-271, 
+enacted on October 24, 2018, eligibility for the FFCC group under section 1902(a)(10)(A)(i)(IX) 
+of the Social Security Act excluded individuals who had been placed in foster care in another 
+state when they reached age 18 and aged out of such foster care as well as individuals who are 
+eligible for another mandatory group described in section 1902(a)(10)(A)(i) of the Act (other 
+than the adult group, described in section 1902(a)(10)(A)(i)(VIII) of the Act). Section 1002(a)(1) 
+of the SUPPORT Act revised section 1902(a)(10)(A)(i)(IX) of the Act to remove these 
+limitations on eligibility for individuals who reach age 18 on or after January 1, 2023. This 
+frequently asked question addresses the eligibility exclusion related to eligibility for other 
+
+
+
+--- PAGE 15 ---
+ 
+15 
+mandatory eligibility groups, which continues to be in effect for individuals who turned age 18 
+prior to January 1, 2023. 
+  
+Although the statutory change that enables states to enroll individuals in the FFCC group even if 
+they are eligible for another mandatory group (other than the adult group) applies only to 
+individuals who reached age 18 on or after January 1, 2023, as a practical matter, states would 
+rarely be required to apply the eligibility exclusion to individuals who reached age 18 prior to 
+January 1, 2023.  These individuals formerly in foster care might meet the requirements for 
+another mandatory eligibility group if: (1) they are receiving supplemental security income 
+(SSI), have a disability and are in a 209(b) state (whether or not they are receiving SSI), or are 
+pregnant or a parent or caretaker relative; and (2) they meet the financial eligibility requirements 
+applicable to such individuals.  If an individual who turned 18 prior to January 1, 2023 and has 
+aged out of foster care applies for Medicaid and the state has all information it needs to 
+determine eligibility for one of these other mandatory eligibility groups, it would need to do so 
+and enroll the individual in the appropriate group. (If the individual is receiving SSI and is in a 
+1634 state, the enrollment will have already occurred.) 
+ 
+However, except for SSI beneficiaries in non-209(b) states, states generally are not able to 
+determine that an applicant to the FFCC group is eligible for another mandatory group described 
+in section 1902(a)(10)(A)(i) of the Act based on the information in the application the state 
+received.  This inability is because determining eligibility for such mandatory groups would 
+generally require that states collect additional information about the individual’s income and 
+household beyond the information needed to determine eligibility in the FFCC group.  Gathering 
+this additional information would create an unnecessary administrative burden for both the 
+individual and the state with no value for the individual since the FFCC group provides full 
+benefits. Moreover, with no income or asset test, the annual renewal of eligibility for individuals 
+enrolled in the FFCC group can usually be achieved on an ex parte basis until the individual 
+reaches age 26, vastly simplifying retention of coverage as compared to enrollment in another 
+mandatory eligibility group. 
+ 
+As such, CMS has determined that states do not need to seek section 1115 authority to enroll 
+individuals who turned 18 prior to January 1, 2023, in the state plan FFCC group even if the 
+individual has a disability, is pregnant or is a parent or caretaker relative and might be eligible on 
+one of those bases. (SSI beneficiaries in non-209(b) states will already be enrolled in Medicaid 
+by the Social Security Administration through a state’s 1634 Agreement, or, in SSI “criteria” 
+states, will clearly have a separate basis for mandatory eligibility.)  States do not need to collect 
+more information than necessary to enroll people in the FFCC eligibility group. However, if a 
+state has all information needed to determine that an applicant who is a former foster care child 
+and who turned 18 before January 1, 2023, is eligible for another mandatory eligibility group 
+(other than the adult group), the state should enroll the individual in that other group.  If a state 
+has information indicating that a beneficiary enrolled in the FFCC group is potentially eligible 
+for another mandatory eligibility group (other than the adult group), the state must provide the 
+individual with an informed choice and attempt to collect the information needed to determine 
+eligibility for that group. 
+ 

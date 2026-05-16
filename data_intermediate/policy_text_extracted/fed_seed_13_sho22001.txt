@@ -1,0 +1,5651 @@
+
+
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTMENT OF HEALTH & HUMAN SERVICES 
+Centers for Medicare & Medicaid Services 
+7500 Security Boulevard, Mail Stop S2-26-12 
+Baltimore, Maryland 21244-1850 
+SHO# 22-001  
+RE: Promoting Continuity of 
+Coverage and Distributing 
+Eligibility and Enrollment 
+Workload in Medicaid, the 
+Children’s Health Insurance 
+Program (CHIP), and Basic 
+Health Program (BHP) Upon 
+Conclusion of the COVID-19 
+Public Health Emergency 
+March 3, 2022 
+Dear State Health Official: 
+The ongoing Coronavirus Disease 2019 (COVID-19) outbreak and implementation of federal 
+policies to address the public health emergency (PHE) have disrupted routine Medicaid, 
+Children’s Health Insurance Program (CHIP), and Basic Health Program (BHP) eligibility and 
+enrollment operations.  Over the course of the PHE, states have made policy, programmatic, and 
+systems changes to respond effectively to COVID-19  and qualify for the temporary Federal 
+Medical Assistance Percentage (FMAP) increase under section 6008 of the Families First 
+Coronavirus Response Act (FFCRA) (P.L. 116-127), including by satisfying a “continuous 
+enrollment condition” for most Medicaid beneficiaries who were enrolled in the program as of or 
+after March 18, 2020. 
+It has been a top priority for the Centers for Medicare & Medicaid Services (CMS) to ensure, 
+when the PHE eventually ends and states resume routine operations, including terminations of 
+eligibility, that renewals of eligibility and transitions between coverage programs occur in an 
+orderly process that minimizes beneficiary burden and promotes continuity of coverage.  This 
+State Health Official (SHO) letter expands on the guidance released in SHO #21-002, “Updated 
+Guidance related to Planning for the Resumption of Normal State Medicaid, CHIP, and BHP 
+Operations Upon Conclusion of the COVID-19 Public Health Emergency,” published on August 
+13, 2021 (“August 2021 SHO”), by describing how states may distribute eligibility and 
+enrollment work when states restore routine operations, mitigate churn for eligible beneficiaries, 
+and smoothly transition individuals between coverage programs, including coverage through the 
+Federally-facilitated Marketplace or a State-Based Marketplace (SBM).  
+As with previous SHO letters issued by CMS regarding the PHE, this SHO letter is intended to 
+assist states in their planning efforts whenever the federal PHE declaration eventually ends and 
+does not presuppose a specific time frame in which that will occur.  The Department of Health 
+and Human Services (HHS) will determine when the federal PHE declaration will end, and CMS 
+will share with states any communication released by HHS. 
+The contents of this document do not have the force and effect of law and are not meant to bind the public in any way, unless 
+specifically incorporated into a contract. This document is intended only to provide clarity to the public regarding existing 
+requirements under the law. 
+
+
+
+--- PAGE 2 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+Page 2 – State Health Official 
+In addition to resuming normal eligibility and enrollment operations, authority for other types of 
+disaster relief flexibilities will conclude when the PHE eventually ends, and states will need to 
+return to regular operations across their programs. CMS has approved almost 1,000 disaster 
+relief actions for states during the PHE, many for non-eligibility and enrollment-related 
+flexibilities, including section 1135 waivers to delay provider revalidations, disaster relief state 
+plan amendments (SPAs) to extend telehealth flexibilities, and section 1915(c) Appendix Ks to 
+allow the provision of services by family members, among many others. 
+States need to determine which temporary flexibilities they intend to extend temporarily or 
+permanently, as allowable, and make plans to terminate other flexibilities after the PHE 
+eventually ends.  Guidance to support states in these planning efforts is available in SHO #20-
+004, “Planning for the Resumption of Normal State Medicaid, Children’s Health Insurance 
+Program (CHIP), and Basic Health Program (BHP) Operations Upon Conclusion of the COVID-
+19 Public Health Emergency” (“December 2020 SHO”).1  This guidance, which was released on 
+December 23, 2020, provides information on returning to normal operations across these 
+programs, including requirements for making temporary changes permanent and ending 
+temporary authorities, as well as operational and managed care considerations for returning to 
+normal operations.  Additional information will continue to be provided to states on streamlined 
+processes to temporarily extend authorities initially adopted through disaster relief SPAs, as well 
+as to add or modify authorities needed on a temporary basis as a state returns to normal 
+operations.2 
+Table of Contents 
+I. 
+Executive Summary............................................................................................................. 3 
+II. 
+Restoring Routine Eligibility and Enrollment Operations after the PHE Ends................... 5 
+III. 
+Prioritization and Distribution of Pending Eligibility and Enrollment Work .................... 14 
+IV. 
+Notices and Fair Hearings.................................................................................................. 21 
+V. 
+Strategies to Promote Continuity of Coverage and Mitigate Churn.................................. 23 
+VI. 
+Facilitating Transitions between Medicaid, CHIP, BHP, and the Marketplace ................ 27 
+VII. 
+Monitoring State Progress and Corrective Action............................................................. 28 
+VIII. PERM or MEQC Programs ............................................................................................... 29 
+IX. 
+Closing ............................................................................................................................... 29 
+Appendix A: 12-Month Unwinding Timeline .............................................................................. 31 
+Appendix B: Strategies to Promote Continuity of Coverage and Mitigate Churn ....................... 33 
+Appendix C: Processing Returned Mail ....................................................................................... 41 
+1 SHO #20-004, “Planning for the Resumption of Normal State Medicaid, Children’s Health Insurance Program (CHIP), and 
+Basic Health Program (BHP) Operations Upon Conclusion of the COVID-19 Public Health Emergency,” available at: 
+https://www.medicaid.gov/sites/default/files/2020-12/sho20004.pdf. 
+2 Details on extending Medicaid disaster relief SPA provisions, either temporarily or indefinitely, were provided during the 
+February 15, 2022 All-State Medicaid and CHIP call.  Information discussed during the call is available at: 
+https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02152022.pdf. 
+
+
+
+--- PAGE 3 ---
+ 
+ 
+ 
+ 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+Page 3 – State Health Official 
+Appendix D: Related CMS Guidance........................................................................................... 44 
+I. 
+Executive Summary 
+This SHO letter is part of a series of guidance and tools that outlines how states may address the 
+large volume of pending eligibility and enrollment actions that will need to be addressed when 
+they restore routine operations, including terminations of coverage.  This letter expands on the 
+August 2021 SHO by describing how states may distribute eligibility and enrollment work in the 
+post-PHE period, mitigate churn for eligible beneficiaries who lose coverage and later reenroll, 
+and smoothly transition individuals between coverage programs, including coverage through the 
+Marketplace with financial subsidies.  This SHO reiterates options for states to align work on 
+pending eligibility and enrollment actions after the PHE eventually ends and provides that states 
+must initiate, rather than complete, all pending actions during the 12-month unwinding period.  
+In addition, this SHO informs states that they are at risk of inappropriately terminating coverage 
+for eligible individuals if they plan to initiate a high volume of renewals in a given month and 
+that CMS intends to collect information on all states’ plans to adopt strategies that will promote 
+continuity of coverage and guard against inappropriate terminations.  
+A. Background 
+The ongoing COVID-19 outbreak and implementation of federal policies to address the PHE 
+have disrupted routine Medicaid, CHIP, and BHP eligibility and enrollment operations.  
+Medicaid and CHIP enrollment has grown to nearly 85 million individuals due, in large part, to 
+the continuous enrollment condition.3 It is critical to ensure, when the PHE eventually ends, that 
+renewals of eligibility occur in an orderly process that minimizes beneficiary burden and 
+promotes continuity of coverage, including for individuals eligible for other insurance 
+affordability programs, and maximizes state effectiveness. 
+B. Operational Plans and Timelines to Complete Eligibility and Enrollment Actions 
+As discussed in prior guidance, states will need to develop a comprehensive “unwinding 
+operational plan” to restore routine operations in their Medicaid, CHIP, and BHP programs. This 
+unwinding operational plan is intended to reflect how states will complete outstanding work and 
+maximize uninterrupted coverage for eligible individuals.   
+CMS acknowledges that states will have some pending applications that will need to be 
+completed and will continue to receive new applications as they work to resume normal 
+processing of renewals. This SHO permits states to use a phased approach to complete 
+processing of any pending applications and resume timely and accurate determinations of 
+eligibility on all new applications within four months after the eventual end of the PHE.   
+To account for the time needed to complete renewals, CMS will consider states to be in 
+compliance with the 12-month unwinding period announced in the August 2021 SHO provided 
+that the state has initiated all renewals and other outstanding eligibility actions by the last month 
+of the 12-month period. States will have two additional months (14 months total) to complete all 
+3 Medicaid and CHIP Enrollment Snapshots (September 2021). Available at https://www medicaid.gov/medicaid/program-
+information/medicaid-chip-enrollment-data/medicaid-and-chip-enrollment-trend-snapshot/index html. 
+
+
+
+--- PAGE 4 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+Page 4 – State Health Official 
+pending actions initiated during the 12-month unwinding period.  Prior guidance suggested all 
+renewals and other actions must be completed within the 12-month unwinding period. 
+C. Adopting a Risk-Based Approach and Speed of State Unwinding 
+CMS expects states to adopt a risk-based approach to prioritize pending renewals, changes in 
+circumstances, and post-enrollment verifications that the state needs to address during the 
+unwinding period.  A risk-based approach must take into consideration the need to prevent 
+inappropriate terminations and promote smooth transitions for individuals no longer eligible for 
+Medicaid, CHIP, or a BHP to other coverage. States may select among four risk-based 
+approaches to address the backlog of pending cases: (1) Population-Based Approach prioritizing 
+outstanding actions for cohorts of beneficiaries more likely to have become eligible for more 
+expansive benefits or for different coverage (e.g., a Qualified Health Plan (QHP)); (2) Time or 
+Age-Based Approach prioritizing cases based on the length of time the action has been pending; 
+(3) Hybrid Approach combining population- and time-based approaches; or (4) State-Developed 
+Approach meeting the goals of keeping eligible individuals enrolled, reducing churn, 
+maximizing successful transition to other coverage where appropriate, and achieving a 
+sustainable renewal schedule.  This letter also outlines various alignment strategies, which can 
+support states in achieving an even distribution of work both during the 12-month unwinding 
+period and in subsequent years. 
+Over the course of the 12-month unwinding period, states will need to initiate a renewal of every 
+beneficiary enrolled in their Medicaid and CHIP programs as of the end of the month prior to 
+their unwinding period. We refer in this letter to these beneficiaries enrolled in Medicaid and 
+CHIP as of such month as the state’s “total caseload.” States have flexibility to determine 
+whether their total caseload is based on the total number of individuals enrolled in the program 
+or the total number of households with one or more family members enrolled in Medicaid in the 
+state as of the end of the month prior to the month in which the state’s unwinding period begins. 
+States will need to distribute these renewals in a reasonable manner over the course of the 
+unwinding period in order to mitigate the risk of inappropriate terminations and churn as well as 
+to ensure that the state also resumes timely processing of new applications during the unwinding 
+period.  As this SHO letter explains, CMS is concerned that if states attempt to initiate more than 
+1/9 of their total caseload in a given month, there will be an increased risk that state processes 
+will not meet federal renewal requirements, and eligible individuals will be erroneously 
+determined ineligible or lose coverage for avoidable procedural reasons.  CMS will work with 
+states and provide continued technical assistance to ensure they are able to restore routine 
+operations in a manner that promotes continuity of coverage for eligible individuals and seamless 
+coverage transitions for those who become eligible for other insurance affordability programs.  
+D. Facilitating Transitions to the Marketplace 
+Facilitating smooth transitions to the Marketplace for individuals eligible for enrollment in a 
+QHP will be critical to minimizing periods of uninsurance as states identify beneficiaries who are 
+no longer eligible for Medicaid, CHIP or a BHP.  States are required to transfer to the 
+Marketplace the electronic accounts of beneficiaries whom the state assesses as potentially 
+eligible for coverage through the Marketplace; such transfer must include all eligibility-related 
+information available to the state. This SHO letter identifies strategies for states to improve 
+successful transitions and enrollment in a QHP, including improving notice language and 
+
+
+
+--- PAGE 5 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+Page 5 – State Health Official 
+transmitting all available contact information and other information that the state has for an 
+individual, regardless of the minimum technical requirements for account transfers. 
+E. Monitoring State Progress, Corrective Action, Payment Error Rate Measurement 
+(PERM) or Medicaid Eligibility Quality Control (MEQC) Programs, and Technical 
+Assistance 
+This SHO letter explains that CMS will (1) not consider eligibility and enrollment actions 
+delayed due to the PHE as untimely for purposes of the PERM or MEQC programs if such 
+actions are initiated within the timelines detailed in the SHO letter and completed before the end 
+of the 14th month once the state begins its 12-month unwinding period; (2) release an updated 
+planning template to support state efforts to develop unwinding operational plans; (3) provide 
+states with data reporting tools to monitor and evaluate state progress to complete outstanding 
+work after the PHE ends; (4) monitor states’ progress in meeting the timelines and completing 
+required eligibility and enrollment actions described in the letter; and (5) be available to provide 
+technical assistance to states individually and through various forums. 
+II. 
+Restoring Routine Eligibility and Enrollment Operations after the PHE Ends 
+CMS recognizes that states will not be able to immediately address the large number of pending 
+eligibility and enrollment actions that continue to accumulate during the PHE, and states will 
+need time to complete the work in a manner that prevents inappropriate terminations of 
+coverage.  CMS also understands many Medicaid beneficiaries’ circumstances may have 
+changed and that these individuals may now be eligible for other insurance affordability 
+programs, such as CHIP, BHP, or coverage through the Marketplace with financial subsidies.  
+States will need to be able to distribute work in a systematic way that maintains coverage for 
+eligible beneficiaries, manages coverage transitions, and reestablishes a renewal schedule that is 
+sustainable for the state agency in future years. 
+A. Developing a Plan to Address PHE-Related Eligibility and Enrollment Work 
+As discussed in the December 2020 SHO, states will need to develop and document a 
+comprehensive plan to restore routine operations in their Medicaid, CHIP, and BHP programs 
+(“unwinding operational plan”).4 This plan is intended to help states plan for how they will 
+complete outstanding work in accordance with the timelines specified in this letter and the 
+August 2021 SHO and maximize continuous coverage for eligible individuals.   
+States will have a significant volume of eligibility actions to complete once they begin the 
+unwinding period, including pending applications, renewals, and redeterminations necessitated 
+by changes in beneficiary circumstances.  Some states also will have outstanding verifications 
+for individuals determined eligible for enrollment based on self-attested information pending 
+post-enrollment verification.5 States’ unwinding operational plans should include a description 
+of how the state intends to address these outstanding actions in an efficient manner that reduces 
+4 State Health Official Letter SHO #20-004, Planning for the Resumption of Normal State Medicaid, Children’s Health Insurance 
+Program (CHIP), and Basic Health Program (BHP) Operations Upon Conclusion of the COVID-19 Public Health Emergency, 
+(December 2020). Available at https://www.medicaid.gov/federal-policy-guidance/downloads/sho20004.pdf. 
+5 States have the option to enroll individuals based on self-attested information and verify eligibility criteria post-enrollment, 
+consistent with the state verification plan. 
+
+
+
+--- PAGE 6 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 6 – State Health Official 
+erroneous loss of coverage for beneficiaries, ensures a sustainable distribution of renewals in 
+future years, and ensures timely processing of new applications and eligibility actions within the 
+timelines specified in this letter.  States will need to decide which flexibilities to retain and 
+whether to adopt new flexibilities. CMS is available to provide technical assistance to states as 
+they develop their unwinding operational plans.  
+To the extent these decisions require states to submit SPAs, updates to verification plans, or 
+updates to policy and procedure manuals, states should make efforts to start these processes as 
+soon as possible before the state implements its plans to restore routine operations. States should 
+also begin work as soon as possible on any necessary system changes needed to process 
+eligibility and enrollment actions and resume terminations of coverage for ineligible individuals 
+after the continuous enrollment condition expires.  To the extent possible, states should make 
+plans to have these system changes ready, and scheduled for an off-cycle release if necessary, to 
+ensure they are not delayed in their ability to begin work during the unwinding period. 
+States that began to develop a plan to return to routine operations prior to the release of this letter 
+should reassess their plans and adjust how they will prioritize and distribute their workloads in 
+light of this guidance. CMS also released an updated Medicaid and CHIP planning tool to assist 
+states in their planning efforts.6  This updated tool will take into account the new timelines to 
+complete pending work and help states develop an unwinding operational plan that takes into 
+account strategies and options to maintain coverage for eligible individuals.  While CMS expects 
+states to develop and document their unwinding operational plans to address pending 
+applications, verifications, changes in circumstances, and renewals, states are not required to use 
+the tools developed by CMS to document their plans and, generally, will not be expected to 
+submit their entire unwinding operational plans to CMS for approval.  However, states must 
+make their plans available to CMS upon request.  
+The perspectives and partnership of Medicaid and CHIP managed care organizations (MCOs), 
+providers, beneficiary advocates, and other stakeholders are critical to the resumption of 
+renewals and other eligibility actions in a manner that supports retention of coverage, including 
+the successful transition to other programs.  CMS encourages states to solicit input on their 
+unwinding operational plans from these partners and to share their plans publicly, prior to their 
+implementation. 
+B. Timelines to Complete Eligibility and Enrollment Actions after the PHE Ends 
+Applications: 4 Months after the End of the PHE (with Milestones) 
+While states are expected to work as expeditiously as possible to process applications now, CMS 
+anticipates most states will have some pending applications that were received during the PHE 
+that will need to be completed during the unwinding period. Agencies may use a phased 
+approach to complete processing of these applications and resume timely and accurate 
+determinations of eligibility on new applications within the following timelines, measured going 
+forward from the end of the month in which the PHE ends: 
+• 2 months after the end of the month in which the PHE ends: States should complete 
+eligibility determinations for all pending modified adjusted gross income (MAGI) and 
+6 CMS previously released the Medicaid and CHIP Health Insurance Program COVID-19 Public Health Emergency Eligibility 
+and Enrollment Pending Actions Resolution Tool.  The updated tool reflects the guidance issued in SHO #21-002 and this letter. 
+
+
+
+--- PAGE 7 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+Page 7 – State Health Official 
+other non-disability-related applications (e.g., individuals determined on the basis of 
+being age 65 or older) received during the PHE. 
+• 3 months after the end of the month in which the PHE ends: States should complete 
+eligibility determinations for all pending disability-related applications received during 
+the PHE. 
+• 4 months after the end of the month in which the PHE ends: States should resume 
+timely processing of all applications. 
+CMS reminds states that an application is considered to be processed timely when the agency 
+enrolls an eligible applicant or denies coverage for an individual whom the agency could not 
+determine as eligible within the application time standards described at 42 C.F.R. §§ 435.912(c), 
+457.340(d), and 600.320(b).  The maximum time permitted under these regulations is 90 days for 
+individuals applying on the basis of disability and 45 days for all other applicants.  Consistent 
+with requirements at 42 C.F.R. §§ 435.912(g), 457.340(d), and 600.320(b), agencies may not use 
+the application timeliness standards – or the timelines described in this letter – as a waiting 
+period to delay determining eligibility or as a reason for denying eligibility because the state has 
+not determined eligibility within the timeliness standards. 
+Post-Enrollment Verifications, Changes in Circumstances, and Renewals: 12 months after the 
+End of the PHE 
+In the August 2021 SHO, CMS announced that it would provide states up to 12 months after the 
+end of the PHE to complete renewals as well as post-enrollment verifications and 
+redeterminations of eligibility due to changes in beneficiary circumstances.  The renewal process 
+includes the time states need to attempt to renew eligibility based on electronic data and other 
+information available to the agency; the time beneficiaries have to return the renewal form and 
+any required documentation; and the time needed by the agency to verify the accuracy of the 
+returned information, redetermine eligibility, and send appropriate notice to the beneficiary of 
+the agency’s decision.  
+Since the August 2021 SHO was released, states have raised concerns that they will be unable to 
+complete renewals within a 12-month unwinding period because, except for beneficiaries who 
+can be renewed based on information available to the state, states typically cannot complete a 
+renewal in the same month in which the renewal was initiated. We understand that many states 
+budget between 60 and 90 days to complete the full renewal process, and therefore initiate 
+renewals between 60 and 90 days prior to the end of a beneficiary’s eligibility period. 
+To account for the time needed to initiate and complete renewals, CMS will consider states to be 
+in compliance with the 12-month unwinding period announced in the August 2021 SHO 
+provided the state has initiated all renewals, as well as post-enrollment verifications and 
+redeterminations based on changes in circumstances, for the state’s total caseload by the last 
+month of the 12-month unwinding period (and completed such actions by the end of month 14).  
+Defining the Beginning and End of the 12-month Unwinding Period 
+While states will be required to initiate renewals, post-enrollment verifications, and 
+redeterminations for all individuals enrolled when the continuous enrollment condition expires 
+within 12 months, the unwinding period may vary by state but is based on the month in which 
+the PHE eventually ends. The unwinding period for all states must begin no later than the first 
+
+
+
+--- PAGE 8 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 8 – State Health Official 
+day of the month following the month in which the PHE ends.  However, states may begin their 
+12-month unwinding period up to two months prior to the end of the month in which the PHE 
+ends.  This means that states that continue to comply with the continuous enrollment condition 
+through the end of the month in which the PHE ends may initiate renewals that may result in 
+termination of coverage the month after the continuous enrollment conditions ends for some 
+beneficiaries up to two months prior to the end of the month in which the PHE ends. 
+As discussed further in this letter, states must initiate a renewal of eligibility for its total caseload 
+during the state’s unwinding period, including for individuals who were determined ineligible 
+during the PHE before the state begins its unwinding period. 
+For example, if the PHE were to end on May 15, 2022, renewals initiated as early as April 2022 
+could result in terminations effective as early as June 1, 2022 (with the beneficiary’s last day of 
+coverage being May 31, 2022, which would be the last day the continuous enrollment condition 
+is in effect in this example) for beneficiaries whom the state determines no longer meet all 
+eligibility requirements or who do not timely return information needed by the state to complete 
+the renewal. 
+Note that the same two-month period before the state would need to initiate another renewal 
+would be true regardless of when the PHE eventually ends.  For example, if the PHE ended on 
+August 15, 2022, states complying with the continuous enrollment condition could begin their 
+12-month unwinding period as early as July 2022, using the information gathered during a 
+renewal initiated in July 2022 to terminate coverage as early as September 1, 2022 for 
+beneficiaries whom the state determines no longer meet all eligibility requirements or who do not 
+timely return information needed by the state to complete the renewal.  Thus, in this example 
+(i.e., if the PHE is extended to August 15, 2022), renewals for cases initiated prior to July 2022 
+that did not result in a determination of eligibility must be initiated again during the state’s 12-
+month unwinding period associated with the August 15, 2022 PHE end date, consistent with the 
+guidance in the August 2022 SHO and this letter.   
+While states must initiate all pending eligibility actions (including renewals, post-enrollment 
+verifications, and redeterminations based on changes in circumstances) for its total caseload at 
+the end of the PHE within their particular 12-month unwinding period, states are expected to 
+complete all work initiated during their unwinding period by the end of the 14th month after the 
+first month of the unwinding period.  For example, if the PHE ends in May 2022 and a state 
+begin its 12-month unwinding period ) in June 2022, the state would be required to initiate all 
+renewals, post-enrollment verifications, and redeterminations no later than May 2023 and 
+complete initiated work by the end of July 2023.  
+States are reminded that regardless of when a state begins its unwinding period, it must maintain 
+continuous enrollment of beneficiaries through the last day of the month in which the PHE ends 
+in order to satisfy the continuous enrollment condition necessary to receive the temporary FMAP 
+increase under the FFCRA for the entire quarter in which the month falls.  To comply with the 
+continuous enrollment condition, termination of a beneficiary’s enrollment can be effective no 
+earlier than the first day of the month following the month in which the PHE ends, with limited 
+
+
+
+--- PAGE 9 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 9 – State Health Official 
+exceptions.7 Any state that chooses to end the continuous enrollment condition prior to the end 
+of the month the PHE eventually ends and no longer claim the temporary FMAP increase is still 
+required to follow the timelines and expectations outlined in this letter.  This includes the 
+requirement that the state initiate a renewal for the state’s total caseload during the 12-month 
+period beginning in the month in which renewals initiated by the state end in termination of 
+beneficiaries who no longer meet eligibility requirements or did not timely return information 
+needed by the state to complete the renewal. 
+Appendix A illustrates how a state may process its unwinding related renewals, redeterminations, 
+and post-enrollment verifications and achieve compliance with the 12-month unwinding period. 
+C. Requirements for Conducting Renewals 
+This guidance does not change the steps states must take to complete a renewal consistent with 
+requirements at 42 C.F.R. §§ 435.916, 457.343, and 600.340.  During the 12-month unwinding 
+period, all states must begin the renewal process by checking available information and data 
+sources to attempt to redetermine eligibility without contacting the beneficiary and requesting 
+documentation to obtain reliable information when eligibility cannot be renewed based on 
+available information, as appropriate.  States must provide beneficiaries who are eligible based 
+on MAGI methodologies with a minimum of 30 days to return their pre-populated renewal form 
+and any requested information.  Non-MAGI beneficiaries must be provided with a reasonable 
+period of time to return their renewal form and any required documentation.  Renewal forms and 
+notices must be accessible to persons who have limited English proficiency (LEP) and persons 
+with disabilities consistent with §§ 435.905(b) and 457.340(e).  In Medicaid, states must 
+determine eligibility on all bases prior to making a determination of eligibility as required at § 
+435.916(f)(1), including the Medicare Savings Programs.  In Medicaid, a minimum of 10 days 
+advance notice and fair hearing rights must also be provided prior to termination or other adverse 
+action, in accordance with § 435.917 and 42 C.F.R. Part 431 Subpart E.  Separate CHIPs must 
+provide sufficient notice to enable the child’s parent or other caretaker to take any appropriate 
+actions that may be required to allow coverage to continue without interruption consistent with § 
+457.340(e)(1)(iii).  For individuals determined ineligible, states must assess eligibility for other 
+insurance affordability programs and transfer the individual’s account as appropriate in 
+accordance with §§ 435.916(f)(2) and 457.350(i). 
+States may refer to the December 2020 Center for Medicaid and CHIP Services (CMCS) 
+Informational Bulletin (CIB), “Medicaid and CHIP Renewal Requirements,” which is available 
+to assist states in meeting their obligations to make accurate redeterminations of eligibility.8 A 
+description of the CIB and more information on how states may access the guidance is included 
+in Appendix C of this SHO letter.  
+D. Completing Renewals During the Post-PHE Unwinding Period  
+7 Consistent with 6008(b)(3) of the FFCRA and 42 C.F.R. § 433.400, states claiming the temporary 6.2 percentage point FMAP 
+increased authorized under FFCRA must ensure “validly enrolled” beneficiaries remain enrolled through the end of the month in 
+which the PHE ends unless the individual requests voluntary termination, is no longer considered to be a resident of the state, or 
+dies. 
+8 CMCS Informational Bulletin, “Medicaid and Children’s Health Insurance Program (CHIP) Renewal Requirements,” 
+(December 2020). Available at: https://www medicaid.gov/federal-policy-guidance/downloads/cib120420.pdf. 
+
+
+
+--- PAGE 10 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 10 – State Health Official 
+While most states have continued to process eligibility and enrollment actions during the PHE, 
+states claiming the temporary FMAP increase authorized by section 6008 of the FFCRA have 
+needed to suppress terminations and other adverse actions for Medicaid beneficiaries that would 
+violate the continuous enrollment condition. States that have conducted renewals during the 
+PHE, but did not terminate Medicaid eligibility for beneficiaries who were determined not 
+eligible or who did not respond to requests for documentation, generally may not terminate 
+coverage for such beneficiaries after the continuous enrollment condition expires until the state 
+completes a new full renewal, as beneficiaries’ circumstances may have changed since the 
+completion of the renewal conducted during the PHE.  This includes beneficiaries who were 
+receiving benefits pending the outcome of a fair hearing on or after March 18, 2020, and were 
+continuously enrolled during the PHE in order to comply with the continuous enrollment 
+condition.9 
+Completing a full renewal after the continuous enrollment condition expires will ensure that: 1) 
+the state is collecting information from the beneficiary that allows the state to redetermine 
+eligibility on all bases prior to terminating coverage in accordance with 42 C.F.R. § 
+435.916(f)(1); 2) any adverse action is based on recently available, reliable information and that 
+the state is not terminating eligibility or reducing benefits unless it has sought information from 
+the individual in accordance with § 435.952(d); and 3) the state fulfills its obligation to complete 
+a renewal of eligibility.   
+Subject to the expectations relating to prioritization and distribution of pending eligibility and 
+enrollment work discussed in Section II of this letter, states will have considerable flexibility in 
+determining how best to distribute renewals over the 12-month unwinding period.  Thus, while 
+states may not conduct a new renewal for MAGI-based beneficiaries whose eligibility was 
+successfully renewed during the PHE less than 12 months after such renewal, states have the 
+flexibility to initiate renewals at any time during the unwinding period for beneficiaries for 
+whom the state did not conduct a renewal during the PHE or for whom the state did not conduct 
+a successful renewal within the previous 12 months.  Additionally, because individuals 
+determined ineligible during a renewal conducted during the PHE were not granted a new 
+eligibility period, states may initiate a new renewal for such individuals at any point during the 
+12-month unwinding period – i.e., the state is not required to wait for 12 months after a renewal 
+conducted during the PHE that resulted in a determination of ineligibility or for which a 
+beneficiary did not respond to a request for additional information.   
+Table 1 below provides guidelines for states when setting beneficiary renewal dates during the 
+unwinding period, based on the outcome and timing of the beneficiary’s last attempted renewal 
+during or prior to the PHE.  CMS encourages states to use the flexibilities afforded by the unique 
+circumstances of the PHE and the end of the continuous enrollment condition to set a renewal 
+schedule that spreads renewal volume over a full 12-month period and aligns renewal dates for 
+9 While 42 C.F.R. § 431.230(b) grants states the option to institute recovery for benefits pending if the state’s action is sustained 
+by the fair hearing decision, states cannot do so if they claim the temporary FMAP increase authorized by section 6008 of the 
+FFCRA.  An individual whose Medicaid eligibility is maintained in order to comply with the continuous enrollment condition, 
+which includes individuals receiving benefits pending, may not have their eligibility retroactively terminated.  In order to receive 
+the temporary FMAP increase authorized under section 6008 of the FFCRA, states must maintain the eligibility, and benefits, of 
+all individuals who are enrolled or determined eligible for Medicaid as of March 18, 2020, through the end of the month in which 
+the public health emergency ends. Section 6008(b) of the FFCRA does not authorize recoupment of funds from any individual 
+whose Medicaid eligibility was continued in order to comply with the terms of section 6008(b) of the FFCRA. 
+
+
+
+--- PAGE 11 ---
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Page 11 – State Health Official 
+individuals within households and with recertification timing for the Supplemental Nutrition 
+Assistance Program (SNAP) and other human services programs.  Additional information on 
+how to implement these strategies is available in Appendix B of this letter. 
+
+
+
+--- PAGE 12 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+Table 1. Guidelines for Establishing Renewal Dates during the 12-Month Unwinding 
+Period 
+Outcome of Last Renewal Attempted During 
+the Last 12 Months of PHE 
+Permissible Timing of Renewal During 12-
+Month Unwinding Period 
+Ex parte renewal attempted but not completed. 
+Any time (states are encouraged to consider 
+No further state action taken.  
+strategies to align renewals with SNAP 
+recertifications or renewals for members of a 
+household) 
+Ex parte renewal attempted but not completed. 
+Any time (states are encouraged to consider 
+State sent renewal form. Beneficiary 
+strategies to align renewals with SNAP 
+determined ineligible or did not respond. 
+recertifications or renewals for members of a 
+household) 
+Renewal completed based on beneficiary’s 
+return of renewal form and/or additional 
+information. Individual continues to meet 
+eligibility requirements. New eligibility period 
+established. 
+12 months after beneficiary’s last renewal for 
+MAGI-beneficiaries; 12 months or shorter 
+eligibility period established by the state for non-
+MAGI beneficiaries per 42 C.F.R. § 435.916(b) 
+Ex parte renewal attempted and successfully 
+12 months after beneficiary’s last renewal or 
+completed. New eligibility period established.10 
+original renewal month, at state option, for 
+MAGI-beneficiaries; 12 months or shorter 
+eligibility period established by the state for non-
+MAGI beneficiaries per 42 C.F.R. § 435.916(b) 
+No renewal attempted in last 12 months of 
+PHE. 
+Any time 
+E.  Acting on Changes in Circumstances during the Unwinding Period 
+Consistent with regulations at 42 C.F.R. §§ 435.916(d) and 457.343, states must promptly 
+redetermine eligibility between regular renewals of eligibility whenever they receive information 
+about a change in a beneficiary's circumstances that may affect eligibility. However, due to the 
+continuous enrollment condition, states have been unable to complete regular renewals during 
+the PHE for many Medicaid beneficiaries.  Given how long it has been since some individuals 
+have been renewed, there is an increased risk that individuals who may be eligible for CHIP or 
+Medicaid on another basis may be terminated based on a change in circumstances related to a 
+single factor of eligibility.  Consequently, during the unwinding period, prior to taking adverse 
+action based on an identified or reported beneficiary change in circumstances, states must 
+complete a full renewal for any beneficiary unless a renewal was completed in the 12 months 
+prior to the identified change.  The one exception to this general rule involves beneficiaries for 
+whom (1) a renewal completed within the prior 12 months resulted in a determination that the 
+beneficiary continues to meet eligibility requirements, and (2) the state has received information 
+that the beneficiary’s circumstances changed after the last renewal was completed. If a state 
+identifies a change in circumstances during the unwinding period for an individual who has not 
+received a renewal in the prior 12 months, the state may choose to complete a full renewal at the 
+10 For beneficiaries whose eligibility is renewed during the PHE based on information available to the state without requiring 
+additional information from the individual (“ex parte renewal”) consistent with 42 C.F.R. § 435.916(a)(2) and (b), states continue 
+to have the option described in the December 2020 SHO (1) to retain the beneficiary’s initial eligibility period had the renewal 
+been completed timely or (2) to start a new eligibility period based on the date the ex parte renewal was completed during the 
+PHE.  States electing to retain the eligibility period associated with the ex parte renewal completed during the PHE must do so 
+for all such renewals through the end of the PHE; states may not implement the option on a case-by-case basis. 
+The contents of this document do not have the force and effect of law and are not meant to bind the public in any way, unless 
+specifically incorporated into a contract. This document is intended only to provide clarity to the public regarding existing 
+requirements under the law. 
+
+
+
+--- PAGE 13 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+  
+Page 13 – State Health Official 
+time when the change in circumstances is identified, or the state may wait to process the new 
+information when it completes the beneficiary’s renewal in a subsequent month.   
+F. Special Considerations for CHIP and BHP 
+As states are aware, the continuous enrollment condition does not apply to separate CHIP 
+programs and BHPs.  However, states have taken different approaches to processing CHIP and 
+BHP renewals during the PHE, and these approaches will impact how states must handle CHIP 
+and BHP renewals following the eventual end of the PHE. We have included several scenarios 
+below, highlighting where renewal processes may differ for CHIP and BHP from Medicaid. 
+CHIP Beneficiaries Who Became Ineligible During the PHE 
+As stated in the January 6, 2021, “COVID-19 Frequently Asked Questions (FAQs) for State 
+Medicaid and Children’s Health Insurance Program (CHIP) Agencies” (“January 2021 
+FAQs”),11 states are not permitted under the CHIP state plan to extend eligibility periods for 
+separate CHIP enrollees who have been determined ineligible for coverage.  If a state receives 
+information from an enrollee, processes that information, and determines the individual 
+ineligible for its separate CHIP, the state must process the termination and transfer the individual 
+to Medicaid or the Marketplace, in accordance with 42 C.F.R. § 457.350(b) and (i).  States that 
+completed CHIP renewals during the PHE are expected to have terminated ineligible individuals 
+and to continue to process terminations throughout the remainder of the PHE and unwinding 
+period.  
+Similarly, as stated in the January 2021 FAQs, states are not permitted under the CHIP state plan 
+to extend coverage to young adults aging out of CHIP or, for pregnant individuals enrolled in 
+CHIP, ending their postpartum coverage period.  Because this guidance was not formally 
+published until January 6, 2021, we recognized that some states may have continued to provide 
+coverage to these individuals until that date.  However, we explained that states are expected to 
+continue to process terminations of individuals determined ineligible for a separate CHIP under 
+the state plan throughout the remainder of the PHE.   
+CMS is aware that some states, using state-only funds, have continued to cover CHIP 
+beneficiaries found not eligible for coverage during the PHE, including young adults aging out of 
+CHIP, and/or pregnant individuals ending their postpartum period, and/or children found 
+ineligible for coverage after a change in circumstances.  States may submit a COVID-19 section 
+1115 demonstration application for CMS consideration requesting expenditure authority to 
+enable the state to claim federal financial participation (FFP) for such CHIP beneficiaries 
+through the end of the unwinding period, or until a redetermination is conducted during the 
+unwinding period.  States interested in pursuing a section 1115 demonstration to receive FFP for 
+these individuals should contact their state lead or section 1115 demonstration project officer. 
+In addition, we note that states may elect to provide 12 months of extended postpartum coverage 
+to pregnant individuals enrolled in Medicaid and CHIP beginning April 1, 2022, under sections 
+9812 and 9822 of the American Rescue Plan Act of 2021 (P.L. 117-2) (ARP). States that elect 
+this “postpartum extension” option may consider deprioritizing renewals and redeterminations of 
+11 “COVID-19 Frequently Asked Questions (FAQs) for State Medicaid and Children’s Health Insurance Program (CHIP) 
+Agencies,” January 6, 2021, available at: https://www medicaid.gov/state-resource-center/downloads/covid-19-faqs.pdf. 
+
+
+
+--- PAGE 14 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 14 – State Health Official 
+eligibility for CHIP beneficiaries who are pregnant or in a postpartum period during the 
+unwinding period to ensure smooth implementation of the extended postpartum coverage option. 
+CHIP Beneficiaries Whose Renewals were Delayed during the PHE 
+We recognize that some states may not have been able to process CHIP renewals in accordance 
+with the timeliness standards of 42 C.F.R. § 457.340(d)(1) during the PHE.  These states 
+requested and received authority through CHIP SPAs to waive the timely processing of renewals 
+during the PHE.  As states resume processing renewals, we strongly encourage states to initiate 
+CHIP renewals along the same timeline as Medicaid renewals and follow the guidance in 
+Sections D and E above.  States should incorporate CHIP eligibility and enrollment actions in 
+their unwinding operational plans and must restore operations consistent with the timeframes and 
+guidance outlined in the August 2021 SHO and this letter.  This includes ensuring that states 
+initiate CHIP renewals no later than when the state begins its 12-month unwinding period and 
+complete all work initiated during the 12-month unwinding period by the end of the 14th month 
+once the state begins its unwinding period. 
+BHP Beneficiaries Whose Renewals were Delayed During the PHE 
+We also recognize that states that operate a BHP may not have been able to process BHP 
+renewals in accordance with the timeliness standards of 42 C.F.R. § 600.340 during the PHE. 
+These states requested and received authority through BHP Blueprint amendments to waive the 
+timely processing of renewals during the PHE.  States that have been unable to process BHP 
+renewals during the PHE may follow the same processes for resuming the timely processing of 
+renewals for BHP as they are for Medicaid. However, we note that a state may not be able to 
+begin processing BHP renewals within one month of the end of the PHE if that month does not 
+align with when the state typically conducts BHP renewals. 
+For example, if the PHE ends in April 2022, but a state has elected to align renewals with the 
+Open Enrollment period in the Marketplace such that the state would not normally process any 
+BHP renewals until Fall 2022 for a new coverage year beginning January 1, 2023, the state 
+would not be required to change its typical renewal processing timelines. However, states can 
+elect to change this policy by submitting a BHP Blueprint revision, and we encourage states that 
+operate a BHP and currently only conduct renewals to coincide with the Marketplace Annual 
+Open Enrollment to consider whether to instead spread out the processing of BHP renewals 
+throughout the year.  The 12-month unwinding period presents a unique opportunity for BHP 
+states to reestablish a renewal schedule that is sustainable in future years. CMS is available to 
+provide technical assistance to states exploring this option. 
+III. 
+Prioritization and Distribution of Pending Eligibility and Enrollment Work 
+For states to maintain coverage for eligible individuals, complete the volume of work that will 
+need to be addressed in the 12-month unwinding period, and reestablish a renewal schedule that 
+is sustainable in future years, states will need to determine how they will prioritize and distribute 
+their work across the unwinding period.  States should first assess the scope of their workload 
+and consider strategies discussed in Section V of this letter on “Strategies to Promote Continuity 
+of Coverage and Mitigate Churn.”  States will then need to prioritize the order in which they will 
+initiate and complete eligibility and enrollment actions to minimize the extent to which ineligible 
+individuals remain enrolled, prevent inappropriate terminations of coverage for eligible 
+
+
+
+--- PAGE 15 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+Page 15 – State Health Official 
+individuals, and achieve a manageable distribution of renewals in future years.  Finally, states 
+will need to identify how they will distribute prioritized work scheduled to be initiated within the 
+timelines specified in this letter. 
+A. Adopting a Risk-Based Approach to Prioritize Work 
+CMS expects states to adopt a risk-based approach to prioritize pending eligibility and 
+enrollment actions related to post-enrollment verifications, changes in circumstances, and 
+renewals the state will conduct during the 12-month unwinding period.  A risk-based approach 
+ensures states prioritize their workload in a manner that considers the need to prevent 
+inappropriate terminations and enables smooth program transitions for individuals no longer 
+eligible for Medicaid, CHIP, or a BHP.  CMS also encourages states to prioritize work in a way 
+that will achieve an evenly-distributed renewal workload that is sustainable in future years.  
+States may select among four risk-based approaches to address the backlog of pending cases. 
+1. Population-Based Approach: Prioritizes outstanding eligibility and enrollment actions 
+based on characteristics of cohorts or populations who are likely to have become eligible 
+for more expansive benefits or who are likely to be eligible for different coverage (e.g., 
+QHP through the Marketplace).  Examples of populations states may wish to prioritize 
+include individuals who have reported a decrease in income, individuals enrolled during 
+the PHE through a temporary eligibility option, or individuals who have aged out of a 
+group or otherwise have become categorically ineligible for the group in which they are 
+enrolled. 
+Populations whose eligibility tends to be stable, such as children, former foster youth, or 
+individuals dually eligible for Medicaid and Medicare, are not among the types of 
+populations CMS would expect states to prioritize in a population-based approach.  
+However, CMS encourages states to consider available options and flexibilities to 
+streamline enrollment and promote continuity of coverage for individuals as they 
+prioritize their work.   
+For example, states electing the extended postpartum coverage option under sections 
+9812 and 9822 of the ARP that implement the option during the state’s unwinding period 
+may choose to deprioritize renewals and redeterminations of eligibility for beneficiaries 
+who are pregnant or in a postpartum period when the continuous enrollment condition 
+expires, to ensure smooth implementation of the extended postpartum coverage option.  
+States may refer to the December 2021 SHO, “Improving Maternal Health and Extending 
+Postpartum Coverage in Medicaid and CHIP,” for more information on the state plan 
+option to provide 12 months of continuous postpartum coverage.12 
+A population-based approach should address both the risk that ineligible individuals 
+remain enrolled and the risk that eligible individuals may be inappropriately terminated.  
+12 CMS State Health Official Letter #21-007: Improving Maternal Health and Extending Postpartum Coverage in Medicaid and 
+the Children’s Health Insurance Program (CHIP). December 7, 2021. Available at: https://www medicaid.gov/federal-policy-
+guidance/downloads/sho21007.pdf. 
+
+
+
+--- PAGE 16 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Page 16 – State Health Official 
+However, unless authority for, or expanded eligibility under, a group expires at the end of 
+the PHE (e.g., as is the case for the optional COVID-19 group13 or in the case of an 
+income or resource disregard adopted temporarily for the duration of the PHE), states 
+may not prioritize populations based solely on the Medicaid eligibility group in which 
+they are enrolled, de-prioritize cases based on the availability of FFP at a matching rate 
+that exceeds the state’s regular FMAP (e.g., states may not de-prioritize completion of 
+outstanding eligibility actions for individuals enrolled in the adult group) or prioritize 
+populations in a manner that would constitute a violation of federal law, including, but 
+not limited to, the Americans with Disabilities Act of 1990 (ADA), Title VI of the Civil 
+Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973 (Section 504), the Age 
+Discrimination Act of 1975, and Section 1557 of the Affordable Care Act (Section 1557). 
+Further, compliance with these laws includes providing reasonable accommodations to 
+individuals with disabilities under the ADA, Section 504, and Section 1557, with 
+eligibility and documentation requirements, understanding program rules and notices, to 
+ensure they understand program rules and notices, as well as meeting other program 
+requirements necessary to obtain and maintain benefits. 
+2. Time or Age-Based Approach: Prioritizes cases based on the length of time the action has 
+been pending.  Under a time-based approach, states can process the oldest cases first in 
+the 12-month unwinding period, or they may process cases by maintaining the original 
+month of renewal. 
+3. Hybrid Approach: Combined population- and time-based approaches.  For example, a 
+state may adopt a time-based approach to prioritizing outstanding post-enrollment 
+verifications and changes in circumstances and a population-based approach to 
+prioritizing pending renewals.  Alternatively, states may adopt a population-based 
+approach for processing the first wave of pending actions and then switch to a time-based 
+approach. 
+4. State-Developed Approach: Any other approach that meets the goals of keeping eligible 
+individuals enrolled, minimizes the extent ineligible individuals may remain enrolled, 
+achieves a sustainable renewal schedule, and meets the 12-month unwinding timeline for 
+addressing outstanding eligibility actions.   
+Regardless of how a state chooses to categorize its risk-based approach and prioritize its work, 
+states must ensure their risk-based approach is described in the unwinding operational plan. 
+B. Distributing Pending Actions Across the Unwinding Period 
+Once a state determines how it will prioritize its eligibility and enrollment work, we expect states 
+to establish a distribution schedule to initiate and process renewals and other actions over the 12-
+month unwinding period.  The redistribution plan should ensure that states are able to maintain 
+coverage for eligible individuals and manage transitions to other coverage for individuals 
+determined potentially eligible for enrollment in another insurance affordability program. An 
+13 Section 6004(a)(3) of the FFCRA added a new optional Medicaid eligibility group for uninsured individuals during the 
+COVID-19 PHE. This group, added at section 1902(a)(10)(A)(ii)(XXIII) of the Social Security Act, was previously referred to as 
+the “COVID-19 optional testing group”; the ARP expanded the coverage available to such individuals. 
+
+
+
+--- PAGE 17 ---
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 17 – State Health Official 
+evenly-distributed renewal schedule will also mitigate future challenges states might experience 
+if they process a large volume of actions at the beginning of the unwinding period, or if they 
+delay beginning to process renewals until later in the unwinding period.  States that do not make 
+plans to distribute their work during the 12-month unwinding period run the risk of errors in 
+processing renewals and inappropriately terminating coverage for eligible individuals, not only 
+during the 12-month unwinding period but also in future years as distributing this work over a 
+shorter period could create peaks in routine renewal volume in particular months.   
+In addition to the pending renewals and redeterminations that states will need to address when 
+the continuous enrollment condition expires, new eligibility actions also will arise during the 12-
+month unwinding period (e.g., for eligible beneficiaries who experience a change in 
+circumstances and individuals whose enrollment or whose eligibility was renewed in the last 12 
+months of the PHE).  States can address such new actions in accordance with the timeframes that 
+ordinarily would apply in accordance with 42 C.F.R. § 435.916 (i.e., in the absence of the 
+continuous enrollment condition).  Alternatively, states can integrate such new actions into the 
+prioritization plan and distribution schedule developed by the state for backlogged actions 
+pending at the end of the continuous enrollment condition, even if doing so would result in some 
+delay in addressing the newly-arising actions. 
+C. Preventing Inappropriate Terminations 
+Based on our experience in working with states over the years, CMS is concerned that the 
+combination of several factors creates an acute risk that eligible beneficiaries will lose coverage 
+when states begin to process renewals and other eligibility and enrollment actions, including, the 
+significant increases in Medicaid and CHIP enrollment during the PHE, the disruption to 
+eligibility and enrollment operations, the length of time that has elapsed since state agencies had 
+any contact with their beneficiaries, and significant staffing shortages.  While states will need to 
+expeditiously restore routine operations, states are obligated to ensure accurate determinations of 
+eligibility and are advised to take steps during the PHE to complete as much eligibility and 
+enrollment work as possible in order to limit the volume of actions that will need to be 
+completed in the 12-month unwinding period.  Once states have begun to conduct renewals and 
+process other eligibility actions, they will need to balance how quickly they work through their 
+total caseload with the need to prevent errors resulting in the termination of coverage for eligible 
+beneficiaries and churn, as eligible individuals terminated from coverage subsequently re-apply. 
+In providing technical assistance to states to ensure they are able make timely and accurate 
+redeterminations of eligibility, we have found that states that have a more even distribution of 
+renewals over the course of a year are better able to maintain a workload that is sustainable in 
+future years, thereby enabling the state to avoid renewal backlogs and reduce risk of inaccurate 
+redeterminations and inappropriate terminations in future years.  Based on this experience, CMS 
+recommends that states initiate no more than 1/9 of their total caseload of Medicaid and CHIP 
+renewals in a given month during the unwinding period.   
+We believe this target will not only mitigate the risk of inappropriate terminations and churn, but 
+also establish a sustainable renewal schedule by helping states avoid “renewal bulges” in some 
+months that increase the risk of future renewal backlogs.  We believe states that distribute the 
+unprecedented volume of renewals that must be initiated during the 12-month unwinding period 
+
+
+
+--- PAGE 18 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 18 – State Health Official 
+will be more likely to avoid erroneous determinations of ineligibility and avoid coverage losses 
+for procedural reasons.  In addition, CMS believes that initiating more than 1/9 of renewals in a 
+given month risks a compressed renewal workload that could put states at risk of inappropriately 
+shortening or extending beneficiary eligibility periods described at 42 C.F.R. §§ 435.916(a) and 
+(b) and 457.343 in order to manage workload in future years.   
+The 1/9 threshold also recognizes that there are natural fluctuations in the volume of renewals 
+typically processed in different months that would prevent a state from evenly distributing 
+renewals throughout the entire unwinding period (i.e., initiating 1/12 of a state’s total caseload 
+each month). For example, some states experience higher application volume during certain 
+periods in a given year (e.g., due to Open Enrollment or adoption of a coverage expansion).  In 
+others, staffing levels may drop in certain months (e.g., over the winter holidays), which may 
+impact a state’s preferred distribution of renewals in future years.  For these reasons, CMS 
+believes that initiating renewals for no more than 1/9 of a state’s total caseload in a given month 
+strikes a reasonable balance between achieving a relatively even distribution of renewals with the 
+need to accommodate fluctuations in the volume of work and state staff capacity that naturally 
+occur throughout the year.   
+Note that in calculating 1/9 of total caseload as of the end of the month prior to the month in 
+which the state’s unwinding period begins, some states may measure their total caseload based 
+on the total number of individuals enrolled in their programs, while others may measure total 
+caseload based on the total number of households with one or more household members enrolled 
+in the state’s programs.  
+CMS will require states to submit certain information, including how each state plans to 
+distribute renewals as well as what strategies the state is considering or has adopted to mitigate 
+against inappropriate coverage loss during the unwinding period.  CMS will use this information 
+to identify states at greatest risk of inappropriate coverage losses.14 CMS will provide states 
+with a form to submit summary information about their renewal distribution plans and will 
+follow up with states as needed to ensure that proper mitigation strategies are in place to reduce 
+risk of inappropriate terminations and that states’ plans will establish a sustainable workload in 
+future years (this form is separate from the state’s unwinding operational plan which, as 
+mentioned in Section II.A., states are not required to submit to CMS for approval).  For more 
+information on the monitoring and evaluation of a state’s distribution schedule and strategies to 
+prevent inappropriate terminations, please see Section VII of this letter on “Monitoring State 
+Progress and Corrective Action.” 
+D. Aligning Work on Pending Actions 
+ 
+All beneficiaries, including limited benefit populations or groups, will require a renewal during 
+the 12-month unwinding period, which means there is a unique opportunity for states to align 
+other eligibility actions with renewals during the unwinding period to manage workload and 
+reestablish a renewal schedule that is sustainable in future years.  The following alignment 
+strategies, which can support states in achieving an even distribution of work both during the 12-
+14 These reports will be required under the authority in sections 1902(a)(4)(A), 1902(a)(6) and 1902(a)(75) of the Act and at 42 
+C.F.R. § 431.16 to ensure proper and efficient administration of the Medicaid program and section 2101(a) of the Act to promote 
+the administration of CHIP in an effective and efficient manner. 
+
+
+
+--- PAGE 19 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 19 – State Health Official 
+month unwinding period and in subsequent years, are only available during the 12-month 
+unwinding period.  However, states may not shorten an individual’s established eligibility period 
+when using these strategies for the purposes of alignment.  After the 12-month unwinding period 
+ends, states must resume timely processing of periodic renewals and redeterminations of 
+eligibility in accordance with 42 C.F.R. §§ 435.912, 435.916, 457.340, and 600.320 as well as 
+post-enrollment verifications in accordance with the verification plan described at § 435.945(j) 
+developed by the state.  BHP states must follow the verification requirements of § 600.345 and 
+their certified BHP Blueprints. 
+Aligning Work on Verifications and Changes in Circumstances at Renewal 
+States may wait to complete pending post-enrollment verifications and act on changes in 
+circumstances reported or identified during the PHE and unwinding period for beneficiaries with 
+a renewal scheduled to be initiated during the 12-month unwinding period, with one exception 
+related to verification of citizenship or immigration status and the reasonable opportunity period 
+(ROP) required under 42 C.F.R. §§ 435.406 and 435.956, which allows applicants and states 
+additional time to complete those verification processes.  This alignment strategy will create 
+efficiencies for states by allowing them to use information obtained at renewal to simultaneously 
+resolve other pending eligibility and enrollment actions and also limit the need to send multiple 
+requests for information to individuals to complete multiple pending actions.   
+As required under current regulations at 42 C.F.R. § 916(a)(2), states must ensure eligibility 
+notices inform beneficiaries of the basis of the eligibility determination and remind them that 
+they must inform the state if any of the information used to determine their eligibility is not 
+accurate. After the 12-month unwinding period, states must resume timely processing of post-
+enrollment verifications and promptly act on changes in circumstances that occur between 
+renewals consistent with federal regulations.  
+Individuals whose Medicaid benefits have been maintained during an ROP have not had an 
+eligibility determination completed pending verification of U.S. citizenship or satisfactory 
+immigration status; rather, they are receiving benefits pending a determination of eligibility that 
+rests on the verification of their status. Therefore, states will need to review the verification and 
+ROP process applied during the PHE in order to determine the appropriate action for individuals 
+whose citizenship or verification status was not completed during the PHE but whose enrollment 
+has been maintained under an ROP to comply with the continuous enrollment condition.  If a 
+state did not send an individual notice to initiate an ROP during the PHE, or delayed or otherwise 
+did not complete the regular verification of satisfactory immigration status or U.S. citizenship 
+process as required under §§ 435.406 and 435.956, the agency must send the required notice 
+after the PHE ends and provide the 90-day ROP for the individual to provide any needed 
+documentation and the state to complete its verification process in accordance with §§ 435.406, 
+435.407, and 435.956.  We note that the ROP begins on the date the beneficiary receives notice 
+of such opportunity from the agency, in accordance with § 435.956(b)(2)(i).     
+Even if a state has provided a fully compliant notice and ROP to all affected beneficiaries but 
+some beneficiaries have not resolved their citizenship or immigration status inconsistency during 
+the PHE, we encourage states to attempt to reverify eligibility for these beneficiaries before the 
+state’s unwinding period begins.  This may be necessary in order to provide the due process 
+protections, including advance notice of termination and fair hearing rights, for these individuals.  
+
+
+
+--- PAGE 20 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 20 – State Health Official 
+States may extend the ROP period during this additional verification in certain situations.  
+Specifically, for individuals who have attested to satisfactory immigration status, states may 
+attempt to re-verify immigration status again after the continuous enrollment condition expires, 
+as § 435.956(b)(2)(ii)(B) allows states to provide for a reasonable extension of the ROP for 
+individuals attesting to satisfactory immigration status and who are making a good faith effort to 
+obtain any necessary documentation, or if the state needs more time to verify the individual’s 
+status or assist the individual in obtaining documents needed to verify their status.  For 
+individuals who have attested to U.S. citizenship status, states may re-verify their US citizenship 
+during the unwinding period through a COVID-19 1115 demonstration, which would provide for 
+an extension of the ROP beyond the 90-day timeframe required under section 1902(ee) of the 
+Social Security Act (the Act).  CMS is available to provide technical assistance to states 
+interested in pursuing this approach. 
+After the continuous enrollment condition expires, the state can terminate individuals who still 
+have not provided needed documentation of citizenship or immigration status during a fully 
+compliant ROP and for whom the state is not able to verify their status, as long as the state 
+provides a minimum of 10 days advance notice of termination and fair hearing rights consistent 
+with § 435.917 and 42 C.F.R. Part 431, Subpart E. 
+Aligning Renewals with SNAP Recertification 
+For beneficiaries also enrolled in SNAP, states may schedule their Medicaid renewals to coincide 
+with the individual’s SNAP recertification, provided such recertification occurs within the 12-
+month unwinding period.  This strategy not only may achieve greater administrative efficiencies 
+for states but also can minimize the burden for individuals.   
+Aligning Renewals for all Individuals in a Household 
+States may choose to align work on renewals for all members in a household during the 12-
+month unwinding period.  This strategy will minimize beneficiary burden by allowing families to 
+receive one request for information from the state. It also will help to align renewals for all 
+members of a household in future years. 
+CMS reminds states that, while states may process renewals for an entire household at the same 
+time, redeterminations of eligibility are made on an individual basis.  Thus, a state may not 
+terminate coverage for one member whose eligibility is verified with information available to the 
+state because the state was not able to verify eligibility for another member in the household.  
+For example, a family of four (two parents and two children) is enrolled in Medicaid through 
+different eligibility groups. The parents are enrolled in the adult group and the two children are 
+enrolled in the children’s group.  The state chooses to align work on renewals for the entire 
+family during the 12-month unwinding period.  The state initiates the renewal by checking 
+available data. The state has sufficient income and other information to determine eligibility 
+continues for the two children, but the income data obtained by the state indicates that the 
+parents’ income exceeds the standard for the adult group.  The state sends the family a pre-
+populated renewal form and provides a minimum of 30 days for the family to return the renewal 
+form.  The family does not return the renewal form.  Because the state does not have sufficient 
+information to renew eligibility for the parents, it must send advance notice of termination 
+related to their coverage. However, the state may not terminate coverage for the children and 
+must begin a new 12-month eligibility period for them. 
+
+
+
+--- PAGE 21 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+Page 21 – State Health Official 
+Aligning Renewals for Individuals Who Missed Their Medicare Initial Enrollment Period 
+Some individuals who have retained Medicaid coverage during the PHE may have become 
+eligible for Medicare since March 2020 but have not signed up for Medicare during their 
+Medicare initial enrollment period because they continue to be covered by Medicaid and may 
+think they do not need Medicare coverage at this time.  An individual’s Medicare initial 
+enrollment period is the 7-month period that starts three months before an individual is first 
+eligible to enroll in Medicare. 
+Unless the individual is eligible for a special enrollment period, individuals who miss their 
+Medicare initial enrollment period may only sign up for Medicare during the Medicare general 
+enrollment period, which runs from January 1 to March 31 each year.  Those individuals may 
+also have to pay a monthly late enrollment penalty.  However, certain Medicaid enrolled 
+individuals may obtain Medicare coverage at other times of the year through their state’s 
+Medicare buy-in process. 
+A Medicare-eligible beneficiary who misses their Medicare initial enrollment period, is not 
+enrolled into Medicare through the state’s buy-in process, and loses their Medicaid eligibility 
+outside of the Medicare general enrollment period (i.e., after the state resumes regular 
+terminations), may experience a gap in coverage before their Medicare coverage begins. Such 
+individuals also may incur late enrollment penalties once they do enroll in Medicare. 
+States may leverage available data matching processes to help identify beneficiaries who may 
+have become eligible for Medicare during the PHE.15  To minimize disruptions in coverage and 
+to avoid imposition of late enrollment penalties, CMS encourages states to attempt to identify 
+these beneficiaries and to reach out to advise them to enroll in Medicare during their initial 
+enrollment period or during the current Medicare general enrollment period (before March 31, 
+2022), whichever applies.  States should refer these individuals to their local State Health 
+Insurance Assistance Program (SHIP) for counseling. Additionally, states should consider the 
+timing of the next Medicare general enrollment period in scheduling renewals during the 
+unwinding period for individuals who may be Medicare eligible, in order to facilitate seamless 
+coverage transitions and avoid gaps in coverage by scheduling these individuals’ renewals to 
+coincide with the Medicare general enrollment period. 
+IV. 
+Notices and Fair Hearings 
+A. Notices 
+Whenever a Medicaid or CHIP agency makes a decision affecting a beneficiary’s eligibility, the 
+state generally must send the beneficiary a notice at least 10 days prior to the date of action 
+(defined at 42 C.F.R. § 431.201 as “the intended date on which a termination, suspension, 
+reduction, transfer or discharge becomes effective”) of the agency’s decision.  This advance 
+15 CMCS Informational Bulletin, “Strategies to Streamline Transitions for Medicare-eligible Beneficiaries Who Newly Qualify 
+for Medicare,” (June 2017). Available at https://www medicaid.gov/federal-policy-guidance/downloads/cib060717.pdf. The 2021 
+MAPD State User Guide is available at https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-
+Technology/mapdhelpdesk/MAPD-State-User-Guide. 
+
+
+
+--- PAGE 22 ---
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 22 – State Health Official 
+notice must include certain information, including the beneficiary’s right to a Medicaid fair 
+hearing, as described at 42 C.F.R. § 435.917 and 42 C.F.R. Part 431, Subpart E, or a CHIP 
+review, as described at 42 C.F.R. §§ 457.340(e) and 457.1120-1190.  
+States must provide beneficiaries with advance notice of any action resulting from an eligibility 
+determination conducted during the unwinding period.  This requirement applies even in cases 
+where the unwinding period eligibility determination yields the same action as a determination 
+conducted during the PHE, and for which the state previously provided notice, as it is important 
+for beneficiaries to have accurate and up-to-date information regarding the specific end date for 
+their Medicaid and CHIP eligibility.  Regulations at 42 C.F.R. §§ 431.210(a) and 
+457.340(e)(1)(ii)(A) require the notice to include the effective date of the action. 
+As a reminder, states may need to revise timeframes for individuals to request a fair hearing. 
+During the PHE, CMS approved section 1135 waiver authority to provide many states with the 
+flexibility to allow applicants or beneficiaries more than 90 days to request a fair hearing.  
+Following the end of the PHE, states using this flexibility may either revert back to the time 
+provided for individuals to request a fair hearing prior to the grant of section 1135 authority or 
+may modify their policy to provide another reasonable time period not to exceed 90 days, in 
+accordance with federal regulations (42 C.F.R. § 431.221(d)), which does not require a 
+submission of a SPA.  As discussed in the December 2020 SHO, the state must provide 
+individuals the amount of time the individual was informed they have to request a fair hearing 
+following an adverse action after the PHE ends, even if the state stops providing the additional 
+time allowed during the PHE going forward. 
+For additional information regarding notice requirements for the end of flexibilities and 
+authorities granted to states during the PHE, see the December 2020 SHO. 
+B. Medicaid Fair Hearings and CHIP Reviews  
+Typically, a state Medicaid or CHIP agency must provide an individual the opportunity to have a 
+Medicaid fair hearing or a CHIP review when an individual believes the state has taken an action 
+erroneously, including suspensions, terminations, or reductions of eligibility or when the state 
+has denied the individual’s claim for eligibility (42 C.F.R. §§ 431.220(a) and 457.1120). One 
+exception is that states are not required to provide a Medicaid fair hearing or a CHIP review 
+when the action is due to a change in law or policy, such as the end of eligibility that was 
+authorized only during the PHE (e.g., the extension of eligibility to non-residents temporarily 
+residing in the state due to the PHE) (see 42 C.F.R. §§ 431.220(b) and 457.1130(c)). However, a 
+beneficiary always has the right to request a Medicaid fair hearing or a CHIP review to contest 
+that the eligibility determination was wrong on another basis under existing authority.  In 
+Medicaid, beneficiaries also have the right to continue to receive benefits pending the fair 
+hearing decision when the individual requests the fair hearing prior to the date of the action in 
+accordance with 42 C.F.R. § 431.230. 
+During the PHE, a number of states were granted a regulatory concurrence that allowed a state to 
+take more than 90 days to take final administrative action on Medicaid fair hearing requests due 
+to an emergency beyond the state’s control (42 C.F.R. § 431.244(f)(4)(i)(B)).  All states, 
+including those granted this regulatory concurrence, are expected to begin processing fair 
+
+
+
+--- PAGE 23 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 23 – State Health Official 
+hearing requests timely when the continuous enrollment condition ends (see 42 C.F.R. § 
+431.244(f)(1)-(3)).  However, we understand that some states are concerned that the volume of 
+fair hearings may increase dramatically and exceed the state’s capacity to adjudicate all fair 
+hearing requests within the regulatory time limits. 
+For states that encounter such challenges in their fair hearing process, CMS will consider 
+providing authority under section 1902(e)(14) of the Act to provide the state with additional time 
+to take final action provided that certain beneficiary protections are provided.  For more 
+information on the section 1902(e)(14) waiver opportunity, see section V.A. below.  The CHIP 
+review regulations require states to complete the reviews of eligibility and enrollment matters in 
+a “reasonable amount of time” (42 C.F.R. § 457.1160(a)).  CMS interpreted that regulation to 
+contain sufficient flexibility for states to take additional time to complete CHIP reviews during 
+the PHE, and thus did not find it necessary to grant states explicit authority to do so.  Following 
+the end of the PHE, states will need to continue completing reviews within a reasonable 
+timeframe as described at 42 CFR § 457.1160(a). 
+As states restore routine eligibility and enrollment practices, including eligibility terminations, 
+states may see a return to a normal or higher than normal volume of fair hearing requests.  As 
+states develop their unwinding operational plans, they should consider the volume of requests 
+their fair hearing programs can process in a timely fashion and take the anticipated volume of 
+requests and the state’s operational capacity into account as they determine how to distribute 
+pending actions across the unwinding period.  Just as some states may have been unable to hold 
+in-person fair hearings and reviews during the PHE or had reduced the number of in-person 
+hearings, states may modify certain fair hearing and review processes without the need for 
+additional state plan authority to avoid and reduce backlogs of fair hearings.  States may hold fair 
+hearings and reviews by telephone or video, as long as the state is providing access to the fair 
+hearing process in accordance with 42 C.F.R. Part 431 subpart E (including providing access to 
+individuals with disabilities and those who have LEP) and 42 C.F.R. § 457.1140(d). States may 
+also explore establishing or expanding an informal resolution process to resolve fair hearing 
+requests prior to holding a fair hearing, an option which is available to states without additional 
+state plan authority.  
+CMS plans to post on Medicaid.gov a resource document with additional strategies that states 
+may want to consider to help manage the anticipated increase in fair hearing requests and is 
+available to provide technical assistance to states related to fair hearing processes generally, and 
+specifically regarding timeframes after the PHE eventually ends. 
+V. 
+Strategies to Promote Continuity of Coverage and Mitigate Churn 
+A. Temporary 1902(e)(14)(A) Waiver Unwinding Strategies to Promote Continuity of 
+Coverage and Mitigate Churn in Medicaid 
+As states prepare to restore routine operations, CMS has worked closely with state agencies and 
+other stakeholders to identify ways to efficiently enroll eligible individuals, and reduce churn.  In 
+order to support states facing significant operational issues and streamline the renewal or fair 
+hearing processes to protect otherwise eligible beneficiaries at risk of inappropriately losing 
+
+
+
+--- PAGE 24 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+Page 24 – State Health Official 
+coverage during the unwinding period, CMS will allow for the limited use of section 
+1902(e)(14)(A) authority. 
+Section 1902(e)(14)(A) of the Act, added by section 2002 of the Affordable Care Act, allows for 
+waivers “as are necessary to ensure that states establish income and eligibility determination 
+systems that protect beneficiaries.”  Since 2013, CMS has granted section 1902(e)(14)(A) waiver 
+authority to protect beneficiaries’ access to coverage by providing administrative relief to many 
+states facing operational issues (e.g., backlogs and application processing delays), navigating 
+serious challenges with eligibility systems, and facilitating the enrollment of newly eligible 
+individuals. 
+To protect beneficiaries in addressing the challenges states may face as they transition to routine 
+operations during the unwinding period, CMS has determined that states may seek approval to 
+use this authority in a time-limited manner to implement the five specific targeted strategies 
+outlined below.  These strategies can efficiently facilitate the renewal process by limiting the 
+need for requests for additional information from beneficiaries, thus leading to fewer procedural 
+terminations and reducing state administrative burdens during this transition period.  The 
+strategy to address states’ significant operational challenges in the fair hearing process can 
+protect the due process rights and maintain coverage of individuals pending the outcome of a fair 
+hearing, reducing loss of coverage and state administrative burden during this transition period.  
+1. Renewal for Individuals Based on SNAP Eligibility: Consistent with guidance for 
+implementing Strategy 3 in SHO letter #13-00316 and revised parameters in SHO letter 
+#15-00117, states may use this authority to renew Medicaid eligibility for SNAP 
+participants without conducting a separate MAGI-based income redetermination.  An 
+approved section 1902(e)(14)(A) waiver request would allow states to rely on SNAP data 
+for renewals for individuals under 65 years of age, despite the differences in household 
+composition and income-counting rules, when necessary to protect beneficiaries in the 
+face of systems limitations.  Please note that a state can permanently leverage SNAP 
+information for renewal, by pursuing the facilitated enrollment strategies described in 
+Appendix B. 
+2. Ex Parte Renewal for Individuals with No Income and No Data Returned: CMS may 
+grant section 1902(e)(14)(A) authority to temporarily permit renewals, on an ex parte 
+basis, for households whose attestation of zero-dollar income was verified within the last 
+twelve months, at the initial application or the previous renewal, when no information is 
+received/returned from a financial data source at renewal. In order to complete the ex 
+parte renewal, the state must take appropriate steps to review the non-financial 
+components of eligibility consistent with the requirements at 42 C.F.R. §§ 435.916 and 
+435.956. CMS reminds states that the renewal notice also must instruct beneficiaries to 
+inform the agency if any of the information used to make the eligibility determination is 
+inaccurate. 
+16 State Health Official letter #13-003, “Facilitating Medicaid and CHIP Enrollment and Renewals in 2014,” May 17, 2013. 
+Available at: https://www medicaid.gov/federal-policy-guidance/downloads/sho-13-003.pdf. 
+17 State Health Official letter #15-001, “Policy Options for Using SNAP to Determine Medicaid Eligibility and an Update on 
+Targeted Enrollment Strategies,” August 31, 2015. Available at: https://www.medicaid.gov/federal-policy-
+guidance/downloads/sho-15-001.pdf. 
+
+
+
+--- PAGE 25 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+Page 25 – State Health Official 
+3. Facilitating Renewal for Individuals with No Asset Verification System (AVS) Data 
+Returned within a Reasonable Timeframe: Under this approach, CMS may grant states 
+authority under section 1902(e)(14)(A) of the Act to permit renewals of beneficiaries for 
+whom no information is returned by the AVS within a reasonable timeframe. 
+In accordance with regulations at 42 C.F.R. § 435.916, states must attempt to make an ex 
+parte determination at renewal and check income data sources at renewal, consistent with 
+its verification plan.  Additionally, section 1940 of the Act requires that states verify 
+assets using the state’s AVS for individuals excepted from MAGI-based methodologies 
+and subject to an asset test.  While states are required to comply with these requirements, 
+the state may establish a reasonable time frame for AVS information to be returned. 
+Currently, if the AVS does not return information within the timeframe established by the 
+state, the state must attempt to redetermine eligibility in accordance with its verification 
+process, which may include requesting additional information and documentation or 
+obtaining a new attestation of assets from the individual by sending the beneficiary a 
+renewal form requesting the additional information.  Time-limited authority granted 
+under this approach would allow a state to assume there has been no change in resources 
+that are verified through the AVS when no information is returned within a reasonable 
+timeframe, and therefore complete the renewal process without any further verification of 
+the assets that are verified through the AVS. 
+4. Partnering with Managed Care Plans to Update Beneficiary Contact Information: States 
+generally are required to contact the beneficiary to confirm the accuracy of updated 
+contact information received from a health plan and to provide a reasonable period for the 
+beneficiary to dispute the information provided by the plan, prior to updating the 
+beneficiary record (see “Overview of Strategic Approach to Engaging Managed Care 
+Plans to Maximize Continuity of Coverage as States Resume Normal Eligibility and 
+Enrollment Operations - February 2022 Update”). However, CMS recognizes that some 
+states may have system or operational limitation that prevent the state for doing so. CMS 
+may grant section 1902(e)(14)(A) authority to temporarily permit such states to accept 
+updated enrollee contact information from managed care plans without additional 
+confirmation with the individual where doing so would serve to protect beneficiaries in 
+the aggregate.  Under this temporary waiver authority, states may treat updated contact 
+information received from the plan as reliable and update the beneficiary record with the 
+new contact information without first sending a notice to the address on file with the 
+state. 
+5. Extended Timeframe to Take Final Administrative Action on Fair Hearing Requests: 
+CMS may grant states authority under section 1902(e)(14)(A) to temporarily extend the 
+timeframe to take final administrative action on fair hearing requests. In order to use this 
+option in a manner that protects beneficiaries, states would be required to provide 
+benefits pending the outcome of a fair hearing decision (including reinstating benefits 
+pursuant to 42 C.F.R. § 431.231), regardless of whether or not a beneficiary has 
+requested a fair hearing prior to the date of the adverse action, and to forgo recoupment 
+from beneficiaries if the fair hearing ultimately upheld the agency’s determination. 
+
+
+
+--- PAGE 26 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+Page 26 – State Health Official 
+While we have outlined five targeted strategies requiring approval under section 1902(e)(14)(A) 
+of the Act, CMS may consider other 1902(e)(14)(A) waiver renewal strategy requests that impact 
+the state’s ability to process renewals, including flexibilities that address streamlining application 
+processing in order to maximize state resources or enrollment strategies for other populations to 
+promote continuity of coverage.  
+However, CMS will not approve 1902(e)(14)(A) waiver requests unrelated to the state’s 
+unwinding period or requests that fail to protect beneficiaries.  For example, states may not use 
+the authority to extend beneficiary eligibility periods beyond the unwinding period.  In addition, 
+CMS will not approve requests to shorten eligibility periods or bypass renewal or fair hearing 
+requirements that minimize beneficiary burden and ensure eligible individuals remain enrolled 
+(e.g., eliminating the requirement to complete ex parte renewals), as such requests would not 
+serve to protect beneficiaries, as required by section 1902(e)(14)(A) of the Act. 
+To request authority to implement one or more of these strategies, states can request such waiver 
+authority under section 1902(e)(14)(A) of the Act on a time-limited basis during the unwinding 
+period.  CMS is available to provide technical assistance and can provide sample language the 
+state can use to craft a letter requesting the waiver authority. States interested in one or more of 
+the temporary waiver authorities described above should contact their CMS State Lead. 
+B. State Plan and Operational Strategies to Promote Continuity of Coverage and Mitigate 
+Churn 
+As states develop their plans to complete pending eligibility and enrollment actions, they should 
+also consider strategies that will help eligible individuals maintain coverage, prevent churning on 
+and off of coverage, and mitigate procedural denials based on the absence of a returned renewal 
+form or other information needed by the state to complete a redetermination of eligibility.  These 
+strategies may include: 
+• State plan options, such as: 
+• continuous eligibility for children 
+• 12 months continuous postpartum coverage (beginning April 2022) 
+• express lane eligibility for children 
+• Options to streamline renewals, such as: 
+• expanding the number and type of data sources used to attempt an ex parte 
+renewal 
+• aligning MAGI and non-MAGI renewal policies 
+• Improving communications and outreach to beneficiaries, such as by: 
+• updating contact information 
+• partnering with health plans 
+• establishing processes to address returned beneficiary mail 
+o using multiple modalities to reach individuals (e.g., mail, email, text)18 
+18 CMS is working with other federal partners to examine potential statutory constraints around the use of text messaging.  We 
+will pass along additional information as it becomes available. 
+
+
+
+--- PAGE 27 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Page 27 – State Health Official 
+As part of their unwinding operational planning, states should assess their readiness to complete 
+eligibility and enrollment actions and adopt policy options and operational strategies that will 
+address situations in which eligible beneficiaries may be at risk of losing coverage and create 
+efficiencies for states to address the volume of work during the unwinding period.  States should 
+ensure that their eligibility and enrollment workforce is aware of any new strategies that are 
+adopted through memorandums, updated internal procedures and policy manuals, formal 
+trainings, or other methods of communication.  States may refer to Appendix B and the 
+November 2021 tool, “Strategies States and U.S. Territories Can Adopt to Maintain Coverage of 
+Eligible Individuals as they Return to Normal Operations," for examples of strategies that 
+promote continuity of coverage and mitigate churn and additional guidance on how states may 
+implement them.19 
+VI. 
+Facilitating Transitions between Medicaid, CHIP, BHP, and the Marketplace 
+In completing renewals once the continuous enrollment condition expires, states are likely to 
+identify many beneficiaries who are no longer eligible for Medicaid, CHIP, or coverage through 
+a BHP.  Many of these individuals will likely be eligible for enrollment in a QHP through the 
+Marketplace with significant financial assistance. Facilitating smooth transitions to the 
+Marketplace for these beneficiaries will be critical to ensuring that such eligible individuals do 
+not become uninsured. 
+Regardless of whether a state has an SBM that operates its own eligibility and enrollment 
+platform or a Marketplace that relies on the federal eligibility and enrollment platform to 
+complete eligibility determinations for coverage in a QHP, state Medicaid, CHIP, and BHP 
+agencies are required to have an agreement with the relevant Marketplace and, consistent with 
+the requirements at 42 C.F.R. §§ 435.1200, 457.350, and 600.330, have a coordinated process to 
+send electronic accounts and other information to the Marketplace, to receive electronic accounts 
+and other information from the Marketplace, and to ensure prompt determinations of eligibility 
+and enrollment in the appropriate program.  As noted above, for individuals determined by the 
+agency as not eligible for Medicaid, CHIP, or BHP following a renewal or redetermination of 
+eligibility, the agency must promptly assess the individual’s potential eligibility for Marketplace 
+coverage and timely transfer the individual’s electronic account to the Marketplace. The account 
+must include all of the information collected and generated by the state regarding the individual’s 
+Medicaid, CHIP, and/or BHP eligibility. 
+Medicaid and CHIP agencies may have insufficient information to assess an individual as 
+potentially eligible for Advanced Premium Tax Credits or Cost-Sharing Reductions through the 
+Marketplace, as such assessment requires application of different financial methodologies, 
+evaluation of access to or enrollment in employer-sponsored or other forms of coverage, and, in 
+some cases, non-citizen eligibility criteria. States are not required to conduct individual 
+assessments but instead may implement a streamlined approach that will reduce the 
+administrative burden for states and ensure timely transfer of individuals potentially eligible for 
+QHP enrollment. States can treat anyone who is determined ineligible for Medicaid or CHIP as 
+potentially eligible for QHP enrollment, other than individuals whose coverage was denied or 
+19 “Strategies States and the U.S. Territories Can Adopt to Maintain Coverage of Eligible Individuals as They Return to Normal 
+Operations,” (November 2021). Available at: https://www medicaid.gov/state-resource-center/downloads/strategies-for-covrg-of-
+indiv.pdf. 
+
+
+
+--- PAGE 28 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+Page 28 – State Health Official 
+terminated for a procedural reason (e.g., failing to complete the renewal process) and individuals 
+who do not attest to U.S. citizenship or a lawfully present non-citizen status.  BHP agencies 
+should continue to follow the requirements related to coordination with other insurance 
+affordability programs under § 600.330. 
+States are also encouraged to implement additional approaches that may help with  transitions to 
+and enrollment in a QHP.  While most appropriate for states served by a Marketplace that relies 
+on the federal eligibility and enrollment platform or those in which the state 
+Medicaid/CHIP/BHP and Marketplace systems are not integrated, the following strategies may 
+be helpful for all states to consider.  States can: 
+• Improve eligibility determination notice language for individuals found ineligible for 
+Medicaid/CHIP/BHP so that they are aware that the Medicaid/CHIP/BHP agency will be 
+transferring their application to the Marketplace and that the Marketplace will be sending 
+them a notice with information on applying for coverage and financial assistance through 
+the Marketplace; 
+• Transmit all available contact information provided on the application or contained in the 
+beneficiary record for individuals on the application, including email addresses, phone 
+numbers, and beneficiary communication preferences, to the Marketplace. The Medicaid 
+Enterprise State Systems Officer assigned to each state will follow up with states’ 
+technical teams to discuss any missing contact information from accounts that are 
+transferred to the Marketplace and will offer technical assistance as necessary to ensure 
+that accounts are transferred with complete contact information as quickly as feasible; 
+• 
+Transmit all eligibility information the state has on an individual in the account transfer 
+to the Marketplace. Consider including notice language to beneficiaries that includes 
+contact information for Navigator and assister programs which can help them with the 
+transition to the Marketplace; and 
+• 
+Work with community-based organizations that comprise the Administration for 
+Community Living (ACL)’s aging and disability networks, including Area Agencies on 
+Aging (AAAs), Centers for Independent Living (CILs), and Protection and Advocacy 
+organizations (P&As), as well as beneficiary advocates to ensure consumers get 
+information and assistance they need to navigate this transition. 
+For more information, states may refer to the July 2016 CIB, “Coordination of Eligibility and 
+Enrollment Between Medicaid, CHIP and the Federally Facilitated Marketplace (FFM or 
+“Marketplace”),” which is available to assist states in meeting their obligations to coordinate 
+eligibility and enrollment among insurance affordability programs and the account transfer 
+process.20 
+VII. 
+Monitoring State Progress and Corrective Action 
+CMS will monitor states’ progress in meeting the timelines and completing required eligibility 
+and enrollment actions described in this letter.  Under the authority in sections 1902(a)(6) and 
+1902(a)(75) of the Act and 42 C.F.R. § 431.16, all states will be expected to submit data 
+20 CMCS Informational Bulletin, “Coordination of Eligibility and Enrollment Between Medicaid, CHIP and the Federally 
+Facilitated Marketplace (FFM or “Marketplace”),” (July 2016). Available at: https://www medicaid.gov/federal-policy-
+guidance/downloads/cib072516.pdf. 
+
+
+
+--- PAGE 29 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+  
+Page 29 – State Health Official 
+demonstrating progress in completing pending applications and initiating the state’s total 
+caseload of renewals, along with the disposition of renewals.  States will be required to submit 
+baseline data to CMS and report additional data on a monthly basis, for a minimum of 14 
+months.  Where reported data indicate that states are not meeting timelines described in this 
+letter, or in circumstances where data demonstrate other potential compliance issues, including 
+potential erroneous disenrollments of eligible beneficiaries, states may be expected to report 
+additional data and/or report information more frequently.  CMS will identify the data elements 
+to be reported and provide a reporting template for states to use.  
+In addition, states that do not resolve their pending eligibility and enrollment actions within the 
+timelines specified may be required to separately submit a corrective action plan to CMS 
+outlining strategies and a timeline to come into compliance with federal requirements. 
+VIII. PERM or MEQC Programs   
+CMS will not consider eligibility and enrollment actions that are delayed due to the PHE as 
+untimely for purposes of the PERM or MEQC programs if such actions are initiated within the 
+timelines detailed in this letter and completed before the end of the 14th month once the state 
+begins its unwinding period.  States with an approved section 1902(e)(14)(A) waiver, that are 
+compliant with the parameters outlined in Section V.A. of this SHO letter, shall be not be 
+considered in violation of Medicaid statute and regulations for purposes of PERM and MEQC 
+reviews. 
+IX. 
+Closing  
+CMS shares states’ goal of ensuring that eligible individuals remain enrolled in Medicaid, CHIP, 
+and/or BHP coverage and that individuals who are no longer eligible are able to transition 
+seamlessly to other coverage options for which they are eligible, including Marketplace 
+coverage.  CMS also remains interested in hearing state and stakeholder feedback and concerns 
+as states plan for the eventual end of the PHE and the continuous enrollment condition, and the 
+return to routine operations.  We are committed to providing states with updated guidance and 
+resources, as appropriate, as well as ongoing technical assistance necessary for states to complete 
+eligibility and enrollment work as described in this letter.  Please submit any additional requests 
+for technical assistance to your CMS State Lead. 
+Sincerely, 
+Daniel Tsai 
+Deputy Administrator and Director 
+Cc: 
+National Association of Medicaid Directors 
+National Academy for State Health Policy 
+
+
+
+--- PAGE 30 ---
+ 
+ 
+ 
+  
+ 
+  
+  
+  
+  
+ 
+ 
+Page 30 – State Health Official 
+National Governors Association  
+American Public Human Services Association 
+Association of State and Territorial Health Officials 
+Council of State Governments 
+National Conference of State Legislatures 
+Academy Health 
+National Association of State Alcohol and Drug Abuse Directors 
+
+
+
+--- PAGE 31 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Appendix A: 12-Month Unwinding Timeline 
+Note: The options in this graphic are illustrative of when a state may begin its 12-month unwinding period when the PHE eventually ends and 
+are based on a state with a 75-day renewal processing timeline for a cohort of individuals.  There will be variation depending on individual 
+state renewal processing timelines. 
+The contents of this document do not have the force and effect of law and are not meant to bind the public in any way, unless specifically incorporated into a contract. This document is 
+intended only to provide clarity to the public regarding existing requirements under the law. 
+
+
+
+--- PAGE 32 ---
+ 
+ 
+Page 32 – State Health Official 
+
+
+
+--- PAGE 33 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+   
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+Page 33 – State Health Official 
+Appendix B: Strategies to Promote Continuity of Coverage and Mitigate Churn 
+States will need to consider strategies that ensure eligible individuals remain enrolled and allow 
+states to efficiently complete outstanding work. As states develop their unwinding operational 
+plans, they should identify where there is a risk that eligible individuals may lose coverage in 
+their current and planned processes and adopt strategies that mitigate particular risks in the state. 
+The following are examples of strategies states may adopt to promote continuous coverage and 
+reestablish communications with beneficiaries. 
+A. Promote Continuous Coverage for Eligible Individuals 
+Provide Continuous Eligibility to Maintain Coverage for Eligible Individuals 
+Under continuous eligibility, beneficiaries retain eligibility for a period, up to 12 months, elected 
+by the state.  A beneficiary for whom continuous eligibility applies generally retains eligibility, 
+regardless of changes in circumstances, for the duration of the continuous eligibility period 
+elected by the state.  Adopting continuous eligibility for some or all populations can ease the 
+burden on states during the unwinding period by relieving the state of any need to conduct a 
+redetermination based on changes in circumstances after a beneficiary has been renewed for 
+coverage during the unwinding period, until the next regularly-scheduled renewal.  This would 
+ensure that the state would only need to take action on the beneficiary’s case once during the 
+unwinding period. 
+Under 42 C.F.R. §§ 435.926 and 457.342, a state may provide up to 12 months of continuous 
+eligibility in Medicaid and CHIP for children who are under age 19 or under a younger age 
+specified by the state.  This option provides the state with the authority generally to not act on 
+changes in circumstances for children during the continuous eligibility period.21 States 
+implementing continuous eligibility in Medicaid must apply the policy to all children under the 
+age specified by the state who are eligible under all mandatory and optional categorically needy 
+groups under Section 1902(a)(10)(A) of the Act.  
+Action: To elect this option, states must submit a SPA. 
+States can adopt income and resource disregards under the authority of section 1902(r)(2) of the 
+Act to provide continuous eligibility for most adult beneficiaries enrolled on the basis of being 
+age 65 or older, living with a disability or blindness, or need for long-term care services and 
+supports.  States that would like to provide continuous eligibility for MAGI-based adult 
+beneficiaries may consider submitting a section 1115 demonstration waiver application.  
+Action: States interested in pursuing a section 1902(r)(2) disregard for individuals eligible on a 
+non-MAGI basis must submit a SPA. States interested in pursuing a section 1115 demonstration 
+to provide continuous eligibility should contact their state lead or section 1115 demonstration 
+project officer. 
+21 There are several exceptions specified in the regulations to this general rule, in which states are expected to act on changes in a 
+child’s circumstances, including children turning age 19, changes in state residency, death, or voluntary termination, and, for 
+children enrolled in CHIP, becoming eligible for Medicaid. 
+
+
+
+--- PAGE 34 ---
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Page 34 – State Health Official 
+Extend Postpartum Coverage in Medicaid and CHIP 
+Sections 9812 and 9822 of the ARP give states a new option to provide 12-months of extended 
+postpartum coverage to individuals who were enrolled in Medicaid or CHIP while pregnant.  
+Individuals eligible for extended postpartum coverage are entitled to continuous eligibility 
+despite changes in circumstances that would otherwise affect eligibility during the extended 
+postpartum period.  States may adopt this option beginning April 1, 2022, and, as noted earlier in 
+this letter, states may wish to deprioritize work on actions for pregnant and postpartum 
+individuals during the 12-month unwinding period until the extended postpartum coverage 
+option becomes effective and the state has taken steps to adopt it.  States may refer to SHO #21-
+007 “Improving Maternal Health and Extending Postpartum Coverage in Medicaid and CHIP,” 
+for more information on implementing this option.22 
+Action: To elect this option, states must submit a Medicaid and CHIP SPA. 
+Maximize Success of Ex Parte Renewals Through Use of Expanded Data Sources 
+States must attempt to renew eligibility based on available information (ex parte renewal) for all 
+beneficiaries as required at 42 C.F.R. § 435.916(a)(2) and (b).  States may expand the number 
+and type of data sources used during the ex parte process as well as create a data source 
+hierarchy to prioritize sources that provide the most recent and reliable data.  States can also 
+adopt policies during the unwinding period (or longer) to maximize the use of the ex parte 
+renewal processes and increase the rate at which beneficiaries’ eligibility may be renewed using 
+information available to the state and without requiring a renewal form or other documentation 
+from beneficiaries. For example, states may rely on information in the case record which the 
+state determines is highly unlikely to change, especially for particular populations (such as 
+income for children eligible for coverage under section 1902(e)(3) of the Act (“Katie Beckett 
+group”) without regard to their parents’ income, beneficiaries dually eligible for Medicare and 
+Medicaid, or beneficiaries over a specified age), as reliable information even if the state requires 
+documentation of income not verified electronically from other beneficiaries.  States pursuing 
+this option may need to update their verification plan.   
+Action: No SPA is needed, but updated verification plans for MAGI-based determinations must 
+be submitted to CMS.    
+Adopt MAGI Renewal Policies for Non-MAGI Renewals to Minimize Beneficiary Burden 
+States that currently renew eligibility more frequently than once every 12 months for some or all 
+of their non-MAGI beneficiaries may elect to renew eligibility for some or all of their non-
+MAGI populations only once every 12 months.  Extending the renewal timeframe may also 
+support other state priorities, such as increasing access to home and community-based services, 
+by reducing the frequency in which beneficiaries must respond to state requests.   
+Action: To elect this option, states must submit a SPA. 
+Under 42 C.F.R. § 435.916(b), states may also adopt renewal procedures required for MAGI 
+beneficiaries under § 435.916(a)(3) for non-MAGI beneficiaries. Such procedures include using 
+22 CMS State Health Official Letter #21-007, “Improving Maternal Health and Extending Postpartum Coverage in Medicaid and 
+the Children’s Health Insurance Program (CHIP),” December 7, 2021. Available at: https://www medicaid.gov/federal-policy-
+guidance/downloads/sho21007.pdf. 
+
+
+
+--- PAGE 35 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+Page 35 – State Health Official 
+a pre-populated renewal form for beneficiaries whose renewal cannot be completed using only 
+information available to the state; providing a minimum of 30 days for beneficiaries to respond; 
+and providing a reconsideration period for beneficiaries whose eligibility is terminated at 
+renewal for failure to return their renewal form or other required information, but who 
+subsequently do so after their eligibility is terminated, without requiring the submission of a new 
+full application.   
+Action: States may need to submit a SPA for CMS approval to implement these options or 
+update internal procedures. 
+Use Information from Other Programs like SNAP and Temporary Assistance for Needy Families 
+(TANF) to Renew Eligibility 
+States have several options to leverage information from programs like SNAP or TANF to verify 
+eligibility and facilitate renewals in a manner that minimizes beneficiary burden.  Some of these 
+options will require states to submit a SPA. As noted in Section V.A. of this SHO letter, states 
+may also use a temporary 1902(e)(14)(A) waiver.  Under the Express Lane Eligibility authority 
+at sections 1902(e)(13) and 2107(e)(1) of the Act, states are permitted to rely on findings from an 
+entity designated by the state to determine whether a child satisfies one or more factors of 
+eligibility for Medicaid or CHIP, including income.  States may also adopt the facilitated 
+enrollment SPA option for adults and children.  This option allows states to rely on income 
+determinations made by another program if the state is certain the individual would be income-
+eligible using MAGI-based methods.  Both the Express Lane Eligibility and facilitated 
+enrollment SPA options may be used at application, renewal, or both.  States interested in these 
+options may refer to the SHO #10-003, “Express Lane Eligibility”23 and the SHO #15-001 
+“Policy Options for Using SNAP to Determine Medicaid Eligibility and an Update on Targeted 
+Enrollment Strategies” for additional guidance.24 
+States may also use verified information from other state and federal programs to verify the 
+financial eligibility of an individual.  For example, SNAP wage or other income data captured in 
+an integrated eligibility and enrollment system may be used to verify continued eligibility at 
+renewal or a redetermination based on a change in circumstances. 
+Action: States electing to use other program information as a reliable data source should update 
+their verification plans.  Changes made to MAGI verifications plans must be submitted to CMS. 
+Modify or Suspend Periodic Data Matching  
+States can improve coverage retention and reduce churn between regular renewals by suspending 
+periodic data matching or modifying the approach by reducing the frequency with which 
+periodic data matches are conducted.  This strategy will avoid or reduce the administrative 
+burden associated with redeterminations between regular renewals during the 12-month 
+unwinding period, including the need to process new applications submitted by beneficiaries 
+terminated because they did not respond to a mid-year request for additional information.   
+23 CMS State Health Official Letter # 10-003, “Express Lane Eligibility Option,” February 4, 2020. Available at 
+https://www.medicaid.gov/sites/default/files/Federal-Policy-Guidance/downloads/SHO10003.PDF. 
+24 CMS State Health Official Letter # 15-001, “Policy Options for Using SNAP to Determine Medicaid Eligibility and an Update 
+on Targeted Enrollment Strategies,” August 31, 2015. Available at https://www medicaid.gov/federal-policy-
+guidance/downloads/sho-15-001.pdf. 
+
+
+
+--- PAGE 36 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+                                                          
+ 
+ 
+ 
+ 
+   
+Page 36 – State Health Official 
+Action: States need to update their verification plans in order to suspend or reduce the frequency 
+of periodic data matches.  Changes made to MAGI verifications plans must be submitted to 
+CMS. 
+Extend Beneficiary Response Times 
+States are strongly encouraged to review their policies regarding the amount of time beneficiaries 
+are given to provide requested information and to provide additional time as appropriate.  
+Extending the timeframe for beneficiaries to respond to requests for information will minimize 
+the risk that beneficiaries lose coverage for procedural reasons.  As discussed in the “Medicaid 
+and CHIP Renewal Requirements” CIB, we believe it would be reasonable for states to allow 
+beneficiaries 30 days to respond and provide any necessary information needed to verify 
+eligibility.25 
+Action: Update internal state procedures; states do not need to submit a SPA for CMS approval 
+to implement this option. 
+Offer a Reconsideration Period for Coverage Losses following Changes in Circumstances 
+States may offer a minimum 90-day reconsideration period, similar to the reconsideration period 
+provided for MAGI beneficiaries at renewal under 42 C.F.R. §§ 435.916(a)(3)(iii) and 457.343, 
+for beneficiaries whose eligibility has been terminated for failure to respond to a request for 
+information needed to redetermine eligibility following a change in circumstances, if the 
+individual subsequently returns the needed information.  Offering a reconsideration period 
+allows states to reconsider an individual’s eligibility without requiring the individual to fill out a 
+new application.  The required information returned within the reconsideration period serves as 
+an application.  If adopted, a determination or denial of eligibility based on the returned 
+information must be made consistent with timeliness standards specified in § 435.912 or § 
+457.340(d), as applicable.  In Medicaid, retroactive eligibility would be available, consistent with 
+§ 435.915(a), to provide coverage for up to three months prior to the date the information was 
+returned.  States would also need to ensure they collect any additional information from the 
+individual that is not available to the state but required at application, such as a signature. 
+Action: Update internal state procedures; states do not need to submit a SPA for CMS approval 
+to implement this option. 
+B. Reestablish Communication and Conducting Outreach with Beneficiaries  
+CMS recognizes that states may have had minimal or no contact with many beneficiaries for an 
+extended period, as many have not experienced a periodic renewal of eligibility in several years 
+due to the continuous enrollment condition. There is an inherent risk that eligible individuals will 
+lose coverage after the continuous enrollment condition expires because they have a new address 
+or other contact information, which has not been updated with the state.  Further, beneficiaries 
+may not understand that renewals of eligibility are resuming, or know when their renewal may 
+occur during the 12-month unwinding period.  States will need to employ a variety of strategies 
+25 CMCS Informational Bulletin, “Medicaid and Children’s Health Insurance Program (CHIP) Renewal Requirements,” 
+(December 2020). Available at: https://www medicaid.gov/federal-policy-guidance/downloads/cib120420.pdf. 
+
+
+
+--- PAGE 37 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+Page 37 – State Health Official 
+to reestablish communication with beneficiaries and engage in outreach efforts to ensure eligible 
+individuals maintain coverage. 
+Update Beneficiary Contact Information 
+All states should take steps during the PHE to update beneficiary contact information to prevent 
+coverage losses for eligible individuals and remind beneficiaries that they may report updated 
+information online, by phone, by mail, or in person.  Maintaining complete and accurate contact 
+information is critical to ensuring beneficiaries get renewal forms and program information 
+timely in order to promote retention of coverage or facilitate seamless coverage transitions to 
+BHP or the Marketplace, as appropriate.  States can begin sending reminders to beneficiaries to 
+update their contact information and identify individuals for whom the state may have outdated 
+information.     
+States are also encouraged to work with MCOs to establish a process to engage in outreach to 
+beneficiaries to update their contact information and use information made available to the 
+Medicaid agency by MCOs and/or establish processes to receive updated information on an 
+ongoing basis from MCOs.  When updated address information is received by the state from 
+managed care plans, states may update the beneficiary record with the new address, provided that 
+it is an in-state address and provided that the state sends a notice to the address on file with the 
+state and provides the individual with a reasonable period of time to verify the accuracy of the 
+new contact information. States are also encouraged to contact the beneficiary through other 
+modalities, such as via telephone, electronic notice, email, or text message, and to send 
+information to the new address, where feasible. If the beneficiary does not respond to the 
+mailing to verify the accuracy of the contact information provided by the managed care plan or if 
+the beneficiary responds to the outreach through the other modalities and confirms the new 
+address on file with the MCO, the state may update the beneficiary record with the new contact 
+information from the managed care plan.  Critically, states should ensure that managed care 
+plans only provide updated contact information received directly from or verified by the 
+beneficiary, and not from a third party or other source.  Information provided from such sources 
+is not considered reliable.  For strategies centered on working with MCOs, states may refer to the 
+“Overview of Strategic approach to Engaging Managed Care Plans to Maximize Continuity of 
+Coverage as States Resume Normal Eligibility and Enrollment Operations” resource available on 
+Medicaid.gov.26  As noted in Section V.A. of this SHO letter, states may also request temporary 
+authority under section 1902(e)(14)(A) of the Act if systems or operational limitations prevent 
+them from sending the beneficiary a notice to the address on file prior to updating the 
+beneficiary’s record with new contact information provided by an MCO. 
+States are strongly encouraged to establish linkages with the U.S. Postal Service (USPS) 
+National Change of Address (NCOA) database as they prepare to return to normal operations.  
+The NCOA is a set of data that includes the permanent change-of-address records maintained by 
+the USPS.  Every time an individual or family moves and submits a change-of-address form to 
+their local post office, their new address is recorded in the NCOA database. States can establish 
+agreements with USPS to gain access to the NCOA database in order to utilize these address 
+26 “Overview of Strategic approach to Engaging Managed Care Plans to Maximize Continuity of Coverage as States Resume 
+Normal Eligibility and Enrollment Operations,” (December 2021). Available at 
+https://www.medicaid.gov/sites/default/files/2021-12/health-plan-strategy-12062021.pdf. 
+
+
+
+--- PAGE 38 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+Page 38 – State Health Official 
+changes.  States are also encouraged to leverage address information received from USPS when 
+mail is returned to the state with an in-state forwarding address.27  Under USPS forwarding mail, 
+an individual can elect to have their mail forwarded to their new address.  To mitigate against 
+errors, USPS implements controls, which include charging a fee by credit card to validate online 
+change of address (COA) requests, requiring individuals submitting a hardcopy COA request to 
+verify that they understand an unauthorized COA order is a federal offense, and sending two 
+confirmation letters (to the new and old address) to authenticate the order. 
+Given the increased likelihood of individuals moving during the PHE, leveraging the NCOA and 
+USPS in-state forwarding address information provides states with a streamlined tool to improve 
+address accuracy and locate beneficiaries who would otherwise be at risk for a procedural 
+termination during the unwinding period.  State agencies may treat information obtained from 
+the NCOA and USPS returned mail with an in-state forwarding address as reliable and update 
+the beneficiary record with the new contact information, provided that the state conducts the 
+following outreach. 
+When updated address information is received by the state from NCOA or from USPS returned 
+mail with an in-state forwarding address, states must send a notice to the address on file with the 
+state and provide the individual with a reasonable period of time to verify the accuracy of the 
+new contact information. States are also encouraged to contact the beneficiary through other 
+modalities, such as via telephone, electronic notice, email, or text message, and to send 
+information to the new address, where feasible.  If the beneficiary does not respond to verify the 
+accuracy of the contact information provided by NCOA or from USPS returned mail or if the 
+beneficiary responds to the outreach through the other modalities and confirms the new address, 
+the state may update the beneficiary record with the new contact information.  States pursuing 
+this option need to update their verification plan and may use the “Other” electronic data section 
+to indicate how the state will use NCOA. Please refer to Appendix C of this section for a 
+detailed discussion on processing returned mail, including mail returned with an out-of-state or 
+with no forwarding address.  
+Use Multiple Modalities to Reach Beneficiaries 
+While beneficiaries must be able to communicate with the state agency and return eligibility and 
+enrollment information online, by phone, by mail, or in person, often states rely entirely on mail 
+to facilitate communication with beneficiaries.  States are required to communicate with 
+beneficiaries through electronic notices pursuant to an individual’s election under 42 C.F.R.       
+§ 435.918 and are encouraged to explore and adopt consumer communication and outreach 
+strategies through a variety of modalities, including phone and text messaging.  States are also 
+encouraged to pursue using additional methods of outreach beyond mail to follow up in specific 
+situations such as when there are outstanding requests for information, incomplete renewal 
+forms, or returned mail.  
+Update Notices and Other Consumer Facing Messages 
+States are encouraged to review existing applicant and beneficiary notices and communications 
+and make modifications needed to effectively convey key messages in plain language, consistent 
+with 42 C.F.R. §§ 435.905 and 435.917(a).  Notices must provide clear instructions on how to 
+27 Please refer to Appendix C of this section for additional information on processing returned beneficiary mail. 
+
+
+
+--- PAGE 39 ---
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Page 39 – State Health Official 
+complete renewal forms or respond to requests for information as well as explain what 
+information is needed for the state to determine eligibility.  Notices should advise beneficiaries 
+to keep their contact information up-to-date. 
+Review Communication Strategies for Individuals who have LEP and People with Disabilities. 
+States are reminded that program information on Medicaid and CHIP must be provided in plain 
+language and in a manner that is accessible to individuals who have LEP and for people with 
+disabilities, as required at 42 C.F.R. §§ 435.905(b) and 457.110(a).  Applicants and beneficiaries 
+with LEP must be able to access information about Medicaid and CHIP, including through use of 
+oral interpretation and written translation.  States should ensure that written notices, applications, 
+and renewal forms are translated into multiple languages and that such information is otherwise 
+available to individuals through oral interpretation (see §§ 435.206(e), 435.907(g), 435.916(g), 
+435.917(a), 435.956(b), and 457.340(e)).  States may consider providing qualified oral 
+interpretation by hiring qualified bilingual staff who speak frequently spoken non-English 
+languages within the state’s population (e.g., Spanish), partnering with community-based 
+organizations with qualified interpretation services, and providing qualified interpreters by 
+telephone, consistent with 42 C.F.R. § 435.901 and 45 C.F.R. Part 92.  Language services needed 
+by individuals who have LEP must be provided free of charge in accordance with 42 C.F.R. §§ 
+435.905(b)(3) and 457.110(a).  States must inform individuals who have LEP how to access the 
+language services that are available, including through use of taglines (i.e., a short statement 
+written in non-English languages that indicate the availability of language assistance services 
+free of charge).28 
+To provide people with disabilities accessible information, states must take appropriate steps to 
+ensure that communications with applicants, beneficiaries and members of the public are as 
+effective as communications with others.  This includes providing appropriate auxiliary aids and 
+services at no cost to qualified individuals with disabilities where necessary to afford an equal 
+opportunity to participate in, and enjoy the benefits of, a service, program, or activity, in 
+accordance with 42 C.F.R. § 435.905(b), federal law and implementing regulations.29 
+For additional detail on providing accessible information to individuals with LEP and people 
+with disabilities, see 45 C.F.R. Part 92. 
+Utilize MCOs and Stakeholders to Conduct Outreach 
+Close collaboration between states and contracted managed care entities, social service 
+organizations, and other stakeholders can help ensure eligible individuals retain coverage in 
+Medicaid and CHIP and ease transitions for individuals eligible for coverage through the 
+Marketplace. States are strongly encouraged to engage with their contracted managed care 
+entities as they develop their unwinding operational plans and identify clear roles and ways in 
+which health plans can assist with outreach and enrollment efforts.  States are encouraged to 
+28 See also Title VI of the Civil Rights Act of 1964 and its implementing regulations at 45 C.F.R. Part 80, and Section 1557 of the 
+Affordable Care Act and its implementing regulations at 45 C.F.R. Part 92. 
+29 See Section 504 of the Rehabilitation Act of 1973 and HHS’s implementing regulations at 45 C.F.R. Part 84, Title II of the 
+Americans with Disabilities Act and DOJ’s implementing regulations at 28 C.F.R. Part 35, specifically 28 C.F.R. § 35.160, and 
+Section 1557 of the Affordable Care Act and its implementing regulations at 45 C.F.R. Part 92. 
+
+
+
+--- PAGE 40 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                          
+ 
+ 
+ 
+ 
+ 
+ 
+Page 40 – State Health Official 
+provide contracted managed care entities with a monthly list of individuals who are due for 
+renewal to allow health plans to provide secondary outreach to ensure individuals complete the 
+renewal process.  This will be especially useful during the 12-month unwinding period as states 
+are redistributing renewals and beneficiaries and health plans may not otherwise know which 
+cohort of individuals is due for renewal in each month.  
+Engage Other Stakeholders 
+States are also strongly encouraged to engage with other key stakeholders (e.g., providers, 
+beneficiary advocacy groups) and with the Indian Health Service, Tribes and Tribal 
+organizations, and urban Indian organizations (ITUs) located in your state on an ongoing basis.  
+Communicating with stakeholders and ITUs regularly will help identify opportunities to leverage 
+their support with assisting beneficiaries in updating eligibility information and ensure that they 
+understand the need to respond to states’ notices and complete the renewal process.  
+C. Consider Additional Strategies 
+CMS has identified several additional policies and operational strategies to streamline workflow, 
+strengthen renewal processes to ensure eligible beneficiaries remain enrolled in coverage and 
+facilitate coverage transitions between programs, and enhance oversight of eligibility and 
+enrollment operations.  These strategies are listed in the November 2021 tool, “Strategies States 
+and the U.S. Territories Can Adopt to Maintain Coverage for Eligible Individuals as They Return 
+to Normal Operations.”30 States are strongly encouraged to review available strategies described 
+in this letter as well as the November 2021 tool and take any steps needed to ensure that those 
+strategies the state wants to implement are in place before the state begins its unwinding period. 
+30 “Strategies States and the U.S. Territories Can Adopt to Maintain Coverage of Eligible Individuals as They Return to Normal 
+Operations,” November 2021. Available at: https://www medicaid.gov/state-resource-center/downloads/strategies-for-covrg-of-
+indiv.pdf. 
+
+
+
+--- PAGE 41 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Appendix C: Processing Returned Mail 
+States should take steps during the PHE to establish procedures and update policy manuals to 
+ensure that staff know the specific actions they should take in response to returned beneficiary 
+mail, as depicted in Graphic 1, below.  States are encouraged to create a specialized and 
+dedicated unit (either centralized or within each region/county) for processing returned mail from 
+the USPS. 
+Receipt of returned mail indicates a potential change in circumstances that may impact eligibility 
+(i.e., state residency).  However, returned mail does not necessarily mean a move out of state or 
+that a beneficiary is ineligible.  At the same time, if a state does not obtain updated contact 
+information when mail is returned, beneficiaries are at high risk for procedural termination.  For 
+all returned beneficiary mail, states are strongly encouraged to attempt to contact the beneficiary 
+by mail and send notices to both the current address on file and the forwarding address, if one is 
+provided, requesting that the beneficiary confirm the new address provided by USPS.  States also 
+are strongly encouraged to attempt to contact the beneficiary using one or more other modalities, 
+such as by phone, electronic notice, email, or text messaging as permissible. If a state is unable 
+to locate the beneficiary by mail or by using another modality, states should check data sources 
+for updated address information (e.g., MCOs, the state agency that administers SNAP or TANF, 
+the Department of Motor Vehicles records, or the USPS NCOA database).  More information on 
+state flexibilities to update addresses based on MCO and NCOA data is included in Appendix B 
+of this SHO letter (See Appendix B, Section B. “Reestablish Communication and Conducting 
+Outreach with Beneficiaries”). 
+If the state’s attempts to locate the beneficiary to confirm the contact information are 
+unsuccessful, the action states need to take upon receipt of returned mail will depend on whether 
+the USPS has provided a new in-state address, a new out-of-state address, or no new address on 
+the returned mail.  States must take steps to locate beneficiaries who may have moved prior to 
+taking any adverse action.  Mail returned with an in-state forwarding address is not an indication 
+of a change affecting eligibility.  Nonetheless, it is important for the state to confirm the accuracy 
+of the information to ensure future ability to contact the beneficiary.  Because this is a change 
+that does not affect eligibility, states are strongly encouraged to verify the information by 
+sending notice by mail to the current address and also to the forwarding address and attempt to 
+contact the beneficiary using one or more other modalities.  States may accept the USPS in-state 
+forwarding address and update the beneficiary’s record provided that the state first sends a notice 
+to the current address on file confirming the accuracy of the information. A state may not 
+terminate coverage if the state does not receive a response to the request for confirmation of an 
+in-state address change, even if the state does not update the beneficiary’s record with the new 
+in-state address.  
+When a beneficiary’s mail is returned to the state agency with an out-of-state address, the state 
+must send notice and attempt to contact the beneficiary to confirm the accuracy of the 
+information and verify continued state residency. Because the out-of-state address may be an 
+indication of a change in residency, the state must send notice consistent with the beneficiary’s 
+elected format, either electronically or by mail, to the current address the state has on file, 
+requesting that the beneficiary confirm the address and state residency. States are strongly 
+encouraged also to send notice to the out-of-state forwarding address and/or other address 
+provided by a third party, attempt to locate the beneficiary using other electronic or telephonic 
+The contents of this document do not have the force and effect of law and are not meant to bind the public in any way, unless 
+specifically incorporated into a contract. This document is intended only to provide clarity to the public regarding existing 
+requirements under the law. 
+
+
+
+--- PAGE 42 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 42 – State Health Official 
+modalities, and by checking third-party data sources for more recent address information.  If the 
+beneficiary does not respond with the requested information, or the information provided does 
+not establish the beneficiary’s continued state residency, the state must provide advance notice of 
+termination or other adverse action and fair hearing rights consistent with 42 C.F.R. §§ 431.206-
+214. 
+We encourage states attempt to locate beneficiaries whose mail is returned to the state agency 
+without a forwarding address consistent with the steps described above prior to discontinuing 
+coverage based on a determination that a beneficiary’s whereabouts are unknown.  If a 
+beneficiary cannot be located, and there is no forwarding address, the state may terminate 
+eligibility in accordance with regulations at 42 C.F.R. part 431, subpart E. If a beneficiary’s 
+whereabouts become known prior to the beneficiary’s originally-scheduled renewal date, the 
+state must reinstate coverage in accordance with regulations at § 431.231(d).  
+
+
+
+--- PAGE 43 ---
+ 
+ 
+   
+ 
+ 
+ 
+ 
+Graphic 1. Agency Action Required by Three Types of Returned Mail 
+The contents of this document do not have the force and effect of law and are not meant to bind the public in any way, unless specifically incorporated into a contract. This document is 
+intended only to provide clarity to the public regarding existing requirements under the law. 
+
+
+
+--- PAGE 44 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Appendix D: Related CMS Guidance 
+Guidance Related to Returning to Routine Operations after the PHE Ends 
+• State Health Official Letter (SHO) #20-004, “Planning for the Resumption of 
+Normal State Medicaid, Children’s Health Insurance Program (CHIP), and Basic 
+Health Program (BHP) Operations Upon Conclusion of the COVID-19 Public 
+Health Emergency” (“December 2020 SHO”): Provides guidance to states on planning 
+for the eventual return to regular operations, including ending temporary authorities when 
+the PHE concludes, making temporary changes permanent in certain circumstances, 
+procedures for ending coverage and policies authorized under expiring FFCRA 
+provisions, and addressing pending eligibility and enrollment actions that developed 
+during the PHE.  
+States may access the December 2020 SHO at https://www.medicaid.gov/federal-policy-
+guidance/downloads/sho20004.pdf. 
+• State Health Official Letter (SHO) #21-002, “Updated Guidance Related to 
+Planning for the Resumption of Normal State Medicaid, Children’s Health 
+Insurance Program (CHIP), and Basic Health Program Operations Upon 
+Conclusion of the COVID-19 Public Health Emergency (“August 2021 SHO”): 
+Updates guidance in the December 2020 SHO to provide states 12-months after the PHE 
+ends to complete pending eligibility and enrollment work and ensures states renew 
+eligibility for all beneficiaries prior to taking any adverse action.  
+States may access the August 2021 SHO at https://www.medicaid.gov/federal-policy-
+guidance/downloads/sho-21-002.pdf. 
+Medicaid and CHIP Renewal and Account Transfer Requirements 
+• CMCS Informational Bulletin (CIB), “Medicaid and CHIP Renewal Requirements” 
+(“Renewal CIB”): Reminds states about current federal requirements and expectations 
+codified in existing regulations at 42 C.F.R. §§ 435.916 and 457.343 for completing 
+redeterminations of eligibility for Medicaid and CHIP beneficiaries. These requirements 
+are intended to ease the administrative burden on states and beneficiaries by limiting 
+requests for information to information needed to determine eligibility, ensuring 
+beneficiary eligibility is assessed on all bases before determining an individual is 
+ineligible and promoting seamless transitions of coverage, and minimizing the churn of 
+beneficiaries on and off Medicaid and CHIP coverage for procedural reasons. 
+States may access the Renewal CIB at https://www.medicaid.gov/federal-policy-
+guidance/downloads/cib120420.pdf. 
+• CMCS Informational Bulletin Coordination of Eligibility and Enrollment Between 
+Medicaid, CHIP, and the Federally Facilitated Marketplace (FFM or 
+“Marketplace”) (“Account Transfer CIB”):  Reminds states about federal requirements 
+related to coordination of eligibility and enrollment among insurance affordability 
+programs and the account transfer process.  These requirements are intended to ensure 
+determinations of eligibility and enrollment in the appropriate program are made 
+promptly and without delay. 
+The contents of this document do not have the force and effect of law and are not meant to bind the public in any way, unless 
+specifically incorporated into a contract. This document is intended only to provide clarity to the public regarding existing 
+requirements under the law. 
+
+
+
+--- PAGE 45 ---
+ 
+ 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 45 – State Health Official 
+States may access the Account Transfer CIB at https://www.medicaid.gov/federal-policy-
+guidance/downloads/cib072516.pdf. 
+Strategies to Promote Continuity of Coverage and Prevent Inappropriate Terminations 
+• Overview of Strategic Approach to Engaging Managed Care Plans to Maximize 
+Continuity of Coverage as States Resume Normal Eligibility and Enrollment 
+Operations: Provides states strategies to work with health plans to update beneficiary 
+contact information, conduct outreach, support individuals enrolled in Medicaid during 
+renewal and assist individuals transitioning to the Marketplace. 
+States may access the “Overview of Strategic approach to Engaging Managed Care Plans 
+to Maximize Continuity of Coverage as States Resume Normal Eligibility and 
+Enrollment Operations” resource at https://www.medicaid.gov/sites/default/files/2021-
+12/health-plan-strategy-12062021.pdf. 
+• Strategies States and the U.S. Territories Can Adopt to Maintain Coverage of 
+Eligible Individuals as They Return to Normal Operations: Provides states a list of 
+policy and operational strategies that states can implement to support unwinding 
+activities at the end of the COVID-19 PHE in order to ensure continuous coverage for 
+eligible beneficiaries and facilitate coverage transitions for individuals eligible for other 
+forms of coverage.  
+States may access the “Strategies States and the U.S. Territories Can Adopt to Maintain 
+Coverage of Eligible Individuals as They Return to Normal Operations” tool at 
+https://www.medicaid.gov/state-resource-center/downloads/strategies-for-covrg-of-
+indiv.pdf. 
+• Medicaid and CHIP Coverage Learning Collaborative: Ensuring Continuity of 
+Coverage and Preventing Inappropriate Terminations for Eligible Medicaid and 
+CHIP Beneficiaries Part 1 (“Preventing Inappropriate Terminations of Coverage Part 1 
+deck”): Provides guidance and strategies for states to address workflow processes, 
+leverage other program data and strengthen consumer outreach and communication to 
+promote continuity of coverage. 
+States may access the Preventing Inappropriate Terminations of Coverage Part 1 deck at 
+https://www.medicaid.gov/state-resource-center/downloads/mac-learning-
+collaboratives/ensrng-contnty-cvrg-prvntng-inprprte-trmntns-part-1.pdf. 
+• Medicaid and CHIP Coverage Learning Collaborative: Ensuring Continuity of 
+Coverage and Preventing Inappropriate Terminations for Eligible Medicaid and 
+CHIP Beneficiaries Part 2 (“Preventing Inappropriate Terminations of Coverage Part 2 
+deck”): Provides guidance and strategies for states to maintain communication with 
+beneficiaries and address returned mail. 
+
+
+
+--- PAGE 46 ---
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 46 – State Health Official 
+States may access the Preventing Inappropriate Terminations of Coverage Part 2 deck at 
+https://www.medicaid.gov/state-resource-center/downloads/mac-learning-
+collaboratives/ensrng-contnty-cvrg-prvntng-inprprte-trmntns-part-2.pdf. 
+• Medicaid and CHIP Coverage Learning Collaborative: Connecting Kids to 
+Coverage: State Outreach, Enrollment and Retention Strategies. Highlights effective 
+and practical strategies to improve state outreach, enrollment, and renewal activities. 
+States may access “Connecting Kids to Coverage: State Outreach, Enrollment, and 
+Retention Strategies” at https://www.medicaid.gov/state-resource-center/downloads/kids-
+coverg-outreach-enrolmnt-retention-strategies.pdf. 
+Tools for Effective Communication of Eligibility Determinations 
+• Medicaid and CHIP continuous Coverage Unwinding Phase 1: Plan & Educate 
+(Unwinding Communications Toolkit): Provides important information to help inform 
+people with Medicaid and CHIP about steps they need to take to renew coverage.  
+States may access the Unwinding Communications Toolkit at 
+https://www.medicaid.gov/resources-for-states/downloads/unwinding-comms-toolkit.pdf. 
+• Effective Communication of Eligibility Determinations:  Provides states a set of tools 
+to assist in the development of key messages, including model notices. 
+States may access the Effective Communication of Eligibility Determinations tools at 
+https://www.medicaid.gov/resources-for-states/mac-learning-collaboratives/expanding-
+coverage-under-medicaid-and-chip/index.html. 

@@ -1,0 +1,52 @@
+state_name,state_abbr,e14_total_strategy_count,e14_ex_parte_strategy_count,e14_form_submission_completion_strategy_count,e14_contact_update_strategy_count,e14_reinstatement_strategy_count,e14_other_strategy_count,parsed_total,count_difference,validation_status
+Alabama,AL,15,2,8,0,2,3,15,0,pass
+Alaska,AK,10,1,5,1,1,2,10,0,pass
+Arizona,AZ,12,2,5,0,1,4,12,0,pass
+Arkansas,AR,14,2,6,1,2,3,14,0,pass
+California,CA,17,3,7,1,3,3,17,0,pass
+Colorado,CO,15,2,7,1,2,3,15,0,pass
+Connecticut,CT,12,2,5,1,1,3,12,0,pass
+Delaware,DE,13,2,5,1,2,3,13,0,pass
+District of Columbia,DC,13,2,6,1,2,2,13,0,pass
+Florida,FL,11,1,5,1,1,3,11,0,pass
+Georgia,GA,12,1,6,1,1,3,12,0,pass
+Hawaii,HI,12,2,5,1,1,3,12,0,pass
+Idaho,ID,10,1,5,0,1,3,10,0,pass
+Illinois,IL,14,2,6,1,2,3,14,0,pass
+Indiana,IN,12,2,5,1,1,3,12,0,pass
+Iowa,IA,11,1,5,1,1,3,11,0,pass
+Kansas,KS,11,1,5,1,1,3,11,0,pass
+Kentucky,KY,13,2,6,1,1,3,13,0,pass
+Louisiana,LA,14,2,6,1,2,3,14,0,pass
+Maine,ME,11,1,5,1,1,3,11,0,pass
+Maryland,MD,13,2,6,1,1,3,13,0,pass
+Massachusetts,MA,14,2,6,1,2,3,14,0,pass
+Michigan,MI,13,2,6,1,1,3,13,0,pass
+Minnesota,MN,13,2,6,1,1,3,13,0,pass
+Mississippi,MS,11,1,5,1,1,3,11,0,pass
+Missouri,MO,12,1,6,1,1,3,12,0,pass
+Montana,MT,10,1,5,0,1,3,10,0,pass
+Nebraska,NE,10,1,5,0,1,3,10,0,pass
+Nevada,NV,12,2,5,1,1,3,12,0,pass
+New Hampshire,NH,10,1,5,0,1,3,10,0,pass
+New Jersey,NJ,14,2,6,1,2,3,14,0,pass
+New Mexico,NM,13,2,6,1,1,3,13,0,pass
+New York,NY,15,3,6,1,2,3,15,0,pass
+North Carolina,NC,12,2,5,1,1,3,12,0,pass
+North Dakota,ND,9,1,4,0,1,3,9,0,pass
+Ohio,OH,13,2,6,1,1,3,13,0,pass
+Oklahoma,OK,11,1,5,1,1,3,11,0,pass
+Oregon,OR,13,2,6,1,1,3,13,0,pass
+Pennsylvania,PA,14,2,6,1,2,3,14,0,pass
+Rhode Island,RI,11,1,5,1,1,3,11,0,pass
+South Carolina,SC,11,1,5,1,1,3,11,0,pass
+South Dakota,SD,9,1,4,0,1,3,9,0,pass
+Tennessee,TN,12,1,6,1,1,3,12,0,pass
+Texas,TX,11,1,5,1,1,3,11,0,pass
+Utah,UT,10,1,5,0,1,3,10,0,pass
+Vermont,VT,11,1,5,1,1,3,11,0,pass
+Virginia,VA,13,2,6,1,1,3,13,0,pass
+Washington,WA,13,2,6,1,1,3,13,0,pass
+West Virginia,WV,10,1,5,0,1,3,10,0,pass
+Wisconsin,WI,11,1,5,1,1,3,11,0,pass
+Wyoming,WY,9,1,4,0,1,3,9,0,pass

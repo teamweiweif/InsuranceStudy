@@ -1,0 +1,854 @@
+
+
+--- PAGE 1 ---
+1 
+ 
+Summary of State Mitigation Strategies for Complying with Medicaid Renewal Requirements  
+Described in the Consolidated Appropriations Act, 2023 
+The Consolidated Appropriations Act, 2023 (CAA) establishes new conditions to claim the temporary FMAP increase under section 6008(a) 
+of the Families First Coronavirus Response Act (FFCRA) after March 31, 2023, including the condition at section 6008(f)(2)(A) of the FFCRA, 
+which provides that states conduct Medicaid and Children’s Health Insurance Program (CHIP) redeterminations consistent with federal 
+requirements.  These requirements are described at 42 CFR § 435.916.1 Regardless of whether a state is claiming the temporary FMAP 
+increase, after March 31, 2023, all states must comply with federal renewal requirements or implement strategies approved under section 
+1902(e)(14)(A) of the Social Security Act (the Act) or other CMS-authorized processes and procedures to be considered compliant with 
+federal redetermination requirements and to avoid corrective action and enforcement under section 1902(tt)(2) of the Act. CMS worked 
+with all states and territories prior to the end of the continuous enrollment condition to assess compliance with Medicaid renewal 
+requirements and implement mitigations, as appropriate, to address areas of non-compliance. Generally, states were expected to adopt 
+multiple strategies to address areas of non-compliance and, if necessary, to hold procedural terminations until all other approved 
+mitigations were implemented.  CMS expects that all states will work toward full statutory and regulatory compliance with all renewal and 
+redetermination requirements. As part of CMS’ approval of a state’s mitigation strategy to qualify for receipt of the temporary increased 
+FMAP, states agreed to achieve full compliance with federal renewal requirements without mitigation strategies no later than two years 
+after the end of a state’s unwinding period.  
+The tables below summarize the CMS-approved mitigation strategies that states adopted to address areas of non-compliance with 
+Medicaid renewal requirements and information on each state’s area(s) of non-compliance and adopted mitigations. The information 
+below reflects CMS approvals as of March 31,2023, prior to the end of the FFCRA continuous enrollment condition.  As unwinding has 
+progressed, some states have addressed the area(s) of non-compliance noted and retired use of some or all mitigations. The tables below 
+only reflect state-adopted mitigation strategies required by CMS to meet the renewal requirements referenced in section 6008 of the 
+FFCRA and section 1902(tt) of the Act. Nearly all states have also implemented strategies to streamline renewals and support retention of 
+eligible individuals, including during their unwinding periods.  These strategies are not included in Tables 1 or 2.  For additional 
+information on some of these strategies, please see CMS’ summary of 1902(e)(14)(A) waiver approvals. 
+ 
+1 Federal renewal requirements are described in more detail in CMCS’ Informational Bulletin, Medicaid and Children’s Health Insurance Program Renewal 
+Requirements, released on December 4, 2020 available at https://www.medicaid.gov/federal-policy-guidance/downloads/cib120420.pdf.  For more 
+information about the CAA and requirements for states to receive the increased temporary FMAP, see Medicaid Continuous Enrollment Condition Changes, 
+Conditions for Receiving the FFCRA Temporary FMAP Increase, Reporting Requirements, and Enforcement Provisions in the Consolidated Appropriations Act, 
+2023 [State Health Official Letters #23-002]. Available at https://www.medicaid.gov/federal-policy-guidance/downloads/sho23002.pdf.  
+
+
+
+--- PAGE 2 ---
+2 
+ 
+Table 1: Summary of Primary Mitigations  
+This table provides a summary of the primary approved mitigations Medicaid agencies have adopted to address identified areas of non-
+compliance with federal Medicaid renewal requirements. The table does not provide a comprehensive list of individual strategies states have 
+implemented to facilitate renewals, minimize inappropriate coverage loss, and ensure compliance with federal requirements. States may also 
+have adopted varied approaches to implementation of the strategies described below.  
+Mitigations and Other Strategies 
+Description 
+1. Holding procedural 
+terminations  
+• 
+Hold terminations that would otherwise occur due to beneficiary non-response to the renewal form, 
+until approved mitigations are implemented. States will redetermine eligibility for affected renewals 
+once those mitigations are fully implemented. 
+• 
+This strategy may apply to some or all Medicaid beneficiaries, depending on the populations affected 
+by the area of non-compliance with renewal requirements 
+2. Ex parte attempt prior to 
+termination 
+• 
+In states that lack automated ex parte/administrative renewal functionality, states check data 
+sources and complete an ex parte determination prior to termination for people who do not return a 
+renewal form. 
+3. Streamlining income 
+determinations  
+• 
+Includes strategies to simplify verification of income, including use of section 1902(e)(14)(A) waiver 
+strategies to renew eligibility based on findings from SNAP or TANF.  Also includes other authorities 
+to streamline income determinations for people with stable sources of income (e.g., pension income) 
+or no income 
+4. Streamlining asset 
+determinations 
+• 
+Includes strategies to simplify the verification of resources/assets at renewal, including modifying 
+documentation requirements, temporarily waiving asset requirements for some populations, and/or 
+renewing eligibility based on available information for certain assets unlikely to change 
+5. Streamlining renewal forms 
+and requirements  
+• 
+Includes strategies to minimize requests for unnecessary information on renewal forms, including 
+providing simplified forms, adding instructions to specify which information is required, and/or pre-
+populating as much information as possible (e.g., demographic information) for MAGI populations 
+and pre-populating renewal forms for non-MAGI populations  
+• 
+May also include adding instructions to help identify individuals as potentially eligible on another 
+eligibility basis  
+
+
+
+--- PAGE 3 ---
+3 
+ 
+Mitigations and Other Strategies 
+Description 
+6. Enhancing the availability & 
+accessibility of other renewal 
+submission modalities  
+• 
+Includes strategies to facilitate renewals via specific submission modalities, for states without 
+functionality to accept renewals via a required modality (e.g., online) 
+• 
+May include strategies to extend call center hours, provide flexibility for recordings of telephonic 
+signatures and/or permitting individuals/organizations to be authorized representatives to assist 
+with submission, accept and promote submission via fax or online upload of renewal documentation 
+7. Enhancing outreach and in-
+person assistance  
+• 
+May include multiple approaches to support enrollees’ completion of renewals, including sending 
+reminders via multiple modalities (e.g., text, email, phone), highlighting the availability of in-person 
+community resources and outstationed eligibility workers, or partnering with managed care 
+organizations, providers, or other resources to provide in-person assistance with the renewal process 
+8. Additional policy changes to 
+support retention 
+• 
+Changes to simplify the renewal or reenrollment of eligible individuals, such as extending or 
+implementing a reconsideration period for certain populations, accepting reasonable explanations to 
+explain data inconsistencies, extending the time beneficiaries have to return documentation, etc.  
+9. Operational changes to 
+support retention 
+• 
+Changes to internal state agency staffing approaches and processes, including training staff to review 
+required information for redetermining eligibility, implementing manual workarounds, reviewing 
+and/or exchanging data between systems, etc.  
+10. Supporting transitions to 
+Marketplace coverage  
+• 
+Includes strategies to facilitate transitions to the Federally Facilitate Marketplace (FFM) or State 
+Based Marketplace (SBM) such as enhanced outreach to notify individuals of potential coverage 
+options, providing instructions for applying and enrolling in a plan, and/or connecting individuals to 
+Navigators or assisters to receive additional assistance 
+ 
+
+
+
+--- PAGE 4 ---
+4 
+ 
+Table 2: Areas of Non-Compliance with Renewal Requirements and CMS-Approved Mitigations, by State   
+For each state listed below, column 2 (Area(s) of Non-Compliance) identifies areas in which the state was not fully compliant with federal renewal 
+requirements as of March 31, 2023.  “Primary Mitigations and Other Strategies” reflect the strategies described in Table 1 that states implemented to 
+address the area(s) of non-compliance with federal renewal requirements. Mitigation strategies were tailored based on the area of non-compliance, 
+and the number and type of strategies adopted varied based on the scope of non-compliance and the affected population (e.g., MAGI or non-MAGI 
+populations and/or a subset of Medicaid enrollees). States may implement the same mitigation to address multiple areas of non-compliance. 
+However, for CMS approval, most areas of non-compliance required adoption of multiple strategies. “None Identified” or “N/A,” are noted, no areas of 
+non-compliance were identified as of the start of the state’s unwinding period. 
+State 
+Area(s) of Non-Compliance with Renewal Requirements  
+Primary Mitigations and Other Strategies  
+Alabama 
+• 
+Conducting ex parte renewals for some non-MAGI 
+populations 
+• 
+Transferring electronic accounts to the Marketplace for 
+relevant non-MAGI populations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 10: Supporting transitions to Marketplace coverage 
+Alaska 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Renewal form requests more information than needed to 
+determine eligibility (e.g., MAGI form is not fully pre-
+populated) 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Determining eligibility on all bases 
+• 
+Transferring electronic accounts to the Marketplace for 
+relevant non-MAGI populations 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 9: Operational changes to support retention 
+• 
+Strategy 10: Supporting transitions to Marketplace coverage 
+Arizona 
+• 
+Ability to submit renewal forms through all required 
+modalities for non-MAGI populations 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 8: Additional policy changes to support retention  
+Arkansas 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+ 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 8: Additional policy changes to support retention  
+
+
+
+--- PAGE 5 ---
+5 
+ 
+State 
+Area(s) of Non-Compliance with Renewal Requirements  
+Primary Mitigations and Other Strategies  
+California 
+• 
+None identified 
+N/A 
+Colorado 
+• 
+None identified 
+N/A 
+Connecticut 
+• 
+Ability to submit renewal forms through all required 
+modalities is available for the non-MAGI population 
+• 
+Determining eligibility on all bases 
+ 
+• 
+Strategy 5: Streamlining renewal forms and requirements  
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention  
+Delaware 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+ 
+• 
+Strategy 1: Holding procedural terminations  
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 8: Additional policy changes to support retention 
+District of 
+Columbia 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Renewal form requests more information than needed to 
+determine eligibility (e.g., MAGI form is not fully pre-
+populated or individuals must submit a new application at 
+renewal) 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements  
+• 
+Strategy 8: Additional policy changes to support retention  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Florida 
+• 
+None identified 
+N/A 
+Georgia 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 4: Streamlining asset determinations  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 9: Operational changes to support retention 
+Hawaii  
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Idaho 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities  
+• 
+Strategy 5: Streamlining renewal forms and requirements  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+
+
+
+--- PAGE 6 ---
+6 
+ 
+State 
+Area(s) of Non-Compliance with Renewal Requirements  
+Primary Mitigations and Other Strategies  
+Illinois 
+• 
+None identified 
+N/A 
+Indiana 
+• 
+None identified 
+N/A 
+Iowa  
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 8: Additional policy changes to support retention 
+Kansas 
+• 
+None identified 
+N/A 
+Kentucky 
+• 
+None identified 
+N/A 
+Louisiana 
+• 
+None identified 
+N/A 
+Maine 
+• 
+Conducting ex parte renewals for MAGI or non-MAGI 
+populations 
+• 
+Renewal form requests more information than needed to 
+determine eligibility (e.g., MAGI form is not fully 
+prepopulated, or individuals must submit a new 
+application at renewal) 
+ 
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 9: Operational changes to support retention  
+• 
+Strategy 8: Additional policy changes to support retention  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Maryland 
+• 
+None identified 
+N/A 
+Massachusetts 
+• 
+None identified 
+N/A 
+Michigan 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 4: Streamlining asset determinations  
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Minnesota 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Renewal form is pre-populated for the MAGI population 
+and/or does not request more information than needed to 
+determine eligibility  
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Determining eligibility on all bases 
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+
+
+
+--- PAGE 7 ---
+7 
+ 
+State 
+Area(s) of Non-Compliance with Renewal Requirements  
+Primary Mitigations and Other Strategies  
+• 
+Strategy 8: Additional policy changes to support retention  
+• 
+Strategy 9: Operational changes to support retention 
+Mississippi 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention 
+Missouri 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities  
+Montana 
+• 
+None identified 
+N/A 
+Nebraska 
+• 
+Conducting ex parte renewals for some MAGI and non-
+MAGI populations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Nevada 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Transferring electronic accounts to the Marketplace for all 
+relevant populations in timely manner 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 10: Supporting transitions to Marketplace coverage 
+New 
+Hampshire 
+• 
+None identified 
+N/A 
+New Jersey 
+• 
+Conducting ex parte renewals for some of the MAGI 
+population 
+• 
+Renewal form requests more information than needed to 
+determine eligibility (e.g., MAGI form is not fully pre-
+populated or individuals must submit a new application at 
+renewal)  
+• 
+Ability to submit renewal forms through all required 
+modalities for non-MAGI and some MAGI populations 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 9: Operational changes to support retention 
+• 
+Strategy 10: Supporting transitions to Marketplace coverage 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+
+
+
+--- PAGE 8 ---
+8 
+ 
+State 
+Area(s) of Non-Compliance with Renewal Requirements  
+Primary Mitigations and Other Strategies  
+• 
+Transferring electronic accounts to the Marketplace for 
+relevant non-MAGI populations 
+New Mexico 
+• 
+None identified 
+N/A 
+New York 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities for the non-MAGI population 
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 3: Streamlining income determinations  
+• 
+Strategy 4: Streamlining asset determinations  
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 7: Enhancing outreach and in-person assistance  
+• 
+Strategy 8: Additional policy changes to support retention 
+North Carolina 
+• 
+Ability to submit renewal forms through all required 
+modalities for the non-MAGI population 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention 
+North Dakota 
+• 
+None identified 
+N/A 
+Ohio 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 9: Operational changes to support retention  
+Oklahoma 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Transferring electronic accounts to the Marketplace for 
+relevant non-MAGI populations 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 7: Enhancing outreach and in-person assistance  
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 10: Supporting transitions to Marketplace coverage 
+• 
+ 
+Oregon 
+• 
+Conducting timely renewals for individuals enrolled in the 
+Medicaid family planning group  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Pennsylvania 
+• 
+Conducting ex parte for the non-MAGI and some MAGI 
+populations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Rhode Island 
+• 
+None identified 
+N/A 
+
+
+
+--- PAGE 9 ---
+9 
+ 
+State 
+Area(s) of Non-Compliance with Renewal Requirements  
+Primary Mitigations and Other Strategies  
+South Carolina 
+• 
+Conducting ex parte for some MAGI and non-MAGI 
+populations 
+• 
+Renewal form requests more information than needed to 
+determine eligibility (e.g., MAGI form is not fully pre-
+populated or individuals must submit a new application at 
+renewal) 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations  
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 9: Operational changes to support retention 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+South Dakota 
+• 
+Conducting ex parte for the non-MAGI population 
+• 
+Renewal form requests more information than needed to 
+determine eligibility (e.g., MAGI form is not fully pre-
+populated or individuals must submit a new application at 
+renewal) 
+• 
+Transferring electronic accounts to the Marketplace for 
+relevant non-MAGI populations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 9: Operational changes to support retention 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 10: Supporting transitions to Marketplace coverage 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Tennessee 
+• 
+None identified 
+N/A 
+Texas 
+• 
+Renewal form requests more information than needed to 
+determine eligibility (e.g., MAGI form is not fully pre-
+populated or individuals must submit a new application at 
+renewal) 
+• 
+Determining eligibility on all bases 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 9: Operational changes to support retention 
+ 
+Utah 
+• 
+Conducting ex parte renewals for some MAGI and non-
+MAGI populations  
+• 
+Strategy 2: Ex parte prior to termination 
+Vermont 
+• 
+Ability to submit renewal forms through all required 
+modalities for the non-MAGI population 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 8: Additional policy changes to support retention  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Virginia 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 8: Additional policy changes to support retention 
+
+
+
+--- PAGE 10 ---
+10 
+ 
+State 
+Area(s) of Non-Compliance with Renewal Requirements  
+Primary Mitigations and Other Strategies  
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Washington 
+ 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities for the non-MAGI population 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 7: Enhancing outreach and in-person assistance  
+• 
+Strategy 8: Additional policy changes to support retention 
+West Virginia 
+• 
+Conducting ex parte renewals for the non-MAGI 
+population 
+• 
+Ability to submit renewal forms through all required 
+modalities  
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 6: Enhancing availability and accessibility of other 
+renewal submission modalities 
+• 
+Strategy 9: Operational changes to support retention 
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 7: Enhancing outreach and in-person assistance 
+Wisconsin 
+• 
+Conducting ex parte renewals for some populations 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 7: Enhancing outreach and in-person assistance  
+• 
+Strategy 8: Additional policy changes to support retention 
+• 
+Strategy 9: Operational changes to support retention 
+Wyoming 
+• 
+Conducting ex parte renewals for MAGI or non-MAGI 
+populations 
+• 
+Strategy 1: Holding procedural terminations 
+• 
+Strategy 2: Ex parte prior to termination 
+• 
+Strategy 3: Streamlining income determinations 
+• 
+Strategy 4: Streamlining asset determinations 
+• 
+Strategy 5: Streamlining renewal forms and requirements 
+• 
+Strategy 7: Enhancing outreach and in-person assistance  
+• 
+Strategy 8: Additional policy changes to support retention  
+ 
