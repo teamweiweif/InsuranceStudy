@@ -1,8 +1,8 @@
-2026-05-27 18:52:09,854 INFO Validating row integrity
-2026-05-27 18:52:09,862 INFO Validating sample restrictions
-2026-05-27 18:52:09,871 INFO Validating OEP outcomes
-2026-05-27 18:52:09,879 INFO Validating treatment integrity
-2026-05-27 18:52:09,887 INFO Validating repaired Step 2 market controls
-2026-05-27 18:52:09,887 INFO Drake-style comparison diagnostics
-2026-05-27 18:52:09,896 INFO Comparing to Step 1 prototype
-2026-05-27 18:52:09,908 INFO Validation complete
+2026-05-27 19:46:13,192 INFO Validating row integrity
+2026-05-27 19:46:13,201 INFO Validating sample restrictions
+2026-05-27 19:46:13,210 INFO Validating OEP outcomes
+2026-05-27 19:46:13,217 INFO Validating treatment integrity
+2026-05-27 19:46:13,223 INFO Validating repaired Step 2 market controls
+2026-05-27 19:46:13,223 INFO Drake-style comparison diagnostics
+2026-05-27 19:46:13,234 INFO Comparing to Step 1 prototype
+2026-05-27 19:46:13,245 INFO Validation complete
