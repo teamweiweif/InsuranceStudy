@@ -32,6 +32,15 @@ outputs/**/avoidable_churn_state_month_cells.csv
 outputs/**/avoidable_churn_round3_state_month_cells.csv
 outputs/rdd_pooled_2002_2017/tables/cate_predictions.csv
 
+# Allow the zero-premium subproject to keep compact metadata and final outputs.
+!zero_premium_project/
+!zero_premium_project/data/
+!zero_premium_project/data/metadata/
+!zero_premium_project/data/metadata/**
+!zero_premium_project/data/processed/
+!zero_premium_project/data/processed/**
+!zero_premium_project/data/processed/*.parquet
+
 # OS/editor clutter
 .DS_Store
 Thumbs.db

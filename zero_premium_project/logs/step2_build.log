@@ -1,0 +1,8 @@
+2026-05-27 09:38:57,526 INFO Starting Step 2 Drake-style dataset build
+2026-05-27 09:38:57,554 INFO Building OEP county outcomes
+2026-05-27 09:38:58,047 INFO Building silver county-plan panel
+2026-05-27 09:42:31,815 INFO Identifying two lowest silver plans
+2026-05-27 09:42:42,046 INFO Constructing transition 2021_to_2022
+2026-05-27 09:42:46,400 INFO Constructing transition 2022_to_2023
+2026-05-27 09:42:51,201 INFO Constructing transition 2023_to_2024
+2026-05-27 09:42:55,807 INFO Merging final dataset

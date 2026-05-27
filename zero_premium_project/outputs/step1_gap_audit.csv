@@ -1,0 +1,11 @@
+issue_id,issue_type,step1_finding,why_it_matters_for_step2,action_in_step2,status,notes
+G01,scope,Prototype only used selected states.,National construction may reveal new join failures.,Scale treatment joins to all states and report state-year diagnostics.,addressed,
+G02,missing_source,PY2021 QHP Landscape direct URLs may be unavailable.,2021->2022 treatment requires prior-year top-two silver premiums.,Attempt 2021 panel from official Exchange PUF plus Health Plan Finder rating-area fallback; flag if incomplete.,addressed_with_fallback,
+G03,data_granularity,OEP outcomes are county-year aggregate only.,No individual-level or enrollee-level retention analysis is possible.,Build county-year dataset only.,accepted_limitation,
+G04,data_granularity,Individual-level HTE is impossible with these PUFs.,Later HTE/policy work cannot use individual heterogeneity.,Document county-level HTE only as possible later design.,accepted_limitation,
+G05,measurement,Household-specific post-subsidy premiums are not directly public.,Exact zero-premium status depends on household income/composition.,Use benchmark-based low-income proxy and label it as proxy.,addressed_with_proxy,
+G06,sample,Alaska and Hawaii need exclusion or special handling.,Drake-style contiguous-market sample excludes AK/HI.,Exclude AK/HI from primary sample.,addressed,
+G07,sample,Nebraska may need exclusion or special handling.,County-market mapping may be incompatible.,Exclude NE from primary sample; create sensitivity file if requested.,addressed,
+G08,missingness,Suppression/missingness exists in OEP county outcomes.,Outcome rates/logs can be missing.,"Preserve rows, set derived values missing, and flag suppression.",addressed,
+G09,definition,Returning consumers are represented through Tot_Renrl in tested OEP files.,Returning-consumer and total-reenrollment concepts map to same field.,Use Tot_Renrl with explicit dictionary note.,addressed,
+G10,join_quality,Current-year plan joins were not 100% in prototype.,Treatment flags may be non-constructible for some counties.,Keep non-constructible rows and report join diagnostics.,addressed,

@@ -1,0 +1,12 @@
+check,value,notes
+OEP county rows 2022,2449,State column: State_Abrvtn; FIPS column: County_FIPS_Cd
+OEP county rows 2023,2449,State column: State_Abrvtn; FIPS column: County_FIPS_Cd
+OEP county rows 2024,2316,State column: State_Abrvtn; FIPS column: County_FIPS_Cd
+counties present in all downloaded 2022-2024 OEP county files,2315,"Raw overlap before excluding Alaska, Hawaii, Nebraska, or non-HealthCare.gov states."
+Alaska county FIPS present in OEP county files,True,Drake-style sample would exclude or specially handle this state as described.
+Hawaii county FIPS present in OEP county files,True,Drake-style sample would exclude or specially handle this state as described.
+Nebraska county FIPS present in OEP county files,True,Drake-style sample would exclude or specially handle this state as described.
+mean missing/suppressed rate across tested OEP outcomes 2022,0.021692527562270317,Outcome-specific details are in outputs/oep_outcome_feasibility.csv.
+mean missing/suppressed rate across tested OEP outcomes 2023,0.016843609636586362,Outcome-specific details are in outputs/oep_outcome_feasibility.csv.
+mean missing/suppressed rate across tested OEP outcomes 2024,0.010362694300518135,Outcome-specific details are in outputs/oep_outcome_feasibility.csv.
+OEP reenrollment stratification,county-year aggregate,County-level OEP PUFs do not expose individual-level retention outcomes or income-stratified reenrollment outcomes.

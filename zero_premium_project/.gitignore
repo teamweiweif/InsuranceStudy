@@ -1,0 +1,9 @@
+data/raw/
+data/intermediate/
+outputs/sample_rows/
+scripts/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.tmp
+~$*

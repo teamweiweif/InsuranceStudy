@@ -1,0 +1,4 @@
+year,State_Abrvtn,County_FIPS_Cd,state,county_fips,raw_file_name,exclusion_reason
+2022,Total,Total,TOTAL,,2022-oep-county-level-public-use-file.zip,non_county_summary_or_invalid_fips
+2023,Total,Total,TOTAL,,2023-oep-county-level-public-use-file.zip,non_county_summary_or_invalid_fips
+2024,Total,Total,TOTAL,,2024-oep-county-level-public-use-file.zip,non_county_summary_or_invalid_fips

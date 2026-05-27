@@ -1,0 +1,7 @@
+2026-05-27 09:43:03,484 INFO Validating row integrity
+2026-05-27 09:43:03,488 INFO Validating sample restrictions
+2026-05-27 09:43:03,490 INFO Validating OEP outcomes
+2026-05-27 09:43:03,495 INFO Validating treatment integrity
+2026-05-27 09:43:03,499 INFO Drake-style comparison diagnostics
+2026-05-27 09:43:03,503 INFO Comparing to Step 1 prototype
+2026-05-27 09:43:03,509 INFO Validation complete

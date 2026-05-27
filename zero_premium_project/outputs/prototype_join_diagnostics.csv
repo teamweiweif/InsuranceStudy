@@ -1,0 +1,7 @@
+prototype,sample_states,metric,numerator,denominator,rate,notes
+2023_to_2024_age40_low_income_proxy,AL|FL|NC|TX|WI,previous-year top-two silver county-plan rows,1120,1120,1.0,
+2023_to_2024_age40_low_income_proxy,AL|FL|NC|TX|WI,previous-year plan to crosswalk,1120,1120,1.0,Join on county FIPS plus previous-year plan ID.
+2023_to_2024_age40_low_income_proxy,AL|FL|NC|TX|WI,crosswalk to current-year QHP Landscape,1091,1120,0.9741071428571428,Join on county FIPS plus current-year plan ID.
+2023_to_2024_age40_low_income_proxy,AL|FL|NC|TX|WI,previous-year plan to Rate PUF,1120,1120,1.0,"Join on state, plan ID, rating area, and age 40."
+2023_to_2024_age40_low_income_proxy,AL|FL|NC|TX|WI,current-year plan to Rate PUF,1091,1120,0.9741071428571428,"Join on state, plan ID, rating area, and age 40."
+2023_to_2024_age40_low_income_proxy,AL|FL|NC|TX|WI,current-year plan to service-area county,1120,1120,1.0,"Join Plan Attributes to Service Area PUF by issuer/service area, then to current plan county."
