@@ -3,11 +3,11 @@ county_year_rows_before_restrictions,7211.0
 county_year_rows_primary_sample,6564.0
 counties_primary_sample,2188.0
 states_primary_sample,29.0
-treated_share_2022,0.7397875816993464
+treated_share_2022,0.7401960784313726
 across_issuer_treated_share_2022,0.03594771241830065
-within_issuer_treated_share_2022,0.7046568627450981
+within_issuer_treated_share_2022,0.7050653594771242
 missing_outcome_share_2022,0.037173202614379085
-missing_treatment_share_2022,0.012663398692810458
+missing_treatment_share_2022,0.0008169934640522876
 treated_share_2023,0.6013071895424836
 across_issuer_treated_share_2023,0.002042483660130719
 within_issuer_treated_share_2023,0.5996732026143791

@@ -1643,7 +1643,7 @@ SD,46095,,3,3,2022,2024,317.0,95.0,0,3,False,False,,True,False,False,False,False
 SD,46097,,3,3,2022,2024,480.0,129.0,0,3,False,False,,True,False,False,False,False,True,True,True,102,False,included_by_current_sample_rule
 SD,46099,,3,3,2022,2024,25249.0,7459.0,0,3,False,False,,True,False,False,False,False,True,True,True,1956,False,included_by_current_sample_rule
 SD,46101,,3,3,2022,2024,1074.0,299.0,0,3,False,False,,True,False,False,False,False,True,True,True,353,False,included_by_current_sample_rule
-SD,46102,,3,3,2022,2024,549.0,167.0,0,2,False,False,,True,False,False,False,False,True,True,False,132,False,treatment_not_constructible_all_years
+SD,46102,,3,3,2022,2024,549.0,167.0,0,3,False,False,,True,False,False,False,False,True,True,True,132,False,included_by_current_sample_rule
 SD,46103,,3,3,2022,2024,16534.0,4878.0,0,3,False,False,,True,False,False,False,False,True,True,True,1853,False,included_by_current_sample_rule
 SD,46105,,3,3,2022,2024,833.0,248.0,0,3,False,False,,True,False,False,False,False,True,True,True,263,False,included_by_current_sample_rule
 SD,46107,,3,3,2022,2024,590.0,171.0,0,3,False,False,,True,False,False,False,False,True,True,True,146,False,included_by_current_sample_rule

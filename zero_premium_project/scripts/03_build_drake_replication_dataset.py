@@ -36,6 +36,9 @@ BUILD_LOG = LOGS / "step2_build.log"
 
 SUPPRESSED_VALUES = {"", "+", "*", "**", "***", "ds", "suppressed", "data suppressed", "nan", "na", "n/a"}
 
+PY2021_QHP_LANDSCAPE_ZIP = RAW / "qhp_landscape" / "2021" / "PY2021_Medi-Indi-Land-08_04_2021.zip"
+PY2021_QHP_LANDSCAPE_SOURCE_URL = "https://data.healthcare.gov/datafile/PY2021_Medi-Indi-Land-08_04_2021.zip"
+
 STATE_NAME_TO_CODE = {
     "Alabama": "AL",
     "Alaska": "AK",
@@ -248,6 +251,28 @@ def manifest_row(manifest: pd.DataFrame, source_group: str, year: int | str, fil
     return hits.iloc[0]
 
 
+def qhp_landscape_row(manifest: pd.DataFrame, year: int | str) -> pd.Series:
+    try:
+        return manifest_row(manifest, "qhp_landscape", year, "QHP Landscape Individual Medical ZIP")
+    except FileNotFoundError:
+        if str(year) == "2021" and PY2021_QHP_LANDSCAPE_ZIP.exists():
+            return pd.Series(
+                {
+                    "source_group": "qhp_landscape",
+                    "year": "2021",
+                    "file_type": "QHP Landscape Individual Medical ZIP",
+                    "source_page_url": "https://data.healthcare.gov/dataset/jzae-njub",
+                    "direct_download_url": PY2021_QHP_LANDSCAPE_SOURCE_URL,
+                    "local_path": str(PY2021_QHP_LANDSCAPE_ZIP.relative_to(ROOT)),
+                    "file_format": "zip",
+                    "http_status": "200",
+                    "download_success": "True",
+                    "notes": "Official Data.HealthCare.gov PY2021 QHP Landscape file discovered through metastore dataset jzae-njub.",
+                }
+            )
+        raise
+
+
 def tabular_member(path: Path, prefer_excel: bool = False) -> str | None:
     if path.suffix.lower() != ".zip":
         return None
@@ -313,7 +338,7 @@ def read_nested_dat(outer_path: Path, inner_name_contains: str) -> pd.DataFrame:
 def write_step1_gap_audit() -> pd.DataFrame:
     rows = [
         ("G01", "scope", "Prototype only used selected states.", "National construction may reveal new join failures.", "Scale treatment joins to all states and report state-year diagnostics.", "addressed", ""),
-        ("G02", "missing_source", "PY2021 QHP Landscape direct URLs may be unavailable.", "2021->2022 treatment requires prior-year top-two silver premiums.", "Attempt 2021 panel from official Exchange PUF plus Health Plan Finder rating-area fallback; flag if incomplete.", "addressed_with_fallback", ""),
+        ("G02", "missing_source", "PY2021 QHP Landscape direct URL was not discovered by the newer py2021/individual_market_medical.zip pattern.", "2021->2022 treatment requires prior-year top-two silver premiums.", "Use the official metastore PY2021 QHP Landscape file when present locally; otherwise use Exchange PUF plus Health Plan Finder fallback.", "addressed_with_direct_or_fallback", "Direct file: https://data.healthcare.gov/datafile/PY2021_Medi-Indi-Land-08_04_2021.zip"),
         ("G03", "data_granularity", "OEP outcomes are county-year aggregate only.", "No individual-level or enrollee-level retention analysis is possible.", "Build county-year dataset only.", "accepted_limitation", ""),
         ("G04", "data_granularity", "Individual-level HTE is impossible with these PUFs.", "Later HTE/policy work cannot use individual heterogeneity.", "Document county-level HTE only as possible later design.", "accepted_limitation", ""),
         ("G05", "measurement", "Household-specific post-subsidy premiums are not directly public.", "Exact zero-premium status depends on household income/composition.", "Use EHB-aware low-income proxy and label it as proxy.", "addressed_with_proxy", ""),
@@ -559,7 +584,7 @@ def rate_age40(manifest: pd.DataFrame, year: int) -> pd.DataFrame:
 
 
 def build_qhp_silver_panel(manifest: pd.DataFrame, year: int, metal_pattern: str = "silver") -> pd.DataFrame:
-    row = manifest_row(manifest, "qhp_landscape", year, "QHP Landscape Individual Medical ZIP")
+    row = qhp_landscape_row(manifest, year)
     path = ROOT / row["local_path"]
     member = tabular_member(path, prefer_excel=True)
     header = detect_qhp_header(path, member)
@@ -595,6 +620,8 @@ def build_qhp_silver_panel(manifest: pd.DataFrame, year: int, metal_pattern: str
     out["source_file"] = str(path.relative_to(ROOT))
     out["raw_plan_id_columns_used"] = colmap["plan_id"]
     out["data_quality_notes"] = ""
+    if year == 2021:
+        out["data_quality_notes"] = "PY2021 direct QHP Landscape from official Data.HealthCare.gov dataset jzae-njub."
     out = out[out["metal_level"].str.lower().str.contains(metal_pattern, na=False)].copy()
     out = out[out["county_fips"].ne("") & out["plan_id"].ne("")].copy()
 
@@ -704,8 +731,16 @@ def build_exchange_silver_panel_2021(manifest: pd.DataFrame, metal_pattern: str 
     return panel
 
 
+def build_2021_plan_panel(manifest: pd.DataFrame, metal_pattern: str = "silver") -> pd.DataFrame:
+    if PY2021_QHP_LANDSCAPE_ZIP.exists():
+        logging.info("Using direct PY2021 QHP Landscape for %s panel: %s", metal_pattern, PY2021_QHP_LANDSCAPE_ZIP)
+        return build_qhp_silver_panel(manifest, 2021, metal_pattern=metal_pattern)
+    logging.warning("Direct PY2021 QHP Landscape not found; using Exchange PUF + HPF fallback for %s panel.", metal_pattern)
+    return build_exchange_silver_panel_2021(manifest, metal_pattern=metal_pattern)
+
+
 def build_silver_plan_panel(manifest: pd.DataFrame) -> pd.DataFrame:
-    frames = [build_exchange_silver_panel_2021(manifest)]
+    frames = [build_2021_plan_panel(manifest)]
     for year in [2022, 2023, 2024]:
         frames.append(build_qhp_silver_panel(manifest, year))
     common_cols = sorted(set().union(*[set(f.columns) for f in frames]))
@@ -716,7 +751,7 @@ def build_silver_plan_panel(manifest: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_bronze_plan_panel(manifest: pd.DataFrame) -> pd.DataFrame:
-    frames = [build_exchange_silver_panel_2021(manifest, metal_pattern="bronze")]
+    frames = [build_2021_plan_panel(manifest, metal_pattern="bronze")]
     for year in [2022, 2023, 2024]:
         frames.append(build_qhp_silver_panel(manifest, year, metal_pattern="bronze"))
     common_cols = sorted(set().union(*[set(f.columns) for f in frames]))
@@ -1697,13 +1732,28 @@ def write_reports(final: pd.DataFrame, primary: pd.DataFrame, sample: pd.DataFra
         status = "Weak Conditional Go"
     if primary.empty:
         status = "No-Go"
+    py2021_source_note = (
+        "The 2021 to 2022 transition uses the official direct PY2021 QHP Landscape file from Data.HealthCare.gov dataset `jzae-njub`."
+        if PY2021_QHP_LANDSCAPE_ZIP.exists()
+        else "The 2021 to 2022 transition is attempted from official Exchange PUF plus 2021 Q4 Health Plan Finder fallback because direct PY2021 QHP Landscape is absent locally."
+    )
+    py2021_data_sources_note = (
+        "Data.HealthCare.gov QHP Landscape files for 2021-2024"
+        if PY2021_QHP_LANDSCAPE_ZIP.exists()
+        else "Data.HealthCare.gov QHP Landscape files for 2022-2024 and CMS Health Plan Finder 2021 Q4 RBIS state-rating-area fallback for 2021"
+    )
+    py2021_limitation_note = (
+        "PY2021 direct QHP Landscape is now available locally and is used for the 2021 top-two silver and bronze panels."
+        if PY2021_QHP_LANDSCAPE_ZIP.exists()
+        else "PY2021 direct QHP Landscape data are unavailable locally; 2021 uses official Exchange PUF plus Health Plan Finder fallback."
+    )
     report = f"""# Drake-Style Replication Dataset Report
 
 ## Executive Summary
 
 Overall status: **{status} for moving to Step 3**.
 
-The full county-year replication dataset was built for outcome years {years}. Outcomes are directly constructible from CMS OEP county PUFs. Treatment construction is proxy-based, not exact: zero-premium status now uses an EHB-aware low-income age-40 proxy because household-specific APTC and individual enrollment are not public. The 2021 to 2022 transition is attempted from official Exchange PUF plus 2021 Q4 Health Plan Finder fallback rather than direct QHP Landscape.
+The full county-year replication dataset was built for outcome years {years}. Outcomes are directly constructible from CMS OEP county PUFs. Treatment construction is proxy-based, not exact: zero-premium status now uses an EHB-aware low-income age-40 proxy because household-specific APTC and individual enrollment are not public. {py2021_source_note}
 
 ## What Was Built
 
@@ -1723,7 +1773,7 @@ The full county-year replication dataset was built for outcome years {years}. Ou
 
 ## Data Sources
 
-The build uses CMS OEP County- and State-Level PUFs for 2022-2024; CMS Exchange Rate, Plan Attributes, Service Area, and Plan ID Crosswalk PUFs for 2021-2024; Data.HealthCare.gov QHP Landscape files for 2022-2024; and CMS Health Plan Finder 2021 Q4 RBIS state-rating-area fallback for 2021.
+The build uses CMS OEP County- and State-Level PUFs for 2022-2024; CMS Exchange Rate, Plan Attributes, Service Area, and Plan ID Crosswalk PUFs for 2021-2024; and {py2021_data_sources_note}.
 
 ## Outcome Construction
 
@@ -1763,7 +1813,7 @@ The primary sample uses states with `Pltfrm == HC.gov` in the official OEP state
 - County-level reenrollment outcomes are not income-stratified.
 - Zero-premium status is proxy-based, not exact household net premium.
 - Household-specific APTC is not directly observed.
-- PY2021 direct QHP Landscape data were unavailable; 2021 uses official Exchange PUF plus Health Plan Finder fallback.
+- {py2021_limitation_note}
 - Some crosswalk-to-current-plan joins fail and are flagged.
 - Non-EHB handling now uses the public EHB percent-of-total-premium fields where available, but household-specific APTC and plan shopping/default details are still not directly observed.
 - OEP county outcomes contain suppression and missingness.
@@ -1774,7 +1824,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 
 ## Recommended Next Step
 
-**A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the EHB-aware zero-premium proxy and reviewing 2021 fallback construction.
+**A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the EHB-aware zero-premium proxy and reviewing direct-PY2021 treatment construction.
 """
     (DOCS / "drake_replication_dataset_report.md").write_text(report, encoding="utf-8")
 
@@ -1793,7 +1843,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 
 ## Partially Completed
 
-- 2021 input is fallback-based because direct PY2021 QHP Landscape files were unavailable.
+- {py2021_limitation_note}
 - Zero-premium status is an estimated benchmark proxy, not an exact observed net premium.
 - Some mapped current-year plan joins are incomplete and flagged.
 - Non-EHB handling uses public EHB percent fields, but exact household net premium still cannot be directly observed.
@@ -1810,7 +1860,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 
 ## Immediate Next Actions
 
-1. Review 2021 fallback panel and decide whether to keep 2021 to 2022 in the primary treatment set.
+1. Review direct-PY2021 2021-to-2022 treatment changes against Drake treatment anchors.
 2. Investigate state-year crosswalk failures in `outputs/drake_replication_join_diagnostics.csv`.
 3. Validate market controls against Drake Table 2 definitions before Step 4.
 4. Review Nebraska sensitivity before deciding whether NE can enter any analysis.

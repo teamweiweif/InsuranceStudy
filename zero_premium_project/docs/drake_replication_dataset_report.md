@@ -4,7 +4,7 @@
 
 Overall status: **Conditional Go for moving to Step 3**.
 
-The full county-year replication dataset was built for outcome years 2022, 2023, 2024. Outcomes are directly constructible from CMS OEP county PUFs. Treatment construction is proxy-based, not exact: zero-premium status now uses an EHB-aware low-income age-40 proxy because household-specific APTC and individual enrollment are not public. The 2021 to 2022 transition is attempted from official Exchange PUF plus 2021 Q4 Health Plan Finder fallback rather than direct QHP Landscape.
+The full county-year replication dataset was built for outcome years 2022, 2023, 2024. Outcomes are directly constructible from CMS OEP county PUFs. Treatment construction is proxy-based, not exact: zero-premium status now uses an EHB-aware low-income age-40 proxy because household-specific APTC and individual enrollment are not public. The 2021 to 2022 transition uses the official direct PY2021 QHP Landscape file from Data.HealthCare.gov dataset `jzae-njub`.
 
 ## What Was Built
 
@@ -24,7 +24,7 @@ The full county-year replication dataset was built for outcome years 2022, 2023,
 
 ## Data Sources
 
-The build uses CMS OEP County- and State-Level PUFs for 2022-2024; CMS Exchange Rate, Plan Attributes, Service Area, and Plan ID Crosswalk PUFs for 2021-2024; Data.HealthCare.gov QHP Landscape files for 2022-2024; and CMS Health Plan Finder 2021 Q4 RBIS state-rating-area fallback for 2021.
+The build uses CMS OEP County- and State-Level PUFs for 2022-2024; CMS Exchange Rate, Plan Attributes, Service Area, and Plan ID Crosswalk PUFs for 2021-2024; and Data.HealthCare.gov QHP Landscape files for 2021-2024.
 
 ## Outcome Construction
 
@@ -52,12 +52,12 @@ The rebuild writes 2021 county enrollment weights and county-year market control
 ## Join Diagnostics
 
   transition          rank                                                      metric  numerator  denominator     rate
-2021_to_2022        lowest                                       previous_top_two_rows       2588         2588 1.000000
-2021_to_2022        lowest                                  previous_plan_to_crosswalk       2418         2588 0.934312
-2021_to_2022        lowest                                   crosswalk_to_current_plan       2418         2588 0.934312
-2021_to_2022 second_lowest                                       previous_top_two_rows       2588         2588 1.000000
-2021_to_2022 second_lowest                                  previous_plan_to_crosswalk       2418         2588 0.934312
-2021_to_2022 second_lowest                                   crosswalk_to_current_plan       2418         2588 0.934312
+2021_to_2022        lowest                                       previous_top_two_rows       2617         2617 1.000000
+2021_to_2022        lowest                                  previous_plan_to_crosswalk       2447         2617 0.935040
+2021_to_2022        lowest                                   crosswalk_to_current_plan       2447         2617 0.935040
+2021_to_2022 second_lowest                                       previous_top_two_rows       2617         2617 1.000000
+2021_to_2022 second_lowest                                  previous_plan_to_crosswalk       2447         2617 0.935040
+2021_to_2022 second_lowest                                   crosswalk_to_current_plan       2447         2617 0.935040
 2022_to_2023        lowest                                       previous_top_two_rows       2449         2449 1.000000
 2022_to_2023        lowest                                  previous_plan_to_crosswalk       2449         2449 1.000000
 2022_to_2023        lowest                                   crosswalk_to_current_plan       2449         2449 1.000000
@@ -100,7 +100,7 @@ The primary sample uses states with `Pltfrm == HC.gov` in the official OEP state
 - County-level reenrollment outcomes are not income-stratified.
 - Zero-premium status is proxy-based, not exact household net premium.
 - Household-specific APTC is not directly observed.
-- PY2021 direct QHP Landscape data were unavailable; 2021 uses official Exchange PUF plus Health Plan Finder fallback.
+- PY2021 direct QHP Landscape is now available locally and is used for the 2021 top-two silver and bronze panels.
 - Some crosswalk-to-current-plan joins fail and are flagged.
 - Non-EHB handling now uses the public EHB percent-of-total-premium fields where available, but household-specific APTC and plan shopping/default details are still not directly observed.
 - OEP county outcomes contain suppression and missingness.
@@ -111,8 +111,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 
 ## Recommended Next Step
 
-**A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the EHB-aware zero-premium proxy and reviewing 2021 fallback construction.
-
+**A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the EHB-aware zero-premium proxy and reviewing direct-PY2021 treatment construction.
 ## Validation Summary
 
 Validation flags after running `scripts/04_validate_drake_replication_dataset.py`:
@@ -135,7 +134,7 @@ Validation flags after running `scripts/04_validate_drake_replication_dataset.py
 | PASS | OEP outcomes constructible for 2022-2024 | 0.026625988073776176 | <0.05 | Maximum missingness across core outcomes: 0.027 |
 | PASS | impossible rates | 0 | 0 | Rate values outside [0,1]: 0 |
 | PASS | log variables finite when present | 0 | 0 | Nonfinite log values: 0 |
-| PASS | binary turnover treatment constructible | 0.9873366013071896 | >=0.95 | Minimum constructibility by year: 0.987. 2022 is expected to be weak if 2021 fallback is incomplete. |
+| PASS | binary turnover treatment constructible | 0.9874730021598273 | >=0.95 | Minimum constructibility by year: 0.987. 2022 depends on the 2021-to-2022 transition and should be audited against Drake treatment anchors. |
 | PASS | across-issuer vs within-issuer distinction constructible | 0.0 | 0 | Across-issuer flag missingness: 0.000 |
 | WARN | zero-premium proxy quality | ehb_adjusted_low_income_proxy,not_constructible | exact preferred | Zero-premium measure types: ['ehb_adjusted_low_income_proxy', 'not_constructible']. This is proxy-based, not exact. |
 | PASS | Step 2 repair market-control columns present | 0 | 0 | All repaired market-control columns are present. |
@@ -144,4 +143,4 @@ Validation flags after running `scripts/04_validate_drake_replication_dataset.py
 | WARN | Step 1 97.4 percent current-year join comparison | 0.9346672111065741 | >=0.95 | Step 1: 0.974; Step 2 2023->2024: 0.935 |
 | PASS | sample roughly aligns with Drake et al. |  |  | Primary sample rows: 6564; states: 29 |
 | PASS | dataset ready for descriptive replication |  |  | Ready if uniqueness, OEP outcomes, and primary sample checks pass. |
-| WARN | dataset ready for causal modeling later |  |  | Step 2 does not authorize causal modeling; 2021 fallback and proxy treatment require review. |
+| WARN | dataset ready for causal modeling later |  |  | Step 2 does not authorize causal modeling; the 2021-to-2022 transition and proxy treatment require review. |

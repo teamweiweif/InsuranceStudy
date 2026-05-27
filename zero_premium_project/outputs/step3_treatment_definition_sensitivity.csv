@@ -1,13 +1,13 @@
 variant,year,county_years,any_turnover_county_years,across_issuer_turnover_county_years,within_issuer_turnover_county_years,any_turnover_enrollee_years_millions,across_issuer_enrollee_years_millions,difference_vs_drake_any_count,definition_note,difference_vs_drake_across_count,difference_vs_drake_any_enrollee_millions,difference_vs_drake_across_enrollee_millions
-gross_only,2022,2159,1727,96,1641,9.010037,0.269931,,Gross premium minus gross SLCSP; retained as pre-repair benchmark.,,,
-ehb_all_states,2022,2159,1623,88,1537,8.569763,0.10439,,EHB percent applied in all states; current primary Step 2 treatment proxy.,,,
-ehb_il_or_only,2022,2159,1653,96,1567,8.623381,0.269931,,"EHB residual applied only in IL/OR, the states explicitly named in Drake supplement text.",,,
+gross_only,2022,2159,1728,96,1642,9.010204,0.269931,,Gross premium minus gross SLCSP; retained as pre-repair benchmark.,,,
+ehb_all_states,2022,2159,1624,88,1538,8.56993,0.10439,,EHB percent applied in all states; current primary Step 2 treatment proxy.,,,
+ehb_il_or_only,2022,2159,1654,96,1568,8.623548,0.269931,,"EHB residual applied only in IL/OR, the states explicitly named in Drake supplement text.",,,
 gross_only,2023,2159,1503,13,1492,8.327565,0.510796,,Gross premium minus gross SLCSP; retained as pre-repair benchmark.,,,
 ehb_all_states,2023,2159,1258,5,1254,7.055834,0.008078,,EHB percent applied in all states; current primary Step 2 treatment proxy.,,,
 ehb_il_or_only,2023,2159,1390,13,1379,8.099511,0.510796,,"EHB residual applied only in IL/OR, the states explicitly named in Drake supplement text.",,,
 gross_only,2024,2159,1395,14,1385,12.915765,0.411926,,Gross premium minus gross SLCSP; retained as pre-repair benchmark.,,,
 ehb_all_states,2024,2159,1306,14,1296,12.438992,0.411926,,EHB percent applied in all states; current primary Step 2 treatment proxy.,,,
 ehb_il_or_only,2024,2159,1300,14,1290,12.545993,0.411926,,"EHB residual applied only in IL/OR, the states explicitly named in Drake supplement text.",,,
-ehb_all_states,pooled,6477,4187,107,4087,28.064589,0.524394,-265.0,EHB percent applied in all states; current primary Step 2 treatment proxy.,-104.0,-0.335410999999997,-0.275606
-ehb_il_or_only,pooled,6477,4343,123,4236,29.268884999999997,1.192653,-109.0,"EHB residual applied only in IL/OR, the states explicitly named in Drake supplement text.",-88.0,0.8688849999999988,0.3926529999999999
-gross_only,pooled,6477,4625,123,4518,30.253367,1.192653,173.0,Gross premium minus gross SLCSP; retained as pre-repair benchmark.,-88.0,1.8533670000000022,0.3926529999999999
+ehb_all_states,pooled,6477,4188,107,4088,28.064756,0.524394,-264.0,EHB percent applied in all states; current primary Step 2 treatment proxy.,-104.0,-0.33524399999999943,-0.275606
+ehb_il_or_only,pooled,6477,4344,123,4237,29.269052,1.192653,-108.0,"EHB residual applied only in IL/OR, the states explicitly named in Drake supplement text.",-88.0,0.8690519999999999,0.3926529999999999
+gross_only,pooled,6477,4626,123,4519,30.253534000000002,1.192653,174.0,Gross premium minus gross SLCSP; retained as pre-repair benchmark.,-88.0,1.8535340000000033,0.3926529999999999

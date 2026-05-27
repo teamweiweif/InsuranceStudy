@@ -1,5 +1,6 @@
 transition,year,state,issuer_concept,county_years,across_county_years,across_share,affected_plan_pair_rows
-2021_to_2022,2022,ALL,plan_panel_preferred,2588,88,0.03400309119010819,174
+2021_to_2022,2022,ALL,plan_panel_preferred,2617,88,0.033626289644631255,174
+2021_to_2022,2022,AK,plan_panel_preferred,29,0,0.0,0
 2021_to_2022,2022,AL,plan_panel_preferred,67,0,0.0,0
 2021_to_2022,2022,AR,plan_panel_preferred,75,0,0.0,0
 2021_to_2022,2022,AZ,plan_panel_preferred,15,0,0.0,0
@@ -35,7 +36,8 @@ transition,year,state,issuer_concept,county_years,across_county_years,across_sha
 2021_to_2022,2022,WI,plan_panel_preferred,72,0,0.0,0
 2021_to_2022,2022,WV,plan_panel_preferred,55,0,0.0,0
 2021_to_2022,2022,WY,plan_panel_preferred,23,0,0.0,0
-2021_to_2022,2022,ALL,crosswalk_issuer_only,2588,88,0.03400309119010819,174
+2021_to_2022,2022,ALL,crosswalk_issuer_only,2617,88,0.033626289644631255,174
+2021_to_2022,2022,AK,crosswalk_issuer_only,29,0,0.0,0
 2021_to_2022,2022,AL,crosswalk_issuer_only,67,0,0.0,0
 2021_to_2022,2022,AR,crosswalk_issuer_only,75,0,0.0,0
 2021_to_2022,2022,AZ,crosswalk_issuer_only,15,0,0.0,0
@@ -71,7 +73,8 @@ transition,year,state,issuer_concept,county_years,across_county_years,across_sha
 2021_to_2022,2022,WI,crosswalk_issuer_only,72,0,0.0,0
 2021_to_2022,2022,WV,crosswalk_issuer_only,55,0,0.0,0
 2021_to_2022,2022,WY,crosswalk_issuer_only,23,0,0.0,0
-2021_to_2022,2022,ALL,plan_panel_issuer_only,2588,88,0.03400309119010819,174
+2021_to_2022,2022,ALL,plan_panel_issuer_only,2617,88,0.033626289644631255,174
+2021_to_2022,2022,AK,plan_panel_issuer_only,29,0,0.0,0
 2021_to_2022,2022,AL,plan_panel_issuer_only,67,0,0.0,0
 2021_to_2022,2022,AR,plan_panel_issuer_only,75,0,0.0,0
 2021_to_2022,2022,AZ,plan_panel_issuer_only,15,0,0.0,0
@@ -107,7 +110,8 @@ transition,year,state,issuer_concept,county_years,across_county_years,across_sha
 2021_to_2022,2022,WI,plan_panel_issuer_only,72,0,0.0,0
 2021_to_2022,2022,WV,plan_panel_issuer_only,55,0,0.0,0
 2021_to_2022,2022,WY,plan_panel_issuer_only,23,0,0.0,0
-2021_to_2022,2022,ALL,plan_id_prefix,2588,88,0.03400309119010819,174
+2021_to_2022,2022,ALL,plan_id_prefix,2617,88,0.033626289644631255,174
+2021_to_2022,2022,AK,plan_id_prefix,29,0,0.0,0
 2021_to_2022,2022,AL,plan_id_prefix,67,0,0.0,0
 2021_to_2022,2022,AR,plan_id_prefix,75,0,0.0,0
 2021_to_2022,2022,AZ,plan_id_prefix,15,0,0.0,0

@@ -93,7 +93,7 @@ def validate(input_path: Path, verbose: bool = False) -> pd.DataFrame:
     construct_by_state_year.to_csv(OUTPUTS / "drake_replication_treatment_constructibility_by_state_year.csv", index=False)
     min_construct = float(construct_by_year["constructible_rate"].min())
     treatment_status = "PASS" if min_construct >= 0.95 else "WARN" if min_construct >= 0.70 else "FAIL"
-    flags.append(flag(treatment_status, "binary turnover treatment constructible", f"Minimum constructibility by year: {min_construct:.3f}. 2022 is expected to be weak if 2021 fallback is incomplete.", min_construct, ">=0.95"))
+    flags.append(flag(treatment_status, "binary turnover treatment constructible", f"Minimum constructibility by year: {min_construct:.3f}. 2022 depends on the 2021-to-2022 transition and should be audited against Drake treatment anchors.", min_construct, ">=0.95"))
     across_missing = float(df["any_zero_to_positive_turnover_across_issuer"].isna().mean()) if "any_zero_to_positive_turnover_across_issuer" in df.columns else 1.0
     flags.append(flag("PASS" if across_missing == 0 else "WARN", "across-issuer vs within-issuer distinction constructible", f"Across-issuer flag missingness: {across_missing:.3f}", across_missing, 0))
     zero_measure = set(df.get("zero_premium_measure_type", pd.Series(dtype=str)).dropna().unique())
@@ -173,7 +173,7 @@ def validate(input_path: Path, verbose: bool = False) -> pd.DataFrame:
     ready_desc = "PASS" if dup_count == 0 and max_outcome_missing < 0.05 and len(primary) > 0 else "WARN"
     flags.append(flag(ready_desc, "dataset ready for descriptive replication", "Ready if uniqueness, OEP outcomes, and primary sample checks pass."))
     ready_causal = "WARN" if treatment_status != "FAIL" else "FAIL"
-    flags.append(flag(ready_causal, "dataset ready for causal modeling later", "Step 2 does not authorize causal modeling; 2021 fallback and proxy treatment require review."))
+    flags.append(flag(ready_causal, "dataset ready for causal modeling later", "Step 2 does not authorize causal modeling; the 2021-to-2022 transition and proxy treatment require review."))
 
     flag_df = pd.DataFrame(flags)
     flag_df.to_csv(OUTPUTS / "drake_replication_validation_flags.csv", index=False)

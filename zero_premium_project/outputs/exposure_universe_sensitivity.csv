@@ -1,5 +1,6 @@
 transition,year,universe,state,county_years,counties,any_turnover_county_years,across_issuer_turnover_county_years,within_issuer_turnover_county_years,any_turnover_share,across_issuer_turnover_share,within_issuer_turnover_share
-2021_to_2022,2022,top_two_lowest_silver,ALL,2588,2588,1811,88,1725,0.6997681607418856,0.03400309119010819,0.6665378670788253
+2021_to_2022,2022,top_two_lowest_silver,ALL,2617,2617,1812,88,1726,0.69239587313718,0.033626289644631255,0.6595338173481086
+2021_to_2022,2022,top_two_lowest_silver,AK,29,29,0,0,0,0.0,0.0,0.0
 2021_to_2022,2022,top_two_lowest_silver,AL,67,67,14,0,14,0.208955223880597,0.0,0.208955223880597
 2021_to_2022,2022,top_two_lowest_silver,AR,75,75,75,0,75,1.0,0.0,1.0
 2021_to_2022,2022,top_two_lowest_silver,AZ,15,15,9,0,9,0.6,0.0,0.6
@@ -27,7 +28,7 @@ transition,year,universe,state,county_years,counties,any_turnover_county_years,a
 2021_to_2022,2022,top_two_lowest_silver,OK,77,77,62,0,62,0.8051948051948052,0.0,0.8051948051948052
 2021_to_2022,2022,top_two_lowest_silver,OR,36,36,0,0,0,0.0,0.0,0.0
 2021_to_2022,2022,top_two_lowest_silver,SC,46,46,46,0,46,1.0,0.0,1.0
-2021_to_2022,2022,top_two_lowest_silver,SD,66,66,65,0,65,0.9848484848484849,0.0,0.9848484848484849
+2021_to_2022,2022,top_two_lowest_silver,SD,66,66,66,0,66,1.0,0.0,1.0
 2021_to_2022,2022,top_two_lowest_silver,TN,95,95,87,0,87,0.9157894736842105,0.0,0.9157894736842105
 2021_to_2022,2022,top_two_lowest_silver,TX,254,254,193,0,193,0.7598425196850394,0.0,0.7598425196850394
 2021_to_2022,2022,top_two_lowest_silver,UT,29,29,10,0,10,0.3448275862068966,0.0,0.3448275862068966
@@ -35,7 +36,8 @@ transition,year,universe,state,county_years,counties,any_turnover_county_years,a
 2021_to_2022,2022,top_two_lowest_silver,WI,72,72,54,0,54,0.75,0.0,0.75
 2021_to_2022,2022,top_two_lowest_silver,WV,55,55,0,0,0,0.0,0.0,0.0
 2021_to_2022,2022,top_two_lowest_silver,WY,23,23,23,0,23,1.0,0.0,1.0
-2021_to_2022,2022,all_prior_zero_silver,ALL,2588,2588,1811,88,1725,0.6997681607418856,0.03400309119010819,0.6665378670788253
+2021_to_2022,2022,all_prior_zero_silver,ALL,2617,2617,1812,88,1726,0.69239587313718,0.033626289644631255,0.6595338173481086
+2021_to_2022,2022,all_prior_zero_silver,AK,29,29,0,0,0,0.0,0.0,0.0
 2021_to_2022,2022,all_prior_zero_silver,AL,67,67,14,0,14,0.208955223880597,0.0,0.208955223880597
 2021_to_2022,2022,all_prior_zero_silver,AR,75,75,75,0,75,1.0,0.0,1.0
 2021_to_2022,2022,all_prior_zero_silver,AZ,15,15,9,0,9,0.6,0.0,0.6
@@ -63,7 +65,7 @@ transition,year,universe,state,county_years,counties,any_turnover_county_years,a
 2021_to_2022,2022,all_prior_zero_silver,OK,77,77,62,0,62,0.8051948051948052,0.0,0.8051948051948052
 2021_to_2022,2022,all_prior_zero_silver,OR,36,36,0,0,0,0.0,0.0,0.0
 2021_to_2022,2022,all_prior_zero_silver,SC,46,46,46,0,46,1.0,0.0,1.0
-2021_to_2022,2022,all_prior_zero_silver,SD,66,66,65,0,65,0.9848484848484849,0.0,0.9848484848484849
+2021_to_2022,2022,all_prior_zero_silver,SD,66,66,66,0,66,1.0,0.0,1.0
 2021_to_2022,2022,all_prior_zero_silver,TN,95,95,87,0,87,0.9157894736842105,0.0,0.9157894736842105
 2021_to_2022,2022,all_prior_zero_silver,TX,254,254,193,0,193,0.7598425196850394,0.0,0.7598425196850394
 2021_to_2022,2022,all_prior_zero_silver,UT,29,29,10,0,10,0.3448275862068966,0.0,0.3448275862068966

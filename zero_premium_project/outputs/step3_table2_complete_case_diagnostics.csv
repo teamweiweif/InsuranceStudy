@@ -1,9 +1,9 @@
 candidate_rule,county_years,counties,states,difference_vs_drake_table2_6459,nonmissing_Cnsmr_rows,any_turnover_count,across_turnover_count,notes
-harmonized_sample,6477,2159,29,18,6471,4187,107,Current Step 3 harmonized sample after eTable 3 exclusions.
-treatment_constructible,6476,2159,29,17,6470,4187,107,Current Table 2-style constructible treatment filter.
-constructible_nonmissing_enrollment,6470,2157,29,11,6470,4182,107,Constructible plus nonmissing positive current-year enrollment.
-constructible_nonmissing_2021_weight,6470,2157,29,11,6470,4182,107,Constructible plus nonmissing positive 2021 enrollment weight.
-constructible_market_controls_complete,6476,2159,29,17,6470,4187,107,Constructible plus nonmissing repaired market controls.
-constructible_all_oep_outcomes_complete,6347,2143,29,-112,6347,4102,102,Constructible plus all core OEP outcome columns nonmissing.
-drake_table2_complete_case_core_flag,6470,2157,29,11,6470,4182,107,Flag produced by Step 2: drake_table2_complete_case_core_flag.
-drake_table2_complete_case_all_outcomes_flag,6347,2143,29,-112,6347,4102,102,Flag produced by Step 2: drake_table2_complete_case_all_outcomes_flag.
+harmonized_sample,6477,2159,29,18,6471,4188,107,Current Step 3 harmonized sample after eTable 3 exclusions.
+treatment_constructible,6477,2159,29,18,6471,4188,107,Current Table 2-style constructible treatment filter.
+constructible_nonmissing_enrollment,6471,2157,29,12,6471,4183,107,Constructible plus nonmissing positive current-year enrollment.
+constructible_nonmissing_2021_weight,6471,2157,29,12,6471,4183,107,Constructible plus nonmissing positive 2021 enrollment weight.
+constructible_market_controls_complete,6477,2159,29,18,6471,4188,107,Constructible plus nonmissing repaired market controls.
+constructible_all_oep_outcomes_complete,6348,2143,29,-111,6348,4103,102,Constructible plus all core OEP outcome columns nonmissing.
+drake_table2_complete_case_core_flag,6471,2157,29,12,6471,4183,107,Flag produced by Step 2: drake_table2_complete_case_core_flag.
+drake_table2_complete_case_all_outcomes_flag,6348,2143,29,-111,6348,4103,102,Flag produced by Step 2: drake_table2_complete_case_all_outcomes_flag.

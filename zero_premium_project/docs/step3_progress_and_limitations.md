@@ -25,7 +25,7 @@
 - The outcome data very closely reproduce the public OEP reenrollment structure.
 - Any-turnover prevalence is sensitive to non-EHB handling: gross-only overcounts county-years while all-state EHB-aware undercounts them.
 - Across-insurer turnover is too low relative to Drake under the strict zero-to-positive definition.
-- 2022 still deserves scrutiny because it depends on reconstructed 2021 county-plan premiums, now using the 2021 Q4 HPF/RBIS fallback when available.
+- 2022 still deserves scrutiny because it depends on the 2021-to-2022 treatment transition; direct PY2021 QHP Landscape is used when available locally.
 
 ## Honest Judgment
 
@@ -33,7 +33,7 @@
 
 Main warnings:
 
-- Any-turnover county-year count differs from Drake by -265.
+- Any-turnover county-year count differs from Drake by -264.
 - Across-issuer turnover count differs from Drake by -104; current proxy likely under-detects across-insurer turnover.
 - Enrollment-weighted any-turnover exposure differs from Drake 100-150 FPL exposure by up to 6.5 pp.
 - Treatment remains proxy-based; Step 2 does not prove household-specific net premiums, 125 percent FPL contribution, or non-EHB handling.

@@ -65,7 +65,7 @@ raw_primary_before_etable3_exclusions,OR,2024,36,36,145509.0,1.0,0.0,0.0,0.0,0.0
 raw_primary_before_etable3_exclusions,SC,2022,46,46,300392.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,False,extreme_treatment_prevalence
 raw_primary_before_etable3_exclusions,SC,2023,46,46,382968.0,1.0,0.0,0.0,0.0,0.0,0.0,0.7608695652173914,False,none
 raw_primary_before_etable3_exclusions,SC,2024,46,46,571175.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,False,extreme_treatment_prevalence
-raw_primary_before_etable3_exclusions,SD,2022,66,66,41339.0,0.9848484848484849,0.015151515151515152,0.0,0.0,0.0,0.06060606060606061,1.0,False,extreme_treatment_prevalence
+raw_primary_before_etable3_exclusions,SD,2022,66,66,41339.0,1.0,0.0,0.0,0.0,0.0,0.06060606060606061,1.0,False,extreme_treatment_prevalence
 raw_primary_before_etable3_exclusions,SD,2023,66,66,47591.0,1.0,0.0,0.0,0.0,0.0,0.045454545454545456,1.0,False,extreme_treatment_prevalence
 raw_primary_before_etable3_exclusions,SD,2024,66,66,52974.0,1.0,0.0,0.0,0.0,0.0,0.045454545454545456,0.7575757575757576,False,none
 raw_primary_before_etable3_exclusions,TN,2022,95,95,273680.0,1.0,0.0,0.0,0.0,0.0,0.0,0.9157894736842105,False,none
@@ -152,7 +152,7 @@ drake_harmonized,OR,2024,36,36,145509.0,1.0,0.0,0.0,0.0,0.0,0.05555555555555555,
 drake_harmonized,SC,2022,46,46,300392.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,False,extreme_treatment_prevalence
 drake_harmonized,SC,2023,46,46,382968.0,1.0,0.0,0.0,0.0,0.0,0.0,0.7608695652173914,False,none
 drake_harmonized,SC,2024,46,46,571175.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,False,extreme_treatment_prevalence
-drake_harmonized,SD,2022,66,66,41339.0,0.9848484848484849,0.015151515151515152,0.0,0.0,0.0,0.06060606060606061,1.0,False,extreme_treatment_prevalence
+drake_harmonized,SD,2022,66,66,41339.0,1.0,0.0,0.0,0.0,0.0,0.06060606060606061,1.0,False,extreme_treatment_prevalence
 drake_harmonized,SD,2023,66,66,47591.0,1.0,0.0,0.0,0.0,0.0,0.045454545454545456,1.0,False,extreme_treatment_prevalence
 drake_harmonized,SD,2024,66,66,52974.0,1.0,0.0,0.0,0.0,0.0,0.045454545454545456,0.7575757575757576,False,none
 drake_harmonized,TN,2022,95,95,273680.0,1.0,0.0,0.0,0.0,0.0,0.0,0.9157894736842105,False,none

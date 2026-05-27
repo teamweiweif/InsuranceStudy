@@ -13,7 +13,7 @@
 
 ## Partially Completed
 
-- 2021 input is fallback-based because direct PY2021 QHP Landscape files were unavailable.
+- PY2021 direct QHP Landscape is now available locally and is used for the 2021 top-two silver and bronze panels.
 - Zero-premium status is an estimated benchmark proxy, not an exact observed net premium.
 - Some mapped current-year plan joins are incomplete and flagged.
 - Non-EHB handling uses public EHB percent fields, but exact household net premium still cannot be directly observed.
@@ -30,7 +30,7 @@
 
 ## Immediate Next Actions
 
-1. Review 2021 fallback panel and decide whether to keep 2021 to 2022 in the primary treatment set.
+1. Review direct-PY2021 2021-to-2022 treatment changes against Drake treatment anchors.
 2. Investigate state-year crosswalk failures in `outputs/drake_replication_join_diagnostics.csv`.
 3. Validate market controls against Drake Table 2 definitions before Step 4.
 4. Review Nebraska sensitivity before deciding whether NE can enter any analysis.

@@ -1,10 +1,10 @@
 transition,rank,metric,numerator,denominator,rate
-2021_to_2022,lowest,previous_top_two_rows,2588,2588,1.0
-2021_to_2022,lowest,previous_plan_to_crosswalk,2418,2588,0.9343122102009274
-2021_to_2022,lowest,crosswalk_to_current_plan,2418,2588,0.9343122102009274
-2021_to_2022,second_lowest,previous_top_two_rows,2588,2588,1.0
-2021_to_2022,second_lowest,previous_plan_to_crosswalk,2418,2588,0.9343122102009274
-2021_to_2022,second_lowest,crosswalk_to_current_plan,2418,2588,0.9343122102009274
+2021_to_2022,lowest,previous_top_two_rows,2617,2617,1.0
+2021_to_2022,lowest,previous_plan_to_crosswalk,2447,2617,0.9350401222774168
+2021_to_2022,lowest,crosswalk_to_current_plan,2447,2617,0.9350401222774168
+2021_to_2022,second_lowest,previous_top_two_rows,2617,2617,1.0
+2021_to_2022,second_lowest,previous_plan_to_crosswalk,2447,2617,0.9350401222774168
+2021_to_2022,second_lowest,crosswalk_to_current_plan,2447,2617,0.9350401222774168
 2022_to_2023,lowest,previous_top_two_rows,2449,2449,1.0
 2022_to_2023,lowest,previous_plan_to_crosswalk,2449,2449,1.0
 2022_to_2023,lowest,crosswalk_to_current_plan,2449,2449,1.0
