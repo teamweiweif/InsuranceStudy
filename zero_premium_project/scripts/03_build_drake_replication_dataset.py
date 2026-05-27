@@ -163,12 +163,35 @@ def clean_fips(value: Any) -> str:
     return digits.zfill(5) if digits else ""
 
 
+def issuer_prefix_from_plan_id(value: Any) -> str:
+    text = clean_id(value)
+    return text[:5] if len(text) >= 5 and text[:5].isdigit() else ""
+
+
 def numeric_series(series: pd.Series) -> pd.Series:
     text = series.astype(str).str.strip()
     text = text.mask(text.str.lower().isin(SUPPRESSED_VALUES), np.nan)
     text = text.str.replace("$", "", regex=False).str.replace(",", "", regex=False).str.replace("%", "", regex=False)
     text = text.str.replace(r"[^0-9.\-]", "", regex=True)
     return pd.to_numeric(text, errors="coerce")
+
+
+def add_ehb_premium_components(df: pd.DataFrame, source_label: str) -> pd.DataFrame:
+    out = df.copy()
+    if "ehb_percent_total_premium" not in out.columns:
+        out["ehb_percent_total_premium"] = np.nan
+    out["ehb_percent_total_premium_raw"] = out["ehb_percent_total_premium"].astype(str)
+    percent = numeric_series(out["ehb_percent_total_premium"])
+    share = percent.where(percent <= 1, percent / 100)
+    share = share.where(share.between(0, 1))
+    out["ehb_percent_total_premium"] = percent
+    out["ehb_share_of_total_premium"] = share
+    out["ehb_percent_missing_flag"] = share.isna()
+    effective_share = share.fillna(1.0)
+    out["ehb_age_40_premium"] = out["age_40_premium"] * effective_share
+    out["non_ehb_age_40_premium"] = (out["age_40_premium"] - out["ehb_age_40_premium"]).clip(lower=0)
+    out["ehb_premium_component_source"] = source_label
+    return out
 
 
 def suppression_flag(series: pd.Series) -> pd.Series:
@@ -293,7 +316,7 @@ def write_step1_gap_audit() -> pd.DataFrame:
         ("G02", "missing_source", "PY2021 QHP Landscape direct URLs may be unavailable.", "2021->2022 treatment requires prior-year top-two silver premiums.", "Attempt 2021 panel from official Exchange PUF plus Health Plan Finder rating-area fallback; flag if incomplete.", "addressed_with_fallback", ""),
         ("G03", "data_granularity", "OEP outcomes are county-year aggregate only.", "No individual-level or enrollee-level retention analysis is possible.", "Build county-year dataset only.", "accepted_limitation", ""),
         ("G04", "data_granularity", "Individual-level HTE is impossible with these PUFs.", "Later HTE/policy work cannot use individual heterogeneity.", "Document county-level HTE only as possible later design.", "accepted_limitation", ""),
-        ("G05", "measurement", "Household-specific post-subsidy premiums are not directly public.", "Exact zero-premium status depends on household income/composition.", "Use benchmark-based low-income proxy and label it as proxy.", "addressed_with_proxy", ""),
+        ("G05", "measurement", "Household-specific post-subsidy premiums are not directly public.", "Exact zero-premium status depends on household income/composition.", "Use EHB-aware low-income proxy and label it as proxy.", "addressed_with_proxy", ""),
         ("G06", "sample", "Alaska and Hawaii need exclusion or special handling.", "Drake-style contiguous-market sample excludes AK/HI.", "Exclude AK/HI from primary sample.", "addressed", ""),
         ("G07", "sample", "Nebraska may need exclusion or special handling.", "County-market mapping may be incompatible.", "Exclude NE from primary sample; create sensitivity file if requested.", "addressed", ""),
         ("G08", "missingness", "Suppression/missingness exists in OEP county outcomes.", "Outcome rates/logs can be missing.", "Preserve rows, set derived values missing, and flag suppression.", "addressed", ""),
@@ -338,8 +361,9 @@ primary_treatment:
   - across_issuer_zero_to_positive_turnover
   - within_issuer_zero_to_positive_turnover
 zero_premium_measure:
-  type: benchmark_based_low_income_proxy
+  type: ehb_adjusted_low_income_proxy
   assumption: age_40_125_percent_fpl_proxy_with_zero_expected_contribution_for_100_to_150_fpl_under_arpa
+  non_ehb_handling: use_public_ehb_percent_total_premium_fields_where_available; retain_gross_only_sensitivity_fields
 market_controls_added_for_repair:
   - enrollment_2021_weight
   - number_of_silver_plans
@@ -552,6 +576,7 @@ def build_qhp_silver_panel(manifest: pd.DataFrame, year: int, metal_pattern: str
         "plan_type": find_col(cols, ["Plan Type"]),
         "rating_area_id": find_col(cols, ["Rating Area"], required=True),
         "age_40_premium": find_col(cols, ["Premium Adult Individual Age 40"], required=True),
+        "ehb_percent_total_premium": find_col(cols, ["EHB Percent of Total Premium"]),
     }
     out = df[[c for c in colmap.values() if c]].rename(columns={v: k for k, v in colmap.items() if v})
     out["year"] = year
@@ -564,6 +589,7 @@ def build_qhp_silver_panel(manifest: pd.DataFrame, year: int, metal_pattern: str
     out["rating_area_id"] = out["rating_area_id"].astype(str).str.strip()
     out["age_40_premium"] = numeric_series(out["age_40_premium"])
     out["qhp_landscape_premium"] = out["age_40_premium"]
+    out = add_ehb_premium_components(out, "QHP Landscape EHB Percent of Total Premium")
     out["premium_source"] = "QHP Landscape"
     out["market_type"] = "Individual"
     out["source_file"] = str(path.relative_to(ROOT))
@@ -589,7 +615,9 @@ def build_qhp_silver_panel(manifest: pd.DataFrame, year: int, metal_pattern: str
 
 
 def state_rating_area_2021() -> pd.DataFrame:
-    path = RAW / "health_plan_finder" / "2020" / "2020q4-rbis.zip"
+    path = RAW / "health_plan_finder" / "2021" / "2021q4-hios-rbis.zip"
+    if not path.exists():
+        path = RAW / "health_plan_finder" / "2020" / "2020q4-rbis.zip"
     df = read_nested_dat(path, "STATE_RATING_AREA")
     df["state"] = df["State"].map(STATE_NAME_TO_CODE)
     df["county_fips"] = df["FIPS"].map(clean_fips)
@@ -617,6 +645,7 @@ def build_exchange_silver_panel_2021(manifest: pd.DataFrame, metal_pattern: str 
         "metal_level": find_col(plan_cols, ["MetalLevel"], required=True),
         "service_area_id": find_col(plan_cols, ["ServiceAreaId"], required=True),
         "qhp_type": find_col(plan_cols, ["QHPNonQHPTypeId"]),
+        "ehb_percent_total_premium": find_col(plan_cols, ["EHBPercentTotalPremium"]),
     }
     service_colmap = {
         "state": find_col(service_cols, ["StateCode"], required=True),
@@ -656,9 +685,13 @@ def build_exchange_silver_panel_2021(manifest: pd.DataFrame, metal_pattern: str 
     panel["county_name"] = ""
     panel["standard_component_id"] = panel["plan_id"]
     panel["age_40_premium"] = panel["rate_puf_age_40_premium"]
+    panel = add_ehb_premium_components(panel, "Plan Attributes EHBPercentTotalPremium")
     panel["qhp_landscape_premium"] = np.nan
     panel["premium_source"] = "Exchange PUF + Health Plan Finder rating-area fallback"
-    panel["source_file"] = f"{plan_row['local_path']} + {service_row['local_path']} + data/raw/health_plan_finder/2020/2020q4-rbis.zip"
+    hpf_path = RAW / "health_plan_finder" / "2021" / "2021q4-hios-rbis.zip"
+    if not hpf_path.exists():
+        hpf_path = RAW / "health_plan_finder" / "2020" / "2020q4-rbis.zip"
+    panel["source_file"] = f"{plan_row['local_path']} + {service_row['local_path']} + {hpf_path.relative_to(ROOT)}"
     panel["raw_plan_id_columns_used"] = "StandardComponentId"
     panel["data_quality_notes"] = f"PY2021 QHP Landscape direct file unavailable; {metal_pattern} county premiums reconstructed from official Exchange PUF and HPF rating-area fallback."
     panel["premium_difference"] = np.nan
@@ -719,9 +752,13 @@ def build_two_lowest(panel: pd.DataFrame) -> pd.DataFrame:
                 "lowest_silver_plan_id": first["plan_id"],
                 "lowest_silver_issuer_id": first["issuer_id"],
                 "lowest_silver_premium": first["age_40_premium"],
+                "lowest_silver_ehb_premium": first.get("ehb_age_40_premium", np.nan),
+                "lowest_silver_non_ehb_premium": first.get("non_ehb_age_40_premium", np.nan),
                 "second_lowest_silver_plan_id": second["plan_id"],
                 "second_lowest_silver_issuer_id": second["issuer_id"],
                 "second_lowest_silver_premium": second["age_40_premium"],
+                "second_lowest_silver_ehb_premium": second.get("ehb_age_40_premium", np.nan),
+                "second_lowest_silver_non_ehb_premium": second.get("non_ehb_age_40_premium", np.nan),
                 "number_of_silver_plans": len(g),
                 "number_of_plans_tied_lowest": n_low,
                 "number_of_plans_tied_second_lowest": n_second,
@@ -756,7 +793,11 @@ def build_market_controls(silver_panel: pd.DataFrame, bronze_panel: pd.DataFrame
         "county_fips",
         "has_two_silver_plans",
         "lowest_silver_premium",
+        "lowest_silver_ehb_premium",
+        "lowest_silver_non_ehb_premium",
         "second_lowest_silver_premium",
+        "second_lowest_silver_ehb_premium",
+        "second_lowest_silver_non_ehb_premium",
         "number_of_plans_tied_lowest",
         "number_of_plans_tied_second_lowest",
         "tie_flag",
@@ -791,15 +832,33 @@ def build_market_controls(silver_panel: pd.DataFrame, bronze_panel: pd.DataFrame
 
 
 def build_zero_proxy(panel: pd.DataFrame, two_lowest: pd.DataFrame) -> pd.DataFrame:
-    bench = two_lowest[["year", "state", "county_fips", "second_lowest_silver_premium"]].rename(
-        columns={"second_lowest_silver_premium": "benchmark_or_second_lowest_silver_premium_proxy"}
+    bench_cols = ["year", "state", "county_fips", "second_lowest_silver_premium", "second_lowest_silver_ehb_premium"]
+    for col in bench_cols:
+        if col not in two_lowest.columns:
+            two_lowest[col] = np.nan
+    bench = two_lowest[bench_cols].rename(
+        columns={
+            "second_lowest_silver_premium": "benchmark_or_second_lowest_silver_premium_proxy",
+            "second_lowest_silver_ehb_premium": "benchmark_or_second_lowest_silver_ehb_premium_proxy",
+        }
     )
     out = panel.merge(bench, on=["year", "state", "county_fips"], how="left")
     out["gross_age_40_premium"] = out["age_40_premium"]
-    out["estimated_net_premium_proxy"] = (out["gross_age_40_premium"] - out["benchmark_or_second_lowest_silver_premium_proxy"]).clip(lower=0)
+    if "ehb_age_40_premium" not in out.columns:
+        out["ehb_age_40_premium"] = out["gross_age_40_premium"]
+    if "non_ehb_age_40_premium" not in out.columns:
+        out["non_ehb_age_40_premium"] = 0.0
+    out["benchmark_or_second_lowest_silver_ehb_premium_proxy"] = out["benchmark_or_second_lowest_silver_ehb_premium_proxy"].fillna(
+        out["benchmark_or_second_lowest_silver_premium_proxy"]
+    )
+    out["estimated_net_premium_proxy_gross_benchmark"] = (out["gross_age_40_premium"] - out["benchmark_or_second_lowest_silver_premium_proxy"]).clip(lower=0)
+    out["estimated_ehb_net_component_proxy"] = (out["ehb_age_40_premium"] - out["benchmark_or_second_lowest_silver_ehb_premium_proxy"]).clip(lower=0)
+    out["estimated_net_premium_proxy"] = out["estimated_ehb_net_component_proxy"] + out["non_ehb_age_40_premium"].fillna(0)
+    out["gross_benchmark_zero_premium_proxy"] = out["estimated_net_premium_proxy_gross_benchmark"].le(0.01) & out["estimated_net_premium_proxy_gross_benchmark"].notna()
     out["zero_premium_proxy"] = out["estimated_net_premium_proxy"].le(0.01) & out["estimated_net_premium_proxy"].notna()
-    out["subsidy_assumption"] = "Age-40 100-150% FPL proxy assumes zero expected contribution; APTC proxied by county-year SLCSP."
-    out["notes"] = "Proxy, not exact household-specific post-subsidy premium."
+    out["ehb_adjustment_changes_zero_flag"] = out["zero_premium_proxy"].ne(out["gross_benchmark_zero_premium_proxy"])
+    out["subsidy_assumption"] = "Age-40 100-150% FPL proxy assumes zero expected contribution at 125% FPL; APTC is capped by county-year SLCSP EHB premium."
+    out["notes"] = "EHB-aware proxy; non-EHB premium residual remains payable. Still not exact household-specific post-subsidy premium."
     keep = [
         "year",
         "state",
@@ -808,9 +867,19 @@ def build_zero_proxy(panel: pd.DataFrame, two_lowest: pd.DataFrame) -> pd.DataFr
         "issuer_id",
         "metal_level",
         "gross_age_40_premium",
+        "ehb_percent_total_premium",
+        "ehb_share_of_total_premium",
+        "ehb_percent_missing_flag",
+        "ehb_age_40_premium",
+        "non_ehb_age_40_premium",
         "benchmark_or_second_lowest_silver_premium_proxy",
+        "benchmark_or_second_lowest_silver_ehb_premium_proxy",
+        "estimated_net_premium_proxy_gross_benchmark",
+        "gross_benchmark_zero_premium_proxy",
+        "estimated_ehb_net_component_proxy",
         "estimated_net_premium_proxy",
         "zero_premium_proxy",
+        "ehb_adjustment_changes_zero_flag",
         "subsidy_assumption",
         "notes",
     ]
@@ -826,7 +895,20 @@ def load_crosswalk(manifest: pd.DataFrame, previous_year: int, current_year: int
     prev_issuer = f"IssuerID_{previous_year}"
     cur_issuer = f"IssuerID_{current_year}"
     cols = list(df.columns)
-    needed = ["State", "DentalPlan", prev_plan, prev_issuer, f"MetalLevel_{previous_year}", "FIPSCode", "ZipCode", "CrosswalkLevel", "ReasonForCrosswalk", cur_plan, cur_issuer, f"MetalLevel_{current_year}"]
+    needed = [
+        "State",
+        "DentalPlan",
+        prev_plan,
+        prev_issuer,
+        f"MetalLevel_{previous_year}",
+        "FIPSCode",
+        "ZipCode",
+        "CrosswalkLevel",
+        "ReasonForCrosswalk",
+        cur_plan,
+        cur_issuer,
+        f"MetalLevel_{current_year}",
+    ]
     use = [c for c in needed if c in cols]
     out = df[use].copy()
     out = out.rename(
@@ -837,6 +919,7 @@ def load_crosswalk(manifest: pd.DataFrame, previous_year: int, current_year: int
             prev_issuer: "previous_issuer_id",
             f"MetalLevel_{previous_year}": "previous_metal_level",
             "FIPSCode": "county_fips",
+            "ZipCode": "zip_code",
             "CrosswalkLevel": "crosswalk_level",
             "ReasonForCrosswalk": "crosswalk_reason_or_type",
             cur_plan: "current_plan_id",
@@ -844,6 +927,22 @@ def load_crosswalk(manifest: pd.DataFrame, previous_year: int, current_year: int
             f"MetalLevel_{current_year}": "current_metal_level",
         }
     )
+    for col in [
+        "state",
+        "dental_plan",
+        "previous_plan_id",
+        "previous_issuer_id",
+        "previous_metal_level",
+        "county_fips",
+        "zip_code",
+        "crosswalk_level",
+        "crosswalk_reason_or_type",
+        "current_plan_id",
+        "current_issuer_id",
+        "current_metal_level",
+    ]:
+        if col not in out.columns:
+            out[col] = ""
     out["transition"] = f"{previous_year}_to_{current_year}"
     out["previous_year"] = previous_year
     out["current_year"] = current_year
@@ -857,30 +956,112 @@ def load_crosswalk(manifest: pd.DataFrame, previous_year: int, current_year: int
     out["current_issuer_id"] = out["current_issuer_id"].map(clean_id)
     out = out[out["dental_plan"].astype(str).str.upper().isin({"N", "NO", "FALSE", "0"})].copy()
     out = out[out["previous_metal_level"].astype(str).str.lower().str.contains("silver", na=False)].copy()
+    out["crosswalk_level_num"] = pd.to_numeric(out["crosswalk_level"], errors="coerce")
     out["same_issuer_flag"] = out["previous_issuer_id"].eq(out["current_issuer_id"])
     out["across_issuer_flag"] = out["previous_issuer_id"].ne(out["current_issuer_id"])
     out["crosswalk_source_file"] = row["local_path"]
     out["mapping_quality_flag"] = np.where(out["current_plan_id"].str.contains("00000XX", na=False) | out["current_plan_id"].eq(""), "unmapped_or_placeholder", "mapped")
+    key_cols = ["state", "county_fips", "previous_plan_id"]
+    out["_mapped_rank"] = np.where(out["mapping_quality_flag"].eq("mapped"), 0, 1)
+    out["_same_issuer_rank"] = np.where(out["same_issuer_flag"], 0, 1)
+    out["_current_silver_rank"] = np.where(out["current_metal_level"].astype(str).str.lower().str.contains("silver", na=False), 0, 1)
+    out["_crosswalk_level_sort"] = out["crosswalk_level_num"].fillna(9999)
+    sort_cols = [
+        *key_cols,
+        "_mapped_rank",
+        "_current_silver_rank",
+        "_same_issuer_rank",
+        "_crosswalk_level_sort",
+        "current_plan_id",
+        "current_issuer_id",
+    ]
+    out_sorted = out.sort_values(sort_cols, kind="mergesort").copy()
+    duplicate_mask = out_sorted.duplicated(key_cols, keep=False)
+    duplicate_keys = out_sorted.loc[duplicate_mask, key_cols].drop_duplicates()
+    selected = out_sorted.drop_duplicates(key_cols, keep="first").copy()
+    duplicate_audit_cols = [
+        "transition",
+        "state",
+        "county_fips",
+        "previous_plan_id",
+        "candidate_rows",
+        "candidate_current_plan_ids",
+        "candidate_current_issuer_ids",
+        "candidate_crosswalk_levels",
+        "candidate_reasons",
+        "selected_current_plan_id",
+        "selected_current_issuer_id",
+        "selected_crosswalk_level",
+        "selected_reason",
+        "selection_rule",
+    ]
+    if not duplicate_keys.empty:
+        candidates = out_sorted.merge(duplicate_keys, on=key_cols, how="inner")
+
+        def joined_unique(values: pd.Series) -> str:
+            clean = sorted({str(value) for value in values.dropna().tolist() if str(value) != ""})
+            return "|".join(clean)
+
+        audit = (
+            candidates.groupby(key_cols, dropna=False)
+            .agg(
+                candidate_rows=("current_plan_id", "size"),
+                candidate_current_plan_ids=("current_plan_id", joined_unique),
+                candidate_current_issuer_ids=("current_issuer_id", joined_unique),
+                candidate_crosswalk_levels=("crosswalk_level", joined_unique),
+                candidate_reasons=("crosswalk_reason_or_type", joined_unique),
+            )
+            .reset_index()
+        )
+        selected_dups = selected.merge(duplicate_keys, on=key_cols, how="inner")[
+            [*key_cols, "current_plan_id", "current_issuer_id", "crosswalk_level", "crosswalk_reason_or_type"]
+        ].rename(
+            columns={
+                "current_plan_id": "selected_current_plan_id",
+                "current_issuer_id": "selected_current_issuer_id",
+                "crosswalk_level": "selected_crosswalk_level",
+                "crosswalk_reason_or_type": "selected_reason",
+            }
+        )
+        audit = audit.merge(selected_dups, on=key_cols, how="left")
+        audit["transition"] = f"{previous_year}_to_{current_year}"
+        audit["selection_rule"] = "mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer"
+        audit = audit[duplicate_audit_cols]
+    else:
+        audit = pd.DataFrame(columns=duplicate_audit_cols)
+    audit.to_csv(OUTPUTS / f"crosswalk_duplicate_default_audit_{previous_year}_{current_year}.csv", index=False)
+    candidate_counts = out_sorted.groupby(key_cols, dropna=False).size().reset_index(name="crosswalk_duplicate_candidate_count")
+    selected = selected.merge(candidate_counts, on=key_cols, how="left")
+    selected = selected.drop(columns=[col for col in selected.columns if col.startswith("_")])
     cols_out = [
         "transition",
         "previous_year",
         "current_year",
         "state",
         "county_fips",
+        "zip_code",
         "previous_plan_id",
         "previous_issuer_id",
         "previous_plan_id_raw",
+        "previous_metal_level",
         "current_plan_id",
         "current_issuer_id",
         "current_plan_id_raw",
+        "current_metal_level",
+        "crosswalk_level",
+        "crosswalk_level_num",
         "crosswalk_reason_or_type",
         "same_issuer_flag",
         "across_issuer_flag",
         "crosswalk_source_file",
         "mapping_quality_flag",
+        "crosswalk_duplicate_candidate_count",
     ]
-    out[cols_out].to_csv(INTERMEDIATE / f"crosswalk_transition_{previous_year}_{current_year}.csv", index=False)
-    return out
+    selected[cols_out].to_csv(INTERMEDIATE / f"crosswalk_transition_{previous_year}_{current_year}.csv", index=False)
+    selected.attrs["raw_crosswalk_rows"] = len(out)
+    selected.attrs["duplicate_keys"] = int(len(duplicate_keys))
+    selected.attrs["duplicate_candidate_rows"] = int(duplicate_mask.sum())
+    return selected
 
 
 def construct_transition(
@@ -890,6 +1071,7 @@ def construct_transition(
     two_lowest: pd.DataFrame,
     zero_proxy: pd.DataFrame,
     join_rows: list[dict[str, Any]],
+    crosswalk: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
     transition = f"{previous_year}_to_{current_year}"
     prev_top = two_lowest[two_lowest["year"].eq(previous_year)].copy()
@@ -898,17 +1080,35 @@ def construct_transition(
         out.to_csv(INTERMEDIATE / f"turnover_transition_{previous_year}_{current_year}.csv", index=False)
         return out
 
-    z = zero_proxy[["year", "state", "county_fips", "plan_id", "issuer_id", "gross_age_40_premium", "estimated_net_premium_proxy", "zero_premium_proxy"]].copy()
+    z_cols = [
+        "year",
+        "state",
+        "county_fips",
+        "plan_id",
+        "issuer_id",
+        "gross_age_40_premium",
+        "ehb_age_40_premium",
+        "non_ehb_age_40_premium",
+        "estimated_net_premium_proxy_gross_benchmark",
+        "gross_benchmark_zero_premium_proxy",
+        "estimated_net_premium_proxy",
+        "zero_premium_proxy",
+    ]
+    z = zero_proxy[[col for col in z_cols if col in zero_proxy.columns]].copy()
     current_z = z[z["year"].eq(current_year)].rename(
         columns={
             "plan_id": "current_plan_id",
-            "issuer_id": "current_issuer_id_proxy",
+            "issuer_id": "current_issuer_id_plan_panel",
             "gross_age_40_premium": "current_gross_premium",
+            "ehb_age_40_premium": "current_ehb_premium",
+            "non_ehb_age_40_premium": "current_non_ehb_premium",
+            "estimated_net_premium_proxy_gross_benchmark": "current_net_premium_proxy_gross_benchmark",
+            "gross_benchmark_zero_premium_proxy": "current_gross_benchmark_zero_premium_proxy",
             "estimated_net_premium_proxy": "current_net_premium_proxy",
             "zero_premium_proxy": "current_zero_premium_proxy",
         }
     )
-    cw = load_crosswalk(manifest, previous_year, current_year)
+    cw = crosswalk.copy() if crosswalk is not None else load_crosswalk(manifest, previous_year, current_year)
 
     records = []
     for rank_name, plan_col, issuer_col, premium_col in [
@@ -919,18 +1119,54 @@ def construct_transition(
             columns={plan_col: "previous_plan_id", issuer_col: "previous_issuer_id", premium_col: "prior_gross_premium"}
         )
         part["rank"] = rank_name
-        prior_z = z[z["year"].eq(previous_year)][["state", "county_fips", "plan_id", "estimated_net_premium_proxy", "zero_premium_proxy"]].rename(
-            columns={"plan_id": "previous_plan_id", "estimated_net_premium_proxy": "prior_net_premium_proxy", "zero_premium_proxy": "prior_zero_premium_flag"}
+        prior_keep = [
+            "state",
+            "county_fips",
+            "plan_id",
+            "estimated_net_premium_proxy",
+            "estimated_net_premium_proxy_gross_benchmark",
+            "gross_benchmark_zero_premium_proxy",
+            "zero_premium_proxy",
+            "ehb_age_40_premium",
+            "non_ehb_age_40_premium",
+        ]
+        prior_z = z[z["year"].eq(previous_year)][[col for col in prior_keep if col in z.columns]].rename(
+            columns={
+                "plan_id": "previous_plan_id",
+                "estimated_net_premium_proxy": "prior_net_premium_proxy",
+                "estimated_net_premium_proxy_gross_benchmark": "prior_net_premium_proxy_gross_benchmark",
+                "gross_benchmark_zero_premium_proxy": "prior_gross_benchmark_zero_premium_flag",
+                "zero_premium_proxy": "prior_zero_premium_flag",
+                "ehb_age_40_premium": "prior_ehb_premium",
+                "non_ehb_age_40_premium": "prior_non_ehb_premium",
+            }
         )
         part = part.merge(prior_z, on=["state", "county_fips", "previous_plan_id"], how="left")
         before = len(part)
         part = part.merge(cw, on=["state", "county_fips", "previous_plan_id"], how="left", suffixes=("", "_cw"))
         part = part.merge(current_z, on=["state", "county_fips", "current_plan_id"], how="left")
-        part["current_issuer_final"] = part["current_issuer_id_proxy"].where(part["current_issuer_id_proxy"].astype(str).ne(""), part["current_issuer_id"])
+        if "previous_issuer_id_cw" not in part.columns:
+            part["previous_issuer_id_cw"] = ""
+        part["previous_plan_issuer_prefix"] = part["previous_plan_id"].map(issuer_prefix_from_plan_id)
+        part["current_plan_issuer_prefix"] = part["current_plan_id"].map(issuer_prefix_from_plan_id)
+        plan_panel_issuer = part["current_issuer_id_plan_panel"].fillna("").astype(str)
+        crosswalk_issuer = part["current_issuer_id"].fillna("").astype(str)
+        prior_issuer = part["previous_issuer_id"].fillna("").astype(str)
+        prior_issuer_cw = part["previous_issuer_id_cw"].fillna("").astype(str)
+        part["current_issuer_final"] = plan_panel_issuer.where(plan_panel_issuer.ne(""), crosswalk_issuer)
         part["current_positive_premium_flag"] = part["current_net_premium_proxy"].gt(0.01)
         part["zero_to_positive_turnover"] = part["prior_zero_premium_flag"].fillna(False) & part["current_positive_premium_flag"].fillna(False)
-        part["same_issuer"] = part["previous_issuer_id"].astype(str).eq(part["current_issuer_final"].astype(str))
-        part["across_issuer"] = part["previous_issuer_id"].astype(str).ne(part["current_issuer_final"].astype(str))
+        current_final = part["current_issuer_final"].fillna("").astype(str)
+        previous_prefix = part["previous_plan_issuer_prefix"].fillna("").astype(str)
+        current_prefix = part["current_plan_issuer_prefix"].fillna("").astype(str)
+        part["same_issuer"] = prior_issuer.ne("") & current_final.ne("") & prior_issuer.eq(current_final)
+        part["across_issuer"] = prior_issuer.ne("") & current_final.ne("") & prior_issuer.ne(current_final)
+        part["same_issuer_crosswalk_only"] = prior_issuer_cw.ne("") & crosswalk_issuer.ne("") & prior_issuer_cw.eq(crosswalk_issuer)
+        part["across_issuer_crosswalk_only"] = prior_issuer_cw.ne("") & crosswalk_issuer.ne("") & prior_issuer_cw.ne(crosswalk_issuer)
+        part["same_issuer_plan_panel_only"] = prior_issuer.ne("") & plan_panel_issuer.ne("") & prior_issuer.eq(plan_panel_issuer)
+        part["across_issuer_plan_panel_only"] = prior_issuer.ne("") & plan_panel_issuer.ne("") & prior_issuer.ne(plan_panel_issuer)
+        part["same_issuer_plan_id_prefix"] = previous_prefix.ne("") & current_prefix.ne("") & previous_prefix.eq(current_prefix)
+        part["across_issuer_plan_id_prefix"] = previous_prefix.ne("") & current_prefix.ne("") & previous_prefix.ne(current_prefix)
         part["premium_change"] = part["current_net_premium_proxy"] - part["prior_net_premium_proxy"]
         part["gross_premium_change"] = part["current_gross_premium"] - part["prior_gross_premium"]
         part["missing_crosswalk_flag"] = part["current_plan_id"].isna() | part["current_plan_id"].astype(str).eq("")
@@ -946,6 +1182,98 @@ def construct_transition(
             ]
         )
     long = pd.concat(records, ignore_index=True)
+    audit_cols = [
+        "transition",
+        "state",
+        "county_fips",
+        "rank",
+        "previous_plan_id",
+        "current_plan_id",
+        "previous_issuer_id",
+        "previous_issuer_id_cw",
+        "current_issuer_id",
+        "current_issuer_id_plan_panel",
+        "current_issuer_final",
+        "previous_plan_issuer_prefix",
+        "current_plan_issuer_prefix",
+        "crosswalk_level",
+        "crosswalk_reason_or_type",
+        "mapping_quality_flag",
+        "prior_gross_premium",
+        "current_gross_premium",
+        "prior_ehb_premium",
+        "current_ehb_premium",
+        "prior_non_ehb_premium",
+        "current_non_ehb_premium",
+        "prior_net_premium_proxy_gross_benchmark",
+        "current_net_premium_proxy_gross_benchmark",
+        "prior_net_premium_proxy",
+        "current_net_premium_proxy",
+        "prior_gross_benchmark_zero_premium_flag",
+        "prior_zero_premium_flag",
+        "current_positive_premium_flag",
+        "zero_to_positive_turnover",
+        "same_issuer",
+        "across_issuer",
+        "same_issuer_crosswalk_only",
+        "across_issuer_crosswalk_only",
+        "same_issuer_plan_panel_only",
+        "across_issuer_plan_panel_only",
+        "same_issuer_plan_id_prefix",
+        "across_issuer_plan_id_prefix",
+        "missing_crosswalk_flag",
+        "missing_current_plan_flag",
+        "missing_premium_flag",
+    ]
+    available_audit_cols = [col for col in audit_cols if col in long.columns]
+    long[available_audit_cols].to_csv(INTERMEDIATE / f"transition_plan_pair_{previous_year}_{current_year}.csv", index=False)
+    if previous_year == 2021 and current_year == 2022:
+        long.loc[long["state"].eq("KS"), available_audit_cols].to_csv(OUTPUTS / "kansas_2021_2022_plan_pair_audit.csv", index=False)
+
+    concept_rows = []
+    for concept, concept_col in [
+        ("plan_panel_preferred", "across_issuer"),
+        ("crosswalk_issuer_only", "across_issuer_crosswalk_only"),
+        ("plan_panel_issuer_only", "across_issuer_plan_panel_only"),
+        ("plan_id_prefix", "across_issuer_plan_id_prefix"),
+    ]:
+        tmp = long.copy()
+        tmp["concept_zero_to_positive_across"] = tmp["zero_to_positive_turnover"].fillna(False) & tmp[concept_col].fillna(False)
+        county_flags = (
+            tmp.groupby(["state", "county_fips"], dropna=False)
+            .agg(
+                county_year_across=("concept_zero_to_positive_across", "max"),
+                plan_pair_rows=("rank", "size"),
+                affected_plan_pair_rows=("concept_zero_to_positive_across", "sum"),
+            )
+            .reset_index()
+        )
+        concept_rows.append(
+            {
+                "transition": transition,
+                "year": current_year,
+                "state": "ALL",
+                "issuer_concept": concept,
+                "county_years": len(county_flags),
+                "across_county_years": int(county_flags["county_year_across"].sum()),
+                "across_share": float(county_flags["county_year_across"].mean()) if len(county_flags) else np.nan,
+                "affected_plan_pair_rows": int(county_flags["affected_plan_pair_rows"].sum()),
+            }
+        )
+        for state, sg in county_flags.groupby("state", dropna=False):
+            concept_rows.append(
+                {
+                    "transition": transition,
+                    "year": current_year,
+                    "state": state,
+                    "issuer_concept": concept,
+                    "county_years": len(sg),
+                    "across_county_years": int(sg["county_year_across"].sum()),
+                    "across_share": float(sg["county_year_across"].mean()) if len(sg) else np.nan,
+                    "affected_plan_pair_rows": int(sg["affected_plan_pair_rows"].sum()),
+                }
+            )
+    pd.DataFrame(concept_rows).to_csv(OUTPUTS / f"issuer_concept_sensitivity_{previous_year}_{current_year}.csv", index=False)
     rows = []
     for (state, county), g in long.groupby(["state", "county_fips"], dropna=False):
         low = g[g["rank"].eq("lowest")].iloc[0] if not g[g["rank"].eq("lowest")].empty else pd.Series(dtype=object)
@@ -972,8 +1300,16 @@ def construct_transition(
                 "second_lowest_zero_to_positive_turnover": bool(sec.get("zero_to_positive_turnover", False)),
                 "any_zero_to_positive_turnover_across_issuer": bool((g["zero_to_positive_turnover"].fillna(False) & g["across_issuer"].fillna(False)).any()),
                 "any_zero_to_positive_turnover_within_issuer": bool((g["zero_to_positive_turnover"].fillna(False) & g["same_issuer"].fillna(False)).any()),
+                "any_zero_to_positive_turnover_across_issuer_crosswalk_only": bool((g["zero_to_positive_turnover"].fillna(False) & g["across_issuer_crosswalk_only"].fillna(False)).any()),
+                "any_zero_to_positive_turnover_across_issuer_plan_panel_only": bool((g["zero_to_positive_turnover"].fillna(False) & g["across_issuer_plan_panel_only"].fillna(False)).any()),
+                "any_zero_to_positive_turnover_across_issuer_plan_id_prefix": bool((g["zero_to_positive_turnover"].fillna(False) & g["across_issuer_plan_id_prefix"].fillna(False)).any()),
+                "any_zero_to_positive_turnover_within_issuer_crosswalk_only": bool((g["zero_to_positive_turnover"].fillna(False) & g["same_issuer_crosswalk_only"].fillna(False)).any()),
+                "any_zero_to_positive_turnover_within_issuer_plan_panel_only": bool((g["zero_to_positive_turnover"].fillna(False) & g["same_issuer_plan_panel_only"].fillna(False)).any()),
+                "any_zero_to_positive_turnover_within_issuer_plan_id_prefix": bool((g["zero_to_positive_turnover"].fillna(False) & g["same_issuer_plan_id_prefix"].fillna(False)).any()),
                 "lowest_zero_to_positive_turnover_across_issuer": bool(low.get("zero_to_positive_turnover", False) and low.get("across_issuer", False)),
                 "second_lowest_zero_to_positive_turnover_across_issuer": bool(sec.get("zero_to_positive_turnover", False) and sec.get("across_issuer", False)),
+                "lowest_zero_to_positive_turnover_across_issuer_crosswalk_only": bool(low.get("zero_to_positive_turnover", False) and low.get("across_issuer_crosswalk_only", False)),
+                "second_lowest_zero_to_positive_turnover_across_issuer_crosswalk_only": bool(sec.get("zero_to_positive_turnover", False) and sec.get("across_issuer_crosswalk_only", False)),
                 "any_zero_to_positive_turnover_unmapped": bool(g["missing_crosswalk_flag"].any()),
                 "any_zero_premium_prior_year": bool(g["prior_zero_premium_flag"].fillna(False).any()),
                 "any_positive_mapped_current_year": bool(g["current_positive_premium_flag"].fillna(False).any()),
@@ -1001,8 +1337,20 @@ def construct_transition(
                 "previous_second_lowest_issuer_id": sec.get("previous_issuer_id", ""),
                 "mapped_current_lowest_issuer_id": low.get("current_issuer_final", ""),
                 "mapped_current_second_lowest_issuer_id": sec.get("current_issuer_final", ""),
+                "crosswalk_current_lowest_issuer_id": low.get("current_issuer_id", ""),
+                "crosswalk_current_second_lowest_issuer_id": sec.get("current_issuer_id", ""),
+                "plan_panel_current_lowest_issuer_id": low.get("current_issuer_id_plan_panel", ""),
+                "plan_panel_current_second_lowest_issuer_id": sec.get("current_issuer_id_plan_panel", ""),
+                "crosswalk_level_lowest": low.get("crosswalk_level", ""),
+                "crosswalk_level_second_lowest": sec.get("crosswalk_level", ""),
+                "crosswalk_reason_lowest": low.get("crosswalk_reason_or_type", ""),
+                "crosswalk_reason_second_lowest": sec.get("crosswalk_reason_or_type", ""),
                 "same_issuer_lowest": bool(low.get("same_issuer", False)),
                 "same_issuer_second_lowest": bool(sec.get("same_issuer", False)),
+                "same_issuer_lowest_crosswalk_only": bool(low.get("same_issuer_crosswalk_only", False)),
+                "same_issuer_second_lowest_crosswalk_only": bool(sec.get("same_issuer_crosswalk_only", False)),
+                "same_issuer_lowest_plan_id_prefix": bool(low.get("same_issuer_plan_id_prefix", False)),
+                "same_issuer_second_lowest_plan_id_prefix": bool(sec.get("same_issuer_plan_id_prefix", False)),
                 "treatment_constructible_flag": bool(constructible),
                 "reason_not_constructible": ";".join(reasons),
                 "missing_previous_plan_flag": False,
@@ -1010,12 +1358,108 @@ def construct_transition(
                 "missing_current_plan_flag": missing_current,
                 "missing_premium_flag": missing_premium,
                 "missing_county_mapping_flag": bool(g["missing_county_mapping_flag"].any()),
-                "zero_premium_measure_type": "benchmark_based_low_income_proxy",
+                "zero_premium_measure_type": "ehb_adjusted_low_income_proxy",
                 "premium_measure_type": "age_40_individual_premium",
             }
         )
     out = pd.DataFrame(rows)
     out.to_csv(INTERMEDIATE / f"turnover_transition_{previous_year}_{current_year}.csv", index=False)
+    return out
+
+
+def write_exposure_universe_sensitivity(
+    transition_frames: list[tuple[int, int, pd.DataFrame, pd.DataFrame]],
+    zero_proxy: pd.DataFrame,
+) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    z = zero_proxy[
+        [
+            "year",
+            "state",
+            "county_fips",
+            "plan_id",
+            "issuer_id",
+            "gross_age_40_premium",
+            "estimated_net_premium_proxy",
+            "zero_premium_proxy",
+        ]
+    ].copy()
+    for previous_year, current_year, treatment, cw in transition_frames:
+        transition = f"{previous_year}_to_{current_year}"
+        current_z = z[z["year"].eq(current_year)].rename(
+            columns={
+                "plan_id": "current_plan_id",
+                "issuer_id": "current_issuer_id_plan_panel",
+                "gross_age_40_premium": "current_gross_premium",
+                "estimated_net_premium_proxy": "current_net_premium_proxy",
+                "zero_premium_proxy": "current_zero_premium_proxy",
+            }
+        )
+        base_counties = z[z["year"].eq(previous_year)][["state", "county_fips"]].drop_duplicates()
+        prior_all_zero = z[z["year"].eq(previous_year) & z["zero_premium_proxy"].fillna(False)].rename(
+            columns={
+                "plan_id": "previous_plan_id",
+                "issuer_id": "previous_issuer_id",
+                "gross_age_40_premium": "prior_gross_premium",
+                "estimated_net_premium_proxy": "prior_net_premium_proxy",
+                "zero_premium_proxy": "prior_zero_premium_flag",
+            }
+        )
+        all_zero = prior_all_zero.merge(cw, on=["state", "county_fips", "previous_plan_id"], how="left", suffixes=("", "_cw"))
+        all_zero = all_zero.merge(current_z, on=["state", "county_fips", "current_plan_id"], how="left")
+        if "previous_issuer_id_cw" not in all_zero.columns:
+            all_zero["previous_issuer_id_cw"] = ""
+        prior_issuer = all_zero["previous_issuer_id"].fillna("").astype(str)
+        plan_panel_issuer = all_zero["current_issuer_id_plan_panel"].fillna("").astype(str)
+        crosswalk_issuer = all_zero["current_issuer_id"].fillna("").astype(str)
+        current_final = plan_panel_issuer.where(plan_panel_issuer.ne(""), crosswalk_issuer)
+        all_zero["current_positive_premium_flag"] = all_zero["current_net_premium_proxy"].gt(0.01)
+        all_zero["zero_to_positive_turnover"] = all_zero["prior_zero_premium_flag"].fillna(False) & all_zero["current_positive_premium_flag"].fillna(False)
+        all_zero["same_issuer"] = prior_issuer.ne("") & current_final.ne("") & prior_issuer.eq(current_final)
+        all_zero["across_issuer"] = prior_issuer.ne("") & current_final.ne("") & prior_issuer.ne(current_final)
+        all_zero_county = (
+            all_zero.groupby(["state", "county_fips"], dropna=False)
+            .agg(
+                zero_plan_rows=("previous_plan_id", "size"),
+                any_zero_to_positive_turnover=("zero_to_positive_turnover", "max"),
+                any_zero_to_positive_turnover_across_issuer=("across_issuer", lambda s: bool((all_zero.loc[s.index, "zero_to_positive_turnover"].fillna(False) & s.fillna(False)).any())),
+                any_zero_to_positive_turnover_within_issuer=("same_issuer", lambda s: bool((all_zero.loc[s.index, "zero_to_positive_turnover"].fillna(False) & s.fillna(False)).any())),
+            )
+            .reset_index()
+        )
+        all_zero_county = base_counties.merge(all_zero_county, on=["state", "county_fips"], how="left")
+        for col in [
+            "any_zero_to_positive_turnover",
+            "any_zero_to_positive_turnover_across_issuer",
+            "any_zero_to_positive_turnover_within_issuer",
+        ]:
+            all_zero_county[col] = all_zero_county[col].astype("boolean").fillna(False).astype(bool)
+        all_zero_county["zero_plan_rows"] = all_zero_county["zero_plan_rows"].fillna(0).astype(int)
+        top_two_county = treatment.copy()
+        universes = [
+            ("top_two_lowest_silver", top_two_county),
+            ("all_prior_zero_silver", all_zero_county),
+        ]
+        for universe, frame in universes:
+            for state_label, sub in [("ALL", frame), *list(frame.groupby("state", dropna=False))]:
+                rows.append(
+                    {
+                        "transition": transition,
+                        "year": current_year,
+                        "universe": universe,
+                        "state": state_label,
+                        "county_years": len(sub),
+                        "counties": sub["county_fips"].nunique(),
+                        "any_turnover_county_years": int(sub["any_zero_to_positive_turnover"].fillna(False).sum()),
+                        "across_issuer_turnover_county_years": int(sub["any_zero_to_positive_turnover_across_issuer"].fillna(False).sum()),
+                        "within_issuer_turnover_county_years": int(sub["any_zero_to_positive_turnover_within_issuer"].fillna(False).sum()),
+                        "any_turnover_share": float(sub["any_zero_to_positive_turnover"].fillna(False).mean()) if len(sub) else np.nan,
+                        "across_issuer_turnover_share": float(sub["any_zero_to_positive_turnover_across_issuer"].fillna(False).mean()) if len(sub) else np.nan,
+                        "within_issuer_turnover_share": float(sub["any_zero_to_positive_turnover_within_issuer"].fillna(False).mean()) if len(sub) else np.nan,
+                    }
+                )
+    out = pd.DataFrame(rows)
+    out.to_csv(OUTPUTS / "exposure_universe_sensitivity.csv", index=False)
     return out
 
 
@@ -1036,14 +1480,30 @@ def final_merge(
     year_to_transition = {2022: "2021_to_2022", 2023: "2022_to_2023", 2024: "2023_to_2024"}
     final["transition"] = final["transition"].fillna(final["year"].map(year_to_transition))
     no_treatment = final["treatment_constructible_flag"].isna()
+    constructible_optional = final["treatment_constructible_flag"].astype("boolean").fillna(False)
+    for col in [
+        "any_zero_to_positive_turnover",
+        "any_zero_to_positive_turnover_across_issuer",
+        "any_zero_to_positive_turnover_within_issuer",
+    ]:
+        if col in final.columns:
+            final[f"{col}_nullable_when_not_constructible"] = final[col].astype("boolean").where(constructible_optional, pd.NA)
     bool_cols = [
         "any_zero_to_positive_turnover",
         "lowest_zero_to_positive_turnover",
         "second_lowest_zero_to_positive_turnover",
         "any_zero_to_positive_turnover_across_issuer",
         "any_zero_to_positive_turnover_within_issuer",
+        "any_zero_to_positive_turnover_across_issuer_crosswalk_only",
+        "any_zero_to_positive_turnover_across_issuer_plan_panel_only",
+        "any_zero_to_positive_turnover_across_issuer_plan_id_prefix",
+        "any_zero_to_positive_turnover_within_issuer_crosswalk_only",
+        "any_zero_to_positive_turnover_within_issuer_plan_panel_only",
+        "any_zero_to_positive_turnover_within_issuer_plan_id_prefix",
         "lowest_zero_to_positive_turnover_across_issuer",
         "second_lowest_zero_to_positive_turnover_across_issuer",
+        "lowest_zero_to_positive_turnover_across_issuer_crosswalk_only",
+        "second_lowest_zero_to_positive_turnover_across_issuer_crosswalk_only",
         "any_zero_to_positive_turnover_unmapped",
         "any_zero_premium_prior_year",
         "any_positive_mapped_current_year",
@@ -1053,6 +1513,10 @@ def final_merge(
         "current_mapped_second_lowest_positive_premium_flag",
         "same_issuer_lowest",
         "same_issuer_second_lowest",
+        "same_issuer_lowest_crosswalk_only",
+        "same_issuer_second_lowest_crosswalk_only",
+        "same_issuer_lowest_plan_id_prefix",
+        "same_issuer_second_lowest_plan_id_prefix",
         "missing_previous_plan_flag",
         "missing_crosswalk_flag",
         "missing_current_plan_flag",
@@ -1061,8 +1525,8 @@ def final_merge(
     ]
     for col in bool_cols:
         if col in final.columns:
-            final[col] = final[col].fillna(False).astype(bool)
-    final["treatment_constructible_flag"] = final["treatment_constructible_flag"].fillna(False).astype(bool)
+            final[col] = final[col].astype("boolean").fillna(False).astype(bool)
+    final["treatment_constructible_flag"] = final["treatment_constructible_flag"].astype("boolean").fillna(False).astype(bool)
     final.loc[no_treatment, "reason_not_constructible"] = final.loc[no_treatment, "reason_not_constructible"].fillna("no_transition_record")
     final["zero_premium_measure_type"] = final["zero_premium_measure_type"].fillna("not_constructible")
     final["premium_measure_type"] = final["premium_measure_type"].fillna("not_constructible")
@@ -1073,6 +1537,37 @@ def final_merge(
     final["drake_supplement_etable3_exclusion_reason"] = final["county_fips"].astype(str).map(DRAKE_SUPPLEMENT_EXCLUDED_COUNTY_REASONS).fillna("")
     final["drake_supplement_etable3_exclusion"] = final["drake_supplement_etable3_exclusion_reason"].ne("")
     final["included_drake_harmonized_sample"] = final["included_primary_sample"] & ~final["drake_supplement_etable3_exclusion"]
+    table2_core_required = [
+        "Cnsmr",
+        "enrollment_2021_weight",
+        "number_of_silver_plans",
+        "number_of_insurers",
+        "lowest_silver_premium",
+        "second_lowest_silver_premium",
+        "bronze_spread",
+    ]
+    table2_outcome_required = ["Tot_Renrl", "Auto_Renrl", "Actv_Renrl", "Actv_Renrl_Nsw", "Actv_Renrl_Sw"]
+    for col in [*table2_core_required, *table2_outcome_required]:
+        if col not in final.columns:
+            final[col] = np.nan
+    core_nonmissing = final[table2_core_required].notna().all(axis=1) & final["Cnsmr"].gt(0)
+    outcomes_nonmissing = final[table2_outcome_required].notna().all(axis=1)
+    final["drake_table2_complete_case_core_flag"] = final["included_drake_harmonized_sample"] & final["treatment_constructible_flag"] & core_nonmissing
+    final["drake_table2_complete_case_all_outcomes_flag"] = final["drake_table2_complete_case_core_flag"] & outcomes_nonmissing
+    missing_reason_cols = [*table2_core_required, *table2_outcome_required]
+    missing_reasons: list[str] = []
+    for _, row in final[["included_drake_harmonized_sample", "treatment_constructible_flag", *missing_reason_cols]].iterrows():
+        reasons = []
+        if not bool(row["included_drake_harmonized_sample"]):
+            reasons.append("not_drake_harmonized_sample")
+        if not bool(row["treatment_constructible_flag"]):
+            reasons.append("treatment_not_constructible")
+        for col in missing_reason_cols:
+            value = row[col]
+            if pd.isna(value) or (col == "Cnsmr" and value <= 0):
+                reasons.append(f"missing_or_invalid_{col}")
+        missing_reasons.append(";".join(reasons))
+    final["drake_table2_complete_case_missing_reason"] = missing_reasons
     final["source_file_references"] = final["raw_file_name"].astype(str) + "; transition=" + final["transition"].astype(str)
     final_path = PROCESSED / "drake_replication_county_year_2022_2024.csv"
     final.to_csv(final_path, index=False)
@@ -1160,6 +1655,9 @@ def write_crosswalk_diagnostics(join_rows: list[dict[str, Any]], crosswalks: lis
         rows.extend(
             [
                 {"transition": transition, "rank": "all", "metric": "crosswalk_rows", "numerator": len(cw), "denominator": len(cw), "rate": 1.0 if len(cw) else np.nan},
+                {"transition": transition, "rank": "all", "metric": "raw_crosswalk_rows_before_default_selection", "numerator": int(cw.attrs.get("raw_crosswalk_rows", len(cw))), "denominator": int(cw.attrs.get("raw_crosswalk_rows", len(cw))), "rate": 1.0 if len(cw) else np.nan},
+                {"transition": transition, "rank": "all", "metric": "duplicate_crosswalk_keys_before_default_selection", "numerator": int(cw.attrs.get("duplicate_keys", 0)), "denominator": int(cw.attrs.get("raw_crosswalk_rows", len(cw))), "rate": float(cw.attrs.get("duplicate_keys", 0) / cw.attrs.get("raw_crosswalk_rows", len(cw))) if int(cw.attrs.get("raw_crosswalk_rows", len(cw))) else np.nan},
+                {"transition": transition, "rank": "all", "metric": "duplicate_crosswalk_candidate_rows_before_default_selection", "numerator": int(cw.attrs.get("duplicate_candidate_rows", 0)), "denominator": int(cw.attrs.get("raw_crosswalk_rows", len(cw))), "rate": float(cw.attrs.get("duplicate_candidate_rows", 0) / cw.attrs.get("raw_crosswalk_rows", len(cw))) if int(cw.attrs.get("raw_crosswalk_rows", len(cw))) else np.nan},
                 {"transition": transition, "rank": "all", "metric": "mapped_rows", "numerator": int(cw["mapping_quality_flag"].eq("mapped").sum()), "denominator": len(cw), "rate": float(cw["mapping_quality_flag"].eq("mapped").mean()) if len(cw) else np.nan},
                 {"transition": transition, "rank": "all", "metric": "across_issuer_rows", "numerator": int(cw["across_issuer_flag"].sum()), "denominator": len(cw), "rate": float(cw["across_issuer_flag"].mean()) if len(cw) else np.nan},
             ]
@@ -1205,7 +1703,7 @@ def write_reports(final: pd.DataFrame, primary: pd.DataFrame, sample: pd.DataFra
 
 Overall status: **{status} for moving to Step 3**.
 
-The full county-year replication dataset was built for outcome years {years}. Outcomes are directly constructible from CMS OEP county PUFs. Treatment construction is proxy-based, not exact: zero-premium status uses a benchmark-based low-income age-40 proxy because household-specific APTC and individual enrollment are not public. The 2021 to 2022 transition is attempted from official Exchange PUF plus Health Plan Finder fallback rather than direct QHP Landscape.
+The full county-year replication dataset was built for outcome years {years}. Outcomes are directly constructible from CMS OEP county PUFs. Treatment construction is proxy-based, not exact: zero-premium status now uses an EHB-aware low-income age-40 proxy because household-specific APTC and individual enrollment are not public. The 2021 to 2022 transition is attempted from official Exchange PUF plus 2021 Q4 Health Plan Finder fallback rather than direct QHP Landscape.
 
 ## What Was Built
 
@@ -1225,7 +1723,7 @@ The full county-year replication dataset was built for outcome years {years}. Ou
 
 ## Data Sources
 
-The build uses CMS OEP County- and State-Level PUFs for 2022-2024; CMS Exchange Rate, Plan Attributes, Service Area, and Plan ID Crosswalk PUFs for 2021-2024; Data.HealthCare.gov QHP Landscape files for 2022-2024; and CMS Health Plan Finder RBIS state-rating-area fallback for 2021.
+The build uses CMS OEP County- and State-Level PUFs for 2022-2024; CMS Exchange Rate, Plan Attributes, Service Area, and Plan ID Crosswalk PUFs for 2021-2024; Data.HealthCare.gov QHP Landscape files for 2022-2024; and CMS Health Plan Finder 2021 Q4 RBIS state-rating-area fallback for 2021.
 
 ## Outcome Construction
 
@@ -1233,7 +1731,7 @@ Exact OEP columns used: `Cnsmr`, `New_Cnsmr`, `Tot_Renrl`, `Auto_Renrl`, `Actv_R
 
 ## Treatment Construction
 
-For each county-year, silver plans are ranked by age-40 gross premium. The two lowest silver plans are crosswalked to the current year with the Plan ID Crosswalk. Current-year mapped plan net premium proxy is gross premium minus current-year second-lowest silver benchmark, floored at zero. Zero-to-positive turnover equals prior top-two zero-premium proxy and mapped current positive net-premium proxy. Across-issuer and within-issuer flags use issuer IDs from prior plans and current mapped plans. The proxy is now documented as an age-40, 125-percent-FPL-style approximation to Drake's 100-150 FPL construction, but it is still not exact household APTC.
+For each county-year, silver plans are ranked by age-40 gross premium. The two lowest silver plans are crosswalked to the current year with the Plan ID Crosswalk. Current-year mapped plan net premium proxy is EHB-aware: APTC is proxied by the current county-year SLCSP EHB premium under a 125-percent-FPL zero-contribution assumption, and any non-EHB age-40 premium residual remains payable. Zero-to-positive turnover equals prior top-two zero-premium proxy and mapped current positive net-premium proxy. Across-issuer and within-issuer flags use issuer IDs from prior plans and current mapped plans. The output preserves gross-benchmark proxy fields for audit, but the primary flag is now the EHB-aware low-income proxy rather than the older gross-only proxy.
 
 ## Market Controls Added For Step 4 Readiness
 
@@ -1267,7 +1765,7 @@ The primary sample uses states with `Pltfrm == HC.gov` in the official OEP state
 - Household-specific APTC is not directly observed.
 - PY2021 direct QHP Landscape data were unavailable; 2021 uses official Exchange PUF plus Health Plan Finder fallback.
 - Some crosswalk-to-current-plan joins fail and are flagged.
-- Non-EHB handling is not yet exact; the output flags proxy limitations rather than asserting exact zero-dollar eligibility.
+- Non-EHB handling now uses the public EHB percent-of-total-premium fields where available, but household-specific APTC and plan shopping/default details are still not directly observed.
 - OEP county outcomes contain suppression and missingness.
 
 ## Self-Check Results
@@ -1276,7 +1774,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 
 ## Recommended Next Step
 
-**A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the benchmark-based zero-premium proxy and reviewing 2021 fallback construction.
+**A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the EHB-aware zero-premium proxy and reviewing 2021 fallback construction.
 """
     (DOCS / "drake_replication_dataset_report.md").write_text(report, encoding="utf-8")
 
@@ -1298,7 +1796,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 - 2021 input is fallback-based because direct PY2021 QHP Landscape files were unavailable.
 - Zero-premium status is an estimated benchmark proxy, not an exact observed net premium.
 - Some mapped current-year plan joins are incomplete and flagged.
-- Non-EHB handling is documented but not yet exact.
+- Non-EHB handling uses public EHB percent fields, but exact household net premium still cannot be directly observed.
 
 ## Not Completed
 
@@ -1352,10 +1850,15 @@ def main() -> None:
     join_rows: list[dict[str, Any]] = []
     treatments = []
     crosswalks = []
+    transition_frames: list[tuple[int, int, pd.DataFrame, pd.DataFrame]] = []
     for prev, cur in [(2021, 2022), (2022, 2023), (2023, 2024)]:
         logging.info("Constructing transition %s_to_%s", prev, cur)
-        crosswalks.append(load_crosswalk(manifest, prev, cur))
-        treatments.append(construct_transition(manifest, prev, cur, two_lowest, zero_proxy, join_rows))
+        cw = load_crosswalk(manifest, prev, cur)
+        crosswalks.append(cw)
+        treatment = construct_transition(manifest, prev, cur, two_lowest, zero_proxy, join_rows, cw)
+        treatments.append(treatment)
+        transition_frames.append((prev, cur, treatment, cw))
+    write_exposure_universe_sensitivity(transition_frames, zero_proxy)
     join_diag = write_crosswalk_diagnostics(join_rows, crosswalks)
     logging.info("Merging final dataset")
     final, primary, sensitivity = final_merge(oep, treatments, sample, args.include_nebraska_sensitivity, market_controls, enrollment_weights)

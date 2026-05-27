@@ -1,0 +1,2 @@
+transition,state,county_fips,previous_plan_id,candidate_rows,candidate_current_plan_ids,candidate_current_issuer_ids,candidate_crosswalk_levels,candidate_reasons,selected_current_plan_id,selected_current_issuer_id,selected_crosswalk_level,selected_reason,selection_rule
+2022_to_2023,MI,26117,60829MI0200017,11,60829MI0190005,60829,3,6,60829MI0190005,60829,3,6,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer

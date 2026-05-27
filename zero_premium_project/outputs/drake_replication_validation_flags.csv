@@ -13,7 +13,7 @@ PASS,impossible rates,0,0,"Rate values outside [0,1]: 0"
 PASS,log variables finite when present,0,0,Nonfinite log values: 0
 PASS,binary turnover treatment constructible,0.9873366013071896,>=0.95,Minimum constructibility by year: 0.987. 2022 is expected to be weak if 2021 fallback is incomplete.
 PASS,across-issuer vs within-issuer distinction constructible,0.0,0,Across-issuer flag missingness: 0.000
-WARN,zero-premium proxy quality,"benchmark_based_low_income_proxy,not_constructible",exact preferred,"Zero-premium measure types: ['benchmark_based_low_income_proxy', 'not_constructible']. This is proxy-based, not exact."
+WARN,zero-premium proxy quality,"ehb_adjusted_low_income_proxy,not_constructible",exact preferred,"Zero-premium measure types: ['ehb_adjusted_low_income_proxy', 'not_constructible']. This is proxy-based, not exact."
 PASS,Step 2 repair market-control columns present,0,0,All repaired market-control columns are present.
 PASS,2021 enrollment weights available in primary sample,0.9990859232175503,>=0.95,Nonmissing rate: 0.999
 PASS,bronze spread available in primary sample,1.0,>=0.95,Nonmissing rate: 1.000

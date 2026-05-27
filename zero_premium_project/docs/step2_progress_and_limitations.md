@@ -16,7 +16,7 @@
 - 2021 input is fallback-based because direct PY2021 QHP Landscape files were unavailable.
 - Zero-premium status is an estimated benchmark proxy, not an exact observed net premium.
 - Some mapped current-year plan joins are incomplete and flagged.
-- Non-EHB handling is documented but not yet exact.
+- Non-EHB handling uses public EHB percent fields, but exact household net premium still cannot be directly observed.
 
 ## Not Completed
 

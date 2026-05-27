@@ -1,0 +1,12 @@
+transition,state,county_fips,previous_plan_id,candidate_rows,candidate_current_plan_ids,candidate_current_issuer_ids,candidate_crosswalk_levels,candidate_reasons,selected_current_plan_id,selected_current_issuer_id,selected_crosswalk_level,selected_reason,selection_rule
+2023_to_2024,MI,26005,29698MI0540666,27,29698MI0540839|29698MI0540860,29698,3,2,29698MI0540839,29698,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26025,29698MI0540666,22,29698MI0540860|29698MI0540862,29698,3,2,29698MI0540860,29698,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26075,29698MI0540666,26,29698MI0540860|29698MI0540865,29698,3,2,29698MI0540860,29698,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26093,60829MI0190053,3,60829MI0190020,60829,3,2,60829MI0190020,60829,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26093,60829MI0190055,3,60829MI0190033,60829,3,2,60829MI0190033,60829,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26093,60829MI0190057,3,60829MI0190033,60829,3,2,60829MI0190033,60829,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26093,60829MI0190058,3,60829MI0190017,60829,3,2,60829MI0190017,60829,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26117,60829MI0190005,14,60829MI0190033,60829,3,2,60829MI0190033,60829,3,2,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26117,60829MI0190017,14,60829MI0190017,60829,3,0,60829MI0190017,60829,3,0,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26117,60829MI0190020,14,60829MI0190020,60829,3,0,60829MI0190020,60829,3,0,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer
+2023_to_2024,MI,26117,60829MI0190033,14,60829MI0190033,60829,3,0,60829MI0190033,60829,3,0,mapped current plan; current silver metal; same issuer; lowest numeric CrosswalkLevel; lexical current plan/issuer

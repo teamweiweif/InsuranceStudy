@@ -1,9 +1,9 @@
-2026-05-27 13:03:34,672 INFO Starting Step 2 Drake-style dataset build
-2026-05-27 13:03:36,916 INFO Building OEP county outcomes
-2026-05-27 13:03:41,784 INFO Building silver county-plan panel
-2026-05-27 13:08:56,247 INFO Building bronze county-plan panel
-2026-05-27 13:13:29,598 INFO Identifying two lowest silver plans
-2026-05-27 13:13:47,076 INFO Constructing transition 2021_to_2022
-2026-05-27 13:13:54,192 INFO Constructing transition 2022_to_2023
-2026-05-27 13:14:02,023 INFO Constructing transition 2023_to_2024
-2026-05-27 13:14:09,686 INFO Merging final dataset
+2026-05-27 15:37:39,079 INFO Starting Step 2 Drake-style dataset build
+2026-05-27 15:37:39,117 INFO Building OEP county outcomes
+2026-05-27 15:37:39,935 INFO Building silver county-plan panel
+2026-05-27 15:42:14,433 INFO Building bronze county-plan panel
+2026-05-27 15:46:41,245 INFO Identifying two lowest silver plans
+2026-05-27 15:46:59,556 INFO Constructing transition 2021_to_2022
+2026-05-27 15:47:08,723 INFO Constructing transition 2022_to_2023
+2026-05-27 15:47:18,348 INFO Constructing transition 2023_to_2024
+2026-05-27 15:47:30,665 INFO Merging final dataset

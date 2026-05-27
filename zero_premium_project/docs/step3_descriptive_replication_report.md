@@ -8,8 +8,9 @@ This Step 3 audit applies Drake supplement eTable 3 county exclusions and reprod
 
 Main warnings:
 
-- Any-turnover county-year count differs from Drake by 173.
-- Across-issuer turnover count differs from Drake by -88; current proxy likely under-detects across-insurer turnover.
+- Any-turnover county-year count differs from Drake by -265.
+- Across-issuer turnover count differs from Drake by -104; current proxy likely under-detects across-insurer turnover.
+- Enrollment-weighted any-turnover exposure differs from Drake 100-150 FPL exposure by up to 6.5 pp.
 - Treatment remains proxy-based; Step 2 does not prove household-specific net premiums, 125 percent FPL contribution, or non-EHB handling.
 
 ## 2. What Was Tested
@@ -125,27 +126,37 @@ The weighting closest to Drake is Cnsmr-weighted for enrollment-denominator meas
 
 | year | county_years | counties | states | enrollment | treatment_constructibility_rate | missing_treatment_rate | not_constructible_count | any_share_all_county_years | any_share_constructible | any_enrollment_weighted_share_all | any_enrollment_weighted_share_constructible | across_issuer_share_all_county_years | across_issuer_share_constructible | across_issuer_enrollment_weighted_share_all | across_issuer_enrollment_weighted_share_constructible | within_issuer_share_all_county_years | within_issuer_share_constructible | within_issuer_enrollment_weighted_share_all | within_issuer_enrollment_weighted_share_constructible |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2022.000 | 2159.000 | 2159.000 | 29.000 | 9636366.000 | 1.000 | 0.000 | 1.000 | 0.800 | 0.800 | 0.935 | 0.935 | 0.044 | 0.044 | 0.028 | 0.028 | 0.760 | 0.760 | 0.928 | 0.928 |
-| 2023.000 | 2159.000 | 2159.000 | 29.000 | 11503884.000 | 1.000 | 0.000 | 0.000 | 0.696 | 0.696 | 0.724 | 0.724 | 0.006 | 0.006 | 0.044 | 0.044 | 0.691 | 0.691 | 0.682 | 0.682 |
-| 2024.000 | 2159.000 | 2159.000 | 29.000 | 15900650.000 | 1.000 | 0.000 | 0.000 | 0.646 | 0.646 | 0.812 | 0.812 | 0.006 | 0.006 | 0.026 | 0.026 | 0.642 | 0.642 | 0.812 | 0.812 |
+| 2022.000 | 2159.000 | 2159.000 | 29.000 | 9636366.000 | 1.000 | 0.000 | 1.000 | 0.752 | 0.752 | 0.889 | 0.889 | 0.041 | 0.041 | 0.011 | 0.011 | 0.712 | 0.712 | 0.882 | 0.882 |
+| 2023.000 | 2159.000 | 2159.000 | 29.000 | 11503884.000 | 1.000 | 0.000 | 0.000 | 0.583 | 0.583 | 0.613 | 0.613 | 0.002 | 0.002 | 0.001 | 0.001 | 0.581 | 0.581 | 0.613 | 0.613 |
+| 2024.000 | 2159.000 | 2159.000 | 29.000 | 15900650.000 | 1.000 | 0.000 | 0.000 | 0.605 | 0.605 | 0.782 | 0.782 | 0.006 | 0.006 | 0.026 | 0.026 | 0.600 | 0.600 | 0.782 | 0.782 |
 
 Comparison against Drake supplement eTable 1 exposure anchors:
 
 | year | our_any_turnover_enrollment_weighted_pct | our_any_turnover_unweighted_county_pct | drake_100_150_fpl_exposure_pct | difference_vs_drake_100_150_pp | absolute_difference_vs_drake_100_150_pp | drake_150_200_fpl_exposure_pct | comparison_note |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2022 | 93.50 | 80.03 | 93.90 | -0.40 | 0.40 | 7.80 | Closest available comparison is enrollment-weighted any turnover vs Drake 100-150 FPL exposure. Drake exposure is individual/exposure-weighted; this dataset uses county-year OEP enrollment weights. |
-| 2023 | 72.39 | 69.62 | 67.80 | 4.59 | 4.59 | 9.20 | Closest available comparison is enrollment-weighted any turnover vs Drake 100-150 FPL exposure. Drake exposure is individual/exposure-weighted; this dataset uses county-year OEP enrollment weights. |
-| 2024 | 81.23 | 64.61 | 83.80 | -2.57 | 2.57 | 3.50 | Closest available comparison is enrollment-weighted any turnover vs Drake 100-150 FPL exposure. Drake exposure is individual/exposure-weighted; this dataset uses county-year OEP enrollment weights. |
+| 2022 | 88.93 | 75.21 | 93.90 | -4.97 | 4.97 | 7.80 | Closest available comparison is enrollment-weighted any turnover vs Drake 100-150 FPL exposure. Drake exposure is individual/exposure-weighted; this dataset uses county-year OEP enrollment weights. |
+| 2023 | 61.33 | 58.27 | 67.80 | -6.47 | 6.47 | 9.20 | Closest available comparison is enrollment-weighted any turnover vs Drake 100-150 FPL exposure. Drake exposure is individual/exposure-weighted; this dataset uses county-year OEP enrollment weights. |
+| 2024 | 78.23 | 60.49 | 83.80 | -5.57 | 5.57 | 3.50 | Closest available comparison is enrollment-weighted any turnover vs Drake 100-150 FPL exposure. Drake exposure is individual/exposure-weighted; this dataset uses county-year OEP enrollment weights. |
 
 Turnover count comparison against the main article:
 
 | metric | our_value | drake_reference | difference | notes |
 | --- | --- | --- | --- | --- |
 | constructible_county_years | 6476.000 | 6459.000 | 17.000 | Drake Table 2 reports 6459 county-years. Our count is constructible rows after eTable 3 exclusions; remaining difference likely reflects Drake's complete-case Table 2 rule, OEP suppression, or treatment-definition details rather than missing repaired controls. |
-| any_turnover_county_years | 4625.000 | 4452.000 | 173.000 | Main article reports 4452 county-years with any turnover. |
-| across_issuer_turnover_county_years | 123.000 | 211.000 | -88.000 | Main article reports 211 county-years with across-insurer turnover. This is the clearest treatment-definition mismatch. |
-| any_turnover_enrollee_years_millions | 30.253 | 28.400 | 1.853 | Main article reports 28.4 million enrollee-years with any turnover. |
-| across_issuer_turnover_enrollee_years_millions | 1.193 | 0.800 | 0.393 | Main article reports 0.8 million enrollee-years with across-insurer turnover. |
+| any_turnover_county_years | 4187.000 | 4452.000 | -265.000 | Main article reports 4452 county-years with any turnover. |
+| across_issuer_turnover_county_years | 107.000 | 211.000 | -104.000 | Main article reports 211 county-years with across-insurer turnover. This is the clearest treatment-definition mismatch. |
+| any_turnover_enrollee_years_millions | 28.065 | 28.400 | -0.335 | Main article reports 28.4 million enrollee-years with any turnover. |
+| across_issuer_turnover_enrollee_years_millions | 0.524 | 0.800 | -0.276 | Main article reports 0.8 million enrollee-years with across-insurer turnover. |
+
+Treatment-definition sensitivity:
+
+| variant | any_turnover_county_years | across_issuer_turnover_county_years | any_turnover_enrollee_years_millions | across_issuer_enrollee_years_millions | difference_vs_drake_any_count | difference_vs_drake_across_count | difference_vs_drake_any_enrollee_millions | difference_vs_drake_across_enrollee_millions |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ehb_all_states | 4187 | 107 | 28.065 | 0.524 | -265.000 | -104.000 | -0.335 | -0.276 |
+| ehb_il_or_only | 4343 | 123 | 29.269 | 1.193 | -109.000 | -88.000 | 0.869 | 0.393 |
+| gross_only | 4625 | 123 | 30.253 | 1.193 | 173.000 | -88.000 | 1.853 | 0.393 |
+
+The EHB-aware definition follows the supplement statement that non-EHB premiums cannot be reduced to zero by federal subsidies, but it moves county-year counts below Drake while improving any-turnover enrollee-years. The gross-only definition better matches county-year prevalence in some years but ignores non-EHB residuals. This is why Step 4 remains blocked rather than selecting whichever definition happens to look closer.
 
 The enrollment-weighted any-turnover prevalence is close in 2022, higher than Drake in 2023, and lower than Drake in 2024. The bigger problem is across-insurer turnover: the current proxy identifies fewer across-insurer county-years than Drake. That is a Step 2 treatment-construction issue, not an outcome-replication issue.
 
@@ -153,24 +164,24 @@ The enrollment-weighted any-turnover prevalence is close in 2022, higher than Dr
 
 | comparison | variable | untreated_county_years | treated_county_years | unweighted_difference_pp | cnsmr_weighted_difference_pp | weighting_used | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| any_zero_to_positive_turnover | overall_reenrollment_share | 1851 | 4625 | 0.538 | 1.356 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover | automatic_passive_share | 1851 | 4625 | -1.161 | -1.750 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover | active_share | 1851 | 4625 | 1.679 | 3.106 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover | active_stay_share | 1851 | 4625 | -4.540 | -2.873 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover | active_switch_share | 1851 | 4625 | 6.254 | 5.979 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover_across_issuer | overall_reenrollment_share | 6353 | 123 | 2.673 | -1.204 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | 6353 | 123 | -3.791 | -1.894 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover_across_issuer | active_share | 6353 | 123 | 6.490 | 0.689 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover_across_issuer | active_stay_share | 6353 | 123 | 1.715 | -1.893 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
-| any_zero_to_positive_turnover_across_issuer | active_switch_share | 6353 | 123 | 4.736 | 2.581 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover | overall_reenrollment_share | 2289 | 4187 | -0.130 | 0.870 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover | automatic_passive_share | 2289 | 4187 | -0.850 | -1.758 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover | active_share | 2289 | 4187 | 0.720 | 2.629 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover | active_stay_share | 2289 | 4187 | -5.550 | -3.899 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover | active_switch_share | 2289 | 4187 | 6.318 | 6.528 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover_across_issuer | overall_reenrollment_share | 6369 | 107 | 3.394 | 1.247 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | 6369 | 107 | -3.598 | -0.383 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover_across_issuer | active_share | 6369 | 107 | 7.037 | 1.629 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover_across_issuer | active_stay_share | 6369 | 107 | 3.230 | 2.215 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
+| any_zero_to_positive_turnover_across_issuer | active_switch_share | 6369 | 107 | 3.768 | -0.587 | enrollment_2021_weight | Descriptive comparison only; not a causal contrast. Uses Drake-style 2021 enrollment weights. |
 
 Sign checks:
 
 | comparison | variable | expected_descriptive_direction_from_drake_anchor | unweighted_difference | cnsmr_weighted_difference | sign_check | question_answered | composition_note | interpretation_limit |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| any_zero_to_positive_turnover | active_switch_share | positive | 0.063 | 0.060 | same_direction | Treated counties have higher active switching descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
-| any_zero_to_positive_turnover | active_stay_share | negative | -0.045 | -0.029 | same_direction | Treated counties have lower active stay descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
-| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | negative | -0.038 | -0.019 | same_direction | Across-issuer treated counties have lower automatic/passive reenrollment descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
+| any_zero_to_positive_turnover | active_switch_share | positive | 0.063 | 0.065 | same_direction | Treated counties have higher active switching descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
+| any_zero_to_positive_turnover | active_stay_share | negative | -0.056 | -0.039 | same_direction | Treated counties have lower active stay descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
+| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | negative | -0.036 | -0.004 | same_direction | Across-issuer treated counties have lower automatic/passive reenrollment descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
 
 These are descriptive differences only. They are not adjusted regression estimates and should not be interpreted causally. Drake Table 2 uses 2021 enrollment weights and year-adjusted differences; this Step 3 table uses `enrollment_2021_weight` when present and otherwise falls back to current-year `Cnsmr` weights.
 
@@ -192,8 +203,8 @@ None by the configured constructibility/join-failure rule.
 
 | created | sensitivity_dataset | path | rows | counties | states | years | treatment_prevalence_constructible | treatment_constructibility_rate | outcome_missingness | table1_mean_absolute_difference_closest | table1_mean_absolute_difference_change_vs_primary | any_turnover_active_switch_weighted_diff | any_turnover_active_stay_weighted_diff | problem_states_excluded | not_created_reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | primary_2023_2024_only | data\processed\drake_replication_primary_2023_2024_only.csv | 4318 | 2159 | 29 | 2023,2024 | 0.671 | 1.000 | 0.015 | 0.169 | 0.092 | 0.038 | -0.012 |  |  |
-| 1 | primary_constructible_only | data\processed\drake_replication_primary_constructible_only.csv | 6476 | 2159 | 29 | 2022,2023,2024 | 0.714 | 1.000 | 0.020 | 0.077 | -0.000 | 0.060 | -0.029 |  |  |
+| 1 | primary_2023_2024_only | data\processed\drake_replication_primary_2023_2024_only.csv | 4318 | 2159 | 29 | 2023,2024 | 0.594 | 1.000 | 0.015 | 0.169 | 0.092 | 0.039 | -0.019 |  |  |
+| 1 | primary_constructible_only | data\processed\drake_replication_primary_constructible_only.csv | 6476 | 2159 | 29 | 2022,2023,2024 | 0.647 | 1.000 | 0.020 | 0.077 | -0.000 | 0.065 | -0.039 |  |  |
 | 0 | primary_no_problem_states |  | 0 | 0 | 0 |  |  |  |  |  |  |  |  |  | No whole-state post-harmonization problem state was identified; eTable 3 supports county-level GA/NC exclusions instead. |
 
 ## 9. Honest Limitations

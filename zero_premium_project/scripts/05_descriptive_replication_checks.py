@@ -19,6 +19,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+INTERMEDIATE = DATA / "intermediate"
 PROCESSED = DATA / "processed"
 METADATA = DATA / "metadata"
 OUTPUTS = ROOT / "outputs"
@@ -317,8 +318,16 @@ def prepare_dataset(df: pd.DataFrame) -> pd.DataFrame:
         "any_zero_to_positive_turnover_across_issuer",
         "lowest_zero_to_positive_turnover_across_issuer",
         "second_lowest_zero_to_positive_turnover_across_issuer",
+        "any_zero_to_positive_turnover_across_issuer_crosswalk_only",
+        "any_zero_to_positive_turnover_across_issuer_plan_panel_only",
+        "any_zero_to_positive_turnover_across_issuer_plan_id_prefix",
         "any_zero_to_positive_turnover_within_issuer",
+        "any_zero_to_positive_turnover_within_issuer_crosswalk_only",
+        "any_zero_to_positive_turnover_within_issuer_plan_panel_only",
+        "any_zero_to_positive_turnover_within_issuer_plan_id_prefix",
         "treatment_constructible_flag",
+        "drake_table2_complete_case_core_flag",
+        "drake_table2_complete_case_all_outcomes_flag",
         "included_primary_sample",
         "continuous_hcgov_2022_2024",
         "suppression_or_missing_flag",
@@ -873,6 +882,142 @@ def make_turnover_count_comparison(df: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+def make_table2_complete_case_diagnostics(df: pd.DataFrame) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    base = pd.Series(True, index=df.index)
+    candidate_specs: list[tuple[str, pd.Series, str]] = [
+        ("harmonized_sample", base, "Current Step 3 harmonized sample after eTable 3 exclusions."),
+        ("treatment_constructible", df["treatment_constructible_flag_bool"], "Current Table 2-style constructible treatment filter."),
+    ]
+    if "Cnsmr" in df.columns:
+        candidate_specs.append(("constructible_nonmissing_enrollment", df["treatment_constructible_flag_bool"] & num(df["Cnsmr"]).notna() & num(df["Cnsmr"]).gt(0), "Constructible plus nonmissing positive current-year enrollment."))
+    if "enrollment_2021_weight" in df.columns:
+        candidate_specs.append(
+            (
+                "constructible_nonmissing_2021_weight",
+                df["treatment_constructible_flag_bool"] & num(df["enrollment_2021_weight"]).notna() & num(df["enrollment_2021_weight"]).gt(0),
+                "Constructible plus nonmissing positive 2021 enrollment weight.",
+            )
+        )
+    market_cols = [col for col in ["number_of_silver_plans", "number_of_insurers", "lowest_silver_premium", "second_lowest_silver_premium", "bronze_spread"] if col in df.columns]
+    if market_cols:
+        market_ok = df[market_cols].apply(num).notna().all(axis=1)
+        candidate_specs.append(("constructible_market_controls_complete", df["treatment_constructible_flag_bool"] & market_ok, "Constructible plus nonmissing repaired market controls."))
+    outcome_cols = [col for col in OUTCOME_COLUMNS if col in df.columns]
+    if outcome_cols:
+        all_outcomes_ok = df[outcome_cols].apply(num).notna().all(axis=1)
+        candidate_specs.append(("constructible_all_oep_outcomes_complete", df["treatment_constructible_flag_bool"] & all_outcomes_ok, "Constructible plus all core OEP outcome columns nonmissing."))
+    for col in ["drake_table2_complete_case_core_flag", "drake_table2_complete_case_all_outcomes_flag"]:
+        bool_col = f"{col}_bool"
+        if bool_col in df.columns:
+            candidate_specs.append((col, df[bool_col], f"Flag produced by Step 2: {col}."))
+    for name, mask, notes in candidate_specs:
+        mask = mask.fillna(False).astype(bool)
+        sub = df[mask]
+        rows.append(
+            {
+                "candidate_rule": name,
+                "county_years": len(sub),
+                "counties": sub["county_fips"].nunique() if "county_fips" in sub.columns else math.nan,
+                "states": sub["state"].nunique() if "state" in sub.columns else math.nan,
+                "difference_vs_drake_table2_6459": len(sub) - DRAKE_TABLE2_COUNTY_YEARS,
+                "nonmissing_Cnsmr_rows": int(num(sub["Cnsmr"]).notna().sum()) if "Cnsmr" in sub.columns else math.nan,
+                "any_turnover_count": int(sub["any_zero_to_positive_turnover_bool"].sum()) if "any_zero_to_positive_turnover_bool" in sub.columns else math.nan,
+                "across_turnover_count": int(sub["any_zero_to_positive_turnover_across_issuer_bool"].sum()) if "any_zero_to_positive_turnover_across_issuer_bool" in sub.columns else math.nan,
+                "notes": notes,
+            }
+        )
+    out = pd.DataFrame(rows)
+    out.to_csv(OUTPUTS / "step3_table2_complete_case_diagnostics.csv", index=False)
+    return out
+
+
+def make_treatment_definition_sensitivity(df: pd.DataFrame) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    required_non_ehb_states = {"IL", "OR"}
+    keys = df[["year", "state", "county_fips", "Cnsmr"]].copy()
+    keys["county_fips"] = keys["county_fips"].astype(str).str.zfill(5)
+    for previous_year, current_year in [(2021, 2022), (2022, 2023), (2023, 2024)]:
+        path = INTERMEDIATE / f"transition_plan_pair_{previous_year}_{current_year}.csv"
+        if not path.exists():
+            continue
+        long = pd.read_csv(path, dtype={"county_fips": str}, low_memory=False)
+        if long.empty:
+            continue
+        long["county_fips"] = long["county_fips"].astype(str).str.zfill(5)
+        across = as_bool(long["across_issuer"]) if "across_issuer" in long.columns else pd.Series(False, index=long.index)
+        same = as_bool(long["same_issuer"]) if "same_issuer" in long.columns else pd.Series(False, index=long.index)
+        prior_ehb_zero = num(long.get("prior_net_premium_proxy", pd.Series(np.nan, index=long.index))).le(0.01)
+        current_ehb_positive = num(long.get("current_net_premium_proxy", pd.Series(np.nan, index=long.index))).gt(0.01)
+        prior_gross_zero = as_bool(long.get("prior_gross_benchmark_zero_premium_flag", pd.Series(False, index=long.index)))
+        current_gross_positive = num(long.get("current_net_premium_proxy_gross_benchmark", pd.Series(np.nan, index=long.index))).gt(0.01)
+        state_required = long["state"].isin(required_non_ehb_states)
+        variants = {
+            "gross_only": (prior_gross_zero, current_gross_positive, "Gross premium minus gross SLCSP; retained as pre-repair benchmark."),
+            "ehb_all_states": (prior_ehb_zero, current_ehb_positive, "EHB percent applied in all states; current primary Step 2 treatment proxy."),
+            "ehb_il_or_only": (
+                (state_required & prior_ehb_zero) | (~state_required & prior_gross_zero),
+                (state_required & current_ehb_positive) | (~state_required & current_gross_positive),
+                "EHB residual applied only in IL/OR, the states explicitly named in Drake supplement text.",
+            ),
+        }
+        base = keys[keys["year"].eq(current_year)].copy()
+        for variant, (prior_zero, current_positive, note) in variants.items():
+            tmp = long[["state", "county_fips"]].copy()
+            tmp["year"] = current_year
+            tmp["any"] = prior_zero.fillna(False) & current_positive.fillna(False)
+            tmp["across"] = tmp["any"] & across.fillna(False)
+            tmp["within"] = tmp["any"] & same.fillna(False)
+            county = (
+                tmp.groupby(["year", "state", "county_fips"], dropna=False)
+                .agg(any=("any", "max"), across=("across", "max"), within=("within", "max"))
+                .reset_index()
+            )
+            merged = base.merge(county, on=["year", "state", "county_fips"], how="left")
+            for col in ["any", "across", "within"]:
+                merged[col] = merged[col].astype("boolean").fillna(False).astype(bool)
+            rows.append(
+                {
+                    "variant": variant,
+                    "year": current_year,
+                    "county_years": len(merged),
+                    "any_turnover_county_years": int(merged["any"].sum()),
+                    "across_issuer_turnover_county_years": int(merged["across"].sum()),
+                    "within_issuer_turnover_county_years": int(merged["within"].sum()),
+                    "any_turnover_enrollee_years_millions": float(merged.loc[merged["any"], "Cnsmr"].sum(skipna=True) / 1_000_000),
+                    "across_issuer_enrollee_years_millions": float(merged.loc[merged["across"], "Cnsmr"].sum(skipna=True) / 1_000_000),
+                    "difference_vs_drake_any_count": int(merged["any"].sum()) - DRAKE_ANY_TURNOVER_COUNTY_YEARS if current_year == "pooled" else np.nan,
+                    "definition_note": note,
+                }
+            )
+    out = pd.DataFrame(rows)
+    if not out.empty:
+        pooled = (
+            out.groupby("variant", dropna=False)
+            .agg(
+                county_years=("county_years", "sum"),
+                any_turnover_county_years=("any_turnover_county_years", "sum"),
+                across_issuer_turnover_county_years=("across_issuer_turnover_county_years", "sum"),
+                within_issuer_turnover_county_years=("within_issuer_turnover_county_years", "sum"),
+                any_turnover_enrollee_years_millions=("any_turnover_enrollee_years_millions", "sum"),
+                across_issuer_enrollee_years_millions=("across_issuer_enrollee_years_millions", "sum"),
+                definition_note=("definition_note", "first"),
+            )
+            .reset_index()
+        )
+        pooled["year"] = "pooled"
+        pooled["difference_vs_drake_any_count"] = pooled["any_turnover_county_years"] - DRAKE_ANY_TURNOVER_COUNTY_YEARS
+        pooled["difference_vs_drake_across_count"] = pooled["across_issuer_turnover_county_years"] - DRAKE_ACROSS_ISSUER_TURNOVER_COUNTY_YEARS
+        pooled["difference_vs_drake_any_enrollee_millions"] = pooled["any_turnover_enrollee_years_millions"] - DRAKE_ANY_TURNOVER_ENROLLEE_YEARS_MILLIONS
+        pooled["difference_vs_drake_across_enrollee_millions"] = pooled["across_issuer_enrollee_years_millions"] - DRAKE_ACROSS_TURNOVER_ENROLLEE_YEARS_MILLIONS
+        out["difference_vs_drake_across_count"] = np.nan
+        out["difference_vs_drake_any_enrollee_millions"] = np.nan
+        out["difference_vs_drake_across_enrollee_millions"] = np.nan
+        out = pd.concat([out, pooled[out.columns]], ignore_index=True, sort=False)
+    out.to_csv(OUTPUTS / "step3_treatment_definition_sensitivity.csv", index=False)
+    return out
+
+
 def make_turnover_prevalence(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     by_year = prevalence_for_group(df, ["year"])
     by_state_year = prevalence_for_group(df, ["state", "year"])
@@ -915,6 +1060,9 @@ def make_turnover_decomposition_debug(df: pd.DataFrame) -> pd.DataFrame:
             second = valid.get("second_lowest_zero_to_positive_turnover_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
             lowest_across = valid.get("lowest_zero_to_positive_turnover_across_issuer_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
             second_across = valid.get("second_lowest_zero_to_positive_turnover_across_issuer_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
+            across_crosswalk = valid.get("any_zero_to_positive_turnover_across_issuer_crosswalk_only_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
+            across_plan_panel = valid.get("any_zero_to_positive_turnover_across_issuer_plan_panel_only_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
+            across_prefix = valid.get("any_zero_to_positive_turnover_across_issuer_plan_id_prefix_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
             rows.append(
                 {
                     **base,
@@ -925,6 +1073,9 @@ def make_turnover_decomposition_debug(df: pd.DataFrame) -> pd.DataFrame:
                     "any_turnover_share_constructible": float(any_turnover.mean()) if len(valid) else math.nan,
                     "across_issuer_count": int(across.sum()),
                     "across_issuer_share_constructible": float(across.mean()) if len(valid) else math.nan,
+                    "across_issuer_crosswalk_only_count": int(across_crosswalk.sum()),
+                    "across_issuer_plan_panel_only_count": int(across_plan_panel.sum()),
+                    "across_issuer_plan_id_prefix_count": int(across_prefix.sum()),
                     "within_only_count": int((any_turnover & ~across).sum()),
                     "lowest_turnover_count": int(lowest.sum()),
                     "second_lowest_turnover_count": int(second.sum()),
@@ -1512,6 +1663,22 @@ def make_report(
     counts_display = turnover_counts.copy()
     for col in ["our_value", "drake_reference", "difference"]:
         counts_display[col] = counts_display[col].astype(float).round(3)
+    treatment_variant_path = OUTPUTS / "step3_treatment_definition_sensitivity.csv"
+    if treatment_variant_path.exists():
+        treatment_variants = pd.read_csv(treatment_variant_path)
+        treatment_variants_display = treatment_variants[treatment_variants["year"].astype(str).eq("pooled")].copy()
+        for col in [
+            "any_turnover_enrollee_years_millions",
+            "across_issuer_enrollee_years_millions",
+            "difference_vs_drake_any_count",
+            "difference_vs_drake_across_count",
+            "difference_vs_drake_any_enrollee_millions",
+            "difference_vs_drake_across_enrollee_millions",
+        ]:
+            if col in treatment_variants_display.columns:
+                treatment_variants_display[col] = treatment_variants_display[col].astype(float).round(3)
+    else:
+        treatment_variants_display = pd.DataFrame()
     report = [
         "# Step 3 Descriptive Replication Report",
         "",
@@ -1573,6 +1740,29 @@ def make_report(
         "Turnover count comparison against the main article:",
         "",
         md_table(counts_display, digits=3),
+        "",
+        "Treatment-definition sensitivity:",
+        "",
+        md_table(
+            treatment_variants_display[
+                [
+                    "variant",
+                    "any_turnover_county_years",
+                    "across_issuer_turnover_county_years",
+                    "any_turnover_enrollee_years_millions",
+                    "across_issuer_enrollee_years_millions",
+                    "difference_vs_drake_any_count",
+                    "difference_vs_drake_across_count",
+                    "difference_vs_drake_any_enrollee_millions",
+                    "difference_vs_drake_across_enrollee_millions",
+                ]
+            ]
+            if not treatment_variants_display.empty
+            else treatment_variants_display,
+            digits=3,
+        ),
+        "",
+        "The EHB-aware definition follows the supplement statement that non-EHB premiums cannot be reduced to zero by federal subsidies, but it moves county-year counts below Drake while improving any-turnover enrollee-years. The gross-only definition better matches county-year prevalence in some years but ignores non-EHB residuals. This is why Step 4 remains blocked rather than selecting whichever definition happens to look closer.",
         "",
         "The enrollment-weighted any-turnover prevalence is close in 2022, higher than Drake in 2023, and lower than Drake in 2024. The bigger problem is across-insurer turnover: the current proxy identifies fewer across-insurer county-years than Drake. That is a Step 2 treatment-construction issue, not an outcome-replication issue.",
         "",
@@ -1644,8 +1834,8 @@ def make_report(
 
 def make_progress_memo(status: str, recommendation: str, warnings: list[str], sensitivity: pd.DataFrame) -> None:
     next_tasks = [
-        "Repair Step 2 treatment construction against Drake's exact 125 percent FPL, non-EHB, and current-year plan/default logic.",
-        "Investigate why any-turnover county-years remain 173 above Drake and across-insurer county-years remain 88 below Drake.",
+        "Reconcile Drake's exact non-EHB treatment with public EHB percent fields; current EHB-aware, IL/OR-only, and gross-only variants do not jointly match all Drake treatment anchors.",
+        "Investigate why across-insurer county-years remain below Drake under all strict zero-to-positive definitions.",
         "Rerun Step 3 after treatment repairs before starting Step 4 regressions.",
     ]
     memo = [
@@ -1661,21 +1851,22 @@ def make_progress_memo(status: str, recommendation: str, warnings: list[str], se
         "",
         "## Partially Completed",
         "",
-        "- Treatment prevalence is benchmark-proxy based and only partially comparable to Drake exposure tables.",
+        "- Treatment prevalence is EHB-aware and 125 percent-FPL-style, but still only partially comparable to Drake exposure tables.",
+        "- Treatment-definition sensitivity now compares gross-only, all-state EHB-aware, and IL/OR-only EHB variants.",
         "- Across-insurer turnover remains under-detected relative to Drake.",
         "",
         "## Not Completed",
         "",
         "- No causal regressions, causal forests, policy learning, or formal Step 4 models were run.",
-        "- No exact household-specific APTC or individual-level retention dataset was created.",
+        "- No exact household-specific APTC, income-stratified OEP outcome, or individual-level retention dataset was created.",
         "",
         "## Main Findings In Plain English",
         "",
         "- The 29-county sample gap is explained by Drake supplement eTable 3; after excluding those counties, the sample matches Drake's county anchors.",
         "- The outcome data very closely reproduce the public OEP reenrollment structure.",
-        "- Any-turnover prevalence is directionally plausible, but across-insurer turnover is too low relative to Drake.",
-        "- Treatment construction needs stricter validation before formal replication.",
-        "- 2022 remains weaker because it depends on the 2021 fallback construction.",
+        "- Any-turnover prevalence is sensitive to non-EHB handling: gross-only overcounts county-years while all-state EHB-aware undercounts them.",
+        "- Across-insurer turnover is too low relative to Drake under the strict zero-to-positive definition.",
+        "- 2022 still deserves scrutiny because it depends on reconstructed 2021 county-plan premiums, now using the 2021 Q4 HPF/RBIS fallback when available.",
         "",
         "## Honest Judgment",
         "",
@@ -1735,6 +1926,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     table1 = make_table1(primary)
     prevalence_by_year, prevalence_by_state_year, prevalence_weighted, exposure_comparison, turnover_counts = make_turnover_prevalence(primary)
     make_turnover_decomposition_debug(primary)
+    make_treatment_definition_sensitivity(primary)
+    make_table2_complete_case_diagnostics(primary)
     table2 = make_table2(primary)
     sign = make_sign_check(table2)
     problem_diag, problem_states = make_problem_state_diagnostics(primary_raw, primary)

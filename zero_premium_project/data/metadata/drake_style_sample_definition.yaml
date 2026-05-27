@@ -27,8 +27,9 @@ primary_treatment:
   - across_issuer_zero_to_positive_turnover
   - within_issuer_zero_to_positive_turnover
 zero_premium_measure:
-  type: benchmark_based_low_income_proxy
+  type: ehb_adjusted_low_income_proxy
   assumption: age_40_125_percent_fpl_proxy_with_zero_expected_contribution_for_100_to_150_fpl_under_arpa
+  non_ehb_handling: use_public_ehb_percent_total_premium_fields_where_available; retain_gross_only_sensitivity_fields
 market_controls_added_for_repair:
   - enrollment_2021_weight
   - number_of_silver_plans
