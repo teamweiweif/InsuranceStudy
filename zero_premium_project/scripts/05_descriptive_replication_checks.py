@@ -31,7 +31,6 @@ PRIMARY_DATASET = PROCESSED / "drake_replication_county_year_2022_2024_primary_s
 NEBRASKA_DATASET = PROCESSED / "drake_replication_county_year_2022_2024_sensitivity_nebraska.csv"
 
 DRAKE_COUNTIES = 2159
-DRake_COUNTIES = DRAKE_COUNTIES
 DRAKE_RESULT_COUNTY_YEARS = 6471
 DRAKE_RESULT_UNIQUE_COUNTIES = 2157
 DRAKE_TABLE2_COUNTY_YEARS = 6459
@@ -313,7 +312,11 @@ def prepare_dataset(df: pd.DataFrame) -> pd.DataFrame:
             out[col] = num(out[col])
     bool_cols = [
         "any_zero_to_positive_turnover",
+        "lowest_zero_to_positive_turnover",
+        "second_lowest_zero_to_positive_turnover",
         "any_zero_to_positive_turnover_across_issuer",
+        "lowest_zero_to_positive_turnover_across_issuer",
+        "second_lowest_zero_to_positive_turnover_across_issuer",
         "any_zero_to_positive_turnover_within_issuer",
         "treatment_constructible_flag",
         "included_primary_sample",
@@ -834,7 +837,7 @@ def make_turnover_count_comparison(df: pd.DataFrame) -> pd.DataFrame:
             "our_value": len(table2_like),
             "drake_reference": DRAKE_TABLE2_COUNTY_YEARS,
             "difference": len(table2_like) - DRAKE_TABLE2_COUNTY_YEARS,
-            "notes": "Drake Table 2 reports 6459 county-years. Our count is constructible rows after eTable 3 exclusions; remaining difference likely reflects 2021 weights/control availability and OEP suppression.",
+            "notes": "Drake Table 2 reports 6459 county-years. Our count is constructible rows after eTable 3 exclusions; remaining difference likely reflects Drake's complete-case Table 2 rule, OEP suppression, or treatment-definition details rather than missing repaired controls.",
         },
         {
             "metric": "any_turnover_county_years",
@@ -889,6 +892,53 @@ def make_turnover_prevalence(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFra
     return by_year, by_state_year, weighted, exposure, counts
 
 
+def make_turnover_decomposition_debug(df: pd.DataFrame) -> pd.DataFrame:
+    specs = [
+        ("year", ["year"]),
+        ("state_year", ["state", "year"]),
+        ("pooled", []),
+    ]
+    rows: list[dict[str, Any]] = []
+    for scope, keys in specs:
+        groups = [(("pooled",), df)] if not keys else list(df.groupby(keys, dropna=False))
+        for key, sub in groups:
+            if not isinstance(key, tuple):
+                key = (key,)
+            base = {"scope": scope}
+            for col, val in zip(keys if keys else ["pooled"], key):
+                base[col] = val
+            constructible = sub["treatment_constructible_flag_bool"]
+            valid = sub[constructible].copy()
+            any_turnover = valid["any_zero_to_positive_turnover_bool"]
+            across = valid["any_zero_to_positive_turnover_across_issuer_bool"]
+            lowest = valid.get("lowest_zero_to_positive_turnover_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
+            second = valid.get("second_lowest_zero_to_positive_turnover_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
+            lowest_across = valid.get("lowest_zero_to_positive_turnover_across_issuer_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
+            second_across = valid.get("second_lowest_zero_to_positive_turnover_across_issuer_bool", pd.Series(False, index=valid.index)).fillna(False).astype(bool)
+            rows.append(
+                {
+                    **base,
+                    "rows": len(sub),
+                    "constructible_rows": len(valid),
+                    "enrollment": valid["Cnsmr"].sum(skipna=True) if "Cnsmr" in valid.columns else math.nan,
+                    "any_turnover_count": int(any_turnover.sum()),
+                    "any_turnover_share_constructible": float(any_turnover.mean()) if len(valid) else math.nan,
+                    "across_issuer_count": int(across.sum()),
+                    "across_issuer_share_constructible": float(across.mean()) if len(valid) else math.nan,
+                    "within_only_count": int((any_turnover & ~across).sum()),
+                    "lowest_turnover_count": int(lowest.sum()),
+                    "second_lowest_turnover_count": int(second.sum()),
+                    "both_lowest_and_second_count": int((lowest & second).sum()),
+                    "lowest_across_count": int(lowest_across.sum()),
+                    "second_lowest_across_count": int(second_across.sum()),
+                    "notes": "Debug decomposition for treatment-count mismatch; descriptive only.",
+                }
+            )
+    out = pd.DataFrame(rows)
+    out.to_csv(OUTPUTS / "step3_turnover_decomposition_debug.csv", index=False)
+    return out
+
+
 def comparison_variables(df: pd.DataFrame) -> list[dict[str, Any]]:
     specs = [
         ("overall_reenrollment_share", "outcome", "Overall reenrollment share", True),
@@ -898,10 +948,11 @@ def comparison_variables(df: pd.DataFrame) -> list[dict[str, Any]]:
         ("active_switch_share", "outcome", "Active switch share", True),
         ("number_of_silver_plans", "plan_market", "Number of silver plans", "number_of_silver_plans" in df.columns),
         ("number_of_insurers", "plan_market", "Number of insurers", "number_of_insurers" in df.columns),
+        ("lowest_silver_premium", "plan_market", "Lowest silver premium", "lowest_silver_premium" in df.columns),
+        ("second_lowest_silver_premium", "plan_market", "Second-lowest silver premium", "second_lowest_silver_premium" in df.columns),
+        ("premium_spread_among_silver_plans", "plan_market", "Premium spread among silver plans", "premium_spread_among_silver_plans" in df.columns),
+        ("lowest_bronze_premium", "plan_market", "Lowest bronze premium", "lowest_bronze_premium" in df.columns),
         ("bronze_spread", "plan_market", "Bronze spread", "bronze_spread" in df.columns),
-        ("prior_premium_lowest", "plan_market", "Lowest silver premium proxy", "prior_premium_lowest" in df.columns),
-        ("prior_premium_second_lowest", "plan_market", "Second-lowest silver premium proxy", "prior_premium_second_lowest" in df.columns),
-        ("premium_spread_among_silver_proxy", "plan_market", "Premium spread among two lowest silver plans", True),
         ("mean_premium_change_among_affected_top_two", "plan_market", "Premium change proxy", "mean_premium_change_among_affected_top_two" in df.columns),
         ("Cnsmr", "plan_market", "County enrollment size", "Cnsmr" in df.columns),
         ("enrollment_2021_weight", "plan_market", "2021 enrollment weight", "enrollment_2021_weight" in df.columns),
@@ -911,8 +962,6 @@ def comparison_variables(df: pd.DataFrame) -> list[dict[str, Any]]:
 
 def make_table2(df: pd.DataFrame) -> pd.DataFrame:
     work = df.copy()
-    if "prior_premium_lowest" in work.columns and "prior_premium_second_lowest" in work.columns:
-        work["premium_spread_among_silver_proxy"] = num(work["prior_premium_second_lowest"]) - num(work["prior_premium_lowest"])
     rows: list[dict[str, Any]] = []
     comparisons = [
         ("any_zero_to_positive_turnover", "any_zero_to_positive_turnover_bool"),
@@ -1205,7 +1254,14 @@ def make_zero_premium_proxy_audit(df: pd.DataFrame) -> pd.DataFrame:
                     row[f"{premium_col}_zero_count"] = int((vals == 0).sum())
                     row[f"{premium_col}_extreme_gt_2000_count"] = int((vals > 2000).sum())
             row["benchmark_value_note"] = "Benchmark value itself is not retained in Step 2 dataset; audited mapped/prior premium and proxy-change fields instead."
-            row["fewer_than_two_silver_plans_note"] = "Direct silver-plan count is absent; missing previous_second_lowest_plan_id is used as a weak proxy."
+            if "number_of_silver_plans" in sub.columns:
+                silver_counts = num(sub["number_of_silver_plans"])
+                fewer = silver_counts.lt(2) & silver_counts.notna()
+                row["fewer_than_two_silver_plans_count"] = int(fewer.sum())
+                row["fewer_than_two_silver_plans_rate"] = float(fewer.mean()) if len(fewer) else math.nan
+                row["fewer_than_two_silver_plans_note"] = "Direct silver-plan counts are retained from the repaired Step 2 market controls."
+            else:
+                row["fewer_than_two_silver_plans_note"] = "Direct silver-plan count is absent; missing previous_second_lowest_plan_id is used as a weak proxy."
             rows.append(row)
     audit = pd.DataFrame(rows)
     audit.to_csv(OUTPUTS / "step3_zero_premium_proxy_audit.csv", index=False)
@@ -1335,8 +1391,6 @@ def build_table1_frame(df: pd.DataFrame) -> pd.DataFrame:
 
 def build_table2_frame(df: pd.DataFrame) -> pd.DataFrame:
     work = df.copy()
-    if "prior_premium_lowest" in work.columns and "prior_premium_second_lowest" in work.columns:
-        work["premium_spread_among_silver_proxy"] = num(work["prior_premium_second_lowest"]) - num(work["prior_premium_lowest"])
     rows: list[dict[str, Any]] = []
     valid = work[work["treatment_constructible_flag_bool"]].copy()
     weight_col = "enrollment_2021_weight" if "enrollment_2021_weight" in valid.columns and num(valid["enrollment_2021_weight"]).notna().any() else "Cnsmr"
@@ -1465,7 +1519,7 @@ def make_report(
         "",
         f"Overall status: **{status}**.",
         "",
-        "This Step 3 audit now applies Drake supplement eTable 3 county exclusions and reproduces the public OEP reenrollment patterns closely. The sample-count discrepancy is resolved, but formal Step 4 replication is still not justified until Step 2 treatment construction and later regression controls are repaired. The main remaining concerns are proxy-based zero-premium treatment, under-detection of across-insurer turnover, missing 2021 enrollment weights/control variables, and incomplete non-EHB/125 percent FPL premium handling.",
+        "This Step 3 audit applies Drake supplement eTable 3 county exclusions and reproduces the public OEP reenrollment patterns closely. The sample-count discrepancy is resolved, and the repaired rebuild now retains 2021 enrollment weights plus silver/bronze market controls. Formal Step 4 replication is still not justified because the main remaining concerns are proxy-based zero-premium treatment, under-detection of across-insurer turnover, and incomplete non-EHB/125 percent FPL premium handling.",
         "",
         "Main warnings:",
         "",
@@ -1538,8 +1592,7 @@ def make_report(
         "- 2023-to-2024 join weakness: Drake supplement eTable 3 resolves the main GA/NC county-count issue, but Step 2 still needs source-level crosswalk validation before formal regression work.",
         "- Zero-premium proxy: Drake assumes a single 40-year-old at 125 percent FPL for the 100-150 FPL exposure construction. The current Step 2 output is benchmark-based and does not prove exact household-specific net premiums.",
         "- Non-EHB issue: Drake notes that required non-EHB benefits can prevent zero-dollar premiums in some states. The current Step 2 output does not explicitly retain or audit non-EHB handling.",
-        "- Missing controls/weights: Drake Table 2 and regressions use 2021 enrollment weights, bronze spread, and insurer-count controls. These are not fully available in the current county-year output.",
-        "- Repair-code status: `scripts/03_build_drake_replication_dataset.py` has been updated to generate 2021 weights, bronze spread, silver/bronze plan counts, and eTable 3 sample flags on the next full raw-data rebuild. The current processed CSVs have not yet been rebuilt from raw files.",
+        "- Repaired controls/weights: 2021 enrollment weights, bronze spread, silver/bronze plan counts, and insurer-count controls are now present after the local raw-data rebuild.",
         "- Nebraska sensitivity: Nebraska remains outside the primary sample until county-market mapping is verified.",
         "- Aggregate county-year limitation: public OEP PUFs do not support individual retention or income-stratified county outcomes.",
         "",
@@ -1563,7 +1616,7 @@ def make_report(
         "",
         f"Recommendation: **{recommendation}**",
         "",
-        "The conservative recommendation is to repair Step 2 treatment construction before formal Step 4 treatment regressions. Sample alignment and OEP outcome descriptives are now strong after eTable 3 harmonization, but treatment definition, across-insurer classification, non-EHB handling, 2021 weights, and control variables are not yet close enough to freeze Step 2.",
+        "The conservative recommendation is to repair Step 2 treatment construction before formal Step 4 treatment regressions. Sample alignment, OEP outcome descriptives, 2021 weights, and market controls are now much stronger after the local raw-data rebuild, but treatment definition, across-insurer classification, and non-EHB handling are not yet close enough to freeze Step 2.",
         "",
         "## Final Self-Audit Checklist",
         "",
@@ -1592,8 +1645,8 @@ def make_report(
 def make_progress_memo(status: str, recommendation: str, warnings: list[str], sensitivity: pd.DataFrame) -> None:
     next_tasks = [
         "Repair Step 2 treatment construction against Drake's exact 125 percent FPL, non-EHB, and current-year plan/default logic.",
-        "Add or reconstruct 2021 enrollment weights, bronze spread, and insurer-count variables needed for Drake Table 2 and regressions.",
-        "Rerun Step 3 after treatment/control repairs before starting Step 4 regressions.",
+        "Investigate why any-turnover county-years remain 173 above Drake and across-insurer county-years remain 88 below Drake.",
+        "Rerun Step 3 after treatment repairs before starting Step 4 regressions.",
     ]
     memo = [
         "# Step 3 Progress And Limitations",
@@ -1603,14 +1656,13 @@ def make_progress_memo(status: str, recommendation: str, warnings: list[str], se
         "- Verified that processed Step 2 datasets are readable and nonempty.",
         "- Applied Drake supplement eTable 3 county exclusions and wrote a Drake-harmonized Step 3 dataset.",
         "- Produced sample-alignment diagnostics, Table 1-style reenrollment descriptives, treatment prevalence, exposure/count comparisons, Table 2-style descriptive comparisons, sign checks, weakness audits, and sensitivity datasets.",
-        "- Updated the Step 2 build script so a future raw-data rebuild can add 2021 enrollment weights, bronze spread, and insurer-count controls.",
+        "- Rebuilt Step 2 from the local raw-data environment and retained 2021 enrollment weights, bronze spread, silver/bronze plan counts, and insurer-count controls.",
         "- Wrote `docs/step3_descriptive_replication_report.md`.",
         "",
         "## Partially Completed",
         "",
         "- Treatment prevalence is benchmark-proxy based and only partially comparable to Drake exposure tables.",
         "- Across-insurer turnover remains under-detected relative to Drake.",
-        "- The current processed files still lack the new Step 2 repair variables because raw files were not present for a full rebuild.",
         "",
         "## Not Completed",
         "",
@@ -1682,6 +1734,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     sample_alignment, county_diag = make_sample_alignment(full, primary_raw, primary, ne, state_meta, excluded_check)
     table1 = make_table1(primary)
     prevalence_by_year, prevalence_by_state_year, prevalence_weighted, exposure_comparison, turnover_counts = make_turnover_prevalence(primary)
+    make_turnover_decomposition_debug(primary)
     table2 = make_table2(primary)
     sign = make_sign_check(table2)
     problem_diag, problem_states = make_problem_state_diagnostics(primary_raw, primary)

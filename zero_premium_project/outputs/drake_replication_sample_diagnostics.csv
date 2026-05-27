@@ -1,7 +1,10 @@
 metric,value,notes
 rows_before_restrictions,7211,
 rows_primary_sample,6564,"Continuously HC.gov 2022-2024, excluding AK/HI/NE."
+rows_drake_harmonized_sample,6477,Primary sample after Drake supplement eTable 3 county exclusions.
 counties_before_restrictions,2448,
 counties_primary_sample,2188,
+counties_drake_harmonized_sample,2159,Should match Drake 2159-county anchor when all eTable 3 counties are present in raw primary.
+drake_supplement_etable3_excluded_counties_in_primary,29,
 states_primary_sample,29,"AL,AR,AZ,DE,FL,GA,IA,IL,IN,KS,LA,MI,MO,MS,MT,NC,ND,NH,OH,OK,OR,SC,SD,TN,TX,UT,WI,WV,WY"
 states_continuously_hcgov,32,"AK,AL,AR,AZ,DE,FL,GA,HI,IA,IL,IN,KS,LA,MI,MO,MS,MT,NC,ND,NE,NH,OH,OK,OR,SC,SD,TN,TX,UT,WI,WV,WY"

@@ -2,7 +2,7 @@
 
 ## What Changed
 
-`scripts/03_build_drake_replication_dataset.py` has been updated so the next full Step 2 rebuild can produce the fields needed for closer Drake-style replication:
+`scripts/03_build_drake_replication_dataset.py` has been updated and rerun against the local raw-data environment, producing the fields needed for closer Drake-style replication:
 
 - Drake supplement eTable 3 county-exclusion flags.
 - Drake-harmonized primary sample output.
@@ -12,15 +12,23 @@
 
 ## Current Data Status
 
-The current committed processed datasets were not rebuilt from raw files in this pass because `data/raw/` is not present in the working tree. Step 3 was rerun from the existing processed data, so it still correctly reports that the current processed data lack `bronze_spread`, `number_of_insurers`, and `enrollment_2021_weight`.
+The current processed datasets have now been rebuilt from local raw files. The raw files remain outside GitHub and are linked locally into `data/raw/` from the adjacent workstation data folder.
+
+Validation after rebuild:
+
+- Drake-harmonized county count: 2,159 counties.
+- `enrollment_2021_weight`: present, 99.9% nonmissing in the primary sample.
+- `bronze_spread`: present, 100% nonmissing in the primary sample.
+- `number_of_insurers`: present.
+- Remaining major warnings: proxy-based zero-premium treatment and weaker 2023-to-2024 current-plan join rate.
 
 ## Why This Matters
 
-Drake Table 2 and later regression replication use 2021 enrollment weights and market controls. The current outcome replication is strong, but Step 4 should wait until the repaired Step 2 build is run from raw source files and validated.
+Drake Table 2 and later regression replication use 2021 enrollment weights and market controls. Those fields are now present, but Step 4 should still wait because treatment prevalence and across-insurer turnover do not yet align closely enough with Drake.
 
-## Next Build Command
+## Rebuild Command
 
-After raw files are restored or downloaded:
+When local raw files are available or linked:
 
 ```bash
 python scripts/03_build_drake_replication_dataset.py --include-nebraska-sensitivity --verbose

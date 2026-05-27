@@ -1,4 +1,4 @@
 dataset_path,file_exists,file_size_bytes,readable,rows,columns,key_columns_present,problem_detected,notes
-data\processed\drake_replication_county_year_2022_2024.csv,True,8192616,True,7211,158,True,none,Readable nonempty committed CSV.
-data\processed\drake_replication_county_year_2022_2024_primary_sample.csv,True,7441296,True,6564,158,True,none,Readable nonempty committed CSV.
-data\processed\drake_replication_county_year_2022_2024_sensitivity_nebraska.csv,True,7768407,True,6843,158,True,none,Readable nonempty committed CSV.
+data\processed\drake_replication_county_year_2022_2024.csv,True,10914773,True,7211,187,True,none,Readable nonempty committed CSV.
+data\processed\drake_replication_county_year_2022_2024_primary_sample.csv,True,9921568,True,6564,187,True,none,Readable nonempty committed CSV.
+data\processed\drake_replication_county_year_2022_2024_sensitivity_nebraska.csv,True,10353611,True,6843,187,True,none,Readable nonempty committed CSV.

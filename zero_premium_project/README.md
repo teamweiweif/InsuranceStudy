@@ -8,9 +8,9 @@ Step 3 descriptive replication diagnostics have been rerun against Drake et al. 
 
 - `data/processed/drake_replication_primary_drake_harmonized_2022_2024.csv`
 
-Outcome descriptives closely reproduce Drake Table 1. The current judgment is **Fix Step 2 before Step 4** because treatment construction remains proxy-based, across-insurer turnover is under-detected relative to Drake, and 2021 enrollment weights / bronze spread / insurer-count controls are not yet retained in the current processed files.
+Outcome descriptives closely reproduce Drake Table 1. The current judgment is **Fix Step 2 before Step 4** because treatment construction remains proxy-based and across-insurer turnover is under-detected relative to Drake. The latest local raw-data rebuild now retains 2021 enrollment weights, bronze spread, and insurer-count controls in the processed files.
 
-`scripts/03_build_drake_replication_dataset.py` has been updated to produce those Step 2 repair fields on the next full raw-data rebuild. The current processed datasets were not rebuilt from raw files in this pass because `data/raw/` is intentionally excluded from the repo.
+Local rebuilds use the workstation raw-data environment. `data/raw/` is intentionally excluded from GitHub; in this workspace it is linked locally from the adjacent raw-data project folder and should not be committed.
 
 Main status files:
 
