@@ -1,0 +1,23 @@
+metric,value,drake_or_expected_reference,notes
+rows_before_restrictions,7211,,All constructed county-years before Drake-style sample restrictions.
+rows_primary_sample,6564,,Primary sample county-years.
+states_primary_sample,29,29,"AL,AR,AZ,DE,FL,GA,IA,IL,IN,KS,LA,MI,MO,MS,MT,NC,ND,NH,OH,OK,OR,SC,SD,TN,TX,UT,WI,WV,WY"
+counties_primary_sample,2188,2159,Difference from Drake count: 29.
+county_years_primary_sample,6564,,Rows equal county-years.
+county_years_2022,2188,,Primary sample rows in this year.
+counties_2022,2188,,Primary sample counties in this year.
+county_years_2023,2188,,Primary sample rows in this year.
+counties_2023,2188,,Primary sample counties in this year.
+county_years_2024,2188,,Primary sample rows in this year.
+counties_2024,2188,,Primary sample counties in this year.
+counties_present_all_three_years,2188,2159,All current primary counties are present in all requested years.
+excluded_states_and_reasons,AK: Excluded by Drake-style AK/HI rule.; CA: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; CO: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; CT: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; DC: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; HI: Excluded by Drake-style AK/HI rule.; ID: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; KY: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; MA: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; MD: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; ME: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; MN: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; NE: Excluded from primary sample until Nebraska county-market mapping is verified.; NJ: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; NM: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; NV: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; NY: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; PA: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; RI: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; VA: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; VT: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.; WA: Excluded because state is not continuously HC.gov in state-level OEP PUF for 2022-2024.,,From healthcaregov_state_sample_2022_2024.csv when available.
+AK_in_primary_sample,False,False,Expected exclusion check.
+HI_in_primary_sample,False,False,Expected exclusion check.
+NE_in_primary_sample,False,False,Expected exclusion check.
+nebraska_sensitivity_exists,True,,Rows: 6843; counties: 2281.
+counties_with_complete_table1_outcomes_all_years,2112,,"Potential harmonization rule, not Drake-confirmed."
+counties_constructible_treatment_all_years,2158,,"Potential treatment-readiness rule, not Drake-confirmed."
+counties_complete_outcomes_and_constructible_all_years,2082,,"Potential harmonization rule, not Drake-confirmed."
+counties_complete_constructible_no_suppression_all_years,2082,,"Potential strict rule, not Drake-confirmed."
+county_discrepancy_interpretation,not_identifiable_without_drake_county_list,Drake reports 2159 counties.,"The current dataset has 2188 counties, all in all three years. The exact 29 extra counties cannot be identified without Drake's county list; diagnostics below rank candidate reasons."

@@ -1,0 +1,10 @@
+artifact,exists,readable,key_information_found,concern_or_gap,action_needed
+README.md,True,True,"found: conditional go, proxy",None detected in initial file read.,Use as Step 3 input.
+docs\drake_replication_dataset_report.md,True,True,"found: conditional go, 2188, 6564, proxy, fallback",None detected in initial file read.,Use as Step 3 input.
+docs\step2_progress_and_limitations.md,True,True,"found: conditional go, proxy, fallback",None detected in initial file read.,Use as Step 3 input.
+outputs\drake_replication_validation_flags.csv,True,True,"18 preview rows; columns: status, check, metric, threshold, details; statuses: PASS, WARN",None detected in initial file read.,Use as Step 3 input.
+outputs\drake_replication_sample_diagnostics.csv,True,True,"6 preview rows; columns: metric, value, notes; rows_before_restrictions=7211; rows_primary_sample=6564; counties_before_restrictions=2448; counties_primary_sample=2188",None detected in initial file read.,Use as Step 3 input.
+outputs\drake_replication_join_diagnostics.csv,True,True,"20 preview rows; columns: transition, rank, metric, numerator, denominator, rate",None detected in initial file read.,Use as Step 3 input.
+outputs\drake_replication_descriptive_checks.csv,True,True,"20 preview rows; columns: table, year, group, variable, value",None detected in initial file read.,Use as Step 3 input.
+data\metadata\drake_style_sample_definition.yaml,True,True,"found: proxy, 15",None detected in initial file read.,Use as Step 3 input.
+data\metadata\healthcaregov_state_sample_2022_2024.csv,True,True,"20 preview rows; columns: state, platform_2022, platform_2023, platform_2024, continuous_hcgov_2022_2024, included_primary_sample, reason_included_or_excluded, source_or_rule_used",None detected in initial file read.,Use as Step 3 input.
