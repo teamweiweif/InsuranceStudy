@@ -112,6 +112,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 ## Recommended Next Step
 
 **A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the EHB-aware zero-premium proxy and reviewing direct-PY2021 treatment construction.
+
 ## Validation Summary
 
 Validation flags after running `scripts/04_validate_drake_replication_dataset.py`:
