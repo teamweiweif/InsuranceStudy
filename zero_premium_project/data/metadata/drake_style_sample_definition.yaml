@@ -28,5 +28,20 @@ primary_treatment:
   - within_issuer_zero_to_positive_turnover
 zero_premium_measure:
   type: benchmark_based_low_income_proxy
-  assumption: age_40_100_to_150_fpl_zero_expected_contribution
+  assumption: age_40_125_percent_fpl_proxy_with_zero_expected_contribution_for_100_to_150_fpl_under_arpa
+market_controls_added_for_repair:
+  - enrollment_2021_weight
+  - number_of_silver_plans
+  - number_of_insurers
+  - lowest_silver_premium
+  - second_lowest_silver_premium
+  - premium_spread_among_silver_plans
+  - lowest_bronze_premium
+  - bronze_spread
+drake_supplement_exclusions:
+  source: Drake supplement eTable 3
+  encoded_as_columns:
+    - drake_supplement_etable3_exclusion
+    - drake_supplement_etable3_exclusion_reason
+    - included_drake_harmonized_sample
 no_formal_regression_in_step2: true

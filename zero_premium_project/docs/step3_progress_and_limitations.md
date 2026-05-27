@@ -5,12 +5,14 @@
 - Verified that processed Step 2 datasets are readable and nonempty.
 - Applied Drake supplement eTable 3 county exclusions and wrote a Drake-harmonized Step 3 dataset.
 - Produced sample-alignment diagnostics, Table 1-style reenrollment descriptives, treatment prevalence, exposure/count comparisons, Table 2-style descriptive comparisons, sign checks, weakness audits, and sensitivity datasets.
+- Updated the Step 2 build script so a future raw-data rebuild can add 2021 enrollment weights, bronze spread, and insurer-count controls.
 - Wrote `docs/step3_descriptive_replication_report.md`.
 
 ## Partially Completed
 
 - Treatment prevalence is benchmark-proxy based and only partially comparable to Drake exposure tables.
 - Across-insurer turnover remains under-detected relative to Drake.
+- The current processed files still lack the new Step 2 repair variables because raw files were not present for a full rebuild.
 
 ## Not Completed
 

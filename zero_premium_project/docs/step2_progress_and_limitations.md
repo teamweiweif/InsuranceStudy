@@ -26,6 +26,8 @@
 
 Step 3 update: descriptive replication has now been run using Drake supplement details. The raw 2,188-county Step 2 primary sample is preserved, but Step 3 applies the supplement eTable 3 county exclusions and produces a 2,159-county Drake-harmonized sample. Outcome descriptives match Drake closely. The updated judgment before Step 4 is **Fix Step 2 before Step 4**, mainly because the treatment proxy, across-insurer classification, non-EHB handling, and 2021 enrollment weights/control variables are not yet sufficiently replicated.
 
+Repair-code update: `scripts/03_build_drake_replication_dataset.py` now includes code to generate 2021 enrollment weights, silver/bronze market controls, bronze spread, and Drake eTable 3 sample flags on the next raw-data rebuild. The committed processed CSVs have not yet been rebuilt from raw files in this pass because `data/raw/` is excluded from the repo.
+
 ## Immediate Next Actions
 
 1. Review 2021 fallback panel and decide whether to keep 2021 to 2022 in the primary treatment set.

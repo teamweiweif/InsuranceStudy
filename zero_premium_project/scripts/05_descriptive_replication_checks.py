@@ -904,6 +904,7 @@ def comparison_variables(df: pd.DataFrame) -> list[dict[str, Any]]:
         ("premium_spread_among_silver_proxy", "plan_market", "Premium spread among two lowest silver plans", True),
         ("mean_premium_change_among_affected_top_two", "plan_market", "Premium change proxy", "mean_premium_change_among_affected_top_two" in df.columns),
         ("Cnsmr", "plan_market", "County enrollment size", "Cnsmr" in df.columns),
+        ("enrollment_2021_weight", "plan_market", "2021 enrollment weight", "enrollment_2021_weight" in df.columns),
     ]
     return [{"variable": v, "variable_type": t, "label": label, "present": bool(p)} for v, t, label, p in specs]
 
@@ -918,6 +919,8 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
         ("any_zero_to_positive_turnover_across_issuer", "any_zero_to_positive_turnover_across_issuer_bool"),
     ]
     valid = work[work["treatment_constructible_flag_bool"]].copy()
+    weight_col = "enrollment_2021_weight" if "enrollment_2021_weight" in valid.columns and num(valid["enrollment_2021_weight"]).notna().any() else "Cnsmr"
+    weight_note = "Uses Drake-style 2021 enrollment weights." if weight_col == "enrollment_2021_weight" else "Uses current-year Cnsmr weights because 2021 enrollment weights are absent."
     for comparison_name, comparison_col in comparisons:
         if comparison_col not in valid.columns:
             continue
@@ -942,6 +945,7 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
                         "untreated_mean_cnsmer_weighted": math.nan,
                         "treated_mean_cnsmer_weighted": math.nan,
                         "cnsmr_weighted_difference": math.nan,
+                        "weighting_used": weight_col,
                         "untreated_missing_rate": math.nan,
                         "treated_missing_rate": math.nan,
                         "untreated_county_years": int((~treated).sum()),
@@ -950,7 +954,7 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
                         "treated_counties": valid.loc[treated, "county_fips"].nunique(),
                         "untreated_states": valid.loc[~treated, "state"].nunique(),
                         "treated_states": valid.loc[treated, "state"].nunique(),
-                        "notes": "Variable absent in Step 2 dataset; not invented. Drake Table 2 uses 2021 enrollment weights and year adjustment; this diagnostic is unadjusted.",
+                        "notes": f"Variable absent in Step 2 dataset; not invented. Drake Table 2 uses 2021 enrollment weights and year adjustment; this diagnostic is unadjusted. {weight_note}",
                     }
                 )
                 continue
@@ -958,8 +962,8 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
             untreated = ~treated
             untreated_mean = float(value[untreated].mean())
             treated_mean = float(value[treated].mean())
-            untreated_w = weighted_mean(value[untreated], valid.loc[untreated, "Cnsmr"])
-            treated_w = weighted_mean(value[treated], valid.loc[treated, "Cnsmr"])
+            untreated_w = weighted_mean(value[untreated], valid.loc[untreated, weight_col])
+            treated_w = weighted_mean(value[treated], valid.loc[treated, weight_col])
             rows.append(
                 {
                     **base,
@@ -969,6 +973,7 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
                     "untreated_mean_cnsmer_weighted": untreated_w,
                     "treated_mean_cnsmer_weighted": treated_w,
                     "cnsmr_weighted_difference": treated_w - untreated_w,
+                    "weighting_used": weight_col,
                     "untreated_missing_rate": float(value[untreated].isna().mean()) if untreated.any() else math.nan,
                     "treated_missing_rate": float(value[treated].isna().mean()) if treated.any() else math.nan,
                     "untreated_county_years": int(untreated.sum()),
@@ -977,7 +982,7 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
                     "treated_counties": valid.loc[treated, "county_fips"].nunique(),
                     "untreated_states": valid.loc[untreated, "state"].nunique(),
                     "treated_states": valid.loc[treated, "state"].nunique(),
-                    "notes": "Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights.",
+                    "notes": f"Descriptive comparison only; not a causal contrast. {weight_note}",
                 }
             )
     table = pd.DataFrame(rows)
@@ -988,9 +993,9 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
     md = [
         "# Step 3 Table 2-Style Descriptive Comparison By Turnover Status",
         "",
-        "Outcome shares are shown as percentage-point differences below. The CSV also includes available plan-market variables and absent-variable rows. These diagnostics are unadjusted and use current-year Cnsmr weights; Drake Table 2 uses 2021 enrollment weights and year-adjusted differences.",
+        "Outcome shares are shown as percentage-point differences below. The CSV also includes available plan-market variables and absent-variable rows. These diagnostics are unadjusted; when `enrollment_2021_weight` is available the script uses it, otherwise it falls back to current-year `Cnsmr` weights. Drake Table 2 also uses year-adjusted differences, which are not estimated here.",
         "",
-        md_table(shown[["comparison", "variable", "untreated_county_years", "treated_county_years", "unweighted_difference", "cnsmr_weighted_difference", "notes"]], digits=3),
+        md_table(shown[["comparison", "variable", "untreated_county_years", "treated_county_years", "unweighted_difference", "cnsmr_weighted_difference", "weighting_used", "notes"]], digits=3),
         "",
     ]
     (OUTPUTS / "step3_table2_by_turnover_status.md").write_text("\n".join(md), encoding="utf-8")
@@ -1334,6 +1339,7 @@ def build_table2_frame(df: pd.DataFrame) -> pd.DataFrame:
         work["premium_spread_among_silver_proxy"] = num(work["prior_premium_second_lowest"]) - num(work["prior_premium_lowest"])
     rows: list[dict[str, Any]] = []
     valid = work[work["treatment_constructible_flag_bool"]].copy()
+    weight_col = "enrollment_2021_weight" if "enrollment_2021_weight" in valid.columns and num(valid["enrollment_2021_weight"]).notna().any() else "Cnsmr"
     for comparison_name, comparison_col in [
         ("any_zero_to_positive_turnover", "any_zero_to_positive_turnover_bool"),
         ("any_zero_to_positive_turnover_across_issuer", "any_zero_to_positive_turnover_across_issuer_bool"),
@@ -1349,8 +1355,8 @@ def build_table2_frame(df: pd.DataFrame) -> pd.DataFrame:
                 continue
             value = num(valid[variable])
             untreated = ~treated
-            untreated_w = weighted_mean(value[untreated], valid.loc[untreated, "Cnsmr"])
-            treated_w = weighted_mean(value[treated], valid.loc[treated, "Cnsmr"])
+            untreated_w = weighted_mean(value[untreated], valid.loc[untreated, weight_col])
+            treated_w = weighted_mean(value[treated], valid.loc[treated, weight_col])
             rows.append(
                 {
                     "comparison": comparison_name,
@@ -1518,13 +1524,13 @@ def make_report(
         "",
         "## 6. Treatment-Status Descriptive Comparison",
         "",
-        md_table(outcome_table2[["comparison", "variable", "untreated_county_years", "treated_county_years", "unweighted_difference_pp", "cnsmr_weighted_difference_pp", "notes"]], max_rows=20, digits=3),
+        md_table(outcome_table2[["comparison", "variable", "untreated_county_years", "treated_county_years", "unweighted_difference_pp", "cnsmr_weighted_difference_pp", "weighting_used", "notes"]], max_rows=20, digits=3),
         "",
         "Sign checks:",
         "",
         md_table(sign, digits=3),
         "",
-        "These are descriptive differences only. They are not adjusted regression estimates and should not be interpreted causally. Drake Table 2 uses 2021 enrollment weights and year-adjusted differences; this Step 3 table uses current-year Cnsmr weights because 2021 county enrollment weights are not retained in the current Step 2 output.",
+        "These are descriptive differences only. They are not adjusted regression estimates and should not be interpreted causally. Drake Table 2 uses 2021 enrollment weights and year-adjusted differences; this Step 3 table uses `enrollment_2021_weight` when present and otherwise falls back to current-year `Cnsmr` weights.",
         "",
         "## 7. Step 2 Unresolved Issues",
         "",
@@ -1533,6 +1539,7 @@ def make_report(
         "- Zero-premium proxy: Drake assumes a single 40-year-old at 125 percent FPL for the 100-150 FPL exposure construction. The current Step 2 output is benchmark-based and does not prove exact household-specific net premiums.",
         "- Non-EHB issue: Drake notes that required non-EHB benefits can prevent zero-dollar premiums in some states. The current Step 2 output does not explicitly retain or audit non-EHB handling.",
         "- Missing controls/weights: Drake Table 2 and regressions use 2021 enrollment weights, bronze spread, and insurer-count controls. These are not fully available in the current county-year output.",
+        "- Repair-code status: `scripts/03_build_drake_replication_dataset.py` has been updated to generate 2021 weights, bronze spread, silver/bronze plan counts, and eTable 3 sample flags on the next full raw-data rebuild. The current processed CSVs have not yet been rebuilt from raw files.",
         "- Nebraska sensitivity: Nebraska remains outside the primary sample until county-market mapping is verified.",
         "- Aggregate county-year limitation: public OEP PUFs do not support individual retention or income-stratified county outcomes.",
         "",
@@ -1596,12 +1603,14 @@ def make_progress_memo(status: str, recommendation: str, warnings: list[str], se
         "- Verified that processed Step 2 datasets are readable and nonempty.",
         "- Applied Drake supplement eTable 3 county exclusions and wrote a Drake-harmonized Step 3 dataset.",
         "- Produced sample-alignment diagnostics, Table 1-style reenrollment descriptives, treatment prevalence, exposure/count comparisons, Table 2-style descriptive comparisons, sign checks, weakness audits, and sensitivity datasets.",
+        "- Updated the Step 2 build script so a future raw-data rebuild can add 2021 enrollment weights, bronze spread, and insurer-count controls.",
         "- Wrote `docs/step3_descriptive_replication_report.md`.",
         "",
         "## Partially Completed",
         "",
         "- Treatment prevalence is benchmark-proxy based and only partially comparable to Drake exposure tables.",
         "- Across-insurer turnover remains under-detected relative to Drake.",
+        "- The current processed files still lack the new Step 2 repair variables because raw files were not present for a full rebuild.",
         "",
         "## Not Completed",
         "",

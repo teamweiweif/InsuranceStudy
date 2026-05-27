@@ -90,6 +90,41 @@ STATE_NAME_TO_CODE = {
     "Wyoming": "WY",
 }
 
+DRAKE_SUPPLEMENT_EXCLUDED_COUNTY_REASONS = {
+    "46113": "Drake supplement eTable 3: legacy FIPS exclusion; Shannon County changed to Oglala Lakota County/FIPS 46102 before the study period.",
+    "51515": "Drake supplement eTable 3: legacy FIPS exclusion; Bedford City combined with Bedford County before the study period.",
+    "51019": "Drake supplement eTable 3: legacy FIPS exclusion; Bedford City combined with Bedford County before the study period.",
+    "13009": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13013": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13021": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13051": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13059": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13141": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13157": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13207": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13215": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13219": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13225": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13227": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13245": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "13319": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37001": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37033": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37037": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37065": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37079": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37081": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37105": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37127": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37145": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37147": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37151": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37157": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37189": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37191": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+    "37195": "Drake supplement eTable 3: no crosswalk data from 2023 to 2024.",
+}
+
 
 @dataclass
 class BuildOutputs:
@@ -304,7 +339,22 @@ primary_treatment:
   - within_issuer_zero_to_positive_turnover
 zero_premium_measure:
   type: benchmark_based_low_income_proxy
-  assumption: age_40_100_to_150_fpl_zero_expected_contribution
+  assumption: age_40_125_percent_fpl_proxy_with_zero_expected_contribution_for_100_to_150_fpl_under_arpa
+market_controls_added_for_repair:
+  - enrollment_2021_weight
+  - number_of_silver_plans
+  - number_of_insurers
+  - lowest_silver_premium
+  - second_lowest_silver_premium
+  - premium_spread_among_silver_plans
+  - lowest_bronze_premium
+  - bronze_spread
+drake_supplement_exclusions:
+  source: Drake supplement eTable 3
+  encoded_as_columns:
+    - drake_supplement_etable3_exclusion
+    - drake_supplement_etable3_exclusion_reason
+    - included_drake_harmonized_sample
 no_formal_regression_in_step2: true
 """
     (METADATA / "drake_style_sample_definition.yaml").write_text(text, encoding="utf-8")
@@ -420,6 +470,27 @@ def build_oep_county_outcomes(manifest: pd.DataFrame, years: list[int]) -> pd.Da
     return out
 
 
+def build_2021_enrollment_weights(manifest: pd.DataFrame) -> pd.DataFrame:
+    row = manifest_row(manifest, "oep_puf", 2021, "County-Level OEP PUF")
+    raw = read_csv_from_zip(ROOT / row["local_path"])
+    required = ["State_Abrvtn", "County_FIPS_Cd", "Cnsmr"]
+    missing = [col for col in required if col not in raw.columns]
+    if missing:
+        raise KeyError(f"OEP 2021 enrollment weights missing required columns: {missing}")
+    out = raw[required].copy()
+    out["state"] = out["State_Abrvtn"].astype(str).str.strip().str.upper()
+    out["county_fips"] = out["County_FIPS_Cd"].map(clean_fips)
+    valid = out["county_fips"].astype(str).str.match(r"^\d{5}$", na=False) & out["state"].ne("TOTAL")
+    out = out.loc[valid].copy()
+    out["enrollment_2021_weight_raw"] = out["Cnsmr"].astype(str)
+    out["enrollment_2021_weight_suppressed_flag"] = suppression_flag(out["Cnsmr"])
+    out["enrollment_2021_weight"] = numeric_series(out["Cnsmr"])
+    out["enrollment_2021_weight_source"] = row["local_path"]
+    out = out[["state", "county_fips", "enrollment_2021_weight", "enrollment_2021_weight_raw", "enrollment_2021_weight_suppressed_flag", "enrollment_2021_weight_source"]]
+    out.to_csv(INTERMEDIATE / "oep_2021_county_enrollment_weights.csv", index=False)
+    return out
+
+
 def detect_qhp_header(path: Path, member: str) -> int:
     with zipfile.ZipFile(path) as zf:
         data = io.BytesIO(zf.read(member))
@@ -463,7 +534,7 @@ def rate_age40(manifest: pd.DataFrame, year: int) -> pd.DataFrame:
     return out
 
 
-def build_qhp_silver_panel(manifest: pd.DataFrame, year: int) -> pd.DataFrame:
+def build_qhp_silver_panel(manifest: pd.DataFrame, year: int, metal_pattern: str = "silver") -> pd.DataFrame:
     row = manifest_row(manifest, "qhp_landscape", year, "QHP Landscape Individual Medical ZIP")
     path = ROOT / row["local_path"]
     member = tabular_member(path, prefer_excel=True)
@@ -498,7 +569,7 @@ def build_qhp_silver_panel(manifest: pd.DataFrame, year: int) -> pd.DataFrame:
     out["source_file"] = str(path.relative_to(ROOT))
     out["raw_plan_id_columns_used"] = colmap["plan_id"]
     out["data_quality_notes"] = ""
-    out = out[out["metal_level"].str.lower().str.contains("silver", na=False)].copy()
+    out = out[out["metal_level"].str.lower().str.contains(metal_pattern, na=False)].copy()
     out = out[out["county_fips"].ne("") & out["plan_id"].ne("")].copy()
 
     rates = rate_age40(manifest, year)
@@ -513,6 +584,7 @@ def build_qhp_silver_panel(manifest: pd.DataFrame, year: int) -> pd.DataFrame:
     )
     out["likely_reason_for_difference"] = np.where(out["premium_reconciliation_flag"].eq("mismatch"), "QHP rounded/displayed premium differs from Rate PUF or rating-area join issue.", "")
     out["service_area_id"] = ""
+    out["metal_filter_used"] = metal_pattern
     return out
 
 
@@ -526,7 +598,7 @@ def state_rating_area_2021() -> pd.DataFrame:
     return df[["state", "county_fips", "rating_area_id"]].drop_duplicates()
 
 
-def build_exchange_silver_panel_2021(manifest: pd.DataFrame) -> pd.DataFrame:
+def build_exchange_silver_panel_2021(manifest: pd.DataFrame, metal_pattern: str = "silver") -> pd.DataFrame:
     year = 2021
     plan_row = manifest_row(manifest, "exchange_puf", year, "Plan Attributes PUF")
     service_row = manifest_row(manifest, "exchange_puf", year, "Service Area PUF")
@@ -565,7 +637,7 @@ def build_exchange_silver_panel_2021(manifest: pd.DataFrame) -> pd.DataFrame:
     p = p[
         p["market_type"].str.lower().eq("individual")
         & p["dental"].str.lower().isin({"no", "false", "0"})
-        & p["metal_level"].str.lower().str.contains("silver", na=False)
+        & p["metal_level"].str.lower().str.contains(metal_pattern, na=False)
     ].copy()
     if "qhp_type" in p.columns:
         p = p[~p["qhp_type"].astype(str).str.lower().eq("off the exchange")].copy()
@@ -588,12 +660,13 @@ def build_exchange_silver_panel_2021(manifest: pd.DataFrame) -> pd.DataFrame:
     panel["premium_source"] = "Exchange PUF + Health Plan Finder rating-area fallback"
     panel["source_file"] = f"{plan_row['local_path']} + {service_row['local_path']} + data/raw/health_plan_finder/2020/2020q4-rbis.zip"
     panel["raw_plan_id_columns_used"] = "StandardComponentId"
-    panel["data_quality_notes"] = "PY2021 QHP Landscape direct file unavailable; county premiums reconstructed from official Exchange PUF and HPF rating-area fallback."
+    panel["data_quality_notes"] = f"PY2021 QHP Landscape direct file unavailable; {metal_pattern} county premiums reconstructed from official Exchange PUF and HPF rating-area fallback."
     panel["premium_difference"] = np.nan
     panel["premium_pct_difference"] = np.nan
     panel["premium_match_flag"] = np.nan
     panel["premium_reconciliation_flag"] = np.where(panel["age_40_premium"].notna(), "rate_puf_only", "missing_rate_puf")
     panel["likely_reason_for_difference"] = ""
+    panel["metal_filter_used"] = metal_pattern
     panel = panel[panel["county_fips"].ne("") & panel["plan_id"].ne("")].drop_duplicates(["year", "state", "county_fips", "plan_id"])
     return panel
 
@@ -606,6 +679,17 @@ def build_silver_plan_panel(manifest: pd.DataFrame) -> pd.DataFrame:
     panel = pd.concat([f.reindex(columns=common_cols) for f in frames], ignore_index=True)
     panel = panel[panel["age_40_premium"].notna()].copy()
     panel.to_csv(INTERMEDIATE / "silver_plan_county_year_panel.csv", index=False)
+    return panel
+
+
+def build_bronze_plan_panel(manifest: pd.DataFrame) -> pd.DataFrame:
+    frames = [build_exchange_silver_panel_2021(manifest, metal_pattern="bronze")]
+    for year in [2022, 2023, 2024]:
+        frames.append(build_qhp_silver_panel(manifest, year, metal_pattern="bronze"))
+    common_cols = sorted(set().union(*[set(f.columns) for f in frames]))
+    panel = pd.concat([f.reindex(columns=common_cols) for f in frames], ignore_index=True)
+    panel = panel[panel["age_40_premium"].notna()].copy()
+    panel.to_csv(INTERMEDIATE / "bronze_plan_county_year_panel.csv", index=False)
     return panel
 
 
@@ -652,6 +736,58 @@ def build_two_lowest(panel: pd.DataFrame) -> pd.DataFrame:
     out.to_csv(INTERMEDIATE / "two_lowest_silver_plans_county_year.csv", index=False)
     pd.DataFrame(tie_rows).to_csv(OUTPUTS / "two_lowest_silver_tie_diagnostics.csv", index=False)
     return out
+
+
+def build_market_controls(silver_panel: pd.DataFrame, bronze_panel: pd.DataFrame, two_lowest: pd.DataFrame) -> pd.DataFrame:
+    silver = silver_panel.dropna(subset=["age_40_premium"]).copy()
+    silver_stats = (
+        silver.groupby(["year", "state", "county_fips"], dropna=False)
+        .agg(
+            number_of_silver_plans=("plan_id", "nunique"),
+            number_of_insurers=("issuer_id", "nunique"),
+            min_silver_premium_all_plans=("age_40_premium", "min"),
+            max_silver_premium_all_plans=("age_40_premium", "max"),
+        )
+        .reset_index()
+    )
+    keep_two = [
+        "year",
+        "state",
+        "county_fips",
+        "has_two_silver_plans",
+        "lowest_silver_premium",
+        "second_lowest_silver_premium",
+        "number_of_plans_tied_lowest",
+        "number_of_plans_tied_second_lowest",
+        "tie_flag",
+    ]
+    controls = two_lowest[[col for col in keep_two if col in two_lowest.columns]].copy()
+    controls = controls.merge(silver_stats, on=["year", "state", "county_fips"], how="outer")
+    controls["premium_spread_among_silver_plans"] = controls["second_lowest_silver_premium"] - controls["lowest_silver_premium"]
+    controls["fewer_than_two_silver_plans"] = ~controls["has_two_silver_plans"].fillna(False).astype(bool)
+
+    bronze = bronze_panel.dropna(subset=["age_40_premium"]).copy()
+    if not bronze.empty:
+        bronze_stats = (
+            bronze.groupby(["year", "state", "county_fips"], dropna=False)
+            .agg(
+                lowest_bronze_premium=("age_40_premium", "min"),
+                number_of_bronze_plans=("plan_id", "nunique"),
+                number_of_bronze_insurers=("issuer_id", "nunique"),
+            )
+            .reset_index()
+        )
+        controls = controls.merge(bronze_stats, on=["year", "state", "county_fips"], how="left")
+    else:
+        controls["lowest_bronze_premium"] = np.nan
+        controls["number_of_bronze_plans"] = np.nan
+        controls["number_of_bronze_insurers"] = np.nan
+
+    controls["bronze_spread"] = controls["second_lowest_silver_premium"] - controls["lowest_bronze_premium"]
+    controls["market_control_measure_type"] = "age_40_premium_county_year_market_controls"
+    controls["market_control_limitations"] = "Number of insurers is based on silver plan issuers in the constructed county-plan panel; bronze spread is SLCSP minus lowest bronze premium."
+    controls.to_csv(INTERMEDIATE / "market_controls_county_year.csv", index=False)
+    return controls
 
 
 def build_zero_proxy(panel: pd.DataFrame, two_lowest: pd.DataFrame) -> pd.DataFrame:
@@ -883,9 +1019,20 @@ def construct_transition(
     return out
 
 
-def final_merge(oep: pd.DataFrame, treatments: list[pd.DataFrame], sample: pd.DataFrame, include_ne_sensitivity: bool) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame | None]:
+def final_merge(
+    oep: pd.DataFrame,
+    treatments: list[pd.DataFrame],
+    sample: pd.DataFrame,
+    include_ne_sensitivity: bool,
+    market_controls: pd.DataFrame | None = None,
+    enrollment_weights: pd.DataFrame | None = None,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame | None]:
     tx = pd.concat(treatments, ignore_index=True)
     final = oep.merge(tx, on=["year", "state", "county_fips"], how="left")
+    if market_controls is not None and not market_controls.empty:
+        final = final.merge(market_controls, on=["year", "state", "county_fips"], how="left")
+    if enrollment_weights is not None and not enrollment_weights.empty:
+        final = final.merge(enrollment_weights, on=["state", "county_fips"], how="left")
     year_to_transition = {2022: "2021_to_2022", 2023: "2022_to_2023", 2024: "2023_to_2024"}
     final["transition"] = final["transition"].fillna(final["year"].map(year_to_transition))
     no_treatment = final["treatment_constructible_flag"].isna()
@@ -923,12 +1070,17 @@ def final_merge(oep: pd.DataFrame, treatments: list[pd.DataFrame], sample: pd.Da
     final = final.merge(sample_keep, on="state", how="left")
     final["included_primary_sample"] = final["included_primary_sample"].fillna(False).astype(bool)
     final["sample_exclusion_reason"] = np.where(final["included_primary_sample"], "", final["sample_exclusion_reason"].fillna("State not present in OEP state platform sample."))
+    final["drake_supplement_etable3_exclusion_reason"] = final["county_fips"].astype(str).map(DRAKE_SUPPLEMENT_EXCLUDED_COUNTY_REASONS).fillna("")
+    final["drake_supplement_etable3_exclusion"] = final["drake_supplement_etable3_exclusion_reason"].ne("")
+    final["included_drake_harmonized_sample"] = final["included_primary_sample"] & ~final["drake_supplement_etable3_exclusion"]
     final["source_file_references"] = final["raw_file_name"].astype(str) + "; transition=" + final["transition"].astype(str)
     final_path = PROCESSED / "drake_replication_county_year_2022_2024.csv"
     final.to_csv(final_path, index=False)
     primary = final[final["included_primary_sample"]].copy()
     primary_path = PROCESSED / "drake_replication_county_year_2022_2024_primary_sample.csv"
     primary.to_csv(primary_path, index=False)
+    primary_harmonized = final[final["included_drake_harmonized_sample"]].copy()
+    primary_harmonized.to_csv(PROCESSED / "drake_replication_primary_drake_harmonized_2022_2024.csv", index=False)
     sensitivity = None
     if include_ne_sensitivity:
         ne_states = sample["continuous_hcgov_2022_2024"] & ~sample["state"].isin(["AK", "HI"])
@@ -953,11 +1105,22 @@ def write_missingness(final: pd.DataFrame) -> pd.DataFrame:
 
 
 def write_sample_diagnostics(final: pd.DataFrame, primary: pd.DataFrame, sample: pd.DataFrame) -> pd.DataFrame:
+    if "included_drake_harmonized_sample" in primary.columns:
+        harmonized = primary[primary["included_drake_harmonized_sample"].fillna(False).astype(bool)].copy()
+    else:
+        harmonized = primary.iloc[0:0].copy()
     rows = [
         {"metric": "rows_before_restrictions", "value": len(final), "notes": ""},
         {"metric": "rows_primary_sample", "value": len(primary), "notes": "Continuously HC.gov 2022-2024, excluding AK/HI/NE."},
+        {"metric": "rows_drake_harmonized_sample", "value": len(harmonized), "notes": "Primary sample after Drake supplement eTable 3 county exclusions."},
         {"metric": "counties_before_restrictions", "value": final["county_fips"].nunique(), "notes": ""},
         {"metric": "counties_primary_sample", "value": primary["county_fips"].nunique(), "notes": ""},
+        {"metric": "counties_drake_harmonized_sample", "value": harmonized["county_fips"].nunique(), "notes": "Should match Drake 2159-county anchor when all eTable 3 counties are present in raw primary."},
+        {
+            "metric": "drake_supplement_etable3_excluded_counties_in_primary",
+            "value": primary.loc[primary["drake_supplement_etable3_exclusion"], "county_fips"].nunique() if "drake_supplement_etable3_exclusion" in primary.columns else 0,
+            "notes": "",
+        },
         {"metric": "states_primary_sample", "value": primary["state"].nunique(), "notes": ",".join(sorted(primary["state"].dropna().unique()))},
         {"metric": "states_continuously_hcgov", "value": int(sample["continuous_hcgov_2022_2024"].sum()), "notes": ",".join(sorted(sample.loc[sample["continuous_hcgov_2022_2024"], "state"]))},
     ]
@@ -1029,6 +1192,8 @@ def write_reports(final: pd.DataFrame, primary: pd.DataFrame, sample: pd.DataFra
     years = ", ".join(map(str, sorted(final["year"].dropna().unique())))
     transition_construct = final.groupby("year")["treatment_constructible_flag"].mean().reset_index()
     states = ", ".join(sorted(primary["state"].dropna().unique()))
+    harmonized = primary[primary["included_drake_harmonized_sample"].fillna(False).astype(bool)] if "included_drake_harmonized_sample" in primary.columns else primary.iloc[0:0]
+    e3_excluded = primary.loc[primary["drake_supplement_etable3_exclusion"], "county_fips"].nunique() if "drake_supplement_etable3_exclusion" in primary.columns else 0
     status = "Conditional Go"
     if final["treatment_constructible_flag"].mean() < 0.8:
         status = "Weak Conditional Go"
@@ -1046,12 +1211,16 @@ The full county-year replication dataset was built for outcome years {years}. Ou
 
 - Final dataset: `data/processed/drake_replication_county_year_2022_2024.csv`
 - Primary sample: `data/processed/drake_replication_county_year_2022_2024_primary_sample.csv`
+- Drake-harmonized primary sample: `data/processed/drake_replication_primary_drake_harmonized_2022_2024.csv`
 - Nebraska sensitivity: `data/processed/drake_replication_county_year_2022_2024_sensitivity_nebraska.csv`
 - Parquet written: `{parquet_written}`
 - Unit: county-year
 - Rows before restrictions: {len(final)}
 - Rows in primary sample: {len(primary)}
 - Counties in primary sample: {primary['county_fips'].nunique()}
+- Rows in Drake-harmonized primary sample: {len(harmonized)}
+- Counties in Drake-harmonized primary sample: {harmonized['county_fips'].nunique()}
+- Drake supplement eTable 3 counties excluded from harmonized sample: {e3_excluded}
 - States in primary sample: {primary['state'].nunique()} ({states})
 
 ## Data Sources
@@ -1064,7 +1233,22 @@ Exact OEP columns used: `Cnsmr`, `New_Cnsmr`, `Tot_Renrl`, `Auto_Renrl`, `Actv_R
 
 ## Treatment Construction
 
-For each county-year, silver plans are ranked by age-40 gross premium. The two lowest silver plans are crosswalked to the current year with the Plan ID Crosswalk. Current-year mapped plan net premium proxy is gross premium minus current-year second-lowest silver benchmark, floored at zero. Zero-to-positive turnover equals prior top-two zero-premium proxy and mapped current positive net-premium proxy. Across-issuer and within-issuer flags use issuer IDs from prior plans and current mapped plans.
+For each county-year, silver plans are ranked by age-40 gross premium. The two lowest silver plans are crosswalked to the current year with the Plan ID Crosswalk. Current-year mapped plan net premium proxy is gross premium minus current-year second-lowest silver benchmark, floored at zero. Zero-to-positive turnover equals prior top-two zero-premium proxy and mapped current positive net-premium proxy. Across-issuer and within-issuer flags use issuer IDs from prior plans and current mapped plans. The proxy is now documented as an age-40, 125-percent-FPL-style approximation to Drake's 100-150 FPL construction, but it is still not exact household APTC.
+
+## Market Controls Added For Step 4 Readiness
+
+The rebuild writes 2021 county enrollment weights and county-year market controls when raw files are available:
+
+- `enrollment_2021_weight`
+- `number_of_silver_plans`
+- `number_of_insurers`
+- `lowest_silver_premium`
+- `second_lowest_silver_premium`
+- `premium_spread_among_silver_plans`
+- `lowest_bronze_premium`
+- `bronze_spread`
+
+`number_of_insurers` is based on silver plan issuers in the constructed county-plan panel. `bronze_spread` is the second-lowest silver premium minus the lowest bronze premium.
 
 ## Join Diagnostics
 
@@ -1072,7 +1256,7 @@ For each county-year, silver plans are ranked by age-40 gross premium. The two l
 
 ## Sample Alignment With Drake Et Al.
 
-The primary sample uses states with `Pltfrm == HC.gov` in the official OEP state-level PUF for all 2022-2024 years and excludes AK, HI, and NE. Nebraska is available only in the sensitivity output because county-market mapping has not been independently verified.
+The primary sample uses states with `Pltfrm == HC.gov` in the official OEP state-level PUF for all 2022-2024 years and excludes AK, HI, and NE. Nebraska is available only in the sensitivity output because county-market mapping has not been independently verified. The Drake-harmonized sample also applies supplement eTable 3 county exclusions.
 
 ## Known Limitations
 
@@ -1083,6 +1267,7 @@ The primary sample uses states with `Pltfrm == HC.gov` in the official OEP state
 - Household-specific APTC is not directly observed.
 - PY2021 direct QHP Landscape data were unavailable; 2021 uses official Exchange PUF plus Health Plan Finder fallback.
 - Some crosswalk-to-current-plan joins fail and are flagged.
+- Non-EHB handling is not yet exact; the output flags proxy limitations rather than asserting exact zero-dollar eligibility.
 - OEP county outcomes contain suppression and missingness.
 
 ## Self-Check Results
@@ -1101,7 +1286,10 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 
 - Built OEP county-year outcomes for 2022-2024.
 - Built silver county-plan panel for 2021-2024.
+- Built bronze county-plan panel for bronze-spread controls.
 - Built top-two silver plan file, zero-premium proxy file, crosswalk transition files, treatment files, and final county-year datasets.
+- Built 2021 county enrollment weights for Drake-style weighting.
+- Applied Drake supplement eTable 3 county-exclusion flags and wrote a Drake-harmonized primary sample.
 - Applied primary sample restrictions: continuously HC.gov states, excluding AK, HI, and NE.
 - Logged build steps to `logs/step2_build.log`.
 
@@ -1110,6 +1298,7 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 - 2021 input is fallback-based because direct PY2021 QHP Landscape files were unavailable.
 - Zero-premium status is an estimated benchmark proxy, not an exact observed net premium.
 - Some mapped current-year plan joins are incomplete and flagged.
+- Non-EHB handling is documented but not yet exact.
 
 ## Not Completed
 
@@ -1125,9 +1314,10 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 
 1. Review 2021 fallback panel and decide whether to keep 2021 to 2022 in the primary treatment set.
 2. Investigate state-year crosswalk failures in `outputs/drake_replication_join_diagnostics.csv`.
-3. Review Nebraska sensitivity before deciding whether NE can enter any analysis.
-4. Compare treatment prevalence with Drake-style descriptive patterns before modeling.
-5. Freeze the dataset version only after validation flags are reviewed.
+3. Validate market controls against Drake Table 2 definitions before Step 4.
+4. Review Nebraska sensitivity before deciding whether NE can enter any analysis.
+5. Compare treatment prevalence with Drake-style descriptive patterns before modeling.
+6. Freeze the dataset version only after validation flags are reviewed.
 """
     (DOCS / "step2_progress_and_limitations.md").write_text(memo, encoding="utf-8")
 
@@ -1149,11 +1339,15 @@ def main() -> None:
     sample = build_healthcaregov_state_sample(manifest, args.years)
     logging.info("Building OEP county outcomes")
     oep = build_oep_county_outcomes(manifest, args.years)
+    enrollment_weights = build_2021_enrollment_weights(manifest)
     state_validation_oep(manifest, oep, args.years)
     logging.info("Building silver county-plan panel")
     silver = build_silver_plan_panel(manifest)
+    logging.info("Building bronze county-plan panel")
+    bronze = build_bronze_plan_panel(manifest)
     logging.info("Identifying two lowest silver plans")
     two_lowest = build_two_lowest(silver)
+    market_controls = build_market_controls(silver, bronze, two_lowest)
     zero_proxy = build_zero_proxy(silver, two_lowest)
     join_rows: list[dict[str, Any]] = []
     treatments = []
@@ -1164,7 +1358,7 @@ def main() -> None:
         treatments.append(construct_transition(manifest, prev, cur, two_lowest, zero_proxy, join_rows))
     join_diag = write_crosswalk_diagnostics(join_rows, crosswalks)
     logging.info("Merging final dataset")
-    final, primary, sensitivity = final_merge(oep, treatments, sample, args.include_nebraska_sensitivity)
+    final, primary, sensitivity = final_merge(oep, treatments, sample, args.include_nebraska_sensitivity, market_controls, enrollment_weights)
     missingness = write_missingness(final)
     write_sample_diagnostics(final, primary, sample)
     write_descriptive_checks(final)

@@ -152,18 +152,18 @@ The enrollment-weighted any-turnover prevalence is close in 2022, higher than Dr
 
 ## 6. Treatment-Status Descriptive Comparison
 
-| comparison | variable | untreated_county_years | treated_county_years | unweighted_difference_pp | cnsmr_weighted_difference_pp | notes |
-| --- | --- | --- | --- | --- | --- | --- |
-| any_zero_to_positive_turnover | overall_reenrollment_share | 1851 | 4625 | 0.538 | 1.592 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover | automatic_passive_share | 1851 | 4625 | -1.161 | -1.593 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover | active_share | 1851 | 4625 | 1.679 | 3.184 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover | active_stay_share | 1851 | 4625 | -4.540 | -2.163 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover | active_switch_share | 1851 | 4625 | 6.254 | 5.348 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover_across_issuer | overall_reenrollment_share | 6353 | 123 | 2.673 | -1.213 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | 6353 | 123 | -3.791 | -2.727 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover_across_issuer | active_share | 6353 | 123 | 6.490 | 1.513 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover_across_issuer | active_stay_share | 6353 | 123 | 1.715 | -1.992 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
-| any_zero_to_positive_turnover_across_issuer | active_switch_share | 6353 | 123 | 4.736 | 3.505 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| comparison | variable | untreated_county_years | treated_county_years | unweighted_difference_pp | cnsmr_weighted_difference_pp | weighting_used | notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| any_zero_to_positive_turnover | overall_reenrollment_share | 1851 | 4625 | 0.538 | 1.592 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover | automatic_passive_share | 1851 | 4625 | -1.161 | -1.593 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover | active_share | 1851 | 4625 | 1.679 | 3.184 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover | active_stay_share | 1851 | 4625 | -4.540 | -2.163 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover | active_switch_share | 1851 | 4625 | 6.254 | 5.348 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover_across_issuer | overall_reenrollment_share | 6353 | 123 | 2.673 | -1.213 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | 6353 | 123 | -3.791 | -2.727 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover_across_issuer | active_share | 6353 | 123 | 6.490 | 1.513 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover_across_issuer | active_stay_share | 6353 | 123 | 1.715 | -1.992 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
+| any_zero_to_positive_turnover_across_issuer | active_switch_share | 6353 | 123 | 4.736 | 3.505 | Cnsmr | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights because 2021 enrollment weights are absent. |
 
 Sign checks:
 
@@ -173,7 +173,7 @@ Sign checks:
 | any_zero_to_positive_turnover | active_stay_share | negative | -0.045 | -0.022 | same_direction | Treated counties have lower active stay descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
 | any_zero_to_positive_turnover_across_issuer | automatic_passive_share | negative | -0.038 | -0.027 | same_direction | Across-issuer treated counties have lower automatic/passive reenrollment descriptively. | Weighted and unweighted signs match. | Descriptive signs are not causal and need not match regression signs exactly. |
 
-These are descriptive differences only. They are not adjusted regression estimates and should not be interpreted causally. Drake Table 2 uses 2021 enrollment weights and year-adjusted differences; this Step 3 table uses current-year Cnsmr weights because 2021 county enrollment weights are not retained in the current Step 2 output.
+These are descriptive differences only. They are not adjusted regression estimates and should not be interpreted causally. Drake Table 2 uses 2021 enrollment weights and year-adjusted differences; this Step 3 table uses `enrollment_2021_weight` when present and otherwise falls back to current-year `Cnsmr` weights.
 
 ## 7. Step 2 Unresolved Issues
 
@@ -182,6 +182,7 @@ These are descriptive differences only. They are not adjusted regression estimat
 - Zero-premium proxy: Drake assumes a single 40-year-old at 125 percent FPL for the 100-150 FPL exposure construction. The current Step 2 output is benchmark-based and does not prove exact household-specific net premiums.
 - Non-EHB issue: Drake notes that required non-EHB benefits can prevent zero-dollar premiums in some states. The current Step 2 output does not explicitly retain or audit non-EHB handling.
 - Missing controls/weights: Drake Table 2 and regressions use 2021 enrollment weights, bronze spread, and insurer-count controls. These are not fully available in the current county-year output.
+- Repair-code status: `scripts/03_build_drake_replication_dataset.py` has been updated to generate 2021 weights, bronze spread, silver/bronze plan counts, and eTable 3 sample flags on the next full raw-data rebuild. The current processed CSVs have not yet been rebuilt from raw files.
 - Nebraska sensitivity: Nebraska remains outside the primary sample until county-market mapping is verified.
 - Aggregate county-year limitation: public OEP PUFs do not support individual retention or income-stratified county outcomes.
 

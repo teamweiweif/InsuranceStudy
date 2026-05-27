@@ -67,6 +67,12 @@ def validate(input_path: Path, verbose: bool = False) -> pd.DataFrame:
     flags.append(flag("PASS" if "NE" not in ak_hi_ne_primary else "WARN", "NE excluded or explicitly handled", f"Primary states among AK/HI/NE: {ak_hi_ne_primary}"))
     not_hcgov_primary = int((~primary["continuous_hcgov_2022_2024"].fillna(False).astype(bool)).sum()) if "continuous_hcgov_2022_2024" in primary.columns else len(primary)
     flags.append(flag("PASS" if not_hcgov_primary == 0 else "FAIL", "HealthCare.gov state sample applied", f"Primary rows not continuously HC.gov: {not_hcgov_primary}"))
+    if "included_drake_harmonized_sample" in df.columns:
+        harmonized = df[df["included_drake_harmonized_sample"].fillna(False).astype(bool)]
+        h_counties = int(harmonized["county_fips"].nunique())
+        flags.append(flag("PASS" if h_counties == 2159 else "WARN", "Drake eTable 3 harmonized county count", f"Harmonized counties: {h_counties}", h_counties, 2159))
+    else:
+        flags.append(flag("WARN", "Drake eTable 3 harmonized sample flags", "Repaired Step 2 flags are absent from this processed dataset.", "", "present"))
 
     logging.info("Validating OEP outcomes")
     outcome_cols = ["Cnsmr", "New_Cnsmr", "Tot_Renrl", "Auto_Renrl", "Actv_Renrl", "Actv_Renrl_Nsw", "Actv_Renrl_Sw"]
@@ -92,6 +98,34 @@ def validate(input_path: Path, verbose: bool = False) -> pd.DataFrame:
     flags.append(flag("PASS" if across_missing == 0 else "WARN", "across-issuer vs within-issuer distinction constructible", f"Across-issuer flag missingness: {across_missing:.3f}", across_missing, 0))
     zero_measure = set(df.get("zero_premium_measure_type", pd.Series(dtype=str)).dropna().unique())
     flags.append(flag("WARN", "zero-premium proxy quality", f"Zero-premium measure types: {sorted(zero_measure)}. This is proxy-based, not exact.", ",".join(sorted(zero_measure)), "exact preferred"))
+
+    logging.info("Validating repaired Step 2 market controls")
+    required_repair_cols = [
+        "enrollment_2021_weight",
+        "number_of_silver_plans",
+        "number_of_insurers",
+        "lowest_silver_premium",
+        "second_lowest_silver_premium",
+        "premium_spread_among_silver_plans",
+        "lowest_bronze_premium",
+        "bronze_spread",
+    ]
+    missing_repair_cols = [col for col in required_repair_cols if col not in df.columns]
+    flags.append(
+        flag(
+            "PASS" if not missing_repair_cols else "WARN",
+            "Step 2 repair market-control columns present",
+            "Missing repair columns: " + ", ".join(missing_repair_cols) if missing_repair_cols else "All repaired market-control columns are present.",
+            len(missing_repair_cols),
+            0,
+        )
+    )
+    if "enrollment_2021_weight" in df.columns:
+        primary_weight_nonmissing = float(primary["enrollment_2021_weight"].notna().mean()) if len(primary) else 0.0
+        flags.append(flag("PASS" if primary_weight_nonmissing >= 0.95 else "WARN", "2021 enrollment weights available in primary sample", f"Nonmissing rate: {primary_weight_nonmissing:.3f}", primary_weight_nonmissing, ">=0.95"))
+    if "bronze_spread" in df.columns:
+        primary_bronze_nonmissing = float(primary["bronze_spread"].notna().mean()) if len(primary) else 0.0
+        flags.append(flag("PASS" if primary_bronze_nonmissing >= 0.95 else "WARN", "bronze spread available in primary sample", f"Nonmissing rate: {primary_bronze_nonmissing:.3f}", primary_bronze_nonmissing, ">=0.95"))
 
     logging.info("Drake-style comparison diagnostics")
     comparison_rows = [

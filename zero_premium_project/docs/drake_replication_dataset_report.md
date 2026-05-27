@@ -92,13 +92,12 @@ Validation flags are written by `scripts/04_validate_drake_replication_dataset.p
 **A. Proceed to Step 3: descriptive replication and non-causal comparison with Drake-style patterns**, conditional on accepting the benchmark-based zero-premium proxy and reviewing 2021 fallback construction.
 
 Step 3 has now been run. The updated recommendation is **B. Repair Step 2 treatment construction first** before Step 4 formal replication/regression. See `docs/step3_descriptive_replication_report.md`.
-
 ## Validation Summary
 
 Validation flags after running `scripts/04_validate_drake_replication_dataset.py`:
 
 - PASS: 15
-- WARN: 3
+- WARN: 5
 - FAIL: 0
 
 | status | check | metric | threshold | details |
@@ -111,12 +110,14 @@ Validation flags after running `scripts/04_validate_drake_replication_dataset.py
 | PASS | HI excluded from primary sample |  |  | Primary states among AK/HI/NE: [] |
 | PASS | NE excluded or explicitly handled |  |  | Primary states among AK/HI/NE: [] |
 | PASS | HealthCare.gov state sample applied |  |  | Primary rows not continuously HC.gov: 0 |
+| WARN | Drake eTable 3 harmonized sample flags |  | present | Repaired Step 2 flags are absent from this processed dataset. |
 | PASS | OEP outcomes constructible for 2022-2024 | 0.026625988073776176 | <0.05 | Maximum missingness across core outcomes: 0.027 |
 | PASS | impossible rates | 0 | 0 | Rate values outside [0,1]: 0 |
 | PASS | log variables finite when present | 0 | 0 | Nonfinite log values: 0 |
 | PASS | binary turnover treatment constructible | 0.9873366013071896 | >=0.95 | Minimum constructibility by year: 0.987. 2022 is expected to be weak if 2021 fallback is incomplete. |
 | PASS | across-issuer vs within-issuer distinction constructible | 0.0 | 0 | Across-issuer flag missingness: 0.000 |
 | WARN | zero-premium proxy quality | benchmark_based_low_income_proxy,not_constructible | exact preferred | Zero-premium measure types: ['benchmark_based_low_income_proxy', 'not_constructible']. This is proxy-based, not exact. |
+| WARN | Step 2 repair market-control columns present | 8 | 0 | Missing repair columns: enrollment_2021_weight, number_of_silver_plans, number_of_insurers, lowest_silver_premium, second_lowest_silver_premium, premium_spread_among_silver_plans, lowest_bronze_premium, bronze_spread |
 | WARN | Step 1 97.4 percent current-year join comparison | 0.9346672111065741 | >=0.95 | Step 1: 0.974; Step 2 2023->2024: 0.935 |
 | PASS | sample roughly aligns with Drake et al. |  |  | Primary sample rows: 6564; states: 29 |
 | PASS | dataset ready for descriptive replication |  |  | Ready if uniqueness, OEP outcomes, and primary sample checks pass. |
