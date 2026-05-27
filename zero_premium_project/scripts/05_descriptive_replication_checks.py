@@ -30,8 +30,94 @@ FULL_DATASET = PROCESSED / "drake_replication_county_year_2022_2024.csv"
 PRIMARY_DATASET = PROCESSED / "drake_replication_county_year_2022_2024_primary_sample.csv"
 NEBRASKA_DATASET = PROCESSED / "drake_replication_county_year_2022_2024_sensitivity_nebraska.csv"
 
-DRake_COUNTIES = 2159
+DRAKE_COUNTIES = 2159
+DRake_COUNTIES = DRAKE_COUNTIES
+DRAKE_RESULT_COUNTY_YEARS = 6471
+DRAKE_RESULT_UNIQUE_COUNTIES = 2157
+DRAKE_TABLE2_COUNTY_YEARS = 6459
+DRAKE_ANY_TURNOVER_COUNTY_YEARS = 4452
+DRAKE_ACROSS_ISSUER_TURNOVER_COUNTY_YEARS = 211
+DRAKE_ANY_TURNOVER_ENROLLEE_YEARS_MILLIONS = 28.4
+DRAKE_ACROSS_TURNOVER_ENROLLEE_YEARS_MILLIONS = 0.8
 EXPECTED_PRIMARY_STATES = 29
+
+DRAKE_EXPOSURE_100_150_FPL = {
+    2022: 93.9,
+    2023: 67.8,
+    2024: 83.8,
+}
+
+DRAKE_EXPOSURE_150_200_FPL = {
+    2022: 7.8,
+    2023: 9.2,
+    2024: 3.5,
+}
+
+DRAKE_SUPPLEMENT_EXCLUDED_COUNTIES = [
+    {
+        "state": "SD",
+        "county_fips": "46113",
+        "county_name_in_supplement": "Shannon County",
+        "supplement_reason": "FIPS changed over time; Shannon County changed to Oglala Lakota County/FIPS 46102 before the study period.",
+    },
+    {
+        "state": "VA",
+        "county_fips": "51515",
+        "county_name_in_supplement": "Bedford City",
+        "supplement_reason": "FIPS changed over time; Bedford City combined with Bedford County before the study period.",
+    },
+    {
+        "state": "VA",
+        "county_fips": "51019",
+        "county_name_in_supplement": "Bedford County",
+        "supplement_reason": "FIPS changed over time; Bedford City combined with Bedford County before the study period.",
+    },
+]
+
+for _state, _items in {
+    "GA": [
+        ("13009", "Baldwin County"),
+        ("13013", "Barrow County"),
+        ("13021", "Bibb County"),
+        ("13051", "Chatham County"),
+        ("13059", "Clarke County"),
+        ("13141", "Hancock County"),
+        ("13157", "Jackson County"),
+        ("13207", "Monroe County"),
+        ("13215", "Muscogee County"),
+        ("13219", "Oconee County"),
+        ("13225", "Peach County"),
+        ("13227", "Pickens County"),
+        ("13245", "Randolph County"),
+        ("13319", "Wilkinson County"),
+    ],
+    "NC": [
+        ("37001", "Alamance County"),
+        ("37033", "Caswell County"),
+        ("37037", "Chatham County"),
+        ("37065", "Edgecombe County"),
+        ("37079", "Greene County"),
+        ("37081", "Guilford County"),
+        ("37105", "Lee County"),
+        ("37127", "Nash County"),
+        ("37145", "Person County"),
+        ("37147", "Pitt County"),
+        ("37151", "Randolph County"),
+        ("37157", "Rockingham County"),
+        ("37189", "Watauga County"),
+        ("37191", "Wayne County"),
+        ("37195", "Wilson County"),
+    ],
+}.items():
+    for _fips, _name in _items:
+        DRAKE_SUPPLEMENT_EXCLUDED_COUNTIES.append(
+            {
+                "state": _state,
+                "county_fips": _fips,
+                "county_name_in_supplement": _name,
+                "supplement_reason": "No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.",
+            }
+        )
 
 REQUIRED_KEY_COLUMNS = [
     "year",
@@ -400,6 +486,56 @@ def subset_years(df: pd.DataFrame, years: list[int]) -> pd.DataFrame:
     return df[df["year"].astype("Int64").isin(years)].copy()
 
 
+def drake_supplement_exclusions_frame() -> pd.DataFrame:
+    out = pd.DataFrame(DRAKE_SUPPLEMENT_EXCLUDED_COUNTIES).copy()
+    out["county_fips"] = out["county_fips"].astype(str).str.zfill(5)
+    return out
+
+
+def add_drake_supplement_exclusion_flags(df: pd.DataFrame) -> pd.DataFrame:
+    out = df.copy()
+    exclusions = drake_supplement_exclusions_frame()[["county_fips", "supplement_reason"]].drop_duplicates("county_fips")
+    out = out.merge(exclusions, on="county_fips", how="left")
+    out["drake_supplement_exclusion_flag"] = out["supplement_reason"].notna()
+    out["drake_supplement_exclusion_reason"] = out["supplement_reason"].fillna("")
+    out = out.drop(columns=["supplement_reason"])
+    out["included_drake_harmonized_sample"] = ~out["drake_supplement_exclusion_flag"]
+    return out
+
+
+def make_drake_excluded_counties_check(primary: pd.DataFrame) -> pd.DataFrame:
+    exclusions = drake_supplement_exclusions_frame()
+    observed = (
+        primary.groupby(["state", "county_fips"], dropna=False)
+        .agg(
+            observed_county_names=("county_name", lambda x: ";".join(sorted(x.dropna().astype(str).unique().tolist()))),
+            rows_present=("year", "size"),
+            years_present=("year", lambda x: ",".join(map(str, sorted(x.dropna().astype(int).unique().tolist())))),
+            enrollment_present=("Cnsmr", "sum"),
+            any_missing_crosswalk=("missing_crosswalk_flag_bool", "max") if "missing_crosswalk_flag_bool" in primary.columns else ("year", lambda _: False),
+            any_missing_current_plan=("missing_current_plan_flag_bool", "max") if "missing_current_plan_flag_bool" in primary.columns else ("year", lambda _: False),
+            any_missing_premium=("missing_premium_flag_bool", "max") if "missing_premium_flag_bool" in primary.columns else ("year", lambda _: False),
+        )
+        .reset_index()
+    )
+    check = exclusions.merge(observed, on=["state", "county_fips"], how="left")
+    check["present_in_current_primary_sample"] = check["rows_present"].fillna(0).astype(int).gt(0)
+    check["rows_present"] = check["rows_present"].fillna(0).astype(int)
+    check["enrollment_present"] = check["enrollment_present"].fillna(0)
+    for col in ["observed_county_names", "years_present"]:
+        check[col] = check[col].fillna("")
+    for col in ["any_missing_crosswalk", "any_missing_current_plan", "any_missing_premium"]:
+        check[col] = check[col].apply(lambda value: bool(value) if pd.notna(value) else False)
+    check.to_csv(OUTPUTS / "step3_drake_excluded_counties_check.csv", index=False)
+    return check
+
+
+def write_harmonized_dataset(primary: pd.DataFrame) -> Path:
+    path = PROCESSED / "drake_replication_primary_drake_harmonized_2022_2024.csv"
+    primary.to_csv(path, index=False)
+    return path
+
+
 def summarize_excluded_states(state_meta: pd.DataFrame | None) -> str:
     if state_meta is None or state_meta.empty:
         return "State metadata unavailable."
@@ -407,7 +543,14 @@ def summarize_excluded_states(state_meta: pd.DataFrame | None) -> str:
     return "; ".join((excluded["state"].astype(str) + ": " + excluded["reason_included_or_excluded"].astype(str)).tolist())
 
 
-def make_sample_alignment(full: pd.DataFrame, primary: pd.DataFrame, ne: pd.DataFrame | None, state_meta: pd.DataFrame | None) -> tuple[pd.DataFrame, pd.DataFrame]:
+def make_sample_alignment(
+    full: pd.DataFrame,
+    primary_raw: pd.DataFrame,
+    primary: pd.DataFrame,
+    ne: pd.DataFrame | None,
+    state_meta: pd.DataFrame | None,
+    excluded_check: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     rows: list[dict[str, Any]] = []
     years = sorted(primary["year"].dropna().astype(int).unique().tolist())
     primary_states = sorted(primary["state"].dropna().astype(str).unique().tolist())
@@ -420,21 +563,54 @@ def make_sample_alignment(full: pd.DataFrame, primary: pd.DataFrame, ne: pd.Data
     complete_and_constructible = table1_complete_by_county & constructible_by_county
     no_suppression_by_county = ~primary.groupby("county_fips")["suppression_or_missing_flag_bool"].any()
     complete_constructible_no_suppression = complete_and_constructible & no_suppression_by_county
-    drake_gap = int(primary["county_fips"].nunique() - DRake_COUNTIES)
+    raw_counties = primary_raw["county_fips"].nunique()
+    drake_gap_raw = int(raw_counties - DRAKE_COUNTIES)
+    drake_gap_harmonized = int(primary["county_fips"].nunique() - DRAKE_COUNTIES)
     state_excluded = summarize_excluded_states(state_meta)
+    cnsmer_nonmissing = primary[primary["Cnsmr"].notna()]
+    present_excluded = excluded_check[excluded_check["present_in_current_primary_sample"]]
+    present_excluded_counties = int(present_excluded["county_fips"].nunique())
 
     def add(metric: str, value: Any, reference: Any = "", notes: str = "") -> None:
         rows.append({"metric": metric, "value": value, "drake_or_expected_reference": reference, "notes": notes})
 
     add("rows_before_restrictions", len(full), "", "All constructed county-years before Drake-style sample restrictions.")
-    add("rows_primary_sample", len(primary), "", "Primary sample county-years.")
+    add("rows_primary_sample_raw", len(primary_raw), "", "Primary sample before Drake supplement eTable 3 county exclusions.")
+    add("counties_primary_sample_raw", raw_counties, DRAKE_COUNTIES, f"Raw difference from Drake count: {drake_gap_raw}.")
+    add("rows_drake_harmonized_sample", len(primary), "", "Primary sample after applying Drake supplement eTable 3 county exclusions.")
+    add("counties_drake_harmonized_sample", primary["county_fips"].nunique(), DRAKE_COUNTIES, f"Harmonized difference from Drake count: {drake_gap_harmonized}.")
+    add("rows_primary_sample", len(primary), "", "Backward-compatible alias: Drake-harmonized county-years used for Step 3 outputs.")
     add("states_primary_sample", len(primary_states), EXPECTED_PRIMARY_STATES, ",".join(primary_states))
-    add("counties_primary_sample", primary["county_fips"].nunique(), DRake_COUNTIES, f"Difference from Drake count: {drake_gap}.")
+    add("counties_primary_sample", primary["county_fips"].nunique(), DRAKE_COUNTIES, "Backward-compatible alias: Drake-harmonized county count.")
     add("county_years_primary_sample", len(primary), "", "Rows equal county-years.")
+    add(
+        "drake_supplement_excluded_counties_present",
+        present_excluded_counties,
+        drake_gap_raw,
+        "These are the eTable 3 counties present in the raw primary sample and removed from the Drake-harmonized sample.",
+    )
+    add(
+        "drake_supplement_excluded_rows_present",
+        int(present_excluded["rows_present"].sum()),
+        "",
+        "Rows removed by the eTable 3 county exclusion rule.",
+    )
     for year in years:
         add(f"county_years_{year}", int(rows_by_year.get(year, 0)), "", "Primary sample rows in this year.")
         add(f"counties_{year}", int(counties_by_year.get(year, 0)), "", "Primary sample counties in this year.")
-    add("counties_present_all_three_years", counties_all_years, DRake_COUNTIES, "All current primary counties are present in all requested years." if counties_all_years == primary["county_fips"].nunique() else "")
+    add("counties_present_all_three_years", counties_all_years, DRAKE_COUNTIES, "All current harmonized counties are present in all requested years." if counties_all_years == primary["county_fips"].nunique() else "")
+    add(
+        "county_years_with_nonmissing_enrollment",
+        len(cnsmer_nonmissing),
+        DRAKE_RESULT_COUNTY_YEARS,
+        "Drake Results text reports 6471 county-years after outcome/weight availability.",
+    )
+    add(
+        "unique_counties_with_nonmissing_enrollment",
+        cnsmer_nonmissing["county_fips"].nunique(),
+        DRAKE_RESULT_UNIQUE_COUNTIES,
+        "Drake Results text reports 2157 unique counties in the analytic county-year data.",
+    )
     add("excluded_states_and_reasons", state_excluded, "", "From healthcaregov_state_sample_2022_2024.csv when available.")
     for state in ["AK", "HI", "NE"]:
         add(f"{state}_in_primary_sample", bool((primary["state"] == state).any()), False, "Expected exclusion check.")
@@ -446,17 +622,21 @@ def make_sample_alignment(full: pd.DataFrame, primary: pd.DataFrame, ne: pd.Data
     add("counties_constructible_treatment_all_years", int(constructible_by_county.sum()), "", "Potential treatment-readiness rule, not Drake-confirmed.")
     add("counties_complete_outcomes_and_constructible_all_years", int(complete_and_constructible.sum()), "", "Potential harmonization rule, not Drake-confirmed.")
     add("counties_complete_constructible_no_suppression_all_years", int(complete_constructible_no_suppression.sum()), "", "Potential strict rule, not Drake-confirmed.")
+    for col in OUTCOME_COLUMNS:
+        nonmissing = primary[primary[col].notna()]
+        add(f"nonmissing_rows_{col}", len(nonmissing), "", f"County-years with nonmissing {col}.")
+        add(f"nonmissing_counties_{col}", nonmissing["county_fips"].nunique(), "", f"Unique counties with nonmissing {col}.")
     add(
         "county_discrepancy_interpretation",
-        "not_identifiable_without_drake_county_list",
+        "resolved_by_drake_supplement_etable3",
         "Drake reports 2159 counties.",
-        "The current dataset has 2188 counties, all in all three years. The exact 29 extra counties cannot be identified without Drake's county list; diagnostics below rank candidate reasons.",
+        "The raw primary sample has 2188 counties. Drake supplement eTable 3 identifies 29 GA/NC counties with no 2023-to-2024 crosswalk data; dropping those counties gives 2159 counties. Legacy SD/VA FIPS exclusions are also encoded but do not affect this 2022-2024 primary sample.",
     )
 
     summary = pd.DataFrame(rows)
     summary.to_csv(OUTPUTS / "step3_sample_alignment.csv", index=False)
 
-    g = primary.groupby(["state", "county_fips", "county_name"], dropna=False).agg(
+    g = primary_raw.groupby(["state", "county_fips", "county_name"], dropna=False).agg(
         rows=("year", "size"),
         years_present=("year", "nunique"),
         min_year=("year", "min"),
@@ -467,18 +647,29 @@ def make_sample_alignment(full: pd.DataFrame, primary: pd.DataFrame, ne: pd.Data
         treatment_constructible_years=("treatment_constructible_flag_bool", "sum"),
         suppression_or_missing_any=("suppression_or_missing_flag_bool", "max"),
     ).reset_index()
+    exclusion_lookup = (
+        excluded_check[["state", "county_fips", "present_in_current_primary_sample", "supplement_reason"]]
+        .drop_duplicates(["state", "county_fips"])
+        .rename(columns={"present_in_current_primary_sample": "drake_supplement_exclusion_flag", "supplement_reason": "drake_supplement_exclusion_reason"})
+    )
+    g = g.merge(exclusion_lookup, on=["state", "county_fips"], how="left")
+    g["drake_supplement_exclusion_flag"] = g["drake_supplement_exclusion_flag"].apply(lambda value: bool(value) if pd.notna(value) else False)
+    g["drake_supplement_exclusion_reason"] = g["drake_supplement_exclusion_reason"].fillna("")
+    g["included_drake_harmonized_sample"] = ~g["drake_supplement_exclusion_flag"]
     for flag in ["missing_crosswalk_flag_bool", "missing_current_plan_flag_bool", "missing_premium_flag_bool", "missing_county_mapping_flag_bool"]:
-        if flag in primary.columns:
-            flag_g = primary.groupby(["state", "county_fips"])[flag].max().reset_index(name=flag.replace("_bool", "_any"))
+        if flag in primary_raw.columns:
+            flag_g = primary_raw.groupby(["state", "county_fips"])[flag].max().reset_index(name=flag.replace("_bool", "_any"))
             g = g.merge(flag_g, on=["state", "county_fips"], how="left")
     g["all_three_years"] = g["years_present"].eq(len(years))
     g["table1_complete_all_years"] = g["table1_missing_years"].eq(0)
     g["treatment_constructible_all_years"] = g["treatment_constructible_years"].eq(len(years))
     g["low_enrollment_rank"] = g["total_enrollment"].rank(method="first").astype(int)
-    g["candidate_extra_if_forcing_to_2159_by_low_enrollment"] = g["low_enrollment_rank"].le(max(drake_gap, 0))
+    g["candidate_extra_if_forcing_to_2159_by_low_enrollment"] = g["low_enrollment_rank"].le(max(drake_gap_raw, 0))
     reasons = []
     for _, row in g.iterrows():
         county_reasons = []
+        if bool(row["drake_supplement_exclusion_flag"]):
+            county_reasons.append("drake_supplement_etable3_exclusion")
         if not row["all_three_years"]:
             county_reasons.append("not_present_all_years")
         if not row["table1_complete_all_years"]:
@@ -506,8 +697,8 @@ def likely_table1_reason(abs_diff: float, closest: bool, denominator: str) -> st
     if not closest:
         return "Alternative weighting retained for diagnosis; not expected to match Drake's weighted table most closely."
     if denominator == "enrollment":
-        return "Likely reflects sample-count discrepancy, OEP suppression/missingness, or county-year aggregation differences."
-    return "Likely reflects reenrollment denominator handling, OEP suppression/missingness, or sample-count discrepancy."
+        return "Likely reflects OEP suppression/missingness, denominator availability, or public county-year aggregation differences."
+    return "Likely reflects reenrollment denominator handling, OEP suppression/missingness, or public county-year aggregation differences."
 
 
 def make_table1(df: pd.DataFrame) -> pd.DataFrame:
@@ -606,7 +797,80 @@ def prevalence_for_group(df: pd.DataFrame, group_cols: list[str] | None = None) 
     return pd.DataFrame(rows)
 
 
-def make_turnover_prevalence(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def make_drake_exposure_comparison(by_year: pd.DataFrame) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    for _, row in by_year.iterrows():
+        year = int(row["year"])
+        our_weighted = float(row["any_enrollment_weighted_share_constructible"] * 100)
+        our_unweighted = float(row["any_share_constructible"] * 100)
+        drake_100_150 = DRAKE_EXPOSURE_100_150_FPL.get(year, math.nan)
+        drake_150_200 = DRAKE_EXPOSURE_150_200_FPL.get(year, math.nan)
+        diff = our_weighted - drake_100_150 if not pd.isna(drake_100_150) else math.nan
+        rows.append(
+            {
+                "year": year,
+                "our_any_turnover_enrollment_weighted_pct": our_weighted,
+                "our_any_turnover_unweighted_county_pct": our_unweighted,
+                "drake_100_150_fpl_exposure_pct": drake_100_150,
+                "difference_vs_drake_100_150_pp": diff,
+                "absolute_difference_vs_drake_100_150_pp": abs(diff) if not pd.isna(diff) else math.nan,
+                "drake_150_200_fpl_exposure_pct": drake_150_200,
+                "comparison_note": "Closest available comparison is enrollment-weighted any turnover vs Drake 100-150 FPL exposure. Drake exposure is individual/exposure-weighted; this dataset uses county-year OEP enrollment weights.",
+            }
+        )
+    out = pd.DataFrame(rows)
+    out.to_csv(OUTPUTS / "step3_drake_exposure_comparison.csv", index=False)
+    return out
+
+
+def make_turnover_count_comparison(df: pd.DataFrame) -> pd.DataFrame:
+    constructible = df["treatment_constructible_flag_bool"]
+    table2_like = df[constructible].copy()
+    any_flag = table2_like["any_zero_to_positive_turnover_bool"]
+    across_flag = table2_like["any_zero_to_positive_turnover_across_issuer_bool"]
+    rows = [
+        {
+            "metric": "constructible_county_years",
+            "our_value": len(table2_like),
+            "drake_reference": DRAKE_TABLE2_COUNTY_YEARS,
+            "difference": len(table2_like) - DRAKE_TABLE2_COUNTY_YEARS,
+            "notes": "Drake Table 2 reports 6459 county-years. Our count is constructible rows after eTable 3 exclusions; remaining difference likely reflects 2021 weights/control availability and OEP suppression.",
+        },
+        {
+            "metric": "any_turnover_county_years",
+            "our_value": int(any_flag.sum()),
+            "drake_reference": DRAKE_ANY_TURNOVER_COUNTY_YEARS,
+            "difference": int(any_flag.sum()) - DRAKE_ANY_TURNOVER_COUNTY_YEARS,
+            "notes": "Main article reports 4452 county-years with any turnover.",
+        },
+        {
+            "metric": "across_issuer_turnover_county_years",
+            "our_value": int(across_flag.sum()),
+            "drake_reference": DRAKE_ACROSS_ISSUER_TURNOVER_COUNTY_YEARS,
+            "difference": int(across_flag.sum()) - DRAKE_ACROSS_ISSUER_TURNOVER_COUNTY_YEARS,
+            "notes": "Main article reports 211 county-years with across-insurer turnover. This is the clearest treatment-definition mismatch.",
+        },
+        {
+            "metric": "any_turnover_enrollee_years_millions",
+            "our_value": float(table2_like.loc[any_flag, "Cnsmr"].sum(skipna=True) / 1_000_000),
+            "drake_reference": DRAKE_ANY_TURNOVER_ENROLLEE_YEARS_MILLIONS,
+            "difference": float(table2_like.loc[any_flag, "Cnsmr"].sum(skipna=True) / 1_000_000) - DRAKE_ANY_TURNOVER_ENROLLEE_YEARS_MILLIONS,
+            "notes": "Main article reports 28.4 million enrollee-years with any turnover.",
+        },
+        {
+            "metric": "across_issuer_turnover_enrollee_years_millions",
+            "our_value": float(table2_like.loc[across_flag, "Cnsmr"].sum(skipna=True) / 1_000_000),
+            "drake_reference": DRAKE_ACROSS_TURNOVER_ENROLLEE_YEARS_MILLIONS,
+            "difference": float(table2_like.loc[across_flag, "Cnsmr"].sum(skipna=True) / 1_000_000) - DRAKE_ACROSS_TURNOVER_ENROLLEE_YEARS_MILLIONS,
+            "notes": "Main article reports 0.8 million enrollee-years with across-insurer turnover.",
+        },
+    ]
+    out = pd.DataFrame(rows)
+    out.to_csv(OUTPUTS / "step3_turnover_count_comparison.csv", index=False)
+    return out
+
+
+def make_turnover_prevalence(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     by_year = prevalence_for_group(df, ["year"])
     by_state_year = prevalence_for_group(df, ["state", "year"])
     weighted = pd.concat(
@@ -620,7 +884,9 @@ def make_turnover_prevalence(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFra
     by_year.to_csv(OUTPUTS / "step3_turnover_prevalence_by_year.csv", index=False)
     by_state_year.to_csv(OUTPUTS / "step3_turnover_prevalence_by_state_year.csv", index=False)
     weighted.to_csv(OUTPUTS / "step3_turnover_prevalence_weighted.csv", index=False)
-    return by_year, by_state_year, weighted
+    exposure = make_drake_exposure_comparison(by_year)
+    counts = make_turnover_count_comparison(df)
+    return by_year, by_state_year, weighted, exposure, counts
 
 
 def comparison_variables(df: pd.DataFrame) -> list[dict[str, Any]]:
@@ -684,7 +950,7 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
                         "treated_counties": valid.loc[treated, "county_fips"].nunique(),
                         "untreated_states": valid.loc[~treated, "state"].nunique(),
                         "treated_states": valid.loc[treated, "state"].nunique(),
-                        "notes": "Variable absent in Step 2 dataset; not invented.",
+                        "notes": "Variable absent in Step 2 dataset; not invented. Drake Table 2 uses 2021 enrollment weights and year adjustment; this diagnostic is unadjusted.",
                     }
                 )
                 continue
@@ -711,7 +977,7 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
                     "treated_counties": valid.loc[treated, "county_fips"].nunique(),
                     "untreated_states": valid.loc[untreated, "state"].nunique(),
                     "treated_states": valid.loc[treated, "state"].nunique(),
-                    "notes": "Descriptive comparison only; not a causal contrast.",
+                    "notes": "Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights.",
                 }
             )
     table = pd.DataFrame(rows)
@@ -722,7 +988,7 @@ def make_table2(df: pd.DataFrame) -> pd.DataFrame:
     md = [
         "# Step 3 Table 2-Style Descriptive Comparison By Turnover Status",
         "",
-        "Outcome shares are shown as percentage-point differences below. The CSV also includes available plan-market variables and absent-variable rows.",
+        "Outcome shares are shown as percentage-point differences below. The CSV also includes available plan-market variables and absent-variable rows. These diagnostics are unadjusted and use current-year Cnsmr weights; Drake Table 2 uses 2021 enrollment weights and year-adjusted differences.",
         "",
         md_table(shown[["comparison", "variable", "untreated_county_years", "treated_county_years", "unweighted_difference", "cnsmr_weighted_difference", "notes"]], digits=3),
         "",
@@ -774,57 +1040,59 @@ def make_sign_check(table2: pd.DataFrame) -> pd.DataFrame:
     return sign
 
 
-def make_problem_state_diagnostics(df: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+def make_problem_state_diagnostics(raw_primary: pd.DataFrame, analysis_df: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
     rows: list[dict[str, Any]] = []
-    for (state, year), sub in df.groupby(["state", "year"], dropna=False):
-        constructible = sub["treatment_constructible_flag_bool"]
-        missing_current = sub.get("missing_current_plan_flag_bool", pd.Series(False, index=sub.index))
-        missing_crosswalk = sub.get("missing_crosswalk_flag_bool", pd.Series(False, index=sub.index))
-        missing_premium = sub.get("missing_premium_flag_bool", pd.Series(False, index=sub.index))
-        any_treated = sub.get("any_zero_to_positive_turnover_bool", pd.Series(False, index=sub.index))
-        constructibility_rate = float(constructible.mean())
-        missing_current_rate = float(missing_current.mean())
-        missing_crosswalk_rate = float(missing_crosswalk.mean())
-        missing_premium_rate = float(missing_premium.mean())
-        treated_share_constructible = float(any_treated[constructible].mean()) if constructible.any() else math.nan
-        reasons = []
-        sensitivity_problem = False
-        if constructibility_rate < 0.95:
-            reasons.append("constructibility_below_0.95")
-            sensitivity_problem = True
-        if missing_current_rate > 0.05:
-            reasons.append("missing_current_plan_rate_above_0.05")
-            sensitivity_problem = True
-        if missing_crosswalk_rate > 0.05:
-            reasons.append("missing_crosswalk_rate_above_0.05")
-            sensitivity_problem = True
-        if not pd.isna(treated_share_constructible) and (treated_share_constructible < 0.05 or treated_share_constructible > 0.95):
-            reasons.append("extreme_treatment_prevalence")
-        rows.append(
-            {
-                "state": state,
-                "year": int(year),
-                "county_years": len(sub),
-                "counties": sub["county_fips"].nunique(),
-                "enrollment": sub["Cnsmr"].sum(skipna=True),
-                "constructibility_rate": constructibility_rate,
-                "missing_treatment_rate": float((~constructible).mean()),
-                "missing_current_plan_rate": missing_current_rate,
-                "missing_crosswalk_rate": missing_crosswalk_rate,
-                "missing_premium_rate": missing_premium_rate,
-                "outcome_missing_rate": float(sub["table1_outcome_missing_flag"].mean()),
-                "treated_share_constructible": treated_share_constructible,
-                "problem_state_for_sensitivity": sensitivity_problem,
-                "diagnostic_flags": ";".join(reasons) if reasons else "none",
-            }
-        )
+    for scope, df in [("raw_primary_before_etable3_exclusions", raw_primary), ("drake_harmonized", analysis_df)]:
+        for (state, year), sub in df.groupby(["state", "year"], dropna=False):
+            constructible = sub["treatment_constructible_flag_bool"]
+            missing_current = sub.get("missing_current_plan_flag_bool", pd.Series(False, index=sub.index))
+            missing_crosswalk = sub.get("missing_crosswalk_flag_bool", pd.Series(False, index=sub.index))
+            missing_premium = sub.get("missing_premium_flag_bool", pd.Series(False, index=sub.index))
+            any_treated = sub.get("any_zero_to_positive_turnover_bool", pd.Series(False, index=sub.index))
+            constructibility_rate = float(constructible.mean())
+            missing_current_rate = float(missing_current.mean())
+            missing_crosswalk_rate = float(missing_crosswalk.mean())
+            missing_premium_rate = float(missing_premium.mean())
+            treated_share_constructible = float(any_treated[constructible].mean()) if constructible.any() else math.nan
+            reasons = []
+            sensitivity_problem = False
+            if constructibility_rate < 0.95:
+                reasons.append("constructibility_below_0.95")
+                sensitivity_problem = True
+            if missing_current_rate > 0.05:
+                reasons.append("missing_current_plan_rate_above_0.05")
+                sensitivity_problem = True
+            if missing_crosswalk_rate > 0.05:
+                reasons.append("missing_crosswalk_rate_above_0.05")
+                sensitivity_problem = True
+            if not pd.isna(treated_share_constructible) and (treated_share_constructible < 0.05 or treated_share_constructible > 0.95):
+                reasons.append("extreme_treatment_prevalence")
+            rows.append(
+                {
+                    "scope": scope,
+                    "state": state,
+                    "year": int(year),
+                    "county_years": len(sub),
+                    "counties": sub["county_fips"].nunique(),
+                    "enrollment": sub["Cnsmr"].sum(skipna=True),
+                    "constructibility_rate": constructibility_rate,
+                    "missing_treatment_rate": float((~constructible).mean()),
+                    "missing_current_plan_rate": missing_current_rate,
+                    "missing_crosswalk_rate": missing_crosswalk_rate,
+                    "missing_premium_rate": missing_premium_rate,
+                    "outcome_missing_rate": float(sub["table1_outcome_missing_flag"].mean()),
+                    "treated_share_constructible": treated_share_constructible,
+                    "problem_state_for_sensitivity": scope == "drake_harmonized" and sensitivity_problem,
+                    "diagnostic_flags": ";".join(reasons) if reasons else "none",
+                }
+            )
     diag = pd.DataFrame(rows)
     problem_states = sorted(diag.loc[diag["problem_state_for_sensitivity"], "state"].astype(str).unique().tolist())
     diag.to_csv(OUTPUTS / "step3_problem_state_diagnostics.csv", index=False)
     return diag, problem_states
 
 
-def make_join_failure_breakdown(df: pd.DataFrame) -> pd.DataFrame:
+def make_join_failure_breakdown(df: pd.DataFrame, raw_primary: pd.DataFrame | None = None) -> pd.DataFrame:
     rows: list[dict[str, Any]] = []
     failure_cols = [
         "missing_previous_plan_flag_bool",
@@ -833,52 +1101,58 @@ def make_join_failure_breakdown(df: pd.DataFrame) -> pd.DataFrame:
         "missing_premium_flag_bool",
         "missing_county_mapping_flag_bool",
     ]
-    for (transition, state, year), sub in df.groupby(["transition", "state", "year"], dropna=False):
-        for col in failure_cols:
-            if col not in sub.columns:
-                continue
-            rows.append(
-                {
-                    "breakdown_type": "state_year_transition",
-                    "transition": transition,
-                    "state": state,
-                    "year": int(year),
-                    "entity_field": "",
-                    "entity_id": "",
-                    "failure_type": col.replace("_bool", ""),
-                    "rows": len(sub),
-                    "failures": int(sub[col].sum()),
-                    "failure_rate": float(sub[col].mean()),
-                    "enrollment_in_failed_rows": sub.loc[sub[col], "Cnsmr"].sum(skipna=True),
-                }
-            )
-    for col in failure_cols:
-        if col not in df.columns:
-            continue
-        failed = df[df[col]].copy()
-        if failed.empty:
-            continue
-        for entity in ["previous_lowest_plan_id", "previous_second_lowest_plan_id", "previous_lowest_issuer_id", "previous_second_lowest_issuer_id"]:
-            if entity not in failed.columns:
-                continue
-            top = failed.groupby(["transition", "state", entity], dropna=False).agg(rows=("year", "size"), enrollment=("Cnsmr", "sum")).reset_index()
-            top = top.sort_values(["rows", "enrollment"], ascending=False).head(40)
-            for _, row in top.iterrows():
+    scoped = [("drake_harmonized", df)]
+    if raw_primary is not None:
+        scoped.insert(0, ("raw_primary_before_etable3_exclusions", raw_primary))
+    for scope, scope_df in scoped:
+        for (transition, state, year), sub in scope_df.groupby(["transition", "state", "year"], dropna=False):
+            for col in failure_cols:
+                if col not in sub.columns:
+                    continue
                 rows.append(
                     {
-                        "breakdown_type": "top_failed_plan_or_issuer",
-                        "transition": row["transition"],
-                        "state": row["state"],
-                        "year": "",
-                        "entity_field": entity,
-                        "entity_id": row[entity],
+                        "scope": scope,
+                        "breakdown_type": "state_year_transition",
+                        "transition": transition,
+                        "state": state,
+                        "year": int(year),
+                        "entity_field": "",
+                        "entity_id": "",
                         "failure_type": col.replace("_bool", ""),
-                        "rows": int(row["rows"]),
-                        "failures": int(row["rows"]),
-                        "failure_rate": "",
-                        "enrollment_in_failed_rows": row["enrollment"],
+                        "rows": len(sub),
+                        "failures": int(sub[col].sum()),
+                        "failure_rate": float(sub[col].mean()),
+                        "enrollment_in_failed_rows": sub.loc[sub[col], "Cnsmr"].sum(skipna=True),
                     }
                 )
+        for col in failure_cols:
+            if col not in scope_df.columns:
+                continue
+            failed = scope_df[scope_df[col]].copy()
+            if failed.empty:
+                continue
+            for entity in ["previous_lowest_plan_id", "previous_second_lowest_plan_id", "previous_lowest_issuer_id", "previous_second_lowest_issuer_id"]:
+                if entity not in failed.columns:
+                    continue
+                top = failed.groupby(["transition", "state", entity], dropna=False).agg(rows=("year", "size"), enrollment=("Cnsmr", "sum")).reset_index()
+                top = top.sort_values(["rows", "enrollment"], ascending=False).head(40)
+                for _, row in top.iterrows():
+                    rows.append(
+                        {
+                            "scope": scope,
+                            "breakdown_type": "top_failed_plan_or_issuer",
+                            "transition": row["transition"],
+                            "state": row["state"],
+                            "year": "",
+                            "entity_field": entity,
+                            "entity_id": row[entity],
+                            "failure_type": col.replace("_bool", ""),
+                            "rows": int(row["rows"]),
+                            "failures": int(row["rows"]),
+                            "failure_rate": "",
+                            "enrollment_in_failed_rows": row["enrollment"],
+                        }
+                    )
     out = pd.DataFrame(rows)
     out.to_csv(OUTPUTS / "step3_join_failure_breakdown.csv", index=False)
     return out
@@ -959,10 +1233,13 @@ def make_sensitivity_datasets(primary: pd.DataFrame, problem_states: list[str]) 
         path_no_problem = PROCESSED / "drake_replication_primary_no_problem_states.csv"
         no_problem.to_csv(path_no_problem, index=False)
         specs.append(("primary_no_problem_states", no_problem, str(path_no_problem.relative_to(ROOT))))
+    else:
+        stale_no_problem = PROCESSED / "drake_replication_primary_no_problem_states.csv"
+        if stale_no_problem.exists():
+            stale_no_problem.unlink()
 
     rows: list[dict[str, Any]] = []
-    base_table1 = make_table1(primary)
-    base_table2 = make_table2(primary)
+    base_table1 = build_table1_frame(primary)
     base_closest = base_table1[base_table1["closest_to_drake_table1"]]
     base_avg_abs = float(base_closest["absolute_difference"].mean())
     for name, data, path in specs:
@@ -975,6 +1252,7 @@ def make_sensitivity_datasets(primary: pd.DataFrame, problem_states: list[str]) 
         diffs = table2_key_diffs(table2, "any_zero_to_positive_turnover")
         rows.append(
             {
+                "created": True,
                 "sensitivity_dataset": name,
                 "path": path,
                 "rows": len(data),
@@ -989,6 +1267,28 @@ def make_sensitivity_datasets(primary: pd.DataFrame, problem_states: list[str]) 
                 "any_turnover_active_switch_weighted_diff": diffs.get("active_switch_share_weighted_diff", math.nan),
                 "any_turnover_active_stay_weighted_diff": diffs.get("active_stay_share_weighted_diff", math.nan),
                 "problem_states_excluded": ",".join(problem_states) if name == "primary_no_problem_states" else "",
+                "not_created_reason": "",
+            }
+        )
+    if not problem_states:
+        rows.append(
+            {
+                "created": False,
+                "sensitivity_dataset": "primary_no_problem_states",
+                "path": "",
+                "rows": 0,
+                "counties": 0,
+                "states": 0,
+                "years": "",
+                "treatment_prevalence_constructible": math.nan,
+                "treatment_constructibility_rate": math.nan,
+                "outcome_missingness": math.nan,
+                "table1_mean_absolute_difference_closest": math.nan,
+                "table1_mean_absolute_difference_change_vs_primary": math.nan,
+                "any_turnover_active_switch_weighted_diff": math.nan,
+                "any_turnover_active_stay_weighted_diff": math.nan,
+                "problem_states_excluded": "",
+                "not_created_reason": "No whole-state post-harmonization problem state was identified; eTable 3 supports county-level GA/NC exclusions instead.",
             }
         )
     summary = pd.DataFrame(rows)
@@ -1068,26 +1368,47 @@ def choose_recommendation(
     sample_alignment: pd.DataFrame,
     table1: pd.DataFrame,
     prevalence: pd.DataFrame,
+    turnover_counts: pd.DataFrame,
+    exposure_comparison: pd.DataFrame,
+    table2: pd.DataFrame,
     problem_states: list[str],
 ) -> tuple[str, str, list[str]]:
     warnings: list[str] = []
     if (readability["problem_detected"] != "none").any():
         return "No-Go", "E. Pause the topic.", ["Processed datasets are not fully readable."]
-    county_count = int(sample_alignment.loc[sample_alignment["metric"].eq("counties_primary_sample"), "value"].iloc[0])
-    if county_count != DRake_COUNTIES:
-        warnings.append(f"Primary sample has {county_count} counties versus Drake's {DRake_COUNTIES}.")
+    county_count = int(sample_alignment.loc[sample_alignment["metric"].eq("counties_drake_harmonized_sample"), "value"].iloc[0])
+    if county_count != DRAKE_COUNTIES:
+        warnings.append(f"Drake-harmonized sample has {county_count} counties versus Drake's {DRAKE_COUNTIES}.")
     closest = table1[table1["closest_to_drake_table1"]]
     mean_abs = float(closest["absolute_difference"].mean())
     max_abs = float(closest["absolute_difference"].max())
     if mean_abs > 3 or max_abs > 6:
         warnings.append(f"Table 1-style closest values differ from Drake by mean {mean_abs:.2f} pp and max {max_abs:.2f} pp.")
-    any_prev = prevalence["any_share_constructible"].max() if "any_share_constructible" in prevalence.columns else math.nan
-    if not pd.isna(any_prev) and any_prev > 0.75:
-        warnings.append("Turnover prevalence is high under the proxy definition; proxy may be broad.")
+    any_count_row = turnover_counts[turnover_counts["metric"].eq("any_turnover_county_years")]
+    if not any_count_row.empty:
+        diff = int(any_count_row.iloc[0]["difference"])
+        if abs(diff) > 100:
+            warnings.append(f"Any-turnover county-year count differs from Drake by {diff}.")
+    across_row = turnover_counts[turnover_counts["metric"].eq("across_issuer_turnover_county_years")]
+    if not across_row.empty:
+        diff = int(across_row.iloc[0]["difference"])
+        if abs(diff) > 25:
+            warnings.append(f"Across-issuer turnover count differs from Drake by {diff}; current proxy likely under-detects across-insurer turnover.")
+    if not exposure_comparison.empty:
+        max_exposure_gap = float(exposure_comparison["absolute_difference_vs_drake_100_150_pp"].max())
+        if max_exposure_gap > 5:
+            warnings.append(f"Enrollment-weighted any-turnover exposure differs from Drake 100-150 FPL exposure by up to {max_exposure_gap:.1f} pp.")
+    absent_market_vars = []
+    for var in ["bronze_spread", "number_of_insurers"]:
+        hit = table2[(table2["variable"].eq(var))]
+        if hit.empty or not bool(hit["variable_present"].fillna(False).any()):
+            absent_market_vars.append(var)
+    if absent_market_vars:
+        warnings.append("Step 2 output lacks Drake control variables needed later: " + ", ".join(absent_market_vars) + ".")
     if problem_states:
-        warnings.append("Problem-state sensitivity identified data-quality states: " + ",".join(problem_states) + ".")
-    warnings.append("Treatment is proxy-based and not household-specific net premium.")
-    if mean_abs <= 2.5 and len(warnings) <= 2:
+        warnings.append("Post-harmonization problem-state sensitivity identified data-quality states: " + ",".join(problem_states) + ".")
+    warnings.append("Treatment remains proxy-based; Step 2 does not prove household-specific net premiums, 125 percent FPL contribution, or non-EHB handling.")
+    if mean_abs <= 1.0 and county_count == DRAKE_COUNTIES and not absent_market_vars and len(warnings) <= 2:
         return "Conditional Go to Step 4", "A. Proceed to Step 4 formal Drake regression replication.", warnings
     return "Fix Step 2 before Step 4", "B. Repair Step 2 treatment construction first.", warnings
 
@@ -1099,11 +1420,14 @@ def make_report(
     sample_alignment: pd.DataFrame,
     table1: pd.DataFrame,
     prevalence: pd.DataFrame,
+    exposure_comparison: pd.DataFrame,
+    turnover_counts: pd.DataFrame,
     table2: pd.DataFrame,
     sign: pd.DataFrame,
     problem_states: list[str],
     sensitivity: pd.DataFrame,
     county_diag: pd.DataFrame,
+    excluded_check: pd.DataFrame,
 ) -> None:
     closest = table1[table1["closest_to_drake_table1"]].copy()
     closest_display = closest[["year", "measure", "our_value", "drake_value", "difference", "absolute_difference", "weighting_used"]].copy()
@@ -1119,6 +1443,15 @@ def make_report(
     sample_metrics = sample_alignment.set_index("metric")["value"].to_dict()
     discrepancy_reasons = county_diag["candidate_discrepancy_reason"].value_counts().head(8).reset_index()
     discrepancy_reasons.columns = ["candidate_discrepancy_reason", "counties"]
+    excluded_display = excluded_check[excluded_check["present_in_current_primary_sample"]].copy()
+    excluded_display = excluded_display[["state", "county_fips", "county_name_in_supplement", "observed_county_names", "rows_present", "years_present", "supplement_reason"]]
+    exposure_display = exposure_comparison.copy()
+    for col in exposure_display.columns:
+        if col.endswith("_pct") or col.endswith("_pp"):
+            exposure_display[col] = exposure_display[col].astype(float).round(2)
+    counts_display = turnover_counts.copy()
+    for col in ["our_value", "drake_reference", "difference"]:
+        counts_display[col] = counts_display[col].astype(float).round(3)
     report = [
         "# Step 3 Descriptive Replication Report",
         "",
@@ -1126,7 +1459,7 @@ def make_report(
         "",
         f"Overall status: **{status}**.",
         "",
-        "This Step 3 audit can reproduce the broad public OEP reenrollment patterns, but it does not yet justify formal treatment regressions without repairing or tightening Step 2 treatment construction. The main concerns are the 2,188 vs 2,159 county-count discrepancy, proxy-based zero-premium treatment, and weaker 2023-to-2024 plan mapping.",
+        "This Step 3 audit now applies Drake supplement eTable 3 county exclusions and reproduces the public OEP reenrollment patterns closely. The sample-count discrepancy is resolved, but formal Step 4 replication is still not justified until Step 2 treatment construction and later regression controls are repaired. The main remaining concerns are proxy-based zero-premium treatment, under-detection of across-insurer turnover, missing 2021 enrollment weights/control variables, and incomplete non-EHB/125 percent FPL premium handling.",
         "",
         "Main warnings:",
         "",
@@ -1143,15 +1476,23 @@ def make_report(
         "",
         "## 3. Sample Alignment",
         "",
-        f"Our primary sample has {sample_metrics.get('rows_primary_sample')} county-years, {sample_metrics.get('counties_primary_sample')} counties, and {sample_metrics.get('states_primary_sample')} states. Drake reports 2,159 counties in the same 29-state sample.",
+        f"The raw primary sample has {sample_metrics.get('rows_primary_sample_raw')} county-years and {sample_metrics.get('counties_primary_sample_raw')} counties. Applying Drake supplement eTable 3 exclusions gives {sample_metrics.get('rows_drake_harmonized_sample')} county-years, {sample_metrics.get('counties_drake_harmonized_sample')} counties, and {sample_metrics.get('states_primary_sample')} states.",
         "",
         f"AK in primary sample: {sample_metrics.get('AK_in_primary_sample')}; HI in primary sample: {sample_metrics.get('HI_in_primary_sample')}; NE in primary sample: {sample_metrics.get('NE_in_primary_sample')}. Nebraska sensitivity exists: {sample_metrics.get('nebraska_sensitivity_exists')}.",
         "",
-        "The 2,188 vs 2,159 county discrepancy is not resolved by year coverage because all current primary counties appear in all three years. Exact extra counties cannot be identified without Drake's county list. Candidate diagnostic reasons are:",
+        f"Drake's Results text reports {DRAKE_RESULT_COUNTY_YEARS} county-years and {DRAKE_RESULT_UNIQUE_COUNTIES} unique counties with nonmissing enrollment. Our harmonized data have {sample_metrics.get('county_years_with_nonmissing_enrollment')} county-years and {sample_metrics.get('unique_counties_with_nonmissing_enrollment')} unique counties with nonmissing `Cnsmr`, matching those anchors.",
+        "",
+        "The 2,188 vs 2,159 county discrepancy is explained by the 29 GA/NC counties in supplement eTable 3 with no crosswalk data from 2023 to 2024. They appear in the raw primary data and are removed from the Drake-harmonized Step 3 analysis. Legacy SD/VA FIPS exclusions are also encoded but do not affect this 2022-2024 primary sample.",
+        "",
+        "eTable 3 counties found in the raw primary sample:",
+        "",
+        md_table(excluded_display, max_rows=40, digits=0),
+        "",
+        "County-discrepancy diagnostic reasons after adding the eTable 3 rule:",
         "",
         md_table(discrepancy_reasons, digits=0),
         "",
-        "A transparent harmonization rule should be chosen before Step 4. Plausible non-arbitrary rules include requiring complete Table 1 outcome availability in all years, treatment constructibility in all years, or both. The current script reports these counts but does not force the sample to match Drake by arbitrary deletion.",
+        "This is not arbitrary deletion: the rule is directly taken from Drake supplement eTable 3. The harmonized dataset is written to `data/processed/drake_replication_primary_drake_harmonized_2022_2024.csv` for Step 3 diagnostics.",
         "",
         "## 4. Outcome Replication",
         "",
@@ -1159,13 +1500,21 @@ def make_report(
         "",
         md_table(closest_display, max_rows=40, digits=2),
         "",
-        "The weighting closest to Drake is Cnsmr-weighted for enrollment-denominator measures and Tot_Renrl-weighted for reenrollment-denominator measures. Differences that remain likely reflect the county-count discrepancy, public PUF suppression/missingness, and aggregate county-year construction.",
+        "The weighting closest to Drake is Cnsmr-weighted for enrollment-denominator measures and Tot_Renrl-weighted for reenrollment-denominator measures. After eTable 3 harmonization, nearly all differences are well below 1 percentage point. Remaining small differences likely reflect OEP PUF suppression, denominator availability, and public aggregate county-year construction.",
         "",
         "## 5. Treatment Prevalence",
         "",
         md_table(prev_display, max_rows=10, digits=3),
         "",
-        "The comparison to Drake exposure values is partial because exact eTable exposure values were not encoded here. The main qualitative anchor is that exposure increased after ARPA and persisted through 2024. Our proxy prevalence is high in 2022 and remains substantial through 2024, which may be plausible directionally but suggests the benchmark-based proxy may be broad.",
+        "Comparison against Drake supplement eTable 1 exposure anchors:",
+        "",
+        md_table(exposure_display, max_rows=10, digits=2),
+        "",
+        "Turnover count comparison against the main article:",
+        "",
+        md_table(counts_display, digits=3),
+        "",
+        "The enrollment-weighted any-turnover prevalence is close in 2022, higher than Drake in 2023, and lower than Drake in 2024. The bigger problem is across-insurer turnover: the current proxy identifies fewer across-insurer county-years than Drake. That is a Step 2 treatment-construction issue, not an outcome-replication issue.",
         "",
         "## 6. Treatment-Status Descriptive Comparison",
         "",
@@ -1175,13 +1524,15 @@ def make_report(
         "",
         md_table(sign, digits=3),
         "",
-        "These are descriptive differences only. They are not adjusted regression estimates and should not be interpreted causally.",
+        "These are descriptive differences only. They are not adjusted regression estimates and should not be interpreted causally. Drake Table 2 uses 2021 enrollment weights and year-adjusted differences; this Step 3 table uses current-year Cnsmr weights because 2021 county enrollment weights are not retained in the current Step 2 output.",
         "",
         "## 7. Step 2 Unresolved Issues",
         "",
         "- 2021 fallback: all 2022 treatment rows depend on the 2021-to-2022 transition built from fallback inputs. The 2023-2024-only sensitivity is therefore central.",
-        "- 2023-to-2024 join weakness: Step 2 reported a national current-plan join rate around 0.935 for top-two rows, weaker than the Step 1 prototype.",
-        "- Zero-premium proxy: the measure is benchmark-based and low-income age-40, not exact household net premium.",
+        "- 2023-to-2024 join weakness: Drake supplement eTable 3 resolves the main GA/NC county-count issue, but Step 2 still needs source-level crosswalk validation before formal regression work.",
+        "- Zero-premium proxy: Drake assumes a single 40-year-old at 125 percent FPL for the 100-150 FPL exposure construction. The current Step 2 output is benchmark-based and does not prove exact household-specific net premiums.",
+        "- Non-EHB issue: Drake notes that required non-EHB benefits can prevent zero-dollar premiums in some states. The current Step 2 output does not explicitly retain or audit non-EHB handling.",
+        "- Missing controls/weights: Drake Table 2 and regressions use 2021 enrollment weights, bronze spread, and insurer-count controls. These are not fully available in the current county-year output.",
         "- Nebraska sensitivity: Nebraska remains outside the primary sample until county-market mapping is verified.",
         "- Aggregate county-year limitation: public OEP PUFs do not support individual retention or income-stratified county outcomes.",
         "",
@@ -1205,14 +1556,16 @@ def make_report(
         "",
         f"Recommendation: **{recommendation}**",
         "",
-        "The conservative recommendation is to repair or tighten Step 2 treatment construction before formal Step 4 treatment regressions. Outcome descriptives are useful, but treatment prevalence and sample alignment are not yet close enough to treat Step 2 as frozen.",
+        "The conservative recommendation is to repair Step 2 treatment construction before formal Step 4 treatment regressions. Sample alignment and OEP outcome descriptives are now strong after eTable 3 harmonization, but treatment definition, across-insurer classification, non-EHB handling, 2021 weights, and control variables are not yet close enough to freeze Step 2.",
         "",
         "## Final Self-Audit Checklist",
         "",
         "- [x] Did I avoid causal claims?",
         "- [x] Did I avoid DID/regression/covariate-adjusted causal models?",
+        "- [x] Did I use Drake article and supplement details, especially eAppendix 1/eTable 3 missing-data handling?",
         "- [x] Did I read the Step 2 report and validation flags?",
         "- [x] Did I verify that processed datasets are actually readable and nonempty?",
+        "- [x] Did I apply Drake supplement eTable 3 exclusions transparently rather than arbitrary deletion?",
         "- [x] Did I reproduce Table 1-style reenrollment descriptives?",
         "- [x] Did I compare our values to Drake reference values?",
         "- [x] Did I compute treatment prevalence by year and state-year?",
@@ -1231,9 +1584,9 @@ def make_report(
 
 def make_progress_memo(status: str, recommendation: str, warnings: list[str], sensitivity: pd.DataFrame) -> None:
     next_tasks = [
-        "Obtain or reconstruct Drake's exact county list, or define a transparent harmonized complete-case county rule.",
-        "Repair or validate the zero-premium proxy, especially 2021 fallback and 2023-to-2024 current-plan joins.",
-        "Rerun Step 3 after Step 2 repair and only then decide whether Step 4 regressions are justified.",
+        "Repair Step 2 treatment construction against Drake's exact 125 percent FPL, non-EHB, and current-year plan/default logic.",
+        "Add or reconstruct 2021 enrollment weights, bronze spread, and insurer-count variables needed for Drake Table 2 and regressions.",
+        "Rerun Step 3 after treatment/control repairs before starting Step 4 regressions.",
     ]
     memo = [
         "# Step 3 Progress And Limitations",
@@ -1241,13 +1594,14 @@ def make_progress_memo(status: str, recommendation: str, warnings: list[str], se
         "## Completed",
         "",
         "- Verified that processed Step 2 datasets are readable and nonempty.",
-        "- Produced sample-alignment diagnostics, Table 1-style reenrollment descriptives, treatment prevalence, Table 2-style descriptive comparisons, sign checks, weakness audits, and sensitivity datasets.",
+        "- Applied Drake supplement eTable 3 county exclusions and wrote a Drake-harmonized Step 3 dataset.",
+        "- Produced sample-alignment diagnostics, Table 1-style reenrollment descriptives, treatment prevalence, exposure/count comparisons, Table 2-style descriptive comparisons, sign checks, weakness audits, and sensitivity datasets.",
         "- Wrote `docs/step3_descriptive_replication_report.md`.",
         "",
         "## Partially Completed",
         "",
-        "- The 2,188 vs 2,159 county discrepancy is diagnosed but not fully resolved because Drake's exact county list is not available in the repository.",
         "- Treatment prevalence is benchmark-proxy based and only partially comparable to Drake exposure tables.",
+        "- Across-insurer turnover remains under-detected relative to Drake.",
         "",
         "## Not Completed",
         "",
@@ -1256,9 +1610,10 @@ def make_progress_memo(status: str, recommendation: str, warnings: list[str], se
         "",
         "## Main Findings In Plain English",
         "",
-        "- The outcome data broadly reproduce the public OEP reenrollment structure.",
-        "- The sample has 29 more counties than Drake reports, and this is not explained by missing years.",
-        "- Treatment prevalence is high under the current proxy, so treatment construction needs stricter validation before formal replication.",
+        "- The 29-county sample gap is explained by Drake supplement eTable 3; after excluding those counties, the sample matches Drake's county anchors.",
+        "- The outcome data very closely reproduce the public OEP reenrollment structure.",
+        "- Any-turnover prevalence is directionally plausible, but across-insurer turnover is too low relative to Drake.",
+        "- Treatment construction needs stricter validation before formal replication.",
         "- 2022 remains weaker because it depends on the 2021 fallback construction.",
         "",
         "## Honest Judgment",
@@ -1303,28 +1658,37 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
 
     full = subset_years(datasets[FULL_DATASET.name], years)
     primary_source = NEBRASKA_DATASET.name if args.include_nebraska else PRIMARY_DATASET.name
-    primary = subset_years(datasets[primary_source], years)
+    primary_raw = subset_years(datasets[primary_source], years)
+    primary_raw = add_drake_supplement_exclusion_flags(primary_raw)
+    excluded_check = make_drake_excluded_counties_check(primary_raw)
+    if args.include_nebraska:
+        primary = primary_raw.copy()
+        harmonized_path = NEBRASKA_DATASET
+    else:
+        primary = primary_raw[primary_raw["included_drake_harmonized_sample"]].copy()
+        harmonized_path = write_harmonized_dataset(primary)
     ne = subset_years(datasets[NEBRASKA_DATASET.name], years) if NEBRASKA_DATASET.name in datasets else None
     state_meta = pd.read_csv(METADATA / "healthcaregov_state_sample_2022_2024.csv") if (METADATA / "healthcaregov_state_sample_2022_2024.csv").exists() else None
 
-    sample_alignment, county_diag = make_sample_alignment(full, primary, ne, state_meta)
+    sample_alignment, county_diag = make_sample_alignment(full, primary_raw, primary, ne, state_meta, excluded_check)
     table1 = make_table1(primary)
-    prevalence_by_year, prevalence_by_state_year, prevalence_weighted = make_turnover_prevalence(primary)
+    prevalence_by_year, prevalence_by_state_year, prevalence_weighted, exposure_comparison, turnover_counts = make_turnover_prevalence(primary)
     table2 = make_table2(primary)
     sign = make_sign_check(table2)
-    problem_diag, problem_states = make_problem_state_diagnostics(primary)
-    make_join_failure_breakdown(primary)
+    problem_diag, problem_states = make_problem_state_diagnostics(primary_raw, primary)
+    make_join_failure_breakdown(primary, raw_primary=primary_raw)
     make_zero_premium_proxy_audit(primary)
     sensitivity = make_sensitivity_datasets(primary, problem_states)
-    status, recommendation, warnings = choose_recommendation(check, sample_alignment, table1, prevalence_by_year, problem_states)
-    make_report(status, recommendation, warnings, sample_alignment, table1, prevalence_by_year, table2, sign, problem_states, sensitivity, county_diag)
+    status, recommendation, warnings = choose_recommendation(check, sample_alignment, table1, prevalence_by_year, turnover_counts, exposure_comparison, table2, problem_states)
+    make_report(status, recommendation, warnings, sample_alignment, table1, prevalence_by_year, exposure_comparison, turnover_counts, table2, sign, problem_states, sensitivity, county_diag, excluded_check)
     make_progress_memo(status, recommendation, warnings, sensitivity)
     logging.info("Step 3 complete")
     return {
         "status": status,
         "recommendation": recommendation,
         "warnings": warnings,
-        "dataset_path": str((NEBRASKA_DATASET if args.include_nebraska else PRIMARY_DATASET).relative_to(ROOT)),
+        "dataset_path": str(harmonized_path.relative_to(ROOT)),
+        "raw_dataset_path": str((NEBRASKA_DATASET if args.include_nebraska else PRIMARY_DATASET).relative_to(ROOT)),
         "rows": len(primary),
         "counties": primary["county_fips"].nunique(),
         "states": primary["state"].nunique(),
@@ -1352,6 +1716,8 @@ def main() -> None:
     result = run(args)
     print("\nStep 3 status:", result["status"])
     print("Primary dataset path:", result.get("dataset_path", str(PRIMARY_DATASET.relative_to(ROOT))))
+    if result.get("raw_dataset_path"):
+        print("Raw input dataset path:", result["raw_dataset_path"])
     print("Rows, counties, states, years:", result.get("rows", ""), result.get("counties", ""), result.get("states", ""), result.get("years", ""))
     print("Dataset readable:", result.get("readable", False))
     print("Table 1-style descriptives produced:", result.get("table1_done", False))

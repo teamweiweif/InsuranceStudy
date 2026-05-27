@@ -1,0 +1,33 @@
+state,county_fips,county_name_in_supplement,supplement_reason,observed_county_names,rows_present,years_present,enrollment_present,any_missing_crosswalk,any_missing_current_plan,any_missing_premium,present_in_current_primary_sample
+SD,46113,Shannon County,FIPS changed over time; Shannon County changed to Oglala Lakota County/FIPS 46102 before the study period.,,0,,0.0,False,False,False,False
+VA,51515,Bedford City,FIPS changed over time; Bedford City combined with Bedford County before the study period.,,0,,0.0,False,False,False,False
+VA,51019,Bedford County,FIPS changed over time; Bedford City combined with Bedford County before the study period.,,0,,0.0,False,False,False,False
+GA,13009,Baldwin County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",9230.0,True,True,True,True
+GA,13013,Barrow County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",20455.0,True,True,True,True
+GA,13021,Bibb County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",39293.0,True,True,True,True
+GA,13051,Chatham County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",78532.0,True,True,True,True
+GA,13059,Clarke County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",25225.0,True,True,True,True
+GA,13141,Hancock County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",1729.0,True,True,True,True
+GA,13157,Jackson County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",15846.0,True,True,True,True
+GA,13207,Monroe County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",4752.0,True,True,True,True
+GA,13215,Muscogee County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",42910.0,True,True,True,True
+GA,13219,Oconee County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",6907.0,True,True,True,True
+GA,13225,Peach County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",6044.0,True,True,True,True
+GA,13227,Pickens County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",6906.0,True,True,True,True
+GA,13245,Randolph County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",41727.0,True,True,True,True
+GA,13319,Wilkinson County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",1705.0,True,True,True,True
+NC,37001,Alamance County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",32522.0,True,True,True,True
+NC,37033,Caswell County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",4354.0,True,True,True,True
+NC,37037,Chatham County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",16386.0,True,True,True,True
+NC,37065,Edgecombe County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",10698.0,True,True,True,True
+NC,37079,Greene County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",4335.0,True,True,True,True
+NC,37081,Guilford County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",127622.0,True,True,True,True
+NC,37105,Lee County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",11715.0,True,True,True,True
+NC,37127,Nash County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",17361.0,True,True,True,True
+NC,37145,Person County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",7456.0,True,True,True,True
+NC,37147,Pitt County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",34707.0,True,True,True,True
+NC,37151,Randolph County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",30508.0,True,True,True,True
+NC,37157,Rockingham County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",16294.0,True,True,True,True
+NC,37189,Watauga County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",12661.0,True,True,True,True
+NC,37191,Wayne County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",21912.0,True,True,True,True
+NC,37195,Wilson County,No crosswalk data from 2023 to 2024 per Drake supplement eTable 3.,,3,"2022,2023,2024",17219.0,True,True,True,True

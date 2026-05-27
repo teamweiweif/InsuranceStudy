@@ -1,16 +1,16 @@
 # Step 3 Table 2-Style Descriptive Comparison By Turnover Status
 
-Outcome shares are shown as percentage-point differences below. The CSV also includes available plan-market variables and absent-variable rows.
+Outcome shares are shown as percentage-point differences below. The CSV also includes available plan-market variables and absent-variable rows. These diagnostics are unadjusted and use current-year Cnsmr weights; Drake Table 2 uses 2021 enrollment weights and year-adjusted differences.
 
 | comparison | variable | untreated_county_years | treated_county_years | unweighted_difference | cnsmr_weighted_difference | notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| any_zero_to_positive_turnover | overall_reenrollment_share | 1851 | 4683 | 0.503 | 1.570 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover | automatic_passive_share | 1851 | 4683 | -1.192 | -1.581 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover | active_share | 1851 | 4683 | 1.676 | 3.151 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover | active_stay_share | 1851 | 4683 | -4.637 | -2.224 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover | active_switch_share | 1851 | 4683 | 6.347 | 5.375 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover_across_issuer | overall_reenrollment_share | 6411 | 123 | 2.697 | -1.198 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | 6411 | 123 | -3.764 | -2.733 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover_across_issuer | active_share | 6411 | 123 | 6.487 | 1.535 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover_across_issuer | active_stay_share | 6411 | 123 | 1.798 | -1.936 | Descriptive comparison only; not a causal contrast. |
-| any_zero_to_positive_turnover_across_issuer | active_switch_share | 6411 | 123 | 4.651 | 3.470 | Descriptive comparison only; not a causal contrast. |
+| any_zero_to_positive_turnover | overall_reenrollment_share | 1851 | 4625 | 0.538 | 1.592 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover | automatic_passive_share | 1851 | 4625 | -1.161 | -1.593 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover | active_share | 1851 | 4625 | 1.679 | 3.184 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover | active_stay_share | 1851 | 4625 | -4.540 | -2.163 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover | active_switch_share | 1851 | 4625 | 6.254 | 5.348 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover_across_issuer | overall_reenrollment_share | 6353 | 123 | 2.673 | -1.213 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover_across_issuer | automatic_passive_share | 6353 | 123 | -3.791 | -2.727 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover_across_issuer | active_share | 6353 | 123 | 6.490 | 1.513 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover_across_issuer | active_stay_share | 6353 | 123 | 1.715 | -1.992 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |
+| any_zero_to_positive_turnover_across_issuer | active_switch_share | 6353 | 123 | 4.736 | 3.505 | Descriptive comparison only; not a causal contrast. Uses current-year Cnsmr weights rather than Drake's 2021 weights. |

@@ -24,6 +24,8 @@
 
 **Conditional Go**.
 
+Step 3 update: descriptive replication has now been run using Drake supplement details. The raw 2,188-county Step 2 primary sample is preserved, but Step 3 applies the supplement eTable 3 county exclusions and produces a 2,159-county Drake-harmonized sample. Outcome descriptives match Drake closely. The updated judgment before Step 4 is **Fix Step 2 before Step 4**, mainly because the treatment proxy, across-insurer classification, non-EHB handling, and 2021 enrollment weights/control variables are not yet sufficiently replicated.
+
 ## Immediate Next Actions
 
 1. Review 2021 fallback panel and decide whether to keep 2021 to 2022 in the primary treatment set.
@@ -31,3 +33,10 @@
 3. Review Nebraska sensitivity before deciding whether NE can enter any analysis.
 4. Compare treatment prevalence with Drake-style descriptive patterns before modeling.
 5. Freeze the dataset version only after validation flags are reviewed.
+
+Updated after Step 3:
+
+1. Repair zero-premium treatment construction against Drake's 125 percent FPL and non-EHB details.
+2. Reconcile across-insurer turnover counts with Drake's 211 county-year anchor.
+3. Add or reconstruct 2021 enrollment weights, bronze spread, and insurer-count controls.
+4. Rerun Step 3 before any Step 4 regression replication.

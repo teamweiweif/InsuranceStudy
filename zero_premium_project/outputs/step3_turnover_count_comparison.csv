@@ -1,0 +1,6 @@
+metric,our_value,drake_reference,difference,notes
+constructible_county_years,6476.0,6459.0,17.0,Drake Table 2 reports 6459 county-years. Our count is constructible rows after eTable 3 exclusions; remaining difference likely reflects 2021 weights/control availability and OEP suppression.
+any_turnover_county_years,4625.0,4452.0,173.0,Main article reports 4452 county-years with any turnover.
+across_issuer_turnover_county_years,123.0,211.0,-88.0,Main article reports 211 county-years with across-insurer turnover. This is the clearest treatment-definition mismatch.
+any_turnover_enrollee_years_millions,30.253367,28.4,1.8533670000000022,Main article reports 28.4 million enrollee-years with any turnover.
+across_issuer_turnover_enrollee_years_millions,1.192653,0.8,0.3926529999999999,Main article reports 0.8 million enrollee-years with across-insurer turnover.
