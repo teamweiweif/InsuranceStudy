@@ -1,16 +1,16 @@
-2026-05-27 19:52:03,043 INFO Loading raw crosswalk candidates for 2021_to_2022
-2026-05-27 19:52:04,018 INFO Loading raw crosswalk candidates for 2022_to_2023
-2026-05-27 19:52:05,392 INFO Loading raw crosswalk candidates for 2023_to_2024
-2026-05-27 19:52:06,959 INFO Selecting default rows under rule: current_repo_rule
-2026-05-27 19:52:07,130 INFO Selecting default rows under rule: no_same_issuer_priority
-2026-05-27 19:52:07,303 INFO Selecting default rows under rule: source_order_first_valid
-2026-05-27 19:52:07,490 INFO Selecting default rows under rule: lowest_crosswalk_level
-2026-05-27 19:52:07,670 INFO Selecting default rows under rule: same_plan_if_available_else_source_order
-2026-05-27 19:52:13,311 INFO Selecting default rows under rule: same_plan_if_available_else_lowest_level
-2026-05-27 19:52:18,220 INFO Selecting default rows under rule: whole_county_00000_only
-2026-05-27 19:52:18,385 INFO Selecting default rows under rule: county_any_zip_turnover
-2026-05-27 19:52:18,509 INFO Selecting default rows under rule: county_any_zip_across_turnover
-2026-05-27 19:52:18,623 INFO Selecting default rows under rule: reason8_priority
-2026-05-27 19:52:18,795 INFO Selecting default rows under rule: exclude_level4_5
-2026-05-27 19:52:18,968 INFO Selecting default rows under rule: include_level4_5_as_missing_current
-2026-05-27 19:56:44,704 INFO Crosswalk default mapping audit complete
+2026-05-27 23:21:19,778 INFO Loading raw crosswalk candidates for 2021_to_2022
+2026-05-27 23:21:20,258 INFO Loading raw crosswalk candidates for 2022_to_2023
+2026-05-27 23:21:20,942 INFO Loading raw crosswalk candidates for 2023_to_2024
+2026-05-27 23:21:21,793 INFO Selecting default rows under rule: current_repo_rule
+2026-05-27 23:21:21,885 INFO Selecting default rows under rule: no_same_issuer_priority
+2026-05-27 23:21:21,969 INFO Selecting default rows under rule: source_order_first_valid
+2026-05-27 23:21:22,055 INFO Selecting default rows under rule: lowest_crosswalk_level
+2026-05-27 23:21:22,141 INFO Selecting default rows under rule: same_plan_if_available_else_source_order
+2026-05-27 23:21:26,812 INFO Selecting default rows under rule: same_plan_if_available_else_lowest_level
+2026-05-27 23:21:31,218 INFO Selecting default rows under rule: whole_county_00000_only
+2026-05-27 23:21:31,297 INFO Selecting default rows under rule: county_any_zip_turnover
+2026-05-27 23:21:31,355 INFO Selecting default rows under rule: county_any_zip_across_turnover
+2026-05-27 23:21:31,413 INFO Selecting default rows under rule: reason8_priority
+2026-05-27 23:21:31,496 INFO Selecting default rows under rule: exclude_level4_5
+2026-05-27 23:21:31,582 INFO Selecting default rows under rule: include_level4_5_as_missing_current
+2026-05-27 23:24:09,797 INFO Crosswalk default mapping audit complete
