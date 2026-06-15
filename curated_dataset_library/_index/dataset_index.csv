@@ -1,0 +1,29 @@
+dataset_id,dataset_name,status,folder,core_metadata_files,supporting_files,official_page_files,duplicate_or_uncertain_files,total_curated_files,total_curated_bytes
+d001_adarc_2021_england_wales,Administrative Data | Agricultural Research Collection 2021: England and Wales,existing,d001_adarc_2021_england_wales,5,0,0,1,6,1226568
+d002_adarc_2011_northern_ireland,Administrative Data | Agricultural Research Collection: 2011 - Northern Ireland,existing,d002_adarc_2011_northern_ireland,2,0,0,0,2,11016937
+d003_adarc_2011_england_wales,Administrative Data | Agricultural Research Collection: 2011 - England and Wales,existing,d003_adarc_2011_england_wales,4,0,0,0,4,1206559
+d004_ashe_2011_census_england_wales,Annual Survey of Hours and Earnings linked to 2011 Census - England and Wales,existing,d004_ashe_2011_census_england_wales,3,1,0,0,4,2253235
+d005_ashe_2021_census_england_wales,Annual Survey of Hours and Earnings linked to Census 2021 - England and Wales,existing,d005_ashe_2021_census_england_wales,2,2,0,1,5,17042410
+d006_ashe_2021_census_northern_ireland,Annual Survey of Hours and Earnings linked to Census 2021 - Northern Ireland,existing,d006_ashe_2021_census_northern_ireland,2,0,0,0,2,850958
+d007_ashe_migrant_workers_scan,"Annual Survey of Hours and Earnings linked to Migrant Workers Scan - England, Scotland and Wales",existing,d007_ashe_migrant_workers_scan,2,0,0,0,2,248638
+d008_ashe_paye_self_assessment,"Annual Survey of Hours and Earnings linked to PAYE and Self-Assessment data - England, Scotland and Wales",existing,d008_ashe_paye_self_assessment,4,3,0,0,7,2550120
+d009_business_data_research_2022_ni,Business Data for Research 2022 - Northern Ireland,existing,d009_business_data_research_2022_ni,2,0,0,0,2,4404087
+d010_crcs_wales,Children Receiving Care and Support Census - Wales,existing,d010_crcs_wales,3,1,0,0,4,5851008
+d011_cgiad_2019_20_ni,Cross Government Income Administrative Dataset 2019/20 - Northern Ireland,existing,d011_cgiad_2019_20_ni,2,0,0,0,2,406844
+d012_data_first_cross_justice,Data First: Cross-Justice System - England and Wales,existing,d012_data_first_cross_justice,8,0,0,0,8,2088928
+d013_data_first_family_court_cafcass_census2021,Data First: Family Court linked to Cafcass and Census 2021 - England and Wales,existing,d013_data_first_family_court_cafcass_census2021,6,0,0,0,6,994860
+d014_earnings_employees_study_2011_ni,Earnings and Employees Study 2011 - Northern Ireland,existing,d014_earnings_employees_study_2011_ni,2,0,0,0,2,791684
+d015_echild_england,Education and Child Health Insights from Linked Data - England,existing,d015_echild_england,1,0,0,1,2,1388020
+d016_education_outcomes_linkage_ni,Education Outcomes Linkage 2018/19-2021/22 - Northern Ireland,existing,d016_education_outcomes_linkage_ni,2,0,0,0,2,837950
+d017_grading_admissions_england,Grading and Admissions Data for England,existing,d017_grading_admissions_england,4,0,0,0,4,796229
+d018_leo_england,Longitudinal Education Outcomes - England,existing,d018_leo_england,3,0,0,0,3,1965657
+d019_looked_after_children_wales,Looked After Children Dataset - Wales,existing,d019_looked_after_children_wales,2,1,0,0,3,25895
+d020_looked_after_children_scotland,Looked After Children Longitudinal Dataset - Scotland,existing,d020_looked_after_children_scotland,6,0,0,0,6,4372179
+d021_moj_dfe_linked_dataset_england,Ministry of Justice & Department for Education linked dataset - England,existing,d021_moj_dfe_linked_dataset_england,1,0,0,0,1,786369
+d022_nmc_register_census2021_england_wales,Nursing and Midwifery Council Register linked to Census 2021 - England and Wales,existing,d022_nmc_register_census2021_england_wales,2,0,0,0,2,560833
+d023_rapid_uk,"RAPID: Population interactions with employment, benefits and pensions - UK",existing,d023_rapid_uk,2,0,0,0,2,3893018
+d024_scottish_leo_university_extract,Scottish Longitudinal Education Outcomes (LEO) - University extract,existing,d024_scottish_leo_university_extract,2,0,0,0,2,1680211
+d025_kehc_phase1,Kids' Environment and Health Cohort (KEHC) Phase 1,upcoming,d025_kehc_phase1,1,2,0,1,4,3807637
+d026_leo_ni,Longitudinal Education Outcomes Northern Ireland (LEO NI),upcoming,d026_leo_ni,0,0,0,0,0,0
+d027_adult_health_social_care_census_scotland,"Adult Health, Social Care and Census - Scotland",upcoming,d027_adult_health_social_care_census_scotland,0,0,0,0,0,0
+d028_housing_health_environment_scotland,"Housing, Health & Environment - Scotland",upcoming,d028_housing_health_environment_scotland,0,0,0,0,0,0

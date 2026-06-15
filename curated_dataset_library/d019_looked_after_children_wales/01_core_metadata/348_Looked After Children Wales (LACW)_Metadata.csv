@@ -1,0 +1,59 @@
+Section,Value,Field
+Dataset,Name,"Looked After Children Wales (LACW)"
+Dataset,"Gateway URL",https://web.prod.hdruk.cloud//dataset/348?version=1.0.0
+Dataset,"Dataset Type","Health and disease"
+Dataset,"Dataset Sub-type","Not applicable"
+Dataset,"Collection Sources",Community
+"Summary Demographics","Population Size",-1
+"Summary Demographics",Years,1999-06-21
+"Summary Demographics","Associate BioSamples",
+"Summary Demographics","Geographic coverage","United Kingdom,Wales"
+"Summary Demographics","Lead time","2-6 months"
+Summary,Abstract,"Information about Looked After Children Wales. Includes demographic and episode level information."
+Summary,"DOI for dataset",
+Documentation,Description,"Information about Looked After Children Wales. Includes demographic and episode level information."
+Documentation,"Dataset type","Health and disease"
+Documentation,"Dataset sub-type",
+Documentation,"Dataset population size",-1
+Documentation,"Associated media","https://saildatabank.com/about-us/;,;https://ijpds.org/article/view/1752;,;https://adrwales.org/wp-content/uploads/2023/06/Data-Explained-CLA-datasets_final.pdf"
+Documentation,"Synthetic data web link",
+Keywords,Keywords,"Children;,;Welsh;,;SAIL;,;core-res;,;LACW;,;Health & Wellbeing;,;Children & Young People;,;Welsh Government"
+Provenance,"Purpose of dataset collection",Administrative
+Provenance,"Source of dataset extraction",EPR
+Provenance,"Collection source setting",Community
+Provenance,"Patient pathway description","Administrative. Linkable to health datasets across patient pathway."
+Provenance,"Image contrast","Not stated"
+Provenance,"Biological sample availability",
+Details,"Publishing frequency",Annual
+Details,Version,20.0.0
+Details,Modified,2024-10-08T11:29:36.006073Z
+Details,"Distribution release date",
+Details,"Citation Requirements","Welsh Goverment,,"
+Coverage,"Start date",1999-06-21
+Coverage,"End date",2022-03-29
+Coverage,"Time lag","2-6 months"
+Coverage,"Geographic coverage","United Kingdom,Wales"
+Coverage,"Minimum age range",0
+Coverage,"Maximum age range",18
+Coverage,Follow-up,Other
+Coverage,"Dataset completeness",
+Omics,Assay,
+Omics,Platform,
+Accessibility,Language,en
+Accessibility,"Alignment with standardised data models",
+Accessibility,"Controlled vocabulary",LOCAL
+Accessibility,Format,"SQL database table"
+"Data Access Request","Dataset pipeline status","Not available"
+"Data Access Request","Access rights",https://saildatabank.com/data/apply-to-work-with-the-data/
+"Data Access Request","Time to dataset access","2-6 months"
+"Data Access Request","Access request cost","Data provision is free from SAIL. Overall project costing depends on the number of people that require access to the SAIL Gateway, the activities that SAIL needs to complete (e.g. loading non-standard datasets), data refreshes, analytical work required, disclosure control process, and special case technological requirements."
+"Data Access Request","Access method category",TRE/SDE
+"Data Access Request","Access mode","Project-specific restrictions;,;Time limit on use;,;User-specific restriction"
+"Data Access Request","Access service description","The SAIL Databank is powered by the UK Secure e-Research Platform (UKSeRP). Following approval through safeguard processes, access to project-specific data within the secure environment is permitted using two-factor authentication."
+"Data Access Request",Jurisdiction,GB-WLS
+"Data Access Request","Data use limitation","General research use"
+"Data Access Request","Data use requirements","Project-specific restrictions;,;Time limit on use;,;User-specific restriction"
+"Data Access Request","Data Controller","SAIL Databank"
+"Data Access Request","Data Processor","SAIL Databank"
+"Data Access Request",Investigations,null
+Demographics,"Demographic Frequency",null

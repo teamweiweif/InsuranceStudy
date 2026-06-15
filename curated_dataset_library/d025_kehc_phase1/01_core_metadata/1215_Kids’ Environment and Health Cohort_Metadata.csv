@@ -1,0 +1,59 @@
+Section,Value,Field
+Dataset,Name,"Kids’ Environment and Health Cohort"
+Dataset,"Gateway URL",http://www.example.com/
+Dataset,"Dataset Type","Health and disease;,;Treatments/Interventions;,;Socioeconomic;,;Lifestyle;,;Environment and energy;,;Registry"
+Dataset,"Dataset Sub-type",
+Dataset,"Collection Sources",
+"Summary Demographics","Population Size",-1
+"Summary Demographics",Years,2006-01-01T17:00:12.000Z
+"Summary Demographics","Associate BioSamples","None/not available"
+"Summary Demographics","Geographic coverage",England
+"Summary Demographics","Lead time","2-6 months"
+Summary,Abstract,"The Kids’ Environment and Health Cohort will link birth and mortality records, health and educational attainment datasets, to maternal health (up to 12 months before their child’s birth), and environmental data for all children born in England from 2006 (~11 million children).   Children born between 2010 and 2012, and between 2020 and 2022 will be linked to their mothers’ Census records. The cohort is held and accessed via the trusted research environment at the Office for National Statistics."
+Summary,"DOI for dataset",
+Documentation,Description,"The Kids’ Environment and Health Cohort will link birth and mortality records, health and educational attainment datasets, to maternal health (up to 12 months before their child’s birth), and environmental data for all children born in England from 2006 (~11 million children).   Children born between 2010 and 2012, and between 2020 and 2022 will be linked to their mothers’ Census records. The cohort is held and accessed via the trusted research environment at the Office for National Statistics."
+Documentation,"Dataset type","Health and disease;,;Treatments/Interventions;,;Socioeconomic;,;Lifestyle;,;Environment and energy;,;Registry"
+Documentation,"Dataset sub-type",
+Documentation,"Dataset population size",-1
+Documentation,"Associated media",https://pmc.ncbi.nlm.nih.gov/articles/PMC11878347/
+Documentation,"Synthetic data web link",
+Keywords,Keywords,"Kids’ Environment and Health Cohort;,;KEHC;,;Death registration;,;Birth registration;,;Birth notification;,;Census 2011;,;Census 2021;,;Census;,;Hospital Episode Statistics;,;Maternity Services;,;Mental Health Services;,;Community Dispensing Data;,;National Pupil Database;,;NPD;,;HES;,;Schools;,;Environmental exposures;,;Environment"
+Provenance,"Purpose of dataset collection","Research cohort;,;Administrative;,;Care;,;Other"
+Provenance,"Source of dataset extraction",
+Provenance,"Collection source setting",
+Provenance,"Patient pathway description",
+Provenance,"Image contrast","Not stated"
+Provenance,"Biological sample availability","None/not available"
+Details,"Publishing frequency",Other
+Details,Version,1.0.0
+Details,Modified,2025-03-25T15:51:25.000Z
+Details,"Distribution release date",2026-03-01T17:00:01.000Z
+Details,"Citation Requirements","Yes,,"
+Coverage,"Start date",2006-01-01T17:00:12.000Z
+Coverage,"End date",2022-12-31T17:00:40.000Z
+Coverage,"Time lag",Other
+Coverage,"Geographic coverage",England
+Coverage,"Minimum age range",0
+Coverage,"Maximum age range",19
+Coverage,Follow-up,"> 10 Years"
+Coverage,"Dataset completeness",https://doi.org/10.23889/ijpds.v10i1.2475
+Omics,Assay,
+Omics,Platform,
+Accessibility,Language,en
+Accessibility,"Alignment with standardised data models",LOCAL
+Accessibility,"Controlled vocabulary",LOCAL
+Accessibility,Format,"SQL Database"
+"Data Access Request","Dataset pipeline status","Not available"
+"Data Access Request","Access rights","The Kids’ Environment and Health Cohort (KEHC) dataset will be available for research within the secure ONS Trusted Research Environment (TRE). The specific access conditions are currently under development, but access to de-identified, project-specific datasets will need approval from the UK Statistics Authority (UKSA) through its Research Accreditation Panel (RAP). Researchers will be able to access the data for approved projects after completing required training and becoming ONS approved researchers, under conditions set by UCL and data providers."
+"Data Access Request","Time to dataset access","2-6 months"
+"Data Access Request","Access request cost",£0
+"Data Access Request","Access method category",TRE/SDE
+"Data Access Request","Access mode","Ethics approval required;,;Project-specific restrictions;,;Geographical restrictions;,;Not for profit use"
+"Data Access Request","Access service description",
+"Data Access Request",Jurisdiction,UK
+"Data Access Request","Data use limitation","Geographical restrictions;,;Research use only;,;Research-specific restrictions;,;Project-specific restrictions;,;Not for profit use;,;No linkage"
+"Data Access Request","Data use requirements","Ethics approval required;,;Project-specific restrictions;,;Geographical restrictions;,;Not for profit use"
+"Data Access Request","Data Controller","UCL Child Health Informatics Group (CHIG)"
+"Data Access Request","Data Processor","UCL Child Health Informatics Group (CHIG)"
+"Data Access Request",Investigations,null
+Demographics,"Demographic Frequency",null

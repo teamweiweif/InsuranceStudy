@@ -1,0 +1,412 @@
+"Table Name","Table Description","Column Name","Column Description","Data Type",Sensitive
+CASELOCALAUTHORITIES,"Table contains details of the primary Local authority",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CASELOCALAUTHORITIES,"Table contains details of the primary Local authority",CASEID_E,"Encrypted Case ID. Unique ID for this table.",BIGINT,false
+CASELOCALAUTHORITIES,"Table contains details of the primary Local authority",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+CASELOCALAUTHORITIES,"Table contains details of the primary Local authority",ISPRIMARY,"Flags the Primary LA on the case.",VARCHAR,false
+CASELOCALAUTHORITIES,"Table contains details of the primary Local authority",LAID,"Local Authority ID. Links to [ECMS_LOCALAUTHORITIES] lookup.",INTEGER,false
+CMS_TBLADDRESS,"Information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included. Special access required.",ADDRESSID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+CMS_TBLADDRESS,"Information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included. Special access required.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLADDRESS,"Information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included. Special access required.",ISINSTITUTION,"Indicates if this address is an institution. Special access required.",VARCHAR,false
+CMS_TBLADDRESS,"Information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included. Special access required.",IS_INCARCERATED,"Indicates if this address references a prison or a psychiatric hospital. Special access required.",SMALLINT,false
+CMS_TBLADDRESS,"Information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included. Special access required.",LSOA_2011_CODE,"Lower Layer Super Output Area (LSOA 2011 code) of this address. Special access required.",VARCHAR,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",ADDRESSHISTORYID_E,"Encrypted Address History ID. Unique ID for this table. Special access required.",BIGINT,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",ADDRESSREF_E,"Encrypted Address ID. Links to [CMS_TBLADDRESS] table. Special access required.",BIGINT,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",FINALDATE,"Final Date at this address. Special access required.",DATE,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",ISINSTITUTION,"Indicates if this address is an institution. Special access required.",VARCHAR,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",PERSONREF_E,"Encrypted Person ID. Links to [CMS_TBLPERSON] table. Special access required.",BIGINT,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",STARTDATE,"Start Date at this address. Special access required.",DATE,false
+CMS_TBLADDRESSHISTORY,"Address History data that links a person to an address. Special access required.",UNKNOWNADDRESS,"Indicates if this address is unknown. Special access required.",VARCHAR,false
+CMS_TBLCASE,"Information on individual cases.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLCASE,"Information on individual cases.",C1NOTRECEIVED,"Indicates if Form C1 was not received (private law only). Special access required.",VARCHAR,false
+CMS_TBLCASE,"Information on individual cases.",CASEID_E,"Encrypted Case ID. Unique ID for this table.",BIGINT,false
+CMS_TBLCASE,"Information on individual cases.",CASESTATUSREF,"Case Status ID (always 3 (i.e. closed) in this extract). Links to [CMS_TLKPCASESTATUS] lookup.",SMALLINT,false
+CMS_TBLCASE,"Information on individual cases.",CASETYPE,"Case Type Description.",VARCHAR,false
+CMS_TBLCASE,"Information on individual cases.",CASETYPEREF,"Case Type ID. Links to [CMS_TLKPCASEAPPLICATIONTYPE] lookup.",SMALLINT,false
+CMS_TBLCASE,"Information on individual cases.",CURRENTCOURTREF,"Court ID. Links to [CMS_TLKPCOURT] lookup.",SMALLINT,false
+CMS_TBLCASE,"Information on individual cases.",DATECASECOMPLETED,"Date this case was completed.",DATE,false
+CMS_TBLCASE,"Information on individual cases.",FORMREF,"Form ID. Links to [CMS_TLKPFORM] lookup.",SMALLINT,false
+CMS_TBLCASE,"Information on individual cases.",HARMBOX,"Indicates harm (i.e. if the harm box was ticked on the application) (private law only).",VARCHAR,false
+CMS_TBLCASE,"Information on individual cases.",ISFURTHERWORK,"Idicates if there is still further work on the case (always FALSE in this extract). Special access required.",VARCHAR,false
+CMS_TBLCASE,"Information on individual cases.",LAWTYPEREF,"Law Type ID. Links to [CMS_TLKPLAWTYPE] lookup.",SMALLINT,false
+CMS_TBLCASE,"Information on individual cases.",LOCALAUTHORITYREF,"Local Authority ID. Links to [CMS_TLKPLOCALAUTHORITY] lookup.",SMALLINT,false
+CMS_TBLCASE,"Information on individual cases.",REGIONREF,"Region ID. Links to [CMS_TLKPREGION] lookup. Special access required.",SMALLINT,false
+CMS_TBLCASE,"Information on individual cases.",SAFEGUARDINGCOMPLETED,"Indicates if safeguarding has been completed. Special access required.",VARCHAR,false
+CMS_TBLCASE,"Information on individual cases.",TRIALSCHEMEREF,"Trial Scheme ID. Links to [CMS_TLKPTRIALSCHEME] lookup. Special access required.",SMALLINT,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",CASEAPPLICATIONID_E,"Encrypted Application ID. Unique ID for this table.",BIGINT,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",CASEAPPLICATIONTYPEREF,"Application Type ID. Links to [CMS_TLKPCASEAPPLICATIONTYPE] lookup.",SMALLINT,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",CASEREF_E,"Encrypted Case ID. Links to [CMS_TBLCASE] table.",BIGINT,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",COURTREF,"Court ID. Links to [CMS_TLKPCOURT] lookup.",SMALLINT,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",DATEAPPLICATIONCOMPLETED,"Date this application was completed (imputed). This is the same as [DATACOMPLETED] if available, otherwise the case completion date was used.",DATE,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",DATECOMPLETED,"Date this application was completed (original).",DATE,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",DATEOFAPPLICATION,"Date of this application.",DATE,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",DATERECEIVED,"Date this application was received.",DATE,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",ISFIRST,"Indicates if this application is the first application in the case.",VARCHAR,false
+CMS_TBLCASEAPPLICATION,"Information on individual applications.",ISLEAD,"Indicates if this application is the lead application in the case.",VARCHAR,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",CASEAPPLICATIONMEMBERID_E,"Encrypted Application Member ID. Unique ID for this table.",BIGINT,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",CASEAPPLICATIONREF_E,"Encrypted Application ID. Links to [CMS_TBLCASEAPPLICATION] table.",BIGINT,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",CONVERTEDTYPE,"Application member type as recorded in the legacy system (superseded by [MEMBERTYPE]). Special access required.",VARCHAR,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",ISLAREP,"Indicates if this application member is the Local Authority representative (always FALSE in this extract)",VARCHAR,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",ISPARTY,"Indicates if this member is party to the application.",VARCHAR,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",MEMBERREF_E,"Encrypted Member ID. Links to [CMS_TBLPERSON] table.",BIGINT,false
+CMS_TBLCASEAPPLICATIONMEMBER,"Application member data that links a person to an application.",MEMBERTYPE,"Member type (i.e. Specifies the person&#039;s role in the application: applicant, respondent, subject or other).",SMALLINT,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",CASEHEARINGID_E,"Encrypted Hearing ID. Unique ID for this table.",BIGINT,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",CASEHEARINGTYPEREF,"Hearing Type ID. Links to [CMS_TLKPCASEHEARINGTYPE] lookup.",SMALLINT,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",CASEREF_E,"Encrypted Case ID. Links to [CMS_TBLCASE] table.",BIGINT,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",COURTREF,"Court ID. Links to [CMS_TLKPCOURT] lookup.",SMALLINT,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",DIDNOTATTEND,"Indicates whether or not the participant attended. Special access required.",VARCHAR,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",HEARINGDATE,"Date of hearing.",DATE,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",HEARINGDURATION,"Duration of hearing (minutes).",SMALLINT,false
+CMS_TBLCASEHEARING,"Information on individual hearings.",HEARINGTIME,"Time of hearing.",VARCHAR,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",CASEPARTICIPANTID_E,"Encrypted Case Participant ID. Unique ID for this table.",BIGINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",CASEREF_E,"Encrypted Case ID. Links to [CMS_TBLCASE] table.",BIGINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",CLIENTROLE,"Client Role (Replaced by ApplicantMembershipType). Special access required.",SMALLINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",ISCHILDKNOWNTOLA,"Indicates if the child is known to the Local Authority. Special access required.",VARCHAR,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",LOCALAUTHORITYREF,"Local Authority ID. Links to [CMS_TLKPLOCALAUTHORITY] lookup.",SMALLINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",NOSAFEGUARDING,"Indicates if safeguardng is not required for this participant. Special access required.",VARCHAR,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",OTHERCOURTCASE,"Indicates if this participant has another court case. Special access required.",VARCHAR,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",PARENTINGPLANRECEIVED,"Indicates if this participant has revieced a parenting plan. Special access required.",VARCHAR,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",PARTICIPANTTYPEREF,"Participant Type ID. Links to [CMS_TLKPPARTICIPANTTYPE] lookup.",SMALLINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",PERSONREF_E,"Encrypted Person ID. Links to [CMS_TBLPERSON] table. Special access required.",BIGINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",SAFEGUARDINGREF_E,"Encrypted Safeguarding ID. Links to [CMS_TBLSAFEGUARDING] table. Special access required.",BIGINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",SOLICITORFIRMREF_E,"Encrypted Solicitor Firm ID. Special access required.",BIGINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",SOLICITORREF_E,"Encrypted Solicitor ID. Special access required.",BIGINT,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",SOLICITORROLEREF,"Solicitor Role ID (always NULL in this extract). Links to [CMS_TLKPSOLICITORROLE] lookup. Special access required.",CHARACTER,false
+CMS_TBLCASEPARTICIPANT,"Information on Case Participants. This table contains recordings of people who are connected to the case (e.g. clients, solicitors and experts).",USEDFAMILYMEDIATION,"Indicates if this participant has used family mediation. Special access required.",VARCHAR,false
+CMS_TBLCASEREPORT,"Information on individual reports.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",CASEREF_E,"Encrypted Case ID. Links to [CMS_TBLCASE] table.",BIGINT,false
+CMS_TBLCASEREPORT,"Information on individual reports.",CASEREPORTID_E,"Encrypted Report ID. Unique ID for this table.",BIGINT,false
+CMS_TBLCASEREPORT,"Information on individual reports.",CASEREPORTTYPEREF,"Report Type ID. Links to [CMS_TLKPCASEREPORTTYPE] lookup.",SMALLINT,false
+CMS_TBLCASEREPORT,"Information on individual reports.",DATEFILEDATCOURT,"Date this case report was filed at court.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",DATERECEIVED,"Date this application was received.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",DATEREPORTCOMPLETED,"Date this case report was completed.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",DATEREQUESTED,"Date this case report was requested.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",ENDDATE,"End Date of this case report.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",EXTENDEDFILINGDATE,"Extended Filing Date of this case report.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",INPUTTOHEARINGREF_E,"Encrypted Input To Hearing ID. Links to [CMS_TBLCASEHEARING] table.",BIGINT,false
+CMS_TBLCASEREPORT,"Information on individual reports.",ORIGINALFILINGDATE,"Original Filing Date of this case report.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",OUTPUTFROMHEARINGREF_E,"Encrypted Output From Hearing ID. Links to [CMS_TBLCASEHEARING] table.",BIGINT,false
+CMS_TBLCASEREPORT,"Information on individual reports.",REPORTDUEDATE,"Due Date of this case report. This is [EXTENDEDFILINGDATE] when available and [ORIGINALFILINGDATE] otherwise.",DATE,false
+CMS_TBLCASEREPORT,"Information on individual reports.",REQUESTWITHDRAWNDATE,"Date this case report request was withdrawn.",DATE,false
+CMS_TBLCRSPERSONRELATIONSHIP,"Relationship data that links one person from [CMS_TBLPERSON] to another.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLCRSPERSONRELATIONSHIP,"Relationship data that links one person from [CMS_TBLPERSON] to another.",CHILDREF_E,"Encrypted Person ID (Child). Links to [CMS_TBLPERSON] table.",BIGINT,false
+CMS_TBLCRSPERSONRELATIONSHIP,"Relationship data that links one person from [CMS_TBLPERSON] to another.",PARENTREF_E,"Encrypted Person ID (Parent). Links to [CMS_TBLPERSON] table.",BIGINT,false
+CMS_TBLCRSPERSONRELATIONSHIP,"Relationship data that links one person from [CMS_TBLPERSON] to another.",PERSONRELATIONSHIPID_E,"Encrypted Person Relationship ID. Unique ID for this table.",BIGINT,false
+CMS_TBLCRSPERSONRELATIONSHIP,"Relationship data that links one person from [CMS_TBLPERSON] to another.",RELATIONSHIPREF,"Relationship ID. Links to [CMS_TLKPCRSRELATIONSHIP] lookup.",SMALLINT,false
+CMS_TBLEXPERT,"A list of individual expert IDs.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLEXPERT,"A list of individual expert IDs.",EXPERTID_E,"Encrypted Expert ID. Unique ID for this table. Special access required.",BIGINT,false
+CMS_TBLEXPERTSPECIALITY,"Expert speciality data that links an export to their speciality.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLEXPERTSPECIALITY,"Expert speciality data that links an export to their speciality.",EXPERTREF_E,"Encrypted Expert ID. Links to [CMS_TBLEXPERT] table. Special access required.",BIGINT,false
+CMS_TBLEXPERTSPECIALITY,"Expert speciality data that links an export to their speciality.",EXPERTSPECIALITYID_E,"Encrypted Expert Speciality ID. Unique ID for this table. Special access required.",BIGINT,false
+CMS_TBLEXPERTSPECIALITY,"Expert speciality data that links an export to their speciality.",SPECIALITYREF,"Speciality ID. Links to [CMS_TLKPSPECIALITY] lookup. Special access required.",SMALLINT,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",CASEHEARINGREF_E,"Encrypted Hearing ID. Links to [CMS_TBLCASEHEARING] table.",BIGINT,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",CASEREF_E,"Encrypted Case ID. Links to [CMS_TBLCASE] table.",BIGINT,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",EXPIRYDATE,"Expirary Date of this Legal Output.",DATE,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",FURTHERWORKTYPEREF,"Further WorkType ID. Links to [CMS_TLKPFURTHERWORKTYPE] lookup. Special access required.",SMALLINT,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",ISCAFCASSWORK,"Indicates if this legal output is CAFCASS work. Special access required.",VARCHAR,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",ISFINAL,"Indicates if this legal output is final.",VARCHAR,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",LEGALORDERHEARINGDATE,"Date of legal order hearing.",DATE,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",LEGALOUTPUTID_E,"Encrypted Legal Output ID. Unique ID for this table.",BIGINT,false
+CMS_TBLLEGALOUTPUT,"Individual legal output data that links to a case and/or a hearing. Note: do not use legal outputs prior to April 2010.",LEGALOUTPUTTYPEREF,"Legal Output Type ID. Links to [CMS_TLKPLEGALOUTPUTTYPE] lookup.",SMALLINT,false
+CMS_TBLMEMBERRESOLUTION,"Member Resolution data that links a member to a legal order.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLMEMBERRESOLUTION,"Member Resolution data that links a member to a legal order.",CASEAPPLICATIONMEMBERREF_E,"Encrypted Case Application Member ID. Links to [CMS_TBLCASEAPPLICATIONMEMBER] table.",BIGINT,false
+CMS_TBLMEMBERRESOLUTION,"Member Resolution data that links a member to a legal order.",LEGALOUTPUTREF_E,"Encrypted Legal Output ID. Links to [CMS_TBLLEGALOUTPUT] table.",BIGINT,false
+CMS_TBLMEMBERRESOLUTION,"Member Resolution data that links a member to a legal order.",MEMBERRESOLUTIONID_E,"Encrypted Member Resolution ID. Unique ID for this table.",BIGINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ACCESSSUPPORT,"Indicates if this person requires access support. Special access required.",VARCHAR,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ACCESSSUPPORTFLAG,"Access Support Flag. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ADDRESSREF_E,"Encrypted Address ID. Links to [CMS_TBLADDRESS] table. Special access required.",BIGINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",DISABILITY,"Indicates if this person has a disability. Special access required.",VARCHAR,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",DISABILITYFLAG,"Disability Flag. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",DISABILITYREF,"Disability Type ID. Links to [CMS_TLKPDISABILITY] lookup. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",DIVERSITYENTEREDBYREF,"Diversity Entered BY ID. Links to [CMS_TLKPDIVERSITYENTRYTYPE] lookup. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ETHNICREF,"Ethnicity Type ID. Links to [CMS_TLKPETHNICORIGIN] lookup. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",FIRSTLANGUAGEREF,"First Language Type ID. Links to [CMS_TLKPLANGUAGE] lookup. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",FORMREFUSED,"Form Refused. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",GENDER,Gender.,VARCHAR,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",HASEMAIL,"Indicates if this person has an email. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",HASPHONENUMBER,"Indicates if this person has a phone number. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",INTERPRETERREQ,"Indicates if an interpreter is required for the this person. Special access required.",VARCHAR,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",PERSONID_E,"Encrypted Person ID. Unique ID for this table.",BIGINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",REFUSED,"Indicates if this person was refused. Special access required.",VARCHAR,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",RELIGIONREF,"Religion Type ID. Links to [CMS_TLKPRELIGION] lookup. Special access required.",SMALLINT,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",WEEKOFBIRTH,"Week of Birth of this person.",DATE,false
+CMS_TBLPERSON,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",WEEKOFDEATH,"Week of Death of this person. Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",LACHILDPROTECTIONPLAN,"Indicates if this safegaurding ID falls under the local authority child protection plan. Special access required.",VARCHAR,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",LACHKRECD,"Date this safeguarding local authority check was received. Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",LACHKREQD,"Local Authority Check Required. Special access required.",SMALLINT,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",LACHKSENT,"Date this safeguarding local authority check was sent. Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",LAOPTOUT,"Indicates if this safeguarding local authority check was opted out. Special access required.",VARCHAR,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",LAOPTOUTREASONREF,"Local Authority Opt Out Reason ID. Links to [CMS_TLKPSAFEGUARDINGOPTOUTREASON] lookup. Special access required.",SMALLINT,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLCHKDATEREQUESTED,"Date this safeguarding police check was requested. Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLCHKREASONREF,"Police Check Reason ID. Links to [CMS_TLKPPOLICECHECKREASON] lookup. Special access required.",SMALLINT,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLCHKRECD,"Date this safeguarding police check was recorded. Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLCHKREQD,"Police Check Required. Special access required.",SMALLINT,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLCHKSENT,"Date this safeguarding police check was sent. Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLINFOONCASE,"Indicates if there is police information on the case. Special access required.",VARCHAR,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLOPTOUT,"Indicates if this safeguarding police check was opted out. Special access required.",VARCHAR,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",POLOPTOUTREASONREF,"Police Opt Out Reason ID. Links to [CMS_TLKPSAFEGUARDINGOPTOUTREASON] lookup. Special access required.",SMALLINT,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",PUBLICLACHKSCREENEDBYPRAC,"Date this safeguarding public local authority check was screened by practise. Special access required.",DATE,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",PUBLICLARISKASSSUFFICIENT,"Indicates if the public local authority risk assessment was sufficient for this safeguarding record. Special access required.",VARCHAR,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",PUBLICPOLRECWITHINCASE,"Indicates if there was a public police record within the case. Special access required.",VARCHAR,false
+CMS_TBLSAFEGUARDING,"Information on individual safeguarding records.",SAFEGUARDINGID_E,"Encrypted Safeguarding ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_ADDRESSES,"Includes information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_ADDRESSES,"Includes information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_ADDRESSES,"Includes information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included.",ISINSTITUTE,"Indicates if this address is an institution. Special access required.",VARCHAR,false
+ECMS_ADDRESSES,"Includes information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included.",IS_INCARCERATED,"Indicates if this address references a prison or a psychiatric hospital. Special access required.",INTEGER,false
+ECMS_ADDRESSES,"Includes information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included.",LSOA_2011_CODE,"Lower Layer Super Output Area (LSOA 2011 code) of this address. Special access required.",VARCHAR,false
+ECMS_ADDRESSES,"Includes information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included.",REGISTERED,-,VARCHAR,false
+ECMS_ADDRESSES,"Includes information derived from individual address data on people who are named on applications (but not experts, lawyers or case workers). Actual address details (e.g. house number/name, street name, post code) not included.",REGULATED,-,VARCHAR,false
+ECMS_APPLICATIONS,"Information on individual applications.",APPLICATIONREASON_ID,"Application Reason ID. Links to [ECMS_APPLICATIONREASONS] lookup.",INTEGER,false
+ECMS_APPLICATIONS,"Information on individual applications.",APPLICATIONTYPE1_ID,"Application Type ID. Links to [ECMS_APPLICATIONTYPES] lookup.",INTEGER,false
+ECMS_APPLICATIONS,"Information on individual applications.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_APPLICATIONS,"Information on individual applications.",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_APPLICATIONS,"Information on individual applications.",COURTCOURTLEVELREF_ID,"Court-Court Level ID. Links to [ECMS_COURTCOURTLEVELREFS] lookup.",INTEGER,false
+ECMS_APPLICATIONS,"Information on individual applications.",DATEAPPLICATIONCOMPLETED,"Date this application was completed (imputed). This is the same as [DATACOMPLETED] if available, otherwise the case completion date was used.",DATE,false
+ECMS_APPLICATIONS,"Information on individual applications.",DATECOMPLETED,"Date this application was completed (original).",DATE,false
+ECMS_APPLICATIONS,"Information on individual applications.",DATENOTIFIED,"Date notified of this application.",DATE,false
+ECMS_APPLICATIONS,"Information on individual applications.",DATEOFAPPLICATION,"Date of this application.",DATE,false
+ECMS_APPLICATIONS,"Information on individual applications.",DATERECEIVED,"Date this application was received.",DATE,false
+ECMS_APPLICATIONS,"Information on individual applications.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_APPLICATIONS,"Information on individual applications.",NEWAPPLICATIONDATE,"New application date (Date applicant signs C110 or C100 form).",DATE,false
+ECMS_APPLICATIONS,"Information on individual applications.",REVOCATIONAPPLICANTTYPEID,-,INTEGER,false
+ECMS_CASECASETYP,"Case type table",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASECASETYP,"Case type table",CASETYPE_ID,"Case Type ID. Links to [ECMS_CASETYPES] lookup.",INTEGER,false
+ECMS_CASECASETYP,"Case type table",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_CASECASETYPE,"Case to Case Type data (i.e. links a case to a case type).",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASECASETYPE,"Case to Case Type data (i.e. links a case to a case type).",CASETYPE_ID,"Case Type ID. Links to [ECMS_CASETYPES] lookup.",INTEGER,false
+ECMS_CASECASETYPE,"Case to Case Type data (i.e. links a case to a case type).",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_CASEEXPERTS,"Case Experts data. Links an expert to a case.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASEEXPERTS,"Case Experts data. Links an expert to a case.",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_CASEEXPERTS,"Case Experts data. Links an expert to a case.",EXPERT_ID_E,"Encypted Expert ID. Links to [ECMS_EXPERTS] table. Special access required.",BIGINT,false
+ECMS_CASEEXPERTS,"Case Experts data. Links an expert to a case.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",CASEREPORTTYPE_ID,"Report Type ID. Links to [ECMS_CASEREPORTTYPES] lookup.",INTEGER,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",DATEFILEDATCOURT,"Date this case report was filed at court.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",DATERECEIVED,"Date this application was received.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",DATEREPORTGENERATED,"Date this report was generated.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",DATEREQUESTED,"Date this case report was requested.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",ENDDATE,"End Date of this case report.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",EXTENDEDFILINGDATE,"Extended Filing Date of this case report.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",FURTHERWORKID,-,INTEGER,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",HEARINGINPUT_ID_E,"Encrypted Input To Hearing ID. Links to [ECMS_HEARINGS1] table.",BIGINT,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",HEARINGOUTPUT_ID_E,"Encrypted Output From Hearing ID. Links to [ECMS_HEARINGS1] table.",BIGINT,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",ORIGINALFILINGDATE,"Original Filing Date of this case report.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",REPORTDUEDATE,"Due Date of this case report. This is [EXTENDEDFILINGDATE] when available and [ORIGINALFILINGDATE] otherwise.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",REQUESTWITHDRAWNDATE,"Date this case report request was withdrawn.",DATE,false
+ECMS_CASEHEARINGREPORTS,"Information on individual reports.",TEMPLATENAME,"Template Name of this report. Special access required.",VARCHAR,false
+ECMS_CASELOCALAUTHORITIES,"Case Local Authorities data that links a case to a local authority. Cafcass ECMS now allows more than one Local Authority to be assigned to a case. This is most relevant in private law cases where Cafcass needs to send Local Authority checks to more than one Local Authority . The primary LA is still saved to [ECMS_CASES].[LOCALAUTHORITY_ID].",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASELOCALAUTHORITIES,"Case Local Authorities data that links a case to a local authority. Cafcass ECMS now allows more than one Local Authority to be assigned to a case. This is most relevant in private law cases where Cafcass needs to send Local Authority checks to more than one Local Authority . The primary LA is still saved to [ECMS_CASES].[LOCALAUTHORITY_ID].",CASEID_E,"Encrypted Case ID. Unique ID for this table.",BIGINT,false
+ECMS_CASELOCALAUTHORITIES,"Case Local Authorities data that links a case to a local authority. Cafcass ECMS now allows more than one Local Authority to be assigned to a case. This is most relevant in private law cases where Cafcass needs to send Local Authority checks to more than one Local Authority . The primary LA is still saved to [ECMS_CASES].[LOCALAUTHORITY_ID].",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASELOCALAUTHORITIES,"Case Local Authorities data that links a case to a local authority. Cafcass ECMS now allows more than one Local Authority to be assigned to a case. This is most relevant in private law cases where Cafcass needs to send Local Authority checks to more than one Local Authority . The primary LA is still saved to [ECMS_CASES].[LOCALAUTHORITY_ID].",ISPRIMARY,"Flags the Primary LA on the case.",VARCHAR,false
+ECMS_CASELOCALAUTHORITIES,"Case Local Authorities data that links a case to a local authority. Cafcass ECMS now allows more than one Local Authority to be assigned to a case. This is most relevant in private law cases where Cafcass needs to send Local Authority checks to more than one Local Authority . The primary LA is still saved to [ECMS_CASES].[LOCALAUTHORITY_ID].",LAID,"Local Authority ID. Links to [ECMS_LOCALAUTHORITIES] lookup.",INTEGER,false
+ECMS_CASEPLANDELAY,"Case Plan Delay table",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASEPLANDELAY,"Case Plan Delay table",CASEPLANDELAYREASONID,-,INTEGER,false
+ECMS_CASEPLANDELAY,"Case Plan Delay table",CASEPLANID_E,-,BIGINT,false
+ECMS_CASEPLANDELAY,"Case Plan Delay table",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",CASEPLANID_E,-,BIGINT,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",COUNTRYID,-,INTEGER,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",CREATEDAT,-,TIMESTAMP,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",DATEIDENTIFIED,-,TIMESTAMP,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",LIVINGARRANGEMENTID,-,INTEGER,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",MODIFIEDAT,-,TIMESTAMP,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",PERSONID_E,"Encrypted Person ID. Unique ID for this table.",BIGINT,false
+ECMS_CASEPLANLIVINGARRANGEMENTS,"Table contains the details of the planned living arrangements",TABNAME,-,VARCHAR,false
+ECMS_CASEPLANNONPARTYSUBJECTS,-,AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASEPLANNONPARTYSUBJECTS,-,CASEPLAN_ID_E,-,BIGINT,false
+ECMS_CASEPLANNONPARTYSUBJECTS,-,FINALCAREPLAN,-,INTEGER,false
+ECMS_CASEPLANNONPARTYSUBJECTS,-,ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASEPLANNONPARTYSUBJECTS,-,PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_CASEPLANS,"Case Plan Table",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASEPLANS,"Case Plan Table",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_CASEPLANS,"Case Plan Table",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASEPLANS,"Case Plan Table",ISCOMMISSIONINGSERVICE,-,VARCHAR,false
+ECMS_CASEPLANS,"Case Plan Table",ISOUTCOMEUNKNOWN,-,VARCHAR,false
+ECMS_CASES,"Information on individual cases.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASES,"Information on individual cases.",CASESTATU_ID,"Case Status ID. Links to [ECMS_CASESTATUS] lookup.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",CLOSUREDATE,"Closure date of this case.",DATE,false
+ECMS_CASES,"Information on individual cases.",COURTCOURTLEVELREF_ID,"Court-Court Level ID. Links to [ECMS_COURTCOURTLEVELREFS] lookup.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",COURTFORMHARM,"Indicates harm was recorded on the court form (private law only). Special access required.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",COURTFORM_ID,"Form ID. Links to [ECMS_COURTFORMS] lookup.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",DATERECEIVED,"Date this application was received.",DATE,false
+ECMS_CASES,"Information on individual cases.",DNA,"Indicates if a DNA test was done. Special access required.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",FINALIRODATE,"Date of final IRO (Independent Reviewing Officer) of this case. Special access required.",DATE,false
+ECMS_CASES,"Information on individual cases.",FIRSTIRODATE,"Date of first IRO (Independent Reviewing Officer) of this case. Special access required.",DATE,false
+ECMS_CASES,"Information on individual cases.",FPR164RESCINDEDDATE,"Date rule 16.4 of the Family Procedure Rules was received for this case.",DATE,false
+ECMS_CASES,"Information on individual cases.",HADFPR164,"Indicates if this case has had rule 16.4 of the Family Procedure Rules.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",HARM,"Indicates harm (private law only) - Box ticked to generate safeguarding checks.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASES,"Information on individual cases.",ISEMAILORIGIN,"Indicates if this case is of mail origin. Special access required.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",ISFPR164,"Indicates if this case is under rule 16.4 of the Family Procedure Rules.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",ISIROREQUIRED,"Indicates if an IRO (Independent Reviewing Officer) is required. Special access required.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",ISMIAMATTEMPTED,"Indicates if a Mediation Information Assessment Meeting (MIAM) is required. Special access required.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",ISPRECOURTCASE,"Indicates if this case is a pre-court case. Special access required.",VARCHAR,false
+ECMS_CASES,"Information on individual cases.",LAWTYPE_ID,"Law Type ID. Links to [ECMS_LAWTYPES] lookup.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",LOCALAUTHORITY_ID,"Local Authority ID. Links to [ECMS_LOCALAUTHORITIES] lookup.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",MIAMATTEMPTEDTYPE_APPLICANT_ID,"MIAM Attempted Type ID (if MIAM was attempted for the applicant). Links to [ECMS_MIAMATTEMPTEDTYPE] lookup. Special access required.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",MIAMATTEMPTEDTYPE_RESPONDENT_ID,"MIAM Attempted Type ID (if MIAM was attempted for the repondent). Links to [ECMS_MIAMATTEMPTEDTYPE] lookup. Special access required.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",MIAMEXEMPTIONREASONID,"Miam Exemption Reason ID. Links to [ECMS_MIAMEXEMPTIONREASON] lookup. Special access required.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",MIAMOPTIONID,"Miam Option ID. Links to [ECMS_MIAMOPTIONS] lookup. Special access required.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",NEXTHEARINGDATE,"Date of the next hearing for this case.",DATE,false
+ECMS_CASES,"Information on individual cases.",REOPENDATE,"Date this case was reopened.",DATE,false
+ECMS_CASES,"Information on individual cases.",REPORTDUEDATE,"Due Date of this case report. This is [EXTENDEDFILINGDATE] when available and [ORIGINALFILINGDATE] otherwise.",DATE,false
+ECMS_CASES,"Information on individual cases.",SAFEGUARDINGSTATU_ID,"Safeguarding Status ID. Links to [ECMS_SAFEGUARDINGSTATUS] lookup. Special access required.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",TRIALSCHEME_ID,"Trial Scheme ID. Links to [ECMS_TRIALSCHEMES] lookup. Special access required.",INTEGER,false
+ECMS_CASES,"Information on individual cases.",WASFAMILYSEENCPLUS,"Indicates if the family was on a C Plus Trial Scheme. Special access required.",VARCHAR,false
+ECMS_CASETRIALSCHEMES,"Case Trials Schemes data. Links a case to a trial scheme.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CASETRIALSCHEMES,"Case Trials Schemes data. Links a case to a trial scheme.",CASEID_E,"Encrypted Case ID. Unique ID for this table.",BIGINT,false
+ECMS_CASETRIALSCHEMES,"Case Trials Schemes data. Links a case to a trial scheme.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CASETRIALSCHEMES,"Case Trials Schemes data. Links a case to a trial scheme.",TRIALSCHEMEID,"Trial scheme ID. Links to [ECMS_TRIALSCHEMES] lookup.",INTEGER,false
+ECMS_CHILDCONTACTWITHPARTIES,-,AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CHILDCONTACTWITHPARTIES,-,CASEPLANID_E,-,BIGINT,false
+ECMS_CHILDCONTACTWITHPARTIES,-,CHILDID_E,-,BIGINT,false
+ECMS_CHILDCONTACTWITHPARTIES,-,DATECREATED,"Date this WTFH Outcome was created. Special access required.",TIMESTAMP,false
+ECMS_CHILDCONTACTWITHPARTIES,-,DATEREMOVED,-,TIMESTAMP,false
+ECMS_CHILDCONTACTWITHPARTIES,-,ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CHILDCONTACTWITHPARTIES,-,PARENTID_E,-,BIGINT,false
+ECMS_CHILDCONTACTWITHPARTIES,-,TABUSED,-,VARCHAR,false
+ECMS_CHILDRECOMMENDATIONS,-,AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CHILDRECOMMENDATIONS,-,CASEPLANID_E,-,BIGINT,false
+ECMS_CHILDRECOMMENDATIONS,-,COURTACCEPTANCETYPEID,-,INTEGER,false
+ECMS_CHILDRECOMMENDATIONS,-,EXPLANATIONSTATUSID,-,INTEGER,false
+ECMS_CHILDRECOMMENDATIONS,-,ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CHILDRECOMMENDATIONS,-,MAINRECOMMENDATIONID,-,INTEGER,false
+ECMS_CHILDRECOMMENDATIONS,-,NOTEXPLAINEDREASONID,-,INTEGER,false
+ECMS_CHILDRECOMMENDATIONS,-,PERSONID_E,"Encrypted Person ID. Unique ID for this table.",BIGINT,false
+ECMS_CHILDREFERRALREASONS,-,AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CHILDREFERRALREASONS,-,CHILDREFERRALID_E,-,BIGINT,false
+ECMS_CHILDREFERRALREASONS,-,ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CHILDREFERRALREASONS,-,REFERRALREASONID,-,INTEGER,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",CASEREPORTTYPE_ID,"Report Type ID. Links to [ECMS_CASEREPORTTYPES] lookup.",INTEGER,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",CHILDREFERRALSTATU_ID,"Child Referal Status ID. Links to [ECMS_CHILDREFERRALSTATUS] lookup. Special access required.",INTEGER,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",DATECOMPLETED,"Date this application was completed (original).",DATE,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",DATEGENERATED,"Date this child referal was generated. Special access required.",DATE,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",LARESPONSEID,-,INTEGER,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",LOCALAUTHORITY_ID,"Local Authority ID. Links to [ECMS_LOCALAUTHORITIES] lookup.",INTEGER,false
+ECMS_CHILDREFERRALS,"Child Referals data. Special access required.",PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,CASEID_E,"Encrypted Case ID. Unique ID for this table.",BIGINT,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,COURTID,-,INTEGER,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,DATETIMEGENERATED,-,TIMESTAMP,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,ISFCA,-,VARCHAR,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,PERSONID_E,"Encrypted Person ID. Unique ID for this table.",BIGINT,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,PROVIDERID,-,INTEGER,false
+ECMS_COMMISSIONEDSERVICESREQUEST,-,SERVICEID,-,INTEGER,false
+ECMS_DEDUPLICATIONACTIONPEOPLE,"This table is used to de-duplicate person records in [CMS_TBLPERSON] and [ECMS_PEOPLE].",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_DEDUPLICATIONACTIONPEOPLE,"This table is used to de-duplicate person records in [CMS_TBLPERSON] and [ECMS_PEOPLE].",DEDUPLICATIONACTION_ID_E,"Encrypted De-Duplication Action ID. This is used to group multiple person records to be de-duplicated.",BIGINT,false
+ECMS_DEDUPLICATIONACTIONPEOPLE,"This table is used to de-duplicate person records in [CMS_TBLPERSON] and [ECMS_PEOPLE].",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_DEDUPLICATIONACTIONPEOPLE,"This table is used to de-duplicate person records in [CMS_TBLPERSON] and [ECMS_PEOPLE].",PERSONID_E,"Encrypted Person ID. Unique ID for this table.",BIGINT,false
+ECMS_DEDUPLICATIONACTIONPEOPLE,"This table is used to de-duplicate person records in [CMS_TBLPERSON] and [ECMS_PEOPLE].",TOKEEP,"Flags the person record that should be kept.",VARCHAR,false
+ECMS_DISABILITIES,"Person disability data that links a person to their disability type. Special access required.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_DISABILITIES,"Person disability data that links a person to their disability type. Special access required.",DISABILITYTYPE_ID,"Disability Type ID. Links to [ECMS_DISABILITYTYPES] lookup. Special access required.",INTEGER,false
+ECMS_DISABILITIES,"Person disability data that links a person to their disability type. Special access required.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_DISABILITIES,"Person disability data that links a person to their disability type. Special access required.",PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_DISABILITIES,"Person disability data that links a person to their disability type. Special access required.",SOURCE_ID,"Source ID. Links to [ECMS_SOURCES] lookup. Special access required.",INTEGER,false
+ECMS_ETHNICITIES,-,AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_ETHNICITIES,-,ETHNICITYTYPE_ID,"Ethnicity Type ID. Links to [ECMS_ETHNICITYTYPES] lookup. Special access required.",INTEGER,false
+ECMS_ETHNICITIES,-,ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_ETHNICITIES,-,PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_ETHNICITIES,-,SOURCE_ID,"Source ID. Links to [ECMS_SOURCES] lookup. Special access required.",INTEGER,false
+ECMS_EXPERTS,"A list of individual expert IDs.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_EXPERTS,"A list of individual expert IDs.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_EXPERTSPECIALITIES,"Expert speciality data that links an export to their speciality.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_EXPERTSPECIALITIES,"Expert speciality data that links an export to their speciality.",EXPERT_ID_E,"Encypted Expert ID. Links to [ECMS_EXPERTS] table. Special access required.",BIGINT,false
+ECMS_EXPERTSPECIALITIES,"Expert speciality data that links an export to their speciality.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_EXPERTSPECIALITIES,"Expert speciality data that links an export to their speciality.",SPECIALITY_ID_E,"Speciality ID. Links to [ECMS_SPECIALITIES] lookup. Special access required.",BIGINT,false
+ECMS_HEARINGS1,"Information on individual hearings.",ALLOWNONWORKINGDAYS,"Indicates if non-working days are allowed for the this hearing.",VARCHAR,false
+ECMS_HEARINGS1,"Information on individual hearings.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_HEARINGS1,"Information on individual hearings.",CASEHEARINGTYPE_ID,"Hearing Type ID. Links to [ECMS_CASEHEARINGTYPES] lookup.",INTEGER,false
+ECMS_HEARINGS1,"Information on individual hearings.",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_HEARINGS1,"Information on individual hearings.",COURTCOURTLEVELREF_ID,"Court-Court Level ID. Links to [ECMS_COURTCOURTLEVELREFS] lookup.",INTEGER,false
+ECMS_HEARINGS1,"Information on individual hearings.",HEARINGDATE,"Date of hearing.",DATE,false
+ECMS_HEARINGS1,"Information on individual hearings.",HEARINGDURATION,"Duration of hearing (minutes).",BIGINT,false
+ECMS_HEARINGS1,"Information on individual hearings.",HEARINGTIME,"Time of hearing.",VARCHAR,false
+ECMS_HEARINGS1,"Information on individual hearings.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_HEARINGS1,"Information on individual hearings.",ISFCAATTENDING,"Indicates if a Family Court Advisor (FCA) is attending. Special access required.",VARCHAR,false
+ECMS_HEARINGS1,"Information on individual hearings.",ISHEARINGADJOURNED,-,VARCHAR,false
+ECMS_HEARINGS1,"Information on individual hearings.",ISVIRTUAL,-,VARCHAR,false
+ECMS_LANGUAGES,"Person language data that links a person to their language.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_LANGUAGES,"Person language data that links a person to their language.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_LANGUAGES,"Person language data that links a person to their language.",LANGUAGETYPE_ID,"Language Type ID. Links to [ECMS_LANGUAGETYPES] lookup. Special access required.",INTEGER,false
+ECMS_LANGUAGES,"Person language data that links a person to their language.",PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_LANGUAGES,"Person language data that links a person to their language.",SOURCE_ID,"Source ID. Links to [ECMS_SOURCES] lookup. Special access required.",INTEGER,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",APPLICATION_ID_E,"Encrypted Application ID. Links to [ECMS_APPLICATIONS] table.",BIGINT,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",CASE_ID_E,"Encrypted Case ID. Links to [ECMS_CASES] table.",BIGINT,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",DATEORDERED,"Date this legal output was ordered.",DATE,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",ISFPR164,"Indicates if this case is under rule 16.4 of the Family Procedure Rules.",VARCHAR,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",LEGALOUTPUTTYPE_ID,"Legal Output Type ID. Links to [ECMS_LEGALOUTPUTTYPES] lookup.",INTEGER,false
+ECMS_LEGALOUTPUTS,"Individual legal output data that links to a person, application and/or a case. Note: do not use legal outputs prior to April 2010.",PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_NATIONALITIES,-,AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_NATIONALITIES,-,ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_NATIONALITIES,-,NATIONALITYTYPE_ID,-,INTEGER,false
+ECMS_NATIONALITIES,-,PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_NATIONALITIES,-,SOURCE_ID,"Source ID. Links to [ECMS_SOURCES] lookup. Special access required.",INTEGER,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",GENDER,Gender.,VARCHAR,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",HASEMAIL,"Indicates if this person has an email. Special access required.",INTEGER,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",HASPHONENUMBER,"Indicates if this person has a phone number. Special access required.",INTEGER,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ISDECEASED,"Indiactes if this person is deceased. Special access required.",VARCHAR,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ISEMAILVERIFIED,"Indicates if this person&#039;s email is verified. Special access required.",INTEGER,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ISNAMEUNKNOWN,"Indicates if this person&#039;s name is unknown. Special access required.",VARCHAR,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ISPHONENUMBERVERIFIED,"Indicates if this person&#039;s phone number is verified. Special access required.",INTEGER,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",ISSINGLECARER,"Indicates if this person is a single carer. Special access required.",VARCHAR,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",WEEKOFBIRTH,"Week of Birth of this person.",DATE,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",WEEKOFBIRTHALIAS,"Week of birth alias of this person. Special access required.",DATE,false
+ECMS_PEOPLE,"Information on individuals who are named on applications (i.e. doesn&#039;t include experts, lawyers or case workers).",WEEKOFDEATH,"Week of Death of this person. Special access required.",DATE,false
+ECMS_PERSONADDRESSES,"Person Address data that links a person to an address.",ADDRESS_ID_E,"Encrypted Address ID. Links to [ECMS_ADDRESSES] table. Special access required.",BIGINT,false
+ECMS_PERSONADDRESSES,"Person Address data that links a person to an address.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_PERSONADDRESSES,"Person Address data that links a person to an address.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_PERSONADDRESSES,"Person Address data that links a person to an address.",ISCURRENT,"Indiactes if this address is the current address. Special access required.",VARCHAR,false
+ECMS_PERSONADDRESSES,"Person Address data that links a person to an address.",ISINSTITUTE,"Indicates if this address is an institution. Special access required.",VARCHAR,false
+ECMS_PERSONADDRESSES,"Person Address data that links a person to an address.",PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_PERSONCHILDNEEDS,"Person Child Needs data. Special access required.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_PERSONCHILDNEEDS,"Person Child Needs data. Special access required.",CHILDNEEDTYPE_ID,"Encrypted Child Need Type ID. Links to [ECMS_CHILDNEEDTYPES] lookup. Special access required.",INTEGER,false
+ECMS_PERSONCHILDNEEDS,"Person Child Needs data. Special access required.",CHILDNEEDVERIFICATIONSOURCE_ID,"Child Need Verification Source ID. Links to [ECMS_CHILDNEEDVERIFICATIONSOURCES] lookup. Special access required.",INTEGER,false
+ECMS_PERSONCHILDNEEDS,"Person Child Needs data. Special access required.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_PERSONCHILDNEEDS,"Person Child Needs data. Special access required.",ISVERIFIED,"Indicates if this child need is verified. Special access required.",VARCHAR,false
+ECMS_PERSONCHILDNEEDS,"Person Child Needs data. Special access required.",PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",CASEID_E,"Encrypted Case ID. Unique ID for this table.",BIGINT,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",CHILDSEENACCOMPANIEDTYPEID,-,INTEGER,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",CHILDSEENTYPEID,"Child Seen Type ID. Links to [ECMS_CHILDSEENTYPES] lookup.",INTEGER,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",CHILDSEENTYPEREASONID,"Reason ID for why the child was not seen. Links to [ECMS_CHILDSEENTYPEREASONS] lookup. Special access required.",INTEGER,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",COMMUNICATIONMETHODID,"Communication Method ID. Links to [ECMS_COMMUNICATIONMETHODS] lookup. Special access required.",INTEGER,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",DATEOFVISIT,"The date the visit took place. Special access required.",DATE,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",HASMANAGERAGREED,-,VARCHAR,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",HOURSOFVISIT,"The time of day the visit took place (hour). Special access required.",INTEGER,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",MINUTESOFVISIT,"The time of day the visit took place (minutes). Special access required.",INTEGER,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",PERSONID_E,"Encrypted Person ID. Unique ID for this table.",BIGINT,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",PLANNINGTOSEEID,-,INTEGER,false
+ECMS_PERSONCHILDVISITS,"Person Child Visits data.",PURPOSEOFVISITID,-,INTEGER,false
+ECMS_PERSONRELATIONSHIPS,"Relationship data that links one person from [ECMS_PEOPLE] to another.",AVAIL_FROM_DT,"Date when the data made available (i.e. date of loading). Special access required.",DATE,false
+ECMS_PERSONRELATIONSHIPS,"Relationship data that links one person from [ECMS_PEOPLE] to another.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+ECMS_PERSONRELATIONSHIPS,"Relationship data that links one person from [ECMS_PEOPLE] to another.",PARENTALRESPONSIBILITYTYPE_ID,"Parental Responsibility Type ID. Links to [ECMS_PARENTALRESPONSIBILITYTYPES] lookup.",INTEGER,false
+ECMS_PERSONRELATIONSHIPS,"Relationship data that links one person from [ECMS_PEOPLE] to another.",PERSON_ID_E,"Encrypted Person ID. Links to [ECMS_PEOPLE] table. Special access required.",BIGINT,false
+ECMS_PERSONRELATIONSHIPS,"Relationship data that links one person from [ECMS_PEOPLE] to another.",RELATEDPERSON_ID_E,"Encrypted Related Person ID (person 2). Links to [ECMS_PEOPLE] table.",BIGINT,false
+ECMS_PERSONRELATIONSHIPS,"Relationship data that links one person from [ECMS_PEOPLE] to another.",RELATIONSHIPTYPE_ID,"Relationship Type ID. Links to [ECMS_RELATIONSHIPTYPES] lookup.",INTEGER,false
+FosterCarerAssociatedChildren,"Information for foster carer associated children.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+FosterCarerAssociatedChildren,"Information for foster carer associated children.",CaseFosterCarerID,"ID for case foster carer",BIGINT,false
+FosterCarerAssociatedChildren,"Information for foster carer associated children.",PERSONID_E,"Encrypted Person ID. Unique ID for this table.",BIGINT,false
+FosterCarerAssociatedChildren,"Information for foster carer associated children.",StartDate,"Start date",datetime,false
+FosterCarerAssociatedChildren,"Information for foster carer associated children.",EndDate,"End date",datetime,false
+MIAMExemptionReasonsOnCase,"Mediation Information &amp; Assessment Meeting excemption reasons on case.",ID_E,"Encrypted Address ID. Unique ID for this table. Special access required.",BIGINT,false
+MIAMExemptionReasonsOnCase,"Mediation Information &amp; Assessment Meeting excemption reasons on case.",CASEID_E,"Encrypted Case ID. Unique ID for this table.",BIGINT,false
+MIAMExemptionReasonsOnCase,"Mediation Information &amp; Assessment Meeting excemption reasons on case.",MIAMExemptionReasonID,"ID for the Mediation Information &amp; Assessment Meeting excemption reason.",BIGINT,false
