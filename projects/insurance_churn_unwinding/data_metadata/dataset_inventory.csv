@@ -1,0 +1,13 @@
+project,dataset_path,format,size_mb,row_count,column_count,profile_basis,profile_rows,status,error
+insurance_churn_unwinding,data_clean/cms/cms_sipp_merge_ready_state_month_2023.csv,csv,0.1245,510,29,full_file,510,ok,
+insurance_churn_unwinding,data_clean/cms/cms_updated_renewal_outcomes_state_month_2023.csv,csv,0.1594,510,40,full_file,510,ok,
+insurance_churn_unwinding,data_clean/cms/cms_updated_renewal_outcomes_state_month_2023_2024_optional.csv,csv,0.2153,663,40,full_file,663,ok,
+insurance_churn_unwinding,data_clean/policy_matrix/policy_events_official.csv,csv,0.0555,66,28,full_file,66,ok,
+insurance_churn_unwinding,data_clean/policy_matrix/state_month_policy_matrix_official.csv,csv,0.3514,816,123,full_file,816,ok,
+insurance_churn_unwinding,data_clean/policy_matrix/state_month_policy_source_bridge.csv,csv,0.3375,930,9,full_file,930,ok,
+insurance_churn_unwinding,data_raw/cms/medicaid-and-chip-updated-renewal-outcomes_data_gov_api.json,json,0.0,0,2,full_file,0,ok,
+insurance_churn_unwinding,data_raw/cms/medicaid-and-chip-updated-renewal-outcomes_data_gov_package_show.json,json,0.0,0,2,full_file,0,ok,
+insurance_churn_unwinding,data_raw/cms/updated-renewal-outcomes-october-2024-releasefinal.csv,csv,1.5855,10140,6,full_file,10140,ok,
+insurance_churn_unwinding,sipp_2023_monthly_insurance_dynamics.csv,csv,0.0026,12,14,full_file,12,ok,
+insurance_churn_unwinding,sipp_state_month_exit_distribution_by_month.csv,csv,0.0014,11,10,full_file,11,ok,
+insurance_churn_unwinding,sipp_state_month_exit_outcomes.csv,csv,0.0196,561,7,full_file,561,ok,

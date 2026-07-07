@@ -1,0 +1,2 @@
+term,coef,se,t,p,n,df,outcome,strategy,model_status
+treated_post_selection_2024,0.5368625781579572,0.15361722646983236,3.4948071287004217,0.0011750524056941547,164,40,sign_language_per100k,placebo_outcome_sign_language,ok

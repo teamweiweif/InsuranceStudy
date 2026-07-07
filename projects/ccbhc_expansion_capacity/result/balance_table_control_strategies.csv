@@ -1,0 +1,13 @@
+strategy,variable,treated_mean,control_mean,smd,n_treated,n_control
+all_non_original_non_2024,baseline_facility_per100k,13.185088833842077,11.573184325822512,0.30377714116448895,10,31
+all_non_original_non_2024,targeted_services_per100k,23.13105221792523,20.153706288383333,0.33517531948437373,10,31
+all_non_original_non_2024,poverty_rate,,,,10,31
+all_non_original_non_2024,unemployment_rate,,,,10,31
+planning_grant_not_selected,baseline_facility_per100k,13.185088833842077,11.662217784365001,0.27676854074155705,10,7
+planning_grant_not_selected,targeted_services_per100k,23.13105221792523,20.85838245551693,0.26220774891738996,10,7
+planning_grant_not_selected,poverty_rate,,,,10,7
+planning_grant_not_selected,unemployment_rate,,,,10,7
+not_yet_2026,baseline_facility_per100k,13.185088833842077,14.426998989803502,-0.22177531271460574,10,10
+not_yet_2026,targeted_services_per100k,23.13105221792523,24.59159286071618,-0.14358924769543294,10,10
+not_yet_2026,poverty_rate,,,,10,10
+not_yet_2026,unemployment_rate,,,,10,10

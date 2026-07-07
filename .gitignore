@@ -2,6 +2,11 @@
 data/
 archive/
 reference/external/
+projects/*/data/
+projects/*/temp/raw_downloads/
+projects/*/temp/intermediate/
+projects/*/temp/model_scratch/
+projects/*/temp/pdf_extraction_checks/parsed_*.csv
 
 # Generated binary/intermediate artifacts
 *.parquet
@@ -31,15 +36,23 @@ outputs/**/second_round_unwinding_state_month_cells.csv
 outputs/**/avoidable_churn_state_month_cells.csv
 outputs/**/avoidable_churn_round3_state_month_cells.csv
 outputs/rdd_pooled_2002_2017/tables/cate_predictions.csv
+projects/**/outputs/**/*state_month_cells.csv
+projects/**/outputs/**/*state_week_cells.csv
+projects/**/output/**/*state_month_cells.csv
+projects/**/output/**/*state_week_cells.csv
 
-# Allow the zero-premium subproject to keep compact metadata and final outputs.
-!zero_premium_project/
-!zero_premium_project/data/
-!zero_premium_project/data/metadata/
-!zero_premium_project/data/metadata/**
-!zero_premium_project/data/processed/
-!zero_premium_project/data/processed/**
-!zero_premium_project/data/processed/*.parquet
+# Allow project-level metadata and compact final outputs.
+!projects/
+!projects/*/
+!projects/*/data_metadata/
+!projects/*/data_metadata/**
+
+# Preserve existing zero-premium metadata/processed audit files after reorg.
+!projects/aca_zero_premium_turnover/data/
+!projects/aca_zero_premium_turnover/data/metadata/
+!projects/aca_zero_premium_turnover/data/metadata/**
+!projects/aca_zero_premium_turnover/data/processed/
+!projects/aca_zero_premium_turnover/data/processed/**
 
 # OS/editor clutter
 .DS_Store

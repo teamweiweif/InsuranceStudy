@@ -1,0 +1,25 @@
+{
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "root": "C:\\Users\\PC\\GlobalHealthPolicy Dropbox\\Fan Bowei\\nh_staffing\\988_telecom_fee_crisis_performance",
+  "packages": {
+    "pandas": true,
+    "numpy": true,
+    "requests": true,
+    "bs4": true,
+    "fitz": true,
+    "pyarrow": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "sklearn": true,
+    "duckdb": true,
+    "openpyxl": true,
+    "statsmodels": false,
+    "linearmodels": false,
+    "pdfplumber": false,
+    "camelot": false,
+    "polars": false
+  },
+  "note": "Core pipeline uses pandas, PyMuPDF, numpy/scipy, matplotlib, and pyarrow. Missing econometric packages are handled with transparent fallback estimators."
+}

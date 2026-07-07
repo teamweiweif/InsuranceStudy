@@ -1,0 +1,13 @@
+project,dataset_path,format,size_mb,row_count,column_count,profile_basis,profile_rows,status,error
+ccbhc_expansion_capacity,data/analysis_facility_year.parquet,parquet,1.7529,120451,49,full_file,120451,ok,
+ccbhc_expansion_capacity,data/analysis_main_county_year.parquet,parquet,0.1665,12576,52,full_file,12576,ok,
+ccbhc_expansion_capacity,data/analysis_main_state_year.parquet,parquet,0.0989,408,78,full_file,408,ok,
+ccbhc_expansion_capacity,data/ccbhc_treatment_panel.parquet,parquet,0.0222,408,30,full_file,408,ok,
+ccbhc_expansion_capacity,data/county_capacity_panel.parquet,parquet,0.1417,12576,19,full_file,12576,ok,
+ccbhc_expansion_capacity,data/county_policy_panel.parquet,parquet,0.0806,12576,35,full_file,12576,ok,
+ccbhc_expansion_capacity,data/external_covariates_county.parquet,parquet,0.1331,12576,10,full_file,12576,ok,
+ccbhc_expansion_capacity,data/facility_service_panel.parquet,parquet,1.0475,120451,20,full_file,120451,ok,
+ccbhc_expansion_capacity,data/facility_service_panel_audit.csv,csv,0.0001,4,6,full_file,4,ok,
+ccbhc_expansion_capacity,data/service_category_state_year.parquet,parquet,0.0319,3672,15,full_file,3672,ok,
+ccbhc_expansion_capacity,data/state_capacity_panel.parquet,parquet,0.0778,212,48,full_file,212,ok,
+ccbhc_expansion_capacity,data/state_policy_panel.parquet,parquet,0.0222,408,30,full_file,408,ok,

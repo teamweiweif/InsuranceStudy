@@ -1,0 +1,16 @@
+{
+  "ddd_status": {
+    "cluster": "state",
+    "fe": [
+      "state_service",
+      "year_service"
+    ],
+    "k": 1,
+    "n": 1476,
+    "r2_resid": 0.003514894615348485,
+    "status": "ok"
+  },
+  "event_study_rows": 21,
+  "main_warning": "Only one partial post-treatment N-SUMHSS year is available; estimates are diagnostic, not publishable causal evidence.",
+  "state_did_rows": 21
+}

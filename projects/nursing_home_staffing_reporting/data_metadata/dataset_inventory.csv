@@ -1,0 +1,12 @@
+project,dataset_path,format,size_mb,row_count,column_count,profile_basis,profile_rows,status,error
+nursing_home_staffing_reporting,data/analysis_facility_month.parquet,parquet,247.1591,1227294,104,first_10000_rows,10000,ok,
+nursing_home_staffing_reporting,data/analysis_facility_quarter.parquet,parquet,80.0098,409098,99,first_10000_rows,10000,ok,
+nursing_home_staffing_reporting,data/baseline_provider_characteristics_pre2022.parquet,parquet,1.0837,15432,34,full_file,15432,ok,
+nursing_home_staffing_reporting,data/facility_exposures.csv,csv,8.3251,15608,52,full_file,15608,ok,
+nursing_home_staffing_reporting,data/facility_exposures.parquet,parquet,3.4122,15608,52,full_file,15608,ok,
+nursing_home_staffing_reporting,data/health_citation_snapshot_panel.parquet,parquet,1.1122,284286,5,full_file,284286,ok,
+nursing_home_staffing_reporting,data/pbj_facility_month.parquet,parquet,241.3571,1227294,41,first_10000_rows,10000,ok,
+nursing_home_staffing_reporting,data/pbj_facility_month_extract.csv,csv,566.8235,1227294,41,first_10000_rows,10000,ok,
+nursing_home_staffing_reporting,data/pbj_facility_quarter.parquet,parquet,75.3543,409098,36,first_10000_rows,10000,ok,
+nursing_home_staffing_reporting,data/provider_snapshot_panel.parquet,parquet,15.1931,394880,34,full_file,394880,ok,
+nursing_home_staffing_reporting,data/survey_summary_snapshot_panel.parquet,parquet,4.0029,1176574,7,full_file,1176574,ok,

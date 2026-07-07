@@ -1,0 +1,2 @@
+term,coef,se,t,p,n,df,strategy,model_status
+treated_post_selection_2024,0.5988345021485634,0.6619048758202107,0.9047138403482938,0.37756729572108494,76,18,nearest_neighbor_matched_donors,ok

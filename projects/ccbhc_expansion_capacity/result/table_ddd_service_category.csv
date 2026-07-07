@@ -1,0 +1,2 @@
+term,coef,se,t,p,n,df,model,model_status
+treated_post_targeted,0.15307765856089356,0.10882689679600052,1.4066160394873934,0.16726343069229577,1476,40,DDD: selected x post x directly targeted service,ok

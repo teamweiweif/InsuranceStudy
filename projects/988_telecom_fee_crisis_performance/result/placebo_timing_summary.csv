@@ -1,0 +1,2 @@
+actual_answer_rate_twfe,placebo_abs_p_value,placebo_draws,interpretation_note
+0.0068435540569674,0.8083333333333333,120,Empirical p-value compares absolute placebo coefficients to the actual operational-start TWFE coefficient.

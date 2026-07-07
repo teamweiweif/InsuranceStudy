@@ -1,68 +1,58 @@
-# US Health Insurance Project
+# InsuranceStudy Research Workspace
 
-This repository tracks the code, documentation, and lightweight result summaries for a public-data health insurance research project.
+This repository is organized as a multi-project research workspace. Each project
+has its own code, documentation, lightweight outputs, and a GitHub-friendly data
+metadata layer.
 
-The original reusable baseline is a pooled `MEPS FYC 2002-2017` Medicare-at-65 workflow. The current active research frontier has shifted to:
+Large raw downloads, intermediate panels, Parquet files, ZIP archives, and other
+bulky rebuildable artifacts are intentionally kept out of Git. For each project,
+`data_metadata/` provides enough structure for reviewers to inspect dataset
+coverage, variables, missingness, row counts, and observed value distributions
+without cloning large data files.
 
-- `SIPP + CMS Medicaid unwinding`
-- coverage churn and continuity of coverage
-- avoidable harmful churn during the unwinding period
-- bounded risk ranking before any causal-ML escalation
+## Projects
 
-Large raw data, intermediate person-month files, parquet outputs, external reference snapshots, and archived scratch material are intentionally kept out of git.
+| Folder | Topic | Current use |
+| --- | --- | --- |
+| `projects/insurance_churn_unwinding/` | SIPP and CMS Medicaid unwinding coverage churn | Diagnostic and risk-first insurance coverage project |
+| `projects/aca_zero_premium_turnover/` | ACA zero-premium plan turnover / Drake-style replication | Reproducible working snapshot with processed audit files |
+| `projects/988_telecom_fee_crisis_performance/` | 988 telecom fee funding and crisis-line performance | Exploratory policy-audit evidence |
+| `projects/ccbhc_expansion_capacity/` | CCBHC Medicaid Demonstration expansion and behavioral-health capacity | Monitoring package, no-go for causal paper with current public data |
+| `projects/nursing_home_staffing_reporting/` | CMS nursing-home staffing transparency and rating changes | Staffing behavior analysis with weak current causal design |
 
-## Current Status
+## Data Metadata
 
-The canonical handoff is:
+Every project has:
 
-- `docs/churn_unwinding_execution_handoff.md`
+- `data_metadata/dataset_inventory.csv`: one row per profiled data file, with
+  format, file size, row count where available, column count, and profiling
+  status.
+- `data_metadata/variable_catalog.csv`: one row per variable, with dtype,
+  missingness, uniqueness, numeric summaries where applicable, and the most
+  common observed value.
+- `data_metadata/categorical_top_values.csv`: the top observed values for each
+  variable in the profiled rows.
+- `data_metadata/README.md`: generation notes for that project's metadata.
 
-The latest progress ledger is:
+For large source files, metadata summaries use a sample of rows while preserving
+file-level row counts where feasible. This keeps the repository reviewable on
+GitHub while avoiding raw-data and large-derived-file commits.
 
-- `docs/churn_unwinding_progress_record.md`
+## Repository Rules
 
-As of the latest documented round, the strongest current branch is the `avoidable churn` diagnostic line:
+- Commit scripts, reports, source inventories, logs, compact tables, figures,
+  and data metadata.
+- Do not commit raw downloads, large intermediate data, Parquet files, ZIP
+  archives, or cache files.
+- Use each project's README and report folder as the human-readable entrypoint.
+- Use `tools/build_data_metadata.py` to refresh a project's data metadata after
+  rebuilding local data.
 
-- preferred harmful outcome: `persistent_uninsured_h2`
-- preferred exposure candidate: `backlog_automation_rank_index / same`
-- latest verdict: `ROUND3_SUPPORTS_CONTINUATION`
+Example:
 
-This does **not** mean the project is ready for `DID`, `DML`, `causal forest`, or causal policy targeting. The current validated phase is still diagnostic / risk-first.
-
-## Suggested Reading Order
-
-1. `docs/churn_unwinding_execution_handoff.md`
-2. `docs/churn_unwinding_progress_record.md`
-3. `docs/churn_unwinding_round3_robustness_memo.md`
-4. `docs/churn_unwinding_next_tests_memo.md`
-5. `docs/current_exploration_handoff.md`
-
-For the older Medicare-at-65 baseline, see:
-
-- `docs/project_briefing_for_reasoning.md`
-- `scripts/pipeline/prepare_pooled_2002_2017.R`
-- `scripts/pipeline/run_rdd_pooled_2002_2017.R`
-- `outputs/rdd_pooled_2002_2017/`
-
-## Reproducibility Layout
-
-- `docs/`: handoffs, strategy memos, progress records, and design decisions.
-- `scripts/`: acquisition scripts, SIPP/CMS prototypes, diagnostics, and legacy MEPS pipeline entrypoints.
-- `src/`: reusable R feature engineering, QC, and project path helpers.
-- `outputs/`: lightweight markdown, JSON, CSV, and figure summaries only.
-
-Excluded local-only directories:
-
-- `data/`
-- `archive/`
-- `reference/external/`
-
-## Next Empirical Frontier
-
-The next recommended empirical work is:
-
-1. timing stress tests
-2. subgroup stability round 2
-3. bounded risk-ranking round 2
-
-Classical time-series models and immediate causal ML are not the current bottleneck.
+```powershell
+python tools\build_data_metadata.py `
+  --project-name nursing_home_staffing_reporting `
+  --source-root "D:\GlobalHealthPolicy Dropbox\Fan Bowei\nh_staffing\nursing_home_staffing_reporting" `
+  --output-root "projects\nursing_home_staffing_reporting\data_metadata"
+```

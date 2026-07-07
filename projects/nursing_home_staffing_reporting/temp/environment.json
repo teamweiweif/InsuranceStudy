@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-07-07T10:49:42.813522+00:00",
+  "project_root": "C:\\Users\\PC\\GlobalHealthPolicy Dropbox\\Fan Bowei\\nh_staffing\\nursing_home_staffing_reporting",
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.3.4",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.7",
+    "requests": "2.32.5",
+    "pyarrow": "23.0.1",
+    "duckdb": "1.5.0",
+    "sklearn": "1.8.0",
+    "openpyxl": "3.1.5",
+    "docx": "1.2.0"
+  }
+}

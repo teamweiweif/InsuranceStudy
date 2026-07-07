@@ -1,0 +1,12 @@
+pandas
+numpy
+requests
+beautifulsoup4
+PyMuPDF
+pyarrow
+matplotlib
+seaborn
+scipy
+scikit-learn
+duckdb
+openpyxl

@@ -1,0 +1,10 @@
+variable,missing_share
+weekend_total_nurse_hprd,0.0
+weekend_rn_hprd,0.0
+weekday_total_nurse_hprd,0.0
+weekday_minus_weekend_total_hprd,0.0
+total_nurse_hprd,0.0
+rn_share_total_hours,0.0013
+baseline_weekend_total_hprd,0.0
+baseline_gap_total,0.0
+exposure_composite,0.0

@@ -1,0 +1,124 @@
+\begin{tabular}{llllrrrrrrrlll}
+\toprule
+check & sample & outcome & term & estimate & std_error & ci_low & ci_high & p_value & n_obs & n_facilities & fixed_effects & exposure & note \\
+\midrule
+preferred_composite & all_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0431 & 0.0077 & 0.0280 & 0.0581 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & weekend_total_nurse_hprd & x_post_jul2022 & 0.1490 & 0.0073 & 0.1346 & 0.1634 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & weekend_rn_hprd & x_jan_to_jun2022 & 0.0312 & 0.0024 & 0.0264 & 0.0359 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & weekend_rn_hprd & x_post_jul2022 & 0.0591 & 0.0026 & 0.0540 & 0.0642 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & -0.0073 & 0.0093 & -0.0255 & 0.0109 & 0.4310 & 1209909 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & weekday_total_nurse_hprd & x_post_jul2022 & 0.0641 & 0.0089 & 0.0467 & 0.0816 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0504 & 0.0047 & -0.0597 & -0.0411 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.0848 & 0.0047 & -0.0941 & -0.0756 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & total_nurse_hprd & x_jan_to_jun2022 & 0.0074 & 0.0085 & -0.0093 & 0.0240 & 0.3861 & 1209911 & 15133 & facility_id+period & high_exposure_composite &  \\
+preferred_composite & all_months & total_nurse_hprd & x_post_jul2022 & 0.0889 & 0.0081 & 0.0730 & 0.1048 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_composite &  \\
+low_weekend_total & all_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0814 & 0.0071 & 0.0675 & 0.0954 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & weekend_total_nurse_hprd & x_post_jul2022 & 0.2333 & 0.0068 & 0.2200 & 0.2465 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & weekend_rn_hprd & x_jan_to_jun2022 & 0.0153 & 0.0025 & 0.0104 & 0.0201 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & weekend_rn_hprd & x_post_jul2022 & 0.0390 & 0.0026 & 0.0339 & 0.0441 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & 0.0694 & 0.0082 & 0.0533 & 0.0856 & 0.0000 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & weekday_total_nurse_hprd & x_post_jul2022 & 0.2447 & 0.0076 & 0.2297 & 0.2597 & 0.0000 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0120 & 0.0040 & -0.0197 & -0.0043 & 0.0024 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & 0.0114 & 0.0040 & 0.0037 & 0.0192 & 0.0038 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & total_nurse_hprd & x_jan_to_jun2022 & 0.0728 & 0.0077 & 0.0577 & 0.0880 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_total & all_months & total_nurse_hprd & x_post_jul2022 & 0.2411 & 0.0071 & 0.2271 & 0.2551 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_total_hprd &  \\
+low_weekend_rn & all_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0113 & 0.0075 & -0.0034 & 0.0260 & 0.1326 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & weekend_total_nurse_hprd & x_post_jul2022 & 0.0704 & 0.0072 & 0.0562 & 0.0846 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & weekend_rn_hprd & x_jan_to_jun2022 & 0.0434 & 0.0022 & 0.0391 & 0.0477 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & weekend_rn_hprd & x_post_jul2022 & 0.0825 & 0.0023 & 0.0780 & 0.0871 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & 0.0057 & 0.0086 & -0.0112 & 0.0227 & 0.5055 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & weekday_total_nurse_hprd & x_post_jul2022 & 0.0821 & 0.0082 & 0.0661 & 0.0981 & 0.0000 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0055 & 0.0040 & -0.0134 & 0.0023 & 0.1682 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & 0.0118 & 0.0040 & 0.0040 & 0.0195 & 0.0029 & 1209909 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & total_nurse_hprd & x_jan_to_jun2022 & 0.0071 & 0.0081 & -0.0088 & 0.0230 & 0.3816 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+low_weekend_rn & all_months & total_nurse_hprd & x_post_jul2022 & 0.0787 & 0.0077 & 0.0636 & 0.0937 & 0.0000 & 1209911 & 15133 & facility_id+period & low_baseline_weekend_rn_hprd &  \\
+high_weekday_weekend_gap & all_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & -0.0421 & 0.0097 & -0.0612 & -0.0230 & 0.0000 & 1209911 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & weekend_total_nurse_hprd & x_post_jul2022 & -0.0651 & 0.0093 & -0.0833 & -0.0469 & 0.0000 & 1209911 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & weekend_rn_hprd & x_jan_to_jun2022 & -0.0093 & 0.0039 & -0.0169 & -0.0017 & 0.0168 & 1209911 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & weekend_rn_hprd & x_post_jul2022 & -0.0170 & 0.0041 & -0.0250 & -0.0090 & 0.0000 & 1209911 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & -0.1013 & 0.0118 & -0.1244 & -0.0781 & 0.0000 & 1209909 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & weekday_total_nurse_hprd & x_post_jul2022 & -0.2120 & 0.0112 & -0.2339 & -0.1902 & 0.0000 & 1209909 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0592 & 0.0056 & -0.0702 & -0.0482 & 0.0000 & 1209909 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.1470 & 0.0053 & -0.1574 & -0.1365 & 0.0000 & 1209909 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & total_nurse_hprd & x_jan_to_jun2022 & -0.0845 & 0.0109 & -0.1059 & -0.0632 & 0.0000 & 1209911 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+high_weekday_weekend_gap & all_months & total_nurse_hprd & x_post_jul2022 & -0.1698 & 0.0103 & -0.1899 & -0.1496 & 0.0000 & 1209911 & 15133 & facility_id+period & high_baseline_weekday_weekend_gap &  \\
+baseline_2021_only & all_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & -0.0099 & 0.0077 & -0.0251 & 0.0053 & 0.2030 & 1209911 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & weekend_total_nurse_hprd & x_post_jul2022 & 0.1384 & 0.0073 & 0.1241 & 0.1528 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & weekend_rn_hprd & x_jan_to_jun2022 & 0.0123 & 0.0024 & 0.0075 & 0.0170 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & weekend_rn_hprd & x_post_jul2022 & 0.0529 & 0.0026 & 0.0479 & 0.0579 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & -0.0158 & 0.0091 & -0.0337 & 0.0020 & 0.0822 & 1209909 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & weekday_total_nurse_hprd & x_post_jul2022 & 0.0906 & 0.0085 & 0.0740 & 0.1072 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0060 & 0.0045 & -0.0148 & 0.0028 & 0.1823 & 1209909 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.0478 & 0.0043 & -0.0563 & -0.0394 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & total_nurse_hprd & x_jan_to_jun2022 & -0.0145 & 0.0085 & -0.0312 & 0.0021 & 0.0868 & 1209911 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_2021_only & all_months & total_nurse_hprd & x_post_jul2022 & 0.1041 & 0.0079 & 0.0887 & 0.1195 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure2021_composite &  \\
+baseline_exclude_2020 & all_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0324 & 0.0076 & 0.0174 & 0.0473 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & weekend_total_nurse_hprd & x_post_jul2022 & 0.1474 & 0.0073 & 0.1331 & 0.1618 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & weekend_rn_hprd & x_jan_to_jun2022 & 0.0280 & 0.0024 & 0.0232 & 0.0328 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & weekend_rn_hprd & x_post_jul2022 & 0.0582 & 0.0026 & 0.0531 & 0.0633 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & -0.0069 & 0.0090 & -0.0246 & 0.0107 & 0.4424 & 1209909 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & weekday_total_nurse_hprd & x_post_jul2022 & 0.0717 & 0.0086 & 0.0549 & 0.0885 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0393 & 0.0044 & -0.0480 & -0.0306 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.0758 & 0.0043 & -0.0843 & -0.0673 & 0.0000 & 1209909 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & total_nurse_hprd & x_jan_to_jun2022 & 0.0039 & 0.0084 & -0.0125 & 0.0203 & 0.6417 & 1209911 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+baseline_exclude_2020 & all_months & total_nurse_hprd & x_post_jul2022 & 0.0932 & 0.0080 & 0.0776 & 0.1088 & 0.0000 & 1209911 & 15133 & facility_id+period & high_exposure_no2020_composite &  \\
+continuous_composite & all_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0564 & 0.0120 & 0.0329 & 0.0799 & 0.0000 & 1209911 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & weekend_total_nurse_hprd & x_post_jul2022 & 0.1696 & 0.0128 & 0.1445 & 0.1948 & 0.0000 & 1209911 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & weekend_rn_hprd & x_jan_to_jun2022 & 0.0383 & 0.0090 & 0.0208 & 0.0559 & 0.0000 & 1209911 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & weekend_rn_hprd & x_post_jul2022 & 0.0787 & 0.0094 & 0.0603 & 0.0971 & 0.0000 & 1209911 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & -0.0198 & 0.0227 & -0.0642 & 0.0246 & 0.3825 & 1209909 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & weekday_total_nurse_hprd & x_post_jul2022 & 0.0683 & 0.0250 & 0.0193 & 0.1172 & 0.0063 & 1209909 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0762 & 0.0167 & -0.1089 & -0.0435 & 0.0000 & 1209909 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.1014 & 0.0168 & -0.1343 & -0.0685 & 0.0000 & 1209909 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & total_nurse_hprd & x_jan_to_jun2022 & 0.0065 & 0.0155 & -0.0238 & 0.0369 & 0.6725 & 1209911 & 15133 & facility_id+period & exposure_composite &  \\
+continuous_composite & all_months & total_nurse_hprd & x_post_jul2022 & 0.1019 & 0.0172 & 0.0682 & 0.1357 & 0.0000 & 1209911 & 15133 & facility_id+period & exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0235 & 0.0075 & 0.0089 & 0.0381 & 0.0016 & 1065434 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekend_total_nurse_hprd & x_post_jul2022 & 0.1285 & 0.0072 & 0.1144 & 0.1426 & 0.0000 & 1065434 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekend_rn_hprd & x_jan_to_jun2022 & 0.0232 & 0.0024 & 0.0186 & 0.0278 & 0.0000 & 1065434 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekend_rn_hprd & x_post_jul2022 & 0.0508 & 0.0026 & 0.0457 & 0.0559 & 0.0000 & 1065434 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekday_total_nurse_hprd & x_jan_to_jun2022 & -0.0226 & 0.0087 & -0.0397 & -0.0054 & 0.0098 & 1065432 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekday_total_nurse_hprd & x_post_jul2022 & 0.0477 & 0.0084 & 0.0313 & 0.0642 & 0.0000 & 1065432 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0461 & 0.0042 & -0.0543 & -0.0377 & 0.0000 & 1065432 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.0808 & 0.0043 & -0.0891 & -0.0724 & 0.0000 & 1065432 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & total_nurse_hprd & x_jan_to_jun2022 & -0.0097 & 0.0082 & -0.0257 & 0.0063 & 0.2359 & 1065434 & 15133 & facility_id+period & high_exposure_composite &  \\
+exclude_mar_dec_2020 & drop_2020m03_2020m12 & total_nurse_hprd & x_post_jul2022 & 0.0708 & 0.0078 & 0.0555 & 0.0861 & 0.0000 & 1065434 & 15133 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0489 & 0.0076 & 0.0339 & 0.0639 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekend_total_nurse_hprd & x_post_jul2022 & 0.1489 & 0.0067 & 0.1357 & 0.1620 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekend_rn_hprd & x_jan_to_jun2022 & 0.0311 & 0.0024 & 0.0265 & 0.0357 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekend_rn_hprd & x_post_jul2022 & 0.0576 & 0.0026 & 0.0526 & 0.0626 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekday_total_nurse_hprd & x_jan_to_jun2022 & 0.0054 & 0.0090 & -0.0123 & 0.0231 & 0.5483 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekday_total_nurse_hprd & x_post_jul2022 & 0.0671 & 0.0083 & 0.0508 & 0.0833 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0435 & 0.0045 & -0.0523 & -0.0347 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.0818 & 0.0042 & -0.0900 & -0.0735 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & total_nurse_hprd & x_jan_to_jun2022 & 0.0177 & 0.0084 & 0.0012 & 0.0341 & 0.0353 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+balanced_panel_80_months & facilities_with_at_least_80_months & total_nurse_hprd & x_post_jul2022 & 0.0904 & 0.0076 & 0.0755 & 0.1053 & 0.0000 & 1053009 & 12672 & facility_id+period & high_exposure_composite &  \\
+ownership_for_profit & for_profit & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0390 & 0.0083 & 0.0227 & 0.0554 & 0.0000 & 859059 & 10694 & facility_id+period & high_exposure_composite &  \\
+ownership_for_profit & for_profit & weekend_total_nurse_hprd & x_post_jul2022 & 0.1429 & 0.0084 & 0.1265 & 0.1593 & 0.0000 & 859059 & 10694 & facility_id+period & high_exposure_composite &  \\
+ownership_for_profit & for_profit & weekend_rn_hprd & x_jan_to_jun2022 & 0.0319 & 0.0026 & 0.0269 & 0.0370 & 0.0000 & 859059 & 10694 & facility_id+period & high_exposure_composite &  \\
+ownership_for_profit & for_profit & weekend_rn_hprd & x_post_jul2022 & 0.0563 & 0.0027 & 0.0510 & 0.0617 & 0.0000 & 859059 & 10694 & facility_id+period & high_exposure_composite &  \\
+ownership_for_profit & for_profit & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0444 & 0.0052 & -0.0546 & -0.0342 & 0.0000 & 859059 & 10694 & facility_id+period & high_exposure_composite &  \\
+ownership_for_profit & for_profit & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.0807 & 0.0053 & -0.0910 & -0.0704 & 0.0000 & 859059 & 10694 & facility_id+period & high_exposure_composite &  \\
+ownership_not_for_profit & not_for_profit & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0643 & 0.0187 & 0.0276 & 0.1010 & 0.0006 & 350655 & 4428 & facility_id+period & high_exposure_composite &  \\
+ownership_not_for_profit & not_for_profit & weekend_total_nurse_hprd & x_post_jul2022 & 0.1673 & 0.0172 & 0.1336 & 0.2011 & 0.0000 & 350655 & 4428 & facility_id+period & high_exposure_composite &  \\
+ownership_not_for_profit & not_for_profit & weekend_rn_hprd & x_jan_to_jun2022 & 0.0381 & 0.0059 & 0.0265 & 0.0497 & 0.0000 & 350655 & 4428 & facility_id+period & high_exposure_composite &  \\
+ownership_not_for_profit & not_for_profit & weekend_rn_hprd & x_post_jul2022 & 0.0740 & 0.0066 & 0.0612 & 0.0868 & 0.0000 & 350655 & 4428 & facility_id+period & high_exposure_composite &  \\
+ownership_not_for_profit & not_for_profit & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0686 & 0.0113 & -0.0907 & -0.0464 & 0.0000 & 350653 & 4428 & facility_id+period & high_exposure_composite &  \\
+ownership_not_for_profit & not_for_profit & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.1015 & 0.0111 & -0.1231 & -0.0798 & 0.0000 & 350653 & 4428 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekend_total_nurse_hprd & x_jan_to_jun2022 & 0.0416 & 0.0076 & 0.0267 & 0.0565 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekend_total_nurse_hprd & x_post_jul2022 & 0.1505 & 0.0066 & 0.1376 & 0.1635 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekend_rn_hprd & x_jan_to_jun2022 & 0.0308 & 0.0024 & 0.0261 & 0.0355 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekend_rn_hprd & x_post_jul2022 & 0.0589 & 0.0026 & 0.0539 & 0.0639 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekday_total_nurse_hprd & x_jan_to_jun2022 & -0.0056 & 0.0090 & -0.0232 & 0.0120 & 0.5323 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekday_total_nurse_hprd & x_post_jul2022 & 0.0670 & 0.0082 & 0.0511 & 0.0830 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekday_minus_weekend_total_hprd & x_jan_to_jun2022 & -0.0472 & 0.0044 & -0.0558 & -0.0386 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & weekday_minus_weekend_total_hprd & x_post_jul2022 & -0.0835 & 0.0041 & -0.0915 & -0.0755 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & total_nurse_hprd & x_jan_to_jun2022 & 0.0074 & 0.0084 & -0.0090 & 0.0239 & 0.3747 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+facility_quarter_panel & quarterly_panel & total_nurse_hprd & x_post_jul2022 & 0.0907 & 0.0075 & 0.0759 & 0.1054 & 0.0000 & 403409 & 15133 & facility_id+period & high_exposure_composite &  \\
+placebo_2021_timing & pre_2022_only & weekend_total_nurse_hprd & x_placebo_jan_to_jun2021 & -0.0548 & 0.0104 & -0.0753 & -0.0344 & 0.0000 & 522045 & 15133 & facility_id+period & high_exposure_composite & Fake reform date one year before true policy. \\
+placebo_2021_timing & pre_2022_only & weekend_total_nurse_hprd & x_placebo_post_jul2021 & -0.0137 & 0.0086 & -0.0306 & 0.0032 & 0.1133 & 522045 & 15133 & facility_id+period & high_exposure_composite & Fake reform date one year before true policy. \\
+placebo_2021_timing & pre_2022_only & weekend_rn_hprd & x_placebo_jan_to_jun2021 & -0.0134 & 0.0027 & -0.0186 & -0.0081 & 0.0000 & 522045 & 15133 & facility_id+period & high_exposure_composite & Fake reform date one year before true policy. \\
+placebo_2021_timing & pre_2022_only & weekend_rn_hprd & x_placebo_post_jul2021 & 0.0126 & 0.0027 & 0.0074 & 0.0179 & 0.0000 & 522045 & 15133 & facility_id+period & high_exposure_composite & Fake reform date one year before true policy. \\
+placebo_2021_timing & pre_2022_only & weekday_total_nurse_hprd & x_placebo_jan_to_jun2021 & -0.0294 & 0.0186 & -0.0659 & 0.0071 & 0.1147 & 522044 & 15133 & facility_id+period & high_exposure_composite & Fake reform date one year before true policy. \\
+placebo_2021_timing & pre_2022_only & weekday_total_nurse_hprd & x_placebo_post_jul2021 & -0.0320 & 0.0118 & -0.0551 & -0.0089 & 0.0066 & 522044 & 15133 & facility_id+period & high_exposure_composite & Fake reform date one year before true policy. \\
+\bottomrule
+\end{tabular}
